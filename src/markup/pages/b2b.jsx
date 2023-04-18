@@ -1,0 +1,144 @@
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Header from '../layout/header'
+import Footer from '../layout/footer'
+import ServiceFilter1 from '../element/service-filter1'
+
+
+const aboutbg = require('./../../assets/images/background/image-11.jpg');
+// const casebg = require('./../../assets/images/background/image-14.jpg');
+
+class b2p extends Component {
+
+
+    render() {
+        return (
+            <>
+                <Header />
+                <section class="team-section padding">
+                    {/* About Section Two */}
+                    <section class="container">
+                        <div class="container">
+                            <div class="row align-items-center paddinground">
+                                <div class="col-lg-6">
+                                    <div class="image-wrapper">
+                                        <div class="image-one">
+                                            <img src={require('../../assets/images/shape/b2b.png')} alt="" className='imgwidth' />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="content-box">
+
+                                        <div class="sec-title text-center textleft">
+                                            <h2 className='textleft'> <span className='headeingcolorblack'>     Redefining the Meaning of </span><br></br> <span className='headeingcolorblue'>Employee-Centric Care</span></h2>
+                                            <h3 className='textleft marginTop40'>Variety of benefits for a healthier and happier workforce
+                                            </h3>
+                                        </div>
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">SAY YES!</span></button>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <div class="auto-container">
+                    <div class="sec-title">
+                        <h2> <span className='headeingcolorblack'>THE CORPORATE </span> <span className='headeingcolorblue'> WELLNESS MAP</span></h2>
+                        <h3 className='textleft marginTop40'>Variety of benefits for a healthier and happier workforce
+                        </h3>
+                    </div>
+
+                </div>
+                <div class="row align-items-center">
+                    <div class="image-wrapper">
+                        <div class="image-one">
+                            <img src={require('../../assets/images/shape/slider.png')} alt="" className='imgwidth' />
+                        </div>
+                    </div>
+                </div>
+
+                {/* <div class="container containerbackground">
+
+
+                                to take care of their employees
+                                </div> */}
+
+<section class="container-fluid b2bback">
+
+                <div className='container '>
+                    <div class="sec-title text-center">
+                        <h3 className=''> <span className='headeingcolorblue'>     Bridge Health </span>makes it possible for  <span className='headeingcolorblue'> employers </span><br></br>to keep a check on their  <span className='headeingcolorblue'> employees’ health metrics </span></h3>
+
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="image-wrapper">
+                            <div class="image-one">
+                                <img src={require('../../assets/images/shape/companey.png')} alt="" className='imgwidth' />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+                {/* <!-- Contact Section --> */}
+                <section class="contact-section">
+                    <section class="">
+                        <div class="auto-container">
+                            <div class="sec-title text-center">
+                                <h2> <span className='headeingcolorblue'>BOOST  </span> <span className='headeingcolorblack'>YOUR TEAM’S HEALTH</span><br></br>
+                                </h2>
+                            </div>
+
+                        </div></section>
+                    <div class="auto-container">
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <div class="contact-form-area">
+
+                                    {/* <!-- Contact Form--> */}
+                                    <div class="contact-form">
+                                        <p>Reach out to us and we'll help you in setting up the best of <span className='headeingcolorblue'>Preventive Healthcare</span> Services for your teams.</p>
+                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
+                                            <div class="row clearfix">
+                                                <div class="col-md-12 form-group">
+                                                    <input type="text" name="username" id="name" placeholder="Name*" required="" />
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <input type="text" name="username" id="name" placeholder="Email*" required="" />
+                                                </div>  <div class="col-md-12 form-group">
+                                                    <input type="text" name="username" id="name" placeholder="Phone*" required="" />
+                                                </div>  <div class="col-md-12 form-group">
+                                                    <input type="text" name="username" id="name" placeholder="Company Name" required="" />
+                                                </div>  <div class="col-md-12 form-group">
+                                                    <input type="text" name="username" id="name" placeholder="Team Size" required="" />
+                                                </div>
+
+                                                <div class="col-md-12 form-group">
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Submit</span></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-wrapper">
+                                    <div class="image-one">
+                                        <img src={require('../../assets/images/shape/b2b1.png')} alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <Footer />
+            </>
+        )
+    }
+}
+export default b2p;
