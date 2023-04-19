@@ -20,7 +20,7 @@ class Blog extends Component {
                     <div class="bottom-rotten-curve alternate"></div>
 
                     <div class="auto-container">
-                        <h1>Blog</h1>
+                        <h1>Blogs</h1>
 
                     </div>
 
@@ -69,7 +69,7 @@ class Blog extends Component {
                                 </div>
                             </div>
                             {/* <!-- News Block One --> */}
-                            <div class="news-block-one col-lg-4">
+                            <div class="news-block-one col-lg-4 margintop175">
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b4.png')} alt="" /></Link></div>
                                     <div class="lower-content">
@@ -93,7 +93,7 @@ class Blog extends Component {
                                 </div>
                             </div>
                             {/* <!-- News Block One --> */}
-                            <div class="news-block-one col-lg-4">
+                            <div class="news-block-one col-lg-4 margintop175">
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b6.png')} alt="" /></Link></div>
                                     <div class="lower-content">
@@ -105,7 +105,7 @@ class Blog extends Component {
                                 </div>
                             </div>
                             {/* <!-- News Block One --> */}
-                            <div class="news-block-one col-lg-4">
+                            <div class="news-block-one col-lg-4 margin100">
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b7.png')} alt="" /></Link></div>
                                     <div class="lower-content">
@@ -129,7 +129,7 @@ class Blog extends Component {
                                 </div>
                             </div>
                             {/* <!-- News Block One --> */}
-                            <div class="news-block-one col-lg-4">
+                            <div class="news-block-one col-lg-4 margin100">
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b9.png')} alt="" /></Link></div>
                                     <div class="lower-content">

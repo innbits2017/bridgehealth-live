@@ -106,7 +106,7 @@ class Index extends Component {
                                         </span><span className='textpara'>Personal Membership Program</span>
                                     </div>
                                     <div className='box marginTop40'>
-                                        <span className='textpara'>Corporate Membership Program</span>
+                                        <span className='textpara'>Corporate  Membership Program</span>
                                         <span>
                                             <img src={require('../../assets/images/shape/thumb1.png')} alt="" />
                                         </span>

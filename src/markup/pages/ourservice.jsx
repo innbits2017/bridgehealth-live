@@ -50,7 +50,7 @@ class ourservice extends Component {
                         <div class="auto-container">
                             <div class="row">
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margintop100" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div className=''>
                                     <div class="grow bozhover">
                                         <img src={require('../../assets/images/shape/doctor.png')} alt="" />
@@ -69,7 +69,7 @@ class ourservice extends Component {
                                     </div>
                                 </div>
                                
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margontop50" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                     <img src={require('../../assets/images/shape/s2.png')} alt="" />
                                             <h2 className='expertise'>Comprehensive Health Checks</h2>
@@ -77,7 +77,7 @@ class ourservice extends Component {
                                         </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margin100" data-wow-delay="200ms" data-wow-duration="1200ms">
                                 <div class="grow bozhover">
                                         <div>
                                            <img src={require('../../assets/images/shape/s3.png')} alt="" />
@@ -89,7 +89,7 @@ class ourservice extends Component {
                             </div>
                             <div class="row">
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margintop100" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
                                            <img src={require('../../assets/images/shape/s4.png')} alt="" />
@@ -109,7 +109,7 @@ class ourservice extends Component {
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margontop50" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
                                            <img src={require('../../assets/images/shape/s7.png')} alt="" />
@@ -119,7 +119,7 @@ class ourservice extends Component {
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margin100" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
                                            <img src={require('../../assets/images/shape/s8.png')} alt="" />
@@ -131,7 +131,7 @@ class ourservice extends Component {
                             </div>
                             <div class="row">
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margintop100" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
                                            <img src={require('../../assets/images/shape/s9.png')} alt="" />
@@ -151,7 +151,7 @@ class ourservice extends Component {
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margontop50" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
                                            <img src={require('../../assets/images/shape/s11.png')} alt="" />
@@ -161,7 +161,7 @@ class ourservice extends Component {
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margin100" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
                                            <img src={require('../../assets/images/shape/s12.png')} alt="" />
@@ -173,7 +173,7 @@ class ourservice extends Component {
                             </div>
                             <div class="row">
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margintop100" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
                                            <img src={require('../../assets/images/shape/s13.png')} alt="" />
@@ -193,7 +193,7 @@ class ourservice extends Component {
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margontop50" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
                                            <img src={require('../../assets/images/shape/s15.png')} alt="" />
@@ -203,7 +203,7 @@ class ourservice extends Component {
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margin100" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
                                            <img src={require('../../assets/images/shape/s16.png')} alt="" />

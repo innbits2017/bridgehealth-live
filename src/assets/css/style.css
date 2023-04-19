@@ -177,7 +177,7 @@ figure {
 	border-radius   : 30px;
 	overflow        : hidden;
 	vertical-align  : middle;
-	background-color: transparent;
+	background-color: #1963C6;
 }
 
 .btn-style-one:hover {
@@ -188,9 +188,9 @@ figure {
     position: relative;
     display: block;
     z-index: 1;
-    font-size: 25px;
+	font-size: 16px;
     font-weight: 400;
-    padding: 8px 45px;
+    padding: 5px 34px;
     border-radius: 30px;
 	transition        : all 0.3s ease;
 	-moz-transition   : all 0.3s ease;
@@ -3023,7 +3023,7 @@ font-weight: 700;
 
 .main-footer .footer-bottom {
 	position   : relative;
-	padding    : 30px 0px;
+	padding    : 3px 0px;
 	line-height: 30px;
 	font-size  : 15px;
 	color      : #9ea0a9;
@@ -3042,7 +3042,6 @@ font-weight: 700;
 	position   : relative;
 	text-align : center;
 	font-size  : 16px;
-	font-weight: 700;
 	color      : #fff;
 }
 
@@ -4321,7 +4320,7 @@ img.lazy-image.loaded {
 .contact-form .form-group select {
 	position: relative;
     display: block;
-    height: 60px;
+    height: 40px;
     background: rgba(255, 255, 255, 0.84);
     border: 1px solid #A7A7A7 !important;
     border-radius: 6px;
@@ -4763,6 +4762,11 @@ img.lazy-image.loaded {
 /* Testimonial Section */
 
 .testimonial-section {
+	position       : relative;
+	padding        : 20px 0 0px;
+	background-size: cover;
+}
+.hometestimonial-section {
 	position       : relative;
 	padding        : 120px 0 90px;
 	background-size: cover;
@@ -6456,7 +6460,6 @@ border-radius: 22.9879px;
 	top       : 0;
 	width     : 100%;
 	height    : 100%;
-	background: #001c2a;
 	opacity   : 0.80;
 }
 
@@ -9892,12 +9895,11 @@ figure:hover+span {
 	}
 }
 .expertise
-{
-	font-size: 13px;
+{    font-size: 15px;
     text-align: center;
     font-weight: 600;
     margin-top: 5px;
-    line-height: 30px;
+    line-height: 24px;
 }
 .copy
 {
@@ -9993,13 +9995,14 @@ margin-left: 10px;
 	border-radius: 50%;
 } */
 .scan-qr{
-	margin-left: 80px;
-	background-color: #1963C6;
-	color: white;
-	cursor: pointer;
-	height: 40px;
-	border-radius: 20px;
-	text-align: center;
+	margin-left: 81px;
+    background-color: #1963C6;
+    color: white;
+    padding: 15px;
+    height: 45px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 10px;
 
 }
 
@@ -10069,6 +10072,8 @@ h6,
 } */
 .testback
 {	background-image: url(../images/shape/LINE.png);
+	background-size: contain;
+    background-repeat: no-repeat;
 
 
 }
@@ -10266,4 +10271,21 @@ a:not([href]):not([tabindex]) {
 	background-image: url(../images/shape/Group237659.png);
     background-size: cover;
 	padding-top: 150px !important;
+}
+.margintop175
+{
+	margin-top: -175px;
+}
+.margin100
+{
+	margin-top: -100px;
+
+}
+.margintop100
+{
+	margin-top: 60px;
+}
+.margontop50
+{
+	margin-top: -50px;
 }
