@@ -51,66 +51,8 @@ class b2cmembership extends Component {
                 <VideoPopup1/>
       {/* <!-- About --> */}
 
-      <section class="team-section">
-                    {/* About Section Two */}
-                    <section class="">
-                        <div class="auto-container">
-                            <div class="row align-items-center">
-
-                                <div class="col-lg-6">
-                                    <div class="content-box">
-                                        <h3 className='h2title'>In our fast-paced world, our health is our biggest asset.</h3>
-                                        <div class="sec-title">
-                                            <div class="text">Having good health allows you to experience the simple joys of life. Your health is like an investment. The more you invest, the more returns you get. Therefore, nurturing and taking good care of it is important.     </div>
-                                        </div>
-
-                                    </div>
-                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
-                                </div>
-                                <div class="col-lg-6">
-                                <div class="image-wrapper">
-                                        <div class="image-one">
-                                            <img src={require('../../assets/images/shape/our.png')} alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <section class="team-section">
-                    {/* About Section Two */}
-                    <section class="">
-                        <div class="auto-container">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
-                                <div class="image-wrapper">
-                                        <div class="image-one">
-                                            <img src={require('../../assets/images/shape/ourn.png')} alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="content-box">
-                                        <h3 className='h2title'>Our Annual Preventive Health Plans are carefully curated</h3>
-                                        <div class="sec-title">
-                                            <div class="text">
-                                            We ensure that you always have the best mental and physical well-being. From online consultations with experts to lab tests and health checks, we do everything to help you live a healthier life throughout the year.
- </div>
-                                        </div>
-
-                                    </div>
-                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-        
-
-                <div class="container">
+    
+                <div class="container-fulid">
                 <div class="auto-container">
                         <div class="sec-title text-center">
                             <h2>
