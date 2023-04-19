@@ -109,7 +109,7 @@ class leadership extends Component {
                               <div class="col-lg-3 team-block-one wow fadeInUp lead1" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="column">
                                         <div>
-                                            <figure><img src={require('../../assets/images/gallery/L1.png')} alt="" /></figure>
+                                            <figure><img src={require('../../assets/images/gallery/L4.png')} alt="" /></figure>
                                         </div>
                                     </div>
                                 </div>
@@ -121,19 +121,19 @@ class leadership extends Component {
                                     </div>
                                     <div class="column">
                                         <div>
-                                            <figure><img src={require('../../assets/images/gallery/L1.png')} alt="" /></figure>
+                                            <figure><img src={require('../../assets/images/gallery/L5.png')} alt="" /></figure>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="column">
                                         <div>
-                                            <figure><img src={require('../../assets/images/gallery/L1.png')} alt="" /></figure>
+                                            <figure><img src={require('../../assets/images/gallery/L2.png')} alt="" /></figure>
                                         </div>
                                     </div>
                                     <div class="column">
                                         <div>
-                                            <figure><img src={require('../../assets/images/gallery/L1.png')} alt="" /></figure>
+                                            <figure><img src={require('../../assets/images/gallery/L6.png')} alt="" /></figure>
                                         </div>
                                     </div>
                                     
@@ -141,12 +141,12 @@ class leadership extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp lead3" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="column">
                                         <div>
-                                            <figure><img src={require('../../assets/images/gallery/L1.png')} alt="" /></figure>
+                                            <figure><img src={require('../../assets/images/gallery/L3.png')} alt="" /></figure>
                                         </div>
                                     </div>
                                     <div class="column">
                                         <div>
-                                            <figure><img src={require('../../assets/images/gallery/L1.png')} alt="" /></figure>
+                                            <figure><img src={require('../../assets/images/gallery/L7.png')} alt="" /></figure>
                                         </div>
                                     </div>
                                 </div>
