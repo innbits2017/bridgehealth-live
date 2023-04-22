@@ -130,6 +130,14 @@ p,
 	padding  : 0px 15px;
 	margin   : 0 auto;
 }
+.auto-container1 {
+	position : static;
+	max-width: 1200px;
+	padding  : 0px 15px;
+	margin   : 0 auto;
+	color: #fff;
+	font-size: 20px;
+}
 
 ul,
 li {

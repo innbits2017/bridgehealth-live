@@ -9,6 +9,8 @@ import leadership from './pages/leadership'
 import b2b from './pages/b2b'
 import b2cmembership from './pages/b2cmembership'
 import ourservice from './pages/ourservice'
+import BlogDestails from './pages/blog-details';
+import blog_Designv2 from './pages/blog-Designv2';
 
 class Router extends Component {
     render() {
@@ -26,8 +28,10 @@ class Router extends Component {
                         <Route path='/team' component={Team} />
                         <Route path='/leadership' component={leadership} />
                         <Route path='/b2b' component={b2b}/>
+                        <Route path='/BlogDestails' component={BlogDestails}/>
                         <Route path='/ourservice' component={ourservice}/>
                         <Route path='/b2cmembership' component={b2cmembership}/>
+                        <Route path='/blog-Designv2' component={blog_Designv2}/>
 
                     </Switch>
 
