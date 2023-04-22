@@ -97,7 +97,7 @@ button {
 
 p,
 .text {
-	font-size  : 18px;
+	font-size  : 16px;
 	line-height: 1.7em;
 	font-weight: 400;
 	margin     : 0 0 15px;
@@ -178,6 +178,8 @@ figure {
 	overflow        : hidden;
 	vertical-align  : middle;
 	background-color: #1963C6;
+	margin-left: 20%;
+	margin-top: 20px;
 }
 
 .btn-style-one:hover {
@@ -187,6 +189,7 @@ figure {
 .btn-style-one .btn-title {
     position: relative;
     display: block;
+	
     z-index: 1;
 	font-size: 16px;
     font-weight: 400;
@@ -3263,6 +3266,7 @@ img.lazy-image.loaded {
 .about-section .image-wrapper .image-one {
 	position: relative;
 	overflow: hidden;
+	
 }
 
 .about-section .image-wrapper .image-one img {
@@ -3270,6 +3274,15 @@ img.lazy-image.loaded {
 	-webkit-transition: 1s;
 	-o-transition     : 1s;
 	transition        : 1s;
+	
+}
+.imgstyle{
+	margin-left: 30%;
+}
+.imgstyle1{
+	margin-left: 23%;
+	margin-top: 20px;
+	width: 45%;
 }
 
 .about-section .image-wrapper .image-one:hover img {
@@ -4645,7 +4658,10 @@ img.lazy-image.loaded {
 	right   : 0;
 	bottom  : 0;
 }
-
+.reachout{
+	height: 455px;
+	width: 100%;
+}
 .award-section .feature-image .image-one {
 	position         : absolute;
 	left             : 33px;
@@ -9579,8 +9595,8 @@ border-radius: 22.9879px;
 .box .textpara
 {
 	text-align: center;
-	/* padding-left: 5px;
-	padding-right: 8px; */
+	/* padding-left: 2px;
+	padding-right: 2px; */
 	font-size: 14.7px;
 }
 .marginTop40
@@ -10191,14 +10207,16 @@ a:not([href]):not([tabindex]) {
 	display: grid !important;
 	background: #99BB5E;
     border-radius: 45px 0px 0px 45px;
-	padding-right: 40px;
+	padding-right: 3px;
+	
 }
 .flotright a
 {
-	padding-left: 46px;
+	padding-left: 20px;
     color: #fff;
-    line-height: 34px;
-
+    line-height: 35px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	
 }
 .b2bback

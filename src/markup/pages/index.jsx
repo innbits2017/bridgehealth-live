@@ -33,7 +33,8 @@ class Index extends Component {
                     <div class="auto-container">
                         <div class="sec-title text-center">
                             <h2>Confused about your health checks?<br></br>
-                                <span className='headeingcolorblack'> Scan our</span> <span className='headeingcolorblue'>BH Smart Guide!</span>
+                                <span className='headeingcolorblack'> Scan our</span>
+                                <span className='headeingcolorblue'>BH Smart Guide!</span>
                             </h2>
                         </div>
 
@@ -50,13 +51,14 @@ class Index extends Component {
                                             </div>
                                         </div>
                                         <div class="image-one">
-                                            <img src={require('../../assets/images/shape/qrcode1.png')} alt="" />
-
+                                            <img className='imgstyle' src={require('../../assets/images/shape/Section1.png')} alt="" />
+                                            <img className='imgstyle1' src={require('../../assets/images/shape/Group3.png')} alt="" />
                                         </div>
                                         <div class="qr-text">
-                                            <button class="scan-qr">Scan QR Code
+                                            {/* <img className='imgstyle1' src={require('../../assets/images/shape/Group3.png')} alt="" /> */}
+                                            {/* <button class="scan-qr">Scan QR Code
                                                 <a style={{ color: '#fff' }} href="#" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
-                                            </button>
+                                            </button> */}
                                         </div>
 
                                     </div>
@@ -103,7 +105,8 @@ class Index extends Component {
                                     <div className='box'>
                                         <span>
                                             <img src={require('../../assets/images/shape/thumb.png')} alt="" />
-                                        </span><span className='textpara'>Personal Membership Program</span>
+                                        </span>
+                                        <span className='textpara'>Personal Membership Program</span>
                                     </div>
                                     <div className='box marginTop40'>
                                         <span className='textpara'>Corporate  Membership Program</span>
@@ -135,6 +138,7 @@ class Index extends Component {
                                 <div class="col-lg-6">
                                     <div class="image-wrapper">
                                         <div class="image-one">
+                                            {/* <img src={require('../../assets/images/shape/video1.MP4')} alt="" /> */}
                                             <img src={require('../../assets/images/shape/delay.png')} alt="" />
                                         </div>
                                     </div>
@@ -142,7 +146,8 @@ class Index extends Component {
                                 <div class="col-lg-6">
                                     <div class="content-box">
                                         <div class="sec-title">
-                                            <div class="text">Predict the onset of   <span className='headeingcolorblack'>hidden illnesses</span> and health conditions, prevent them by undergoing tests and check-ups, and delay the onset of chronic illness.
+                                            <div class="text">Predict the onset of
+                                                <span className='headeingcolorblack'>hidden illnesses</span> and health conditions, prevent them by undergoing tests and check-ups, and delay the onset of chronic illness.
                                             </div>
                                         </div>
                                         <ul className='listicon'>
@@ -150,7 +155,11 @@ class Index extends Component {
                                             <li>Health score built on 7 parameters</li>
                                             <li>Pre and Post score comparisons</li>
                                         </ul>
-                                        <div class="btn-box"><a class="theme-btn btn-style-one" href="/demo/fianandox/"><span class="btn-title">KNOW MORE</span></a></div>
+                                        <div class="btn-box">
+                                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                                                <span class="btn-title">KNOW MORE</span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -174,36 +183,78 @@ class Index extends Component {
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div className=''>
-                                    <div class="grow bozhover">
-                                        <img src={require('../../assets/images/shape/doctor.png')} alt="" />
-                                        <h2 className='expertise'>Annual Preventive Health Plans</h2>
+                                        <div class="grow bozhover">
+                                            <img src={require('../../assets/images/shape/doctor.png')} alt="" />
+                                            <h2 className='expertise'>Annual Preventive Health Plans</h2>
 
-                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
-                                    </div>
+                                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
-                                    <img src={require('../../assets/images/shape/s1.png')} alt="" />
+                                        <img src={require('../../assets/images/shape/s1.png')} alt="" />
                                         <h2 className='expertise'>Chronic Care Programs</h2>
 
                                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
                                     </div>
                                 </div>
-                               
+
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
-                                    <img src={require('../../assets/images/shape/s2.png')} alt="" />
-                                            <h2 className='expertise'>Comprehensive Health Checks</h2>
+                                        <img src={require('../../assets/images/shape/s2.png')} alt="" />
+                                        <h2 className='expertise'>Comprehensive Health Checks</h2>
+                                        <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
+                                    </div>
+                                </div>
+                                {/* <!-- Team Block One --> */}
+                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="grow bozhover">
+                                        <div>
+                                            <img src={require('../../assets/images/shape/s3.png')} alt="" />
+                                            <h2 className='expertise'>Doctor Consults</h2>
                                             <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                {/* <!-- Team Block One --> */}
+                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="grow bozhover">
+                                        <div>
+                                            <img src={require('../../assets/images/shape/s4.png')} alt="" />
+                                            <h2 className='expertise'>Psychologist Consults</h2>
+                                            <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div class="grow bozhover">
+                                    <div class="grow bozhover">
                                         <div>
-                                           <img src={require('../../assets/images/shape/s3.png')} alt="" />
-                                           <h2 className='expertise'>Doctor Consults</h2>
+                                            <img src={require('../../assets/images/shape/s5.png')} alt="" />
+                                            <h2 className='expertise'>Dental Consults</h2>
+                                            <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!-- Team Block One --> */}
+                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="grow bozhover">
+                                        <div>
+                                            <img src={require('../../assets/images/shape/s7.png')} alt="" />
+                                            <h2 className='expertise'>Dermatology</h2>
+                                            <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!-- Team Block One --> */}
+                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="grow bozhover">
+                                        <div>
+                                            <img src={require('../../assets/images/shape/s8.png')} alt="" />
+                                            <h2 className='expertise'>Ophthalmology</h2>
                                             <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
                                         </div>
                                     </div>
@@ -214,9 +265,9 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                           <img src={require('../../assets/images/shape/s4.png')} alt="" />
-                                           <h2 className='expertise'>Psychologist Consults</h2>
- <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
+                                            <img src={require('../../assets/images/shape/s9.png')} alt="" />
+                                            <h2 className='expertise'>Physiotherapy</h2>
+                                            <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
                                         </div>
                                     </div>
                                 </div>
@@ -224,9 +275,9 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                           <img src={require('../../assets/images/shape/s5.png')} alt="" />
-                                           <h2 className='expertise'>Dental Consults</h2>
- <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
+                                            <img src={require('../../assets/images/shape/s10.png')} alt="" />
+                                            <h2 className='expertise'>Elderly Care</h2>
+                                            <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
                                         </div>
                                     </div>
                                 </div>
@@ -234,9 +285,9 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                           <img src={require('../../assets/images/shape/s7.png')} alt="" />
-                                           <h2 className='expertise'>Dermatology</h2>
- <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
+                                            <img src={require('../../assets/images/shape/s11.png')} alt="" />
+                                            <h2 className='expertise'>Lab Tests</h2>
+                                            <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
                                         </div>
                                     </div>
                                 </div>
@@ -244,51 +295,9 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                           <img src={require('../../assets/images/shape/s8.png')} alt="" />
-                                           <h2 className='expertise'>Ophthalmology</h2>
- <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
-                                           <img src={require('../../assets/images/shape/s9.png')} alt="" />
-                                           <h2 className='expertise'>Physiotherapy</h2>
- <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
-                                           <img src={require('../../assets/images/shape/s10.png')} alt="" />
-                                           <h2 className='expertise'>Elderly Care</h2>
- <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
-                                           <img src={require('../../assets/images/shape/s11.png')} alt="" />
-                                           <h2 className='expertise'>Lab Tests</h2>
- <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
-                                           <img src={require('../../assets/images/shape/s12.png')} alt="" />
-                                           <h2 className='expertise'>Diet and Nutrition</h2>
- <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
+                                            <img src={require('../../assets/images/shape/s12.png')} alt="" />
+                                            <h2 className='expertise'>Diet and Nutrition</h2>
+                                            <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
                                         </div>
                                     </div>
                                 </div>
@@ -298,9 +307,9 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                           <img src={require('../../assets/images/shape/s13.png')} alt="" />
-                                           <h2 className='expertise'>Yoga Assessment and Coaching</h2>
- <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
+                                            <img src={require('../../assets/images/shape/s13.png')} alt="" />
+                                            <h2 className='expertise'>Yoga Assessment and Coaching</h2>
+                                            <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
                                         </div>
                                     </div>
                                 </div>
@@ -308,9 +317,9 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                           <img src={require('../../assets/images/shape/s14.png')} alt="" />
-                                           <h2 className='expertise'>Fitness Assessment and Coaching</h2>
- <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
+                                            <img src={require('../../assets/images/shape/s14.png')} alt="" />
+                                            <h2 className='expertise'>Fitness Assessment and Coaching</h2>
+                                            <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
                                         </div>
                                     </div>
                                 </div>
@@ -318,8 +327,8 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                           <img src={require('../../assets/images/shape/s15.png')} alt="" />
-                                           <h2 className='expertise'>Pharmacy</h2>
+                                            <img src={require('../../assets/images/shape/s15.png')} alt="" />
+                                            <h2 className='expertise'>Pharmacy</h2>
                                             <span>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</span>
                                         </div>
                                     </div>
@@ -328,9 +337,9 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                           <img src={require('../../assets/images/shape/s16.png')} alt="" />
-                                           <h2 className='expertise'>Nursing At Home</h2>
- <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
+                                            <img src={require('../../assets/images/shape/s16.png')} alt="" />
+                                            <h2 className='expertise'>Nursing At Home</h2>
+                                            <p>Annual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health PlansAnnual Preventive Health Plans</p>
                                         </div>
                                     </div>
                                 </div>
@@ -391,7 +400,7 @@ class Index extends Component {
                         {/* <div class="button-txt">
                             <Button class="btn"></Button>
                         </div> */}
-                    
+
                     </div>
                 </section>
                 {/* <!-- Contact Section --> */}
@@ -410,7 +419,7 @@ class Index extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/contact.png')} alt="" />
+                                        <img class="reachout" src={require('../../assets/images/shape/contact.png')} alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -435,7 +444,13 @@ class Index extends Component {
                                                 <div class="col-md-12 form-group">
                                                     <textarea name="message" id="message" placeholder="Message"></textarea>
                                                 </div>
-
+                                                <div class="form-check">
+                                                    <input class="form-check-input"
+                                                        type="checkbox" id="checkbox1" name="option1" value="good" />
+                                                    <label class="form-check-label">
+                                                        I agree that Bridge Health may contact me at the email address or phone number above.
+                                                    </label>
+                                                </div>
                                                 <div class="col-md-12 form-group">
                                                     <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Submit</span></button>
                                                 </div>

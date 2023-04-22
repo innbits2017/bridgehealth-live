@@ -64,9 +64,11 @@ class Testimonial1 extends Component {
                 <section class="testimonial-section testback">
                 <div class="auto-container">
                         <div class="sec-title text-center">
-                            <h2>Confused about your health checks?<br></br>
+                            <h2>
+                                {/* Confused about your health checks?<br></br> */}
                                 <span className='headeingcolorblack'> Meet The </span> <span className='headeingcolorblue'>Bridgers</span>
                             </h2>
+                            <p>Build a Healthy Future With the Help of Our Specialists</p>
                         </div>
 
                     </div>

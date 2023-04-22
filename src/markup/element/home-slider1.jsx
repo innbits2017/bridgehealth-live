@@ -6,12 +6,12 @@ import '../../assets/css/slider.css';
 
 const slides = [
     {
-        title: 'Lets help you #BRIDGETheGAP',
-        description: 'personalised and holistic preventive health plans for you and your loved ones',
+        title: 'Lets help you #BridgeTheGap',
+        description: 'Personalised and holistic preventive health plans for you and your loved ones',
         // btnLearn: "-- Learn More --",
         // finan: "Finan",
         // dox: "dox",
-        btnService: "Get Started",
+        btnService: "GET STARTED",
         image: require('./../../assets/images/main-slider/1095035413-preview.gif'),
     },
     // {

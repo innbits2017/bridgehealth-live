@@ -63,7 +63,8 @@ class Header extends Component {
 
 
                                     <div class="logo-box">
-                                        <div class="logo"><Link to={'/#'}><img src={require('../../assets/images/logo.png')} alt="" /></Link></div>
+                                        <div class="logo"><Link to={'/#'}>
+                                            <img src={require('../../assets/images/logo.png')} alt="" /></Link></div>
                                     </div>
                                 </div>
 
@@ -75,8 +76,8 @@ class Header extends Component {
                                         </form>
                                     </div> */}
                                     <div class="contact-info">
-                              
-    {/* <nav>
+
+                                        {/* <nav>
         <ul>
         
             <li>
@@ -126,22 +127,31 @@ class Header extends Component {
                                     </div>
                                 </div>
 
-                              
+
                             </div>
                         </div>
                     </div>
 
                     <div class="top-right flotright">
-                                    <a href={'/#'}><span class="btn-title">Home</span></a>
-                                    <a href={'/#'}><span class="btn-title">About Us</span></a>
-                                    <a href={'/#'}><span class="btn-title">Home</span></a>
-                                    <a href={'/#'}><span class="btn-title">About Us</span></a>
-                                    <a href={'/#'}><span class="btn-title">Home</span></a>
-                                    <a href={'/#'}><span class="btn-title">About Us</span></a>
+                        <a href={'/#'}><span class="btn-title">
+                        <img src={require('../../assets/images/Group3.png')} alt="" />
+                            </span></a>
+                        <a href={'/#'}><span class="btn-title">
+                        <img src={require('../../assets/images/Group.png')} alt="" />
+                            {/* About Us</span></a> */}
+                            </span></a>
+                        <a href={'/#'}><span class="btn-title">
+                        <img src={require('../../assets/images/Group1.png')} alt="" />
+                            </span></a>
+                        <a href={'/#'}><span class="btn-title">
+                        <img src={require('../../assets/images/Group2.png')} alt="" />
+                            </span></a>
+                        {/* <a href={'/#'}><span class="btn-title">Home</span></a>
+                        <a href={'/#'}><span class="btn-title">About Us</span></a> */}
 
 
-                                </div> 
-                                
+                    </div>
+
 
                 </header>
 
