@@ -5,6 +5,7 @@ import Footer from '../layout/footer';
 import Testimonial1 from '../element/testimonial1';
 import HomeSlider1 from './../element/home-slider1';
 import { Button } from 'react-bootstrap';
+import Testimonial2 from '../element/testimonial2';
 const teambg1 = require('./../../assets/images/background/image-3.jpg');
 const newsbg1 = require('./../../assets/images/background/image-4.jpg');
 const wellcomebg1 = require('./../../assets/images/resource/image-1.jpg');
@@ -350,6 +351,7 @@ class Index extends Component {
 
 
                 {/* <!-- Testimonial Section --> */}
+                <Testimonial2 />
                 <Testimonial1 />
 
                 {/* <!-- News Section --> */}
@@ -403,47 +405,7 @@ class Index extends Component {
 
                     </div>
                 </section>
-                <div class="container">
-            <div id="demo" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="carousel-caption">
-                      <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code,
-                          I don't know what will.This was the very best explanation of frameworks for brginners 
-                          that I've ever seen.
-                      </p>
-                      <img src="https://i.imgur.com/lE89Aey.jpg"/>
-                      <div id="image-caption">Nick Doe</div>
-                    </div>   
-                  </div>
-                  <div class="carousel-item">
-                    <div class="carousel-caption">
-                      <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code,
-                        I don't know what will.This was the very best explanation of frameworks for brginners 
-                        that I've ever seen.</p>
-                        <img src="https://i.imgur.com/QptVdsp.jpg" class="img-fluid"/>
-                        <div id="image-caption">Cromption Greves</div>
-                    </div>   
-                  </div>
-                  <div class="carousel-item">
-                    <div class="carousel-caption">
-                      <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code,
-                        I don't know what will.This was the very best explanation of frameworks for brginners 
-                        that I've ever seen.</p>
-                        <img src="https://i.imgur.com/jQWThIn.jpg" class="img-fluid"/>
-                        <div id="image-caption">Harry Mon</div>
-                    </div>   
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                  <i class='fas fa-arrow-left'></i>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                  <i class='fas fa-arrow-right'></i>
-                </a>
-              </div>
-              
-        </div>
+                
                 {/* <!-- Contact Section --> */}
                 <section class="contact-section">
                     <section class="">

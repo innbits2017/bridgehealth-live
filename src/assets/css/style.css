@@ -2790,7 +2790,7 @@ font-weight: 700;
 }
 
 .sec-title.light h2 {
-	color: #fff !important;
+	color: #000 !important;
 }
 
 .sec-title.text-right .sub-title:before {
@@ -2812,9 +2812,12 @@ font-weight: 700;
 ***/
 
 .main-footer {
-	position: relative;
+    position: relative;
     color: #c4c5c7;
+    margin-left: 15px;
     border-top: 2px solid #0076A8;
+    margin-right: 15px;
+
 }
 
 .main-footer .widgets-section {
@@ -3289,14 +3292,32 @@ img.lazy-image.loaded {
 	
 }
 .imgstyle{
-	margin-left: 30%;
+	margin-left: 0%;
 }
 .imgstyle1{
 	margin-left: 23%;
 	margin-top: 20px;
 	width: 45%;
 }
-
+.testthumb
+{
+	width: 40px;
+    border-radius: 15px;
+    height: 40px;
+    margin-left: 120px;
+}
+.testtitle
+{
+	margin-left: -122px;
+    margin-bottom: 20px;
+}
+.textpa
+{
+	text-align: center;
+    margin-left: -114px !important;
+    margin-top: 12px;
+    font-weight: 600;
+}
 .about-section .image-wrapper .image-one:hover img {
 	-webkit-transform: scale(1.2);
 	-ms-transform    : scale(1.2);
@@ -4370,7 +4391,7 @@ img.lazy-image.loaded {
 .contact-form .form-group input[type="submit"],
 .contact-form .form-group button {
 	display   : inline-block;
-	margin-top: 20px;
+	margin-top: 5px;
 }
 
 .contact-form ::-webkit-input-placeholder {
@@ -10105,6 +10126,9 @@ h6,
 
 
 }
+.slick-slide img {
+    display: inherit !important;
+}
 #root > div > div > section.testimonial-section.testback > div:nth-child(2) > div > div > div > div > div > div.slick-slide.slick-active.slick-current > div > div
 {
 	background: #D3E3B7;
@@ -10391,4 +10415,9 @@ i{
 .carousel-control-prev,.carousel-control-next{
     transition: none;
     opacity: unset;
+}
+.testimonialpadding
+{
+	/* margin-top: -150px; */
+    margin-bottom: 100px;
 }
