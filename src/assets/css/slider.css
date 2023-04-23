@@ -238,7 +238,7 @@
 	font-weight: 300;
 }
 
-.slider-content .inner .text {
+/* .slider-content .inner .text {
 	display: block;
     font-size: 30px;
     line-height: 1.6em;
@@ -248,8 +248,17 @@
 	-ms-transform: translateY(-120px);
 	transform: translateY(-120px);
 	padding-right: 700px;
+} */
+.slider-content .inner .text {
+    display: block;
+    font-size: 30px;
+    line-height: 1.2em;
+    color: #ffffff;
+    font-weight: 400;
+    transform: translateY(-120px);
+    padding-right: 500px;
+    padding-top: 25px;
 }
-
 
 
 .slider-content section {

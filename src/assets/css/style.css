@@ -101,6 +101,7 @@ p,
 	line-height: 1.7em;
 	font-weight: 400;
 	margin     : 0 0 15px;
+	margin-left: 20px;
 }
 
 ::-webkit-input-placeholder {
@@ -129,6 +130,10 @@ p,
 	max-width: 1200px;
 	padding  : 0px 15px;
 	margin   : 0 auto;
+	
+}
+.auto-container3{
+	top: -100px;
 }
 .auto-container1 {
 	position : static;
@@ -138,6 +143,7 @@ p,
 	color: #fff;
 	font-size: 20px;
 }
+
 
 ul,
 li {
@@ -155,6 +161,7 @@ figure {
 	-webkit-transition: all 0.3s ease;
 	-o-transition     : all 0.3s ease;
 	transition        : all 0.3s ease;
+	
 }
 
 .theme-btn i {
@@ -204,9 +211,24 @@ figure {
     display: block;
 	
     z-index: 1;
-	font-size: 16px;
+	font-size: 25px;
     font-weight: 400;
-    padding: 5px 34px;
+    padding: 10px 40px;
+    border-radius: 30px;
+	transition        : all 0.3s ease;
+	-moz-transition   : all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-ms-transition    : all 0.3s ease;
+	-o-transition     : all 0.3s ease;
+}
+.btn-style-one .btn-title1 {
+    position: relative;
+    display: block;
+	
+    z-index: 1;
+	font-size: 25px;
+    font-weight: 400;
+    padding: 10px 40px 10px;
     border-radius: 30px;
 	transition        : all 0.3s ease;
 	-moz-transition   : all 0.3s ease;
@@ -850,6 +872,12 @@ img {
 	-webkit-transform: scale(1);
 	-ms-transform    : scale(1);
 	transform        : scale(1);
+}
+.logo-box{
+	background: linear-gradient(to top, #dbdbdb00 0%, #ffffffa3 100%);
+    width: 200px;
+    height: 150px;
+    padding: 20px;
 }
 
 .header-top-two .top-right .social-links li a span {
@@ -2777,6 +2805,10 @@ font-weight: 700;
 {
 color: #000;
 font-weight: 700;
+
+}
+.header1{
+	margin-top: 500px;
 }
 
 .sec-title .text {
@@ -2786,8 +2818,11 @@ font-weight: 700;
 	font-size  : 22px;
 	color      : #25283a;
 	margin     : 0;
+	margin-left: 40px;
 }
-
+.heading{
+	font-weight: 500 !important;
+}
 .sec-title .link-box {
 	position   : relative;
 	display    : block;
@@ -3287,17 +3322,29 @@ img.lazy-image.loaded {
 	position: relative;
 	overflow: hidden;
 	
+	
+}
+.image-two{
+	position: relative !important;
+	top: -60px;
+}
+.heading3{
+	width: 700px !important;
+	text-align: center;
+	margin-left: 21%;
+	font-weight: 500;
 }
 
 .about-section .image-wrapper .image-one img {
-	position          : relative;
+	position          : relative !important;
 	-webkit-transition: 1s;
 	-o-transition     : 1s;
 	transition        : 1s;
 	
+	
 }
 .imgstyle{
-	margin-left: 0%;
+	margin-left: 200px;
 }
 .imgstyle1{
 	margin-left: 23%;
@@ -10154,6 +10201,7 @@ border-radius: 26.5756px;
     border-radius: 29.1807px !important;
     color: #000;
     font-weight: 800;
+	
 }
 .expertiseback
 {	background-image: url(../images/shape/Group237655.png);
@@ -10259,6 +10307,15 @@ a:not([href]):not([tabindex]) {
     color: #fff;
     line-height: 35px;
 	margin-top: 15px;
+	margin-bottom: 15px;
+	
+}
+.flotright1 a
+{
+	padding-left: 1300px;
+    color: #fff;
+    line-height: 35px;
+	margin-top: 100px;
 	margin-bottom: 15px;
 	
 }

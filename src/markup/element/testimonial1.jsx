@@ -68,7 +68,7 @@ class Testimonial1 extends Component {
                                 {/* Confused about your health checks?<br></br> */}
                                 <span className='headeingcolorblack'> Meet The </span> <span className='headeingcolorblue'>Bridgers</span>
                             </h2>
-                            <p>Build a Healthy Future With the Help of Our Specialists</p>
+                            <h5 className='heading3'>Build a Healthy Future With the Help of Our Specialists</h5>
                         </div>
 
                     </div>

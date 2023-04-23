@@ -34,7 +34,7 @@ class Index extends Component {
                     <div class="auto-container">
                         <div class="sec-title text-center">
                             <h2 className='fontwidth'>Confused about your health checks?<br></br>
-                                <span className='headeingcolorblack'> Scan our</span>
+                                <span className='headeingcolorblack'> Scan our </span>
                                 <span className='headeingcolorblue'>BH Smart Guide!</span>
                             </h2>
                         </div>
@@ -48,7 +48,8 @@ class Index extends Component {
                                 <div class="col-lg-6">
                                     <div class="content-box">
                                         <div class="sec-title">
-                                            <div class="text">Bridge Health’s Smart Guide is a smarter way to understand your current health status and organize tests to ensure that you have the right health check customized as per your needs
+                                            <div class="text">
+                                            Developed by our in-house clinical expert's BH Smart Guide is a smarter way to understand what are the right diagnostic tests for you based on your current health status, family history and lifestyle choices.
                                             </div>
                                         </div>
                                         <div class="image-one">
@@ -81,10 +82,10 @@ class Index extends Component {
                 <section class="team-section">
                     <div class="auto-container">
                         <div class="sec-title text-center">
-                            <h2> <span className='headeingcolorblack'>  Annual Preventive</span>
-                                <span className='headeingcolorblue'>Health Plans</span></h2>
-                            <h3>Membership-based integrated programs covering various aspects
-                            </h3>
+                            <h2> <span className=' headeingcolorblue'> Annual Preventive </span>
+                                <span className='headeingcolorblack'>Health Plans</span></h2>
+                            <h5 className='heading'>Membership-based integrated programs covering various aspects
+                            </h5>
                         </div>
 
                     </div>
@@ -124,7 +125,7 @@ class Index extends Component {
                 <section class="team-section">
                     <div class="auto-container">
                         <div class="sec-title text-center">
-                            <h2>
+                            <h2 className='header1'>
                                 <span className='headeingcolorblack'> PREDICT.</span> <span className='headeingcolorblue'>PREVENT.</span>  <span className='headeingcolorblack'>  DELAY.</span>
                             </h2>
                         </div>
@@ -138,9 +139,9 @@ class Index extends Component {
 
                                 <div class="col-lg-6">
                                     <div class="image-wrapper">
-                                        <div class="image-one">
-                                            {/* <img src={require('../../assets/images/shape/video1.MP4')} alt="" /> */}
-                                            <img src={require('../../assets/images/shape/video2.gif')} alt="" />
+                                        <div class="image-one image-two">
+                                            <img  src={require('../../assets/images/shape/delay.png')} alt="" /> 
+                                            {/* <img src={require('../../assets/images/shape/video2.gif')} alt="" /> */}
                                         </div>
                               
                                     </div>
@@ -148,8 +149,8 @@ class Index extends Component {
                                 <div class="col-lg-6">
                                     <div class="content-box">
                                         <div class="sec-title">
-                                            <div class="text">Predict the onset of
-                                                <span className='headeingcolorblack'>hidden illnesses</span> and health conditions, prevent them by undergoing tests and check-ups, and delay the onset of chronic illness.
+                                            <div class="text" style={{marginRight: 40 + 'px'}}>Predict the onset of
+                                                <span className='headeingcolorblack'> hidden illnesses</span> and health conditions, prevent them by undergoing tests and check-ups, and delay the onset of chronic illness.
                                             </div>
                                         </div>
                                         <ul className='listicon'>
@@ -173,8 +174,8 @@ class Index extends Component {
                     <div class="auto-container">
                         <div class="sec-title text-center">
                             <h2> <span className='headeingcolorblack'>  Explore </span> <span className='headeingcolorblue'>Our Expertise</span></h2>
-                            <h3>From mental health and wellness to nutrition management, our services help <span className='headeingcolorblue'> #BridgeTheGap</span> between you and healthy living
-                            </h3>
+                            <h5 className='heading3'>From mental health and wellness to nutrition management, our services help <span className='headeingcolorblue'> #BridgeTheGap</span> between you and healthy living
+                            </h5>
                         </div>
 
                     </div>
@@ -356,7 +357,7 @@ class Index extends Component {
                 <Testimonial1 />
 
                 {/* <!-- News Section --> */}
-                <section class="">
+                <section class="auto-container3">
                     <div class="auto-container">
 
                         <div class="row">
@@ -383,7 +384,8 @@ class Index extends Component {
                                         <div class="text">Carbohydrates have been villainized in recent years as the culprit for weight gain and even chronic diseases</div>
                                     </div>
                                 </div>
-                                <button class="theme-btn btn-style-one btnblog" type="submit" name="submit-form"><span class="btn-title btnblog">READ ALL BLOGS</span></button>
+                                <button class="theme-btn btn-style-one btnblog" type="submit" name="submit-form">
+                                    <span class="btn-title btnblog">READ ALL BLOGS</span></button>
 
                             </div>
                             {/* <!-- News Block One --> */}
