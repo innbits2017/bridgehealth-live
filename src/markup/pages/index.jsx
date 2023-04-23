@@ -384,7 +384,7 @@ class Index extends Component {
                                         <div class="text">Carbohydrates have been villainized in recent years as the culprit for weight gain and even chronic diseases</div>
                                     </div>
                                 </div>
-                                <button class="theme-btn btn-style-one btnblog" type="submit" name="submit-form">
+                                <button class="theme-btn btn-style-one btnblog" type="submit" name="submit-form" style={{marginLeft: 16 + '%'}}>
                                     <span class="btn-title btnblog">READ ALL BLOGS</span></button>
 
                             </div>
