@@ -52,7 +52,7 @@ class b2cmembership extends Component {
         {/* <!-- About --> */}
 
 
-        <div class="container-fulid">
+        <div class="container-fulid margintop100">
           <div class="auto-container">
             <div class="sec-title text-center">
               <h2>

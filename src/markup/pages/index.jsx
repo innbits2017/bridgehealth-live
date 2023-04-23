@@ -33,7 +33,7 @@ class Index extends Component {
                 <section class="team-section">
                     <div class="auto-container">
                         <div class="sec-title text-center">
-                            <h2>Confused about your health checks?<br></br>
+                            <h2 className='fontwidth'>Confused about your health checks?<br></br>
                                 <span className='headeingcolorblack'> Scan our</span>
                                 <span className='headeingcolorblue'>BH Smart Guide!</span>
                             </h2>
@@ -107,7 +107,7 @@ class Index extends Component {
                                         <span>
                                             <img src={require('../../assets/images/shape/thumb.png')} alt="" />
                                         </span>
-                                        <span className='textpara'>Personal Membership Program</span>
+                                        <span className='textpara'>Personal  Membership Program</span>
                                     </div>
                                     <div className='box marginTop40'>
                                         <span className='textpara'>Corporate  Membership Program</span>
