@@ -140,8 +140,9 @@ class Index extends Component {
                                     <div class="image-wrapper">
                                         <div class="image-one">
                                             {/* <img src={require('../../assets/images/shape/video1.MP4')} alt="" /> */}
-                                            <img src={require('../../assets/images/shape/delay.png')} alt="" />
+                                            <img src={require('../../assets/images/shape/video2.gif')} alt="" />
                                         </div>
+                              
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
