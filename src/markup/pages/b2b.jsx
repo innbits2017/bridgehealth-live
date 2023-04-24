@@ -31,9 +31,10 @@ class b2b extends Component {
                                     <div class="content-box">
 
                                         <div class="sec-title text-center textleft">
-                                            <h2 className='textleft'> <span className='headeingcolorblack'>     Redefining the Meaning of </span><br></br> <span className='headeingcolorblue'>Employee-Centric Care</span></h2>
-                                            <h3 className='textleft marginTop40'>Variety of benefits for a healthier and happier workforce
-                                            </h3>
+                                            <h3 className='textleft'> <span className='headeingcolorblack'>Redefining the Meaning of </span><br></br>
+                                                <span className='headeingcolorblue'>Employee-Centric Care</span></h3>
+                                            <h4 className='textleft marginTop40'>Variety of benefits for a healthier <br></br>and happier workforce
+                                            </h4>
                                         </div>
                                         <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">SAY YES!</span></button>
 
@@ -48,9 +49,12 @@ class b2b extends Component {
 
                 <div class="auto-container">
                     <div class="sec-title">
-                        <h2> <span className='headeingcolorblack'>THE CORPORATE </span> <span className='headeingcolorblue'> WELLNESS MAP</span></h2>
-                        <h3 className='textleft marginTop40'>Variety of benefits for a healthier and happier workforce
-                        </h3>
+                        <h2> <span className='headeingcolorblack'>THE CORPORATE </span>
+                            <span className='headeingcolorblue'> WELLNESS </span>
+                            <span className='headeingcolorblack'>MAP</span>
+                        </h2>
+                        <h4 className='textleft marginTop40'>Where are you on the well being journey?
+                        </h4>
                     </div>
 
                 </div>
@@ -68,21 +72,22 @@ class b2b extends Component {
                                 to take care of their employees
                                 </div> */}
 
-<section class="container-fluid b2bback">
+                <section class="container-fluid b2bback">
 
-                <div className='container '>
-                    <div class="sec-title text-center">
-                        <h3 className=''> <span className='headeingcolorblue'>     Bridge Health </span>makes it possible for  <span className='headeingcolorblue'> employers </span><br></br>to keep a check on their  <span className='headeingcolorblue'> employees’ health metrics </span></h3>
+                    <div className='container '>
+                        <div class="sec-title text-center">
+                            <h3 className=''> <span className='headeingcolorblue'>     Bridge Health </span>makes it possible for  <span className='headeingcolorblue'> Employers </span><br></br>to keep a check on their  <span className='headeingcolorblue'> Employees’ Health Metrics </span></h3>
 
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="image-wrapper">
-                            <div class="image-one">
-                                <img src={require('../../assets/images/shape/companey.png')} alt="" className='imgwidth' />
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="image-wrapper">
+                                <div class="image-one">
+                                <img src={require('../../assets/images/shape/Sequence1.gif')} alt="" className='imgwidth' />
+                                    {/* <img src={require('../../assets/images/shape/companey.png')} alt="" className='imgwidth' /> */}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 </section>
                 {/* <!-- Contact Section --> */}
                 <section class="contact-section">
@@ -116,6 +121,13 @@ class b2b extends Component {
                                                     <input type="text" name="username" id="name" placeholder="Company Name" required="" />
                                                 </div>  <div class="col-md-12 form-group">
                                                     <input type="text" name="username" id="name" placeholder="Team Size" required="" />
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input"
+                                                        type="checkbox" id="checkbox1" name="option1" value="good" />
+                                                    <label class="form-check-label heading">
+                                                        I agree that Bridge Health may contact me at the email address or phone number above.
+                                                    </label>
                                                 </div>
 
                                                 <div class="col-md-12 form-group">

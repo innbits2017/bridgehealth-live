@@ -2807,9 +2807,9 @@ color: #000;
 font-weight: 700;
 
 }
-.header1{
+/* .header1{
 	margin-top: 500px;
-}
+} */
 
 .sec-title .text {
 	position   : relative;
@@ -9690,17 +9690,32 @@ border-radius: 22.9879px;
 .marginTop40
 {
 	margin-top: 20px;
+	font-weight: 500 !important;
 }
 .listicon
 {
 margin-top: -50px;}
 ul, li {
-    list-style: disc;
+    list-style: none;
     padding: 4px;
     margin: 0px;
     font-size: 20px;
+	
 }
-
+.listicon1{
+	width: 15px;
+	height: 15px;
+	margin-right: 10px;
+}
+.side-img{
+	height: 150px;
+	width: 150px;
+}
+.side-img1{
+	margin-left: 350px;
+	height: 150px;
+	width: 150px;
+}
 .column {
 	margin: 15px 15px 0;
 	padding: 0;
@@ -10021,6 +10036,7 @@ figure:hover+span {
 .textleft
 {
 	text-align: left;
+
 }
 .paadintop
 {

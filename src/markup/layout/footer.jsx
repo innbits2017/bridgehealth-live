@@ -14,7 +14,11 @@ class Footer extends Component {
 
                                 <div class="col-lg-2">
                                     <div class="footer-widget logo-widget">
+                                        <div class="side-img">
+                                            <img src={require('../../assets/images/shape/Rectangle 522.png')} alt="" />
+                                        </div>
                                         <div class="widget-content">
+
                                             <div class="footer-logo">
                                                 <Link to="index.html">
                                                     <img class="" src={require('../../assets/images/logo.png')} alt="" /></Link>
@@ -22,7 +26,7 @@ class Footer extends Component {
                                         </div>
                                     </div>
                                 </div>
-                          
+
 
                                 <div class="col-lg-6">
                                     <div class="footer-widget links-widget">
@@ -61,7 +65,7 @@ class Footer extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                </div> 
+                                </div>
 
 
                                 <div class="col-lg-4">
@@ -77,9 +81,9 @@ class Footer extends Component {
                                                             <label for="email">Get in touch with us</label>
                                                             <input type="text" name="name" id="name" placeholder="Name*" required="" />
                                                         </div>
-                                                <div class="col-md-12 form-group">
-                                                <input type="email" name="email" id="email" placeholder="Email ID" required="" />
-                                                </div>
+                                                        <div class="col-md-12 form-group">
+                                                            <input type="email" name="email" id="email" placeholder="Email ID" required="" />
+                                                        </div>
                                                         <div class="col-md-12 form-group">
                                                             <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Submit</span></button>
                                                         </div>
@@ -94,6 +98,9 @@ class Footer extends Component {
                                                 <li><Link to={'/#'}><span class="fab fa-vimeo-v"></span></Link></li>
                                                 <li><Link to={'/#'}><span class="fab fa-instagram"></span></Link></li>
                                             </ul>
+                                            <div  class="side-img1">
+                                            <img src={require('../../assets/images/shape/Rectangle 540.png')} alt="" />
+                                            </div>
                                         </div>
 
                                     </div>

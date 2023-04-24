@@ -126,7 +126,9 @@ class Index extends Component {
                     <div class="auto-container">
                         <div class="sec-title text-center">
                             <h2 className='header1'>
-                                <span className='headeingcolorblack'> PREDICT.</span> <span className='headeingcolorblue'>PREVENT.</span>  <span className='headeingcolorblack'>  DELAY.</span>
+                                <span className='headeingcolorblack'> PREDICT.</span> 
+                                <span className='headeingcolorblue'>PREVENT.</span> 
+                                 <span className='headeingcolorblack'>  DELAY.</span>
                             </h2>
                         </div>
 
@@ -154,9 +156,18 @@ class Index extends Component {
                                             </div>
                                         </div>
                                         <ul className='listicon'>
-                                            <li> Get a detailed assessment report</li>
-                                            <li>Health score built on 7 parameters</li>
-                                            <li>Pre and Post score comparisons</li>
+                                            <li>
+                                            <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" /> 
+                                             Get a detailed assessment report
+                                            </li>
+                                            <li>
+                                            <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" />
+                                                Health score built on 7 parameters
+                                            </li>
+                                            <li>
+                                            <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" />
+                                                Pre and Post score comparisons
+                                            </li>
                                         </ul>
                                         <div class="btn-box">
                                             <a class="theme-btn btn-style-one" href="/demo/fianandox/">
@@ -453,7 +464,7 @@ class Index extends Component {
                                                 <div class="form-check">
                                                     <input class="form-check-input"
                                                         type="checkbox" id="checkbox1" name="option1" value="good" />
-                                                    <label class="form-check-label">
+                                                    <label class="form-check-label heading">
                                                         I agree that Bridge Health may contact me at the email address or phone number above.
                                                     </label>
                                                 </div>
