@@ -15,6 +15,7 @@ class b2b extends Component {
         return (
             <>
                 <Header />
+                
                 <section class="team-section padding">
                     {/* About Section Two */}
                     <section class="container">
@@ -46,6 +47,43 @@ class b2b extends Component {
                         </div>
                     </section>
                 </section>
+
+                {/* <section class="contact-section">
+                   
+                    <div class="auto-container">
+                        <div class="row">
+
+                            <div class="col-lg-4" style={{marginTop: 10 + 'rem'}}>
+                                <div class="contact-form-area">
+
+                                    
+                                    <div class="contact-form">
+                                        <p>We help you figure out 
+                                            <span className='headeingcolorblue'> where you are on your wellbeing journey</span></p>
+                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
+                                            <div class="row clearfix">
+                                                
+                                                
+
+                                                <div class="col-md-12 form-group">
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Get Quote</span></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="image-wrapper">
+                                    <div class="image-one">
+                                        <img src={require('../../assets/images/shape/b2b1.png')} alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> */}
+
 
                 <div class="auto-container">
                     <div class="sec-title">
@@ -82,7 +120,7 @@ class b2b extends Component {
                         <div class="row align-items-center">
                             <div class="image-wrapper">
                                 <div class="image-one">
-                                <img src={require('../../assets/images/shape/Sequence1.gif')} alt="" className='imgwidth' />
+                                    <img src={require('../../assets/images/shape/Sequence1.gif')} alt="" className='imgwidth' />
                                     {/* <img src={require('../../assets/images/shape/companey.png')} alt="" className='imgwidth' /> */}
                                 </div>
                             </div>
@@ -98,7 +136,8 @@ class b2b extends Component {
                                 </h2>
                             </div>
 
-                        </div></section>
+                        </div>
+                    </section>
                     <div class="auto-container">
                         <div class="row">
 

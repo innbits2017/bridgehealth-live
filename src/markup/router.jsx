@@ -11,6 +11,7 @@ import b2cmembership from './pages/b2cmembership'
 import ourservice from './pages/ourservice'
 import BlogDestails from './pages/blog-details';
 import blog_Designv2 from './pages/blog-Designv2';
+import b2c_page from './pages/b2c-page';
 
 class Router extends Component {
     render() {
@@ -21,7 +22,7 @@ class Router extends Component {
 
                     <Switch>
                         <Route path='/' exact component={Index} />
-                       
+                        <Route path='/b2c-page' exact component={b2c_page} />
                         <Route path='/blog' component={blog} />
                         <Route path='/leadership' component={leadership} />
                         <Route path='/services-standalone' component={Services} />

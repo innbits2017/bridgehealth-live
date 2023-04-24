@@ -6,6 +6,7 @@ import Footer from '../layout/footer'
 import Brand1 from '../element/brand1'
 import VideoPopup1 from '../element/video-popup1';
 import ServiceFilter1 from '../element/service-filter1'
+import b2c_page from '../pages/b2c-page'
 
 const aboutbg = require('./../../assets/images/background/image-11.jpg');
 
@@ -27,7 +28,8 @@ class b2cmembership extends Component {
                   <div class="content-box">
 
                     <div class="sec-title text-center textleft">
-                      <h2 className='textleft'> <span className='headeingcolorblack'>    Your Good Health </span><br></br> <span className='headeingcolorblue'>is Our Plan</span></h2>
+                      <h2 className='textleft'>
+                        <span className='headeingcolorblack'> Your  </span> <span className='headeingcolorblue'>Good Health </span> <br></br><span className='headeingcolorblack'>is Our Plan</span></h2>
                       <h3 className='textleft marginTop40'>Choose from a selection of<br></br> Annual Preventive Health plans
                       </h3>
                     </div>
@@ -47,8 +49,139 @@ class b2cmembership extends Component {
             </div>
           </section>
         </section>
+        {/* <b2c_page /> */}
+        <section>
+          <div class="image-five">
+          <img src={require('../../assets/images/shape/b2c2.png')} alt="" className='imgwidth' />
+          </div>
+          {/* <div>
+            <h3>The Gift of Preventive Healthcare made easy.</h3>
+          </div> */}
+        </section>
+
+        <section class="contact-section">
+
+          <div class="auto-container">
+            <div class="row">
+
+              <div class="col-lg-4">
+                <div class="contact-form-area">
+
+                  <div class="sec-title">
+                    <h2> <span className='headeingcolorblack'>Why </span>
+                      <span className='headeingcolorblue'> Annual </span>
+                      <span className='headeingcolorblack'>Health Plans?</span>
+                    </h2>
+                    <h4 className='textleft marginTop40'>A host of benefits await you as soon as you say <span className='headeingcolorblue'> YES</span>
+                    </h4>
+
+                  </div>
+
+                  <div class="content-box">
+
+                    <ul className='listicon'>
+                      <li>
+                        <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" />
+                        Reduce healthcare expenditure
+                      </li>
+                      <li>
+                        <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" />
+                        Discover any hidden health conditions
+                      </li>
+                      <li>
+                        <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" />
+                        Know your health score
+                      </li>
+                      <li>
+                        <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" />
+                        Implement lifestyle changes for better quality of life
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="contact-form">
+
+                    <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
+                      <div class="row clearfix">
+
+
+
+                        <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
+                          <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Say YES!</span></button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="image-wrapper">
+                  <div class="image-one">
+                    <img src={require('../../assets/images/shape/b2c.png')} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact-section">
+
+          <div class="auto-container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="image-wrapper">
+                  <div class="image-one">
+                    <img src={require('../../assets/images/shape/b2c1.png')} alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4" style={{ marginTop: 10 + 'rem' }}>
+                <div class="contact-form-area">
+
+                  <div class="sec-title">
+                    <h2> <span className='headeingcolorblack'>Why </span>
+                      <span className='headeingcolorblue'> Preventive</span>
+                      <span className='headeingcolorblack'> Health Care?</span>
+                    </h2>
+                    {/* <h4 className='textleft marginTop40'>A host of benefits await you as soon as you say <span className='headeingcolorblue'> YES</span>
+          </h4> */}
+                    <p>
+                      Preventive healthcare helps in predicting & preventing serious health conditions while prolonging your life. It also helps you in making proactive choices regarding your mental health and lifestyle to stay fit at all times
+                    </p>
+
+                  </div>
+
+
+                  <div class="contact-form">
+
+                    <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
+                      <div class="row clearfix">
+
+
+
+                        <div class="col-md-12 form-group" style={{ marginLeft: 15 + 'rem' }}>
+                          <button class="theme-btn btn-style-one" type="submit" name="submit-form">
+                            <span class="btn-title" >Say YES!</span></button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+
+
         {/* <!-- Video Section --> */}
-        <VideoPopup1 />
+        {/* <VideoPopup1 /> */}
+
+
         {/* <!-- About --> */}
 
 
@@ -56,9 +189,11 @@ class b2cmembership extends Component {
           <div class="auto-container">
             <div class="sec-title text-center">
               <h2>
-                <span className='headeingcolorblack'> Explore Our</span> 
-                <span className='headeingcolorblue'>Plans</span>
+                <span className='headeingcolorblack'>Annual Preventive Health</span>
+                <span className='headeingcolorblue'> Plans</span>
               </h2>
+              <p>Say
+                <span className='headeingcolorblue'> YES </span>to a plan just for you!</p>
             </div>
 
           </div>
@@ -70,7 +205,7 @@ class b2cmembership extends Component {
                 <p class="small text-white">No VAT &amp; No Hidden Costs</p> */}
 
               </div>
-              
+
               {/* <div class="card-body d-flex flex-column">
                 <ul class="list-unstyled text-right">
                   <li>Custom Design</li>
@@ -97,7 +232,7 @@ class b2cmembership extends Component {
                 </ul>
               </div> */}
             </div>
-          
+
 
             <div class="w-100 d-md-none mt-4"></div>
 
@@ -223,7 +358,7 @@ class b2cmembership extends Component {
               </div>
               <div class="card-body d-flex flex-column">
                 <ul class="list-unstyled text-center">
-                <li>117 Tests with ECG & U/S</li>
+                  <li>117 Tests with ECG & U/S</li>
                   <li>
                     <span class="d-lg-none">Custom Design </span>
                     <i class="fa fa-check" data-unicode="f00c"></i>
@@ -249,44 +384,44 @@ class b2cmembership extends Component {
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>
                     <span class="d-lg-none">Professional Logo Design </span>
-                    <i  data-unicode="f00c"></i></li>
+                    <i data-unicode="f00c"></i></li>
                   <li>
                     <span class="d-lg-none">Search Engine Friendly </span>
-                    <i  data-unicode="f00c"></i></li>
+                    <i data-unicode="f00c"></i></li>
                   <li>
                     <span class="d-lg-none">Search Engine Submission </span>
-                    <i  data-unicode="f00c"></i></li>
+                    <i data-unicode="f00c"></i></li>
                   <li>
                     <span class="d-lg-none">Website Contact Form </span>
-                    <i  data-unicode="f00c"></i></li>
+                    <i data-unicode="f00c"></i></li>
                   {/* <li>
                     <span class="d-lg-none">Built on Wordpress </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li> */}
 
-                    <li>ECG / Ultrasound Abdomen + Pelvis</li>
-                    <li>2</li>
-                    <li>Paid Consult</li>
-                    <li>10% Off</li>
-                    <li>4</li>
-                    <li>1</li>
+                  <li>ECG / Ultrasound Abdomen + Pelvis</li>
+                  <li>2</li>
+                  <li>Paid Consult</li>
+                  <li>10% Off</li>
+                  <li>4</li>
+                  <li>1</li>
                   <li>
                     <span class="d-lg-none">Search Engine Optimisation </span>
-                    <i  data-unicode="f00c"></i></li>
-                    <li>4</li>
-                    <li>1</li>
-                    <li>4</li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>4</li>
+                  <li>1</li>
+                  <li>4</li>
                   <li>
                     <span class="d-lg-none">Website Visitor Statistics </span>
-                    <i  data-unicode="f00c"></i></li>
+                    <i data-unicode="f00c"></i></li>
 
-                    <li>10% Off</li>
-                    <li>10% Off</li>
-                    <li>10% Off</li>
-                    <li>Paid</li>
+                  <li>10% Off</li>
+                  <li>10% Off</li>
+                  <li>10% Off</li>
+                  <li>Paid</li>
                   <li>
                     <span class="d-lg-none">Full Website Ownership </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                    <li>₹7999</li>
+                  <li>₹7999</li>
                   {/* <li>
                     <span class="d-lg-none">Google Maps Integration </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
@@ -359,7 +494,7 @@ class b2cmembership extends Component {
 
                   <li>
                     <span class="d-lg-none">Search Engine Submission </span>
-                    <i  data-unicode="f00c"></i></li>
+                    <i data-unicode="f00c"></i></li>
                   <li>
                     <span class="d-lg-none">Website Contact Form </span>
                     <i data-unicode="f00c"></i></li>
@@ -367,29 +502,29 @@ class b2cmembership extends Component {
                     <span class="d-lg-none">Built on Wordpress </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li> */}
 
-                    <li>ECG / Ultrasound Abdomen + Pelvis - ECHO</li>
-                    <li>2</li>
-                    <li>Paid Consult</li>
-                    <li>10% Off</li>
-                    <li>12</li>
-                    <li>2</li>
+                  <li>ECG / Ultrasound Abdomen + Pelvis - ECHO</li>
+                  <li>2</li>
+                  <li>Paid Consult</li>
+                  <li>10% Off</li>
+                  <li>12</li>
+                  <li>2</li>
                   <li>
                     <span class="d-lg-none">Search Engine Optimisation </span>
                     <i data-unicode="f00c"></i></li>
-                    <li>12</li>
-                    <li>4</li>
+                  <li>12</li>
+                  <li>4</li>
                   <li>
                     <span class="d-lg-none">Website Visitor Statistics </span>
-                    <i  data-unicode="f00c"></i></li>
-                    <li>5</li>
-                    <li>15% Off</li>
-                    <li>15% Off</li>
-                    <li>15% Off</li>
-                    <li>Free</li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>5</li>
+                  <li>15% Off</li>
+                  <li>15% Off</li>
+                  <li>15% Off</li>
+                  <li>Free</li>
                   <li>
                     <span class="d-lg-none">Full Website Ownership </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                    <li>₹16999</li>
+                  <li>₹16999</li>
                   {/* <li>
                     <span class="d-lg-none">Google Maps Integration </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
@@ -427,7 +562,7 @@ class b2cmembership extends Component {
               </div>
               <div class="card-body d-flex flex-column">
                 <ul class="list-unstyled text-center">
-                   <li>138 Tests with Echo & U/S</li>
+                  <li>138 Tests with Echo & U/S</li>
                   <li>
                     <span class="d-lg-none">Custom Design </span>
                     <i class="fa fa-check" data-unicode="f00c"></i>
@@ -466,30 +601,30 @@ class b2cmembership extends Component {
                   <li>
                     <span class="d-lg-none">Built on Wordpress </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                    <li>X-Ray / Echo / Ultrasound Abdomen + Pelvis / Breast Screening</li>
-                    <li>2</li>
-                    <li>Unlimited</li>
-                    <li>10% Off</li>
-                    <li>Unlimited</li>
-                    <li>2</li>
+                  <li>X-Ray / Echo / Ultrasound Abdomen + Pelvis / Breast Screening</li>
+                  <li>2</li>
+                  <li>Unlimited</li>
+                  <li>10% Off</li>
+                  <li>Unlimited</li>
+                  <li>2</li>
                   <li>
                     <span class="d-lg-none">Search Engine Optimisation </span>
                     <i data-unicode="f00c"></i></li>
-                    <li>Unlimited</li>
-                    <li>4</li>
+                  <li>Unlimited</li>
+                  <li>4</li>
                   <li>
                     <span class="d-lg-none">Website Visitor Statistics </span>
                     <i data-unicode="f00c"></i></li>
-                    <li>15</li>
-                    <li>20% Off</li>
-                    <li>1 Session + 10% Off</li>
-                    <li>15% Off</li>
-                    <li>Free</li>
+                  <li>15</li>
+                  <li>20% Off</li>
+                  <li>1 Session + 10% Off</li>
+                  <li>15% Off</li>
+                  <li>Free</li>
 
                   <li>
                     <span class="d-lg-none">Full Website Ownership </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                    <li>₹24999</li>
+                  <li>₹24999</li>
                   {/* <li>
                     <span class="d-lg-none">Google Maps Integration </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
@@ -566,27 +701,27 @@ class b2cmembership extends Component {
                   <li>
                     <span class="d-lg-none">Built on Wordpress </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                    <li>X-Ray / Echo / Ultrasound Abdomen + Pelvis / Breast Screening</li>
-                    <li>4</li>
-                    <li>Unlimited</li>
-                    <li>10% Off</li>
-                    <li>Unlimited</li>
-                    <li>4</li>
-                    <li>1</li>
-                    <li>Unlimited</li>
-                    <li>4</li>
+                  <li>X-Ray / Echo / Ultrasound Abdomen + Pelvis / Breast Screening</li>
+                  <li>4</li>
+                  <li>Unlimited</li>
+                  <li>10% Off</li>
+                  <li>Unlimited</li>
+                  <li>4</li>
+                  <li>1</li>
+                  <li>Unlimited</li>
+                  <li>4</li>
                   <li>
                     <span class="d-lg-none">Search Engine Optimisation </span>
-                    <i  data-unicode="f00c"></i></li>
-                    <li>15</li>
-                    <li>20% Off</li>
-                    <li>1 Session + 15% Off</li>
-                    <li>15% Off</li>
-                    <li>Free</li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>15</li>
+                  <li>20% Off</li>
+                  <li>1 Session + 15% Off</li>
+                  <li>15% Off</li>
+                  <li>Free</li>
                   <li>
                     <span class="d-lg-none">Website Visitor Statistics </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                    <li>₹29999</li>
+                  <li>₹29999</li>
                   {/* <li>
                     <span class="d-lg-none">Full Website Ownership </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
@@ -630,7 +765,8 @@ class b2cmembership extends Component {
                 </h2>
               </div>
 
-            </div></section>
+            </div>
+          </section>
           <div class="auto-container">
             <div class="row">
 
@@ -638,8 +774,8 @@ class b2cmembership extends Component {
                 <div class="contact-form-area">
 
                   {/* <!-- Contact Form--> */}
-                  <div class="contact-form">
-                    <p>Reach out to us and we'll help you in setting up the best of <span className='headeingcolorblue'>Preventive Healthcare</span> Services for your teams.</p>
+                  <div class="contact-form" style={{ marginTop: 5 + 'rem' }}>
+                    {/* <p>Reach out to us and we'll help you in setting up the best of <span className='headeingcolorblue'>Preventive Healthcare</span> Services for your teams.</p> */}
                     <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
                       <div class="row clearfix">
                         <div class="col-md-12 form-group">
@@ -651,8 +787,14 @@ class b2cmembership extends Component {
                           <input type="text" name="username" id="name" placeholder="Phone*" required="" />
                         </div>
 
-
-                        <div class="col-md-12 form-group">
+                        <div class="form-check">
+                          <input class="form-check-input"
+                            type="checkbox" id="checkbox1" name="option1" value="good" />
+                          <label class="form-check-label heading">
+                            I agree that Bridge Health may contact me at the email address or phone number above.
+                          </label>
+                        </div>
+                        <div class="col-md-12 form-group" style={{ marginLeft: 7 + 'rem' }}>
                           <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Submit</span></button>
                         </div>
                       </div>

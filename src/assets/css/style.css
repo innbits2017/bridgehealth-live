@@ -10125,7 +10125,11 @@ margin-left: 10px;
     line-height: 10px;
 
 }
-
+.image-five{
+	width: 80%;
+	margin-top: 2rem;
+	margin-left: 10%;
+}
 /* New style css */
 /* h1,
 .h1 {
