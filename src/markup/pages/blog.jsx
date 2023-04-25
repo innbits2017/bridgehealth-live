@@ -20,7 +20,7 @@ class Blog extends Component {
                     <div class="bottom-rotten-curve alternate"></div>
 
                     <div class="auto-container">
-                        <h1>Blogs</h1>
+                        <h1 className='colorwhite'>BLOGS</h1>
 
                     </div>
 

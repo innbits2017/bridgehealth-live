@@ -60,7 +60,7 @@ class b2cmembership extends Component {
 
         <section class="contact-section">
 
-          <div class="auto-container">
+          <div class="container-fluid">
             <div class="row">
 
               <div class="col-lg-4">
@@ -99,8 +99,6 @@ class b2cmembership extends Component {
 
                   </div>
                   <div class="contact-form">
-
-                    <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
                       <div class="row clearfix">
 
 
@@ -109,14 +107,13 @@ class b2cmembership extends Component {
                           <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Say YES!</span></button>
                         </div>
                       </div>
-                    </form>
                   </div>
                 </div>
               </div>
               <div class="col-lg-8">
                 <div class="image-wrapper">
                   <div class="image-one">
-                    <img src={require('../../assets/images/shape/b2c.png')} alt="" />
+                    <img src={require('../../assets/images/shape/b2c.png')} alt="" className='b2cimg'/>
                   </div>
                 </div>
               </div>
@@ -126,12 +123,12 @@ class b2cmembership extends Component {
 
         <section class="contact-section">
 
-          <div class="auto-container">
+          <div class="container-fluid">
             <div class="row">
               <div class="col-lg-8">
                 <div class="image-wrapper">
                   <div class="image-one">
-                    <img src={require('../../assets/images/shape/b2c1.png')} alt="" />
+                    <img src={require('../../assets/images/shape/b2c1.png')} alt="" className='b2cimg' />
                   </div>
                 </div>
               </div>

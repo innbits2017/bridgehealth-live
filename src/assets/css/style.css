@@ -101,7 +101,7 @@ p,
 	line-height: 1.7em;
 	font-weight: 400;
 	margin     : 0 0 15px;
-	margin-left: 20px;
+	/* margin-left: 20px; */
 }
 
 ::-webkit-input-placeholder {
@@ -10477,4 +10477,14 @@ a:not([href]):not([tabindex]) {
 .colorwhite
 {
 	color: #fff !important;
+}
+.blogdesigner
+{
+	background-size: cover;
+	background-image: url(../images/shape//blogback.png);
+}
+.b2cimg
+{
+	width: 95%;
+    height: 500px;
 }

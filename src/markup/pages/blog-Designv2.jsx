@@ -20,13 +20,13 @@ class blog_Designv2 extends Component {
                     <div class="bottom-rotten-curve alternate"></div>
 
                     <div class="auto-container1">
-                        <h1>What does your GI score indicate? </h1>
+                        <h1 className='colorwhite'>What does your GI score indicate? </h1>
 
                     </div>
 
                 </section>
 
-                <section>
+                <div className='blogdesigner container-fluid'>
                     <div class="container" style={{ marginTop: 2 + 'rem' }}>
                         <p>
                             As a child, you were likely cautioned to limit your intake of sweets. Remember the warning not to go overboard on candy or have that extra bowl of sugary breakfast cereal? However, as an adult, the temptation to indulge in whatever you want might be stronger than ever. But before you reach for that extra slice of cake or pack of biscuits, as you grow older, maintaining a healthy diet is more important than ever.
@@ -95,7 +95,7 @@ class blog_Designv2 extends Component {
                         <p> Engaging in regular exercise, getting enough sleep, and managing stress are also crucial for overall wellness. If you have a pre-existing condition such as diabetes, it's essential to speak with your healthcare provider before making any significant dietary changes.</p>
 
                     </div>
-                </section>
+                </div>
 
                 <section class="">
                     <div class="auto-container">
