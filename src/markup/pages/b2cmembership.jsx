@@ -50,13 +50,31 @@ class b2cmembership extends Component {
           </section>
         </section>
         {/* <b2c_page /> */}
-         <section>
+         {/* <section>
           <div class="image-five">
           <img src={require('../../assets/images/shape/b2c2.png')} alt="" className='imgwidth' />
           </div>
           
-        </section> 
-        
+        </section>  */}
+                  <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8 b2cimgcenter">
+            <h1>The <span className='headeingcolorblue'>Gift</span> of Preventive Healthcare
+made easy.</h1>
+<p>Our Annual Health Plans are membership-based integrated healthcare programs covering everything from clinical assessments to consultations, lab tests to nutrition sessions, lifestyle management to emotional wellness, and more</p>
+        <h3>Preventive Health Plans</h3>
+        <div class="image-one">
+                      <img src={require('../../assets/images/shape/imageb2c.png')} alt="" className='imgwidth' />
+
+                    </div>
+                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Say YES!</span></button>
+
+            </div>
+            <div class="col-lg-2"></div>
+
+
+</div></div>
 
         <section class="contact-section">
 

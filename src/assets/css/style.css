@@ -3369,7 +3369,7 @@ img.lazy-image.loaded {
 	
 }
 .imgstyle{
-	margin-left: 200px;
+	margin-left: 225px;
 }
 .imgstyle1{
 	margin-left: 23%;
@@ -10487,4 +10487,43 @@ a:not([href]):not([tabindex]) {
 {
 	width: 95%;
     height: 500px;
+}
+.b2cimgcenter
+{
+	background-repeat: no-repeat;
+    background-size: contain;
+    height: 1000px;
+	background-image: url(../images/shape/b2c2.png);
+}
+.b2cimgcenter h1{
+    text-align: center;
+    margin-top: 20%;
+    padding-right: 34%;
+    padding-left: 40%;
+}
+.b2cimgcenter p{
+	text-align: center;
+    margin-top: 3%;
+    padding-right: 20%;
+    padding-left: 25%;
+}
+.b2cimgcenter h3
+{
+	text-align: center;
+}
+.b2cimgcenter img{
+	margin: auto;
+    width: 50%;
+    margin-left: 29%;
+    margin-top: 6%;
+}
+.b2cimgcenter .theme-btn
+{
+	margin-left: 45%;
+    margin-top: 5%;
+
+}
+.margin150
+{
+	margin-top: 150px;
 }

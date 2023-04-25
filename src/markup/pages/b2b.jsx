@@ -18,8 +18,7 @@ class b2b extends Component {
                 
                 <section class="team-section padding">
                     {/* About Section Two */}
-                    <section class="container">
-                        <div class="container">
+                        <div class="container-fulid">
                             <div class="row align-items-center paddinground">
                                 <div class="col-lg-6">
                                     <div class="image-wrapper">
@@ -45,47 +44,33 @@ class b2b extends Component {
 
                             </div>
                         </div>
-                    </section>
                 </section>
 
-                {/* <section class="contact-section">
+                <section class="">
                    
                     <div class="auto-container">
                         <div class="row">
 
-                            <div class="col-lg-4" style={{marginTop: 10 + 'rem'}}>
-                                <div class="contact-form-area">
+                            <div class="col-lg-6" style={{marginTop: 10 + 'rem'}}>
+                            <div class="sec-title">
+                            <h3 className=''> <span className='headeingcolorblue'>     We help you figure out <br></br></span>where you are on your<br></br>   <span className='headeingcolorblue'> wellbeing journey </span></h3>
+                            <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">SAY YES!</span></button>
 
-                                    
-                                    <div class="contact-form">
-                                        <p>We help you figure out 
-                                            <span className='headeingcolorblue'> where you are on your wellbeing journey</span></p>
-                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
-                                            <div class="row clearfix">
-                                                
-                                                
-
-                                                <div class="col-md-12 form-group">
-                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Get Quote</span></button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
+                        </div> 
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/b2b1.png')} alt="" />
+                                        <img src={require('../../assets/images/shape/b2b12.png')} alt="" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section> */}
+                </section>
 
 
-                <div class="auto-container">
+                <div class="auto-container margin150">
                     <div class="sec-title">
                         <h2> <span className='headeingcolorblack'>THE CORPORATE </span>
                             <span className='headeingcolorblue'> WELLNESS </span>
@@ -110,7 +95,7 @@ class b2b extends Component {
                                 to take care of their employees
                                 </div> */}
 
-                <section class="container-fluid b2bback">
+                <section class="container-fluid b2bback margin150">
 
                     <div className='container '>
                         <div class="sec-title text-center">
