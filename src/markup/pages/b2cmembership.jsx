@@ -8,7 +8,7 @@ import VideoPopup1 from '../element/video-popup1';
 import ServiceFilter1 from '../element/service-filter1'
 import b2c_page from '../pages/b2c-page'
 
-const aboutbg = require('./../../assets/images/background/image-11.jpg');
+const aboutbg = require('./../../assets/images/shape/b2c2.png');
 
 class b2cmembership extends Component {
 
@@ -50,14 +50,13 @@ class b2cmembership extends Component {
           </section>
         </section>
         {/* <b2c_page /> */}
-        <section>
+         <section>
           <div class="image-five">
           <img src={require('../../assets/images/shape/b2c2.png')} alt="" className='imgwidth' />
           </div>
-          {/* <div>
-            <h3>The Gift of Preventive Healthcare made easy.</h3>
-          </div> */}
-        </section>
+          
+        </section> 
+        
 
         <section class="contact-section">
 
