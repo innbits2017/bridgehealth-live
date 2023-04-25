@@ -3,72 +3,8 @@ import React, { Component } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-const testimonialbg1 = require('./../../assets/images/background/image-9.jpg');
-
-const Testimonial2_content = [
-    {
-        thumb: require('./../../assets/images/resource/thumb-1.jpg'),
-        author: 'Alexer Valvin',
-        designation: 'Founder, Coxer IT',
-        title: 'Design Quality',
-        description:
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ',
-
-    },
-    {
-        thumb: require('./../../assets/images/resource/thumb-2.jpg'),
-        author: 'Alexer Valvin',
-        designation: 'Founder, Coxer IT',
-        title: 'Design Quality',
-        description:
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ',
-
-    },
-    {
-        thumb: require('./../../assets/images/resource/thumb-3.jpg'),
-        author: 'Alexer Valvin',
-        designation: 'Founder, Coxer IT',
-        title: 'Design Quality',
-        description:
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ',
-
-    },
-    {
-        thumb: require('./../../assets/images/resource/thumb-4.jpg'),
-        author: 'Alexer Valvin',
-        designation: 'Founder, Coxer IT',
-        title: 'Design Quality',
-        description:
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ',
-
-    },
-    {
-        thumb: require('./../../assets/images/resource/thumb-5.jpg'),
-        author: 'Alexer Valvin',
-        designation: 'Founder, Coxer IT',
-        title: 'Design Quality',
-        description:
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ',
-
-    },
-    {
-        thumb: require('./../../assets/images/resource/thumb-6.jpg'),
-        author: 'Alexer Valvin',
-        designation: 'Founder, Coxer IT',
-        title: 'Design Quality',
-        description:
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ',
-
-    },
-]
-
-
 class Testimonial2 extends Component {
-
-
     render() {
-
         const settings = {
             dots: false,
             infinite: true,
@@ -85,10 +21,7 @@ class Testimonial2 extends Component {
                             <div class="sub-title">Testimonials</div>
                             <h2>   <div class="sec-title text-center">
                                 <h2>
-                                    {/* Confused about your health checks?<br></br> */}
                                     <span className='headeingcolorblack'> Testimonials</span>
-                                    {/* <span className='headeingcolorblue'>Bridgers</span> */}
-                                    {/* <span className='headeingcolorblack'> Meet The </span> <span className='headeingcolorblue'>Bridgers</span> */}
                                 </h2>
                                 <h5 className='heading3'>They <span className='headeingcolorblue'>#Bridged the Gap!</span> Here’s what they said.
                                 </h5>
@@ -107,7 +40,6 @@ class Testimonial2 extends Component {
                                                     <div class="col-lg-6">
                                                         <div class="image-wrapper">
                                                             <div class="image-one">
-                                                                {/* <img src={require('../../assets/images/shape/video1.MP4')} alt="" /> */}
                                                                 <img src={require('../../assets/images/shape/testimonial.png')} alt="" />
                                                             </div>
                                                         </div>
@@ -139,7 +71,6 @@ class Testimonial2 extends Component {
                                                     <div class="col-lg-6">
                                                         <div class="image-wrapper">
                                                             <div class="image-one">
-                                                                {/* <img src={require('../../assets/images/shape/video1.MP4')} alt="" /> */}
                                                                 <img src={require('../../assets/images/shape/testimonial.png')} alt="" />
                                                             </div>
                                                         </div>
@@ -168,7 +99,6 @@ class Testimonial2 extends Component {
                         </div>
                     </div>
                 </section>
-
             </>
         )
     }

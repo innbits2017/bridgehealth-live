@@ -2869,15 +2869,20 @@ font-weight: 700;
 .main-footer {
     position: relative;
     color: #c4c5c7;
-    margin-left: 15px;
+	background-size: cover !important;
+    border: 2px dashed #0e0909 !important;
+    margin-left: 0px;
     border-top: 2px solid #0076A8;
-    margin-right: 15px;
+    margin-right: 0px;
+    border-top-right-radius: 80px 80px;
+    border-top-left-radius: 80px 80px;
+	background: url(../images/shape/footerback.png) center center no-repeat;
 
 }
 
 .main-footer .widgets-section {
 	position: relative;
-	padding : 50px 0px 30px;
+	/* padding : 50px 0px 30px; */
 }
 
 .main-footer .column {
@@ -2887,12 +2892,17 @@ font-weight: 700;
 
 .main-footer .footer-widget {
 	position: relative;
+	padding-top: 35px;
 }
-
+.inputfooter
+{
+	width: 90% !important;
+}
 .main-footer .footer-logo {
 	position     : relative;
 	margin-top   : 100%;
 	margin-bottom: 25px;
+	margin-left: 25%;
 }
 
 .main-footer h3 {
@@ -10236,6 +10246,12 @@ border-radius: 26.5756px;
     border-radius: 19.3688px;
 
 }
+#root > div > div > section.testimonial-section.testback > div:nth-child(2) > div > div > div > div > div > div:nth-child(6) > div > div > div
+{
+	margin-left: 50px;
+    background: #F9D1B7;
+    border-radius: 19.3688px;
+}
 .btnblog
 {
 	background: #D3E3B7 !important;
@@ -10353,11 +10369,12 @@ a:not([href]):not([tabindex]) {
 }
 .flotright1 a
 {
-	padding-left: 1300px;
+	float: right;
     color: #fff;
     line-height: 35px;
-	margin-top: 100px;
-	margin-bottom: 15px;
+    margin-top: 15%;
+    margin-bottom: 15px;
+    margin-right: -4% !important;
 	
 }
 .b2bback
@@ -10403,7 +10420,10 @@ a:not([href]):not([tabindex]) {
 	border: 1px solid red;
   } */
   .grow:hover {
-	height: 405px;
+    height: 405px;
+    padding-left: 18px;
+    border: 2px dashed #000 !important;
+    border-radius: 10px;
   }
   .bozhover
 {  position: relative;
