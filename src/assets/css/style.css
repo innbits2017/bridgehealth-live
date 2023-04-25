@@ -170,7 +170,18 @@ figure {
 	font-size  : 14px;
 	margin-left: 3px;
 }
-
+.theme-btn1{
+	margin-left: 40%;
+	margin-bottom: 2rem;
+	background-color: #1963C6;
+	color: #fff;
+	width: 15%;
+	height: 50px;
+	border-radius: 32px;
+}
+.btn-title1{
+	font-size: 28px;
+}
 .centered {
 	text-align: center !important;
 }
@@ -2806,6 +2817,10 @@ font-weight: 700;
 color: #000;
 font-weight: 700;
 
+}
+.headeingcolorblack1{
+	color: #99BB5E;
+	font-weight: 700;
 }
 /* .header1{
 	margin-top: 500px;
@@ -9705,6 +9720,11 @@ ul, li {
 .listicon1{
 	width: 15px;
 	height: 15px;
+	margin-right: 10px;
+}
+.listicon2{
+	width: 30px;
+	height: 30px;
 	margin-right: 10px;
 }
 .side-img{

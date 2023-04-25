@@ -12,6 +12,7 @@ import ourservice from './pages/ourservice'
 import BlogDestails from './pages/blog-details';
 import blog_Designv2 from './pages/blog-Designv2';
 import b2c_page from './pages/b2c-page';
+import diet_and_nutrition from './pages/diet-and-nutrition';
 
 class Router extends Component {
     render() {
@@ -33,6 +34,7 @@ class Router extends Component {
                         <Route path='/ourservice' component={ourservice}/>
                         <Route path='/b2cmembership' component={b2cmembership}/>
                         <Route path='/blog-Designv2' component={blog_Designv2}/>
+                        <Route path='/diet-and-nutrition' component={diet_and_nutrition}/>
 
                     </Switch>
 
