@@ -26,7 +26,31 @@ class Blog extends Component {
 
                 </section>
                 {/* <!--End Banner Section --> */}
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-lg-8 mx-auto">
 
+                            <div class="bg-white p-5 ">
+                                <form action="">
+                                    <div class="input-group mb-4">
+                                        <input type="search" placeholder="Search Topic" aria-describedby="button-addon5" class="form-control" />
+                                        <div class="input-group-append">
+                                            <button id="button-addon5" type="submit" class="btn btn-primary"> 
+                                            <i class="fa fa-search"> </i> 
+                                            </button>
+                                        </div>
+                                    </div>
+                                    {/* <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button id="button-addon8" type="submit" class="btn btn-danger"> <i class="fa fa-search"> </i> </button>
+                                        </div>
+                                        <input type="search" placeholder="Search here..." aria-describedby="button-addon8" class="form-control" />
+                                    </div> */}
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 {/* <!-- News Section --> */}
                 <section class="news-section">
                     <div class="auto-container">

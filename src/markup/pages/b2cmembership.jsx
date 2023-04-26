@@ -41,7 +41,7 @@ class b2cmembership extends Component {
                 <div class="col-lg-6">
                   <div class="image-wrapper">
                     <div class="image-one">
-                      <img src={require('../../assets/images/shape/b2cmembership.png')} alt="" className='imgwidth' />
+                      <img src={require('../../assets/images/shape/image2.png')} alt="" className='imgwidth' />
                     </div>
                   </div>
                 </div>

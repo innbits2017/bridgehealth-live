@@ -179,6 +179,16 @@ figure {
 	height: 50px;
 	border-radius: 32px;
 }
+.theme-btn2{
+	margin-left: 40%;
+	margin-top: 2rem;
+	/* margin-bottom: 2rem; */
+	background-color: #1963C6;
+	color: #fff;
+	width: 15%;
+	height: 50px;
+	border-radius: 32px;
+}
 .btn-title1{
 	font-size: 28px;
 }
@@ -4676,11 +4686,31 @@ img.lazy-image.loaded {
    text-align: center;
    border-radius: 29.1807px;
    position: absolute;
-   width: 200px;
+   width: 80px;
    height: 47.79px;
    font-size: 15px;
    font-weight: 700;
 }
+.btn1 {
+    background-color: #D3E3B7;
+    color: #000;
+    /* display: flex; */
+    text-align: center;
+    border-radius: 29.1807px;
+    position: absolute;
+	width: 80px;
+    /* width: 200px; */
+    height: 47.79px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+} */
 .testi{
 	text-align: center;
 }
@@ -10527,3 +10557,51 @@ a:not([href]):not([tabindex]) {
 {
 	margin-top: 150px;
 }
+
+/* Blog page css */
+
+
+.main {  
+    width: 50%;  
+    margin: 50px auto;  
+}  
+.has-search .form-control {  
+    padding-left: 2.375rem;  
+}  
+.has-search .form-control-feedback {  
+    position: absolute;  
+    z-index: 2;  
+    display: block;  
+    width: 2.375rem;  
+    height: 2.375rem;  
+    line-height: 2.375rem;  
+    text-align: center;  
+    pointer-events: none;  
+    color: #aaa;  
+}  
+.form-control-underlined {  
+  border-width: 0;  
+  border-bottom-width: 1px;  
+  border-radius: 0;  
+  padding-left: 0;  
+}  
+/* body {  
+  background: #ffd89b;  
+  background: -webkit-linear-gradient(to right, #ffd89b, #19547b);  
+  background: linear-gradient(to right, #ffd89b, #19547b);  
+}   */
+.form-control:focus {  
+  box-shadow: none;  
+}  
+/* h2 {  
+font-family: 'Indie Flower', cursive;  
+font-size: 32px;  
+  color: white;  
+  font-weight: bold;  
+  margin-top: 20px;  
+}   */
+.form-control::placeholder {  
+  font-size: 0.95rem;  
+  color: #aaa;  
+  font-style: italic;  
+}  
