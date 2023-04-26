@@ -16,6 +16,7 @@ import diet_and_nutrition from './pages/diet-and-nutrition';
 import yoga_Assessment from './pages/yoga-Assessment';
 import lab_tests from './pages/lab-tests';
 import physiotherapy from './pages/physiotherapy';
+import pharmacy from './pages/pharmacy';
 
 class Router extends Component {
     render() {
@@ -41,6 +42,7 @@ class Router extends Component {
                         <Route path='/yoga-Assessment' component={yoga_Assessment}/>
                         <Route path='/lab-tests' component={lab_tests}/>
                         <Route path='/physiotherapy' component={physiotherapy}/>
+                        <Route path='/pharmacy' component={pharmacy}/>
 
                     </Switch>
 
