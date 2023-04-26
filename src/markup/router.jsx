@@ -15,6 +15,7 @@ import b2c_page from './pages/b2c-page';
 import diet_and_nutrition from './pages/diet-and-nutrition';
 import yoga_Assessment from './pages/yoga-Assessment';
 import lab_tests from './pages/lab-tests';
+import physiotherapy from './pages/physiotherapy';
 
 class Router extends Component {
     render() {
@@ -39,6 +40,7 @@ class Router extends Component {
                         <Route path='/diet-and-nutrition' component={diet_and_nutrition}/>
                         <Route path='/yoga-Assessment' component={yoga_Assessment}/>
                         <Route path='/lab-tests' component={lab_tests}/>
+                        <Route path='/physiotherapy' component={physiotherapy}/>
 
                     </Switch>
 

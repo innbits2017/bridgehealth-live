@@ -529,7 +529,9 @@ img {
 ====================================================================
 
 ***/
-
+.header2{
+	margin-right: 850px;
+}
 .main-header {
 	position  : absolute;
 	display   : block;
