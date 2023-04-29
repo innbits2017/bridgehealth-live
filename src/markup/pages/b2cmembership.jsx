@@ -78,7 +78,7 @@ made easy.</h1>
 
         <section class="contact-section">
 
-          <div class="container-fluid">
+          <div class="container-fluid annualback">
             <div class="row">
 
               <div class="col-lg-4">
@@ -86,7 +86,7 @@ made easy.</h1>
 
                   <div class="sec-title">
                     <h2> <span className='headeingcolorblack'>Why </span>
-                      <span className='headeingcolorblue'> Annual </span>
+                      <span className='headeingcolorblue'> Annual </span><br></br>
                       <span className='headeingcolorblack'>Health Plans?</span>
                     </h2>
                     <h4 className='textleft marginTop40'>A host of benefits await you as soon as you say <span className='headeingcolorblue'> YES</span>

@@ -23,7 +23,7 @@ class leadership extends Component {
                     <div class="bottom-rotten-curve alternate"></div>
 
                     <div class="auto-container">
-                        <h1>LeaderShip</h1>
+                        <h1 className='colorwhite'>LeaderShip</h1>
 
                     </div>
 
@@ -54,6 +54,7 @@ class leadership extends Component {
                                     <div class="wrapper-box text">
                                         <h2>Kris Gopalakrishnan</h2>
                                         <div class="designation">Chairman & Co-Founder</div>
+                                        <hr></hr>
                                         <div class="text">Senapathy “Kris” Gopalakrishnan served as the Vice Chairman of Infosys from 2011 to 2014 and the Chief Executive Officer and Managing Director of Infosys from 2007 to 2011. Kris is one of the co-founders of Infosys. He also was selected to Thinkers 50, an elite list of global business thinkers, in...</div>
                                     </div>
                                 </div>
@@ -67,6 +68,7 @@ class leadership extends Component {
                                         <div class="wrapper-box text">
                                             <h2>Swami D Swaminathan</h2>
                                             <div class="designation">Director & Co-Founder</div>
+                                            <hr></hr>
                                             <div class="text">Swaminathan Dandapani in his earlier role as Executive Chairman of Manipal Health Enterprises, provided direction and leadership to the Healthcare business expanding the footprint of Manipal Hospitals in new geographies both within & outside India. He also was the Chairman of ...</div>
                                             {/* <div class="text">Senapathy “Kris” Gopalakrishnan served as the Vice Chairman of Infosys from 2011 to 2014 and the Chief Executive Officer and Managing Director of Infosys from 2007 to 2011. Kris is one of the co-founders of Infosys. He also was selected to Thinkers 50, an elite list of global business thinkers, in...</div> */}
                                         </div>

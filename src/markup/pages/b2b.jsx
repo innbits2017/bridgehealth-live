@@ -68,6 +68,16 @@ class b2b extends Component {
                         </div>
                     </div>
                 </section>
+                <div className='container-fulid'>
+                    <div className='container bb2bslider'>
+                        <div className='sliderbox'>
+                        <div class="image-one">
+                                        <img src={require('../../assets/images/shape/imageb2c.png')} alt="" />
+                                    </div>
+                        </div>
+<h2 className='sec-title text-center'>to take care of their employees</h2>
+                    </div>
+                </div>
 
 
                 <div class="auto-container margin150">

@@ -202,7 +202,6 @@
 	-webkit-transform: translateY(-100px);
 	-ms-transform    : translateY(-100px);
 	transform        : translateY(-100px);
-	text-transform   : capitalize;
 }
 
 .slider-content .inner h2 {
@@ -218,7 +217,6 @@
 	-webkit-transform: translateY(-100px);
 	-ms-transform    : translateY(-100px);
 	transform        : translateY(-100px);
-	text-transform   : capitalize;
 }
 
 .slider-content .inner.inner-2 h2{

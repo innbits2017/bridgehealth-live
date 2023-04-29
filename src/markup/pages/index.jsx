@@ -35,7 +35,7 @@ class Index extends Component {
                         <div class="sec-title text-center">
                             <h2 className='fontwidth'>Confused about your health checks?<br></br>
                                 <span className='headeingcolorblack'> Scan our </span>
-                                <span className='headeingcolorblue'>BH Smart Guide!</span>
+                                <span className='headeingcolorblue'>BH Smart Guide <span className='headeingcolorblack'>!</span></span>
                             </h2>
                         </div>
 
@@ -169,7 +169,7 @@ class Index extends Component {
                                                 Pre and Post score comparisons
                                             </li>
                                         </ul>
-                                        <div class="btn-box">
+                                        <div class="btn-box marginleft20">
                                             <a class="theme-btn btn-style-one" href="/demo/fianandox/">
                                                 <span class="btn-title">KNOW MORE</span>
                                             </a>
@@ -377,7 +377,7 @@ class Index extends Component {
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/shape/blog.png')} alt="" /></Link></div>
                                     <div class="lower-content">
-                                        <div class="category">Blog heading</div>
+                                        {/* <div class="category">Blog heading</div> */}
 
                                         <h3><Link to={'/blog-details'}>What Does Your GI Score Indicate?</Link></h3>
                                         <div class="text">As a child, you were likely cautioned to limit your intake of sweets. Remember the warning not to go</div>
@@ -389,7 +389,7 @@ class Index extends Component {
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/shape/blog1.png')} alt="" /></Link></div>
                                     <div class="lower-content">
-                                        <div class="category">Blog heading</div>
+                                        {/* <div class="category">Blog heading</div> */}
 
                                         <h3><Link to={'/blog-details'}>Myths And Facts About GI Foods</Link></h3>
                                         <div class="text">Carbohydrates have been villainized in recent years as the culprit for weight gain and even chronic diseases</div>
@@ -404,7 +404,7 @@ class Index extends Component {
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/shape/blog3.png')} alt="" /></Link></div>
                                     <div class="lower-content">
-                                        <div class="category">Blog heading</div>
+                                        {/* <div class="category">Blog heading</div> */}
 
                                         <h3><Link to={'/blog-details'}>Everything you need to know about Glycemic Index</Link></h3>
                                         <div class="text">Even with the world becoming more health-conscious, diseases seem to be on the rise. While you frantically</div>
@@ -469,7 +469,7 @@ class Index extends Component {
                                                     </label>
                                                 </div>
                                                 <div class="col-md-12 form-group">
-                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Submit</span></button>
+                                                    <button class="theme-btn btn-style-one marginleft20" type="submit" name="submit-form"><span class="btn-title">Submit</span></button>
                                                 </div>
                                             </div>
                                         </form>
