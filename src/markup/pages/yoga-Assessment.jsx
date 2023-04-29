@@ -8,7 +8,7 @@ import VideoPopup1 from '../element/video-popup1';
 import ServiceFilter1 from '../element/service-filter1'
 import b2c_page from '../pages/b2c-page'
 
-const aboutbg = require('./../../assets/images/shape/b2c2.png');
+const aboutbg = require('./../../assets/images/shape/YogaAssessmentandCoaching.png');
 
 class yoga_Assessment extends Component {
 
@@ -18,36 +18,26 @@ class yoga_Assessment extends Component {
             <>
                 <Header />
 
-                <section class="team-section padding">
-                    {/* About Section Two */}
-                    <section class="container-fluid">
-                        <div class="container-fluid">
-                            <div class="row align-items-center">
+                <section class="internalpage style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
+                    <div class="auto-container">
+                        <div class="content-box">
+                      
+                            <div class=" text-center textleft">
+                                <h2 className='textleft fontSize'>
+                                    <span className='headeingcolorblack'> Unite your mind,  </span>
+                                    <span className='headeingcolorblue'>  body & soul</span>
 
-                                <div class="col-lg-6">
-                                    <div class="content-box">
-
-                                        <div class="sec-title text-center textleft">
-                                            <h2 className='textleft'>
-                                                <span className='headeingcolorblack'> Unite your </span> <span className='headeingcolorblue'>Mind, Body & Soul </span> </h2>
-                                            <h3 className='textleft marginTop40'>Connect with our Yoga Therapists
-                                            </h3>
-                                        </div>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
-
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="image-wrapper">
-                                        <div class="image-one">
-                                            <img src={require('../../assets/images/shape/image2.png')} alt="" className='imgwidth' />
-                                        </div>
-                                    </div>
-                                </div>
+                                </h2>
+                                <h3 className='textleft marginTop40'>
+                                Connect with our yoga therapists
+                                </h3>
                             </div>
+                            <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
+
+
                         </div>
-                    </section>
+
+                    </div>
                 </section>
                 {/* <b2c_page /> */}
 
@@ -72,32 +62,20 @@ class yoga_Assessment extends Component {
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span>
 
                                         </h2> */}
-                                        <p>
+                                        <p className='font22'>
                                         Practiced for thousands of years, yoga has several benefits on your overall health. Through a series of breathing exercises and poses, yoga improves blood flow and helps you focus your mind. This helps you obtain inner peace and happiness which leads to better health.
                                         </p>
-                                        <p>
+                                        <p className='font22'>
                                         The yoga therapists at Bridge Health are trained in yogic counseling, lifestyle and nutrition. They will assist you in developing a yoga regimen which helps you focus on improving the functionality of your mind, body, and breath. 
                                         </p>
 
                                     </div>
 
 
-                                    <div class="contact-form">
-
-                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
-                                            <div class="row clearfix">
-
-
-
-                                                <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
-                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
+                                 
                                 </div>
                             </div>
-
+                       
                         </div>
                     </div>
                 </section>
@@ -137,15 +115,7 @@ class yoga_Assessment extends Component {
                 </section> */}
 
                 <section class="team-section">
-                    <div class="auto-container">
-                        <div class="sec-title text-center">
-                            <h2 className='header2'>
-                                <span className='headeingcolorblack'> What We </span>
-                                <span className='headeingcolorblue'>  Offer</span>
-                            </h2>
-                        </div>
-
-                    </div>
+                  
                     {/* About Section Two */}
                     <section class="">
                         <div class="auto-container">
@@ -155,50 +125,50 @@ class yoga_Assessment extends Component {
 
                                 <div class="col-lg-6">
                                     <div class="content-box">
-                                        {/* <div class="sec-title">
-                                            <div class="text" style={{marginRight: 40 + 'px'}}>Predict the onset of
-                                                <span className='headeingcolorblack'> hidden illnesses</span> and health conditions, prevent them by undergoing tests and check-ups, and delay the onset of chronic illness.
-                                            </div>
-                                        </div> */}
+                                     
+                                           <h2 >
+                                <span className='headeingcolorblack'> What We </span>
+                                <span className='headeingcolorblue'>  Offer</span>
+                            </h2>
                                         <ul className='listicon'>
                                             <li>
-                                                <img className='listicon3' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for general Wellbeing
                                             </li>
                                             <li>
-                                                <img className='listicon3' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for Mental Illness
                                             </li>
                                             <li>
-                                                <img className='listicon3' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for Pregnancy
                                             </li>
                                             <li>
-                                                <img className='listicon3' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Therapeutic Yoga
                                             </li>
                                             <li>
-                                                <img className='listicon3' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for Cardiovascular Disorders
                                             </li>
                                             <li>
-                                                <img className='listicon3' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for Respiratory Disorders
                                             </li>
                                             <li>
-                                                <img className='listicon3' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for Gastrointestinal Disorders
                                             </li>
                                             <li>
-                                                <img className='listicon3' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for Joints and Muscles
                                             </li>
                                             <li>
-                                                <img className='listicon3' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for Urogenital Disorders
                                             </li>
                                             <li>
-                                                <img className='listicon3' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for Mental Disorders
                                             </li>
                                         </ul>
@@ -213,7 +183,7 @@ class yoga_Assessment extends Component {
                                 <div class="col-lg-6">
                                     <div class="image-wrapper">
                                         <div class="image-one image-two">
-                                            <img src={require('../../assets/images/shape/y2.png')} alt="" />
+                                            <img src={require('../../assets/images/shape/y2.png')} alt="" className='width84'/>
                                             {/* <img src={require('../../assets/images/shape/video2.gif')} alt="" /> */}
                                         </div>
 
@@ -245,33 +215,33 @@ class yoga_Assessment extends Component {
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
                                     <div class="auto-container">
-                                        <div class="sec-title text-center">
+                                        <div class="">
                                             <h2 className='header1'>
                                                 <span className='headeingcolorblack'> The</span>
-                                                <span className='headeingcolorblue'>  Bridge Health</span>
+                                                <span className='headeingcolorblue'>  Bridge Health</span><br></br>
                                                 <span className='headeingcolorblack'> Advantage </span>
                                             </h2>
                                         </div>
 
                                     </div>
                                     <ul className='listicon'>
-                                        <li>
+                                    <li className='listicon'>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Experienced yoga therapists
                                         </li>
-                                        <li>
+                                        <li className='listicon'>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Customized plans and routines
                                         </li>
-                                        <li>
+                                        <li className='listicon'>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Regular progress updates
                                         </li>
-                                        <li>
+                                        <li className='listicon'>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             General wellbeing and mental fitness programs
                                         </li>
-                                        <li>
+                                        <li className='listicon'>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Therapeutic yoga for effective disease management
                                         </li>

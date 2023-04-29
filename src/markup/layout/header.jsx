@@ -132,13 +132,12 @@ class Header extends Component {
                         </div>
                     </div>
 
-                    <div class="top-right flotright">
+                    {/* <div class="top-right flotright">
                         <a href={'/#'}><span class="btn-title">
                         <img src={require('../../assets/images/Group3.png')} alt="" />
                             </span></a>
                         <a href={'/#'}><span class="btn-title">
                         <img src={require('../../assets/images/Group.png')} alt="" />
-                            {/* About Us</span></a> */}
                             </span></a>
                         <a href={'/#'}><span class="btn-title">
                         <img src={require('../../assets/images/Group1.png')} alt="" />
@@ -146,32 +145,14 @@ class Header extends Component {
                         <a href={'/#'}><span class="btn-title">
                         <img src={require('../../assets/images/Group2.png')} alt="" />
                             </span></a>
-                        {/* <a href={'/#'}><span class="btn-title">Home</span></a>
-                        <a href={'/#'}><span class="btn-title">About Us</span></a> */}
+                    </div> */}
 
-
-                    </div>
-
-                    <div class="top-right flotright1">
+                    {/* <div class="top-right flotright1">
                         <a href={'/#'}><span class="btn-title1">
                         <img style={{marginTop: 40 + 'px'}} src={require('../../assets/images/Group53.png')} alt="" />
                             </span>
                         </a>
-                        {/* <a href={'/#'}><span class="btn-title">
-                        <img src={require('../../assets/images/Group.png')} alt="" />
-                           
-                            </span></a> */}
-                        {/* <a href={'/#'}><span class="btn-title">
-                        <img src={require('../../assets/images/Group1.png')} alt="" />
-                            </span></a> */}
-                        {/* <a href={'/#'}><span class="btn-title">
-                        <img src={require('../../assets/images/Group2.png')} alt="" />
-                            </span></a> */}
-                        {/* <a href={'/#'}><span class="btn-title">Home</span></a>
-                        <a href={'/#'}><span class="btn-title">About Us</span></a> */}
-
-
-                    </div>
+                    </div> */}
 
 
                 </header>
