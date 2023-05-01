@@ -10707,3 +10707,98 @@ hr{
 {
 	width: 100% !important;
 }
+.blogtext
+{
+    margin-left: 38% !important;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .slide {
+    height: 650px;
+    background-size: cover !important;
+}
+.slider-content .inner .text {
+    display: block;
+    font-size: 26px;
+    line-height: 1.2em;
+    color: #ffffff;
+    font-weight: 400;
+    transform: translateY(-120px);
+    padding-right: 0px !important;
+    padding-top: 25px;
+}
+.slider-content .inner h1 {
+    display: block;
+    font-size: 34px;
+    line-height: 45px;
+    color: #ffffff !important;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 0;
+    transform: translateY(-100px);
+}
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 650px;
+}
+.sec-title h2 {
+    font-size: 28px !important;
+    letter-spacing: 0px;
+}
+.main-footer .footer-logo {
+    position: relative;
+    margin-top: 0%;
+    margin-bottom: 25px;
+    margin-left: 10%;
+}
+	.main-footer .footer-widget {
+		position: relative;
+		padding-top: 35px;
+		margin-left: 10%;
+
+	}
+	.imgstyle {
+		margin-left: 80px;
+		margin-top: -40px;
+	}
+	.team-section {
+		position: relative;
+		padding: 40px 0 40px;
+		background-size: cover;
+	}
+	.textpadding
+	{
+		margin-top: -70px !important;
+		margin-right: 25px !important;
+		text-align: center;
+		margin-left: 0px !important;
+	
+	}
+	.imgpad
+	{
+		margin-top: 60px;
+	}
+	.box {
+		margin-top: 50px !important;
+	}
+	.clmbackground {
+		background-size: cover;
+		height: 381px;
+	}
+	.heading3 {
+		width: auto !important;
+		text-align: center !important;
+		margin-left: 0px !important;
+		font-weight: 500;
+	}
+	.blogtext
+{
+    margin-left: 16% !important;
+}
+}
+
+
+
+
+

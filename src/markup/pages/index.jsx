@@ -48,7 +48,7 @@ class Index extends Component {
                                 <div class="col-lg-6">
                                     <div class="content-box">
                                         <div class="sec-title">
-                                            <div class="text">
+                                            <div class="text textpadding">
                                             Developed by our in-house clinical expert's BH Smart Guide is a smarter way to understand what are the right diagnostic tests for you based on your current health status, family history and lifestyle choices.
                                             </div>
                                         </div>
@@ -67,7 +67,7 @@ class Index extends Component {
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="image-wrapper">
-                                        <div class="image-one">
+                                        <div class="image-one imgpad">
                                             <img src={require('../../assets/images/shape/Sequence-01.gif')} alt="" />
                                         </div>
                                     </div>
@@ -97,7 +97,7 @@ class Index extends Component {
                                 <div class="col-lg-6">
                                     <div class="content-box">
                                         <div class="sec-title">
-                                            <div class="text"> <span className='headeingcolorblue'>#BridgeTheGap</span> with our Annual Health Plans that are membership-based integrated programs covering everything from clinical assessments to consultations, lab tests to nutrition sessions, lifestyle management to emotional wellness and much more.
+                                            <div class="text textpadding"> <span className='headeingcolorblue'>#BridgeTheGap</span> with our Annual Health Plans that are membership-based integrated programs covering everything from clinical assessments to consultations, lab tests to nutrition sessions, lifestyle management to emotional wellness and much more.
                                             </div>
                                         </div>
 
@@ -141,7 +141,7 @@ class Index extends Component {
 
                                 <div class="col-lg-6">
                                     <div class="image-wrapper">
-                                        <div class="image-one image-two">
+                                        <div class="image-one image-two imgpad">
                                             <img  src={require('../../assets/images/shape/delay.png')} alt="" /> 
                                             {/* <img src={require('../../assets/images/shape/video2.gif')} alt="" /> */}
                                         </div>
@@ -151,7 +151,7 @@ class Index extends Component {
                                 <div class="col-lg-6">
                                     <div class="content-box">
                                         <div class="sec-title">
-                                            <div class="text" style={{marginRight: 40 + 'px'}}>Predict the onset of
+                                            <div class="text textpadding" style={{marginRight: 40 + 'px'}}>Predict the onset of
                                                 <span className='headeingcolorblack'> hidden illnesses</span> and health conditions, prevent them by undergoing tests and check-ups, and delay the onset of chronic illness.
                                             </div>
                                         </div>
@@ -395,8 +395,7 @@ class Index extends Component {
                                         <div class="text">Carbohydrates have been villainized in recent years as the culprit for weight gain and even chronic diseases</div>
                                     </div>
                                 </div>
-                                <button class="theme-btn btn-style-one btnblog" type="submit" name="submit-form" style={{marginLeft: 16 + '%'}}>
-                                    <span class="btn-title btnblog">READ ALL BLOGS</span></button>
+                              
 
                             </div>
                             {/* <!-- News Block One --> */}
@@ -412,6 +411,10 @@ class Index extends Component {
                                 </div>
                             </div>
 
+                        </div>
+                        <div class="row">
+                        <button class="theme-btn btn-style-one btnblog blogtext" type="submit" name="submit-form">
+                                    <span class="btn-title btnblog">READ ALL BLOGS</span></button>
                         </div>
                         {/* <div class="button-txt">
                             <Button class="btn"></Button>
