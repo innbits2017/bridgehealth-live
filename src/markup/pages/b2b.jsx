@@ -23,14 +23,14 @@ class b2b extends Component {
                                 <div class="col-lg-6">
                                     <div class="image-wrapper">
                                         <div class="image-one">
-                                            <img src={require('../../assets/images/shape/b2b.png')} alt="" className='imgwidth' />
+                                            <img src={require('../../assets/images/shape/b2b.png')} alt="" className='imgb2p' />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="content-box">
 
-                                        <div class="sec-title text-center textleft">
+                                        <div class="text-center textleft">
                                             <h3 className='textleft'> <span className='headeingcolorblack'>Redefining the Meaning of </span><br></br>
                                                 <span className='headeingcolorblue'>Employee-Centric Care</span></h3>
                                             <h4 className='textleft marginTop40'>Variety of benefits for a healthier <br></br>and happier workforce
@@ -69,13 +69,15 @@ class b2b extends Component {
                     </div>
                 </section>
                 <div className='container-fulid'>
-                    <div className='container bb2bslider'>
-                        <div className='sliderbox'>
+                    <div className='container margintop100'>
+                        {/* <div className='sliderbox'>
                         <div class="image-one">
                                         <img src={require('../../assets/images/shape/imageb2c.png')} alt="" />
                                     </div>
                         </div>
-<h2 className='sec-title text-center'>to take care of their employees</h2>
+<h2 className='sec-title text-center'>to take care of their employees</h2> */}
+                                        <img src={require('../../assets/images/shape/b2bsli.png')} alt="" />
+
                     </div>
                 </div>
 

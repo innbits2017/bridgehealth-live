@@ -10424,7 +10424,7 @@ a:not([href]):not([tabindex]) {
 .b2bback
 {	background-image: url(../images/shape/Group237656.png);
     background-size: cover;
-	padding-bottom: 339px;
+	padding-bottom: 50px;
 
 }
 .lead1
@@ -10917,6 +10917,22 @@ hr{
     margin-top: -60px;
     margin-left: -25%;
 	}
+	.lead1 {
+		margin-top: 0px !important;
+	}
+	.lead2 {
+		margin-top: 0px;
+	}
+	.lead3 {
+		margin-top: 0px;
+	}
+	.dir {
+		background-size: inherit;
+	}
+	.about-section-two .image-one img {
+		width: 50%;
+	}
+	
 }
 .btn5
 {
@@ -10924,7 +10940,62 @@ hr{
     margin-top: -60px;
 }
 
+.leadership {
+	position: relative;
+  }
+  
+  .avtar {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+  
+  .overlay {
+	position: absolute !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #1963C6;
+  }
+  
+  .leadership:hover .overlay {
+	opacity: 1;
+  }
+  
+  .texttitle {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-weight: 900;
+	box-shadow: none !important;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }
+.designation1
+{
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	font-weight: 400;
+	left: 50%;
+	box-shadow: none !important;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
 
-
-
-
+.imgb2p
+{
+	width: 80%;
+}

@@ -15,8 +15,9 @@ class Team extends Component {
             <>
                 <Header />
 
-                {/* <!-- Testimonial Section --> */}
-                <Testimonial1 />
+<div className='margin150'>
+    </div>            
+    <Testimonial1 />
 
                 {/* <!-- About Section Two --> */}
                 <section class="about-section-two">
