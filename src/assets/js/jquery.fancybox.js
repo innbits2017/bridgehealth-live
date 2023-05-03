@@ -3985,9 +3985,9 @@
 
 			// Continue vertical movement
 			$.fancybox.animate( self.instance.current.$slide, {
-				top     : self.sliderStartPos.top + self.distanceY + ( self.velocityY * 150 ),
+				top     : self.sliderStartPos.top + self.distanceY + ( self.velocityY * 450 ),
 				opacity : 0
-			}, 150 );
+			}, 450 );
 
 			ret = self.instance.close( true, 300 );
 
@@ -4000,7 +4000,7 @@
 
 		if ( ret === false && ( swiping == 'x' || swiping == 'y' ) ) {
 			if ( scrolling || len < 2 ) {
-				self.instance.centerSlide( self.instance.current, 150 );
+				self.instance.centerSlide( self.instance.current, 450 );
 			} else {
 				self.instance.jumpTo( self.instance.current.index );
 			}
@@ -4072,10 +4072,10 @@
 		$.fancybox.setTranslate( self.$content, reset );
 
 		if ( newWidth < self.canvasWidth && newHeight < self.canvasHeight ) {
-			self.instance.scaleToFit( 150 );
+			self.instance.scaleToFit( 450 );
 
 		} else if ( newWidth > current.width || newHeight > current.height ) {
-			self.instance.scaleToActual( self.centerPointStartX, self.centerPointStartY, 150 );
+			self.instance.scaleToActual( self.centerPointStartX, self.centerPointStartY, 450 );
 
 		} else {
 
@@ -4084,7 +4084,7 @@
 			// Switch from scale() to width/height or animation will not work correctly
 			$.fancybox.setTranslate( self.content, $.fancybox.getTranslate( self.$content ) );
 
-			$.fancybox.animate( self.$content, newPos, 150 );
+			$.fancybox.animate( self.$content, newPos, 450 );
 		}
 
 	};

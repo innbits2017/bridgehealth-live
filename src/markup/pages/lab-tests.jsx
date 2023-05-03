@@ -296,7 +296,7 @@ class lab_tests extends Component {
                             </div>
 
                         </div>
-                        <button class="theme-btn2 btn-style-one1" type="submit" name="submit-form">
+                        <button class="theme-btn1 btn-style-one1" type="submit" name="submit-form">
                             <span class="btn-title1">Book Now</span></button>
                     </div>
                 </section>
@@ -370,8 +370,11 @@ class lab_tests extends Component {
 
                             </h2>
                         </div>
-                        <button class="theme-btn1 btn-style-one1" type="submit" name="submit-form">
-                            <span class="btn-title1">Book Now</span></button>
+                        <div class="btn-box text-center btn5">
+                                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                                                <span class="btn-title">BOOK NOW</span>
+                                            </a>
+                                        </div>
                     </div>
                 </section>
 

@@ -3666,7 +3666,7 @@ var effectsEffectScale = $.effects.define( "scale", function( options, done ) {
 var effectsEffectPuff = $.effects.define( "puff", "hide", function( options, done ) {
 	var newOptions = $.extend( true, {}, options, {
 		fade: true,
-		percent: parseInt( options.percent, 10 ) || 150
+		percent: parseInt( options.percent, 10 ) || 450
 	} );
 
 	$.effects.effect.scale.call( this, newOptions, done );
@@ -7514,7 +7514,7 @@ $.extend( Datepicker.prototype, {
 			scrollX = document.documentElement.scrollLeft || document.body.scrollLeft;
 			scrollY = document.documentElement.scrollTop || document.body.scrollTop;
 			this._pos = // should use actual width/height below
-				[ ( browserWidth / 2 ) - 100 + scrollX, ( browserHeight / 2 ) - 150 + scrollY ];
+				[ ( browserWidth / 2 ) - 100 + scrollX, ( browserHeight / 2 ) - 450 + scrollY ];
 		}
 
 		// Move input on screen for focus, but hidden behind dialog
@@ -11982,7 +11982,7 @@ $.widget( "ui.dialog", {
 		maxHeight: null,
 		maxWidth: null,
 		minHeight: 150,
-		minWidth: 150,
+		minWidth: 450,
 		modal: false,
 		position: {
 			my: "center",
