@@ -45,7 +45,7 @@ class Index extends Component {
                         <div class="container-fluid">
                             <div class="row align-items-center">
 
-                                <div class="col-lg-6">
+                                <div class="col-lg-5">
                                     <div class="content-box">
                                         <div class="sec-title">
                                             <div class="text textpadding">
@@ -54,7 +54,9 @@ class Index extends Component {
                                         </div>
                                         <div class="image-one">
                                             <img className='imgstyle' src={require('../../assets/images/shape/Section1.png')} alt="" />
+                                            <a href='https://api.whatsapp.com/send?phone=916366504753&text=Hey%20Bridge%20Health' target='_blank'>
                                             <img className='imgstyle1' src={require('../../assets/images/shape/Group3.png')} alt="" />
+                                            </a>
                                         </div>
                                         <div class="qr-text">
                                             {/* <img className='imgstyle1' src={require('../../assets/images/shape/Group3.png')} alt="" /> */}
@@ -65,7 +67,7 @@ class Index extends Component {
 
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-7">
                                     <div class="image-wrapper">
                                         <div class="image-one imgpad">
                                             <img src={require('../../assets/images/shape/Sequence-01.gif')} alt="" />

@@ -6,7 +6,7 @@ import '../../assets/css/slider.css';
 
 const slides = [
     {
-        title: 'Lets help you #BRIDGETheGAP',
+        title: 'Lets help you #BridgeTheGap',
         description: 'Personalised and holistic preventive health plans for you and your loved ones',
         // btnLearn: "-- Learn More --",
         // finan: "Finan",
