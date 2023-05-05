@@ -78,52 +78,52 @@ class Header extends Component {
                                     <div class="contact-info">
 
                                         {/* <nav>
-        <ul>
-        
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fas fa-home"></i></span>
-                    <span class="title">Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fas fa-user"></i></span>
-                    <span class="title">Profile</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fas fa-envelope"></i></span>
-                    <span class="title">Messages</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fas fa-info"></i></span>
-                    <span class="title">Help</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fas fa-cog"></i></span>
-                    <span class="title">Setting</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fas fa-lock"></i></span>
-                    <span class="title">Password</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
-                    <span class="title">Sign Out</span>
-                </a>
-            </li>
-        </ul>
-    </nav> */}
+                                            <ul>
+
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="icon"><i class="fas fa-home"></i></span>
+                                                        <span class="title">Home</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="icon"><i class="fas fa-user"></i></span>
+                                                        <span class="title">Profile</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                                                        <span class="title">Messages</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="icon"><i class="fas fa-info"></i></span>
+                                                        <span class="title">Help</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="icon"><i class="fas fa-cog"></i></span>
+                                                        <span class="title">Setting</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="icon"><i class="fas fa-lock"></i></span>
+                                                        <span class="title">Password</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                                                        <span class="title">Sign Out</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav> */}
                                     </div>
                                 </div>
 
@@ -132,7 +132,7 @@ class Header extends Component {
                         </div>
                     </div>
 
-                    {/* <div class="top-right flotright">
+                    <div class="top-right flotright">
                         <a href={'/#'}><span class="btn-title">
                         <img src={require('../../assets/images/Group3.png')} alt="" />
                             </span></a>
@@ -149,10 +149,10 @@ class Header extends Component {
 
                     <div class="top-right flotright1">
                         <a href={'/#'}><span class="btn-title1">
-                        <img style={{marginTop: 40 + 'px'}} src={require('../../assets/images/Group53.png')} alt="" />
+                        <img style={{marginTop: 80 + 'px'}} src={require('../../assets/images/Group53.png')} alt="" />
                             </span>
                         </a>
-                    </div> */}
+                    </div> 
 
 
                 </header>

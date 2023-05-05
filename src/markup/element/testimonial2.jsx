@@ -49,7 +49,7 @@ class Testimonial2 extends Component {
                                                             <div class="sec-title testtitle">
                                                                 <div class="text">
                                                                     <span><img src={require('../../assets/images/shape/testimonial.png')} alt="" className='testthumb' /></span>
-                                                                    <span className='headeingcolorblack'>Shanaya Gupta</span>
+                                                                    <span className='headeingcolorblack spenheading'>Shanaya Gupta</span>
                                                                     <p className='textpa'>SUBSCRIBED TO THE PLATINUM PLAN</p>
                                                                 </div>
                                                             </div>

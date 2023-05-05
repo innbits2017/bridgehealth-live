@@ -6,7 +6,7 @@ import Footer from '../layout/footer'
 import Brand1 from '../element/brand1'
 import VideoPopup1 from '../element/video-popup1';
 import ServiceFilter1 from '../element/service-filter1'
-import b2c_page from '../pages/b2c-page'
+import b2c_page from './b2c-page'
 
 const aboutbg = require('./../../assets/images/shape/b2c2.png');
 
@@ -50,31 +50,31 @@ class b2cmembership extends Component {
           </section>
         </section>
         {/* <b2c_page /> */}
-         {/* <section>
+        {/* <section>
           <div class="image-five">
           <img src={require('../../assets/images/shape/b2c2.png')} alt="" className='imgwidth' />
           </div>
           
         </section>  */}
-                  <div class="container-fluid">
-            <div class="row">
+        <div class="container-fluid">
+          <div class="row">
             <div class="col-lg-2"></div>
             <div class="col-lg-8 b2cimgcenter">
-            <h1>The <span className='headeingcolorblue'>Gift</span> of Preventive Healthcare
-made easy.</h1>
-<p>Our Annual Health Plans are membership-based integrated healthcare programs covering everything from clinical assessments to consultations, lab tests to nutrition sessions, lifestyle management to emotional wellness, and more</p>
-        <h3>Preventive Health Plans</h3>
-        <div class="image-one">
-                      <img src={require('../../assets/images/shape/imageb2c.png')} alt="" className='imgwidth' />
+              <h1>The <span className='headeingcolorblue'>Gift</span> of Preventive Healthcare
+                made easy.</h1>
+              <p>Our Annual Health Plans are membership-based integrated healthcare programs covering everything from clinical assessments to consultations, lab tests to nutrition sessions, lifestyle management to emotional wellness, and more</p>
+              <h3>Preventive Health Plans</h3>
+              <div class="image-one">
+                <img src={require('../../assets/images/shape/imageb2c.png')} alt="" className='imgwidth' />
 
-                    </div>
-                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Say YES!</span></button>
+              </div>
+              <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Say YES!</span></button>
 
             </div>
             <div class="col-lg-2"></div>
 
 
-</div></div>
+          </div></div>
 
         <section class="contact-section">
 
@@ -117,21 +117,21 @@ made easy.</h1>
 
                   </div>
                   <div class="contact-form">
-                      <div class="row clearfix">
+                    <div class="row clearfix">
 
 
 
-                        <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
-                          <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Say YES!</span></button>
-                        </div>
+                      <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
+                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Say YES!</span></button>
                       </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-8">
                 <div class="image-wrapper">
                   <div class="image-one">
-                    <img src={require('../../assets/images/shape/b2c.png')} alt="" className='b2cimg'/>
+                    <img src={require('../../assets/images/shape/b2c.png')} alt="" className='b2cimg' />
                   </div>
                 </div>
               </div>

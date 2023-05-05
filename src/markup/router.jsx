@@ -6,8 +6,9 @@ import Services from './pages/services'
 import Team from './pages/team';
 import BackToTop from './layout/backToTop'
 import leadership from './pages/leadership'
-import b2b from './pages/b2b'
-import b2cmembership from './pages/b2cmembership'
+// import b2b from './pages/b2b'
+import corporate_membership_program from './pages/corporate-membership-program';
+import b2cmembership from './pages/personal-membership-program'
 import ourservice from './pages/ourservice'
 import BlogDestails from './pages/blog-details';
 import blog_Designv2 from './pages/blog-Designv2';
@@ -34,10 +35,12 @@ class Router extends Component {
                         <Route path='/services-standalone' component={Services} />
                         <Route path='/team' component={Team} />
                         <Route path='/leadership' component={leadership} />
-                        <Route path='/b2b' component={b2b}/>
+                        {/* <Route path='/b2b' component={b2b}/> */}
+                        <Route path='/corporate-membership-program' component={corporate_membership_program}/>
                         <Route path='/BlogDestails' component={BlogDestails}/>
                         <Route path='/ourservice' component={ourservice}/>
-                        <Route path='/b2cmembership' component={b2cmembership}/>
+                        {/* <Route path='/b2cmembership' component={b2cmembership}/> */}
+                        <Route path='/personal-membership-program' component={b2cmembership}/>
                         <Route path='/blog-Designv2' component={blog_Designv2}/>
                         <Route path='/diet-and-nutrition' component={diet_and_nutrition}/>
                         <Route path='/yoga-Assessment' component={yoga_Assessment}/>

@@ -8,7 +8,7 @@ import ServiceFilter1 from '../element/service-filter1'
 const aboutbg = require('./../../assets/images/background/image-11.jpg');
 // const casebg = require('./../../assets/images/background/image-14.jpg');
 
-class b2b extends Component {
+class corporate_membership_program extends Component {
 
 
     render() {
@@ -189,4 +189,4 @@ class b2b extends Component {
         )
     }
 }
-export default b2b;
+export default corporate_membership_program;

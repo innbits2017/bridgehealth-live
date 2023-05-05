@@ -191,6 +191,7 @@ figure {
 }
 .btn-title1{
 	font-size: 28px;
+	margin-left: 10%;
 }
 .centered {
 	text-align: center !important;
@@ -226,13 +227,13 @@ figure {
 }
 .marginleft20
 {
-	margin-left: 20% !important;
+	margin-left: 35% !important;
 }
 .btn-style-one .btn-title {
 	position: relative;
     display: block;
     z-index: 1;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
     padding: 10px 31px !important;
     border-radius: 24px;
@@ -2811,9 +2812,9 @@ img {
 .sec-title h2 {
     position: relative;
     display: block;
-    font-size: 32px;
-    line-height: 1.1em;
-    text-transform: capitalize;
+    font-size: 36px;
+    line-height: 1.5em;
+    /* text-transform: capitalize; */
     letter-spacing: 1px;
 }
 .headeingcolorblue
@@ -2842,7 +2843,7 @@ font-weight: 700;
 	font-size  : 22px;
 	color      : #25283a;
 	margin     : 0;
-	margin-left: 40px;
+	margin-left: 38px;
 }
 .heading{
 	font-weight: 500 !important;
@@ -3391,7 +3392,7 @@ img.lazy-image.loaded {
 	width: 40px;
     border-radius: 15px;
     height: 40px;
-    margin-left: 120px;
+    margin-left: 85px;
 }
 .testtitle
 {
@@ -3401,9 +3402,12 @@ img.lazy-image.loaded {
 .textpa
 {
 	text-align: center;
-    margin-left: -114px !important;
+    margin-left: -150px !important;
     margin-top: 12px;
     font-weight: 600;
+}
+.spenheading{
+	margin-left: 8px !important;
 }
 .about-section .image-wrapper .image-one:hover img {
 	-webkit-transform: scale(1.2);
@@ -4504,10 +4508,22 @@ img.lazy-image.loaded {
 
 .contact-form label {
 	margin-bottom: 17px;
-    font-size: 16px;
-    margin-left: 8%;
+    font-size: 20px;
+    margin-left: 5%;
     color: #000;
-    font-weight: 600;
+    font-weight: 500;
+}
+/* .contact-form1 label {
+	margin-bottom: 17px;
+    font-size: 20px;
+    margin-left: 20%;
+    color: #000;
+    font-weight: 500;
+} */
+.image-seven{
+	margin-left: 90%;
+	width: 90px;
+	height: 100px;
 }
 .blogdetails
 {
@@ -9756,6 +9772,7 @@ border-radius: 22.9879px;
 .listicon
 {
 margin-bottom: 10px;
+margin-left: 38px;
 }
 ul, li {
     list-style: none;
@@ -10082,7 +10099,7 @@ figure:hover+span {
 	}
 }
 .expertise
-{    font-size: 15px;
+{    font-size: 19.5px;
     text-align: center;
     font-weight: 600;
     margin-top: 5px;
@@ -10448,10 +10465,10 @@ a:not([href]):not([tabindex]) {
 
 
 .grow {
-	padding: 5px 5px 5px 5px;
+	padding: 10px 10px 10px 10px;
 	border-radius: 10px;
-    height: 306px;
-		width: 100%;
+    height: 314px;
+	width: 100%;
 	margin: 5px 1% 5px 1%;
 	float: left;
 	position: relative;
@@ -10472,7 +10489,8 @@ a:not([href]):not([tabindex]) {
   }
   .bozhover
 {  position: relative;
-  padding: 12px;
+  padding: 0px;
+  padding-bottom: 15px;
   box-shadow: 0px 6.26446px 12.5289px rgba(0, 0, 0, 0.25);
   border-radius: 31.3223px;
 }
@@ -10572,7 +10590,9 @@ a:not([href]):not([tabindex]) {
 {
 	margin-top: 150px;
 }
-
+.footer-btn{
+	margin-left: 26%;
+}
 /* Blog page css */
 
 

@@ -76,14 +76,14 @@ class Footer extends Component {
                                                     <div class="row clearfix">
 
                                                         <div class="col-md-12 form-group">
-                                                            <label for="email">Get in touch with us</label>
+                                                            <label for="email" style={{marginLeft: 20 + '%'}}>Get in touch with us</label>
                                                             <input type="text" name="name" id="name" placeholder="Name*" required="" className='inputfooter'/>
                                                         </div>
                                                         <div class="col-md-12 form-group">
                                                             <input type="email" name="email" id="email" placeholder="Email ID" required="" className='inputfooter' />
                                                         </div>
                                                         <div class="col-md-12 form-group">
-                                                            <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Submit</span></button>
+                                                            <button class="theme-btn btn-style-one footer-btn" type="submit" name="submit-form"><span class="btn-title">SUBMIT</span></button>
                                                         </div>
 
                                                     </div>
