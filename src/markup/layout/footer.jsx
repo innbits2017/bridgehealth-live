@@ -35,7 +35,7 @@ class Footer extends Component {
                                                         <li><Link to={'/#'}>Home</Link></li>
                                                         <li><Link to={'/#'}>Our Services</Link></li>
                                                         <li><Link to={'/#'}>Memberships</Link></li>
-                                                        <li><Link to={'/#'}>Healths Risk Assessment</Link></li>
+                                                        <li><Link to={'/#'}>Health Risk Assessment</Link></li>
                                                         <li><Link to={'/#'}>Experience Center</Link></li>
 
                                                     </ul>

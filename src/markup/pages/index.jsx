@@ -86,9 +86,12 @@ class Index extends Component {
 
                 {/* <!-- About --> */}
 
+
+
+
                 <section class="team-section">
                     <div class="auto-container">
-                        <div class="sec-title text-center">
+                        <div class="sec-title text-center marginbutton">
                             <h2> <span className=' headeingcolorblue'> Annual Preventive </span>
                                 <span className='headeingcolorblack'>Health Plans</span></h2>
                             <h5 className='heading'>Membership-based integrated programs covering various aspects
@@ -153,7 +156,7 @@ class Index extends Component {
                                 <div class="col-lg-6">
                                     <div class="image-wrapper">
                                         <div class="image-one image-two imgpad">
-                                            <img src={require('../../assets/images/shape/delay.png')} alt="" />
+                                            <img  src={require('../../assets/images/shape/ipad.gif')} alt="" /> 
                                             {/* <img src={require('../../assets/images/shape/video2.gif')} alt="" /> */}
                                         </div>
 
@@ -204,7 +207,7 @@ class Index extends Component {
                     {/* About Section Two */}
                     <section class="">
                         <div class="auto-container">
-                            <div class="row">
+                            <div class="row marginbutton30">
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div className=''>
@@ -248,7 +251,7 @@ class Index extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row marginbutton30">
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
@@ -300,7 +303,7 @@ class Index extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row marginbutton30">
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
@@ -353,7 +356,7 @@ class Index extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row marginbutton30">
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
@@ -426,7 +429,7 @@ class Index extends Component {
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/shape/blog.png')} alt="" /></Link></div>
                                     <div class="lower-content">
-                                        {/* <div class="category">Blog heading</div> */}
+                                        <div class="category">Blog heading</div>
 
                                         <h3><Link to={'/blog-details'}>What Does Your GI Score Indicate?</Link></h3>
                                         <div class="text">As a child, you were likely cautioned to limit your intake of sweets. Remember the warning not to go</div>
@@ -438,7 +441,7 @@ class Index extends Component {
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/shape/blog1.png')} alt="" /></Link></div>
                                     <div class="lower-content">
-                                        {/* <div class="category">Blog heading</div> */}
+                                        <div class="category">Blog heading</div>
 
                                         <h3><Link to={'/blog-details'}>Myths And Facts About GI Foods</Link></h3>
                                         <div class="text">Carbohydrates have been villainized in recent years as the culprit for weight gain and even chronic diseases</div>
@@ -452,7 +455,7 @@ class Index extends Component {
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/shape/blog3.png')} alt="" /></Link></div>
                                     <div class="lower-content">
-                                        {/* <div class="category">Blog heading</div> */}
+                                        <div class="category">Blog heading</div>
 
                                         <h3><Link to={'/blog-details'}>Everything you need to know about Glycemic Index</Link></h3>
                                         <div class="text">Even with the world becoming more health-conscious, diseases seem to be on the rise. While you frantically</div>

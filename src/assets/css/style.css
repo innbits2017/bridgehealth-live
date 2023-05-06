@@ -2773,7 +2773,7 @@ img {
 
 .sec-title {
 	position     : relative;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 }
 
 .sec-title .sub-title {
@@ -3362,7 +3362,6 @@ img.lazy-image.loaded {
 }
 .image-two{
 	position: relative !important;
-	top: -60px;
 }
 .heading3{
 	width: 700px !important;
@@ -4820,9 +4819,10 @@ img.lazy-image.loaded {
 	right   : 0;
 	bottom  : 0;
 }
-.reachout{
-	height: 455px;
-	width: 100%;
+.reachout {
+    height: 446px;
+    width: 100%;
+    margin-top: -58px;
 }
 .award-section .feature-image .image-one {
 	position         : absolute;
@@ -5076,25 +5076,25 @@ img.lazy-image.loaded {
 }
 
 .testimonial-section .slick-prev:before {
-	font-family       : "Flaticon";
-	content           : "\f105";
-	position          : absolute;
-	top               : 0;
-	border-radius: 22.9879px;
-	width             : 60px;
-	height            : 60px;
-	line-height       : 60px;
-	left              : 0;
-	background        : #fff;
-	color             : #282828;
-	font-size         : 24px;
-	-webkit-transform : rotate(180deg);
-	-ms-transform     : rotate(180deg);
-	border: 1.0692px dashed #000000;
-	transform         : rotate(180deg);
-	-webkit-transition: all 300ms ease;
-	-o-transition     : all 300ms ease;
-	transition        : all 300ms ease;
+
+	font-family: "Flaticon";
+    content: "\f105 PREV";
+    position: absolute;
+    top: 0;
+    border-radius: 22.9879px;
+    width: 100px;
+    margin-left: -80px !important;
+    height: 44px;
+    line-height: 45px;
+    left: 0;
+    background: #fff;
+    color: #282828;
+    font-size: 17px;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    border: 1.0692px dashed #000000;
+    transform: rotate(0deg);
+    transition: all 300ms ease;
 }
 
 .testimonial-section .slick-prev:hover:before {
@@ -5122,23 +5122,21 @@ img.lazy-image.loaded {
 }
 
 .testimonial-section .slick-next:before {
-	font-family       : "Flaticon";
-	content           : "\f105";
-	position          : absolute;
-	background: #D3E3B7;
-border-radius: 22.9879px;
-	top               : 0;
-	width             : 60px;
-	height            : 60px;
-	line-height       : 60px;
-	right             : 0;
-	color             : #000;
-	/* background        : #fff; */
-	/* border-radius     : 50%; */
-	font-size         : 24px;
-	-webkit-transition: all 300ms ease;
-	-o-transition     : all 300ms ease;
-	transition        : all 300ms ease;
+    font-family: "Flaticon";
+    content: "NEXT \f105";
+    position: absolute;
+    border-radius: 22.9879px !important;
+    top: 0;
+    width: 100px;
+    height: 44px;
+    line-height: 45px;
+    right: 0;
+    color: #000;
+    background: #D3E3B7;
+    box-shadow: 0px 4.27682px 4.27682px rgba(0, 0, 0, 0.25);
+    border-radius: 22.9879px;
+    font-size: 18px;
+    transition: all 300ms ease;
 }
 
 .testimonial-section .slick-next:hover:before {
@@ -9739,16 +9737,18 @@ border-radius: 22.9879px;
 }
 .clmbackground
 {
-	width: 478.50px;
-	height: 550.50px;
+	width: 410.5px;
+    background-size: contain;
+    height: 457.5px;
 	background-image: url(../images/shape/background.png);
+	background-repeat: no-repeat;
 }
 .box{
 	background-image: url(../images/shape/annual.png);
     border-radius: 10px;
     height: 112px;
     max-width: 369px;
-    margin-top: 170px;
+    margin-top: 110px;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -9768,6 +9768,15 @@ border-radius: 22.9879px;
 {
 	margin-top: 20px;
 	font-weight: 500 !important;
+}
+.marlefttext
+{
+	margin-left: 10%;
+}
+.martop
+{
+	margin-top: -35px;
+    margin-left: 23%;
 }
 .listicon
 {
@@ -10418,6 +10427,7 @@ a:not([href]):not([tabindex]) {
 	background: #99BB5E;
     border-radius: 45px 0px 0px 45px;
 	padding-right: 3px;
+	margin-top: -100px;
 	
 }
 .flotright a
@@ -11019,4 +11029,13 @@ hr{
 .imgb2p
 {
 	width: 80%;
+}
+
+.marginbutton
+{
+	margin-bottom: -30px;
+}
+.marginbutton30
+{
+	margin-bottom: 30px;
 }

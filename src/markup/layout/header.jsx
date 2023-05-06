@@ -149,7 +149,7 @@ class Header extends Component {
 
                     <div class="top-right flotright1">
                         <a href={'/#'}><span class="btn-title1">
-                        <img style={{marginTop: 80 + 'px'}} src={require('../../assets/images/Group53.png')} alt="" />
+                        <img src={require('../../assets/images/Group53.png')} alt="" />
                             </span>
                         </a>
                     </div> 
