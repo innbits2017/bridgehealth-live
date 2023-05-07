@@ -107,7 +107,7 @@ class Index extends Component {
                                 <div class="col-lg-6">
                                     <div class="content-box">
                                         <div class="sec-title">
-                                            <div class="text textpadding"> <span className='headeingcolorblue'>#BridgeTheGap</span> with our Annual Health Plans that are membership-based integrated programs covering everything from clinical assessments to consultations, lab tests to nutrition sessions, lifestyle management to emotional wellness and much more.
+                                            <div class="text textpadding1"> <span className='headeingcolorblue'>#BridgeTheGap</span> with our Annual Health Plans that are membership-based integrated programs covering everything from clinical assessments to consultations, lab tests to nutrition sessions, lifestyle management to emotional wellness and much more.
                                             </div>
                                         </div>
 
@@ -119,15 +119,15 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/thumb.png')} alt="" />
                                         </span>
                                         <Link to={'/personal-membership-program'}>
-                                            <span className='textpara'>Personal Membership Program</span>
+                                            <span className='textpara'>Personal Membership <br></br> Program</span>
                                         </Link>
                                     </div>
                                     <div className='box marginTop40'>
                                         <Link to={'/corporate-membership-program'}>
-                                            <span className='textpara'>Corporate Membership Program</span>
+                                            <span className='textpara'>Corporate Membership <br></br> Program</span>
                                         </Link>
                                         <span>
-                                            <img src={require('../../assets/images/shape/thumb1.png')} alt="" />
+                                            <img src={require('../../assets/images/shape/thumb1.png')} alt="" className='flotrightimg'/>
                                         </span>
                                     </div>
                                 </div>
