@@ -11159,3 +11159,11 @@ display: none;
 display: none;
 	}
   }
+  .testimonal2
+  {
+	transform: perspective(800px) rotateY(0deg) scale(0.9) rotateX(0deg) !important;
+  }
+  .testimonal3
+  {
+	transform: perspective(800px) rotateY(0deg) scale(0.9) rotateX(0deg) !important;
+  }

@@ -104,11 +104,11 @@ class Testimonial1 extends Component {
 
                                         </div>
                                     </div>
-                                    <div class="slide-item">
+                                    <div class="slide-item testimonal2">
                                         {/* <!-- Testimonial-block --> */}
                                         <div class="testimonial-block">
                                             <div class="author-info">
-                                                <div class="thumb"><img src={require('../../assets/images/shape/test11.png')} alt="" />
+                                                <div class="thumb"><img src={require('../../assets/images/shape/test12.png')} alt="" />
                                                 </div>
 
                                             </div>
@@ -122,11 +122,11 @@ class Testimonial1 extends Component {
                                             </div>
 
                                         </div>
-                                    </div>   <div class="slide-item">
+                                    </div>   <div class="slide-item testimonal3">
                                         {/* <!-- Testimonial-block --> */}
                                         <div class="testimonial-block">
                                             <div class="author-info">
-                                                <div class="thumb"><img src={require('../../assets/images/shape/test11.png')} alt="" />
+                                                <div class="thumb"><img src={require('../../assets/images/shape/test13.png')} alt="" />
                                                 </div>
 
                                             </div>
@@ -191,7 +191,7 @@ class Testimonial1 extends Component {
                 {/* <!-- Testimonial-block --> */}
                 <div class="testimonial-block">
                     <div class="author-info">
-                        <div class="thumb"><img src={require('../../assets/images/shape/test11.png')} alt="" />
+                        <div class="thumb"><img src={require('../../assets/images/shape/test12.png')} alt="" />
                         </div>
 
                     </div>
@@ -209,7 +209,7 @@ class Testimonial1 extends Component {
                 {/* <!-- Testimonial-block --> */}
                 <div class="testimonial-block">
                     <div class="author-info">
-                        <div class="thumb"><img src={require('../../assets/images/shape/test11.png')} alt="" />
+                        <div class="thumb"><img src={require('../../assets/images/shape/test13.png')} alt="" />
                         </div>
 
                     </div>
