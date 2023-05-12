@@ -9778,6 +9778,10 @@ img.lazy-image.loaded {
 {
 	margin-top: 20px;
 	font-weight: 500 !important;
+	margin-left: 3rem;
+}
+.heading5{ 
+	margin-right: 3rem;
 }
 .marlefttext
 {
@@ -10879,6 +10883,15 @@ hr{
 		height: 100px;
 	}
 	.imgpad {
+		margin-top: 60px;
+	}
+	.image-eight {
+		margin-left: 8%;
+		width: 50px;
+		display: none;
+		height: 100px;
+	}
+	.imgpa{
 		margin-top: 60px;
 	}
 

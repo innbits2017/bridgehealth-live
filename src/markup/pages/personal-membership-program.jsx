@@ -85,7 +85,8 @@ class b2cmembership extends Component {
                 <div class="contact-form-area">
 
                   <div class="sec-title">
-                    <h2> <span className='headeingcolorblack'>Why </span>
+                    <h2> 
+                      <span className='headeingcolorblack'>Why </span>
                       <span className='headeingcolorblue'> Annual </span><br></br>
                       <span className='headeingcolorblack'>Health Plans?</span>
                     </h2>
@@ -122,7 +123,8 @@ class b2cmembership extends Component {
 
 
                       <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
-                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Say YES!</span></button>
+                        <button class="theme-btn btn-style-one" type="submit" name="submit-form">
+                          <span class="btn-title">Say YES!</span></button>
                       </div>
                     </div>
                   </div>

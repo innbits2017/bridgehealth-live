@@ -31,12 +31,23 @@ class Blog extends Component {
                         <div class="col-lg-8 mx-auto">
 
                             <div class="bg-white p-5 ">
+
                                 <form action="">
+
                                     <div class="input-group mb-4">
+                                        {/* <div class="dropdown">
+                                            <button>
+                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">CATEGORY</a>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a href="#" class="dropdown-item">Action</a>
+                                                <a href="#" class="dropdown-item">Another action</a>
+                                            </div>
+                                        </div> */}
                                         <input type="search" placeholder="Search Topic" aria-describedby="button-addon5" class="form-control" />
                                         <div class="input-group-append">
-                                            <button id="button-addon5" type="submit" class="btn btn-primary"> 
-                                            <i class="fa fa-search"> </i> 
+                                            <button id="button-addon5" type="submit" class="btn btn-primary">
+                                                <i class="fa fa-search"> </i>
                                             </button>
                                         </div>
                                     </div>
@@ -51,6 +62,7 @@ class Blog extends Component {
                         </div>
                     </div>
                 </div>
+
                 {/* <!-- News Section --> */}
                 <section class="news-section">
                     <div class="auto-container">

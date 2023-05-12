@@ -242,7 +242,7 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/s3.png')} alt="" />
+                                            <img src={require('../../assets/images/shape/aaa1.jpeg')} alt="" />
                                             <h2 className='expertise'>Doctor Consults</h2>
                                             <p>
                                             All of us get sick at some point in life. And whenever we get sick, we always go to the doctor 
@@ -256,7 +256,7 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/s4.png')} alt="" />
+                                            <img src={require('../../assets/images/shape/aaa.jpeg')} alt="" />
                                             <h2 className='expertise'>Psychologist Consults</h2>
                                             <p>
                                             Unlike physical health issues, psychological issues are not as visible. They are generally ignored 
