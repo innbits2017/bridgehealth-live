@@ -15,71 +15,80 @@ class corporate_membership_program extends Component {
         return (
             <>
                 <Header />
-                
+
                 <section class="team-section padding">
                     {/* About Section Two */}
-                        <div class="container-fulid">
-                            <div class="row align-items-center paddinground">
-                                <div class="col-lg-6">
-                                    <div class="image-wrapper">
-                                        <div class="image-one">
-                                            <img src={require('../../assets/images/shape/b2b.png')} alt="" className='imgb2p' />
-                                        </div>
+                    <div class="container-fulid">
+                        <div class="row align-items-center paddinground">
+                            <div class="col-lg-6">
+                                <div class="image-wrapper">
+                                    <div class="image-one">
+                                        <img src={require('../../assets/images/shape/back.gif')} alt="" className='imgb2p' />
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="content-box">
-
-                                        <div class="text-center textleft">
-                                            <h3 className='textleft'> <span className='headeingcolorblack'>Redefining the Meaning of </span><br></br>
-                                                <span className='headeingcolorblue'>Employee-Centric Care</span></h3>
-                                            <h4 className='textleft marginTop40'>Variety of benefits for a healthier <br></br>and happier workforce
-                                            </h4>
-                                        </div>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">SAY YES!</span></button>
-
-
-                                    </div>
-                                </div>
-
                             </div>
+                            <div class="col-lg-6">
+                                <div class="content-box">
+
+                                    <div class="text-center textleft">
+                                        <h3 className='textleft'>
+                                            <span className='headeingcolorblack'>Redefining the Meaning of </span><br></br>
+                                            <span className='headeingcolorblue'>Employee-Centric Care</span>
+                                        </h3>
+                                        <h4 className='textleft marginTop40'>Variety of benefits for a healthier <br></br>and happier workforce
+                                        </h4>
+                                    </div>
+                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">SAY YES!</span></button>
+
+
+                                </div>
+                            </div>
+
                         </div>
+                    </div>
                 </section>
 
                 <section class="">
-                   
+
                     <div class="auto-container">
                         <div class="row">
 
-                            <div class="col-lg-6" style={{marginTop: 10 + 'rem'}}>
-                            <div class="sec-title">
-                            <h3 className=''> <span className='headeingcolorblue'>     We help you figure out <br></br></span>where you are on your<br></br>   <span className='headeingcolorblue'> wellbeing journey </span></h3>
-                            <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">SAY YES!</span></button>
+                            <div class="col-lg-6" style={{ marginTop: 10 + 'rem' }}>
+                                <div class="sec-title">
+                                    <h3 className='sec-heading'>
+                                        <span >  We help you figure out <br></br></span >
+                                        <i><span className='headeingcolorblue'>where you are </span></i>on your<br></br>
+                                        <i><span className='headeingcolorblue'> wellbeing journey </span></i>
+                                    </h3>
+                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">
+                                        <span class="btn-title sec-heading1">GET QUOTE</span></button>
 
-                        </div> 
+                                </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/b2b12.png')} alt="" />
+                                        <img src={require('../../assets/images/shape/Frame3.png')} alt=""
+                                            style={{ marginRight: 2 + 'rem' }} />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <div className='container-fulid'>
+                {/* <div className='container-fulid'>
                     <div className='container margintop100'>
-                        {/* <div className='sliderbox'>
-                        <div class="image-one">
-                                        <img src={require('../../assets/images/shape/imageb2c.png')} alt="" />
-                                    </div>
+                        <div className='sliderbox'>
+                            <div class="image-one">
+                                <img src={require('../../assets/images/shape/imageb2c.png')} alt="" />
+                            </div>
                         </div>
-<h2 className='sec-title text-center'>to take care of their employees</h2> */}
-                                        <img src={require('../../assets/images/shape/b2bsli.png')} alt="" />
+                        <h2 className='sec-title text-center'>to take care of their employees</h2>
+
+                        <img src={require('../../assets/images/shape/b2bsli.png')} alt="" />
 
                     </div>
-                </div>
+                </div> */}
 
 
                 <div class="auto-container margin150">
@@ -107,6 +116,19 @@ class corporate_membership_program extends Component {
                                 to take care of their employees
                                 </div> */}
 
+                <div className='container-fulid'>
+                    <div className='container margintop100'>
+                        {/* <div className='sliderbox'>
+                        <div class="image-one">
+                                        <img src={require('../../assets/images/shape/imageb2c.png')} alt="" />
+                                    </div>
+                        </div>
+<h2 className='sec-title text-center'>to take care of their employees</h2> */}
+
+                        <img src={require('../../assets/images/shape/b2bsli.png')} alt="" />
+
+                    </div>
+                </div>
                 <section class="container-fluid b2bback margin150">
 
                     <div className='container '>
@@ -124,6 +146,7 @@ class corporate_membership_program extends Component {
                         </div>
                     </div>
                 </section>
+
                 {/* <!-- Contact Section --> */}
                 <section class="contact-section">
                     <section class="">

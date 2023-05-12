@@ -220,6 +220,7 @@ figure {
 	vertical-align  : middle;
 	background-color: #1963C6;
 	margin-top: 20px;
+	margin-left: 3rem;
 }
 
 .btn-style-one:hover {
@@ -9778,8 +9779,15 @@ img.lazy-image.loaded {
 {
 	margin-top: 20px;
 	font-weight: 500 !important;
+	
+}
+.sec-heading{
+	font-size: 40px;
 	margin-left: 3rem;
 }
+/* .sec-heading1{
+	margin-left: 3rem;
+} */
 .heading5{ 
 	margin-right: 3rem;
 }
@@ -11148,6 +11156,7 @@ background: none !important;	}
 .imgb2p
 {
 	width: 80%;
+	margin-left: 5rem;
 }
 
 .marginbutton
