@@ -544,6 +544,7 @@ img {
 
 .main-header .auto-container {
 	max-width: 1360px;
+	height: 90px;
 }
 
 .main-header .header-top {

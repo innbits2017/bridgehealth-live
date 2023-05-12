@@ -73,7 +73,7 @@ class Blog extends Component {
                                     <div class="image"><Link to={'/#'}>
                                         <img src={require('../../assets/images/resource/b1.png')} alt="" /></Link></div>
                                     <div class="lower-content">
-
+                                    <div class="category">Blog heading</div>
 
                                         <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
                                         <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
@@ -86,7 +86,7 @@ class Blog extends Component {
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b2.png')} alt="" /></Link></div>
                                     <div class="lower-content">
 
-
+                                    <div class="category">Blog heading</div>
                                         <h3><Link to={'/blog-details'}>Top ten acai bowls to maintain that nice healthy glow</Link></h3>
                                         <div class="text">Lorem ipsum dolor sit amet, consectet adipisci elit, sed do eiusmod temp incididunt ut labore</div>
                                     </div>
@@ -98,7 +98,7 @@ class Blog extends Component {
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b1.png')} alt="" /></Link></div>
                                     <div class="lower-content">
 
-
+                                    <div class="category">Blog heading</div>
                                         <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
                                         <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
                                     </div>
@@ -109,7 +109,7 @@ class Blog extends Component {
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b4.png')} alt="" /></Link></div>
                                     <div class="lower-content">
-
+                                    <div class="category">Blog heading</div>
 
                                         <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
                                         <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
@@ -122,7 +122,7 @@ class Blog extends Component {
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b5.png')} alt="" /></Link></div>
                                     <div class="lower-content">
 
-
+                                    <div class="category">Blog heading</div>
                                         <h3><Link to={'/blog-details'}>Top ten acai bowls to maintain that nice healthy glow</Link></h3>
                                         <div class="text">Lorem ipsum dolor sit amet, consectet adipisci elit, sed do eiusmod temp incididunt ut labore</div>
                                     </div>
@@ -134,7 +134,7 @@ class Blog extends Component {
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b6.png')} alt="" /></Link></div>
                                     <div class="lower-content">
 
-
+                                    <div class="category">Blog heading</div>
                                         <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
                                         <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
                                     </div>
@@ -146,7 +146,7 @@ class Blog extends Component {
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b7.png')} alt="" /></Link></div>
                                     <div class="lower-content">
 
-
+                                    <div class="category">Blog heading</div>
                                         <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
                                         <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
                                     </div>
@@ -158,7 +158,7 @@ class Blog extends Component {
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b8.png')} alt="" /></Link></div>
                                     <div class="lower-content">
 
-
+                                    <div class="category">Blog heading</div>
                                         <h3><Link to={'/blog-details'}>Top ten acai bowls to maintain that nice healthy glow</Link></h3>
                                         <div class="text">Lorem ipsum dolor sit amet, consectet adipisci elit, sed do eiusmod temp incididunt ut labore</div>
                                     </div>
@@ -169,7 +169,7 @@ class Blog extends Component {
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b9.png')} alt="" /></Link></div>
                                     <div class="lower-content">
-
+                                    <div class="category">Blog heading</div>
 
                                         <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
                                         <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
