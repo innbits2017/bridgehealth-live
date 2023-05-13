@@ -6636,7 +6636,7 @@ img.lazy-image.loaded {
 	background-size    : cover;
 }
 
-.page-banner .page-banner-bg:before {
+/* .page-banner .page-banner-bg:before {
 	content   : '';
 	position  : absolute;
 	left      : 0;
@@ -6644,7 +6644,7 @@ img.lazy-image.loaded {
 	width     : 100%;
 	height    : 100%;
 	opacity   : 0.80;
-}
+} */
 
 .page-banner .auto-container {
 	position: relative;
@@ -10610,6 +10610,19 @@ a:not([href]):not([tabindex]) {
 	background-size: cover;
 	background-image: url(../images/shape//blogback.png);
 }
+.blogdesignerd
+{
+	background-size: contain;
+	background-image: url(../images/shape//blogbackground.png);
+}
+.blogdesignerd1
+{
+	background-image: url(../images/shape//b2c1.png);	
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
 .b2cimg
 {
 	width: 95%;
@@ -10724,8 +10737,8 @@ font-size: 32px;
 }
 .annualback
 {
-	background-image: url(../images/shape/yesss.png);
-	background-size: contain;
+	background-image: url(../images/shape/b2c.png);
+	background-size: cover;
 }
 hr{
 	border: none;
@@ -11190,3 +11203,114 @@ display: none;
   {
 	transform: perspective(800px) rotateY(0deg) scale(0.9) rotateX(0deg) !important;
   }
+  .page-bannerblog
+  {
+	padding-top: 38%;
+    padding-bottom: 2%;
+}
+
+.page-bannerblog h1
+  {
+font-size: 40px !important;
+text-align: left;
+color: #fff !important;
+  }
+  .blogtopm
+
+{
+	margin-top: 230px;
+    text-align: left;
+}
+.post-meta
+{
+	position: relative;
+    display: flex;
+}
+.post-meta li a
+{
+	color: #fff;
+	margin-right: 10px;
+}
+.post-meta li a i
+{
+	margin-right: 10px;
+} 
+.post-meta li a img
+{
+	margin-right: 10px;
+} 
+.page-banner12 {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    padding: 0px !important;
+    background-color: #25283a;
+    z-index: 2;
+}
+
+.form-group1
+{
+	border: 1px solid #bab7b7;
+    padding: 10px;
+    width: -moz-fit-content;
+    width: 400px;
+    border-radius: 10px;
+}
+.search-box
+{
+	display:flex;
+}
+.language
+{
+	border: 1px solid #bab7b7;
+    padding: 10px 5px 0px 10px;
+    width: -moz-fit-content;
+    /* width: max-content; */
+    border-radius: 10px;
+    height: 48.8px;
+    margin-right: 20px;
+}
+.searchblog{
+	background-color: #fff !important;
+	float: right;
+}
+.personal
+{
+	float: right;
+    margin-right: 66px;
+}
+.personal h2
+{
+font-size: 55px !important;}
+.b2q
+{
+	margin-top: -10px !important;
+    margin-left: 8rem !important;
+}
+.listicon6 {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.persona3
+{
+	float: right;
+    margin-right: 66px;
+}
+.margintop145
+{
+    margin-left: 9rem;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+}
+.margintop145 h2 {
+    font-size: 55px !important;
+    text-align: right;
+    margin-right: 50px;
+}
+.margintop145 p
+{
+	text-align: right;
+    margin-right: 50px;
+}

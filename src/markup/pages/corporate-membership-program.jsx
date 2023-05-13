@@ -125,7 +125,7 @@ class corporate_membership_program extends Component {
                         </div>
 <h2 className='sec-title text-center'>to take care of their employees</h2> */}
 
-                        <img src={require('../../assets/images/shape/b2bsli.png')} alt="" />
+                        <img src={require('../../assets/images/shape/Layer 2-B2B GIF 2_1.gif')} alt="" />
 
                     </div>
                 </div>

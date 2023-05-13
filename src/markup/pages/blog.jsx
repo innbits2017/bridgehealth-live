@@ -26,45 +26,38 @@ class Blog extends Component {
 
                 </section>
                 {/* <!--End Banner Section --> */}
+             
+
+                {/* <!-- News Section --> */}
+                <section class="news-section blogdesignerd">
                 <div class="container">
-                    <div class="row mb-5">
+                    <div class="row">
                         <div class="col-lg-8 mx-auto">
 
                             <div class="bg-white p-5 ">
-
-                                <form action="">
-
-                                    <div class="input-group mb-4">
-                                        {/* <div class="dropdown">
-                                            <button>
-                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">CATEGORY</a>
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a href="#" class="dropdown-item">Action</a>
-                                                <a href="#" class="dropdown-item">Another action</a>
-                                            </div>
-                                        </div> */}
-                                        <input type="search" placeholder="Search Topic" aria-describedby="button-addon5" class="form-control" />
-                                        <div class="input-group-append">
-                                            <button id="button-addon5" type="submit" class="btn btn-primary">
-                                                <i class="fa fa-search"> </i>
-                                            </button>
-                                        </div>
+                                    {/* <!-- Search --> */}
+                                    <div class=" search-box">
+                                    <div class="language">
+                                        <form action="#" class="language-switcher">
+                                            <select>
+                                                <option value="1">Category</option>
+                                                <option value="1">FR</option>
+                                                <option value="1">SP</option>
+                                                <option value="1">BE</option>
+                                            </select>
+                                        </form>
                                     </div>
-                                    {/* <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <button id="button-addon8" type="submit" class="btn btn-danger"> <i class="fa fa-search"> </i> </button>
-                                        </div>
-                                        <input type="search" placeholder="Search here..." aria-describedby="button-addon8" class="form-control" />
-                                    </div> */}
-                                </form>
+                                        <form method="post" action="http://azim.commonsupport.com/Finandox/contact.html">
+                                            <div class="form-group1">
+                                                <input type="search" name="search-field" value="" placeholder="Search Topic" required=""/>
+                                                <button type="submit"><span class="icon far fa-search searchblog"></span></button>
+                                            </div>
+                                        </form>
+                                    </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                {/* <!-- News Section --> */}
-                <section class="news-section">
                     <div class="auto-container">
                         <div class="row">
                             {/* <!-- News Block One --> */}

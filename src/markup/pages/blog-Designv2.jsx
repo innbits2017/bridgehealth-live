@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 
-const aboutbg = require('./../../assets/images/background/image-11.jpg');
+const aboutbg = require('./../../assets/images/background/blog-details.png');
 
 
 class blog_Designv2 extends Component {
@@ -15,14 +15,27 @@ class blog_Designv2 extends Component {
                 <Header />
 
                 {/* <!-- Page Banner Section --> */}
-                <section class="page-banner">
+                <section class="page-banner page-banner12">
                     <div className="page-banner-bg" style={{ backgroundImage: "url(" + aboutbg + ")" }}></div>
-                    <div class="bottom-rotten-curve alternate"></div>
+                    <div class="auto-container page-bannerblog">
+                        <h1>What does your GI score indicate?</h1>
+                     
+                        <ul class="post-meta">
+                                                <li><Link to={'/#'}><img src={require('../../assets/images/shape/icon.png')} alt="" />Jenny kiaa</Link></li>
+                                                <li><Link to={'/#'}><i class="far fa-calendar-alt"></i>02 december 2022</Link></li>
+                                                <li><Link to={'/#'}><i class="fa fa-clock"></i>3 min. to read</Link></li>
 
-                    <div class="auto-container1">
-                        <h1 className='colorwhite blogdetails'>What does your GI score indicate? </h1>
-
+                                            </ul>
                     </div>
+                    {/* <div class="auto-container1">
+                        <h1 className='colorwhite blogdetails blogtopm'>What does your GI score indicate? </h1>
+                                         
+                                            </div>
+                                            <ul class="post-meta">
+                                                <li><Link to={'/#'}><i class="far fa-eye"></i>332 Views</Link></li>
+                                                <li><Link to={'/#'}><i class="far fa-comments"></i>35 Comments</Link></li>
+                                                <li><Link to={'/#'}><i class="far fa-calendar-alt"></i>26th March 2020</Link></li>
+                                            </ul> */}
 
                 </section>
 

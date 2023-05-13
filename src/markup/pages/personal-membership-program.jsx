@@ -27,13 +27,13 @@ class b2cmembership extends Component {
                 <div class="col-lg-6">
                   <div class="content-box">
 
-                    <div class="sec-title text-center textleft">
+                    <div class="sec-title text-center textleft personal">
                       <h2 className='textleft'>
                         <span className='headeingcolorblack'> Your  </span> <span className='headeingcolorblue'>Good Health </span> <br></br><span className='headeingcolorblack'>is Our Plan</span></h2>
                       <h3 className='textleft marginTop40'>Choose from a selection of<br></br> Annual Preventive Health plans
                       </h3>
                     </div>
-                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
+                    <button class="theme-btn btn-style-one b2q" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
 
 
                   </div>
@@ -79,12 +79,13 @@ class b2cmembership extends Component {
         <section class="contact-section">
 
           <div class="container-fluid annualback">
+            
             <div class="row">
 
-              <div class="col-lg-4">
+              <div class="col-lg-6">
                 <div class="contact-form-area">
 
-                  <div class="sec-title">
+                  <div class="sec-title persona3">
                     <h2> 
                       <span className='headeingcolorblack'>Why </span>
                       <span className='headeingcolorblue'> Annual </span><br></br>
@@ -99,19 +100,19 @@ class b2cmembership extends Component {
 
                     <ul className='listicon'>
                       <li>
-                        <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" />
+                        <img className='listicon6' src={require('../../assets/images/shape/b21.png')} alt="" />
                         Reduce healthcare expenditure
                       </li>
                       <li>
-                        <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" />
+                        <img className='listicon6' src={require('../../assets/images/shape/b13.png')} alt="" />
                         Discover any hidden health conditions
                       </li>
                       <li>
-                        <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" />
+                        <img className='listicon6' src={require('../../assets/images/shape/b12.png')} alt="" />
                         Know your health score
                       </li>
                       <li>
-                        <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" />
+                        <img className='listicon6' src={require('../../assets/images/shape/b14.png')} alt="" />
                         Implement lifestyle changes for better quality of life
                       </li>
                     </ul>
@@ -130,10 +131,10 @@ class b2cmembership extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-8">
+              <div class="col-lg-6">
                 <div class="image-wrapper">
                   <div class="image-one">
-                    <img src={require('../../assets/images/shape/b2c.png')} alt="" className='b2cimg' />
+                    {/* <img src={require('../../assets/images/shape/b2c.png')} alt="" className='b2cimg' /> */}
                   </div>
                 </div>
               </div>
@@ -141,20 +142,20 @@ class b2cmembership extends Component {
           </div>
         </section>
 
-        <section class="contact-section">
+        <section class="contact-section blogdesignerd1">
 
           <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-8">
-                <div class="image-wrapper">
+              <div class="col-lg-6">
+                {/* <div class="image-wrapper">
                   <div class="image-one">
                     <img src={require('../../assets/images/shape/b2c1.png')} alt="" className='b2cimg' />
                   </div>
-                </div>
+                </div> */}
               </div>
 
-              <div class="col-lg-4" style={{ marginTop: 10 + 'rem' }}>
-                <div class="contact-form-area">
+              <div class="col-lg-6">
+                <div class="contact-form-area margintop145">
 
                   <div class="sec-title">
                     <h2> <span className='headeingcolorblack'>Why </span>
@@ -164,7 +165,7 @@ class b2cmembership extends Component {
                     {/* <h4 className='textleft marginTop40'>A host of benefits await you as soon as you say <span className='headeingcolorblue'> YES</span>
           </h4> */}
                     <p>
-                      Preventive healthcare helps in predicting & preventing serious health conditions while prolonging your life. It also helps you in making proactive choices regarding your mental health and lifestyle to stay fit at all times
+                      Preventive healthcare helps in predicting & <br></br>preventing serious health conditions while<br></br> prolonging your life. It also helps you in making <br></br>proactive choices regarding your mental health<br></br> and lifestyle to stay fit at all times
                     </p>
 
                   </div>
