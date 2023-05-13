@@ -50,7 +50,7 @@ class Blog extends Component {
                                         <form method="post" action="http://azim.commonsupport.com/Finandox/contact.html">
                                             <div class="form-group1">
                                                 <input type="search" name="search-field" value="" placeholder="Search Topic" required=""/>
-                                                <button type="submit"><span class="icon far fa-search searchblog"></span></button>
+                                                <button type="submit" style={{marginLeft: 40 + '%'}}><span class="icon far fa-search searchblog"></span></button>
                                             </div>
                                         </form>
                                     </div>
