@@ -2974,7 +2974,7 @@ font-weight: 700;
 .main-footer .links-widget ul li a {
 	position          : relative;
 	color             : #000;
-	font-size         : 16px;
+	font-size         : 15px;
 	transition        : all 0.3s ease;
 	-moz-transition   : all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
@@ -9784,7 +9784,6 @@ img.lazy-image.loaded {
 }
 .sec-heading{
 	font-size: 40px;
-	margin-left: 3rem;
 }
 /* .sec-heading1{
 	margin-left: 3rem;
@@ -11313,4 +11312,8 @@ font-size: 55px !important;}
 {
 	text-align: right;
     margin-right: 50px;
+}
+
+.margin200 {
+    margin-top: -196px;
 }

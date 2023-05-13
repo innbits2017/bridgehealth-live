@@ -134,7 +134,7 @@ class Blog extends Component {
                                 </div>
                             </div>
                             {/* <!-- News Block One --> */}
-                            <div class="news-block-one col-lg-4 margin100">
+                            <div class="news-block-one col-lg-4 margin200">
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b7.png')} alt="" /></Link></div>
                                     <div class="lower-content">
@@ -158,7 +158,7 @@ class Blog extends Component {
                                 </div>
                             </div>
                             {/* <!-- News Block One --> */}
-                            <div class="news-block-one col-lg-4 margin100">
+                            <div class="news-block-one col-lg-4 margin200">
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b9.png')} alt="" /></Link></div>
                                     <div class="lower-content">
