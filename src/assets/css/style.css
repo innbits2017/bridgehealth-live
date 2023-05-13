@@ -5063,7 +5063,7 @@ img.lazy-image.loaded {
 .testimonial-section .slick-prev {
 	position          : absolute;
 	right             : 70px;
-	top               : -60px;
+	top               : 457px;
 	left: auto;
 	height            : 60px;
 	width             : 60px;
@@ -5109,7 +5109,7 @@ img.lazy-image.loaded {
 .testimonial-section .slick-next {
 	position          : absolute;
 	right             : 0;
-	top               : -60px;
+	top               : 457px;
 	height            : 60px;
 	width             : 60px;
 	border-radius     : 50%;
