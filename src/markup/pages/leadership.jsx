@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 
-const aboutbg = require('./../../assets/images/background/image-11.jpg');
+const aboutbg = require('./../../assets/images/background/image20.png');
 const wellcomebg1 = require('./../../assets/images/resource/image-1.jpg');
 
 class leadership extends Component {
@@ -52,7 +52,7 @@ class leadership extends Component {
                                 <div class="col-lg-10">
                                     <div class="author-info">
                                         <div class="wrapper-box text">
-                                            <h2>Kris Gopalakrishnan</h2>
+                                            <h2 >Kris Gopalakrishnan</h2>
                                             <div class="designation">Chairman & Co-Founder</div>
                                             <hr></hr>
                                             <div class="text">Senapathy “Kris” Gopalakrishnan served as the Vice Chairman of Infosys from 2011 to 2014 and the Chief Executive Officer and Managing Director of Infosys from 2007 to 2011. Kris is one of the co-founders of Infosys. He also was selected to Thinkers 50, an elite list of global business thinkers, in...</div>
