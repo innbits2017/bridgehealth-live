@@ -157,7 +157,7 @@ class b2cmembership extends Component {
               <div class="col-lg-6">
                 <div class="contact-form-area margintop145">
 
-                  <div class="sec-title">
+                  <div class="sec-title" >
                     <h2> <span className='headeingcolorblack'>Why </span>
                       <span className='headeingcolorblue'> Preventive</span>
                       <span className='headeingcolorblack'> Health Care?</span>
@@ -165,7 +165,9 @@ class b2cmembership extends Component {
                     {/* <h4 className='textleft marginTop40'>A host of benefits await you as soon as you say <span className='headeingcolorblue'> YES</span>
           </h4> */}
                     <p>
-                      Preventive healthcare helps in predicting & <br></br>preventing serious health conditions while<br></br> prolonging your life. It also helps you in making <br></br>proactive choices regarding your mental health<br></br> and lifestyle to stay fit at all times
+                      Preventive healthcare helps in predicting & <br></br>preventing 
+                      serious health conditions while<br></br> prolonging your life. 
+                      It also helps you in making <br></br>proactive choices regarding your mental health<br></br> and lifestyle to stay fit at all times
                     </p>
 
                   </div>
