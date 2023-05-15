@@ -136,8 +136,7 @@ class Testimonial1 extends Component {
                                                 <p className='textpara1'>Consultant Physician</p>
 
                                                 <div class="text">
-                                                    Dr. Jyotsna is a Consultant Physician with a special interest in Women's Health. She has completed her MBBS
-                                                </div>
+                                                    Dr. Jyotsna is a Consultant Physician with a special interest in Women's Health. She has completed her MBBS                                                </div>
                                             </div>
 
                                         </div>
@@ -208,8 +207,8 @@ class Testimonial1 extends Component {
                                             </div>
 
                                         </div>
-                                    </div>   
-                                    <div class="slide-item">
+                                    </div>  
+                                     <div class="slide-item">
                                         {/* <!-- Testimonial-block --> */}
                                         <div class="testimonial-block">
                                             <div class="author-info">
@@ -226,8 +225,8 @@ class Testimonial1 extends Component {
                                             </div>
 
                                         </div>
-                                    </div>  
-                                     <div class="slide-item">
+                                    </div>   
+                                    <div class="slide-item">
                                         {/* <!-- Testimonial-block --> */}
                                         <div class="testimonial-block">
                                             <div class="author-info">
@@ -249,6 +248,7 @@ class Testimonial1 extends Component {
                                 </Slider>
                             </div>
                             {/* SEE ALL */}
+                            
                         </div>
                     </div>
                 </section>

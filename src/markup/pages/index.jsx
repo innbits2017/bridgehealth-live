@@ -215,7 +215,9 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/doctor.png')} alt="" />
                                             <h2 className='expertise'>Annual Preventive<br></br> Health Plans</h2>
 
-                                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
+                                            <p>
+                                            Explore our efficient membership services that provide a holistic care plan and guide you to start a healthy journey
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -224,7 +226,9 @@ class Index extends Component {
                                         <img src={require('../../assets/images/shape/s1.png')} alt="" />
                                         <h2 className='expertise'>Chronic Care Programs</h2>
 
-                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
+                                        <p>
+                                        Find hope and healing through our specialized chronic care offerings
+                                        </p>
                                     </div>
                                 </div>
 
@@ -242,7 +246,7 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/aaa1.jpeg')} alt="" />
+                                            <img src={require('../../assets/images/shape/k3.jpeg')} alt="" />
                                             <h2 className='expertise'>Doctor Consults</h2>
                                             <p>
                                             All of us get sick at some point in life. And whenever we get sick, we always go to the doctor 
@@ -256,7 +260,7 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/aaa.jpeg')} alt="" />
+                                            <img src={require('../../assets/images/shape/k2.jpeg')} alt="" />
                                             <h2 className='expertise'>Psychologist Consults</h2>
                                             <p>
                                             Unlike physical health issues, psychological issues are not as visible. They are generally ignored 
