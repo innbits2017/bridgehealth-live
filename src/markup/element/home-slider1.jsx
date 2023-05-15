@@ -28,11 +28,12 @@ class HomeSlider1 extends Component {
                     {slides.map((slide, index) =>
                         <div key={index} className="slider-content" style={{ background: `url('${slide.image}') no-repeat center center` }}>
                             <div className="inner">
-                                <h1>{slide.title}</h1>
+                                <h1 style={{fontSize: 50 + 'px'}}>{slide.title}</h1>
                                 <h2>{slide.finan}<span>{slide.dox} </span></h2>
-                                <div class="text">{slide.description}</div>
-                                <div class="btn-box">
-                                    <Link to={'/#'} class="theme-btn btn-style-one"><span class="btn-title">{slide.btnService}</span>
+                                <div className="text" style={{fontSize: 33 + 'px'}}>{slide.description}</div>
+                                <div className="btn-box">
+                                    <Link to={'/#'} className="theme-btn btn-style-one">
+                                        <span className="btn-title">{slide.btnService}</span>
                                     </Link></div>
                             </div>
                         </div>)}

@@ -10824,7 +10824,7 @@ hr{
 	}
 	.slider-content .inner .text {
 		display: block;
-		font-size: 26px;
+		font-size: 33px !important;
 		line-height: 1.2em;
 		color: #ffffff;
 		font-weight: 400;
