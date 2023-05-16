@@ -92,8 +92,9 @@ class Index extends Component {
                 <section class="team-section">
                     <div class="auto-container">
                         <div class="sec-title text-center marginbutton">
-                            <h2> <span className=' headeingcolorblue'> Annual Preventive </span>
-                                <span className='headeingcolorblack'>Health Plans</span></h2>
+                            <h2 style={{fontSize: 43 + 'px', lineHeight: 50 + 'px'}}> <span className=' headeingcolorblue'> Annual Preventive </span>
+                                <span className='headeingcolorblack'>Health Plans</span>
+                                </h2>
                             <h5 className='heading'>Membership-based integrated programs covering various aspects
                             </h5>
                         </div>
@@ -107,7 +108,10 @@ class Index extends Component {
                                 <div class="col-lg-6">
                                     <div class="content-box">
                                         <div class="sec-title">
-                                            <div class="text textpadding1"> <span className='headeingcolorblue'>#BridgeTheGap</span> with our Annual Health Plans that are membership-based integrated programs covering everything from clinical assessments to consultations, lab tests to nutrition sessions, lifestyle management to emotional wellness and much more.
+                                            <div class="text textpadding1">
+                                                 <span className='headeingcolorblue'>#BridgeTheGap</span> with our Annual Health<br></br> Plans that are membership-based <br></br>
+                                                 integrated programs covering everything <br></br>from clinical assessments to <br></br>
+                                                 consultations, lab tests to nutrition <br></br>sessions, lifestyle management to<br></br> emotional wellness and much more.
                                             </div>
                                         </div>
 
@@ -140,9 +144,9 @@ class Index extends Component {
                     <div class="auto-container">
                         <div class="sec-title text-center">
                             <h2 className='header1'>
-                                <span className='headeingcolorblack'> PREDICT.</span>
-                                <span className='headeingcolorblue'>PREVENT.</span>
-                                <span className='headeingcolorblack'>  PROGRESS.</span>
+                                <span className='headeingcolorblack'><strong> PREDICT.</strong></span>
+                                <span className='headeingcolorblue'><strong>PREVENT.</strong></span>
+                                <span className='headeingcolorblack'> <strong> PROGRESS.</strong></span>
                             </h2>
                         </div>
 
@@ -165,8 +169,8 @@ class Index extends Component {
                                 <div class="col-lg-6">
                                     <div class="content-box">
                                         <div class="sec-title">
-                                            <div class="text textpadding" style={{ marginRight: 40 + 'px' }}>Predict the onset of
-                                                <span className='headeingcolorblack'> hidden illnesses</span> and health conditions, prevent them by undergoing tests and check-ups, and delay the onset of chronic illness.
+                                            <div class="text1 textpadding" style={{ marginRight: 40 + 'px' }}>Predict the onset of
+                                                <span className='headeingcolorblack'> hidden illnesses</span> and<br></br>health conditions, prevent them by undergoing tests, check-ups and progress<br></br> towards good health.
                                             </div>
                                         </div>
                                         <ul className='listicon'>
@@ -198,7 +202,7 @@ class Index extends Component {
                 <section class="team-section expertiseback">
                     <div class="auto-container">
                         <div class="sec-title text-center">
-                            <h2> <span className='headeingcolorblack'>  Explore </span> <span className='headeingcolorblue'>Our Expertise</span></h2>
+                            <h2> <span className='headeingcolorblack'>  Explore Our </span> <span className='headeingcolorblue'> Expertise</span></h2>
                             <h5 className='heading3'>From mental health and wellness to nutrition management, our services help <span className='headeingcolorblue'> #BridgeTheGap</span> between you and healthy living
                             </h5>
                         </div>
@@ -235,7 +239,7 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <img src={require('../../assets/images/shape/s2.png')} alt="" />
-                                        <h2 className='expertise'>Comprehensive Health Checks</h2>
+                                        <h2 className='expertise'>Comprehensive<br></br> Health Checks</h2>
                                         <p>
                                         Health is defined as a state of complete physical, mental, and social well-being. 
                                         If even one aspect isn’t satisfied, it means that you are not healthy
@@ -366,7 +370,7 @@ class Index extends Component {
                                     <div class="grow bozhover">
                                         <div>
                                             <img src={require('../../assets/images/shape/s13.png')} alt="" />
-                                            <h2 className='expertise'>Yoga Assessment and Coaching</h2>
+                                            <h2 className='expertise'>Yoga Assessment <br></br>and Coaching</h2>
                                             <p>
                                             Practiced for thousands of years, yoga has several benefits on your overall health. 
                                             Through a series of breathing exercises and poses, yoga
@@ -379,7 +383,7 @@ class Index extends Component {
                                     <div class="grow bozhover">
                                         <div>
                                             <img src={require('../../assets/images/shape/s14.png')} alt="" />
-                                            <h2 className='expertise'>Fitness Assessment and Coaching</h2>
+                                            <h2 className='expertise'>Fitness Assessment<br></br> and Coaching</h2>
                                             <p>
                                             To stay healthy, regular exercise is a must! Regular exercise and keeping our bodies active reduces blood pressure,
                                              improves blood circulation, burns excess fat & calories, and reduces

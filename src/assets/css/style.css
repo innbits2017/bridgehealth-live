@@ -220,7 +220,7 @@ figure {
 	vertical-align  : middle;
 	background-color: #1963C6;
 	margin-top: 20px;
-	margin-left: 3rem;
+	margin-left: 1rem;
 }
 
 .btn-style-one:hover {
@@ -902,7 +902,7 @@ img {
     width: 200px;
     height: 150px;
     padding: 20px;
-	margin-left: 22%;
+	margin-left: 21%;
 }
 
 .header-top-two .top-right .social-links li a span {
@@ -2817,22 +2817,24 @@ img {
     font-size: 36px;
     line-height: 1.5em;
     /* text-transform: capitalize; */
-    letter-spacing: 1px;
+    letter-spacing: 0px;
+	font-weight: 900;
 }
+
 .headeingcolorblue
 {
 color: #1963C6;
-font-weight: 700;
+font-weight: 900;
 }
 .headeingcolorblack
 {
 color: #000;
-font-weight: 700;
+font-weight: 900;
 
 }
 .headeingcolorblack1{
 	color: #99BB5E;
-	font-weight: 700;
+	font-weight: 900;
 }
 /* .header1{
 	margin-top: 500px;
@@ -2842,13 +2844,26 @@ font-weight: 700;
 	position   : relative;
 	display    : block;
 	padding-top: 25px;
-	font-size  : 22px;
+	font-size  : 25px;
 	color      : #25283a;
 	margin     : 0;
 	margin-left: 38px;
 }
+.sec-title .text1 {
+	position   : relative;
+	display    : block;
+	padding-top: 25px;
+	font-size  : 19.5px;
+	color      : #25283a;
+	margin     : 0;
+	margin-left: 38px;
+	word-spacing: 8px;
+	text-align: justify;
+	line-height: 36px;
+}
 .heading{
 	font-weight: 500 !important;
+	font-size: 20px;
 }
 .sec-title .link-box {
 	position   : relative;
@@ -3391,7 +3406,7 @@ img.lazy-image.loaded {
 .testthumb
 {
 	width: 40px;
-    border-radius: 15px;
+    border-radius: 30px;
     height: 40px;
     margin-left: 85px;
 }
@@ -3406,6 +3421,7 @@ img.lazy-image.loaded {
     margin-left: -150px !important;
     margin-top: 12px;
     font-weight: 600;
+	color: #777777;
 }
 .spenheading{
 	margin-left: 8px !important;
@@ -4509,7 +4525,7 @@ img.lazy-image.loaded {
 
 .contact-form label {
 	margin-bottom: 17px;
-    font-size: 20px;
+    font-size: 16.589px;
     margin-left: 5%;
     color: #000;
     font-weight: 500;
@@ -4692,7 +4708,7 @@ img.lazy-image.loaded {
     border: 1px solid #000000;
     border-radius: 5px;
     text-align: center;
-    transform: translateY(-50%);
+    transform: translateY(-80%);
 	text-transform: uppercase;
 }
 .button-txt{
@@ -5410,6 +5426,10 @@ img.lazy-image.loaded {
 	border-bottom : 1px solid #dcdcdc;
 	padding-bottom: 40px;
 }
+.about-section-two .sec-title .text1 {
+	border-bottom : 1px solid #dcdcdc;
+	padding-bottom: 40px;
+}
 
 .about-section-two .author-info {
 	position         : relative;
@@ -5452,6 +5472,10 @@ img.lazy-image.loaded {
 /**/
 
 .about-section-two .content-box.style-two .sec-title .text {
+	border-bottom : 0px;
+	padding-bottom: 0;
+}
+.about-section-two .content-box.style-two .sec-title .text1 {
 	border-bottom : 0px;
 	padding-bottom: 0;
 }
@@ -9765,12 +9789,13 @@ img.lazy-image.loaded {
 .box .textpara
 {
 	text-align: center;
-    font-size: 17.7px;
+    font-size: 19.3px;
     position: absolute;
     word-break: break-word !important;
     padding-left: 14px;
     padding-right: 14px;
     margin-top: 16px;
+	color: #000;
 }
 .flotrightimg
 {
@@ -9780,11 +9805,13 @@ img.lazy-image.loaded {
 {
 	margin-top: 20px;
 	font-weight: 500 !important;
+	font-size: 26px;
 	
 }
 .sec-heading{
 	font-size: 40px;
 }
+
 /* .sec-heading1{
 	margin-left: 3rem;
 } */
@@ -10130,11 +10157,11 @@ figure:hover+span {
 	}
 }
 .expertise
-{    font-size: 18px;
+{    font-size: 19.5px;
     text-align: center;
-    font-weight: 575;
+    font-weight: 600;
     margin-top: 5px;
-    line-height: 24px;
+    line-height: 25px;
 }
 .copy
 {
@@ -10386,8 +10413,12 @@ input[type=checkbox], input[type=radio] {
 .expertiseback
 {	background-image: url(../images/shape/Group237655.png);
 
-
 }
+/* .expertiseback1
+{	background-image: url(../images/shape/Rectangle520.png);
+	width: 100%;
+	background-size:cover;
+} */
 a:not([href]):not([tabindex]) {
     color: inherit;
     text-decoration: none;
@@ -10479,7 +10510,7 @@ a:not([href]):not([tabindex]) {
 	background: #99BB5E;
     border-radius: 45px 0px 0px 45px;
 	padding-right: 3px;
-	margin-top: -100px;
+	margin-top: -105px;
 	
 }
 .flotright a
@@ -10496,7 +10527,7 @@ a:not([href]):not([tabindex]) {
 	float: right;
     color: #fff;
     line-height: 35px;
-    margin-top: 15%;
+    margin-top: 13%;
     margin-bottom: 15px;
     margin-right: -4% !important;
 	
@@ -10504,7 +10535,7 @@ a:not([href]):not([tabindex]) {
 .b2bback
 {	background-image: url(../images/shape/Group237656.png);
     background-size: cover;
-	padding-bottom: 50px;
+	padding-bottom: 300px;
 
 }
 .lead1
@@ -10636,9 +10667,10 @@ a:not([href]):not([tabindex]) {
 }
 .b2cimgcenter h1{
     text-align: center;
-    margin-top: 17%;
+    margin-top: 20%;
     padding-right: 34%;
     padding-left: 40%;
+	font-size: 30px;
 }
 .b2cimgcenter p{
 	text-align: center;
@@ -11284,7 +11316,10 @@ font-size: 55px !important;}
 .b2q
 {
 	margin-top: -10px !important;
-    margin-left: 8rem !important;
+    margin-left: 2.1rem !important;
+}
+.b2c-heading{
+	line-height: 45px;
 }
 .listicon6 {
     width: 40px;

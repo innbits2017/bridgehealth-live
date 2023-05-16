@@ -40,7 +40,7 @@ class blog_Designv2 extends Component {
                 </section>
 
                 <div className='blogdesigner container-fluid'>
-                    <div class="container" style={{ marginTop: 2 + 'rem' }}>
+                    <div class="container" style={{ marginTop: 2 + 'rem', textAlign: 'justify'}}>
                         <p>
                             As a child, you were likely cautioned to limit your intake of sweets. Remember the warning not to go overboard on candy or have that extra bowl of sugary breakfast cereal? However, as an adult, the temptation to indulge in whatever you want might be stronger than ever. But before you reach for that extra slice of cake or pack of biscuits, as you grow older, maintaining a healthy diet is more important than ever.
                         </p>
@@ -94,11 +94,12 @@ class blog_Designv2 extends Component {
                         <h5> How to Incorporate GI Into Your Daily Lifestyle</h5>
 
                         <p>Incorporating the glycemic index (GI) and glycemic load (GL) into your daily routine can help you maintain a healthy lifestyle.</p>
-                        <ul>
-                            <li> Start by evaluating the foods you commonly eat and use a GI database or list to determine their scores. For better blood sugar balance, aim to consume foods that are low to moderate on the GI scale.</li>
-                            <li> When consuming high-GI foods, try pairing them with healthy sources of protein, fiber, and fats, like boiled carrots and roasted turkey with mashed potatoes. This approach can slow down the digestion of carbohydrates in your meal.</li>
-                            <li>Swapping high-GI foods for low-GI alternatives is an easy way to make healthier choices.</li>
+                        <ul style={{marginLeft: 1 + 'rem'}}>
+                            <li style={{fontSize: 16 + 'px', listStyle: 'circle'}}> Start by evaluating the foods you commonly eat and use a GI database or list to determine their scores. For better blood sugar balance, aim to consume foods that are low to moderate on the GI scale.</li>
+                            <li style={{fontSize: 16 + 'px', listStyle: 'circle'}}> When consuming high-GI foods, try pairing them with healthy sources of protein, fiber, and fats, like boiled carrots and roasted turkey with mashed potatoes. This approach can slow down the digestion of carbohydrates in your meal.</li>
+                            <li style={{fontSize: 16 + 'px', listStyle: 'circle'}}>Swapping high-GI foods for low-GI alternatives is an easy way to make healthier choices.</li>
                         </ul>
+                        
                         <p> By incorporating these practices, you can use the GI and GL to improve your overall well-being.</p>
 
                         <h5>Your Takeaways</h5>
@@ -110,9 +111,9 @@ class blog_Designv2 extends Component {
                     </div>
                 </div>
 
-                <section class="">
+                <section style={{marginBottom: 4 + 'rem'}}>
                     <div class="auto-container">
-                        <h2 style={{textAlign: 'center', marginTop: 2 + 'rem'}}>
+                        <h2 style={{textAlign: 'center', marginTop: 6 + 'rem'}}>
                             {/* Confused about your health checks?<br></br> */}
                             <span className='headeingcolorblack'> More From </span> <span className='headeingcolorblue'>Bridge Health</span>
                         </h2>

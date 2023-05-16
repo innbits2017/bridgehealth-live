@@ -31,7 +31,7 @@ class corporate_membership_program extends Component {
                                 <div class="content-box">
 
                                     <div class="text-center textleft">
-                                        <h3 className='textleft'>
+                                        <h3 className='textleft' style={{fontSize: 40 + 'px'}}>
                                             <span className='headeingcolorblack'>Redefining the Meaning of </span><br></br>
                                             <span className='headeingcolorblue'>Employee-Centric Care</span>
                                         </h3>
@@ -93,11 +93,12 @@ class corporate_membership_program extends Component {
 
                 <div class="auto-container margin150">
                     <div class="sec-title">
-                        <h2> <span className='headeingcolorblack'>THE CORPORATE </span>
+                        <h2 style={{fontSize: 48 + 'px'}}> 
+                        <span className='headeingcolorblack'>THE CORPORATE </span>
                             <span className='headeingcolorblue'> WELLNESS </span>
                             <span className='headeingcolorblack'>MAP</span>
                         </h2>
-                        <h4 className='textleft marginTop40'>Where are you on the well being journey?
+                        <h4 className='textleft marginTop40' style={{fontSize: 33 + 'px'}}>Where are you on the well being journey?
                         </h4>
                     </div>
 
@@ -133,7 +134,8 @@ class corporate_membership_program extends Component {
 
                     <div className='container '>
                         <div class="sec-title text-center">
-                            <h3 className=''> <span className='headeingcolorblue'>     Bridge Health </span>makes it possible for  <span className='headeingcolorblue'> Employers </span><br></br>to keep a check on their  <span className='headeingcolorblue'> Employees’ Health Metrics </span></h3>
+                            <h3 className='' style={{fontSize: 35 + 'px'}}> <span className='headeingcolorblue'>BRIDGE HEALTH </span>
+                            makes it possible for  <span className='headeingcolorblue'> Employers </span>to <br></br>keep a check on their  <span className='headeingcolorblue'> Employees’ Health Metrics </span></h3>
 
                         </div>
                         <div class="row align-items-center">
@@ -152,13 +154,14 @@ class corporate_membership_program extends Component {
                     <section class="">
                         <div class="auto-container">
                             <div class="sec-title text-center">
-                                <h2> <span className='headeingcolorblue'>BOOST  </span> <span className='headeingcolorblack'>YOUR TEAM’S HEALTH</span><br></br>
+                                <h2> <span className='headeingcolorblue'>BOOST  </span> 
+                                <span className='headeingcolorblack'>YOUR TEAM’S HEALTH</span><br></br>
                                 </h2>
                             </div>
 
                         </div>
                     </section>
-                    <div class="auto-container">
+                    <div class="auto-container" style={{marginBottom: 4 + 'rem'}}>
                         <div class="row">
 
                             <div class="col-lg-6">
@@ -166,7 +169,7 @@ class corporate_membership_program extends Component {
 
                                     {/* <!-- Contact Form--> */}
                                     <div class="contact-form">
-                                        <p>Reach out to us and we'll help you in setting up the best of <span className='headeingcolorblue'>Preventive Healthcare</span> Services for your teams.</p>
+                                        <p>Reach out to us and we'll help you in setting up the <br></br>best of <span className='headeingcolorblue'>Preventive Healthcare</span> Services for your teams.</p>
                                         <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
                                             <div class="row clearfix">
                                                 <div class="col-md-12 form-group">
@@ -189,8 +192,8 @@ class corporate_membership_program extends Component {
                                                     </label>
                                                 </div>
 
-                                                <div class="col-md-12 form-group">
-                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Submit</span></button>
+                                                <div class="col-md-12 form-group" style={{marginLeft: 10 + 'rem'}}>
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">SUBMIT</span></button>
                                                 </div>
                                             </div>
                                         </form>

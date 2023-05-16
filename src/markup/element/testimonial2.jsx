@@ -15,7 +15,7 @@ class Testimonial2 extends Component {
         };
         return (
             <>
-                <section class="testimonial-section  testimonialpadding">
+                <section class="testimonial-section  testimonialpadding expertiseback1">
                     <div class="auto-container">
                         <div class="sec-title light">
                             <div class="sub-title">Testimonials</div>
@@ -23,7 +23,7 @@ class Testimonial2 extends Component {
                                 <h2>
                                     <span className='headeingcolorblack'> Testimonials</span>
                                 </h2>
-                                <h5 className='heading3'>They <span className='headeingcolorblue'>#Bridged the Gap!</span> Here’s what they said.
+                                <h5 className='heading3'>They <span className='headeingcolorblue'>#BridgeTheGap!</span> Here’s what they said.
                                 </h5>
                             </div></h2>
                         </div>
@@ -48,7 +48,9 @@ class Testimonial2 extends Component {
                                                         <div class="content-box">
                                                             <div class="sec-title testtitle">
                                                                 <div class="text">
-                                                                    <span><img src={require('../../assets/images/shape/testimonial.png')} alt="" className='testthumb' /></span>
+                                                                    <span>
+                                                                        <img src={require('../../assets/images/shape/testimonial1.png')} alt="" className='testthumb' />
+                                                                    </span>
                                                                     <span className='headeingcolorblack spenheading'>Shanaya Gupta</span>
                                                                     <p className='textpa'>SUBSCRIBED TO THE PLATINUM PLAN</p>
                                                                 </div>
@@ -79,7 +81,7 @@ class Testimonial2 extends Component {
                                                         <div class="content-box">
                                                             <div class="sec-title testtitle">
                                                                 <div class="text">
-                                                                    <span><img src={require('../../assets/images/shape/testimonial.png')} alt="" className='testthumb' /></span>
+                                                                    <span><img src={require('../../assets/images/shape/testimonial1.png')} alt="" className='testthumb' /></span>
                                                                     <span className='headeingcolorblack'>Shanaya Gupta</span>
                                                                     <p className='textpa'>SUBSCRIBED TO THE PLATINUM PLAN</p>
                                                                 </div>

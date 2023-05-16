@@ -28,12 +28,17 @@ class b2cmembership extends Component {
                   <div class="content-box">
 
                     <div class="sec-title text-center textleft personal">
-                      <h2 className='textleft'>
-                        <span className='headeingcolorblack'> Your  </span> <span className='headeingcolorblue'>Good Health </span> <br></br><span className='headeingcolorblack'>is Our Plan</span></h2>
-                      <h3 className='textleft marginTop40'>Choose from a selection of<br></br> Annual Preventive Health plans
+                      <h2 className='textleft' style={{marginRight: 1.9 + 'rem'}}>
+                        <span className='headeingcolorblack'> Your  </span> 
+                        <span className='headeingcolorblue'>Good Health </span> <br></br>
+                        <span className='headeingcolorblack'>is Our Plan</span>
+                      </h2>
+                      <h3 className='textleft marginTop40 b2c-heading'>Choose from a selection of<br></br> Annual Preventive Health plans
                       </h3>
                     </div>
-                    <button class="theme-btn btn-style-one b2q" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
+                    <button class="theme-btn btn-style-one b2q" type="submit" name="submit-form">
+                      <span class="btn-title" >Book Now</span>
+                    </button>
 
 
                   </div>
@@ -61,14 +66,14 @@ class b2cmembership extends Component {
             <div class="col-lg-2"></div>
             <div class="col-lg-8 b2cimgcenter">
               <h1>The <span className='headeingcolorblue'>Gift</span> of Preventive Healthcare
-                made easy.</h1>
+                Made Easy.</h1>
               <p>Our Annual Health Plans are membership-based integrated healthcare programs covering everything from clinical assessments to consultations, lab tests to nutrition sessions, lifestyle management to emotional wellness, and more</p>
               <h3>Preventive Health Plans</h3>
               <div class="image-one">
                 <img src={require('../../assets/images/shape/imageb2c.png')} alt="" className='imgwidth' />
 
               </div>
-              <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Say YES!</span></button>
+              <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">SAY YES!</span></button>
 
             </div>
             <div class="col-lg-2"></div>
