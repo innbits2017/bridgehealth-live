@@ -23,7 +23,7 @@ class leadership extends Component {
                     <div class="bottom-rotten-curve alternate"></div>
 
                     <div class="auto-container">
-                        <h1 className='colorwhite'>LeaderShip</h1>
+                        {/* <h1 className='colorwhite'>LeaderShip</h1> */}
 
                     </div>
 
@@ -52,10 +52,19 @@ class leadership extends Component {
                                 <div class="col-lg-10">
                                     <div class="author-info">
                                         <div class="wrapper-box text">
-                                            <h2 >Kris Gopalakrishnan</h2>
-                                            <div class="designation">Chairman & Co-Founder</div>
+                                            <h2 class="leader-heading">Kris Gopalakrishnan</h2>
+                                            <div class="designation leader-heading">Chairman & Co-Founder</div>
                                             <hr></hr>
-                                            <div class="text">Senapathy “Kris” Gopalakrishnan served as the Vice Chairman of Infosys from 2011 to 2014 and the Chief Executive Officer and Managing Director of Infosys from 2007 to 2011. Kris is one of the co-founders of Infosys. He also was selected to Thinkers 50, an elite list of global business thinkers, in...</div>
+                                            <div class="text">
+                                                <i>Senapathy “Kris” Gopalakrishnan served as the Vice Chairman of Infosys from 2011 to 2014<br></br>
+                                                    and the Chief Executive Officer and Managing Director of Infosys from 2007 to 2011. Kris is<br></br>
+                                                    one of the co-founders of Infosys. He also was selected to Thinkers 50, an elite list of global<br></br>
+                                                    business thinkers, in...
+                                                </i>
+                                                <h6 class="leader-btn">
+                                                        <i>KNOW MORE</i>
+                                                </h6>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -66,10 +75,20 @@ class leadership extends Component {
                                     <div class="col-lg-10">
                                         <div class="author-info">
                                             <div class="wrapper-box text">
-                                                <h2>Swami D Swaminathan</h2>
-                                                <div class="designation">Director & Co-Founder</div>
+                                                <h2 class="leader-heading1">Swami D Swaminathan</h2>
+                                                <div class="designation leader-heading2">Director & Co-Founder</div>
                                                 <hr></hr>
-                                                <div class="text">Swaminathan Dandapani in his earlier role as Executive Chairman of Manipal Health Enterprises, provided direction and leadership to the Healthcare business expanding the footprint of Manipal Hospitals in new geographies both within & outside India. He also was the Chairman of ...</div>
+                                                <div class="text1">
+                                                    <i>Swaminathan Dandapani in his earlier role as Executive Chairman of Manipal Health
+                                                        Enterprises, provided direction and leadership to the Healthcare business expanding the
+                                                        footprint of Manipal Hospitals in new geographies both within & outside India. He also was
+                                                        the Chairman of ...
+                                                    </i>
+                                                    <h6 class="leader-btn">
+                                                        <i>KNOW MORE</i>
+                                                    </h6>
+                                                </div>
+                                                
                                                 {/* <div class="text">Senapathy “Kris” Gopalakrishnan served as the Vice Chairman of Infosys from 2011 to 2014 and the Chief Executive Officer and Managing Director of Infosys from 2007 to 2011. Kris is one of the co-founders of Infosys. He also was selected to Thinkers 50, an elite list of global business thinkers, in...</div> */}
                                             </div>
                                         </div>
@@ -112,7 +131,7 @@ class leadership extends Component {
                             </div>
                             <div class="col-lg-3 team-block-one wow fadeInUp lead2" data-wow-delay="200ms" data-wow-duration="1200ms">
                                 <div class="column">
-                                      <div class="leadership">
+                                    <div class="leadership">
                                         <img src={require('../../assets/images/gallery/L1.png')} alt="" class="avtar" />
                                         <div class="overlay">
                                             <div class="texttitle">Karan Verma</div>
@@ -135,7 +154,7 @@ class leadership extends Component {
                                     {/* <div>
                                         <figure><img src={require('../../assets/images/gallery/L2.png')} alt="" /></figure>
                                     </div> */}
-                                      <div class="leadership">
+                                    <div class="leadership">
                                         <img src={require('../../assets/images/gallery/L2.png')} alt="" class="avtar" />
                                         <div class="overlay">
                                             <div class="texttitle">Karan Verma</div>
@@ -144,7 +163,7 @@ class leadership extends Component {
                                     </div>
                                 </div>
                                 <div class="column">
-                                      <div class="leadership">
+                                    <div class="leadership">
                                         <img src={require('../../assets/images/gallery/L6.png')} alt="" class="avtar" />
                                         <div class="overlay">
                                             <div class="texttitle">Karan Verma</div>
@@ -156,7 +175,7 @@ class leadership extends Component {
                             </div>
                             <div class="col-lg-3 team-block-one wow fadeInUp lead3" data-wow-delay="200ms" data-wow-duration="1200ms">
                                 <div class="column">
-                                     <div class="leadership">
+                                    <div class="leadership">
                                         <img src={require('../../assets/images/gallery/L3.png')} alt="" class="avtar" />
                                         <div class="overlay">
                                             <div class="texttitle">Karan Verma</div>

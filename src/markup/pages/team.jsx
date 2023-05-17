@@ -15,9 +15,9 @@ class Team extends Component {
             <>
                 <Header />
 
-<div className='margin150'>
-    </div>            
-    <Testimonial1 />
+                <div className='margin150'>
+                </div>
+                <Testimonial1 />
 
                 {/* <!-- About Section Two --> */}
                 <section class="about-section-two">
@@ -35,9 +35,9 @@ class Team extends Component {
                                 <div class="author-info">
                                     <div class="wrapper-box text">
 
-                                        <div class="text font18"><strong>Dr. Dhanya Prabhu </strong>Ramadas is a highly motivated, team-oriented, and compassionate family physician. She believes in providing evidence-based holistic care to all her patients. Her fields of interest are geriatrics, neurology, women & child health and lifestyle medicine.<br></br>
-                                            She has completed her DNB from Bangalore Baptist Hospital and thereafter, completed MRCGP [Int]. She is a member of The Academy of Family Physicians of India (AFPI) and is certified by the Karnataka Medical Council.<br></br>
-                                            When not with her patients, she is busy travelling, spending time with family, listening to old English country music or reading. She keeps herself fit by practicing yoga, jogging and dancing.</div>
+                                        <div class="text font18"><strong>Dr. Dhanya Prabhu </strong>Ramadas is a highly motivated, team-<br></br>oriented, and compassionate family physician. She believes in <br></br>providing evidence-based holistic care to all her patients. Her <br></br>fields of interest are geriatrics, neurology, women & child health <br></br>and lifestyle medicine.<br></br>
+                                            She has completed her DNB from Bangalore Baptist Hospital<br></br> and thereafter, completed MRCGP [Int]. She is a member of The <br></br>Academy of Family Physicians of India (AFPI) and is certified by <br></br>the Karnataka Medical Council.<br></br>
+                                            When not with her patients, she is busy travelling, spending <br></br>time with family, listening to old English country music or <br></br>reading. She keeps herself fit by practicing yoga, jogging and <br></br>dancing.</div>
                                     </div>
                                 </div>
 
@@ -56,9 +56,9 @@ class Team extends Component {
                                 <div class="author-info">
                                     <div class="wrapper-box text">
                                         <div class="text font18">
-                                            <strong>Dr. Vedavathi. N </strong>is an empathetic, competent and passionate doctor. She has over 10 years of experience in identifying and screening individuals of all age groups for risk factors to prevent diseases and their progression. She has a special interest in preventive medicine and anatomy.<br></br>
-                                            She has completed her P.G Diploma in Family Medicine from Apollo Hospitals, Bangalore, through the Royal College of General Practitioners - United Kingdom. She is a certified NABH Assessor and ISO Assessor. Dr. Veda has also been a faculty member of the paramedical college at Dayanand Sagar University.<br></br>
-                                            At a personal level, she loves learning rangoli designs and also enjoys dancing.
+                                            <strong>Dr. Vedavathi. N </strong>is an empathetic, competent and passionate <br></br>doctor. She has over 10 years of experience in identifying and <br></br>screening individuals of all age groups for risk factors to <br></br>prevent diseases and their progression. She has a special <br></br>interest in preventive medicine and anatomy.<br></br>
+                                            She has completed her P.G Diploma in Family Medicine from<br></br> Apollo Hospitals, Bangalore, through the Royal College of<br></br> General Practitioners - United Kingdom. She is a certified NABH <br></br>Assessor and ISO Assessor. Dr. Veda has also been a faculty <br></br>member of the paramedical college at Dayanand Sagar<br></br> University.<br></br>
+                                            At a personal level, she loves learning rangoli designs and also <br></br>enjoys dancing.
                                         </div>
 
                                     </div>
@@ -80,8 +80,8 @@ class Team extends Component {
                                 <div class="author-info">
                                     <div class="wrapper-box text">
                                         <div class="text font18">
-                                            <strong>Dr. Jyotsna Mathai </strong>is a Consultant Physician with a special interest in Women's Health. She has completed her MBBS from Jawaharlal Nehru Medical College-Dharwad University and DGO from College of Physician and Surgeons- Mumbai. She was previously associated with Activ Doctors Clinic and NationWide Primary Health Clinic. She is known for her knowledge of Obstetrics and Gynaecology.<br></br>
-                                            Dr Jyotsna believes in integrity, respect and responsibility, which have led her to have a successful practice and career. Her core beliefs have helped her reach out to all kinds of people, from every walk of life. She also loves reading about spirituality, esoteric philosophy, and human behaviour analysis.<br></br>
+                                            <strong>Dr. Jyotsna Mathai </strong>is a Consultant Physician with a special<br></br> interest in Women's Health. She has completed her MBBS from <br></br>Jawaharlal Nehru Medical College-Dharwad University and<br></br> DGO from College of Physician and Surgeons- Mumbai. She<br></br> was previously associated with Activ Doctors Clinic and <br></br>NationWide Primary Health Clinic. She is known for her knowledge of Obstetrics and Gynaecology.<br></br>
+                                            Dr Jyotsna believes in integrity, respect and responsibility,<br></br> which have led her to have a successful practice and career. <br></br>Her core beliefs have helped her reach out to all kinds of <br></br>people, from every walk of life. She also loves reading about spirituality, esoteric philosophy, and human behaviour analysis.<br></br>
                                         </div>
 
                                     </div>

@@ -72,7 +72,7 @@ class Testimonial1 extends Component {
                 <section class="testimonial-section testback">
                     <div class="auto-container">
                         <div class="sec-title text-center">
-                            <h2>
+                            <h2 style={{fontSize: 50 + 'px'}}>
                                 {/* Confused about your health checks?<br></br> */}
                                 <span className='headeingcolorblack'> Meet The </span> <span className='headeingcolorblue'>Bridgers</span>
                             </h2>

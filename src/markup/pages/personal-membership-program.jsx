@@ -79,7 +79,8 @@ class b2cmembership extends Component {
             <div class="col-lg-2"></div>
 
 
-          </div></div>
+          </div>
+        </div>
 
         <section class="contact-section">
 
@@ -91,7 +92,7 @@ class b2cmembership extends Component {
                 <div class="contact-form-area">
 
                   <div class="sec-title persona3">
-                    <h2> 
+                    <h2 style={{fontSize: 48 + 'px'}}> 
                       <span className='headeingcolorblack'>Why </span>
                       <span className='headeingcolorblue'> Annual </span><br></br>
                       <span className='headeingcolorblack'>Health Plans?</span>
@@ -110,7 +111,7 @@ class b2cmembership extends Component {
                       </li>
                       <li>
                         <img className='listicon6' src={require('../../assets/images/shape/b13.png')} alt="" />
-                        Discover any hidden health conditions
+                        Discover any hidden health <span style={{marginLeft: 3 + 'rem'}}>conditions</span>
                       </li>
                       <li>
                         <img className='listicon6' src={require('../../assets/images/shape/b12.png')} alt="" />
@@ -118,7 +119,7 @@ class b2cmembership extends Component {
                       </li>
                       <li>
                         <img className='listicon6' src={require('../../assets/images/shape/b14.png')} alt="" />
-                        Implement lifestyle changes for better quality of life
+                        Implement lifestyle changes <br></br> <span style={{marginLeft: 3 + 'rem'}}>for better quality of life</span>
                       </li>
                     </ul>
 
@@ -128,8 +129,8 @@ class b2cmembership extends Component {
 
 
 
-                      <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
-                        <button class="theme-btn btn-style-one" type="submit" name="submit-form">
+                      <div class="col-md-12 form-group">
+                        <button class="theme-btn btn-style-one" type="submit" name="submit-form" style={{marginLeft: 12 + 'rem'}}>
                           <span class="btn-title">Say YES!</span></button>
                       </div>
                     </div>
@@ -139,7 +140,10 @@ class b2cmembership extends Component {
               <div class="col-lg-6">
                 <div class="image-wrapper">
                   <div class="image-one">
-                    {/* <img src={require('../../assets/images/shape/b2c.png')} alt="" className='b2cimg' /> */}
+                    <img src={require('../../assets/images/shape/b2c3.png')} alt="" className='b2cimg' /> 
+                  </div>
+                  <div>
+                  <img className='listicon8' src={require('../../assets/images/shape/icons.png')} alt="" />
                   </div>
                 </div>
               </div>
@@ -185,9 +189,9 @@ class b2cmembership extends Component {
 
 
 
-                        <div class="col-md-12 form-group" style={{ marginLeft: 15 + 'rem' }}>
-                          <button class="theme-btn btn-style-one" type="submit" name="submit-form">
-                            <span class="btn-title" >Say YES!</span></button>
+                        <div class="col-md-12 form-group" >
+                          <button class="theme-btn btn-style-one" type="submit" name="submit-form" style={{ marginLeft: 25.6 + 'rem' }}>
+                            <span class="btn-title" >SAY YES!</span></button>
                         </div>
                       </div>
                     </form>
@@ -818,8 +822,9 @@ class b2cmembership extends Component {
                             I agree that Bridge Health may contact me at the email address or phone number above.
                           </label>
                         </div>
-                        <div class="col-md-12 form-group" style={{ marginLeft: 7 + 'rem' }}>
-                          <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Submit</span></button>
+                        <div class="col-md-12 form-group">
+                          <button class="theme-btn btn-style-three" type="submit" name="submit-form">
+                            <span class="btn-title" style={{fontSize: 20 + 'px'}}>SUBMIT</span></button>
                         </div>
                       </div>
                     </form>

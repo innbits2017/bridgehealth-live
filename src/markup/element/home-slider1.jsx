@@ -12,6 +12,7 @@ const slides = [
         // finan: "Finan",
         // dox: "dox",
         btnService: "GET STARTED",
+        // image: require('./../../assets/images/main-slider/shutterstock.mov'),
         image: require('./../../assets/images/main-slider/1095035413-preview.gif'),
     },
 
