@@ -4,6 +4,8 @@ import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 import '../../assets/css/slider.css';
 
+
+
 const slides = [
     {
         title: 'Lets help you #BridgeTheGap',
@@ -12,7 +14,7 @@ const slides = [
         // finan: "Finan",
         // dox: "dox",
         btnService: "GET STARTED",
-        // image: require('./../../assets/images/main-slider/shutterstock.mov'),
+        // image: require('./../../assets/images/main-slider/shutterstock1.mp4'),
         image: require('./../../assets/images/main-slider/1095035413-preview.gif'),
     },
 
@@ -27,7 +29,8 @@ class HomeSlider1 extends Component {
             <>
                 <Slider className="slider-wrapper" autoplay >
                     {slides.map((slide, index) =>
-                        <div key={index} className="slider-content" style={{ background: `url('${slide.image}') no-repeat center center` }}>
+                        <div key={index} className="slider-content"
+                         style={{ background: `url('${slide.image}') no-repeat center center` }}>
                             <div className="inner">
                                 <h1 style={{fontSize: 50 + 'px'}}>{slide.title}</h1>
                                 <h2>{slide.finan}<span>{slide.dox} </span></h2>

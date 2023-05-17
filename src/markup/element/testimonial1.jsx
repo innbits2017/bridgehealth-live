@@ -163,6 +163,9 @@ class Testimonial1 extends Component {
                                 </Slider>
                             </div>
                             {/* SEE ALL */}
+                            <h6 class="leader-btn1">
+                                SEE ALL
+                            </h6>
                         </div>
                     </div>
                     <div class="auto-container mobiletest marginbutton30">

@@ -144,7 +144,7 @@ class Index extends Component {
                     <div class="auto-container">
                         <div class="sec-title text-center">
                             <h2 className='header1'>
-                                <span className='headeingcolorblack'><strong> PREDICT.</strong></span>
+                                <span className='headeingcolorblack'><strong> PREDICT. </strong></span>
                                 <span className='headeingcolorblue'><strong>PREVENT.</strong></span>
                                 <span className='headeingcolorblack'> <strong> PROGRESS.</strong></span>
                             </h2>
@@ -170,7 +170,7 @@ class Index extends Component {
                                     <div class="content-box">
                                         <div class="sec-title">
                                             <div class="text1 textpadding" style={{ marginRight: 40 + 'px' }}>Predict the onset of
-                                                <span className='headeingcolorblack'> hidden illnesses</span> and<br></br>health conditions, prevent them by undergoing tests, check-ups and progress<br></br> towards good health.
+                                                <span className='headeingcolorblack'> hidden illnesses</span> and<br></br>health conditions, prevent them by <br></br>undergoing tests, check-ups and progress<br></br> towards good health.
                                             </div>
                                         </div>
                                         <ul className='listicon10'>
@@ -220,7 +220,8 @@ class Index extends Component {
                                             <h2 className='expertise'>Annual Preventive<br></br> Health Plans</h2>
 
                                             <p>
-                                            Explore our efficient membership services that provide a holistic care plan and guide you to start a healthy journey
+                                            Explore our efficient membership services that provide a holistic care plan 
+                                            and guide you to start a healthy journey
                                             </p>
                                         </div>
                                     </div>
@@ -253,7 +254,8 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/k3.jpeg')} alt="" />
                                             <h2 className='expertise'>Doctor Consults</h2>
                                             <p>
-                                            All of us get sick at some point in life. And whenever we get sick, we always go to the doctor 
+                                            All of us get sick at some point in life. And whenever we get sick,
+                                             we always go to the doctor 
                                             </p>
                                         </div>
                                     </div>
@@ -267,7 +269,8 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/k2.jpeg')} alt="" />
                                             <h2 className='expertise'>Psychologist Consults</h2>
                                             <p>
-                                            Unlike physical health issues, psychological issues are not as visible. They are generally ignored 
+                                            Unlike physical health issues, psychological issues are not as visible.
+                                             They are generally ignored 
                                             </p>
                                         </div>
                                     </div>
@@ -279,8 +282,10 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/s5.png')} alt="" />
                                             <h2 className='expertise'>Dental Consults</h2>
                                             <p>
-                                            Our teeth are made of enamel which is the hardest substance in the human body. Unhealthy food items like sugary carbonated drinks
-                                             and candies weaken our enamel which causes a variety of problems including tooth decay.
+                                            Our teeth are made of enamel which is the hardest substance in the human body.
+                                             Unhealthy food items like sugary carbonated drinks
+                                             and candies weaken our enamel which causes a variety of problems including 
+                                             tooth decay.
                                             </p>
                                         </div>
                                     </div>
@@ -305,7 +310,8 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/s8.png')} alt="" />
                                             <h2 className='expertise'>Ophthalmology</h2>
                                             <p>
-                                            Our eyes are the windows to the world. They allow us to see every detail and color, near and far.
+                                            Our eyes are the windows to the world. They allow us to see every detail 
+                                            and color, near and far.
                                             </p>
                                         </div>
                                     </div>
@@ -332,8 +338,10 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/s10.png')} alt="" />
                                             <h2 className='expertise'>Elderly Care</h2>
                                             <p>
-                                            Although we may stay young at heart, our body starts ageing. As we grow older, our physical abilities decline and
-                                            we might find ourselves slower and more dependent on others for physical assistance.
+                                            Although we may stay young at heart, our body starts ageing. As we grow older,
+                                             our physical abilities decline and
+                                            we might find ourselves slower and more dependent on others for physical 
+                                            assistance.
                                             </p>
                                         </div>
                                     </div>
@@ -345,7 +353,9 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/s11.png')} alt="" />
                                             <h2 className='expertise'>Lab Tests</h2>
                                             <p>
-                                            The first step to treating any health condition is identification. Lab tests are essential in this regard as they help to accurately examine a patient’s 
+                                            The first step to treating any health condition is identification. 
+                                            Lab tests are essential in this regard as they help to accurately examine 
+                                            a patient’s 
                                             </p>
                                         </div>
                                     </div>
@@ -488,8 +498,8 @@ class Index extends Component {
                     <section class="">
                         <div class="auto-container">
                             <div class="sec-title text-center">
-                                <h2> <span className='headeingcolorblue'>REACH </span> <span className='headeingcolorblack'>OUT TO US</span><br></br>
-                                    <p>Our health advisor is ready to answer your queries about what we do and how <br></br>we can help you take care of yourself and your loved ones better.</p>
+                                <h2 style={{fontSize: 50 + 'px'}}> <span className='headeingcolorblue'>REACH </span> <span className='headeingcolorblack'>OUT TO US</span><br></br>
+                                    <p style={{fontSize: 22 + 'px'}}>Our health advisor is ready to answer your queries about what we do and how <br></br>we can help you take care of yourself and your loved ones better.</p>
                                 </h2>
                             </div>
 
@@ -532,7 +542,7 @@ class Index extends Component {
                                                     </label>
                                                 </div>
                                                 <div class="col-md-12 form-group">
-                                                    <button class="theme-btn btn-style-one marginleft20" type="submit" name="submit-form"><span class="btn-title">SUBMIT</span></button>
+                                                    <button class="theme-btn btn-style-one marginleft21" type="submit" name="submit-form"><span class="btn-title">SUBMIT</span></button>
                                                 </div>
                                             </div>
                                         </form>

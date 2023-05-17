@@ -106,7 +106,7 @@ class corporate_membership_program extends Component {
                 <div class="row align-items-center">
                     <div class="image-wrapper">
                         <div class="image-one">
-                            <img src={require('../../assets/images/shape/slider.png')} alt="" className='imgwidth' />
+                            <img src={require('../../assets/images/shape/slider1.png')} alt="" className='imgwidth' />
                         </div>
                     </div>
                 </div>
