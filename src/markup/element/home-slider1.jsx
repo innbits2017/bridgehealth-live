@@ -6,6 +6,7 @@ import '../../assets/css/slider.css';
 
 
 
+
 const slides = [
     {
         title: 'Lets help you #BridgeTheGap',

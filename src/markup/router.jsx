@@ -19,6 +19,7 @@ import lab_tests from './pages/lab-tests';
 import physiotherapy from './pages/physiotherapy';
 import pharmacy from './pages/pharmacy';
 import psychological_Health from './pages/psychological-Health';
+import contact from './pages/contact-us';
 
 class Router extends Component {
     render() {
@@ -30,6 +31,7 @@ class Router extends Component {
                     <Switch>
                         <Route path='/' exact component={Index} />
                         <Route path='/b2c-page' exact component={b2c_page} />
+                        <Route path='/contact-us' exact component={contact} />
                         <Route path='/blog' component={blog} />
                         <Route path='/leadership' component={leadership} />
                         <Route path='/services-standalone' component={Services} />
