@@ -10827,7 +10827,7 @@ a:not([href]):not([tabindex]) {
 }
 .blogdesignerd
 {
-	background-size: contain;
+	background-size: cover;
 	background-image: url(../images/shape//blogbackground.png);
 }
 .blogdesignerd1
@@ -11551,8 +11551,8 @@ font-size: 55px !important;}
 
 input[type=text], select, textarea {
 	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
+	padding: 12px 10;
+	/* border: 1px solid #ccc; */
 	border-radius: 4px;
 	resize: vertical;
 }
