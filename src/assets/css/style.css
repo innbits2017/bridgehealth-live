@@ -4859,21 +4859,23 @@ img.lazy-image.loaded {
 }
 
 .news-block-one .category {
-    position: relative;
+	position: relative;
     font-size: 14px;
     font-weight: 700;
-    padding: 6.5px 20px;
+    padding: 6.5px 29px;
     margin: auto;
     color: #000;
-    border-radius: 20px;
-    width: max-content;
-    margin: 0 auto;
-    background: #FFFFFF;
-    border: 1px solid #000000;
+    /* border-radius: 20px; */
+    width: 217px;
+    height: 51px;
+	background-image: url(../images/shape/button-background.png);   
+    margin-top: -35px;
+    margin-bottom: 10px;
     border-radius: 5px;
     text-align: center;
-    transform: translateY(-80%);
-	text-transform: uppercase;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
 }
 .button-txt{
 	text-align: center;
@@ -5248,6 +5250,7 @@ img.lazy-image.loaded {
 	height            : 60px;
 	width             : 60px;
 	border-radius     : 50%;
+	z-index: 999;
 	border            : none;
 	text-align        : center;
 	/* margin-top: 40%!important; */
@@ -5263,7 +5266,7 @@ img.lazy-image.loaded {
 .testimonial-section .slick-prev:before {
 
 	font-family: "Flaticon";
-    content: "\f355 PREV";
+    content: "\2190 PREV";
     position: absolute;
     top: 0;
     border-radius: 22.9879px;
@@ -10594,11 +10597,13 @@ input[type=checkbox], input[type=radio] {
 {	background-image: url(../images/shape/Group237655.png);
 
 }
-/* .expertiseback1
-{	background-image: url(../images/shape/Rectangle520.png);
-	width: 100%;
-	background-size:cover;
-} */
+.expertiseback1
+{	background-image: url(../images/shape/testback.png);
+	background-size: 15% 41%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 a:not([href]):not([tabindex]) {
     color: inherit;
     text-decoration: none;
@@ -11621,4 +11626,10 @@ input[type=submit]:hover {
 	  width: 100%;
 	  margin-top: 0;
 	}
+}
+.predict
+{
+	margin-bottom: -73px !important;
+    z-index: 9;
+    font-size: 52px !important;
 }

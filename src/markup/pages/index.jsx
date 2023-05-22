@@ -143,7 +143,7 @@ class Index extends Component {
                 <section class="team-section">
                     <div class="auto-container">
                         <div class="sec-title text-center">
-                            <h2 className='header1'>
+                            <h2 className='header1 predict'>
                                 <span className='headeingcolorblack'><strong> PREDICT. </strong></span>
                                 <span className='headeingcolorblue'><strong>PREVENT.</strong></span>
                                 <span className='headeingcolorblack'> <strong> PROGRESS.</strong></span>
