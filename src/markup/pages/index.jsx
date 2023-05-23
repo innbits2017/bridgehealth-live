@@ -27,9 +27,23 @@ class Index extends Component {
 
 
                 <Header />
-                <HomeSlider1 />
                 {/* <!-- About --> */}
-
+<div class="video-background-holder">
+  <div class="video-background-overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src={require('../../assets/images/backgroundvideo.mp4')} type="video/mp4" />
+    </video>
+  <div class="video-background-content h-100 auto-container">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white floatleft">
+        <h1 class="display-4">Lets help you #BridgeTheGap</h1>
+        <p class="lead mb-0">Personalised and holistic preventive health plans <br></br>for you and your loved ones
+</p>
+<div class="btn-box"><a class="theme-btn btn-style-one" href="/demo/fianandox/"><span class="btn-title">GET STARTED</span></a></div>
+      </div>
+    </div>
+  </div>
+</div>
                 <section class="team-section">
                     <div class="auto-container">
                         <div class="sec-title text-center">
