@@ -28,22 +28,22 @@ class Index extends Component {
 
                 <Header />
                 {/* <!-- About --> */}
-<div class="video-background-holder">
-  <div class="video-background-overlay"></div>
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src={require('../../assets/images/backgroundvideo.mp4')} type="video/mp4" />
-    </video>
-  <div class="video-background-content h-100 auto-container">
-    <div class="d-flex h-100 text-center align-items-center">
-      <div class="w-100 text-white floatleft">
-        <h1 class="display-4">Lets help you #BridgeTheGap</h1>
-        <p class="lead mb-0">Personalised and holistic preventive health plans <br></br>for you and your loved ones
-</p>
-<div class="btn-box"><a class="theme-btn btn-style-one" href="/demo/fianandox/"><span class="btn-title">GET STARTED</span></a></div>
-      </div>
-    </div>
-  </div>
-</div>
+                <div class="video-background-holder">
+                    <div class="video-background-overlay"></div>
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                        <source src={require('../../assets/images/backgroundvideo.mp4')} type="video/mp4" />
+                    </video>
+                    <div class="video-background-content h-100 auto-container">
+                        <div class="d-flex h-100 text-center align-items-center">
+                            <div class="w-100 text-white floatleft">
+                                <h5 class="display-4"><span class="display-3">Lets help you </span>#BridgeTheGap</h5>
+                                <p class="lead mb-0">Personalised and holistic preventive health plans for <br></br>you and your loved ones
+                                </p>
+                                <div class="btn-box"><a class="theme-btn btn-style-one" href="/demo/fianandox/"><span class="btn-title">GET STARTED</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <section class="team-section">
                     <div class="auto-container">
                         <div class="sec-title text-center">
@@ -106,9 +106,9 @@ class Index extends Component {
                 <section class="team-section">
                     <div class="auto-container">
                         <div class="sec-title text-center marginbutton">
-                            <h2 style={{fontSize: 43 + 'px', lineHeight: 50 + 'px'}}> <span className=' headeingcolorblue'> Annual Preventive </span>
+                            <h2 style={{ fontSize: 43 + 'px', lineHeight: 50 + 'px' }}> <span className=' headeingcolorblue'> Annual Preventive </span>
                                 <span className='headeingcolorblack'>Health Plans</span>
-                                </h2>
+                            </h2>
                             <h5 className='heading'>Membership-based integrated programs covering various aspects
                             </h5>
                         </div>
@@ -123,9 +123,9 @@ class Index extends Component {
                                     <div class="content-box">
                                         <div class="sec-title">
                                             <div class="text textpadding1">
-                                                 <span className='headeingcolorblue'>#BridgeTheGap</span> with our Annual Health<br></br> Plans that are membership-based <br></br>
-                                                 integrated programs covering everything <br></br>from clinical assessments to <br></br>
-                                                 consultations, lab tests to nutrition <br></br>sessions, lifestyle management to<br></br> emotional wellness and much more.
+                                                <span className='headeingcolorblue'>#BridgeTheGap</span> with our Annual Health<br></br> Plans that are membership-based <br></br>
+                                                integrated programs covering everything <br></br>from clinical assessments to <br></br>
+                                                consultations, lab tests to nutrition <br></br>sessions, lifestyle management to<br></br> emotional wellness and much more.
                                             </div>
                                         </div>
 
@@ -145,7 +145,7 @@ class Index extends Component {
                                             <span className='textpara'>Corporate Membership <br></br> Program</span>
                                         </Link>
                                         <span>
-                                            <img src={require('../../assets/images/shape/thumb1.png')} alt="" className='flotrightimg'/>
+                                            <img src={require('../../assets/images/shape/thumb1.png')} alt="" className='flotrightimg' />
                                         </span>
                                     </div>
                                 </div>
@@ -174,7 +174,7 @@ class Index extends Component {
                                 <div class="col-lg-6">
                                     <div class="image-wrapper">
                                         <div class="image-one image-two imgpad">
-                                            <img  src={require('../../assets/images/shape/ipad.gif')} alt="" /> 
+                                            <img src={require('../../assets/images/shape/ipad.gif')} alt="" />
                                             {/* <img src={require('../../assets/images/shape/video2.gif')} alt="" /> */}
                                         </div>
 
@@ -188,15 +188,15 @@ class Index extends Component {
                                             </div>
                                         </div>
                                         <ul className='listicon10'>
-                                            <li style={{fontSize: 21 + 'px'}}>
+                                            <li style={{ fontSize: 21 + 'px' }}>
                                                 <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" />
                                                 Get a detailed assessment report
                                             </li>
-                                            <li style={{fontSize: 21 + 'px'}}>
+                                            <li style={{ fontSize: 21 + 'px' }}>
                                                 <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" />
                                                 Health score built on 7 parameters
                                             </li>
-                                            <li style={{fontSize: 21 + 'px'}}>
+                                            <li style={{ fontSize: 21 + 'px' }}>
                                                 <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" />
                                                 Pre and Post score comparisons
                                             </li>
@@ -234,8 +234,7 @@ class Index extends Component {
                                             <h2 className='expertise'>Annual Preventive<br></br> Health Plans</h2>
 
                                             <p>
-                                            Explore our efficient membership services that provide a holistic care plan 
-                                            and guide you to start a healthy journey
+                                                Explore our efficient membership services that provide a holistic care plan and guide you to start a healthy journey
                                             </p>
                                         </div>
                                     </div>
@@ -246,7 +245,7 @@ class Index extends Component {
                                         <h2 className='expertise'>Chronic Care Programs</h2>
 
                                         <p>
-                                        Find hope and healing through our specialized chronic care offerings
+                                            Find hope and healing through our specialized chronic care offerings
                                         </p>
                                     </div>
                                 </div>
@@ -256,8 +255,8 @@ class Index extends Component {
                                         <img src={require('../../assets/images/shape/s2.png')} alt="" />
                                         <h2 className='expertise'>Comprehensive<br></br> Health Checks</h2>
                                         <p>
-                                        Health is defined as a state of complete physical, mental, and social well-being. 
-                                        If even one aspect isn’t satisfied, it means that you are not healthy
+                                            Health is defined as a state of complete physical, mental, and social well-being.
+                                            If even one aspect isn’t satisfied, it means that you are not healthy
                                         </p>
                                     </div>
                                 </div>
@@ -268,8 +267,8 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/k3.jpeg')} alt="" />
                                             <h2 className='expertise'>Doctor Consults</h2>
                                             <p>
-                                            All of us get sick at some point in life. And whenever we get sick,
-                                             we always go to the doctor 
+                                                All of us get sick at some point in life. And whenever we get sick,
+                                                we always go to the doctor
                                             </p>
                                         </div>
                                     </div>
@@ -283,8 +282,8 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/k2.jpeg')} alt="" />
                                             <h2 className='expertise'>Psychologist Consults</h2>
                                             <p>
-                                            Unlike physical health issues, psychological issues are not as visible.
-                                             They are generally ignored 
+                                                Unlike physical health issues, psychological issues are not as visible.
+                                                They are generally ignored
                                             </p>
                                         </div>
                                     </div>
@@ -296,10 +295,10 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/s5.png')} alt="" />
                                             <h2 className='expertise'>Dental Consults</h2>
                                             <p>
-                                            Our teeth are made of enamel which is the hardest substance in the human body.
-                                             Unhealthy food items like sugary carbonated drinks
-                                             and candies weaken our enamel which causes a variety of problems including 
-                                             tooth decay.
+                                                Our teeth are made of enamel which is the hardest substance in the human body.
+                                                Unhealthy food items like sugary carbonated drinks
+                                                and candies weaken our enamel which causes a variety of problems including
+                                                tooth decay.
                                             </p>
                                         </div>
                                     </div>
@@ -311,8 +310,8 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/s7.png')} alt="" />
                                             <h2 className='expertise'>Dermatology</h2>
                                             <p>
-                                            A good physical appearance is a reflection of youth and confidence.
-                                             Unfortunately, as we age, our physical appearance deteriorates.
+                                                A good physical appearance is a reflection of youth and confidence.
+                                                Unfortunately, as we age, our physical appearance deteriorates.
                                             </p>
                                         </div>
                                     </div>
@@ -324,8 +323,8 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/s8.png')} alt="" />
                                             <h2 className='expertise'>Ophthalmology</h2>
                                             <p>
-                                            Our eyes are the windows to the world. They allow us to see every detail 
-                                            and color, near and far.
+                                                Our eyes are the windows to the world. They allow us to see every detail
+                                                and color, near and far.
                                             </p>
                                         </div>
                                     </div>
@@ -339,8 +338,8 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/s9.png')} alt="" />
                                             <h2 className='expertise'>Physiotherapy</h2>
                                             <p>
-                                            Due to natural age progression, chronic illnesses, or accidents that cause 
-                                            crippling injuries, your ability to move may be compromised.
+                                                Due to natural age progression, chronic illnesses, or accidents that cause
+                                                crippling injuries, your ability to move may be compromised.
                                             </p>
                                         </div>
                                     </div>
@@ -352,10 +351,10 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/s10.png')} alt="" />
                                             <h2 className='expertise'>Elderly Care</h2>
                                             <p>
-                                            Although we may stay young at heart, our body starts ageing. As we grow older,
-                                             our physical abilities decline and
-                                            we might find ourselves slower and more dependent on others for physical 
-                                            assistance.
+                                                Although we may stay young at heart, our body starts ageing. As we grow older,
+                                                our physical abilities decline and
+                                                we might find ourselves slower and more dependent on others for physical
+                                                assistance.
                                             </p>
                                         </div>
                                     </div>
@@ -367,9 +366,9 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/s11.png')} alt="" />
                                             <h2 className='expertise'>Lab Tests</h2>
                                             <p>
-                                            The first step to treating any health condition is identification. 
-                                            Lab tests are essential in this regard as they help to accurately examine 
-                                            a patient’s 
+                                                The first step to treating any health condition is identification.
+                                                Lab tests are essential in this regard as they help to accurately examine
+                                                a patient’s
                                             </p>
                                         </div>
                                     </div>
@@ -381,8 +380,8 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/s12.png')} alt="" />
                                             <h2 className='expertise'>Diet and Nutrition</h2>
                                             <p>
-                                            It’s no secret that eating a balanced diet is the key to a longer and healthier life. 
-                                            Therefore, it’s important to understand that making wise changes in your diet could improve your health
+                                                It’s no secret that eating a balanced diet is the key to a longer and healthier life.
+                                                Therefore, it’s important to understand that making wise changes in your diet could improve your health
                                             </p>
                                         </div>
                                     </div>
@@ -396,8 +395,8 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/s13.png')} alt="" />
                                             <h2 className='expertise'>Yoga Assessment <br></br>and Coaching</h2>
                                             <p>
-                                            Practiced for thousands of years, yoga has several benefits on your overall health. 
-                                            Through a series of breathing exercises and poses, yoga
+                                                Practiced for thousands of years, yoga has several benefits on your overall health.
+                                                Through a series of breathing exercises and poses, yoga
                                             </p>
                                         </div>
                                     </div>
@@ -409,8 +408,8 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/s14.png')} alt="" />
                                             <h2 className='expertise'>Fitness Assessment<br></br> and Coaching</h2>
                                             <p>
-                                            To stay healthy, regular exercise is a must! Regular exercise and keeping our bodies active reduces blood pressure,
-                                             improves blood circulation, burns excess fat & calories, and reduces
+                                                To stay healthy, regular exercise is a must! Regular exercise and keeping our bodies active reduces blood pressure,
+                                                improves blood circulation, burns excess fat & calories, and reduces
                                             </p>
                                         </div>
                                     </div>
@@ -422,8 +421,8 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/s15.png')} alt="" />
                                             <h2 className='expertise'>Pharmacy</h2>
                                             <span>
-                                            It’s important to always keep an adequate supply of the medicines you need. 
-                                            This is especially important if you suffer from any chronic conditions. 
+                                                It’s important to always keep an adequate supply of the medicines you need.
+                                                This is especially important if you suffer from any chronic conditions.
                                             </span>
                                         </div>
                                     </div>
@@ -435,8 +434,8 @@ class Index extends Component {
                                             <img src={require('../../assets/images/shape/s16.png')} alt="" />
                                             <h2 className='expertise'>Nursing At Home</h2>
                                             <p>
-                                            Sometimes, especially for the elderly and for patients suffering from chronic illnesses,
-                                             it becomes a challenge to travel to a hospital to get timely care. 
+                                                Sometimes, especially for the elderly and for patients suffering from chronic illnesses,
+                                                it becomes a challenge to travel to a hospital to get timely care.
                                             </p>
                                         </div>
                                     </div>
@@ -512,8 +511,8 @@ class Index extends Component {
                     <section class="">
                         <div class="auto-container">
                             <div class="sec-title text-center">
-                                <h2 style={{fontSize: 50 + 'px'}}> <span className='headeingcolorblue'>REACH </span> <span className='headeingcolorblack'>OUT TO US</span><br></br>
-                                    <p style={{fontSize: 22 + 'px'}}>Our health advisor is ready to answer your queries about what we do and how <br></br>we can help you take care of yourself and your loved ones better.</p>
+                                <h2 style={{ fontSize: 50 + 'px' }}> <span className='headeingcolorblue'>REACH </span> <span className='headeingcolorblack'>OUT TO US</span><br></br>
+                                    <p style={{ fontSize: 22 + 'px' }}>Our health advisor is ready to answer your queries about what we do and how <br></br>we can help you take care of yourself and your loved ones better.</p>
                                 </h2>
                             </div>
 
