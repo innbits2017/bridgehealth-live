@@ -3051,8 +3051,9 @@ font-weight: 900;
 .main-footer {
     position: relative;
     color: #c4c5c7;
-	background-size: cover !important;
-    border: 2px dashed #0e0909 !important;
+	background-position: right !important;
+    background-size: 100% 100% !important;
+	    border: 2px dashed #0e0909 !important;
     margin-left: 0px;
     border-top: 2px solid #0076A8;
     margin-right: 0px;
