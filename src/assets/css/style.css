@@ -2822,6 +2822,12 @@ img {
 color: #1963C6;
 font-weight: 700;
 }
+
+.headeingcolorwhite
+{
+color: #FFFFFF;
+font-weight: 700;
+}
 .headeingcolorblack
 {
 color: #000;
@@ -9778,7 +9784,7 @@ img.lazy-image.loaded {
 {
 	margin-top: 20px;
 	font-weight: 500 !important;
-	margin-left: 3rem;
+	margin-left: 0marginTop40rem;
 }
 .heading5{ 
 	margin-right: 3rem;
@@ -10756,6 +10762,16 @@ hr{
     margin-top: 26px;
     border-radius: 15px;
 }
+
+.cont-box {
+    box-shadow: 1px 1px 5px 2px #817f7f96;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: #fff;
+    padding: 30px;
+    margin-top: -50px;
+    border-radius: 15px;
+}
 .font22
 {
 	font-size: 22px;
@@ -11087,7 +11103,7 @@ background: none !important;	}
 .btn5
 {
 	margin-bottom: 40px;
-    margin-top: -60px;
+    margin-top: -20px;
 }
 
 .leadership {
@@ -11179,4 +11195,26 @@ display: none;
   .testimonal3
   {
 	transform: perspective(800px) rotateY(0deg) scale(0.9) rotateX(0deg) !important;
+  }
+  
+
+  .opth-title {
+	margin-left: 50vh;
+  }
+
+  .derm-data {
+	display: flex;
+	margin-top: 100px;
+  }
+
+  .treat {
+	color: #000000;
+	margin-top: 20px;
+	margin-left: 60px;
+	font-weight: 600;
+  }
+
+  .fontimp {
+	margin-top: 200px;
+	font-size: 22px;
   }

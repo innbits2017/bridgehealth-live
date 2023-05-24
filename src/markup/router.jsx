@@ -19,6 +19,10 @@ import lab_tests from './pages/lab-tests';
 import physiotherapy from './pages/physiotherapy';
 import pharmacy from './pages/pharmacy';
 import psychological_Health from './pages/psychological-Health';
+import ophthalmologist from './pages/ophthalmologists';
+import dermatology from './pages/dermatology'; 
+import doctor_consults from './pages/doctor-consults';
+import dental from './pages/dental';
 
 class Router extends Component {
     render() {
@@ -48,6 +52,10 @@ class Router extends Component {
                         <Route path='/physiotherapy' component={physiotherapy}/>
                         <Route path='/pharmacy' component={pharmacy}/>
                         <Route path='/psychological-Health' component={psychological_Health}/>
+                        <Route path='/ophthalmologist' component={ophthalmologist}/>
+                        <Route path='/dermatology' component={dermatology}/>
+                        <Route path='/doctor-consults' component={doctor_consults}/>
+                        <Route path='/dental' component={dental}/>
 
                     </Switch>
 
