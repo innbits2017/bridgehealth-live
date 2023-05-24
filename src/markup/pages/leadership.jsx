@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 
-const aboutbg = require('./../../assets/images/background/image20.png');
+const aboutbg = require('./../../assets/images/background/leadership1.jpg');
 const wellcomebg1 = require('./../../assets/images/resource/image-1.jpg');
 
 class leadership extends Component {
@@ -24,6 +24,7 @@ class leadership extends Component {
 
                     <div class="auto-container">
                         {/* <h1 className='colorwhite'>LeaderShip</h1> */}
+                        <h1 className='colorwhite'></h1>
 
                     </div>
 
@@ -155,7 +156,7 @@ class leadership extends Component {
                                         <figure><img src={require('../../assets/images/gallery/L2.png')} alt="" /></figure>
                                     </div> */}
                                     <div class="leadership">
-                                        <img src={require('../../assets/images/gallery/L2.png')} alt="" class="avtar" />
+                                        <img src={require('../../assets/images/gallery/L3.png')} alt="" class="avtar" />
                                         <div class="overlay">
                                             <div class="texttitle">Karan Verma</div>
                                             <div className='designation1'>CEO</div>
@@ -174,7 +175,7 @@ class leadership extends Component {
 
                             </div>
                             <div class="col-lg-3 team-block-one wow fadeInUp lead3" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div class="column">
+                                {/* <div class="column">
                                     <div class="leadership">
                                         <img src={require('../../assets/images/gallery/L3.png')} alt="" class="avtar" />
                                         <div class="overlay">
@@ -182,9 +183,9 @@ class leadership extends Component {
                                             <div className='designation1'>CEO</div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div class="column">
-                                    <div class="leadership">
+                                    <div class="leadership div-heading">
                                         <img src={require('../../assets/images/gallery/L7.png')} alt="" class="avtar" />
                                         <div class="overlay">
                                             <div class="texttitle">Karan Verma</div>

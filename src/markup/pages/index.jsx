@@ -234,7 +234,7 @@ class Index extends Component {
                                             <h2 className='expertise'>Annual Preventive<br></br> Health Plans</h2>
 
                                             <p>
-                                                Explore our efficient membership services that provide a holistic care plan and guide you to start a healthy journey
+                                            Explore our efficient membership services that provide a holistic care plan and guide you to start a healthy journey
                                             </p>
                                         </div>
                                     </div>
