@@ -30,6 +30,7 @@ import comprehensiveHealth from './pages/comprehensive-health';
 import elderlyCare from './pages/elderly-care';
 import diabetes from './pages/diabetes';
 import manageWeight from './pages/manage-weight';
+import hypertension from './pages/hypertension';
 
 class Router extends Component {
     render() {
@@ -70,6 +71,7 @@ class Router extends Component {
                         <Route path='/elderly-care' component={elderlyCare}/>
                         <Route path='/diabetes' component={diabetes}/>
                         <Route path='/manage-weight' component={manageWeight}/>
+                        <Route path='/hypertension' component={hypertension}/>
 
 
                     </Switch>
