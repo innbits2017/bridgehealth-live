@@ -24,6 +24,8 @@ import ophthalmologist from './pages/ophthalmologists';
 import dermatology from './pages/dermatology'; 
 import doctor_consults from './pages/doctor-consults';
 import dental from './pages/dental';
+import fitnessAssessment from './pages/fitness-assessment';
+import nursingAtHome from './pages/nursing-at-home';
 
 class Router extends Component {
     render() {
@@ -58,6 +60,9 @@ class Router extends Component {
                         <Route path='/dermatology' component={dermatology}/>
                         <Route path='/doctor-consults' component={doctor_consults}/>
                         <Route path='/dental' component={dental}/>
+                        <Route path='/fitness-assessment' component={fitnessAssessment}/>
+                        <Route path='/nursing-at-home' component={nursingAtHome}/>
+
 
                     </Switch>
 

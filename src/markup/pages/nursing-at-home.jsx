@@ -1,41 +1,53 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { Nav, Tab, } from 'react-bootstrap';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 
 
-
-const abouteye = require('./../../assets/images/shape/eyetest.png');
-
-class ophthalmologist extends Component {
+class nursingAtHome extends Component {
     render() {
         return (
             <>
 
                 <Header />
 
-                <section class="internalpage style-two" style={{ backgroundImage: "url(" + abouteye + ")" }}>
-                    <div class="auto-container">
-                        <div class="content-box">
+                <section class="team-section padding">
+                    {/* About Section Two */}
+                    <section class="container-fluid">
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
 
-                            <div class=" text-center textleft">
-                                <h2 className='textleft fontSize'>
-                                    <span className='headeingcolorblack'> Experience the benefits </span><br></br>
-                                    <span className='headeingcolorblack'>of</span>
-                                    <span className='headeingcolorwhite'> Crystal Clear Vision</span>
+                                <div class="col-lg-6">
+                                    <div class="content-box">
 
-                                </h2>
-                                <h3 className='textleft marginTop40'>
-                                    Talk to our Ophthalmologists today
-                                </h3>
+                                        <div class="sec-title text-center textleft">
+                                            <h2 className='textleft'>
+                                                <span className='headeingcolorblack'>
+                                                    The care you need in the
+                                                </span>
+                                                <br></br>
+                                                <span className='headeingcolorblue '> Comfort of your Home </span></h2>
+                                            <h3 className='textleft marginTop40'>
+                                                Nursing services provided directly at your home
+                                            </h3>
+                                        </div>
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="image-wrapper">
+                                        <div class="image-one">
+                                            <img src={require('../../assets/images/shape/nursing.png')} alt="" className='imgwidth' />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
-
                         </div>
-
-                    </div>
+                    </section>
                 </section>
-
 
                 <section class="contact-section">
 
@@ -45,7 +57,7 @@ class ophthalmologist extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/eye1.png')} alt="" className='width64' />
+                                        <img src={require('../../assets/images/shape/nursing1.png')} alt="" className='width64' />
                                     </div>
                                 </div>
                             </div>
@@ -55,10 +67,11 @@ class ophthalmologist extends Component {
                                     <div class="sec-title phybox">
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
-                                            Our eyes are the windows to the world. They allow us to see every detail and colour, near and far. However, because of our modern-day habits and work,
-                                            we spend too much time looking at screens which strains our eyes. We also tend to blink less which leads to dry eyes. These factors contribute to poor eyesight in children and adults.
+                                            Sometimes, especially for the elderly and for patients suffering from chronic illnesses, it becomes a challenge to travel to a hospital to get timely care.
+                                            Furthermore, bedridden patients need timely care and assistance at all times to perform their daily routines.
                                         </p>
                                     </div>
+
 
 
                                     <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
@@ -76,57 +89,24 @@ class ophthalmologist extends Component {
                 <section>
                     <div class="image-wrapper">
                         <div class="image-one">
-                            <img src={require('../../assets/images/shape/eye2.png')} alt="" className='labwidth' />
+                            <img src={require('../../assets/images/shape/nursing2.png')} alt="" className='labwidth' />
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="contact-form-area">
+
+                            <div class="sec-title cont-box">
+                                {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
+                                <p className='font22'>
+                                    We provide nursing services directly in the comfort of your home.
+                                    Our nursing staff is professionally trained to assist all kinds of patients and will see to all their needs.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                <section class="contact-section">
-
-                    <div class="auto-container">
-                        <div class="row">
-
-
-                            <div class="col-lg-6">
-                                <div class="contact-form-area">
-
-                                    <div class="sec-title">
-                                        {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
-                                        <p className='font22'>
-                                            Your eyes deserve great care. At Bridge Health, our expert ophthalmologists will help you through regular eye testing, vision enhancement recommendations, and treatments so
-                                            that you’ll never have to worry about squinting to read that sign board acRoss the street ever again!
-                                        </p>
-
-
-                                    </div>
-
-
-                                    <div class="contact-form">
-
-                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
-                                            <div class="row clearfix">
-
-
-
-                                                <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
-                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
-                                        <img src={require('../../assets/images/shape/ph1.png')} alt="" className='width84' />
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
 
                 <section class="contact-section">
 
@@ -144,7 +124,7 @@ class ophthalmologist extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/eye5.png')} alt="" className='width84' />
+                                        <img src={require('../../assets/images/shape/ps1.png')} alt="" className='width84' />
                                     </div>
                                 </div>
                             </div>
@@ -154,44 +134,53 @@ class ophthalmologist extends Component {
                                     <ul className='listicon'>
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
-                                            Eye care tips
+                                            Assistance with daily routine 
                                         </li>
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
-                                            Consult with expert ophthalmologists
+                                            Administering medicines and treatments
                                         </li>
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
-                                            Expert advice on eye surgeries and procedures
+                                            Hygiene care
                                         </li>
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
-                                            Diet plans to help you maintain good eyesight
+                                            Movement assistance
                                         </li>
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
-                                            Laser eye enhancement surgery
+                                            Critical nursing care
                                         </li>
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
-                                            Glasses and contact lens prescriptions
+                                            Palliative care
                                         </li>
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
-                                            Comprehensive eye tests and examinations
+                                            Tracheostomy care
                                         </li>
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
-                                            Cataract surgery
+                                            Spinal injury care
                                         </li>
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
-                                            Treatment of alignment disorders
+                                            PEG feeding
                                         </li>
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
-                                            Prescriptions and medicines for various eye conditions like conjunctivitis
+                                            Catheter, stoma, and bowel management
                                         </li>
+                                        <li>
+                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
+                                            Domiciliary care
+                                        </li>
+                                        <li>
+                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
+                                            Ventilator care and management
+                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -204,8 +193,8 @@ class ophthalmologist extends Component {
                     <div class="auto-container">
                         <div class="sec-title text-center">
                             <h2 className='header1'>
-                                <span className='headeingcolorblack'>Experience the beauty of</span>
-                                <span className='headeingcolorblue'> Clear Vision!  </span>
+                                <span className='headeingcolorblue'>Nursing  </span>
+                                <span className='headeingcolorblack'>without the hassle! </span>
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
@@ -223,5 +212,4 @@ class ophthalmologist extends Component {
     }
 
 }
-
-export default ophthalmologist;
+export default nursingAtHome;
