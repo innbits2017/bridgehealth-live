@@ -159,11 +159,11 @@ p,
 }
 
 .auto-container {
-	position: static;
-	max-width: 1200px;
-	padding: 0px 15px;
-	margin: 0 auto;
-
+	position : static;
+	max-width: 1360px;
+	padding  : 0px 15px;
+	margin   : 0 auto;
+	
 }
 
 .auto-container3 {
@@ -1084,11 +1084,10 @@ img {
 
 .logo-box {
 	background: linear-gradient(to top, #dbdbdb00 0%, #ffffffa3 100%);
-	width: 200px;
-	height: 150px;
-	padding: 20px;
-	/* margin-left: 40%; */
-	margin-left: 16%;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+	/* margin-left: 21%; */
 }
 
 .header-top-two .top-right .social-links li a span {
