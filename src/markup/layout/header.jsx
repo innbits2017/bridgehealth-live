@@ -131,7 +131,7 @@ class Header extends Component {
                             </div>
                         </div>
                     </div>
-
+{/* 
                     <div class="top-right flotright">
                         <a href={'/#'}><span class="btn-title">
                         <img src={require('../../assets/images/Group3.png')} alt="" />
@@ -152,7 +152,7 @@ class Header extends Component {
                         <img src={require('../../assets/images/Group53.png')} alt="" />
                             </span>
                         </a>
-                    </div>   
+                    </div>    */}
 
 
                 </header>
