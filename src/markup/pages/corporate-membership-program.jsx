@@ -30,7 +30,7 @@ class corporate_membership_program extends Component {
                             <div class="col-lg-6">
                                 <div class="content-box">
 
-                                    <div class="text-center textleft">
+                                    <div class="textleft">
                                         <h3 className='textleft' style={{fontSize: 40 + 'px'}}>
                                             <span className='headeingcolorblack'>Redefining the Meaning of </span><br></br>
                                             <span className='headeingcolorblue'>Employee-Centric Care</span>

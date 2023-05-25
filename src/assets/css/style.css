@@ -3592,6 +3592,7 @@ img.lazy-image.loaded {
 	width: 700px !important;
 	text-align: center;
 	margin-left: 21%;
+	margin-right: 3rem;
 	font-weight: 500;
 	font-size: 21.8px;
 	line-height: 35px;
@@ -10188,9 +10189,6 @@ img.lazy-image.loaded {
 /* .sec-heading1{
 	margin-left: 3rem;
 } */
-.heading5 {
-	margin-right: 3rem;
-}
 
 .marlefttext {
 	margin-left: 10%;
@@ -11320,6 +11318,62 @@ hr {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	.testimonial-section .slick-prev {
+		position: absolute;
+		right: 38% !important;
+		top: 110% !important;
+		left: auto;
+		height: 60px;
+	}
+	.testimonial-section .slick-next {
+		position: absolute;
+		right: 0;
+		top: 110% !important;
+		height: 60px;
+	}
+	.heading5 {
+		width: auto !important;
+		text-align: center;
+		margin-left: 0%;
+		margin-right: 0%;
+		font-weight: 500;
+		font-size: 21.8px;
+		line-height: 35px;
+	}
+	.display-4 {
+		display: block;
+		font-size: 40px;
+		line-height: 1.15em;
+		color: #ffffff !important;
+		font-weight: 700;
+		margin-bottom: 20px;
+		letter-spacing: 0;
+		text-align: center;
+	}
+	.floatleft .btn-box
+	{
+float: none;	}
+.video-background-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 180px;
+}
+.video-background-holder {
+    position: relative;
+    background-color: black;
+    min-height: 40rem;
+    width: 100%;
+    overflow: hidden;
+}
+.lead {
+    display: block;
+    font-size: 30px;
+    line-height: 1.2em;
+    color: #ffffff;
+    font-weight: 400;
+    padding-top: 25px;
+    text-align: center;
+}
 	.flotright1 a {
 		float: right;
 		color: #fff;
@@ -11449,12 +11503,32 @@ hr {
 	}
 
 	.heading3 {
-		width: auto !important;
-		text-align: center !important;
-		margin-left: 0px !important;
-		font-weight: 500;
+	    line-height: 38px;
+    width: auto !important;
+    text-align: center !important;
+    margin-left: 0px !important;
+    font-weight: 500;
 	}
-
+	.main-footer {
+		position: relative;
+		color: #c4c5c7;
+		background-position: right !important;
+		background-size: 100% 100% !important;
+		border: 2px dashed #0e0909 !important;
+		margin-left: 0px;
+		border-top: 2px solid #0076A8;
+		margin-right: 0px;
+		border-top-right-radius: 80px 80px;
+		border-top-left-radius: 80px 80px;
+background: none;	}
+	.slick-list {
+		position: relative;
+		display: block;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 60px;
+	}
 	.blogtext {
 		margin-left: 16% !important;
 	}
@@ -11479,12 +11553,31 @@ hr {
 	.news-section {
 		padding: 0px 0 71px;
 	}
-
+	.leader-heading2 {
+		text-transform: uppercase;
+		margin-left: 0%;
+	}
+	.leader-heading1 {
+		text-transform: uppercase; 
+		margin-left: 0%;
+	}
+	.teamleader {
+		background-size: cover;
+		background-image:none;
+	}
+	.div-heading {
+		margin-top: 0rem !important;
+	}
+	.gallery-section {
+		position: relative;
+		padding: 0px !important;
+	}
 	.textpa {
 		text-align: center;
 		margin-left: 0px !important;
 		margin-top: 12px;
 		font-weight: 600;
+		font-size: 14px;
 	}
 
 	/* .testimonial-section .slick-next:before {
@@ -11591,9 +11684,9 @@ hr {
 		line-height: 28px;
 	}
 
-	.btn-style-one {
+	/* .btn-style-one {
 		margin-left: 20%;
-	}
+	} */
 
 	.theme-btn1 {
 		margin-left: 25%;
