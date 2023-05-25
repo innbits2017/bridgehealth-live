@@ -26,6 +26,10 @@ import doctor_consults from './pages/doctor-consults';
 import dental from './pages/dental';
 import fitnessAssessment from './pages/fitness-assessment';
 import nursingAtHome from './pages/nursing-at-home';
+import comprehensiveHealth from './pages/comprehensive-health';
+import elderlyCare from './pages/elderly-care';
+import diabetes from './pages/diabetes';
+import manageWeight from './pages/manage-weight';
 
 class Router extends Component {
     render() {
@@ -62,6 +66,10 @@ class Router extends Component {
                         <Route path='/dental' component={dental}/>
                         <Route path='/fitness-assessment' component={fitnessAssessment}/>
                         <Route path='/nursing-at-home' component={nursingAtHome}/>
+                        <Route path='/comprehensive-health' component={comprehensiveHealth}/>
+                        <Route path='/elderly-care' component={elderlyCare}/>
+                        <Route path='/diabetes' component={diabetes}/>
+                        <Route path='/manage-weight' component={manageWeight}/>
 
 
                     </Switch>

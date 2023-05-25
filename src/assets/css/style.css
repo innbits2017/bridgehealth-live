@@ -159,11 +159,11 @@ p,
 }
 
 .auto-container {
-	position : static;
+	position: static;
 	max-width: 1360px;
-	padding  : 0px 15px;
-	margin   : 0 auto;
-	
+	padding: 0px 15px;
+	margin: 0 auto;
+
 }
 
 .auto-container3 {
@@ -1084,9 +1084,9 @@ img {
 
 .logo-box {
 	background: linear-gradient(to top, #dbdbdb00 0%, #ffffffa3 100%);
-    width: 200px;
-    height: 150px;
-    padding: 20px;
+	width: 200px;
+	height: 150px;
+	padding: 20px;
 	/* margin-left: 21%; */
 }
 
@@ -11146,6 +11146,15 @@ hr {
 	border-radius: 15px;
 }
 
+.phybox1 {
+	box-shadow: 1px 1px 5px 2px #817f7f96;
+	margin-left: 10%;
+	background: #fff;
+	padding: 38px;
+	margin-top: 28px;
+	border-radius: 15px;
+}
+
 .font22 {
 	font-size: 22px;
 }
@@ -11629,4 +11638,23 @@ hr {
 
 .fontitalic {
 	font-style: italic;
+}
+
+.healts {
+	position: relative;
+	display: inline-block;
+}
+
+.treat1 {
+	font-weight: 600;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	z-index: 1;
+}
+
+.heath-margin {
+	margin-left: 4%;
 }
