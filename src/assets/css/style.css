@@ -3006,10 +3006,15 @@ img {
 	letter-spacing: 0px;
 	font-weight: 900;
 }
-.headeingcolorblue
-{
-color: #1963C6;
-font-weight: 700;
+
+.headeingcolorblue {
+	color: #1963C6;
+	font-weight: 700;
+}
+
+.headeingcolorwhite {
+	color: #FFFFFF;
+	font-weight: 700;
 }
 
 .headeingcolorblack {
@@ -10044,7 +10049,7 @@ img.lazy-image.loaded {
 .marginTop40 {
 	margin-top: 20px;
 	font-weight: 500 !important;
-	margin-left: 3rem;
+	margin-left: 0rem;
 }
 
 .sec-heading {
@@ -11139,8 +11144,8 @@ hr {
 	margin-top: 26px;
 	border-radius: 15px;
 }
-.font22
-{
+
+.font22 {
 	font-size: 22px;
 }
 
@@ -11490,15 +11495,17 @@ hr {
 
 .btn5 {
 	margin-bottom: 40px;
-    margin-top: -60px;
+	margin-top: -20px;
 }
 
 .leadership {
 	position: relative;
 }
-.div-heading{
+
+.div-heading {
 	margin-top: 14rem;
 }
+
 .avtar {
 	display: block;
 	width: 100%;
@@ -11581,8 +11588,40 @@ hr {
 
 .testimonal2 {
 	transform: perspective(800px) rotateY(0deg) scale(0.9) rotateX(0deg) !important;
-  }
-  .testimonal3
-  {
+}
+
+.testimonal3 {
 	transform: perspective(800px) rotateY(0deg) scale(0.9) rotateX(0deg) !important;
-  }
+}
+
+.cont-box {
+	box-shadow: 1px 1px 5px 2px #817f7f96;
+	margin-left: 5%;
+	margin-right: 5%;
+	background: #fff;
+	padding: 30px;
+	margin-top: -50px;
+	border-radius: 15px;
+}
+
+
+.opth-title {
+	margin-left: 50vh;
+}
+
+.derm-data {
+	display: flex;
+	margin-top: 100px;
+}
+
+.treat {
+	color: #000000;
+	margin-top: 20px;
+	margin-left: 60px;
+	font-weight: 600;
+}
+
+.fontimp {
+	margin-top: 200px;
+	font-size: 22px;
+}
