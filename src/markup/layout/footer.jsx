@@ -94,7 +94,10 @@ class Footer extends Component {
                                                 <li><Link to={'/#'}><span class="fab fa-facebook-f"></span></Link></li>
                                                 <li><Link to={'/#'}><span class="fab fa-twitter"></span></Link></li>
                                                 <li><Link to={'/#'}><span class="fab fa-vimeo-v"></span></Link></li>
-                                                <li><Link to={'/#'}><span class="fab fa-instagram"></span></Link></li>
+                                                <li>
+                                                    
+                                                    <Link to={'/#'}><span class="fab fa-instagram"></span></Link>
+                                                    </li>
                                             </ul>
                                            
                                         </div>

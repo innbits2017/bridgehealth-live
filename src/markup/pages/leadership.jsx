@@ -39,7 +39,7 @@ class leadership extends Component {
                         </div>
 
                     </div>
-                    <div className='container-fulid dir'>
+                    <div className='container-fulid teamback1'>
                         <div class="auto-container">
                             <div class="row align-items-center">
 
@@ -57,9 +57,9 @@ class leadership extends Component {
                                             <div class="designation leader-heading">Chairman & Co-Founder</div>
                                             <hr></hr>
                                             <div class="text">
-                                                <i>Senapathy “Kris” Gopalakrishnan served as the Vice Chairman of Infosys from 2011 to 2014<br></br>
-                                                    and the Chief Executive Officer and Managing Director of Infosys from 2007 to 2011. Kris is<br></br>
-                                                    one of the co-founders of Infosys. He also was selected to Thinkers 50, an elite list of global<br></br>
+                                                <i>Senapathy “Kris” Gopalakrishnan served as the Vice Chairman of Infosys from 2011 to 2014
+                                                    and the Chief Executive Officer and Managing Director of Infosys from 2007 to 2011. Kris is
+                                                    one of the co-founders of Infosys. He also was selected to Thinkers 50, an elite list of global
                                                     business thinkers, in...
                                                 </i>
                                                 <h6 class="leader-btn">
@@ -71,6 +71,10 @@ class leadership extends Component {
 
                                 </div>
                             </div>
+                            </div>
+                            </div>
+                            <div className='container-fulid teamback2'>
+
                             <div class="auto-container marginTop50">
                                 <div class="row align-items-center">
                                     <div class="col-lg-10">
@@ -103,18 +107,17 @@ class leadership extends Component {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </section>
 
 
                 {/* <!-- Gallery Section --> */}
-                <section class="gallery-section">
+                <section class="gallery-section teamleader">
                     <div class="auto-container">
                         <div class="auto-container">
-                            <div class="sec-title text-center">
-                                <h2> <span className='headeingcolorblack'> LEADERSHIP</span> <span className='headeingcolorblue'> TEAM</span></h2>
+                            <div class="sec-title textalign ">
+                                <h2> <span className='headeingcolorblack'> LEADERSHIP</span><br></br> <span className='headeingcolorblue'> TEAM</span></h2>
                             </div>
 
                         </div>
@@ -126,6 +129,11 @@ class leadership extends Component {
                                         <div class="overlay">
                                             <div class="texttitle">Karan Verma</div>
                                             <div className='designation1'>CEO</div>
+                                            <div className='linkdinicon'>
+                                            <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -137,6 +145,10 @@ class leadership extends Component {
                                         <div class="overlay">
                                             <div class="texttitle">Karan Verma</div>
                                             <div className='designation1'>CEO</div>
+                                            <div className='linkdinicon'>
+                                            <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -146,6 +158,10 @@ class leadership extends Component {
                                         <div class="overlay">
                                             <div class="texttitle">Karan Verma</div>
                                             <div className='designation1'>CEO</div>
+                                            <div className='linkdinicon'>
+                                            <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -160,6 +176,10 @@ class leadership extends Component {
                                         <div class="overlay">
                                             <div class="texttitle">Karan Verma</div>
                                             <div className='designation1'>CEO</div>
+                                            <div className='linkdinicon'>
+                                            <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -169,6 +189,10 @@ class leadership extends Component {
                                         <div class="overlay">
                                             <div class="texttitle">Karan Verma</div>
                                             <div className='designation1'>CEO</div>
+                                            <div className='linkdinicon'>
+                                            <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -190,6 +214,10 @@ class leadership extends Component {
                                         <div class="overlay">
                                             <div class="texttitle">Karan Verma</div>
                                             <div className='designation1'>CEO</div>
+                                            <div className='linkdinicon'>
+                                            <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -40,7 +40,7 @@ class Testimonial2 extends Component {
                                                     <div class="col-lg-6">
                                                         <div class="image-wrapper">
                                                             <div class="image-one">
-                                                                <img src={require('../../assets/images/shape/testimonial.png')} alt="" />
+                                                                <img src={require('../../assets/images/shape/testimonial.png')} alt="" className='imgwidth' />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -73,7 +73,7 @@ class Testimonial2 extends Component {
                                                     <div class="col-lg-6">
                                                         <div class="image-wrapper">
                                                             <div class="image-one">
-                                                                <img src={require('../../assets/images/shape/testimonial.png')} alt="" />
+                                                                <img src={require('../../assets/images/shape/testimonial.png')} alt="" className='imgwidth' />
                                                             </div>
                                                         </div>
                                                     </div>
