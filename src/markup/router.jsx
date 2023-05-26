@@ -31,6 +31,7 @@ import elderlyCare from './pages/elderly-care';
 import diabetes from './pages/diabetes';
 import manageWeight from './pages/manage-weight';
 import hypertension from './pages/hypertension';
+import aboutUs from './pages/aboutus';
 
 class Router extends Component {
     render() {
@@ -72,6 +73,7 @@ class Router extends Component {
                         <Route path='/diabetes' component={diabetes}/>
                         <Route path='/manage-weight' component={manageWeight}/>
                         <Route path='/hypertension' component={hypertension}/>
+                        <Route path='/about-us' component={aboutUs}/>
 
 
                     </Switch>

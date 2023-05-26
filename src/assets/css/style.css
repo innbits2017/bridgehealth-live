@@ -8433,16 +8433,9 @@ img.lazy-image.loaded {
 .search-box {
 	display: flex;
 }
+
 .language {
 	border: 1px solid #bab7b7;
-    padding: 10px 5px 0px 10px;
-    width: -moz-fit-content;
-    /* width: max-content; */
-    border-radius: 10px;
-    height: 48.8px;
-    margin-right: 20px;
-}
-.searchblog{
 	padding: 10px 5px 0px 10px;
 	width: -moz-fit-content;
 	/* width: max-content; */
@@ -8450,21 +8443,33 @@ img.lazy-image.loaded {
 	height: 48.8px;
 	margin-right: 20px;
 }
+
+.searchblog {
+	padding: 10px 5px 0px 10px;
+	width: -moz-fit-content;
+	/* width: max-content; */
+	border-radius: 10px;
+	height: 48.8px;
+	margin-right: 20px;
+}
+
 .searchblog {
 	background-color: #fff !important;
 	float: right;
 }
+
 .form-group1 {
 	border: 1px solid #bab7b7;
-    padding: 10px;
-    width: -moz-fit-content;
-    width: 400px;
-    border-radius: 10px;
+	padding: 10px;
+	width: -moz-fit-content;
+	width: 400px;
+	border-radius: 10px;
 	padding: 10px;
 	width: -moz-fit-content;
 	width: 400px;
 	border-radius: 10px;
 }
+
 .sidebar .search-box {
 	position: relative;
 }
@@ -11325,12 +11330,14 @@ hr {
 		left: auto;
 		height: 60px;
 	}
+
 	.testimonial-section .slick-next {
 		position: absolute;
 		right: 0;
 		top: 110% !important;
 		height: 60px;
 	}
+
 	.heading5 {
 		width: auto !important;
 		text-align: center;
@@ -11340,6 +11347,7 @@ hr {
 		font-size: 21.8px;
 		line-height: 35px;
 	}
+
 	.display-4 {
 		display: block;
 		font-size: 40px;
@@ -11350,30 +11358,35 @@ hr {
 		letter-spacing: 0;
 		text-align: center;
 	}
-	.floatleft .btn-box
-	{
-float: none;	}
-.video-background-content {
-    position: relative;
-    z-index: 2;
-    padding-top: 180px;
-}
-.video-background-holder {
-    position: relative;
-    background-color: black;
-    min-height: 40rem;
-    width: 100%;
-    overflow: hidden;
-}
-.lead {
-    display: block;
-    font-size: 30px;
-    line-height: 1.2em;
-    color: #ffffff;
-    font-weight: 400;
-    padding-top: 25px;
-    text-align: center;
-}
+
+	.floatleft .btn-box {
+		float: none;
+	}
+
+	.video-background-content {
+		position: relative;
+		z-index: 2;
+		padding-top: 180px;
+	}
+
+	.video-background-holder {
+		position: relative;
+		background-color: black;
+		min-height: 40rem;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.lead {
+		display: block;
+		font-size: 30px;
+		line-height: 1.2em;
+		color: #ffffff;
+		font-weight: 400;
+		padding-top: 25px;
+		text-align: center;
+	}
+
 	.flotright1 a {
 		float: right;
 		color: #fff;
@@ -11503,12 +11516,13 @@ float: none;	}
 	}
 
 	.heading3 {
-	    line-height: 38px;
-    width: auto !important;
-    text-align: center !important;
-    margin-left: 0px !important;
-    font-weight: 500;
+		line-height: 38px;
+		width: auto !important;
+		text-align: center !important;
+		margin-left: 0px !important;
+		font-weight: 500;
 	}
+
 	.main-footer {
 		position: relative;
 		color: #c4c5c7;
@@ -11520,7 +11534,9 @@ float: none;	}
 		margin-right: 0px;
 		border-top-right-radius: 80px 80px;
 		border-top-left-radius: 80px 80px;
-background: none;	}
+		background: none;
+	}
+
 	.slick-list {
 		position: relative;
 		display: block;
@@ -11529,6 +11545,7 @@ background: none;	}
 		padding: 0;
 		margin-bottom: 60px;
 	}
+
 	.blogtext {
 		margin-left: 16% !important;
 	}
@@ -11553,25 +11570,31 @@ background: none;	}
 	.news-section {
 		padding: 0px 0 71px;
 	}
+
 	.leader-heading2 {
 		text-transform: uppercase;
 		margin-left: 0%;
 	}
+
 	.leader-heading1 {
-		text-transform: uppercase; 
+		text-transform: uppercase;
 		margin-left: 0%;
 	}
+
 	.teamleader {
 		background-size: cover;
-		background-image:none;
+		background-image: none;
 	}
+
 	.div-heading {
 		margin-top: 0rem !important;
 	}
+
 	.gallery-section {
 		position: relative;
 		padding: 0px !important;
 	}
+
 	.textpa {
 		text-align: center;
 		margin-left: 0px !important;
@@ -11791,33 +11814,34 @@ background: none;	}
 	transform: translate(-50%, -50%);
 	text-align: center;
 }
-.linkdinicon
-{
-    box-shadow: none !important;
+
+.linkdinicon {
+	box-shadow: none !important;
 }
-.teamback1
-{
+
+.teamback1 {
 	background-size: 12%;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-position: top left;
-background-image: url(../images/shape/teamback1.png);
+	background-image: url(../images/shape/teamback1.png);
 }
-.teamback2
-{
+
+.teamback2 {
 	background-size: 12%;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-position: bottom right;
-background-image: url(../images/shape/teamback2.png);
+	background-image: url(../images/shape/teamback2.png);
 }
-.linkdinicon1
-{
-    box-shadow: none !important;
-    text-align: center;
-    margin-left: 32% !important;
-    margin-top: 9px !important;
-    font-size: 40px;
-    color: #fff;
+
+.linkdinicon1 {
+	box-shadow: none !important;
+	text-align: center;
+	margin-left: 32% !important;
+	margin-top: 9px !important;
+	font-size: 40px;
+	color: #fff;
 }
+
 .imgb2p {
 	width: 80%;
 	margin-left: 5rem;
@@ -11916,4 +11940,101 @@ background-image: url(../images/shape/teamback2.png);
 
 .martop {
 	margin-top: 30px;
+}
+
+.aboutpage {
+	margin-left: 30vh;
+}
+
+.aboutbox {
+
+	background-color: #FFFFFF;
+	border-radius: 25px;
+	width: 35%;
+	/* Adjust the width as desired */
+	display: inline-block;
+	margin-right: 50px;
+	/* Add some space between containers */
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	padding: 20px;
+}
+
+.aboutcont {
+	margin-left: 200px;
+	padding: 50px;
+}
+
+.aboutcont h3 {
+	color: #1963C6 !important;
+}
+
+.aboutmar {
+	margin-bottom: 100px;
+
+}
+
+.aboutmar1 {
+	display: flex;
+}
+
+/* ============================================= */
+
+
+.form1 {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.inputclass {
+	margin-right: 10px;
+	width: 41%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border: 1px solid #ccc;
+}
+.messagearea {
+	height: 120px;
+	width: 84%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border: 1px solid #ccc;
+}
+
+
+.tick {
+	margin-top: 1rem;
+}
+
+.tick label {
+	display: flex;
+	align-items: center;
+}
+
+.tick input {
+	margin-right: 0.5rem;
+}
+.email-phone {
+
+	display: flex;
+}
+
+.name-form {
+	width: 84%;
+}
+
+.btn-formdata {
+	font-size: 22px;
+	font-weight: 600;
+	color: #FFFFFF;
+	margin-left: 25vh;
+	width: 28%;
+	padding: 0.5rem 1rem;
+	background-color: #1963C6;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	border-radius: 30px;
 }
