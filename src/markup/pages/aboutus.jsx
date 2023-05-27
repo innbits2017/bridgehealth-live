@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
-import Form from '../layout/inputform';
+
 
 const aboutfair = require('./../../assets/images/shape/aboutback.png');
 const aback = require('./../../assets/images/shape/aback.png');
