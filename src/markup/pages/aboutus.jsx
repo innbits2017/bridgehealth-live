@@ -162,39 +162,67 @@ class aboutUs extends Component {
                     </div>
                 </section>
 
-                <section >
+            
+                <section class="contact-section">
+                    <section class="">
+                        <div class="auto-container">
+                            <div class="sec-title text-center">
+                                <h2 style={{ fontSize: 50 + 'px' }}> <span className='headeingcolorblue'>REACH </span> <span className='headeingcolorblack'>OUT TO US</span><br></br>
+                                    <p style={{ fontSize: 22 + 'px' }}>Our health advisor is ready to answer your queries about what we do and how <br></br>we can help you take care of yourself and your loved ones better.</p>
+                                </h2>
+                            </div>
+
+                        </div></section>
                     <div class="auto-container">
-                        <div class="sec-title text-center">
-                            <h2 className='header1'>
-                                <span className='headeingcolorblue'> REACH </span>
-                                <span className='headeingcolorblack'> OUT TO US </span>
-                            </h2>
-                            <p>Our health advisor is ready to answer your queries about what we do and how we <br></br> can help you take care of yourself and your loved ones better.</p>
-                        </div>
-
-
-                    </div>
-                </section>
-
-                <section className='aboutmar'>
-
-                    <div className='col-lg-12 aboutmar1'>
-
-                        <div class="col-lg-6">
-                            <div class="image-wrapper">
-                                <div class="image-one">
-                                    <img src={require('../../assets/images/shape/apage4.png')} alt="" className='width84' />
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="image-wrapper">
+                                    <div class="image-one">
+                                        <img class="reachout" src={require('../../assets/images/shape/contact.png')} alt="" />
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-lg-6">
+                                <div class="contact-form-area">
+
+                                    {/* <!-- Contact Form--> */}
+                                    <div class="contact-form">
+                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
+                                            <div class="row clearfix">
+                                                <div class="col-md-12 form-group">
+                                                    <input type="text" name="username" id="name" placeholder="Name*" required="" />
+                                                </div>
+
+                                                <div class="col-md-6 form-group">
+                                                    <input type="email" name="email" id="email" placeholder="Email*" required="" />
+                                                </div>
+                                                <div class="col-md-6 form-group">
+                                                    <input type="email" name="email" id="email" placeholder="Phone." required="" />
+                                                </div>
+
+                                                <div class="col-md-12 form-group">
+                                                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input"
+                                                        type="checkbox" id="checkbox1" name="option1" value="good" />
+                                                    <label class="form-check-label heading">
+                                                        I agree that Bridge Health may contact me at the email address or phone number above.
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <button class="theme-btn btn-style-one marginleft21" type="submit" name="submit-form"><span class="btn-title">SUBMIT</span></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-
-                        <div className='col-lg-6'>
-                            <Form />
-
-                        </div>
-
                     </div>
                 </section>
+
 
                 <Footer />
             </>
