@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -72,7 +72,7 @@ class Testimonial1 extends Component {
                 <section class="testimonial-section testback">
                     <div class="auto-container">
                         <div class="sec-title text-center">
-                            <h2 style={{fontSize: 50 + 'px'}}>
+                            <h2 style={{ fontSize: 50 + 'px' }}>
                                 {/* Confused about your health checks?<br></br> */}
                                 <span className='headeingcolorblack'> Meet The </span> <span className='headeingcolorblue'>Bridgers</span>
                             </h2>
@@ -122,7 +122,7 @@ class Testimonial1 extends Component {
                                             </div>
 
                                         </div>
-                                    </div>   
+                                    </div>
                                     <div class="slide-item testimonal3">
                                         {/* <!-- Testimonial-block --> */}
                                         <div class="testimonial-block">
@@ -140,7 +140,7 @@ class Testimonial1 extends Component {
                                             </div>
 
                                         </div>
-                                    </div>   
+                                    </div>
                                     <div class="slide-item">
                                         {/* <!-- Testimonial-block --> */}
                                         <div class="testimonial-block">
@@ -164,7 +164,9 @@ class Testimonial1 extends Component {
                             </div>
                             {/* SEE ALL */}
                             <h6 class="leader-btn1">
-                                SEE ALL
+                                <Link to={'/team'}>
+                                    SEE ALL
+                                </Link>
                             </h6>
                         </div>
                     </div>
@@ -210,8 +212,8 @@ class Testimonial1 extends Component {
                                             </div>
 
                                         </div>
-                                    </div>  
-                                     <div class="slide-item">
+                                    </div>
+                                    <div class="slide-item">
                                         {/* <!-- Testimonial-block --> */}
                                         <div class="testimonial-block">
                                             <div class="author-info">
@@ -228,7 +230,7 @@ class Testimonial1 extends Component {
                                             </div>
 
                                         </div>
-                                    </div>   
+                                    </div>
                                     <div class="slide-item">
                                         {/* <!-- Testimonial-block --> */}
                                         <div class="testimonial-block">
@@ -251,7 +253,7 @@ class Testimonial1 extends Component {
                                 </Slider>
                             </div>
                             {/* SEE ALL */}
-                            
+
                         </div>
                     </div>
                 </section>
