@@ -4781,6 +4781,7 @@ img.lazy-image.loaded {
 
 .contact-form .form-group input[type="text"],
 .contact-form .form-group input[type="email"],
+.contact-form .form-group input[type="phone"],
 .contact-form .form-group textarea,
 .contact-form .form-group select {
 	position: relative;
@@ -9319,6 +9320,7 @@ img.lazy-image.loaded {
 
 .blog-single-post .contact-form .form-group input[type="text"],
 .blog-single-post .contact-form .form-group input[type="email"],
+.blog-single-post .contact-form .form-group input[type="phone"],
 .blog-single-post .contact-form .form-group textarea,
 .blog-single-post .contact-form .form-group select {
 	background: #fff;
@@ -9569,6 +9571,7 @@ img.lazy-image.loaded {
 
 .contact-form-widget .contact-form .form-group input[type="text"],
 .contact-form-widget .contact-form .form-group input[type="email"],
+.contact-form-widget .contact-form .form-group input[type="phone"],
 .contact-form-widget .contact-form .form-group textarea,
 .contact-form-widget .contact-form .form-group select {
 	margin-bottom: 0;

@@ -6,6 +6,7 @@ import Testimonial1 from '../element/testimonial1';
 import HomeSlider1 from './../element/home-slider1';
 import { Button } from 'react-bootstrap';
 import Testimonial2 from '../element/testimonial2';
+import { event, valHooks } from 'jquery';
 const teambg1 = require('./../../assets/images/background/image-3.jpg');
 const newsbg1 = require('./../../assets/images/background/image-4.jpg');
 const wellcomebg1 = require('./../../assets/images/resource/image-1.jpg');
@@ -19,6 +20,34 @@ const wellcomebg1 = require('./../../assets/images/resource/image-1.jpg');
 // }
 
 class Index extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            username: '',
+            email: '',
+            phone: '',
+            message: ''
+        };
+        // this.handleChange = this.handleChange.bind(this)
+    }
+
+    handleChange = (event) => {
+
+        const { name, value } = event.target;
+        this.setState({ ...this.state, [name]: value });
+        console.log(event)
+    };
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+        
+
+
+        
+        console.log(this.state);
+    };
 
     render() {
         return (
@@ -474,7 +503,8 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <a href={'/pharmacy'}>
+                                            <a
+                                                href={'/pharmacy'}>
                                                 <img src={require('../../assets/images/shape/s15.png')} alt="" />
                                             </a>
                                             <a href={'/pharmacy'}>
@@ -598,18 +628,43 @@ class Index extends Component {
                                         <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
                                             <div class="row clearfix">
                                                 <div class="col-md-12 form-group">
-                                                    <input type="text" name="username" id="name" placeholder="Name*" required="" />
+                                                    <input
+                                                        type="text"
+                                                        value={this.state.username}
+                                                        onChange={e => this.handleChange(e)}
+                                                        name="username"
+                                                        id="name"
+                                                        placeholder="Name*"
+                                                        required="" />
                                                 </div>
 
                                                 <div class="col-md-6 form-group">
-                                                    <input type="email" name="email" id="email" placeholder="Email*" required="" />
+                                                    <input type="email"
+                                                        value={this.state.email}
+                                                        onChange={e => this.handleChange(e)}
+                                                        name="email"
+                                                        id="email"
+                                                        placeholder="Email*"
+                                                        required="" />
                                                 </div>
                                                 <div class="col-md-6 form-group">
-                                                    <input type="email" name="email" id="email" placeholder="Phone." required="" />
+                                                    <input type="phone"
+                                                        value={this.state.phone}
+                                                        onChange={e => this.handleChange(e)}
+                                                        name="phone"
+                                                        id="phone"
+                                                        placeholder="Phone"
+                                                        required="" />
                                                 </div>
 
                                                 <div class="col-md-12 form-group">
-                                                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                                                    <textarea
+                                                        name="message"
+                                                        value={this.state.message}
+                                                        onChange={e => this.handleChange(e)}
+                                                        id="message"
+                                                        placeholder="Message"
+                                                    ></textarea>
                                                 </div>
                                                 <div class="form-check">
                                                     <input class="form-check-input"
@@ -619,7 +674,7 @@ class Index extends Component {
                                                     </label>
                                                 </div>
                                                 <div class="col-md-12 form-group">
-                                                    <button class="theme-btn btn-style-one marginleft21" type="submit" name="submit-form"><span class="btn-title">SUBMIT</span></button>
+                                                    <button onSubmit={e => this.handleSubmit(e)} class="theme-btn btn-style-one marginleft21" type="submit" name="submit-form"><span class="btn-title">SUBMIT</span></button>
                                                 </div>
                                             </div>
                                         </form>
