@@ -230,11 +230,13 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div className=''>
                                         <div class="grow bozhover">
+
                                             <img src={require('../../assets/images/shape/doctor.png')} alt="" />
+
                                             <h2 className='expertise'>Annual Preventive<br></br> Health Plans</h2>
 
                                             <p>
-                                            Explore our efficient membership services that provide a holistic care plan and guide you to start a healthy journey
+                                                Explore our efficient membership services that provide a holistic care plan and guide you to start a healthy journey
                                             </p>
                                         </div>
                                     </div>
@@ -252,8 +254,14 @@ class Index extends Component {
 
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
-                                        <img src={require('../../assets/images/shape/s2.png')} alt="" />
-                                        <h2 className='expertise'>Comprehensive<br></br> Health Checks</h2>
+                                        <Link to={'/comprehensive-health-checks'}>
+
+                                            <img src={require('../../assets/images/shape/s2.png')} alt="" />
+                                        </Link>
+                                        <Link to={'/comprehensive-health-checks'}>
+
+                                            <h2 className='expertise'>Comprehensive<br></br> Health Checks</h2>
+                                        </Link>
                                         <p>
                                             Health is defined as a state of complete physical, mental, and social well-being.
                                             If even one aspect isn’t satisfied, it means that you are not healthy
@@ -264,8 +272,14 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/k3.jpeg')} alt="" />
-                                            <h2 className='expertise'>Doctor Consults</h2>
+                                            <Link to={'/doctor-consults'}>
+
+                                                <img src={require('../../assets/images/shape/k3.jpeg')} alt="" />
+                                            </Link>
+                                            <Link to={'/doctor-consults'}>
+
+                                                <h2 className='expertise'>Doctor Consults</h2>
+                                            </Link>
                                             <p>
                                                 All of us get sick at some point in life. And whenever we get sick,
                                                 we always go to the doctor
@@ -279,8 +293,14 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/k2.jpeg')} alt="" />
-                                            <h2 className='expertise'>Psychologist Consults</h2>
+                                            <Link to={'/psychological-health'}>
+
+                                                <img src={require('../../assets/images/shape/k2.jpeg')} alt="" />
+                                            </Link>
+                                            <Link to={'/psychological-health'}>
+
+                                                <h2 className='expertise'>Psychologist Consults</h2>
+                                            </Link>
                                             <p>
                                                 Unlike physical health issues, psychological issues are not as visible.
                                                 They are generally ignored
@@ -292,8 +312,12 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/s5.png')} alt="" />
-                                            <h2 className='expertise'>Dental Consults</h2>
+                                            <Link to={'/dental-consults'}>
+                                                <img src={require('../../assets/images/shape/s5.png')} alt="" />
+                                            </Link>
+                                            <Link to={'/dental-consults'}>
+                                                <h2 className='expertise'>Dental Consults</h2>
+                                            </Link>
                                             <p>
                                                 Our teeth are made of enamel which is the hardest substance in the human body.
                                                 Unhealthy food items like sugary carbonated drinks
@@ -307,8 +331,12 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/s7.png')} alt="" />
-                                            <h2 className='expertise'>Dermatology</h2>
+                                            <Link to={'/dermatology'}>
+                                                <img src={require('../../assets/images/shape/s7.png')} alt="" />
+                                            </Link>
+                                            <Link to={'/dermatology'}>
+                                                <h2 className='expertise'>Dermatology</h2>
+                                            </Link>
                                             <p>
                                                 A good physical appearance is a reflection of youth and confidence.
                                                 Unfortunately, as we age, our physical appearance deteriorates.
@@ -320,8 +348,12 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/s8.png')} alt="" />
-                                            <h2 className='expertise'>Ophthalmology</h2>
+                                            <Link to={'/ophthalmologist'}>
+                                                <img src={require('../../assets/images/shape/s8.png')} alt="" />
+                                            </Link>
+                                            <Link to={'/ophthalmologist'}>
+                                                <h2 className='expertise'>Ophthalmology</h2>
+                                            </Link>
                                             <p>
                                                 Our eyes are the windows to the world. They allow us to see every detail
                                                 and color, near and far.
@@ -335,8 +367,12 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/s9.png')} alt="" />
-                                            <h2 className='expertise'>Physiotherapy</h2>
+                                            <Link to={'/physio-therapy'}>
+                                                <img src={require('../../assets/images/shape/s9.png')} alt="" />
+                                            </Link>
+                                            <Link to={'/physio-therapy'}>
+                                                <h2 className='expertise'>Physiotherapy</h2>
+                                            </Link>
                                             <p>
                                                 Due to natural age progression, chronic illnesses, or accidents that cause
                                                 crippling injuries, your ability to move may be compromised.
@@ -348,8 +384,12 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/s10.png')} alt="" />
-                                            <h2 className='expertise'>Elderly Care</h2>
+                                            <Link to={'/elderly-care'}>
+                                                <img src={require('../../assets/images/shape/s10.png')} alt="" />
+                                            </Link>
+                                            <Link to={'/elderly-care'}>
+                                                <h2 className='expertise'>Elderly Care</h2>
+                                            </Link>
                                             <p>
                                                 Although we may stay young at heart, our body starts ageing. As we grow older,
                                                 our physical abilities decline and
@@ -363,8 +403,12 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/s11.png')} alt="" />
-                                            <h2 className='expertise'>Lab Tests</h2>
+                                            <Link to={'/lab-tests'}>
+                                                <img src={require('../../assets/images/shape/s11.png')} alt="" />
+                                            </Link>
+                                            <Link to={'/lab-tests'}>
+                                                <h2 className='expertise'>Lab Tests</h2>
+                                            </Link>
                                             <p>
                                                 The first step to treating any health condition is identification.
                                                 Lab tests are essential in this regard as they help to accurately examine
@@ -377,8 +421,12 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/s12.png')} alt="" />
-                                            <h2 className='expertise'>Diet and Nutrition</h2>
+                                            <Link to={'/diet-and-nutrition'}>
+                                                <img src={require('../../assets/images/shape/s12.png')} alt="" />
+                                            </Link>
+                                            <Link to={'/diet-and-nutrition'}>
+                                                <h2 className='expertise'>Diet and Nutrition</h2>
+                                            </Link>
                                             <p>
                                                 It’s no secret that eating a balanced diet is the key to a longer and healthier life.
                                                 Therefore, it’s important to understand that making wise changes in your diet could improve your health
@@ -392,8 +440,12 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/s13.png')} alt="" />
-                                            <h2 className='expertise'>Yoga Assessment <br></br>and Coaching</h2>
+                                            <Link to={'/yoga-assessment'}>
+                                                <img src={require('../../assets/images/shape/s13.png')} alt="" />
+                                            </Link>
+                                            <Link to={'/yoga-assessment'}>
+                                                <h2 className='expertise'>Yoga Assessment <br></br>and Coaching</h2>
+                                            </Link>
                                             <p>
                                                 Practiced for thousands of years, yoga has several benefits on your overall health.
                                                 Through a series of breathing exercises and poses, yoga
@@ -405,8 +457,12 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/s14.png')} alt="" />
-                                            <h2 className='expertise'>Fitness Assessment<br></br> and Coaching</h2>
+                                            <Link to={'/fitness-assessment'}>
+                                                <img src={require('../../assets/images/shape/s14.png')} alt="" />
+                                            </Link>
+                                            <Link to={'/fitness-assessment'}>
+                                                <h2 className='expertise'>Fitness Assessment<br></br> and Coaching</h2>
+                                            </Link>
                                             <p>
                                                 To stay healthy, regular exercise is a must! Regular exercise and keeping our bodies active reduces blood pressure,
                                                 improves blood circulation, burns excess fat & calories, and reduces
@@ -418,8 +474,12 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/s15.png')} alt="" />
-                                            <h2 className='expertise'>Pharmacy</h2>
+                                            <Link to={'/pharmacy'}>
+                                                <img src={require('../../assets/images/shape/s15.png')} alt="" />
+                                            </Link>
+                                            <Link to={'/pharmacy'}>
+                                                <h2 className='expertise'>Pharmacy</h2>
+                                            </Link>
                                             <span>
                                                 It’s important to always keep an adequate supply of the medicines you need.
                                                 This is especially important if you suffer from any chronic conditions.
@@ -431,8 +491,12 @@ class Index extends Component {
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <div>
-                                            <img src={require('../../assets/images/shape/s16.png')} alt="" />
-                                            <h2 className='expertise'>Nursing At Home</h2>
+                                            <Link to={'/nursing-at-home'}>
+                                                <img src={require('../../assets/images/shape/s16.png')} alt="" />
+                                            </Link>
+                                            <Link to={'/nursing-at-home'}>
+                                                <h2 className='expertise'>Nursing At Home</h2>
+                                            </Link>
                                             <p>
                                                 Sometimes, especially for the elderly and for patients suffering from chronic illnesses,
                                                 it becomes a challenge to travel to a hospital to get timely care.

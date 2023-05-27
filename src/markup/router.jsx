@@ -48,31 +48,31 @@ class Router extends Component {
                         <Route path='/leadership' component={leadership} />
                         <Route path='/services-standalone' component={Services} />
                         <Route path='/team' component={Team} />
-                        <Route path='/leadership' component={leadership} />
+                        {/* <Route path='/leadership' component={leadership} /> */}
                         {/* <Route path='/b2b' component={b2b}/> */}
                         <Route path='/corporate-membership-program' component={corporate_membership_program}/>
-                        <Route path='/BlogDestails' component={BlogDestails}/>
-                        <Route path='/ourservice' component={ourservice}/>
+                        <Route path='/blog-details' component={BlogDestails}/>
+                        <Route path='/our-services' component={ourservice}/>
                         {/* <Route path='/b2cmembership' component={b2cmembership}/> */}
                         <Route path='/personal-membership-program' component={b2cmembership}/>
-                        <Route path='/blog-Designv2' component={blog_Designv2}/>
+                        <Route path='/blog-design' component={blog_Designv2}/>
                         <Route path='/diet-and-nutrition' component={diet_and_nutrition}/>
-                        <Route path='/yoga-Assessment' component={yoga_Assessment}/>
+                        <Route path='/yoga-assessment' component={yoga_Assessment}/>
                         <Route path='/lab-tests' component={lab_tests}/>
-                        <Route path='/physiotherapy' component={physiotherapy}/>
+                        <Route path='/physio-therapy' component={physiotherapy}/>
                         <Route path='/pharmacy' component={pharmacy}/>
-                        <Route path='/psychological-Health' component={psychological_Health}/>
+                        <Route path='/psychological-health' component={psychological_Health}/>
                         <Route path='/ophthalmologist' component={ophthalmologist}/>
                         <Route path='/dermatology' component={dermatology}/>
                         <Route path='/doctor-consults' component={doctor_consults}/>
-                        <Route path='/dental' component={dental}/>
+                        <Route path='/dental-consults' component={dental}/>
                         <Route path='/fitness-assessment' component={fitnessAssessment}/>
                         <Route path='/nursing-at-home' component={nursingAtHome}/>
-                        <Route path='/comprehensive-health' component={comprehensiveHealth}/>
+                        <Route path='/comprehensive-health-checks' component={comprehensiveHealth}/>
                         <Route path='/elderly-care' component={elderlyCare}/>
                         <Route path='/diabetes' component={diabetes}/>
                         <Route path='/manage-weight' component={manageWeight}/>
-                        <Route path='/hypertension' component={hypertension}/>
+                        <Route path='/hyper-tension' component={hypertension}/>
                         <Route path='/about-us' component={aboutUs}/>
 
 
