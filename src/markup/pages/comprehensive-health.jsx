@@ -13,11 +13,10 @@ class comprehensiveHealth extends Component {
                 <section class="team-section padding">
                     {/* About Section Two */}
                     <section class="container-fluid">
-                        <div class="container-fluid">
-                            <div class="row align-items-center">
+                            <div class="row align-items-center auto-container">
 
                                 <div class="col-lg-6">
-                                    <div class="content-box">
+                                    <div class="content-box marginTop40header">
 
                                         <div class="sec-title text-center textleft">
                                             <h2 className='textleft'>
@@ -35,14 +34,13 @@ class comprehensiveHealth extends Component {
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="image-wrapper">
+                                    <div class="image-wrapper imgright">
                                         <div class="image-one">
                                             <img src={require('../../assets/images/shape/health1.png')} alt="" className='imgwidth' />
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </section>
                 </section>
 
@@ -68,14 +66,9 @@ class comprehensiveHealth extends Component {
                                             Health is defined as a state of complete physical, mental, and social well-being. If even one aspect isn’t satisfied, it means that you are not healthy. Most people today have some sort of vitamin deficiency or suffer from mental health issues like anxiety or depression.
                                             Technology in the form of AI and analytics have been implemented into the healthcare industry for seamless monitoring but are not being utilized effectively by healthcare providers. Therefore, there is a need to evaluate your entire health profile at all times with the highest possible accuracy.
                                         </p>
-                                    </div>
-
-
-
-                                    <div class="col-md-12 form-group" style={{ marginLeft: 1 + 'rem' }}>
                                         <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                    </div>
 
+                                    </div>
 
                                 </div>
                             </div>
@@ -101,22 +94,8 @@ class comprehensiveHealth extends Component {
                                             When it comes to your health, we make no compromises.
                                         </p>
 
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
 
-                                    </div>
-
-
-                                    <div class="contact-form">
-
-                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
-                                            <div class="row clearfix">
-
-
-
-                                                <div class="col-md-12 form-group" style={{ marginLeft: 14 + 'rem' }}>
-                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                                </div>
-                                            </div>
-                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -131,24 +110,16 @@ class comprehensiveHealth extends Component {
                         </div>
                     </div>
                 </section>
-
                 <section>
 
-                    <div class="auto-container opth-title">
+                    <div class="auto-container heath-margin">
                         <h2 className='header1'>
                             <span className='headeingcolorblack'> The</span>
                             <span className='headeingcolorblue'>  Bridge Health</span>
                             <span className='headeingcolorblack'> Advantage </span>
                         </h2>
-                    </div>
-                </section>
-
-
-                <section>
-
-                    <div class="auto-container heath-margin">
-                        <div class="col-lg-12 derm-data ">
-                            <div class="column healts">
+                        <div class="row derm-data ">
+                            <div class="col-sm-4 healts">
 
                                 <img src={require('../../assets/images/gallery/health4.png')} alt="" class="avtar " />
 
@@ -156,7 +127,7 @@ class comprehensiveHealth extends Component {
                                 <p className='treat1'>Health Quiz</p>
                             </div>
 
-                            <div class="column healts">
+                            <div class="col-sm-4 healts">
 
                                 <img src={require('../../assets/images/gallery/health4.png')} alt="" class="avtar " />
 
@@ -164,7 +135,7 @@ class comprehensiveHealth extends Component {
                                 <p className='treat1'>Regular <br></br> check-ups <br></br>with experts</p>
                             </div>
 
-                            <div class="column healts">
+                            <div class="col-sm-4 healts">
 
                                 <img src={require('../../assets/images/gallery/health4.png')} alt="" class="avtar " />
 
@@ -174,8 +145,8 @@ class comprehensiveHealth extends Component {
 
 
                         </div>
-                        <div class="col-lg-12 derm-data">
-                            <div class="column healts">
+                        <div class="row derm-data">
+                            <div class="col-sm-4 healts">
 
                                 <img src={require('../../assets/images/gallery/health4.png')} alt="" class="avtar " />
 
@@ -183,7 +154,7 @@ class comprehensiveHealth extends Component {
                                 <p className='treat1'>Thermographic HRA</p>
                             </div>
 
-                            <div class="column healts">
+                            <div class="col-sm-4 healts">
 
                                 <img src={require('../../assets/images/gallery/health4.png')} alt="" class="avtar " />
 
@@ -191,7 +162,7 @@ class comprehensiveHealth extends Component {
                                 <p className='treat1'>Muscle Mass Measurement</p>
                             </div>
 
-                            <div class="column healts">
+                            <div class="col-sm-4 healts">
 
                                 <img src={require('../../assets/images/gallery/health4.png')} alt="" class="avtar " />
 
@@ -307,7 +278,7 @@ class comprehensiveHealth extends Component {
                             <h2 className='header1'>
                                 <span className='headeingcolorblack'> The real  </span>
                                 <span className='headeingcolorblue'> wealth is health! </span>
-                               
+
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">

@@ -18,7 +18,6 @@ class Testimonial2 extends Component {
                 <section class="testimonial-section  testimonialpadding expertiseback1">
                     <div class="auto-container">
                         <div class="sec-title light">
-                            <div class="sub-title">Testimonials</div>
                             <h2>   <div class="sec-title text-center">
                                 <h2>
                                     <span className='headeingcolorblack'> Testimonials</span>
