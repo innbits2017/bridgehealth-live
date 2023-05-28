@@ -94,29 +94,24 @@ class dermatology extends Component {
 
                 <section>
 
-                    <div class="auto-container">
-                        <div class="col-lg-12 derm-data">
-                            <div class="column">
-                                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                               
                                     <img src={require('../../assets/images/gallery/fair1.png')} alt="" class="avtar" />
 
-                                </div>
                                 <p className='treat'>Non-surgical fat removal</p>
                             </div>
 
-                            <div class="column">
-                                <div>
+                            <div class="col-sm-4">
                                     <img src={require('../../assets/images/gallery/fair2.png')} alt="" class="avtar" />
 
-                                </div>
                                 <p className='treat'>Laser Hair Removal</p>
                             </div>
 
-                            <div class="column">
-                                <div>
+                            <div class="col-sm-4">
                                     <img src={require('../../assets/images/gallery/fair3.png')} alt="" class="avtar" />
 
-                                </div>
                                 <p className='treat'>Dandruff control and gray<br></br> hair treatment</p>
                             </div>
                         </div>
@@ -134,7 +129,7 @@ class dermatology extends Component {
                                     <div class="auto-container">
                                         <h2 className='header1'>
                                             <span className='headeingcolorblack'> The</span>
-                                            <span className='headeingcolorblue'>  Bridge Health</span><br></br>
+                                            <span className='headeingcolorblue'>  Bridge Health</span>
                                             <span className='headeingcolorblack'> Advantage </span>
                                         </h2>
 
@@ -200,7 +195,7 @@ class dermatology extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                            <a class="theme-btn btn-style-one" href="#">
                                 <span class="btn-title">BOOK NOW</span>
                             </a>
                         </div>

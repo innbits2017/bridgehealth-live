@@ -53,11 +53,11 @@ class corporate_membership_program extends Component {
                     <div class="auto-container">
                         <div class="row">
 
-                            <div class="col-lg-6" style={{ marginTop: 10 + 'rem' }}>
+                            <div class="col-lg-6 margin10rem">
                                 <div class="sec-title">
                                     <h3 className='sec-heading'>
                                         <span >  We help you figure out <br></br></span >
-                                        <i><span className='headeingcolorblue'>where you are </span></i>on your<br></br>
+                                        <i><span className='headeingcolorblue'>where you are </span></i>on your
                                         <i><span className='headeingcolorblue'> wellbeing journey </span></i>
                                     </h3>
                                     <button class="theme-btn btn-style-one" type="submit" name="submit-form">

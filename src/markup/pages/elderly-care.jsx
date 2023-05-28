@@ -13,11 +13,10 @@ class elderlyCare extends Component {
                 <section class="team-section padding">
                     {/* About Section Two */}
                     <section class="container-fluid">
-                        <div class="container-fluid">
-                            <div class="row align-items-center">
+                            <div class="row align-items-center auto-container">
 
                                 <div class="col-lg-6">
-                                    <div class="content-box">
+                                    <div class="content-box marginTop40header">
 
                                         <div class="sec-title text-center textleft">
                                             <h2 className='textleft'>
@@ -36,14 +35,13 @@ class elderlyCare extends Component {
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="image-wrapper">
+                                    <div class="image-wrapper imgright">
                                         <div class="image-one">
                                             <img src={require('../../assets/images/shape/care1.png')} alt="" className='imgwidth' />
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </section>
                 </section>
 
@@ -73,7 +71,7 @@ class elderlyCare extends Component {
 
 
 
-                                    <div class="col-md-12 form-group" style={{ marginLeft: 1 + 'rem' }}>
+                                    <div class="col-md-12 form-group">
                                         <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
                                     </div>
 
@@ -214,7 +212,7 @@ class elderlyCare extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                            <a class="theme-btn btn-style-one" href="#">
                                 <span class="btn-title">BOOK NOW</span>
                             </a>
                         </div>

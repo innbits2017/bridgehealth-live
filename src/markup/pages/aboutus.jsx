@@ -13,43 +13,25 @@ class aboutUs extends Component {
             <>
                 <Header />
 
-                <section class="internalpage style-two" style={{ backgroundImage: "url(" + aboutfair + ")" }}>
+                <section class="internalpage style-two aboutback">
                     <div class="auto-container ">
-                        <div class="content-box">
+                        <div className='aboutcont '>
+                            <div className='aboutbox '>
+                                <h3>OUR VISION</h3>
+                                <p> Spread Happiness <br></br> Through Good Health</p>
 
-                            <div class="col-lg-12 aboutpage">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
-                                        <img src={require('../../assets/images/shape/apage.png')} alt="" className='width64' />
-                                    </div>
-                                </div>
+                            </div><div className='aboutbox '>
+                                <h3 >OUR MISSION</h3>
+                                <p> Be Your Healthcare <br></br> Companion For Life</p>
                             </div>
-
-                            <div className='aboutcont '>
-                                <div className='aboutbox '>
-                                    <h3>OUR VISION</h3>
-                                    <p> Spread Happiness <br></br> Through Good Health</p>
-
-                                </div>
-
-                                <div className='aboutbox '>
-                                    <h3 >OUR MISSION</h3>
-                                    <p> Be Your Healthcare <br></br> Companion For Life</p>
-
-                                </div>
-
-                            </div>
-
-
                         </div>
 
                     </div>
                 </section>
 
 
-                <section class="contact-section">
 
-                    <div class="auto-container">
+                    <div class="auto-container marginTop50">
                         <div class="row">
 
 
@@ -62,48 +44,29 @@ class aboutUs extends Component {
                                             <span className='headeingcolorblue'>  Bridge Health</span>  is an integrated Medical & Digital Healthcare program designed to deliver Individualized Care Continuum proactively. This program is executed through well-curated and validated clinical protocols.
                                             The services are rendered with clinical outcomes being at the core of the program.
                                         </p>
-
-
-                                    </div>
-
-
-                                    <div class="contact-form">
-
-                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
-                                            <div class="row clearfix">
-
-
-
-                                                <div class="col-md-12 form-group" style={{ marginLeft: 14 + 'rem' }}>
-                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                                </div>
-                                            </div>
-                                        </form>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/apage2.png')} alt="" className='width84' />
+                                        <img src={require('../../assets/images/shape/apage2.png')} alt="" />
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                </section>
 
 
-                <section class="contact-section">
 
                     <div class="auto-container">
                         <div class="row">
 
-                            <div class="col-lg-6" style={{ backgroundImage: "url(" + aback + ")" }}>
+                            <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/apage3.png')} alt="" className='width64' />
+                                        <img src={require('../../assets/images/shape/apage3.png')} alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +88,6 @@ class aboutUs extends Component {
 
                         </div>
                     </div>
-                </section>
 
 
 
@@ -162,8 +124,7 @@ class aboutUs extends Component {
                     </div>
                 </section>
 
-            
-                <section class="contact-section">
+
                     <section class="">
                         <div class="auto-container">
                             <div class="sec-title text-center">
@@ -221,7 +182,6 @@ class aboutUs extends Component {
 
                         </div>
                     </div>
-                </section>
 
 
                 <Footer />

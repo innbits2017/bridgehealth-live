@@ -311,7 +311,7 @@ class comprehensiveHealth extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                            <a class="theme-btn btn-style-one" href="#">
                                 <span class="btn-title">BOOK NOW</span>
                             </a>
                         </div>

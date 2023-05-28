@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Nav, Tab, } from 'react-bootstrap';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
-import Brand1 from '../element/brand1'
-import VideoPopup1 from '../element/video-popup1';
-import ServiceFilter1 from '../element/service-filter1'
-import b2c_page from '../pages/b2c-page'
 
 const aboutbg = require('./../../assets/images/shape/YogaAssessmentandCoaching.png');
 
@@ -172,8 +166,8 @@ class yoga_Assessment extends Component {
                                                 Yoga for Mental Disorders
                                             </li>
                                         </ul>
-                                        <div class="btn-box">
-                                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                                        <div class="btn-box martop90">
+                                            <a class="theme-btn btn-style-one" href="#">
                                                 <span class="btn-title">BOOK NOW</span>
                                             </a>
                                         </div>
@@ -218,7 +212,7 @@ class yoga_Assessment extends Component {
                                         <div class="">
                                             <h2 className='header1'>
                                                 <span className='headeingcolorblack'> The</span>
-                                                <span className='headeingcolorblue'>  Bridge Health</span><br></br>
+                                                <span className='headeingcolorblue'>  Bridge Health</span>
                                                 <span className='headeingcolorblack'> Advantage </span>
                                             </h2>
                                         </div>
@@ -264,7 +258,7 @@ class yoga_Assessment extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                                            <a class="theme-btn btn-style-one" href="#">
                                                 <span class="btn-title">BOOK NOW</span>
                                             </a>
                                         </div>

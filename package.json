@@ -4,6 +4,7 @@
   "homepage": "https://bridgehealth.in/",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -12,9 +13,12 @@
     "react-accessible-accordion": "^3.0.1",
     "react-animated-slider": "^2.0.0",
     "react-bootstrap": "^1.0.0-beta.17",
+    "react-bootstrap-sidebar-menu": "^2.0.3",
     "react-circular-progressbar": "^2.0.3",
     "react-countup": "^4.3.3",
     "react-dom": "^16.13.0",
+    "react-minimal-side-navigation": "^1.9.2",
+    "react-modal": "^3.16.1",
     "react-modal-video": "^1.2.3",
     "react-range": "^1.6.3",
     "react-router-dom": "^5.1.2",
@@ -23,6 +27,7 @@
     "react-slick": "^0.25.2",
     "react-stickynode": "^3.0.2",
     "react-visibility-sensor": "^5.1.1",
+    "reactjs-popup": "^2.0.5",
     "simple-react-google-maps": "^1.1.2",
     "slick-carousel": "^1.8.1"
   },

@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Nav, Tab, } from 'react-bootstrap';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 
@@ -13,11 +11,10 @@ class fitnessAssessment extends Component {
                 <section class="team-section padding">
                     {/* About Section Two */}
                     <section class="container-fluid">
-                        <div class="container-fluid">
-                            <div class="row align-items-center">
+                            <div class="row align-items-center auto-container">
 
                                 <div class="col-lg-6">
-                                    <div class="content-box">
+                                    <div class="content-box marginTop40header">
 
                                         <div class="sec-title text-center textleft">
                                             <h2 className='textleft'>
@@ -33,14 +30,13 @@ class fitnessAssessment extends Component {
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="image-wrapper">
+                                    <div class="image-wrapper imgright">
                                         <div class="image-one">
                                             <img src={require('../../assets/images/shape/fitness.png')} alt="" className='imgwidth' />
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </section>
                 </section>
 
@@ -70,7 +66,7 @@ class fitnessAssessment extends Component {
                                     </div>
 
 
-                                    <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
+                                    <div class="col-md-12" >
                                         <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
                                     </div>
 
@@ -108,9 +104,11 @@ class fitnessAssessment extends Component {
                                     </div>
 
 
-                                    <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                    </div>
+                                    <div class="btn-box martop90">
+                                            <a class="theme-btn btn-style-one" href="#">
+                                                <span class="btn-title">BOOK NOW</span>
+                                            </a>
+                                        </div>
 
 
                                 </div>
@@ -228,7 +226,7 @@ class fitnessAssessment extends Component {
                                     <div class="auto-container">
                                         <h2 className='header1'>
                                             <span className='headeingcolorblack'> The</span>
-                                            <span className='headeingcolorblue'>  Bridge Health</span><br></br>
+                                            <span className='headeingcolorblue'>  Bridge Health</span>
                                             <span className='headeingcolorblack'> Advantage </span>
                                         </h2>
 
@@ -300,7 +298,7 @@ class fitnessAssessment extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                            <a class="theme-btn btn-style-one" href="#">
                                 <span class="btn-title">BOOK NOW</span>
                             </a>
                         </div>

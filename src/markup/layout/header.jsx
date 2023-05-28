@@ -16,41 +16,6 @@ class Header extends Component {
     state = {
         scrolled: false
     };
-
-    // componentDidMount() {
-    //     var btn = document.querySelector('.mobile-nav-toggler');
-    //     var closeBtn = document.querySelector('.close-btn');
-    //     var body = document.getElementsByTagName('body')[0];
-
-    //     function addFunc() {
-    //         return body.classList.add("mobile-menu-visible");
-    //     }
-    //     function closeFunc() {
-    //         return body.classList.remove("mobile-menu-visible");
-    //     }
-
-    //     btn.addEventListener('click', addFunc);
-    //     closeBtn.addEventListener('click', closeFunc);
-
-    //     window.addEventListener("scroll", this.handleScroll);
-    // }
-
-    // componentWillUnmount() {
-    //     window.removeEventListener("scroll", this.handleScroll);
-    // }
-
-    // handleScroll = event => {
-    //     if (window.scrollY > 100) {
-    //         this.setState({ scrolled: true });
-    //     }
-    //     else {
-    //         this.setState({ scrolled: false });
-    //     }
-    // };
-
-
-
-
     render() {
         const { scrolled } = this.state;
         return (
@@ -67,92 +32,138 @@ class Header extends Component {
                                             <img src={require('../../assets/images/logo.png')} alt="" /></Link></div>
                                     </div>
                                 </div>
-
-                                <div class="top-middile">
-                                    {/* <div class="language">
-                                        <span>Language:</span>
-                                        <form action="#" class="language-switcher">
-                                            <Select options={options} />
-                                        </form>
-                                    </div> */}
-                                    <div class="contact-info">
-
-                                        {/* <nav>
-                                            <ul>
-
-                                                <li>
-                                                    <a href="#">
-                                                        <span class="icon"><i class="fas fa-home"></i></span>
-                                                        <span class="title">Home</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span class="icon"><i class="fas fa-user"></i></span>
-                                                        <span class="title">Profile</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span class="icon"><i class="fas fa-envelope"></i></span>
-                                                        <span class="title">Messages</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span class="icon"><i class="fas fa-info"></i></span>
-                                                        <span class="title">Help</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span class="icon"><i class="fas fa-cog"></i></span>
-                                                        <span class="title">Setting</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span class="icon"><i class="fas fa-lock"></i></span>
-                                                        <span class="title">Password</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
-                                                        <span class="title">Sign Out</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </nav> */}
-                                    </div>
-                                </div>
-
-
                             </div>
                         </div>
                     </div>
+                    <div>
+      <nav>
+          <ul class="mcd-menu">
+            <li>
+              <a href="">
+              <img src={require('../../assets/images/Group3.png')} alt="" />
+              </a>
+              <ul>
+                <li><a href="#">Menu</a>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li>
+                      <a href="#">Our Services</a>
+                    </li>
+                    <li><a href="#">Experience Center</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Contact</a></li>
 
-                    <div class="top-right flotright">
-                        <a href={'/#'}><span class="btn-title">
-                        <img src={require('../../assets/images/Group3.png')} alt="" />
-                            </span></a>
-                        <a href={'/#'}><span class="btn-title">
-                        <img src={require('../../assets/images/Group.png')} alt="" />
-                            </span></a>
-                        <a href={'/#'}><span class="btn-title">
-                        <img src={require('../../assets/images/Group1.png')} alt="" />
-                            </span></a>
-                        <a href={'/#'}><span class="btn-title">
-                        <img src={require('../../assets/images/Group2.png')} alt="" />
-                            </span></a>
-                    </div>
 
-                    <div class="top-right flotright1">
-                        <a href={'/contact-us'}><span class="btn-title1">
-                        <img src={require('../../assets/images/Group53.png')} alt="" />
-                            </span>
-                        </a>
-                    </div>   
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Health Plan</a>
+               
+                </li>
+                <li><a href="#">Health Risk Assessment</a></li>
+                <li><a href="#">Search</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="active">
+              <img src={require('../../assets/images/Group.png')} alt="" />
+              
+              </a>
+              {/* <ul>
+                <li><a href="#">Menu</a></li>
+                <li>
+                  <a href="#">Health Plan</a>
+                  <ul>
+                    <li><a href="#">Leyla Sparks</a></li>
+                    <li>
+                      <a href="#">Gleb Ismailov</a>
+                    </li>
+                    <li><a href="#">Viktoria Gibbers</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Health Risk Assessment</a></li>
+                <li><a href="#">Search</a></li>
+              </ul> */}
+            </li>
+            <li>
+              <a href="">
+              <img src={require('../../assets/images/Group1.png')} alt="" />
+              </a>
+              {/* <ul>
+                <li><a href="#">Menu</a></li>
+                <li>
+                  <a href="#">Health Plan</a>
+                  <ul>
+                    <li><a href="#">Leyla Sparks</a></li>
+                    <li>
+                      <a href="#">Gleb Ismailov</a>
+                    </li>
+                    <li><a href="#">Viktoria Gibbers</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Health Risk Assessment</a></li>
+                <li><a href="#">Search</a></li>
+              </ul> */}
+            </li>
+            <li>
+              <a href="">
+              <img src={require('../../assets/images/Group2.png')} alt="" />
+              </a>
+              {/* <ul>
+                <li><a href="#">Menu</a></li>
+                <li>
+                  <a href="#">Health Plan</a>
+                  <ul>
+                    <li><a href="#">Leyla Sparks</a></li>
+                    <li>
+                      <a href="#">Gleb Ismailov</a>
+                    </li>
+                    <li><a href="#">Viktoria Gibbers</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Health Risk Assessment</a></li>
+                <li><a href="#">Search</a></li>
+              </ul> */}
+            </li>
+            {/* <li>
+              <a href="">
+                <i class="fa fa-comments-o"></i>
+                <strong>Blog</strong>
+
+              </a>
+              <ul>
+                <li><a href="#"><i class="fa fa-globe"></i>Mission</a></li>
+                <li>
+                  <a href="#"><i class="fa fa-group"></i>Our Team</a>
+                  <ul>
+                    <li><a href="#"><i class="fa fa-female"></i>Leyla Sparks</a></li>
+                    <li>
+                      <a href="#"><i class="fa fa-male"></i>Gleb Ismailov</a>
+                      <ul>
+                        <li><a href="#"><i class="fa fa-leaf"></i>About</a></li>
+                        <li><a href="#"><i class="fa fa-tasks"></i>Skills</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-female"></i>Viktoria Gibbers</a></li>
+                  </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-trophy"></i>Rewards</a></li>
+                <li><a href="#"><i class="fa fa-certificate"></i>Certificates</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-picture-o"></i>
+                <strong>Portfolio</strong>
+              </a>
+            </li>
+           */}
+          </ul>
+        </nav>
+      </div>
 
 
                 </header>

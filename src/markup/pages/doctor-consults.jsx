@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Nav, Tab, } from 'react-bootstrap';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 
@@ -16,28 +14,26 @@ class doctor_consults extends Component {
                 <section class="team-section padding">
                     {/* About Section Two */}
                     <section class="container-fluid">
-                        <div class="container-fluid">
-                            <div class="row align-items-center">
+                        <div class="row align-items-center auto-container">
 
-                                <div class="col-lg-6">
-                                    <div class="content-box">
+                            <div class="col-lg-6">
+                                <div class="content-box marginTop40header">
 
-                                        <div class="sec-title text-center textleft">
-                                            <h2 className='textleft'>
-                                                <span className='headeingcolorblack'> Your  </span> <span className='headeingcolorblue'>Good Health </span> <br></br><span className='headeingcolorblack'>is Our Plan</span></h2>
-                                            <h3 className='textleft marginTop40'>Choose from a selection of<br></br> Annual Preventive Health plans
-                                            </h3>
-                                        </div>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
-
+                                    <div class="sec-title text-center textleft">
+                                        <h2 className='textleft'>
+                                            <span className='headeingcolorblack'> Your  </span> <span className='headeingcolorblue'>Good Health </span> <br></br><span className='headeingcolorblack'>is Our Plan</span></h2>
+                                        <h3 className='textleft marginTop40'>Choose from a selection of<br></br> Annual Preventive Health plans
+                                        </h3>
                                     </div>
+                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
+
+
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="image-wrapper">
-                                        <div class="image-one">
-                                            <img src={require('../../assets/images/shape/doct1.png')} alt="" className='imgwidth' />
-                                        </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-wrapper imgright">
+                                    <div class="image-one">
+                                        <img src={require('../../assets/images/shape/doct1.png')} alt="" className='imgwidth' />
                                     </div>
                                 </div>
                             </div>
@@ -66,7 +62,7 @@ class doctor_consults extends Component {
                     </div>
 
                     <div class="btn-box text-center btn5">
-                        <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                        <a class="theme-btn btn-style-one" href="#">
                             <span class="btn-title">BOOK NOW</span>
                         </a>
                     </div>
@@ -94,7 +90,7 @@ class doctor_consults extends Component {
                                         </p>
                                     </div>
 
-                                    <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
+                                    <div class="col-md-12 form-group">
                                         <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
                                     </div>
 
@@ -105,42 +101,31 @@ class doctor_consults extends Component {
                     </div>
                 </section>
 
-                <section>
-
-                    <div class="auto-container opth-title">
-                        <h2 className='header1'>
-                            <span className='headeingcolorblack'> The</span>
-                            <span className='headeingcolorblue'>  Bridge Health</span>
-                            <span className='headeingcolorblack'> Advantage </span>
-                        </h2>
-                    </div>
-                </section>
 
                 <section>
 
                     <div class="auto-container">
-                        <div class="col-lg-12 derm-data">
-                            <div class="column">
-                                <div>
-                                    <img src={require('../../assets/images/gallery/fair1.png')} alt="" class="avtar" />
+                    <h2 className='header1'>
+                            <span className='headeingcolorblack'> The</span>
+                            <span className='headeingcolorblue'>  Bridge Health</span>
+                            <span className='headeingcolorblack'> Advantage </span>
+                        </h2>
+                        <div class="row">
+                      
+                            <div class="col-sm-4">
+                                <img src={require('../../assets/images/gallery/fair1.png')} alt="" class="avtar" />
 
-                                </div>
                                 <p className='treat'>Book your consultation<br></br> easily and quickly</p>
                             </div>
+                            <div class="col-sm-4">
+                                <img src={require('../../assets/images/gallery/fair2.png')} alt="" class="avtar" />
 
-                            <div class="column">
-                                <div>
-                                    <img src={require('../../assets/images/gallery/fair2.png')} alt="" class="avtar" />
-
-                                </div>
                                 <p className='treat'>Expert doctors with years <br></br>of experience</p>
                             </div>
 
-                            <div class="column">
-                                <div>
-                                    <img src={require('../../assets/images/gallery/fair3.png')} alt="" class="avtar" />
+                            <div class="col-sm-4">
+                                <img src={require('../../assets/images/gallery/fair3.png')} alt="" class="avtar" />
 
-                                </div>
                                 <p className='treat'>Virtual prescription  generation</p>
                             </div>
                         </div>
@@ -158,7 +143,7 @@ class doctor_consults extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                            <a class="theme-btn btn-style-one" href="#">
                                 <span class="btn-title">BOOK NOW</span>
                             </a>
                         </div>

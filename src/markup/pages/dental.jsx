@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Nav, Tab, } from 'react-bootstrap';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 
@@ -15,11 +13,10 @@ class dental extends Component {
                 <section class="team-section padding">
                     {/* About Section Two */}
                     <section class="container-fluid">
-                        <div class="container-fluid">
-                            <div class="row align-items-center">
+                            <div class="row align-items-center auto-container">
 
                                 <div class="col-lg-6">
-                                    <div class="content-box">
+                                    <div class="content-box marginTop40header">
 
                                         <div class="sec-title text-center textleft">
                                             <h2 className='textleft'>
@@ -35,14 +32,13 @@ class dental extends Component {
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="image-wrapper">
+                                    <div class="image-wrapper imgright">
                                         <div class="image-one">
                                             <img src={require('../../assets/images/shape/dental1.png')} alt="" className='imgwidth' />
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </section>
                 </section>
 
@@ -67,7 +63,7 @@ class dental extends Component {
                                         </p>
                                     </div>
 
-                                    <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
+                                    <div class="col-md-12 form-group" >
                                         <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
                                     </div>
                                 </div>
@@ -103,16 +99,14 @@ class dental extends Component {
 
                                     <div class="contact-form">
 
-                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
                                             <div class="row clearfix">
 
 
 
-                                                <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
+                                                <div class="col-md-12 form-group" >
                                                     <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
                                                 </div>
                                             </div>
-                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -130,29 +124,23 @@ class dental extends Component {
 
                 <section>
 
-                    <div class="auto-container">
-                        <div class="col-lg-12 derm-data">
-                            <div class="column">
-                                <div>
+                    <div class="container">
+                        <div class="row derm-data">
+                            <div class="col-sm-4">
                                     <img src={require('../../assets/images/gallery/dent2.png')} alt="" class="avtar" />
 
-                                </div>
                                 <p className='treat'>Braces And Teeth Alignment</p>
                             </div>
 
-                            <div class="column">
-                                <div>
+                            <div class="col-sm-4">
                                     <img src={require('../../assets/images/gallery/dent3.png')} alt="" class="avtar" />
 
-                                </div>
                                 <p className='treat'>Root Canal Procedure</p>
                             </div>
 
-                            <div class="column">
-                                <div>
+                            <div class="col-sm-4">
                                     <img src={require('../../assets/images/gallery/dent4.png')} alt="" class="avtar" />
 
-                                </div>
                                 <p className='treat'>Bridge And Crown Fixing</p>
                             </div>
                         </div>
@@ -163,14 +151,7 @@ class dental extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                        <div class="auto-container opth-title">
-                            <h2 className='header1'>
-                                <span className='headeingcolorblack'> The</span>
-                                <span className='headeingcolorblue'>  Bridge Health</span>
-                                <span className='headeingcolorblack'> Advantage </span>
-                            </h2>
-                        </div>
-                        <br></br>
+                     
                         <div class="row">
 
                             <div class="col-lg-6">
@@ -183,6 +164,11 @@ class dental extends Component {
 
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
+                                <h2 className='header1'>
+                                <span className='headeingcolorblack'> The</span>
+                                <span className='headeingcolorblue'>  Bridge Health</span>
+                                <span className='headeingcolorblack'> Advantage </span>
+                            </h2>
                                     <ul className='listicon'>
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
@@ -238,7 +224,7 @@ class dental extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                            <a class="theme-btn btn-style-one" href="#">
                                 <span class="btn-title">BOOK NOW</span>
                             </a>
                         </div>

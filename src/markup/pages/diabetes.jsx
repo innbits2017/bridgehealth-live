@@ -8,53 +8,42 @@ class diabetes extends Component {
     render() {
         return (
             <>
-
                 <Header />
-
                 <section class="team-section padding">
                     {/* About Section Two */}
                     <section class="container-fluid">
-                        <div class="container-fluid">
-                            <div class="row align-items-center">
+                        <div class="row align-items-center auto-container">
+                            <div class="col-lg-6">
+                                <div class="content-box marginTop40header">
 
-                                <div class="col-lg-6">
-                                    <div class="content-box">
-
-                                        <div class="sec-title text-center textleft">
-                                            <h2 className='textleft'>
-                                                <span className='headeingcolorblack'>
-                                                    Diabetes?
-                                                </span>
-                                                <br></br>
-                                                <span className='headeingcolorblue'> More like Diabeates </span>
-                                            </h2>
-                                            <h3 className='textleft marginTop40'>
-                                                Manage, control, and beat  <br></br> diabetes with our experts
-                                            </h3>
-                                        </div>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
-
+                                    <div class="sec-title text-center textleft">
+                                        <h2 className='textleft'>
+                                            <span className='headeingcolorblack'>
+                                                Diabetes?
+                                            </span>
+                                            <br></br>
+                                            <span className='headeingcolorblue'> More like Diabeates </span>
+                                        </h2>
+                                        <h3 className='textleft marginTop40'>
+                                            Manage, control, and beat  <br></br> diabetes with our experts
+                                        </h3>
                                     </div>
+                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="image-wrapper">
-                                        <div class="image-one">
-                                            <img src={require('../../assets/images/shape/dia1.png')} alt="" className='imgwidth' />
-                                        </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-wrapper imgright">
+                                    <div class="image-one">
+                                        <img src={require('../../assets/images/shape/dia1.png')} alt="" className='imgwidth' />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
                 </section>
-
-
                 <section class="contact-section heath-margin">
-
                     <div class="auto-container">
                         <div class="row">
-
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
@@ -64,7 +53,6 @@ class diabetes extends Component {
                             </div>
                             <div class="col-lg-5">
                                 <div class="contact-form-area">
-
                                     <div class="sec-title phybox">
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
@@ -72,53 +60,29 @@ class diabetes extends Component {
                                             including nerve damage, blindness, kidney disease, and heart disease. Therefore, proper diabetes care is essential for maintaining good health and preventing these complications.
                                         </p>
                                     </div>
-
-
-
-                                    <div class="col-md-12 form-group" style={{ marginLeft: 1 + 'rem' }}>
+                                    <div class="col-md-12 form-group">
                                         <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
                                     </div>
-
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </section>
 
                 <section class="contact-section">
-
                     <div class="auto-container">
                         <div class="row">
-
-
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
-
                                     <div class="sec-title phybox1">
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
                                             Effective diabetes management involves a lot of steps such as monitoring blood sugar levels, taking medication as prescribed, following a healthy diet, engaging in regular exercise, and getting regular check-ups with a healthcare professional.
                                             At Bridge Health, we take an active role in helping you manage diabetes to help you significantly improve your quality of life and reduce your risk of long-term complications.
                                         </p>
-
-
-                                    </div>
-
-
-                                    <div class="contact-form">
-
-                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
-                                            <div class="row clearfix">
-
-
-
-                                                <div class="col-md-12 form-group" style={{ marginLeft: 14 + 'rem' }}>
-                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                                </div>
-                                            </div>
-                                        </form>
+                                        <div class="col-md-12 form-group">
+                                            <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -135,18 +99,15 @@ class diabetes extends Component {
                 </section>
 
                 <section class="contact-section">
-
-                    <div class="auto-container opth-title">
+                    <div class="auto-container">
                         <h2 className='header1'>
                             <span className='headeingcolorblack'> The</span>
                             <span className='headeingcolorblue'>  Bridge Health</span>
                             <span className='headeingcolorblack'> Advantage </span>
                         </h2>
                     </div>
-
                     <div class="auto-container heath-margin">
                         <div class="row">
-
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
                                     <ul className='listicon'>
@@ -236,7 +197,7 @@ class diabetes extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                            <a class="theme-btn btn-style-one" href="#">
                                 <span class="btn-title">BOOK NOW</span>
                             </a>
                         </div>

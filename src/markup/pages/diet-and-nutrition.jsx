@@ -181,7 +181,7 @@ class diet_and_nutrition extends Component {
                                             </li>
                                         </ul>
                                         <div class="btn-box">
-                                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                                            <a class="theme-btn btn-style-one" href="#">
                                                 <span class="btn-title">BOOK NOW</span>
                                             </a>
                                         </div>
@@ -272,7 +272,7 @@ class diet_and_nutrition extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                                            <a class="theme-btn btn-style-one" href="#">
                                                 <span class="btn-title">BOOK NOW</span>
                                             </a>
                                         </div>
@@ -280,7 +280,7 @@ class diet_and_nutrition extends Component {
                 </section>
                 {/* <section>
                     <div class="btn-box">
-                        <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                        <a class="theme-btn btn-style-one" href="#">
                             <span class="btn-title">BOOK NOW</span>
                         </a>
                     </div>

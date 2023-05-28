@@ -61,7 +61,7 @@ class ophthalmologist extends Component {
                                     </div>
 
 
-                                    <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
+                                    <div class="col-md-12 form-group">
                                         <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
                                     </div>
 
@@ -108,7 +108,7 @@ class ophthalmologist extends Component {
 
 
 
-                                                <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
+                                                <div class="col-md-12 form-group">
                                                     <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
                                                 </div>
                                             </div>
@@ -131,14 +131,7 @@ class ophthalmologist extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                        <div class="auto-container opth-title">
-                            <h2 className='header1'>
-                                <span className='headeingcolorblack'> The</span>
-                                <span className='headeingcolorblue'>  Bridge Health</span>
-                                <span className='headeingcolorblack'> Advantage </span>
-                            </h2>
-                        </div>
-                        <br></br>
+                       
                         <div class="row">
 
                             <div class="col-lg-6">
@@ -151,6 +144,11 @@ class ophthalmologist extends Component {
 
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
+                                <h2 className='header1'>
+                                <span className='headeingcolorblack'> The</span>
+                                <span className='headeingcolorblue'>  Bridge Health</span>
+                                <span className='headeingcolorblack'> Advantage </span>
+                            </h2>
                                     <ul className='listicon'>
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
@@ -209,7 +207,7 @@ class ophthalmologist extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                            <a class="theme-btn btn-style-one" href="#">
                                 <span class="btn-title">BOOK NOW</span>
                             </a>
                         </div>

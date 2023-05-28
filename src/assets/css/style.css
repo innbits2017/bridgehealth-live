@@ -1,37 +1,14 @@
-/* Finandox Business HTML Template  */
-
-/*** 
-
-====================================================================
-			Fonts
-====================================================================
-
- ***/
-
-/*
-font-family: 'Roboto', sans-serif;
-*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 @import url('fontawesome-all.css');
 @import url('animate.css');
 @import url('custom-animate.css');
 @import url('flaticon.css');
-/* @import url('owl.css'); */
-/* @import url('jquery-ui.css'); */
 @import url('jquery.fancybox.min.css');
-/* @import url('scrollbar.css'); */
 @import url('hover.css');
 @import url('jquery.touchspin.css');
 @import url('botstrap-select.min.css');
 @import url('shop.css');
-/*** 
-
-====================================================================
-	Reset
-====================================================================
-
- ***/
 
 * {
 	margin: 0px;
@@ -41,15 +18,6 @@ font-family: 'Roboto', sans-serif;
 	font-size: 100%;
 	line-height: inherit;
 }
-
-/*** 
-
-====================================================================
-	Global Settings
-====================================================================
-
- ***/
-
 body {
 	font-size: 16px;
 	color: #282828;
@@ -101,7 +69,6 @@ p,
 	line-height: 1.7em;
 	font-weight: 500;
 	margin: 0 0 15px;
-	/* margin-left: 20px; */
 }
 
 .text1 {
@@ -110,7 +77,6 @@ p,
 	font-weight: 500;
 	margin: 0 0 15px;
 	text-align: right;
-	/* margin-left: 20px; */
 }
 
 .leader-btn {
@@ -219,7 +185,6 @@ figure {
 .theme-btn2 {
 	margin-left: 40%;
 	margin-top: 2rem;
-	/* margin-bottom: 2rem; */
 	background-color: #1963C6;
 	color: #fff;
 	width: 15%;
@@ -240,7 +205,6 @@ figure {
 	background-color: #f4f4f4 !important;
 }
 
-/*Btn Style One*/
 .fontwidth {
 	font-weight: 500;
 
@@ -850,15 +814,26 @@ img {
 	color: #ffffff;
 	padding: 0 !important;
 }
+/* .::before
+{
+	background-color: red !important;
+	position:absolute;
+	content: '';
+} */
 
-
-
-
-
-
-
-
-
+.header-top:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 24%;
+    content: "";
+    position: absolute;
+    inset: -5px;
+    /* transform: translate(10px,8px); */
+    z-index: -1;
+    background: conic-gradient(from 90deg at 82% 15%, #dbdbdb00 , #ffffffa3 , #ffffffa3 , #ffffffa3 , #ffffffa3 , #ffffffa3 , #ffffffa3 , #ffffffa3 , #ffffffa3 , #ffffffa3 , #ffffffa3 , #ffffffa3 , #ffffffa3 , #ffffffa3 , #ffffffa3);
+    filter: blur(53px);
+    background: linear-gradient(to top, #dbdbdb00 0%, right #ffffffa3 100%) !important;}
 
 .header-top .btn-light:not(:disabled):not(.disabled).active,
 .header-top .btn-light:not(:disabled):not(.disabled):active,
@@ -1083,10 +1058,9 @@ img {
 }
 
 .logo-box {
-	background: linear-gradient(to top, #dbdbdb00 0%, #ffffffa3 100%);
+	/* background: linear-gradient(to top, #dbdbdb00 0%, #ffffffa3 100%);
 	width: 200px;
-	height: 150px;
-	padding: 20px;
+	height: 150px; */
 	/* margin-left: 21%; */
 }
 
@@ -3038,7 +3012,6 @@ img {
 	font-size: 25px;
 	color: #25283a;
 	margin: 0;
-	margin-left: 38px;
 }
 
 .sec-title .text1 {
@@ -3630,11 +3603,11 @@ img.lazy-image.loaded {
 }
 
 .textpa {
-	text-align: center;
-	margin-left: -110px !important;
-	margin-top: 12px;
-	font-weight: 600;
-	color: #777777;
+    text-align: center;
+    margin-left: -179px !important;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #777777;
 }
 
 .spenheading {
@@ -4238,12 +4211,6 @@ img.lazy-image.loaded {
 	font-size: 28px;
 }
 
-/* Video Section */
-.fontimp {
-	margin-top: 200px;
-	font-size: 22px;
-}
-
 .video-background-holder {
 	position: relative;
 	background-color: black;
@@ -4787,7 +4754,7 @@ img.lazy-image.loaded {
 	position: relative;
 	display: block;
 	height: 40px;
-	background: rgba(255, 255, 255, 0.84);
+	background: #ffffff;
 	border: 1px solid #A7A7A7 !important;
 	border-radius: 6px;
 	flex: none;
@@ -8248,7 +8215,40 @@ img.lazy-image.loaded {
 	width: max-content;
 	margin-bottom: 20px;
 }
+.post-meta {
+	position: relative;
+	display: flex;
+}
 
+.post-meta li a {
+	color: #fff;
+	margin-right: 10px;
+}
+
+.post-meta li a i {
+	margin-right: 10px;
+}
+
+.post-meta li a img {
+	margin-right: 10px;
+}
+.page-bannerblog {
+	padding-top: 38%;
+	padding-bottom: 2%;
+}
+.page-banner12 {
+	position: relative;
+	color: #ffffff;
+	text-align: center;
+	padding: 0px !important;
+	background-color: #25283a;
+	z-index: 2;
+}
+.page-bannerblog h1 {
+	font-size: 40px !important;
+	text-align: left;
+	color: #fff !important;
+}
 .news-block-three .post-meta {
 	position: relative;
 	display: -webkit-box;
@@ -10142,10 +10142,6 @@ img.lazy-image.loaded {
 	animation: fadein 0.35s ease-in;
 }
 
-.container-fluid {
-	padding-right: 0px !important;
-}
-
 .clmbackground {
 	width: 410.5px;
 	background-size: contain;
@@ -11018,7 +11014,7 @@ a:not([href]):not([tabindex]) {
 .grow {
 	padding: 10px 10px 10px 10px;
 	border-radius: 10px;
-	height: 314px;
+	height: 360px;
 	width: 100%;
 	margin: 5px 1% 5px 1%;
 	float: left;
@@ -11030,9 +11026,9 @@ a:not([href]):not([tabindex]) {
 	transition: 1.5s;
 }
 
-/* .grow img:hover {
-	border: 1px solid red;
-  } */
+.grow img {
+width: 100% !important;  }
+
 .grow:hover {
 	height: 405px;
 	padding: 4px;
@@ -11070,6 +11066,9 @@ a:not([href]):not([tabindex]) {
 
 .margintop175 {
 	margin-top: -175px;
+}
+.margin200 {
+	margin-top: -196px;
 }
 
 .margin100 {
@@ -11326,6 +11325,13 @@ hr {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	.cont-box {
+		margin-left: 0% !important;
+		 margin-right: 0% !important; 
+	}
+	.imgright {
+		margin-top: 20px;
+	}
 	.testimonial-section .slick-prev {
 		position: absolute;
 		right: 38% !important;
@@ -11333,7 +11339,14 @@ hr {
 		left: auto;
 		height: 60px;
 	}
-
+	.phybox1 {
+		box-shadow: 1px 1px 5px 2px #817f7f96;
+		margin-left: 0%;
+		background: #fff;
+		padding: 38px;
+		margin-top: 28px;
+		border-radius: 15px;
+	}
 	.testimonial-section .slick-next {
 		position: absolute;
 		right: 0;
@@ -11361,11 +11374,6 @@ hr {
 		letter-spacing: 0;
 		text-align: center;
 	}
-
-	.floatleft .btn-box {
-		float: none;
-	}
-
 	.video-background-content {
 		position: relative;
 		z-index: 2;
@@ -11525,6 +11533,34 @@ hr {
 		margin-left: 0px !important;
 		font-weight: 500;
 	}
+	.aboutback {
+		background-size: contain !important;
+		background-image: url(/static/media/aboutback.5cc1ad30.png);
+		background-repeat: no-repeat;
+		padding: 60% 0 0px;	}
+	.aboutcont {
+		display: flex !important;
+		margin-left: 0px !important;
+		padding: 5px !important;	}
+
+		.aboutbox {
+			background-color: #FFFFFF;
+			border-radius: 25px;
+			width: 100% !important;
+			display: inline-block;
+			margin-right: 0px !important;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			padding: 10px;
+			margin: 2px;
+		}
+		.aboutcont h3 {
+			font-size: 20px;
+			color: #1963C6 !important;
+		}
+		.aboutcont p {
+			font-size: 13.885px !important;
+		}
 
 	.main-footer {
 		position: relative;
@@ -11538,6 +11574,7 @@ hr {
 		border-top-right-radius: 80px 80px;
 		border-top-left-radius: 80px 80px;
 		background: none;
+		margin-top: 50px !important;
 	}
 
 	.slick-list {
@@ -11556,7 +11593,10 @@ hr {
 	.margintop175 {
 		margin-top: 0px;
 	}
-
+	.margin200 {
+		margin-top: 0px;
+	}
+	
 	.margin100 {
 		margin-top: 0px;
 
@@ -11659,8 +11699,11 @@ hr {
 
 	.bozhover {
 		margin-bottom: 30px;
+		height: 450px;
 	}
-
+	.marginleft20 {
+		margin-left: 0% !important;
+	}
 	.phybox {
 		box-shadow: 1px 1px 5px 2px #817f7f96;
 		margin-left: 0%;
@@ -11675,10 +11718,20 @@ hr {
 	}
 
 	.textleft {
-		font-size: 23px;
-		text-align: left;
+		/* font-size: 23px; */
+		text-align: center;
 	}
-
+.header1
+{
+	text-align: center;
+}
+.btn-style-one {
+    margin-left: 6rem !important;
+}
+.martop90
+{
+	margin-bottom: 90px !important;
+}
 	.internalpage {
 		position: relative;
 		padding: 180px 0 180px;
@@ -11746,12 +11799,6 @@ hr {
 	.lead3 {
 		margin-top: 0px;
 	}
-
-
-	.about-section-two .image-one img {
-		width: 50%;
-	}
-
 }
 
 .btn5 {
@@ -11847,7 +11894,7 @@ hr {
 
 .imgb2p {
 	width: 80%;
-	margin-left: 5rem;
+	margin-left: 2rem;
 }
 
 .marginbutton {
@@ -11866,6 +11913,19 @@ hr {
 	.desktoptest {
 		display: none;
 	}
+	.margin10rem
+	{
+		margin-top: 2rem !important;
+	}
+	.sec-heading {
+		font-size: 31px;
+		text-align: center;
+	}
+	.marginTop40header
+	{
+		margin-top: 40%;
+	}
+	
 }
 
 @media only screen and (min-width: 1280px) {
@@ -11910,7 +11970,6 @@ hr {
 }
 
 .fontimp {
-	margin-top: 200px;
 	font-size: 22px;
 }
 
@@ -12040,4 +12099,54 @@ hr {
 	border: none;
 	cursor: pointer;
 	border-radius: 30px;
+}
+
+.imgright
+{
+	
+    margin-right: -16%;
+
+}
+.predict {
+	margin-bottom: -73px !important;
+	z-index: 9;
+	font-size: 52px !important;
+}
+.mar25
+{
+	margin-left: 35px !important;
+}
+
+.aboutback
+{
+	background-size: cover;
+	background-image: url(../../assets/images/shape/aboutback.png);
+	background-repeat: no-repeat;
+	padding: 60% 0 0px !important;
+}
+
+.col-lg-6 {
+    align-self: center !important;
+}
+.col-lg-5
+{
+	align-self: center !important;
+
+}
+.row
+{
+	align-self: center !important;
+
+}
+.popup-content {
+	margin: auto;
+    background: #1963C6;
+    width: 25% !important;
+    padding: 20px;
+    border: 1px solid #1963C6!important;
+}
+.btncontact
+{
+	background: #fff !important;
+    color: #000 !important;
 }

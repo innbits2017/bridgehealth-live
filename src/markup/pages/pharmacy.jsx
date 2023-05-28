@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Nav, Tab, } from 'react-bootstrap';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
-import Brand1 from '../element/brand1'
-import VideoPopup1 from '../element/video-popup1';
-import ServiceFilter1 from '../element/service-filter1'
-import b2c_page from '../pages/b2c-page'
-
 const aboutbg = require('./../../assets/images/shape/Pharmacy.png');
 
 class pharmacy extends Component {
@@ -76,7 +69,7 @@ class pharmacy extends Component {
 
 
 
-                                                <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
+                                                <div class="col-md-12 form-group">
                                                     <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
                                                 </div>
                                             </div>
@@ -106,7 +99,7 @@ class pharmacy extends Component {
 
 
 
-                                                <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
+                                                <div class="col-md-12 form-group">
                                                     <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
                                                 </div>
                                             </div>
@@ -200,7 +193,7 @@ class pharmacy extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                                            <a class="theme-btn btn-style-one" href="#">
                                                 <span class="btn-title">BOOK NOW</span>
                                             </a>
                                         </div>

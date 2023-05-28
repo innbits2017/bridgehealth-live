@@ -47,7 +47,7 @@ class Testimonial2 extends Component {
                                                     <div class="col-lg-6">
                                                         <div class="content-box">
                                                             <div class="sec-title testtitle">
-                                                                <div class="text">
+                                                                <div class="text mar25">
                                                                     <span>
                                                                         <img src={require('../../assets/images/shape/testimonial1.png')} alt="" className='testthumb' />
                                                                     </span>
@@ -80,7 +80,7 @@ class Testimonial2 extends Component {
                                                     <div class="col-lg-6">
                                                         <div class="content-box">
                                                             <div class="sec-title testtitle">
-                                                                <div class="text">
+                                                            <div class="text mar25">
                                                                     <span><img src={require('../../assets/images/shape/testimonial1.png')} alt="" className='testthumb' /></span>
                                                                     <span className='headeingcolorblack'>Shanaya Gupta</span>
                                                                     <p className='textpa'>SUBSCRIBED TO THE PLATINUM PLAN</p>

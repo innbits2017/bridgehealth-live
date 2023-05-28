@@ -14,11 +14,10 @@ class manageWeight extends Component {
                 <section class="team-section padding">
                     {/* About Section Two */}
                     <section class="container-fluid">
-                        <div class="container-fluid">
-                            <div class="row align-items-center">
+                            <div class="row align-items-center auto-container">
 
                                 <div class="col-lg-6">
-                                    <div class="content-box">
+                                    <div class="content-box marginTop40header">
 
                                         <div class="sec-title text-center textleft">
                                             <h2 className='textleft'>
@@ -38,14 +37,13 @@ class manageWeight extends Component {
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="image-wrapper">
+                                    <div class="image-wrapper imgright">
                                         <div class="image-one">
                                             <img src={require('../../assets/images/shape/weight1.png')} alt="" className='imgwidth' />
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </section>
                 </section>
 
@@ -70,12 +68,8 @@ class manageWeight extends Component {
                                             Weight management is vital for maintaining good health. Failing to manage one's weight can lead to a range of health problems and complications, including an
                                             increased risk of heart disease, stroke, and diabetes. Obesity is linked to a higher risk of high blood pressure, high cholesterol, and sleep apnea.
                                         </p>
-                                    </div>
-
-
-
-                                    <div class="col-md-12 form-group" style={{ marginLeft: 4 + 'rem' }}>
                                         <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+
                                     </div>
 
 
@@ -102,23 +96,9 @@ class manageWeight extends Component {
                                             Conversely, being underweight can lead to malnutrition, a weakened immune system, and osteoporosis. In addition to physical health issues, improper weight management can also have an impact on mental health and wellbeing, including depression, anxiety, and low self-esteem.
                                             It is important to take weight management seriously and seek support from healthcare professionals to help prevent these potential health problems.
                                         </p>
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
 
 
-                                    </div>
-
-
-                                    <div class="contact-form">
-
-                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
-                                            <div class="row clearfix">
-
-
-
-                                                <div class="col-md-12 form-group" style={{ marginLeft: 14 + 'rem' }}>
-                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                                </div>
-                                            </div>
-                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -155,13 +135,12 @@ class manageWeight extends Component {
                                             Diabetes is a chronic condition that affects millions of people worldwide. If left untreated or improperly managed, it can lead to a range of complications,
                                             including nerve damage, blindness, kidney disease, and heart disease. Therefore, proper diabetes care is essential for maintaining good health and preventing these complications.
                                         </p>
-                                    </div>
-
-
-
-                                    <div class="col-md-12 form-group" style={{ marginLeft: 1 + 'rem' }}>
                                         <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+
                                     </div>
+
+
+
 
 
                                 </div>
@@ -174,17 +153,14 @@ class manageWeight extends Component {
 
                 <section class="contact-section">
 
-                    <div class="auto-container opth-title">
-                        <h2 className='header1'>
+                    <div class="auto-container heath-margin">
+                    <h2 className='header1'>
                             <span className='headeingcolorblack'> The</span>
                             <span className='headeingcolorblue'>  Bridge Health</span>
                             <span className='headeingcolorblack'> Advantage </span>
                         </h2>
-                    </div>
-
-                    <div class="auto-container heath-margin">
                         <div class="row">
-
+                    
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
                                     <ul className='listicon'>
@@ -264,7 +240,7 @@ class manageWeight extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                            <a class="theme-btn btn-style-one" href="#">
                                 <span class="btn-title">BOOK NOW</span>
                             </a>
                         </div>

@@ -19,8 +19,7 @@ class Services extends Component {
 
         <section class="team-section padding">
           {/* About Section Two */}
-          <section class="container-fluid">
-            <div class="container-fluid">
+          <section class="auto-container">
               <div class="row align-items-center">
 
                 <div class="col-lg-6">
@@ -37,14 +36,13 @@ class Services extends Component {
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <div class="image-wrapper">
+                  <div class="image-wrapper imgright">
                     <div class="image-one">
                       <img src={require('../../assets/images/shape/service.png')} alt="" className='imgwidth' />
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
           </section>
         </section>
         {/* <!-- Video Section --> */}
@@ -1274,7 +1272,7 @@ class Services extends Component {
                       <li>Pre and Post score comparisons</li>
 
                     </ul>
-                    <div class="btn-box"><a class="theme-btn btn-style-one" href="/demo/fianandox/"><span class="btn-title">KNOW MORE</span></a></div>
+                    <div class="btn-box"><a class="theme-btn btn-style-one" href="#"><span class="btn-title">KNOW MORE</span></a></div>
                   </div>
                 </div>
                 <div class="col-lg-6">

@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component,useRef  } from 'react';
 import { Link } from 'react-router-dom';
+import ReactDOM from "react-dom";
 import Header from '../layout/header';
 import Footer from '../layout/footer';
 import Testimonial1 from '../element/testimonial1';
-import HomeSlider1 from './../element/home-slider1';
-import { Button } from 'react-bootstrap';
 import Testimonial2 from '../element/testimonial2';
-import { event, valHooks } from 'jquery';
-const teambg1 = require('./../../assets/images/background/image-3.jpg');
-const newsbg1 = require('./../../assets/images/background/image-4.jpg');
-const wellcomebg1 = require('./../../assets/images/resource/image-1.jpg');
+import Popup from 'reactjs-popup';
+import emailjs from "@emailjs/browser";
+import 'reactjs-popup/dist/index.css';
+
 
 // var getSidebar = document.querySelector('nav');
 // var getToggle = document.getElementsByClassName('toggle');
@@ -18,6 +17,27 @@ const wellcomebg1 = require('./../../assets/images/resource/image-1.jpg');
 //         getSidebar.classList.toggle('active');
 //     });
 // }
+// const form = useRef();
+// const sendEmail = (e) => {
+//     e.preventDefault();
+
+//     emailjs
+//       .sendForm(
+//         "service_cycmuhk",
+//         "template_13ae89n",
+//         form.current,
+//         "JSZmw0kbX06_nyyqv"
+//       )
+//       .then(
+//         (result) => {
+//           console.log(result.text);
+//           console.log("message sent");
+//         },
+//         (error) => {
+//           console.log(error.text);
+//         }
+//       );
+//     }
 
 class Index extends Component {
 
@@ -34,12 +54,12 @@ class Index extends Component {
     }
 
     handleChange = (event) => {
-
+          
         const { name, value } = event.target;
         this.setState({ ...this.state, [name]: value });
         console.log(event)
     };
-
+          
     handleSubmit = (event) => {
         event.preventDefault();
         
@@ -52,8 +72,6 @@ class Index extends Component {
     render() {
         return (
             <>
-
-
 
                 <Header />
                 {/* <!-- About --> */}
@@ -68,11 +86,70 @@ class Index extends Component {
                                 <h5 class="display-4"><span class="display-3">Lets help you </span>#BridgeTheGap</h5>
                                 <p class="lead mb-0">Personalised and holistic preventive health plans for <br></br>you and your loved ones
                                 </p>
-                                <div class="btn-box"><a class="theme-btn btn-style-one" href="/demo/fianandox/"><span class="btn-title">GET STARTED</span></a></div>
+                                <Popup trigger={<div class="btn-box"><a class="theme-btn btn-style-one" href="#"><span class="btn-title">GET STARTED</span></a></div>
+} position="right">
+          <div class="contact-form-area">
+
+{/* <!-- Contact Form--> */}
+<div class="contact-form">
+<form>
+{/* <form ref={form} onSubmit={sendEmail}> */}
+
+        <div class="row clearfix">
+            <div class="col-md-12 form-group">
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Name*"
+                    required="" />
+            </div>
+
+            <div class="col-md-12 form-group">
+                <input type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email*"
+                    required="" />
+            </div>
+            <div class="col-md-12 form-group">
+                <input type="phone"
+                    name="phone"
+                    id="phone"
+                    placeholder="Phone*"
+                    required="" />
+            </div>
+
+            <div class="col-md-12 form-group">
+                <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                ></textarea>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input"
+                    type="checkbox" id="checkbox1" name="option1" value="good" />
+                <label class="form-check-label heading">
+                I Authentication text 
+goes here........
+                </label>
+            </div>
+            <div class="col-md-12 form-group">
+                <button  class="theme-btn btn-style-one btncontact" type="submit" name="submit-form"><span class="btn-title">SUBMIT</span></button>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+                            
+                              </Popup>
+
                             </div>
                         </div>
                     </div>
                 </div>
+                
                 <section class="team-section">
                     <div class="auto-container">
                         <div class="sec-title text-center">
@@ -85,7 +162,7 @@ class Index extends Component {
                     </div>
                     {/* About Section Two */}
                     <section class="container-fluid">
-                        <div class="container-fluid">
+                        <div class="auto-container">
                             <div class="row align-items-center">
 
                                 <div class="col-lg-5">
@@ -111,7 +188,7 @@ class Index extends Component {
                                     </div>
                                 </div>
                                 <div class="col-lg-7">
-                                    <div class="image-wrapper">
+                                    <div class="image-wrapper imgright">
                                         <div class="image-one imgpad">
                                             <img src={require('../../assets/images/shape/Sequence-01.gif')} alt="" />
                                         </div>
@@ -128,8 +205,7 @@ class Index extends Component {
                 </section>
 
                 {/* <!-- About --> */}
-
-
+        
 
 
                 <section class="team-section">
@@ -231,7 +307,7 @@ class Index extends Component {
                                             </li>
                                         </ul>
                                         <div class="btn-box marginleft20">
-                                            <a class="theme-btn btn-style-one" href="/demo/fianandox/">
+                                            <a class="theme-btn btn-style-one" href="#">
                                                 <span class="btn-title">KNOW MORE</span>
                                             </a>
                                         </div>
@@ -625,7 +701,7 @@ class Index extends Component {
 
                                     {/* <!-- Contact Form--> */}
                                     <div class="contact-form">
-                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
+                                        <form method="post" action="#" id="contact-form">
                                             <div class="row clearfix">
                                                 <div class="col-md-12 form-group">
                                                     <input
@@ -685,6 +761,8 @@ class Index extends Component {
                         </div>
                     </div>
                 </section>
+             
+
 
                 <Footer />
             </>
