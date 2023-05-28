@@ -678,7 +678,7 @@ img {
 	position: absolute;
 	display: block;
 	width: 100%;
-	z-index: 9999;
+	z-index: 999;
 	background: none;
 	top: 0;
 	left: 0;
@@ -12149,4 +12149,8 @@ hr {
 {
 	background: #fff !important;
     color: #000 !important;
+}
+.flotright1 {
+    margin-top: 6%;
+    margin-right: -5%;
 }

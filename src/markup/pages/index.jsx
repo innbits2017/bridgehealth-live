@@ -130,9 +130,8 @@ class Index extends Component {
             <div class="form-check">
                 <input class="form-check-input"
                     type="checkbox" id="checkbox1" name="option1" value="good" />
-                <label class="form-check-label heading">
-                I Authentication text 
-goes here........
+                <label class="form-check-label heading colorwhite">
+                I Agree Terms & Conditions
                 </label>
             </div>
             <div class="col-md-12 form-group">
