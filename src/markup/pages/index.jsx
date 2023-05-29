@@ -131,7 +131,7 @@ class Index extends Component {
                 <input class="form-check-input"
                     type="checkbox" id="checkbox1" name="option1" value="good" />
                 <label class="form-check-label heading colorwhite">
-                I Agree Terms & Conditions
+                I agree that Bridge Health may contact me at the email address or phone number above.
                 </label>
             </div>
             <div class="col-md-12 form-group">
@@ -168,7 +168,7 @@ class Index extends Component {
                                     <div class="content-box">
                                         <div class="sec-title">
                                             <div class="text textpadding">
-                                                Developed by our in-house clinical expert's BH Smart Guide is a smarter way to understand what are the right diagnostic tests for you based on your current health status, family history and lifestyle choices.
+                                                Developed by our in-house clinical experts, BH Smart Guide is a smarter way to understand the right diagnostic tests for you based on your current health status, family history and lifestyle choices.
                                             </div>
                                         </div>
                                         <div class="image-one">
@@ -240,14 +240,14 @@ class Index extends Component {
                                         <span>
                                             <img src={require('../../assets/images/shape/thumb.png')} alt="" />
                                         </span>
-                                        <Link to={'/personal-membership-program'}>
+                                        <a href={'/personal-membership-program'}>
                                             <span className='textpara'>Personal Membership <br></br> Program</span>
-                                        </Link>
+                                        </a>
                                     </div>
                                     <div className='box marginTop40'>
-                                        <Link to={'/corporate-membership-program'}>
+                                        <a href={'/corporate-membership-program'}>
                                             <span className='textpara'>Corporate Membership <br></br> Program</span>
-                                        </Link>
+                                        </a>
                                         <span>
                                             <img src={require('../../assets/images/shape/thumb1.png')} alt="" className='flotrightimg' />
                                         </span>
@@ -629,9 +629,9 @@ class Index extends Component {
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/shape/blog.png')} alt="" /></Link></div>
                                     <div class="lower-content">
-                                        <div class="category">Blog heading</div>
+                                        <div class="category"> <a href='/blog-design'>  GI Score</a></div>
 
-                                        <h3><Link to={'/blog-details'}>What Does Your GI Score Indicate?</Link></h3>
+                                        <h3><a href={'/blog-design'}>What Does Your GI Score Indicate?</a></h3>
                                         <div class="text">As a child, you were likely cautioned to limit your intake of sweets. Remember the warning not to go</div>
                                     </div>
                                 </div>
@@ -666,7 +666,11 @@ class Index extends Component {
                         </div>
                         <div class="row">
                             <button class="theme-btn btn-style-one btnblog blogtext" type="submit" name="submit-form">
-                                <span class="btn-title btnblog">READ ALL BLOGS</span></button>
+                            <a href='/blog'>
+                                <span class="btn-title btnblog">READ ALL BLOGS</span>
+                            </a>
+
+                                </button>
                         </div>
                         {/* <div class="button-txt">
                             <Button class="btn"></Button>
@@ -710,7 +714,7 @@ class Index extends Component {
                                                         name="username"
                                                         id="name"
                                                         placeholder="Name*"
-                                                        required="" />
+                                                        required= {true} />
                                                 </div>
 
                                                 <div class="col-md-6 form-group">
@@ -720,7 +724,7 @@ class Index extends Component {
                                                         name="email"
                                                         id="email"
                                                         placeholder="Email*"
-                                                        required="" />
+                                                        required={true} />
                                                 </div>
                                                 <div class="col-md-6 form-group">
                                                     <input type="phone"

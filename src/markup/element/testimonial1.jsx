@@ -150,11 +150,11 @@ class Testimonial1 extends Component {
 
                                             </div>
                                             <div class="inner-box test1">
-                                                <h5 className='heading12 spenheading'>Dr. Jyotsna Mathai</h5>
-                                                <p className='textpara1'>Consultant Physician</p>
+                                                <h5 className='heading12 spenheading'>Dr. Dhanya Prabhu Ramadas</h5>
+                                                <p className='textpara1'>Head - Clinical Services</p>
 
                                                 <div class="text">
-                                                    Dr. Jyotsna is a Consultant Physician with a special interest in Women's Health. She has completed her MBBS
+                                                    Dr. Dhanya is a highly motivated, team-oriented, and compassionate family physician. She believes in providing evidence-based holistic care to all her patients.
                                                 </div>
                                             </div>
 
