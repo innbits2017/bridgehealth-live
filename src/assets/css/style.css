@@ -678,7 +678,7 @@ img {
 	position: absolute;
 	display: block;
 	width: 100%;
-	z-index: 2;
+	z-index: 999;
 	background: none;
 	top: 0;
 	left: 0;
@@ -11334,10 +11334,17 @@ hr {
 	}
 	.testimonial-section .slick-prev {
 		position: absolute;
-		right: 38% !important;
+		right: 48% !important;
 		top: 110% !important;
 		left: auto;
 		height: 60px;
+	}
+	.testimonial-block .author-info {
+		position: relative;
+		padding-left: 116px;
+		min-height: 76px;
+		padding-top: 7px;
+		margin-left: 28% !important;
 	}
 	.phybox1 {
 		box-shadow: 1px 1px 5px 2px #817f7f96;
@@ -11470,10 +11477,24 @@ hr {
 	}
 
 	.imgstyle {
-		margin-left: 80px;
+		margin-left: 50px;
 		margin-top: 0px;
 	}
+	[role=tooltip].popup-content {
+		width: 235px !important;
+		box-shadow: 0 0 3px rgba(0,0,0,.16);
+		border-radius: 5px;
+		margin-left: -30% !important;
+	}
+	#popup-2 > div.contact-form-area > div > form > div > div:nth-child(6) > button
+	{
+		margin-left: 5px !important;
+	}
+	#popup-1 > div.contact-form-area > div > form > div > div:nth-child(6) > button
+	{
+		margin-left: 5px !important;
 
+	}
 	.team-section {
 		position: relative;
 		padding: 20px 0 0px;
@@ -11640,7 +11661,7 @@ hr {
 
 	.textpa {
 		text-align: center;
-		margin-left: 0px !important;
+		margin-left: 23% !important;
 		margin-top: 12px;
 		font-weight: 600;
 		font-size: 14px;
@@ -11925,6 +11946,22 @@ hr {
 	{
 		margin-top: 40%;
 	}
+	.listicon10 {
+		margin-bottom: 10px;
+		margin-left: 0rem !important;
+	}
+	.expertiseback {
+		margin-top: 50px;}
+		.sec-title .text {
+			position: relative;
+			display: block;
+			padding-top: 25px;
+			font-size: 20px;
+			color: #25283a;
+			margin: 0;
+		}
+		.expertiseback1 {
+background-image: none !important;		}
 	
 }
 
