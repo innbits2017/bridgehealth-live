@@ -302,7 +302,7 @@ figure {
 }
 
 .marginleft21 {
-	margin-left: 35% !important;
+	margin-left: 25% !important;
 }
 
 .btn-style-one .btn-title {
@@ -3586,8 +3586,8 @@ img.lazy-image.loaded {
 
 .imgstyle1 {
 	margin-left: 18%;
-	margin-top: 20px;
-	width: 45%;
+    margin-top: 20px;
+    width: 45%;
 }
 
 .testthumb {
@@ -11334,7 +11334,7 @@ hr {
 	}
 	.testimonial-section .slick-prev {
 		position: absolute;
-		right: 48% !important;
+		right: 45% !important;
 		top: 110% !important;
 		left: auto;
 		height: 60px;
@@ -11373,13 +11373,17 @@ hr {
 
 	.display-4 {
 		display: block;
-		font-size: 40px;
+		font-size: 26px;
 		line-height: 1.15em;
 		color: #ffffff !important;
 		font-weight: 700;
 		margin-bottom: 20px;
 		letter-spacing: 0;
 		text-align: center;
+	}
+	.display-3 {
+		font-size: 36px;
+		font-weight: 700;
 	}
 	.video-background-content {
 		position: relative;
@@ -11397,19 +11401,25 @@ hr {
 
 	.lead {
 		display: block;
-		font-size: 30px;
+		font-size: 20px;
 		line-height: 1.2em;
 		color: #ffffff;
 		font-weight: 400;
 		padding-top: 25px;
 		text-align: center;
 	}
-
+	.blogdesigner {
+		width: 100%;
+		background-position: top;
+		background-size: contain;
+		background-repeat: repeat;
+		background-image: url(/static/media/blogback.f97f3dbe.png);
+	}
 	.flotright1 a {
 		float: right;
 		color: #fff;
 		line-height: 35px;
-		margin-top: 40%;
+		margin-top: 45%;
 		margin-bottom: 11px;
 		margin-right: -12% !important;
 	}
@@ -11475,16 +11485,29 @@ hr {
 		margin-left: 10%;
 
 	}
-
+	.imgstyle1 {
+		margin-left: 18%;
+		margin-top: 20px;
+		width: 60%;
+	}
+	.page-bannerblog h1 {
+		font-size: 29px !important;
+		text-align: left;
+		color: #fff !important;
+	}
+	.post-meta li
+	{
+		font-size: 9px !important;
+	}
 	.imgstyle {
 		margin-left: 50px;
 		margin-top: 0px;
 	}
 	[role=tooltip].popup-content {
-		width: 235px !important;
+		width: 300px !important;
 		box-shadow: 0 0 3px rgba(0,0,0,.16);
 		border-radius: 5px;
-		margin-left: -30% !important;
+		margin-left: -20% !important;
 	}
 	#popup-2 > div.contact-form-area > div > form > div > div:nth-child(6) > button
 	{
@@ -11720,7 +11743,7 @@ hr {
 
 	.bozhover {
 		margin-bottom: 30px;
-		height: 450px;
+		height: 400px;
 	}
 	.marginleft20 {
 		margin-left: 0% !important;
@@ -11747,7 +11770,7 @@ hr {
 	text-align: center;
 }
 .btn-style-one {
-    margin-left: 6rem !important;
+    margin-left: 4rem;
 }
 .martop90
 {
@@ -11780,7 +11803,7 @@ hr {
 		list-style: none;
 		padding: 4px;
 		margin: 0px;
-		font-size: 17px;
+		font-size: 18px !important;
 		line-height: 28px;
 	}
 
@@ -11951,7 +11974,9 @@ hr {
 		margin-left: 0rem !important;
 	}
 	.expertiseback {
-		margin-top: 50px;}
+		margin-top: 50px;
+	    background-size: contain;
+	}
 		.sec-title .text {
 			position: relative;
 			display: block;
