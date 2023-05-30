@@ -19,9 +19,9 @@ class lab_tests extends Component {
                                     <span className='headeingcolorblack'> Diagnostics done the  </span><br></br>
                                     <span className='headeingcolorblue'> right way</span>
 
-                                </h2> 
+                                </h2>
                                 <h3 className='textleft marginTop40'>
-                                Get your lab tests done through us
+                                    Get your lab tests done through us
                                 </h3>
                             </div>
                             <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
@@ -34,37 +34,35 @@ class lab_tests extends Component {
 
                 <section class="contact-section">
 
-<div class="auto-container">
-    <div class="row">
+                    <div class="auto-container">
+                        <div class="row">
 
-        <div class="col-lg-6">
-            <div class="image-wrapper">
-                <div class="image-one">
-                    <img src={require('../../assets/images/shape/lab1.png')} alt="" />
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="contact-form-area">
+                            <div class="col-lg-6">
+                                <div class="image-wrapper">
+                                    <div class="image-one">
+                                        <img src={require('../../assets/images/shape/lab1.png')} alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="contact-form-area">
 
-                <div class="sec-title phybox">
-                    <p className='font22'>
-                    The first step to treating any health condition is <span className='headeingcolorblue'>identification</span>. Lab tests are essential in this regard as they help to accurately examine a patient’s health profile and detect abnormalities or warning signs of many adverse health conditions,  <span className='headeingcolorblue'>paving the way for treatment </span>to begin swiftly.
-                    </p>
-                </div>
-               
-                  
-                    <div class="col-md-12 form-group">
-                            <button class="theme-btn btn-style-one btnflot" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+                                    <div class="sec-title phybox">
+                                        <p className='font22'>
+                                            The first step to treating any health condition is <span className='headeingcolorblue'>identification</span>. Lab tests are essential in this regard as they help to accurately examine a patient’s health profile and detect abnormalities or warning signs of many adverse health conditions,  <span className='headeingcolorblue'>paving the way for treatment </span>to begin swiftly.
+                                        </p>
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
                         </div>
-                    
-               
-            </div>
-        </div>
-
-    </div>
-</div>
-</section>
+                    </div>
+                </section>
                 <section>
                     <div class="image-wrapper">
                         <div class="image-one">
@@ -74,10 +72,10 @@ class lab_tests extends Component {
                 </section>
                 <section class="team-section">
                     <div class="auto-container">
-                            <h2 className='header2'>
-                                <span className='headeingcolorblack'> What We </span>
-                                <span className='headeingcolorblue'>  Offer</span>
-                            </h2>
+                        <h2 className='header2'>
+                            <span className='headeingcolorblack'> What We </span>
+                            <span className='headeingcolorblue'>  Offer</span>
+                        </h2>
                     </div>
                     {/* About Section Two */}
                     <section class="">
@@ -101,31 +99,31 @@ class lab_tests extends Component {
                                                         CBC
                                                     </li>
                                                     <li>
-                                                    <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                        <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                         Blood Group And Type
                                                     </li>
                                                     <li>
-                                                       <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                        <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                         Lipid Profile
                                                     </li>
                                                     <li>
-                                                       <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                        <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                         Diabetic Profile
                                                     </li>
                                                     <li>
-                                                       <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                        <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                         Liver Function Test-LFT
                                                     </li>
                                                     <li>
-                                                       <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                        <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                         Renal Profile
                                                     </li>
                                                     <li>
-                                                       <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                        <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                         Serum Electrolytes
                                                     </li>
                                                     <li>
-                                                       <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                        <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                         Urine Routine
                                                     </li>
 
@@ -134,35 +132,35 @@ class lab_tests extends Component {
                                             <div class="col-lg-6">
                                                 <ul className='listicon'>
                                                     <li>
-                                                       <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                        <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                         Creatine ration
                                                     </li>
                                                     <li>
-                                                       <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                        <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                         Vitamin Profile
                                                     </li>
                                                     <li>
-                                                       <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                        <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                         Thyroid Profile
                                                     </li>
                                                     <li>
-                                                       <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                        <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                         Bone Density
                                                     </li>
                                                     <li>
-                                                       <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                        <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                         Oncology Panel
                                                     </li>
                                                     <li>
-                                                       <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                        <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                         Stool Tests
                                                     </li>
                                                     <li>
-                                                       <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                        <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                         Cultures
                                                     </li>
                                                     <li>
-                                                       <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                                        <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                         Radiology
                                                     </li>
 
@@ -194,16 +192,16 @@ class lab_tests extends Component {
                 {/* <!-- Contact Section --> */}
                 <section class="contact-section">
 
-                            <div class="auto-container">
-                                <div class="sec-title text-center">
-                                    <h2 className='header1'>
-                                        <span className='headeingcolorblack'> Packages Offered By </span>
-                                        <span className='headeingcolorblue'>   Bridge Health Lab</span>
+                    <div class="auto-container">
+                        <div class="sec-title text-center">
+                            <h2 className='header1'>
+                                <span className='headeingcolorblack'> Packages Offered By </span>
+                                <span className='headeingcolorblue'>   Bridge Health Lab</span>
 
-                                    </h2>
-                                </div>
+                            </h2>
+                        </div>
 
-                            </div>
+                    </div>
                     <div class="auto-container">
                         <div class="row">
 
@@ -304,7 +302,7 @@ class lab_tests extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/lab5.png')} alt=""  />
+                                        <img src={require('../../assets/images/shape/lab5.png')} alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -322,7 +320,7 @@ class lab_tests extends Component {
 
                                     </div>
                                     <ul className='listicon'>
-                                    <li className='listicon'>
+                                        <li className='listicon'>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Specially designed labs suitable for individuals of all age groups
                                         </li>
@@ -365,10 +363,10 @@ class lab_tests extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                                            <a class="theme-btn btn-style-one" href="#">
-                                                <span class="btn-title">BOOK NOW</span>
-                                            </a>
-                                        </div>
+                            <a class="theme-btn btn-style-one" href="#">
+                                <span class="btn-title">BOOK NOW</span>
+                            </a>
+                        </div>
                     </div>
                 </section>
 

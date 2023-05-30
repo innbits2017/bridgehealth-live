@@ -192,7 +192,7 @@ class corporate_membership_program extends Component {
                                                     </label>
                                                 </div>
 
-                                                <div class="col-md-12 form-group" style={{marginLeft: 10 + 'rem'}}>
+                                                <div class="col-md-12 form-group">
                                                     <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">SUBMIT</span></button>
                                                 </div>
                                             </div>

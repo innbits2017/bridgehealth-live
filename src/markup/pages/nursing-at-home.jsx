@@ -66,13 +66,11 @@ class nursingAtHome extends Component {
                                             Sometimes, especially for the elderly and for patients suffering from chronic illnesses, it becomes a challenge to travel to a hospital to get timely care.
                                             Furthermore, bedridden patients need timely care and assistance at all times to perform their daily routines.
                                         </p>
-                                    </div>
-
-
-
-                                    <div class="col-md-12 form-group">
                                         <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+
                                     </div>
+
+
 
 
                                 </div>

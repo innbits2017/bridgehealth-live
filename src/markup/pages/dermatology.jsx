@@ -56,14 +56,9 @@ class dermatology extends Component {
                                             A good physical appearance is a reflection of youth and confidence. Unfortunately, as we age, our physical appearance deteriorates. This could be in the form of pimples, hair loss, stretch marks, unintended weight gain around the abdominal area, and scarring. Therefore,
                                             it’s important to take care of the physical features of our body so that we always remain confident about how we look.
                                         </p>
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+
                                     </div>
-
-
-                                    <div class="col-md-12 form-group">
-                                        <button class="theme-btn btn-style-one btnflot" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                    </div>
-
-
                                 </div>
                             </div>
 

@@ -57,15 +57,13 @@ class doctor_consults extends Component {
                                     All of us get sick at some point in life. And whenever we get sick, we always go to the doctor to find out the reason and get the appropriate medicines so that we can better quickly.
                                     In the past, doctor consultations had to be done in the traditional way. You book an appointment, visit the doctor’s office, and get a prescription.
                                 </p>
+                                <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+
                             </div>
                         </div>
                     </div>
 
-                    <div class="btn-box text-center btn5">
-                        <a class="theme-btn btn-style-one" href="#">
-                            <span class="btn-title">BOOK NOW</span>
-                        </a>
-                    </div>
+
                 </section>
 
 
@@ -88,11 +86,10 @@ class doctor_consults extends Component {
                                         <p className='font22'>
                                             The expert doctors at Bridge Health have years of experience as practicing professionals. You can directly book an appointment with them and avail of virtual consultations with them wherever you are. This simplifies the process and eliminates the long queue times at the doctor’s clinic.
                                         </p>
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+
                                     </div>
 
-                                    <div class="col-md-12 form-group">
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                    </div>
 
                                 </div>
                             </div>
@@ -105,13 +102,13 @@ class doctor_consults extends Component {
                 <section>
 
                     <div class="auto-container">
-                    <h2 className='header1'>
+                        <h2 className='header1'>
                             <span className='headeingcolorblack'> The</span>
                             <span className='headeingcolorblue'>  Bridge Health</span>
                             <span className='headeingcolorblack'> Advantage </span>
                         </h2>
                         <div class="row">
-                      
+
                             <div class="col-sm-4">
                                 <img src={require('../../assets/images/gallery/fair1.png')} alt="" class="avtar" />
 

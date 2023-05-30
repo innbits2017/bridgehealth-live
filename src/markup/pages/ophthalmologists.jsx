@@ -58,13 +58,8 @@ class ophthalmologist extends Component {
                                             Our eyes are the windows to the world. They allow us to see every detail and colour, near and far. However, because of our modern-day habits and work,
                                             we spend too much time looking at screens which strains our eyes. We also tend to blink less which leads to dry eyes. These factors contribute to poor eyesight in children and adults.
                                         </p>
-                                    </div>
-
-
-                                    <div class="col-md-12 form-group">
                                         <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
                                     </div>
-
 
                                 </div>
                             </div>
@@ -131,7 +126,7 @@ class ophthalmologist extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                       
+
                         <div class="row">
 
                             <div class="col-lg-6">
@@ -144,11 +139,11 @@ class ophthalmologist extends Component {
 
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
-                                <h2 className='header1'>
-                                <span className='headeingcolorblack'> The</span>
-                                <span className='headeingcolorblue'>  Bridge Health</span>
-                                <span className='headeingcolorblack'> Advantage </span>
-                            </h2>
+                                    <h2 className='header1'>
+                                        <span className='headeingcolorblack'> The</span>
+                                        <span className='headeingcolorblue'>  Bridge Health</span>
+                                        <span className='headeingcolorblack'> Advantage </span>
+                                    </h2>
                                     <ul className='listicon'>
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />

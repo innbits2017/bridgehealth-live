@@ -11,32 +11,32 @@ class fitnessAssessment extends Component {
                 <section class="team-section padding">
                     {/* About Section Two */}
                     <section class="container-fluid">
-                            <div class="row align-items-center auto-container">
+                        <div class="row align-items-center auto-container">
 
-                                <div class="col-lg-6">
-                                    <div class="content-box marginTop40header">
+                            <div class="col-lg-6">
+                                <div class="content-box marginTop40header">
 
-                                        <div class="sec-title text-center textleft">
-                                            <h2 className='textleft'>
-                                                <span className='headeingcolorblack'> It’s time to get</span> <br></br>
-                                                <span className='headeingcolorblue fontitalic'> MOVING </span></h2>
-                                            <h3 className='textleft marginTop40'>
-                                                Stay fit and active with our  <br></br> pro-fit program
-                                            </h3>
-                                        </div>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
-
+                                    <div class="sec-title text-center textleft">
+                                        <h2 className='textleft'>
+                                            <span className='headeingcolorblack'> It’s time to get</span> <br></br>
+                                            <span className='headeingcolorblue fontitalic'> MOVING </span></h2>
+                                        <h3 className='textleft marginTop40'>
+                                            Stay fit and active with our  <br></br> pro-fit program
+                                        </h3>
                                     </div>
+                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
+
+
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="image-wrapper imgright">
-                                        <div class="image-one">
-                                            <img src={require('../../assets/images/shape/fitness.png')} alt="" className='imgwidth' />
-                                        </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-wrapper imgright">
+                                    <div class="image-one">
+                                        <img src={require('../../assets/images/shape/fitness.png')} alt="" className='imgwidth' />
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </section>
                 </section>
 
@@ -63,11 +63,8 @@ class fitnessAssessment extends Component {
                                             To stay healthy, regular exercise is a must! Regular exercise and keeping our bodies active reduces blood pressure, improves blood circulation, burns excess fat & calories, and reduces the risk of heart ailments.
                                             Taking it a step further, doctors and specialists have developed workout plans based on clinical fact-based evidence with the help of interdisciplinary teams. These programs are proven to have incredible benefits on the overall health of individuals.
                                         </p>
-                                    </div>
-
-
-                                    <div class="col-md-12" >
                                         <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+
                                     </div>
 
 
@@ -101,15 +98,9 @@ class fitnessAssessment extends Component {
                                             The <span style={{ fontWeight: 500 }}>Pro-Fit Program</span> at Bridge Health is designed based on clinical fact-based evidence. Our interdisciplinary team includes medical providers, licensed therapists,
                                             and exercise specialists. Our qualified trainers have several years of experience in the fitness industry and are available to assist you in creating a customized exercise program for your body type.
                                         </p>
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+
                                     </div>
-
-
-                                    <div class="btn-box martop90">
-                                            <a class="theme-btn btn-style-one" href="#">
-                                                <span class="btn-title">BOOK NOW</span>
-                                            </a>
-                                        </div>
-
 
                                 </div>
                             </div>

@@ -21,14 +21,13 @@ class b2cmembership extends Component {
         <section class="team-section padding">
           {/* About Section Two */}
           <section class="container-fluid">
-            <div class="container-fluid">
-              <div class="row align-items-center">
+              <div class="row align-items-center auto-container">
 
                 <div class="col-lg-6">
-                  <div class="content-box">
+                  <div class="content-box marginTop40header">
 
                     <div class="sec-title text-center textleft personal">
-                      <h2 className='textleft' style={{marginRight: 1.9 + 'rem'}}>
+                      <h2 className='textleft'>
                         <span className='headeingcolorblack'> Your  </span> 
                         <span className='headeingcolorblue'>Good Health </span> <br></br>
                         <span className='headeingcolorblack'>is Our Plan</span>
@@ -44,14 +43,13 @@ class b2cmembership extends Component {
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <div class="image-wrapper">
+                  <div class="image-wrapper imgright">
                     <div class="image-one">
                       <img src={require('../../assets/images/shape/image2.png')} alt="" className='imgwidth' />
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
           </section>
         </section>
         {/* <b2c_page /> */}

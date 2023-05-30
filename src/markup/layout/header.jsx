@@ -182,7 +182,7 @@ class Header extends Component {
                         </a>
                     </div>    */}
 
-          <Popup trigger={<div class="top-right flotright1"><a class="top-right flotright1" href="#">  <img src={require('../../assets/images/Group53.png')} alt="" /></a></div>
+          <Popup trigger={<div class="top-right flotright1"><a class="top-right flotright1" href="#">  <img src={require('../../assets/images/Group53.png')} alt=""  className='talkexpert'/></a></div>
           } position="bottom">
             <div class="contact-form-area">
 

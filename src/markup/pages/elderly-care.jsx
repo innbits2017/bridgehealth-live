@@ -13,35 +13,35 @@ class elderlyCare extends Component {
                 <section class="team-section padding">
                     {/* About Section Two */}
                     <section class="container-fluid">
-                            <div class="row align-items-center auto-container">
+                        <div class="row align-items-center auto-container">
 
-                                <div class="col-lg-6">
-                                    <div class="content-box marginTop40header">
+                            <div class="col-lg-6">
+                                <div class="content-box marginTop40header">
 
-                                        <div class="sec-title text-center textleft">
-                                            <h2 className='textleft'>
-                                                <span className='headeingcolorblack'> Age is not just </span>
-                                                <br></br>
-                                                <span className='headeingcolorblack'> a </span>
-                                                <span className='headeingcolorblue'> Number</span>
-                                            </h2>
-                                            <h3 className='textleft marginTop40'>
-                                                Professional elderly care at <br></br> your doorstep
-                                            </h3>
-                                        </div>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
-
+                                    <div class="sec-title text-center textleft">
+                                        <h2 className='textleft'>
+                                            <span className='headeingcolorblack'> Age is not just </span>
+                                            <br></br>
+                                            <span className='headeingcolorblack'> a </span>
+                                            <span className='headeingcolorblue'> Number</span>
+                                        </h2>
+                                        <h3 className='textleft marginTop40'>
+                                            Professional elderly care at <br></br> your doorstep
+                                        </h3>
                                     </div>
+                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
+
+
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="image-wrapper imgright">
-                                        <div class="image-one">
-                                            <img src={require('../../assets/images/shape/care1.png')} alt="" className='imgwidth' />
-                                        </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-wrapper imgright">
+                                    <div class="image-one">
+                                        <img src={require('../../assets/images/shape/care1.png')} alt="" className='imgwidth' />
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </section>
                 </section>
 
@@ -67,14 +67,10 @@ class elderlyCare extends Component {
                                             Although we may stay young at heart, our body starts ageing. As we grow older, our physical abilities decline
                                             and we might find ourselves slower and more dependent on others for physical assistance.
                                         </p>
-                                    </div>
-
-
-
-                                    <div class="col-md-12 form-group">
                                         <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                    </div>
 
+                                    </div>
+                                    =
 
                                 </div>
                             </div>

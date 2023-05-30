@@ -34,39 +34,7 @@ class psychological_Health extends Component {
 
                     </div>
                 </section>
-                {/* <section class="team-section padding">
-                        <div class="container-fluid hero-image">
-                            <div class="row align-items-center">
 
-                                <div class="col-lg-6">
-                                    <div class="content-box">
-
-                                        <div class="sec-title text-center textleft">
-                                            <h2 className='textleft'>
-                                                <span className='headeingcolorblack'> Good Health starts  </span><br></br>
-                                                <span className='headeingcolorblack'> with a </span>
-                                                <span className='headeingcolorblue'> Healthy Mind </span> 
-                                                
-                                            </h2>
-                                            <h3 className='textleft marginTop40'>
-                                                Talk to our clinical psychologists today
-                                            </h3>
-                                        </div>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
-
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="image-wrapper">
-                                        <div class="image-one">
-                                            <img src={require('../../assets/images/shape/image2.png')} alt="" className='imgwidth' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </section> */}
                 {/* <b2c_page /> */}
 
 
@@ -93,24 +61,21 @@ class psychological_Health extends Component {
                                         <p className='font22'>
                                             Unlike physical health issues,<span className='headeingcolorblue'> psychological issues are not as visible. </span>They are generally ignored and are not given as much importance due to societal stigmas. However, if these are ignored for too long, they can affect your intellectual capabilities and overall behaviour.
                                         </p>
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+
                                     </div>
-                                   
-                                      
-                                        <div class="col-md-12 form-group">
-                                                <button class="theme-btn btn-style-one btnflot" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                            </div>
-                                        
-                                   
+
+
                                 </div>
                             </div>
 
                         </div>
                     </div>
                 </section>
-              
+
 
                 <section class="team-section">
-                 
+
                     <section class="">
                         <div class="auto-container">
                             <div class="row align-items-center">
@@ -119,7 +84,7 @@ class psychological_Health extends Component {
 
                                 <div class="col-lg-6">
                                     <div class="content-box">
-                                      
+
                                         <ul className='listicon'>
                                             <li className='listicon'>
                                                 <img className='listicon3' src={require('../../assets/images/shape/ps2.png')} alt="" />
@@ -147,7 +112,7 @@ class psychological_Health extends Component {
                                 <div class="col-lg-6">
                                     <div class="image-wrapper">
                                         <div class="image-one image-two">
-                                            <img src={require('../../assets/images/shape/ps3.png')} alt=""  className='width84' />
+                                            <img src={require('../../assets/images/shape/ps3.png')} alt="" className='width84' />
                                             {/* <img src={require('../../assets/images/shape/video2.gif')} alt="" /> */}
                                         </div>
 
@@ -165,7 +130,7 @@ class psychological_Health extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/ps4.png')} alt=""  className='width84' />
+                                        <img src={require('../../assets/images/shape/ps4.png')} alt="" className='width84' />
                                     </div>
                                 </div>
                             </div>
@@ -173,11 +138,11 @@ class psychological_Health extends Component {
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
                                     <div class="auto-container">
-                                            <h2 className='header1'>
-                                                <span className='headeingcolorblack'> The</span>
-                                                <span className='headeingcolorblue'>  Bridge Health</span>
-                                                <span className='headeingcolorblack'> Advantage </span>
-                                            </h2>
+                                        <h2 className='header1'>
+                                            <span className='headeingcolorblack'> The</span>
+                                            <span className='headeingcolorblue'>  Bridge Health</span>
+                                            <span className='headeingcolorblack'> Advantage </span>
+                                        </h2>
 
                                     </div>
                                     <ul className='listicon'>
@@ -224,10 +189,10 @@ class psychological_Health extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                                            <a class="theme-btn btn-style-one" href="#">
-                                                <span class="btn-title">BOOK NOW</span>
-                                            </a>
-                                        </div>
+                            <a class="theme-btn btn-style-one" href="#">
+                                <span class="btn-title">BOOK NOW</span>
+                            </a>
+                        </div>
                     </div>
                 </section>
 
