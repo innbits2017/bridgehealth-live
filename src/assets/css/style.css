@@ -10195,10 +10195,9 @@ img.lazy-image.loaded {
 	text-transform: capitalize;
 }
 .listicon  li {
-	margin-bottom: 10px;
 	margin-left: 0rem;
 	text-transform: capitalize;
-	line-height: 50px;
+	line-height: 45px;
 
 }
 .listicon10 {
@@ -10212,7 +10211,6 @@ li {
     padding: 4px;
     margin: 0px;
     font-size: 24px;
-    line-height: 35px;
 
 }
 

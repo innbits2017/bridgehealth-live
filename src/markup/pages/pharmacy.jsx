@@ -138,7 +138,7 @@ class pharmacy extends Component {
                                         <div class="">
                                             <h2 className='header1'>
                                                 <span className='headeingcolorblack'> The</span>
-                                                <span className='headeingcolorblue'>  Bridge Health</span><br></br>
+                                                <span className='headeingcolorblue'>  Bridge Health</span>
                                                 <span className='headeingcolorblack'> Advantage </span>
                                             </h2>
                                         </div>
