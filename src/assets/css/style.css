@@ -11127,12 +11127,13 @@ a:not([href]):not([tabindex]) {
 }
 
 .b2cimgcenter h1 {
-	text-align: center;
-	margin-top: 20%;
-	padding-right: 34%;
-	padding-left: 40%;
-	font-size: 30px;
+    text-align: center;
+    margin-top: 20%;
+    padding-right: 25%;
+    padding-left: 25%;
+    font-size: 30px;
 }
+
 
 .b2cimgcenter p {
 	text-align: center;
@@ -11140,7 +11141,10 @@ a:not([href]):not([tabindex]) {
 	padding-right: 20%;
 	padding-left: 25%;
 }
-
+.font30
+{
+	font-size: 30px !important;
+}
 .b2cimgcenter h3 {
 	text-align: center;
 }
@@ -11325,6 +11329,36 @@ hr {
 	.cont-box {
 		margin-left: 0% !important;
 		margin-right: 0% !important;
+	}
+	.marginto90
+	{
+		margin-top: 100%;
+	}
+	.font30 {
+		font-size: 20px !important;
+	}
+	.b2cimgcenter {
+		background-color: #E5E5E7;
+		background-image:none !important;
+		height: auto !important;
+		padding-bottom: 50px;
+	}
+	.b2cimgcenter p {
+		text-align: center;
+		margin-top: 0%;
+		padding-right: 0%;
+		padding-left: 0%;
+	}
+	.b2cimgcenter h1 {
+		text-align: center;
+		margin-top: 20%;
+		padding-right: 0%;
+		padding-left: 0%;
+		font-size: 30px;
+	}
+	.b2cimgcenter .theme-btn {
+	    margin-left: 30%;
+    margin-top: 5%;
 	}
 
 	.imgright {
@@ -12268,3 +12302,31 @@ hr {
 {
 	display: none !important;
 }
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 1rem;
+	background-color: rgba(0,0,0, 0.5);
+  }
+  
+  .popup_inner {
+	position: absolute;
+	left: 25%;
+	right: 25%;
+	top: 25%;
+	bottom: 25%;
+	margin: auto;
+	background: white;
+	padding: 1rem;
+  }
+  .listicon6
+  {
+	width: 30px;
+	margin-right: 10px;
+  }

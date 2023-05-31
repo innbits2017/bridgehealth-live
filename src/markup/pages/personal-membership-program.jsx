@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Nav, Tab, } from 'react-bootstrap';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
-import Brand1 from '../element/brand1'
-import VideoPopup1 from '../element/video-popup1';
-import ServiceFilter1 from '../element/service-filter1'
-import b2c_page from './b2c-page'
 
 const aboutbg = require('./../../assets/images/shape/b2c2.png');
 
@@ -197,7 +191,7 @@ class b2cmembership extends Component {
                       </li>
                       <li>
                         <img className='listicon6' src={require('../../assets/images/shape/b13.png')} alt="" />
-                        Discover any hidden health <span style={{ marginLeft: 3 + 'rem' }}>conditions</span>
+                        Discover any hidden health conditions
                       </li>
                       <li>
                         <img className='listicon6' src={require('../../assets/images/shape/b12.png')} alt="" />
@@ -205,7 +199,7 @@ class b2cmembership extends Component {
                       </li>
                       <li>
                         <img className='listicon6' src={require('../../assets/images/shape/b14.png')} alt="" />
-                        Implement lifestyle changes <br></br> <span style={{ marginLeft: 3 + 'rem' }}>for better quality of life</span>
+                        Implement lifestyle changes for better quality of life
                       </li>
                     </ul>
 
@@ -229,7 +223,6 @@ class b2cmembership extends Component {
                     <img src={require('../../assets/images/shape/b2c3.png')} alt="" className='b2cimg' />
                   </div>
                   <div>
-                    <img className='listicon8' src={require('../../assets/images/shape/icons.png')} alt="" />
                   </div>
                 </div>
               </div>
@@ -252,17 +245,17 @@ class b2cmembership extends Component {
               <div class="col-lg-6">
                 <div class="contact-form-area margintop145">
 
-                  <div class="sec-title" >
+                  <div class="sec-title marginto90" >
                     <h2> <span className='headeingcolorblack'>Why </span>
                       <span className='headeingcolorblue'> Preventive</span>
                       <span className='headeingcolorblack'> Health Care?</span>
                     </h2>
                     {/* <h4 className='textleft marginTop40'>A host of benefits await you as soon as you say <span className='headeingcolorblue'> YES</span>
           </h4> */}
-                    <p>
-                      Preventive healthcare helps in predicting & <br></br>preventing
-                      serious health conditions while<br></br> prolonging your life.
-                      It also helps you in making <br></br>proactive choices regarding your mental health<br></br> and lifestyle to stay fit at all times
+                    <p className='font30'>
+                      Preventive healthcare helps in predicting & preventing 
+                      serious health conditions while prolonging your life. 
+                      It also helps you in making proactive choices regarding your mental health and lifestyle to stay fit at all times
                     </p>
 
                   </div>
@@ -276,7 +269,7 @@ class b2cmembership extends Component {
 
 
                         <div class="col-md-12 form-group" >
-                          <button class="theme-btn btn-style-one" type="submit" name="submit-form" style={{ marginLeft: 25.6 + 'rem' }}>
+                          <button class="theme-btn btn-style-one" type="submit" name="submit-form">
                             <span class="btn-title" >SAY YES!</span></button>
                         </div>
                       </div>

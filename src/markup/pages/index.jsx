@@ -11,7 +11,7 @@ import 'reactjs-popup/dist/index.css';
 
 
 class Index extends Component {
-
+  
     constructor(props) {
         super(props);
 
@@ -22,10 +22,9 @@ class Index extends Component {
             message: '',
         };
         // this.handleChange = this.handleChange.bind(this)
-    }
-
+      }
+    
     handleChange = (event) => {
-
         const { name, value } = event.target;
         this.setState({ ...this.state, [name]: value });
         console.log(event)
@@ -186,7 +185,6 @@ class Index extends Component {
                                             </form>
                                         </div>
                                     </div>
-
                                 </Popup>
 
                             </div>
@@ -252,7 +250,7 @@ class Index extends Component {
 
 
 
-                <section class="team-section">
+                  <section class="team-section">
                     <div class="auto-container">
                         <div class="sec-title text-center marginbutton">
                             <h2 style={{ fontSize: 43 + 'px', lineHeight: 50 + 'px' }}> <span className=' headeingcolorblue'> Annual Preventive </span>
