@@ -10,8 +10,95 @@ const aboutbg = require('./../../assets/images/background/image-11.jpg');
 
 class corporate_membership_program extends Component {
 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            username: '',
+            email: '',
+            phone: '',
+            message: '',
+        };
+        // this.handleChange = this.handleChange.bind(this)
+    }
+
+    handleChange = (event) => {
+
+        const { name, value } = event.target;
+        this.setState({ ...this.state, [name]: value });
+        console.log(event)
+    };
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+
+        console.log(this.state);
+    };
+
+    saveData = async (e) => {
+
+        console.log(e, "Data is saving");
+
+        e.preventDefault();
+
+        const { email, username, phone, message } = this.state;
+
+        const res = await fetch('http://localhost:8000/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email, username, phone, message
+            }),
+        });
+
+        const data = await res.json();
+        console.log(data);
+
+        if (data.status === 401 || !data) {
+            console.log('error');
+        } else {
+            this.setState({ show: true, email: '', username: '', phone: '', message: '' });
+            console.log('Data saved');
+        }
+
+    }
+
+
+    sendEmail = async (e) => {
+        e.preventDefault();
+
+        const { email, username } = this.state;
+
+        const res = await fetch('http://localhost:8000/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email, username
+            }),
+        });
+
+        const data = await res.json();
+        console.log(data);
+
+        if (data.status === 401 || !data) {
+            console.log('error');
+        } else {
+            this.setState({ show: true, email: '', username: '' });
+            console.log('Email sent');
+        }
+    };
+
+
 
     render() {
+
+        const { username, email } = this.state;
+        const isSubmitDisabled = username === '' || email === ''
+
         return (
             <>
                 <Header />
@@ -31,7 +118,7 @@ class corporate_membership_program extends Component {
                                 <div class="content-box">
 
                                     <div class="textleft">
-                                        <h3 className='textleft' style={{fontSize: 40 + 'px'}}>
+                                        <h3 className='textleft' style={{ fontSize: 40 + 'px' }}>
                                             <span className='headeingcolorblack'>Redefining the Meaning of </span><br></br>
                                             <span className='headeingcolorblue'>Employee-Centric Care</span>
                                         </h3>
@@ -93,12 +180,12 @@ class corporate_membership_program extends Component {
 
                 <div class="auto-container margin150">
                     <div class="sec-title">
-                        <h2 style={{fontSize: 48 + 'px'}}> 
-                        <span className='headeingcolorblack'>THE CORPORATE </span>
+                        <h2 style={{ fontSize: 48 + 'px' }}>
+                            <span className='headeingcolorblack'>THE CORPORATE </span>
                             <span className='headeingcolorblue'> WELLNESS </span>
                             <span className='headeingcolorblack'>MAP</span>
                         </h2>
-                        <h4 className='textleft marginTop40' style={{fontSize: 33 + 'px'}}>Where are you on the well being journey?
+                        <h4 className='textleft marginTop40' style={{ fontSize: 33 + 'px' }}>Where are you on the well being journey?
                         </h4>
                     </div>
 
@@ -134,8 +221,8 @@ class corporate_membership_program extends Component {
 
                     <div className='container '>
                         <div class="sec-title text-center">
-                            <h3 className='' style={{fontSize: 35 + 'px'}}> <span className='headeingcolorblue'>BRIDGE HEALTH </span>
-                            makes it possible for  <span className='headeingcolorblue'> Employers </span>to <br></br>keep a check on their  <span className='headeingcolorblue'> Employees’ Health Metrics </span></h3>
+                            <h3 className='' style={{ fontSize: 35 + 'px' }}> <span className='headeingcolorblue'>BRIDGE HEALTH </span>
+                                makes it possible for  <span className='headeingcolorblue'> Employers </span>to <br></br>keep a check on their  <span className='headeingcolorblue'> Employees’ Health Metrics </span></h3>
 
                         </div>
                         <div class="row align-items-center">
@@ -154,14 +241,14 @@ class corporate_membership_program extends Component {
                     <section class="">
                         <div class="auto-container">
                             <div class="sec-title text-center">
-                                <h2> <span className='headeingcolorblue'>BOOST  </span> 
-                                <span className='headeingcolorblack'>YOUR TEAM’S HEALTH</span><br></br>
+                                <h2> <span className='headeingcolorblue'>BOOST  </span>
+                                    <span className='headeingcolorblack'>YOUR TEAM’S HEALTH</span><br></br>
                                 </h2>
                             </div>
 
                         </div>
                     </section>
-                    <div class="auto-container" style={{marginBottom: 4 + 'rem'}}>
+                    <div class="auto-container" style={{ marginBottom: 4 + 'rem' }}>
                         <div class="row">
 
                             <div class="col-lg-6">
@@ -170,19 +257,50 @@ class corporate_membership_program extends Component {
                                     {/* <!-- Contact Form--> */}
                                     <div class="contact-form">
                                         <p>Reach out to us and we'll help you in setting up the <br></br>best of <span className='headeingcolorblue'>Preventive Healthcare</span> Services for your teams.</p>
-                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
+                                        <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} id="contact-form">
                                             <div class="row clearfix">
                                                 <div class="col-md-12 form-group">
-                                                    <input type="text" name="username" id="name" placeholder="Name*" required="" />
+                                                    <input
+                                                        type="text"
+                                                        name="username"
+                                                        value={this.state.username}
+                                                        onChange={e => this.handleChange(e)}
+                                                        id="name"
+                                                        placeholder="Name*"
+                                                        required="" />
                                                 </div>
                                                 <div class="col-md-12 form-group">
-                                                    <input type="text" name="username" id="name" placeholder="Email*" required="" />
+                                                    <input
+                                                        type="email"
+                                                        name="email"
+                                                        value={this.state.email}
+                                                        onChange={e => this.handleChange(e)}
+                                                        id="name"
+                                                        placeholder="Email*"
+                                                        required="" />
                                                 </div>  <div class="col-md-12 form-group">
-                                                    <input type="text" name="username" id="name" placeholder="Phone*" required="" />
+                                                    <input
+                                                        type="phone"
+                                                        name="phone"
+                                                        value={this.state.phone}
+                                                        onChange={e => this.handleChange(e)}
+                                                        id="name"
+                                                        placeholder="Phone*"
+                                                        required="" />
                                                 </div>  <div class="col-md-12 form-group">
-                                                    <input type="text" name="username" id="name" placeholder="Company Name" required="" />
+                                                    <input
+                                                        type="text"
+                                                        name="username"
+                                                        id="name"
+                                                        placeholder="Company Name"
+                                                        required="" />
                                                 </div>  <div class="col-md-12 form-group">
-                                                    <input type="text" name="username" id="name" placeholder="Team Size" required="" />
+                                                    <input
+                                                        type="text"
+                                                        name="username"
+                                                        id="name"
+                                                        placeholder="Team Size"
+                                                        required="" />
                                                 </div>
                                                 <div class="form-check">
                                                     <input class="form-check-input"
@@ -193,7 +311,13 @@ class corporate_membership_program extends Component {
                                                 </div>
 
                                                 <div class="col-md-12 form-group">
-                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">SUBMIT</span></button>
+                                                    <button
+                                                        disabled={isSubmitDisabled}
+                                                        onSubmit={e => this.handleSubmit(e)}
+                                                        class="theme-btn btn-style-one"
+                                                        type="submit"
+                                                        name="submit-form"
+                                                    ><span class="btn-title">SUBMIT</span></button>
                                                 </div>
                                             </div>
                                         </form>

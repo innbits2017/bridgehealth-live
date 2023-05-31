@@ -13,10 +13,99 @@ const options = [
 
 class Header extends Component {
 
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      username: '',
+      email: '',
+      phone: '',
+      message: '',
+    };
+    // this.handleChange = this.handleChange.bind(this)
+  }
+
+  handleChange = (event) => {
+
+    const { name, value } = event.target;
+    this.setState({ ...this.state, [name]: value });
+    console.log(event)
+  };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+
+    console.log(this.state);
+  };
+
+  saveData = async (e) => {
+
+    console.log(e, "Data is saving");
+
+    e.preventDefault();
+
+    const { email, username, phone, message } = this.state;
+
+    const res = await fetch('http://localhost:8000/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email, username, phone, message
+      }),
+    });
+
+    const data = await res.json();
+    console.log(data);
+
+    if (data.status === 401 || !data) {
+      console.log('error');
+    } else {
+      this.setState({ show: true, email: '', username: '', phone: '', message: '' });
+      console.log('Data saved');
+    }
+
+  }
+
+
+  sendEmail = async (e) => {
+    e.preventDefault();
+
+    const { email, username } = this.state;
+
+    const res = await fetch('http://localhost:8000/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email, username
+      }),
+    });
+
+    const data = await res.json();
+    console.log(data);
+
+    if (data.status === 401 || !data) {
+      console.log('error');
+    } else {
+      this.setState({ show: true, email: '', username: '' });
+      console.log('Email sent');
+    }
+  };
+
+
   state = {
     scrolled: false
   };
   render() {
+
+
+    const { username, email } = this.state;
+    const isSubmitDisabled = username === '' || email === ''
+
     const { scrolled } = this.state;
     return (
       <>
@@ -182,34 +271,42 @@ class Header extends Component {
                         </a>
                     </div>    */}
 
-          <Popup trigger={<div class="top-right flotright1"><a class="top-right flotright1" href="#">  <img src={require('../../assets/images/Group53.png')} alt=""  className='talkexpert'/></a></div>
+          <Popup trigger={<div class="top-right flotright1"><a class="top-right flotright1" href="#">  <img src={require('../../assets/images/Group53.png')} alt="" className='talkexpert' /></a></div>
           } position="bottom">
             <div class="contact-form-area">
 
               {/* <!-- Contact Form--> */}
               <div class="contact-form">
-                <form>
+                <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e)}}   action="#">
                   {/* <form ref={form} onSubmit={sendEmail}> */}
 
                   <div class="row clearfix">
                     <div class="col-md-12 form-group">
                       <input
                         type="text"
-                        name="name"
+                        value={this.state.username}
+                        onChange={e => this.handleChange(e)}
+                        name="username"
                         id="name"
                         placeholder="Name*"
-                        required="" />
+                        required={true} />
                     </div>
 
                     <div class="col-md-12 form-group">
-                      <input type="email"
+                      <input
+                        type="email"
+                        value={this.state.email}
+                        onChange={e => this.handleChange(e)}
                         name="email"
                         id="email"
                         placeholder="Email*"
-                        required="" />
+                        required={true} />
                     </div>
                     <div class="col-md-12 form-group">
-                      <input type="phone"
+                      <input
+                        type="phone"
+                        value={this.state.phone}
+                        onChange={e => this.handleChange(e)}
                         name="phone"
                         id="phone"
                         placeholder="Phone*"
@@ -219,6 +316,8 @@ class Header extends Component {
                     <div class="col-md-12 form-group">
                       <textarea
                         name="message"
+                        value={this.state.message}
+                        onChange={e => this.handleChange(e)}
                         id="message"
                         placeholder="Message"
                       ></textarea>
@@ -231,7 +330,13 @@ class Header extends Component {
                       </label>
                     </div>
                     <div class="col-md-12 form-group">
-                      <button class="theme-btn btn-style-one btncontact" type="submit" name="submit-form"><span class="btn-title">SUBMIT</span></button>
+                      <button
+                        class="theme-btn btn-style-one btncontact"
+                        type="submit"
+                        name="submit-form"
+                        disabled={isSubmitDisabled}
+                        onSubmit={e => this.handleSubmit(e)}
+                      ><span class="btn-title">SUBMIT</span></button>
                     </div>
                   </div>
                 </form>

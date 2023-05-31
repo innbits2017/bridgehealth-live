@@ -2,7 +2,98 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class Footer extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            username: '',
+            email: '',
+            phone: '',
+            message: '',
+        };
+        // this.handleChange = this.handleChange.bind(this)
+    }
+
+    handleChange = (event) => {
+
+        const { name, value } = event.target;
+        this.setState({ ...this.state, [name]: value });
+        console.log(event)
+    };
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+
+        console.log(this.state);
+    };
+
+    saveData = async (e) => {
+
+        console.log(e, "Data is saving");
+
+        e.preventDefault();
+
+        const { email, username, phone, message } = this.state;
+
+        const res = await fetch('http://localhost:8000/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email, username, phone, message
+            }),
+        });
+
+        const data = await res.json();
+        console.log(data);
+
+        if (data.status === 401 || !data) {
+            console.log('error');
+        } else {
+            this.setState({ show: true, email: '', username: '', phone: '', message: '' });
+            console.log('Data saved');
+        }
+
+    }
+
+
+    sendEmail = async (e) => {
+        e.preventDefault();
+
+        const { email, username } = this.state;
+
+        const res = await fetch('http://localhost:8000/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email, username
+            }),
+        });
+
+        const data = await res.json();
+        console.log(data);
+
+        if (data.status === 401 || !data) {
+            console.log('error');
+        } else {
+            this.setState({ show: true, email: '', username: '' });
+            console.log('Email sent');
+        }
+    };
+
+
+
+
     render() {
+
+
+        const { username, email } = this.state;
+        const isSubmitDisabled = username === '' || email === ''
+
         return (
             <>
                 <footer class="main-footer">
@@ -72,18 +163,40 @@ class Footer extends Component {
 
                                             {/* <!-- Contact Form--> */}
                                             <div class="contact-form">
-                                                <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
+                                                <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} action="#" id="contact-form">
                                                     <div class="row clearfix">
 
                                                         <div class="col-md-12 form-group">
                                                             <label for="email" style={{ marginLeft: 20 + '%' }}>Get in touch with us</label>
-                                                            <input type="text" name="name" id="name" placeholder="Name*" required="" className='inputfooter' />
+                                                            <input
+                                                                type="text"
+                                                                name="username"
+                                                                value={this.state.username}
+                                                                onChange={e => this.handleChange(e)}
+                                                                id="name"
+                                                                placeholder="Name*"
+                                                                required=""
+                                                                className='inputfooter' />
                                                         </div>
                                                         <div class="col-md-12 form-group">
-                                                            <input type="email" name="email" id="email" placeholder="Email ID" required="" className='inputfooter' />
+                                                            <input
+                                                                type="email"
+                                                                name="email"
+                                                                value={this.state.email}
+                                                                onChange={e => this.handleChange(e)}
+                                                                id="email"
+                                                                placeholder="Email ID"
+                                                                required=""
+                                                                className='inputfooter' />
                                                         </div>
                                                         <div class="col-md-12 form-group">
-                                                            <button class="theme-btn btn-style-one footer-btn" type="submit" name="submit-form"><span class="btn-title">SUBMIT</span></button>
+                                                            <button
+                                                                disabled={isSubmitDisabled}
+                                                                onSubmit={e => this.handleSubmit(e)}
+                                                                class="theme-btn btn-style-one footer-btn"
+                                                                type="submit"
+                                                                name="submit-form"
+                                                            ><span class="btn-title">SUBMIT</span></button>
                                                         </div>
 
                                                     </div>

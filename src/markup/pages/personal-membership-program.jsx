@@ -12,8 +12,96 @@ const aboutbg = require('./../../assets/images/shape/b2c2.png');
 
 class b2cmembership extends Component {
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      username: '',
+      email: '',
+      phone: '',
+      message: '',
+    };
+    // this.handleChange = this.handleChange.bind(this)
+  }
+
+  handleChange = (event) => {
+
+    const { name, value } = event.target;
+    this.setState({ ...this.state, [name]: value });
+    console.log(event)
+  };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+
+    console.log(this.state);
+  };
+
+  saveData = async (e) => {
+
+    console.log(e, "Data is saving");
+
+    e.preventDefault();
+
+    const { email, username, phone, message } = this.state;
+
+    const res = await fetch('http://localhost:8000/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email, username, phone, message
+      }),
+    });
+
+    const data = await res.json();
+    console.log(data);
+
+    if (data.status === 401 || !data) {
+      console.log('error');
+    } else {
+      this.setState({ show: true, email: '', username: '', phone: '', message: '' });
+      console.log('Data saved');
+    }
+
+  }
+
+
+  sendEmail = async (e) => {
+    e.preventDefault();
+
+    const { email, username } = this.state;
+
+    const res = await fetch('http://localhost:8000/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email, username
+      }),
+    });
+
+    const data = await res.json();
+    console.log(data);
+
+    if (data.status === 401 || !data) {
+      console.log('error');
+    } else {
+      this.setState({ show: true, email: '', username: '' });
+      console.log('Email sent');
+    }
+  };
+
+
+
 
   render() {
+
+    const { username, email } = this.state;
+    const isSubmitDisabled = username === '' || email === ''
+
     return (
       <>
         <Header />
@@ -21,35 +109,35 @@ class b2cmembership extends Component {
         <section class="team-section padding">
           {/* About Section Two */}
           <section class="container-fluid">
-              <div class="row align-items-center auto-container">
+            <div class="row align-items-center auto-container">
 
-                <div class="col-lg-6">
-                  <div class="content-box marginTop40header">
+              <div class="col-lg-6">
+                <div class="content-box marginTop40header">
 
-                    <div class="sec-title text-center textleft personal">
-                      <h2 className='textleft'>
-                        <span className='headeingcolorblack'> Your  </span> 
-                        <span className='headeingcolorblue'>Good Health </span> <br></br>
-                        <span className='headeingcolorblack'>is Our Plan</span>
-                      </h2>
-                      <h3 className='textleft marginTop40 b2c-heading'>Choose from a selection of<br></br> Annual Preventive Health plans
-                      </h3>
-                    </div>
-                    <button class="theme-btn btn-style-one b2q" type="submit" name="submit-form">
-                      <span class="btn-title" >Book Now</span>
-                    </button>
-
-
+                  <div class="sec-title text-center textleft personal">
+                    <h2 className='textleft'>
+                      <span className='headeingcolorblack'> Your  </span>
+                      <span className='headeingcolorblue'>Good Health </span> <br></br>
+                      <span className='headeingcolorblack'>is Our Plan</span>
+                    </h2>
+                    <h3 className='textleft marginTop40 b2c-heading'>Choose from a selection of<br></br> Annual Preventive Health plans
+                    </h3>
                   </div>
+                  <button class="theme-btn btn-style-one b2q" type="submit" name="submit-form">
+                    <span class="btn-title" >Book Now</span>
+                  </button>
+
+
                 </div>
-                <div class="col-lg-6">
-                  <div class="image-wrapper imgright">
-                    <div class="image-one">
-                      <img src={require('../../assets/images/shape/image2.png')} alt="" className='imgwidth' />
-                    </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="image-wrapper imgright">
+                  <div class="image-one">
+                    <img src={require('../../assets/images/shape/image2.png')} alt="" className='imgwidth' />
                   </div>
                 </div>
               </div>
+            </div>
           </section>
         </section>
         {/* <b2c_page /> */}
@@ -83,14 +171,14 @@ class b2cmembership extends Component {
         <section class="contact-section">
 
           <div class="container-fluid annualback">
-            
+
             <div class="row">
 
               <div class="col-lg-6">
                 <div class="contact-form-area">
 
                   <div class="sec-title persona3">
-                    <h2 style={{fontSize: 48 + 'px'}}> 
+                    <h2 style={{ fontSize: 48 + 'px' }}>
                       <span className='headeingcolorblack'>Why </span>
                       <span className='headeingcolorblue'> Annual </span><br></br>
                       <span className='headeingcolorblack'>Health Plans?</span>
@@ -109,7 +197,7 @@ class b2cmembership extends Component {
                       </li>
                       <li>
                         <img className='listicon6' src={require('../../assets/images/shape/b13.png')} alt="" />
-                        Discover any hidden health <span style={{marginLeft: 3 + 'rem'}}>conditions</span>
+                        Discover any hidden health <span style={{ marginLeft: 3 + 'rem' }}>conditions</span>
                       </li>
                       <li>
                         <img className='listicon6' src={require('../../assets/images/shape/b12.png')} alt="" />
@@ -117,7 +205,7 @@ class b2cmembership extends Component {
                       </li>
                       <li>
                         <img className='listicon6' src={require('../../assets/images/shape/b14.png')} alt="" />
-                        Implement lifestyle changes <br></br> <span style={{marginLeft: 3 + 'rem'}}>for better quality of life</span>
+                        Implement lifestyle changes <br></br> <span style={{ marginLeft: 3 + 'rem' }}>for better quality of life</span>
                       </li>
                     </ul>
 
@@ -128,7 +216,7 @@ class b2cmembership extends Component {
 
 
                       <div class="col-md-12 form-group">
-                        <button class="theme-btn btn-style-one" type="submit" name="submit-form" style={{marginLeft: 12 + 'rem'}}>
+                        <button class="theme-btn btn-style-one" type="submit" name="submit-form" style={{ marginLeft: 12 + 'rem' }}>
                           <span class="btn-title">Say YES!</span></button>
                       </div>
                     </div>
@@ -138,10 +226,10 @@ class b2cmembership extends Component {
               <div class="col-lg-6">
                 <div class="image-wrapper">
                   <div class="image-one">
-                    <img src={require('../../assets/images/shape/b2c3.png')} alt="" className='b2cimg' /> 
+                    <img src={require('../../assets/images/shape/b2c3.png')} alt="" className='b2cimg' />
                   </div>
                   <div>
-                  <img className='listicon8' src={require('../../assets/images/shape/icons.png')} alt="" />
+                    <img className='listicon8' src={require('../../assets/images/shape/icons.png')} alt="" />
                   </div>
                 </div>
               </div>
@@ -172,8 +260,8 @@ class b2cmembership extends Component {
                     {/* <h4 className='textleft marginTop40'>A host of benefits await you as soon as you say <span className='headeingcolorblue'> YES</span>
           </h4> */}
                     <p>
-                      Preventive healthcare helps in predicting & <br></br>preventing 
-                      serious health conditions while<br></br> prolonging your life. 
+                      Preventive healthcare helps in predicting & <br></br>preventing
+                      serious health conditions while<br></br> prolonging your life.
                       It also helps you in making <br></br>proactive choices regarding your mental health<br></br> and lifestyle to stay fit at all times
                     </p>
 
@@ -802,15 +890,36 @@ class b2cmembership extends Component {
                   {/* <!-- Contact Form--> */}
                   <div class="contact-form" style={{ marginTop: 5 + 'rem' }}>
                     {/* <p>Reach out to us and we'll help you in setting up the best of <span className='headeingcolorblue'>Preventive Healthcare</span> Services for your teams.</p> */}
-                    <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
+                    <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} action="#" id="contact-form">
                       <div class="row clearfix">
                         <div class="col-md-12 form-group">
-                          <input type="text" name="username" id="name" placeholder="Name*" required="" />
+                          <input
+                            type="text"
+                            name="username"
+                            value={this.state.username}
+                            onChange={e => this.handleChange(e)}
+                            id="name"
+                            placeholder="Name*"
+                            required="" />
                         </div>
                         <div class="col-md-12 form-group">
-                          <input type="text" name="username" id="name" placeholder="Email*" required="" />
+                          <input
+                            type="email"
+                            name="email"
+                            value={this.state.email}
+                            onChange={e => this.handleChange(e)}
+                            id="name"
+                            placeholder="Email*"
+                            required="" />
                         </div>  <div class="col-md-12 form-group">
-                          <input type="text" name="username" id="name" placeholder="Phone*" required="" />
+                          <input
+                            type="phone"
+                            name="phone"
+                            value={this.state.phone}
+                            onChange={e => this.handleChange(e)}
+                            id="name"
+                            placeholder="Phone*"
+                            required="" />
                         </div>
 
                         <div class="form-check">
@@ -821,8 +930,13 @@ class b2cmembership extends Component {
                           </label>
                         </div>
                         <div class="col-md-12 form-group">
-                          <button class="theme-btn btn-style-three" type="submit" name="submit-form">
-                            <span class="btn-title" style={{fontSize: 20 + 'px'}}>SUBMIT</span></button>
+                          <button
+                            disabled={isSubmitDisabled}
+                            onSubmit={e => this.handleSubmit(e)}
+                            class="theme-btn btn-style-three"
+                            type="submit"
+                            name="submit-form">
+                            <span class="btn-title" style={{ fontSize: 20 + 'px' }}>SUBMIT</span></button>
                         </div>
                       </div>
                     </form>
