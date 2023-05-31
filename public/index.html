@@ -95,38 +95,9 @@
 }
 
 .mcd-menu li:hover > a {
-  color: #e67e22;
-}
-/* .mcd-menu li a.active {
-  position: relative;
-  color: #e67e22;
-  border:0;
-  box-shadow: 0 0 5px #DDD;
-  -moz-box-shadow: 0 0 5px #DDD;
-  -webkit-box-shadow: 0 0 5px #DDD;
-  border-left: 4px solid #e67e22;
-  border-right: 4px solid #e67e22;
-  margin: 0 -4px;
-}
-.mcd-menu li a.active:before {
-  content: "";
-  position: absolute;
-  top: 42%;
-  left: 0;
-  border-left: 5px solid #e67e22;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
+  color: #0074A7;
 }
 
-.mcd-menu li a.active:after {
-  content: "";
-  position: absolute;
-  top: 42%;
-  right: 0;
-  border-right: 5px solid #e67e22;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-} */
 
 @-webkit-keyframes moveFromTop {
     from {
@@ -191,7 +162,7 @@
     height: auto;
     min-width: 200px;
     padding: 0;
-    margin-left: 67% !important;
+    margin-left: 65% !important;
     margin: 0;
     background: #99BB5E;
     border-radius: 8px 26px 8px 26px;
@@ -219,39 +190,23 @@
   display: block;
   opacity: 1;
   visibility: visible;
-  left:250px;
+  left:240px;
 }
 .mcd-menu li ul li a {
   padding: 0px 12px;
     text-align: left;
     border: 0;
-    font-size: 13px;
+    font-size: 16px;
     color: #FFF;
     height: auto;
 }
-.mcd-menu li ul li a i {
-  font-size: 16px;
-  display: inline-block;
-  margin: 0 10px 0 0;
-}
+
 .mcd-menu li ul li ul {
-  margin-left: -450px !important;
+  margin-left: -430px !important;
   top: 0;
   border: 0;
 }  
-/* .mcd-menu li ul li ul:before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: -9px;
-  border-right: 5px solid #e67e22;
-  border-bottom: 5px solid transparent;
-  border-top: 5px solid transparent;
-} */
-/* .mcd-menu li ul li:hover > ul {
-  top: 0px;
-  left: 200px;
-} */
+
 
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
     .mcd-menu {
@@ -331,7 +286,6 @@
 		position:absolute;
 		bottom:0px;
 		left:0;
-		background:#e67e22;
 		color:#FFF;
 		min-width:100%;
 		text-transform:lowercase;
@@ -361,13 +315,11 @@
 		left:35px;
 		top: 45px;
 		border:0;
-		border-top:4px solid #e67e22;
 	}
 	.mcd-menu li ul li ul li > ul:before {
 		left:30px;
 		top: -9px;
 		border:0;
-		border-bottom:5px solid #e67e22;
 		border-left:5px solid transparent;
 		border-right:5px solid transparent;
 	}
@@ -395,15 +347,18 @@
     height: auto;
     min-width: 200px;
     padding: 0;
-    margin-left: 37% !important;
-    margin: 0;
+    margin-left: 22% !important;
+    margin-top: -1%;
     background: #99BB5E;
   }
 	.mcd-menu li a { 
     position: relative;
     padding: 12px 16px;
     height: 34px;
-    width: 50px;
+	}
+  .mcd-menu li a img{ 
+    min-width: 24px;
+    padding-right: 4px;
 	}
 	.mcd-menu li a small { 
 		display: none;
@@ -438,8 +393,9 @@
 		left:50px;
 	}
 	.mcd-menu li ul li > ul, .mcd-menu li ul li ul li > ul {
-		min-width:150px;
-	}
+    min-width: 150px;
+    margin-left: -90% !important;
+  	}
 	.mcd-menu li ul li:hover > ul {
 		left:180px;
 		min-width:150px;
@@ -448,13 +404,11 @@
 		left:35px;
 		top: 45px;
 		border:0;
-		border-top:4px solid #e67e22;
 	}
 	.mcd-menu li ul li ul li > ul:before {
 		left:30px;
 		top: -9px;
 		border:0;
-		border-bottom:5px solid #e67e22;
 		border-left:5px solid transparent;
 		border-right:5px solid transparent;
 	}

@@ -10,35 +10,6 @@ import emailjs from "@emailjs/browser";
 import 'reactjs-popup/dist/index.css';
 
 
-// var getSidebar = document.querySelector('nav');
-// var getToggle = document.getElementsByClassName('toggle');
-// for (var i = 0; i <= getToggle.length; i++) {
-//     getToggle[i].addEventListener('click', function () {
-//         getSidebar.classList.toggle('active');
-//     });
-// }
-// const form = useRef();
-// const sendEmail = (e) => {
-//     e.preventDefault();
-
-//     emailjs
-//       .sendForm(
-//         "service_cycmuhk",
-//         "template_13ae89n",
-//         form.current,
-//         "JSZmw0kbX06_nyyqv"
-//       )
-//       .then(
-//         (result) => {
-//           console.log(result.text);
-//           console.log("message sent");
-//         },
-//         (error) => {
-//           console.log(error.text);
-//         }
-//       );
-//     }
-
 class Index extends Component {
 
     constructor(props) {
@@ -288,7 +259,7 @@ class Index extends Component {
                                     <div class="content-box">
                                         <div class="sec-title">
                                             <div class="text1 textpadding" style={{ marginRight: 40 + 'px' }}>Predict the onset of
-                                                <span className='headeingcolorblack'> hidden illnesses</span> and<br></br>health conditions, prevent them by <br></br>undergoing tests, check-ups and progress<br></br> towards good health.
+                                                <span className='headeingcolorblack'> hidden illnesses</span> and health conditions, prevent them by undergoing tests, check-ups and progress towards good health.
                                             </div>
                                         </div>
                                         <ul className='listicon10'>

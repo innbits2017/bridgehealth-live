@@ -39,7 +39,7 @@ class Header extends Component {
             <nav>
               <ul class="mcd-menu">
                 <li>
-                  <a href="">
+                  <a href="#">
                     <img src={require('../../assets/images/Group3.png')} alt="" />
                   </a>
                   <ul>
@@ -78,7 +78,7 @@ class Header extends Component {
                   </ul>
                 </li>
                 <li>
-                  <a href="" class="active">
+                  <a href="#" class="active">
                     <img src={require('../../assets/images/Group.png')} alt="" />
 
                   </a>
@@ -99,7 +99,7 @@ class Header extends Component {
               </ul> */}
                 </li>
                 <li>
-                  <a href="">
+                  <a href="#">
                     <img src={require('../../assets/images/Group1.png')} alt="" />
                   </a>
                   {/* <ul>
@@ -119,7 +119,7 @@ class Header extends Component {
               </ul> */}
                 </li>
                 <li>
-                  <a href="">
+                  <a href="#">
                     <img src={require('../../assets/images/Group2.png')} alt="" />
                   </a>
                   {/* <ul>
