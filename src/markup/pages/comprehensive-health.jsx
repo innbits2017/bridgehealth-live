@@ -191,32 +191,32 @@ class comprehensiveHealth extends Component {
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Automated blood pressure measurement
                                         </li>
-                                        <br></br>
+                                        
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Lung function tests
                                         </li>
-                                        <br></br>
+                                        
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Wearable devices or sensors
                                         </li>
-                                        <br></br>
+                                        
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Imaging tests like CT scans and MRIs
                                         </li>
-                                        <br></br>
+                                        
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Virtual consultations using telemedicine
                                         </li>
-                                        <br></br>
+                                        
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Advanced infectious disease testing
                                         </li>
-                                        <br></br>
+                                        
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Blood tests for cholesterol, blood sugar, and other health indicators
@@ -233,32 +233,32 @@ class comprehensiveHealth extends Component {
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Cardiac tests like ECGs
                                         </li>
-                                        <br></br>
+                                        
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Cognitive tests
                                         </li>
-                                        <br></br>
+                                        
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Pharmacogenetic testing
                                         </li>
-                                        <br></br>
+                                        
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             AI-powered algorithms to analyze health data
                                         </li>
-                                        <br></br>
+                                        
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Mental health screening using AI-powered tools
                                         </li>
-                                        <br></br>
+                                        
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Point-of-care testing using handheld devices
                                         </li>
-                                        <br></br>
+                                        
                                         <li>
                                             <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Body composition analysis using bioelectrical impedance or similar technology

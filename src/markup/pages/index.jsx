@@ -263,15 +263,15 @@ class Index extends Component {
                                             </div>
                                         </div>
                                         <ul className='listicon10'>
-                                            <li style={{ fontSize: 21 + 'px' }}>
+                                            <li>
                                                 <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" />
                                                 Get a detailed assessment report
                                             </li>
-                                            <li style={{ fontSize: 21 + 'px' }}>
+                                            <li>
                                                 <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" />
                                                 Health score built on 7 parameters
                                             </li>
-                                            <li style={{ fontSize: 21 + 'px' }}>
+                                            <li>
                                                 <img className='listicon1' src={require('../../assets/images/shape/favicon-logo1.png')} alt="" />
                                                 Pre and Post score comparisons
                                             </li>

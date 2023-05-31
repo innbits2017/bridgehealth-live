@@ -10194,7 +10194,13 @@ img.lazy-image.loaded {
 	margin-left: 0rem;
 	text-transform: capitalize;
 }
+.listicon  li {
+	margin-bottom: 10px;
+	margin-left: 0rem;
+	text-transform: capitalize;
+	line-height: 50px;
 
+}
 .listicon10 {
 	margin-bottom: 10px;
 	margin-left: 2rem;
@@ -10203,10 +10209,10 @@ img.lazy-image.loaded {
 ul,
 li {
 	list-style: none;
-	padding: 4px;
-	margin: 0px;
-	font-size: 26px;
-	line-height: 33px;
+    padding: 4px;
+    margin: 0px;
+    font-size: 24px;
+    line-height: 35px;
 
 }
 
@@ -10218,8 +10224,8 @@ li {
 }
 
 .listicon2 {
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 20px;
 	margin-right: 10px;
 	text-transform: capitalize;
 }
@@ -11347,11 +11353,14 @@ hr {
 		box-shadow: 1px 1px 5px 2px #817f7f96;
 		margin-left: 0%;
 		background: #fff;
-		padding: 38px;
+		padding: 18px;
 		margin-top: 28px;
 		border-radius: 15px;
 	}
-
+	.font22 {
+		font-size: 20px;
+		text-align: justify;
+	}
 	.testimonial-section .slick-next {
 		position: absolute;
 		right: 0;
@@ -11813,8 +11822,8 @@ hr {
 		list-style: none;
 		padding: 4px;
 		margin: 0px;
-		font-size: 18px !important;
-		line-height: 28px;
+		font-size: 18px;
+		line-height: 39px;
 	}
 
 	/* .btn-style-one {
