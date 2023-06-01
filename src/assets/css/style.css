@@ -212,13 +212,13 @@ figure {
 }
 
 .btn-style-one {
-    color: #ffffff;
-    font-weight: 600;
-    text-transform: capitalize;
-    border-radius: 30px;
-    background-color: #1963C6;
-    margin-top: 20px;
-    margin-left: 0rem;
+	color: #ffffff;
+	font-weight: 600;
+	text-transform: capitalize;
+	border-radius: 30px;
+	background-color: #1963C6;
+	margin-top: 20px;
+	margin-left: 0rem;
 }
 
 .btn-style-seven {
@@ -300,11 +300,11 @@ figure {
 
 .btn-style-one .btn-title {
 	position: relative;
-    z-index: 1;
-    line-height: 44px;
-    font-size: 22px;
-    padding: 8px 35px !important;
-    border-radius: 24px;
+	z-index: 1;
+	line-height: 44px;
+	font-size: 22px;
+	padding: 8px 35px !important;
+	border-radius: 24px;
 }
 
 .btn-style-four .btn-title {
@@ -10194,12 +10194,14 @@ img.lazy-image.loaded {
 	margin-left: 0rem;
 	text-transform: capitalize;
 }
-.listicon  li {
+
+.listicon li {
 	margin-left: 0rem;
 	text-transform: capitalize;
 	line-height: 45px;
 
 }
+
 .listicon10 {
 	margin-bottom: 10px;
 	margin-left: 2rem;
@@ -10208,9 +10210,9 @@ img.lazy-image.loaded {
 ul,
 li {
 	list-style: none;
-    padding: 4px;
-    margin: 0px;
-    font-size: 24px;
+	padding: 4px;
+	margin: 0px;
+	font-size: 24px;
 
 }
 
@@ -11127,11 +11129,11 @@ a:not([href]):not([tabindex]) {
 }
 
 .b2cimgcenter h1 {
-    text-align: center;
-    margin-top: 20%;
-    padding-right: 25%;
-    padding-left: 25%;
-    font-size: 30px;
+	text-align: center;
+	margin-top: 20%;
+	padding-right: 25%;
+	padding-left: 25%;
+	font-size: 30px;
 }
 
 
@@ -11141,10 +11143,11 @@ a:not([href]):not([tabindex]) {
 	padding-right: 20%;
 	padding-left: 25%;
 }
-.font30
-{
+
+.font30 {
 	font-size: 30px !important;
 }
+
 .b2cimgcenter h3 {
 	text-align: center;
 }
@@ -11330,25 +11333,29 @@ hr {
 		margin-left: 0% !important;
 		margin-right: 0% !important;
 	}
-	.marginto90
-	{
+
+	.marginto90 {
 		margin-top: 100%;
 	}
+
 	.font30 {
 		font-size: 20px !important;
 	}
+
 	.b2cimgcenter {
 		background-color: #E5E5E7;
-		background-image:none !important;
+		background-image: none !important;
 		height: auto !important;
 		padding-bottom: 50px;
 	}
+
 	.b2cimgcenter p {
 		text-align: center;
 		margin-top: 0%;
 		padding-right: 0%;
 		padding-left: 0%;
 	}
+
 	.b2cimgcenter h1 {
 		text-align: center;
 		margin-top: 20%;
@@ -11356,9 +11363,10 @@ hr {
 		padding-left: 0%;
 		font-size: 30px;
 	}
+
 	.b2cimgcenter .theme-btn {
-	    margin-left: 30%;
-    margin-top: 5%;
+		margin-left: 30%;
+		margin-top: 5%;
 	}
 
 	.imgright {
@@ -11389,10 +11397,12 @@ hr {
 		margin-top: 28px;
 		border-radius: 15px;
 	}
+
 	.font22 {
 		font-size: 20px;
 		text-align: justify;
 	}
+
 	.testimonial-section .slick-next {
 		position: absolute;
 		right: 0;
@@ -11516,10 +11526,10 @@ hr {
 	}
 
 	.main-footer .footer-logo {
-	    position: relative;
-    margin-top: 0%;
-    margin-bottom: -40px;
-    margin-left: 0%;
+		position: relative;
+		margin-top: 0%;
+		margin-bottom: -40px;
+		margin-left: 0%;
 	}
 
 	.main-footer .footer-widget {
@@ -11552,10 +11562,10 @@ hr {
 
 	[role=tooltip].popup-content {
 		width: 300px !important;
-    box-shadow: 0 0 3px rgba(0, 0, 0, .16);
-    border-radius: 5px;
-    margin-top: -20%;
-    margin-left: -6% !important;
+		box-shadow: 0 0 3px rgba(0, 0, 0, .16);
+		border-radius: 5px;
+		margin-top: -20%;
+		margin-left: -6% !important;
 	}
 
 	.team-section {
@@ -12040,16 +12050,19 @@ hr {
 		color: #25283a;
 		margin: 0;
 	}
+
 	.sec-title .text1 {
 		padding-top: 25px;
 		font-size: 16px;
 		text-align: center;
 		line-height: 28px;
 	}
+
 	.box .textpara {
 		font-size: 16.3px;
 		padding-left: 28px;
 	}
+
 	.expertiseback1 {
 		background-image: none !important;
 	}
@@ -12278,8 +12291,8 @@ hr {
 
 .btncontact {
 	background: #fff !important;
-    color: #000 !important;
-    margin-left: 20%;
+	color: #000 !important;
+	margin-left: 20%;
 }
 
 .flotright1 {
@@ -12298,10 +12311,10 @@ hr {
 }
 
 
-.popup-arrow
-{
+.popup-arrow {
 	display: none !important;
 }
+
 .popup {
 	position: fixed;
 	width: 100%;
@@ -12312,10 +12325,10 @@ hr {
 	bottom: 0;
 	margin: auto;
 	padding: 1rem;
-	background-color: rgba(0,0,0, 0.5);
-  }
-  
-  .popup_inner {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup_inner {
 	position: absolute;
 	left: 25%;
 	right: 25%;
@@ -12324,9 +12337,101 @@ hr {
 	margin: auto;
 	background: white;
 	padding: 1rem;
-  }
-  .listicon6
-  {
+}
+
+.listicon6 {
 	width: 30px;
 	margin-right: 10px;
-  }
+}
+
+
+.search-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	border: 1px solid;
+	width: 400px;
+	height: 40px;
+	border-radius: 12px;
+}
+
+.search-button {
+	position: absolute;
+	right: 10px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.search-container input {
+	margin-left: 10px;
+	color: #606060;
+}
+
+.filter-search {
+	position: relative;
+	display: flex;
+	align-items: center;
+	border: 1px solid;
+	width: 8%;
+	height: 40px;
+	border-radius: 12px;
+}
+
+.search-fil {
+	display: flex;
+}
+
+.search-fil select {
+	margin-left: 20px;
+}
+
+
+.job-card {
+	display: flex;
+	flex-direction: row;
+	width: 85%;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	padding: 25px;
+	margin-bottom: 40px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.job-card-header {
+	flex: 1;
+}
+
+.job-title {
+	margin: 5px;
+}
+
+.job-location,
+.job-department,
+.job-timing {
+	margin: 8px 0;
+}
+
+.job-card-footer {
+	/* display: flex; */
+	justify-content: flex-end;
+}
+
+.view-position {
+	/* margin-right: 530px; */
+	color: blue;
+	text-decoration: none;
+}
+
+.career-head {
+	padding-left: 14%;
+}
+
+.career-head1 {
+	padding-bottom: 0;
+	padding-left: 31%;
+}
+
+.car-head2 {
+	margin-left: 60px;
+}

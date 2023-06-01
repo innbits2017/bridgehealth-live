@@ -31,6 +31,7 @@ import diabetes from './pages/diabetes';
 import manageWeight from './pages/manage-weight';
 import hypertension from './pages/hypertension';
 import aboutUs from './pages/aboutus';
+import Career from './pages/career';
 
 class Router extends Component {
     render() {
@@ -68,6 +69,9 @@ class Router extends Component {
                         <Route path='/manage-weight' component={manageWeight}/>
                         <Route path='/hyper-tension' component={hypertension}/>
                         <Route path='/about-us' component={aboutUs}/>
+
+                        <Route path='/career' component={Career}/>
+
                     </Switch>
                     <BackToTop />
                 </div>
