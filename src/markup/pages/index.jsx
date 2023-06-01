@@ -8,10 +8,20 @@ import Testimonial2 from '../element/testimonial2';
 import Popup from 'reactjs-popup';
 import emailjs from "@emailjs/browser";
 import 'reactjs-popup/dist/index.css';
+import { Modal, Button } from "react-bootstrap";
+import CaseStudy from '../element/case-study';
 
 
 class Index extends Component {
-  
+    state = {
+        isOpen: false
+      };
+      state1 = {
+        isOpen1: false
+      };
+      openModal = () => this.setState({ isOpen: true });
+      closeModal = () => this.setState({ isOpen: false });
+
     constructor(props) {
         super(props);
 
@@ -21,7 +31,6 @@ class Index extends Component {
             phone: '',
             message: '',
         };
-        // this.handleChange = this.handleChange.bind(this)
       }
     
     handleChange = (event) => {
@@ -102,6 +111,7 @@ class Index extends Component {
             <>
 
                 <Header />
+              
                 {/* <!-- About --> */}
                 <div class="video-background-holder">
                     <div class="video-background-overlay"></div>
@@ -375,7 +385,7 @@ class Index extends Component {
                             <div class="row marginbutton30">
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div className=''>
+                                    <div onClick={this.openModal}>
                                         <div class="grow bozhover">
 
                                             <img src={require('../../assets/images/shape/doctor.png')} alt="" />
@@ -389,16 +399,11 @@ class Index extends Component {
                                     </div>
                                 </div>
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <img src={require('../../assets/images/shape/s1.png')} alt="" />
-                                        <h2 className='expertise'>Chronic Care Programs</h2>
+                                    <div>
+                                    <CaseStudy/>
 
-                                        <p>
-                                            Find hope and healing through our specialized chronic care offerings
-                                        </p>
-                                    </div>
                                 </div>
-
+                                </div>
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
                                         <a href={'/comprehensive-health-checks'}>
@@ -813,9 +818,21 @@ class Index extends Component {
                         </div>
                     </div>
                 </section>
+                <Modal show={this.state.isOpen} onHide={this.closeModal}>
+                    <Modal.Header closeButton>
+                        <span><img class="width50" src={require('../../assets/images/shape/popup1.png')} alt="" />
+                            <p className='width50p'>Personal Membership Programme</p>
+                        </span>
+                        <span>
+                            <img class="width50" src={require('../../assets/images/shape/popup2.png')} alt="" />
+                            <p className='width50p'>Corporate Membership Programme</p>
+                        </span>
 
+                    </Modal.Header>
 
+                </Modal>
 
+            
                 <Footer />
             </>
         )

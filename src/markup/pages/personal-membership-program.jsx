@@ -210,7 +210,7 @@ class b2cmembership extends Component {
 
 
                       <div class="col-md-12 form-group">
-                        <button class="theme-btn btn-style-one" type="submit" name="submit-form" style={{ marginLeft: 12 + 'rem' }}>
+                        <button class="theme-btn btn-style-one" type="submit" name="submit-form">
                           <span class="btn-title">Say YES!</span></button>
                       </div>
                     </div>

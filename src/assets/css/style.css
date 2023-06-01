@@ -11333,8 +11333,14 @@ hr {
 		margin-left: 0% !important;
 		margin-right: 0% !important;
 	}
-
-	.marginto90 {
+	.width50p {
+		text-align: center;
+		line-height: 14px;
+		font-size: 12px;
+		margin-top: 10px;
+	}
+	.marginto90
+	{
 		margin-top: 100%;
 	}
 
@@ -12435,3 +12441,36 @@ hr {
 .car-head2 {
 	margin-left: 60px;
 }
+  
+  .width50
+  {
+	width: 96%;
+  }
+  .width50p
+  {
+	text-align: center;
+    line-height: 24px;
+    margin-top: 15px;
+  }
+  .modal-header .close {
+    padding: 1rem 1rem;
+    margin: -1rem -3rem -3rem !important;
+}
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 7px 12px;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: 0.3rem;
+    width: 93%;
+    border-top-right-radius: 0.3rem;
+}
+/* body > div.fade.modal.show > div
+{
+	@media (min-width: 576px)
+	{
+.modal-dialog {
+    max-width: 58%;
+    margin: 1.75rem auto;
+} */

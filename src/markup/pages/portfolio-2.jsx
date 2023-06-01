@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
-import Brand1 from '../element/brand1'
+import brand from '../element/brand'
 import PortfolioFilter2 from '../element/portfolio-filter2'
 
 const aboutbg = require('./../../assets/images/background/image-11.jpg');
@@ -67,7 +67,7 @@ class Portfolio2 extends Component {
 
 
                 {/* <!-- Sponsors Section --> */}
-                <Brand1/>
+                <brand/>
                 
                 <Footer/>
             </>

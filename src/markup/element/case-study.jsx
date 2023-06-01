@@ -3,100 +3,49 @@ import React, { Component } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-// const testimonialbg1 = require('./../../assets/images/background/image-9.jpg');
-
-const caseStudy_content = [
-    {
-        image: require('./../../assets/images/gallery/gallery-24.jpg'),
-        h5: 'Business Consultancy',
-        h2: 'Brixer Donald Company Busines',
-    },
-    {
-        image: require('./../../assets/images/gallery/gallery-24.jpg'),
-        h5: 'Business Consultancy',
-        h2: 'Brixer Donald Company Busines',
-    },
-    {
-        image: require('./../../assets/images/gallery/gallery-24.jpg'),
-        h5: 'Business Consultancy',
-        h2: 'Brixer Donald Company Busines',
-    },
-    {
-        image: require('./../../assets/images/gallery/gallery-24.jpg'),
-        h5: 'Business Consultancy',
-        h2: 'Brixer Donald Company Busines',
-    },
-    {
-        image: require('./../../assets/images/gallery/gallery-24.jpg'),
-        h5: 'Business Consultancy',
-        h2: 'Brixer Donald Company Busines',
-    },
-    {
-        image: require('./../../assets/images/gallery/gallery-24.jpg'),
-        h5: 'Business Consultancy',
-        h2: 'Brixer Donald Company Busines',
-    },
-    {
-        image: require('./../../assets/images/gallery/gallery-24.jpg'),
-        h5: 'Business Consultancy',
-        h2: 'Brixer Donald Company Busines',
-    }
-]
-
+import { Modal, Button } from "react-bootstrap";
 
 class CaseStudy extends Component {
+    state = {
+        isOpen: false
+      };
+      state1 = {
+        isOpen1: false
+      };
+      openModal = () => this.setState({ isOpen: true });
+      closeModal = () => this.setState({ isOpen: false });
 
 
     render() {
 
-        const settings = {
-            dots: false,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: false,
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        };
+     
         return (
             <>
+            
+            <div class="grow bozhover"  onClick={this.openModal}>
+                                        <img src={require('../../assets/images/shape/s1.png')} alt="" />
+                                        <h2 className='expertise'>Chronic Care Programs</h2>
 
-                <Slider {...settings}>
-                    {caseStudy_content.map((item, id) => (
-                        <div class="case-block-one">
-                            <div class="inner-box">
-                                <div class="image"><img src={item.image} alt="" /></div>
-                                <div class="overlay">
-                                    <div>
-                                        <h5>{item.h5}</h5>
-                                        <h2>{item.h2}</h2>
+                                        <p>
+                                            Find hope and healing through our specialized chronic care offerings
+                                        </p>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
-            </>
+            <Modal show={this.state.isOpen} onHide={this.closeModal}>
+                    <Modal.Header closeButton>
+                        <span><img class="width50" src={require('../../assets/images/shape/popup3.png')} alt="" />
+                            <p className='width50p'>Diabetes Management</p>
+                        </span>
+                        <span>
+                            <img class="width50" src={require('../../assets/images/shape/popup4.png')} alt="" />
+                            <p className='width50p'>Hypertension Management</p>
+                        </span>
+                        <span>
+                            <img class="width50" src={require('../../assets/images/shape/popup5.png')} alt="" />
+                            <p className='width50p'>Weight Management</p>
+                        </span>
+                    </Modal.Header>
+
+                </Modal></> 
         )
     }
 }
