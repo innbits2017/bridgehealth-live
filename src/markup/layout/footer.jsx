@@ -124,10 +124,11 @@ class Footer extends Component {
                                                 <div class="col-md-4">
                                                     <ul>
                                                         <li><a href={'/'}>Home</a></li>
-                                                        <li><Link to={'/#'}>Our Services</Link></li>
-                                                        <li><Link to={'/#'}>Memberships</Link></li>
+                                                        <li><a href={'/our-services'}>Our Services</a></li>
+                                                        <li><a href={'/personal-membership-program'}>Personal Memberships</a></li>
+                                                        <li><a href={'/corporate-membership-program'}>Corporate Memberships</a></li>
                                                         <li><Link to={'/#'}>Health Risk Assessment</Link></li>
-                                                        <li><Link to={'/#'}>Experience Center</Link></li>
+                                                        {/* <li><Link to={'/#'}>Experience Center</Link></li> */}
 
                                                     </ul>
                                                 </div>
@@ -145,10 +146,10 @@ class Footer extends Component {
                                                     <ul>
 
 
-                                                        <li><Link to={'/#'}>Careers</Link></li>
+                                                        <li><a href={'/career'}>Careers</a></li>
                                                         <li><a href={'/contact-us'}>Contact</a></li>
-                                                        <li><Link to={'/#'}>Terms & Conditions</Link></li>
-                                                        <li><Link to={'/#'}>FAQ</Link></li>
+                                                        <li><a href={'/#'}>Terms & Conditions</a></li>
+                                                        <li><a href={'/#'}>FAQ</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -226,7 +227,7 @@ class Footer extends Component {
 
                     <div class="auto-container copy">
                         <div class="footer-bottom">
-                            <div class="copyright">Copyright © 2022 Bridge Health, All Rights Reserved</div>
+                            <div class="copyright">Copyright © 2023 Bridge Health, All Rights Reserved</div>
                         </div>
                     </div>
                 </footer>
