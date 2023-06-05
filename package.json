@@ -15,17 +15,14 @@
     "react": "^16.13.0",
     "react-accessible-accordion": "^3.0.1",
     "react-animated-slider": "^2.0.0",
-    "react-bootstrap": "^1.6.7",
-    "react-bootstrap-sidebar-menu": "^2.0.3",
+    "react-bootstrap": "^1.0.0-beta.17",
     "react-circular-progressbar": "^2.0.3",
     "react-countup": "^4.3.3",
     "react-dom": "^16.13.0",
-    "react-minimal-side-navigation": "^1.9.2",
-    "react-modal": "^3.16.1",
     "react-modal-video": "^1.2.3",
     "react-range": "^1.6.3",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "4.0.3",
+    "react-scripts": "3.4.0",
     "react-select": "^3.1.0",
     "react-slick": "^0.25.2",
     "react-stickynode": "^3.0.2",
@@ -54,9 +51,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.7",
-    "@types/react-dom": "^18.2.4"
   }
 }
