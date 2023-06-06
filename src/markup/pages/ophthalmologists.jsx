@@ -58,8 +58,9 @@ class ophthalmologist extends Component {
                                             Our eyes are the windows to the world. They allow us to see every detail and colour, near and far. However, because of our modern-day habits and work,
                                             we spend too much time looking at screens which strains our eyes. We also tend to blink less which leads to dry eyes. These factors contribute to poor eyesight in children and adults.
                                         </p>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
                                     </div>
+                                    <button class="theme-btn btn-style-one" ><span class="btn-title">BOOK NOW</span></button>
+
 
                                 </div>
                             </div>
@@ -98,7 +99,6 @@ class ophthalmologist extends Component {
 
                                     <div class="contact-form">
 
-                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
                                             <div class="row clearfix">
 
 
@@ -107,14 +107,13 @@ class ophthalmologist extends Component {
                                                     <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
                                                 </div>
                                             </div>
-                                        </form>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/ph1.png')} alt="" className='width84' />
+                                        <img src={require('../../assets/images/shape/eye3.png')} alt="" className='width84' />
                                     </div>
                                 </div>
                             </div>
@@ -146,43 +145,33 @@ class ophthalmologist extends Component {
                                     </h2>
                                     <ul className='listicon'>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Eye care tips
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Consult with expert ophthalmologists
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Expert advice on eye surgeries and procedures
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Diet plans to help you maintain good eyesight
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Laser eye enhancement surgery
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Glasses and contact lens prescriptions
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Comprehensive eye tests and examinations
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Cataract surgery
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Treatment of alignment disorders
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Prescriptions and medicines for various eye conditions like conjunctivitis
                                         </li>
                                     </ul>

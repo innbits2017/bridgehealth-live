@@ -10196,12 +10196,23 @@ img.lazy-image.loaded {
 }
 
 .listicon li {
-	margin-left: 0rem;
+	margin-left: 4rem;
 	text-transform: capitalize;
 	line-height: 45px;
 
 }
+.listicon li::before {
+	position: absolute;
+    z-index: 2;
+    width: 32px;
+    background-size: contain;
+    height: 30px;
+    margin-left: -55px !important;
+    margin-top: 14px;
+    content: '';
+	background-image:url(../images/shape/nu11.png);
 
+}
 .listicon10 {
 	margin-bottom: 10px;
 	margin-left: 2rem;
@@ -10210,9 +10221,9 @@ img.lazy-image.loaded {
 ul,
 li {
 	list-style: none;
-	padding: 4px;
-	margin: 0px;
-	font-size: 24px;
+    padding: 6px;
+    margin: 0px;
+    font-size: 20px;
 
 }
 
@@ -10612,7 +10623,6 @@ figure:hover+span {
 }
 
 .pricing-plan li {
-	border-bottom: 1px dotted #ededed;
 	font-size: 16px;
 	list-style: none;
 }
@@ -11274,11 +11284,11 @@ hr {
 }
 
 .width64 {
-	width: 64%;
+	width: 100%;
 }
 
 .width84 {
-	width: 85%;
+	/* width: 85%; */
 }
 
 .phybox {
@@ -11329,9 +11339,15 @@ hr {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	.pull-right {
+		float: none !important;
+	}
 	.cont-box {
 		margin-left: 0% !important;
 		margin-right: 0% !important;
+	}
+	.width50 {
+		width: 90% !important;
 	}
 	.width50p {
 		text-align: center;
@@ -11478,7 +11494,7 @@ hr {
 		float: right;
 		color: #fff;
 		line-height: 35px;
-		margin-top: 45%;
+		margin-top: 45% !important;
 		margin-bottom: 11px;
 		margin-right: -0% !important;
 	}
@@ -11618,7 +11634,7 @@ hr {
 	}
 
 	.box {
-		margin-top: 50px !important;
+		margin-top: 25px !important;
 	}
 
 	.clmbackground {
@@ -11648,24 +11664,24 @@ hr {
 	}
 
 	.aboutbox {
-		background-color: #FFFFFF;
-		border-radius: 25px;
+background-image: url(../images/shape/aboutshape.png);	
+	border-radius: 25px;
 		width: 100% !important;
 		display: inline-block;
 		margin-right: 0px !important;
 		box-sizing: border-box;
-		border: 2px solid #ccc;
-		padding: 10px;
+		/* border: 2px solid #ccc; */
+		padding: 0px !important;
 		margin: 2px;
 	}
 
 	.aboutcont h3 {
-		font-size: 20px;
-		color: #1963C6 !important;
+		font-size: 14px !important;
+		padding-top: 9px;
 	}
 
 	.aboutcont p {
-		font-size: 13.885px !important;
+		font-size: 9.885px !important;
 	}
 
 	.main-footer {
@@ -11836,7 +11852,7 @@ hr {
 	}
 
 	.btn-style-one {
-		margin-left: 4rem;
+		margin-left: 3rem;
 	}
 
 	.martop90 {
@@ -11857,7 +11873,7 @@ hr {
 
 	.image-two {
 		position: relative !important;
-		top: -50px;
+		/* top: -50px; */
 	}
 
 	.contact-section {
@@ -12065,10 +12081,12 @@ hr {
 	}
 
 	.box .textpara {
-		font-size: 16.3px;
-		padding-left: 28px;
+	    font-size: 15.3px;
+    padding-left: 7px;
 	}
-
+	.box img {
+		height: 86px;
+	}
 	.expertiseback1 {
 		background-image: none !important;
 	}
@@ -12095,7 +12113,7 @@ hr {
 	margin-right: 5%;
 	background: #fff;
 	padding: 30px;
-	margin-top: -50px;
+	margin-top: -33%;
 	border-radius: 15px;
 }
 
@@ -12157,16 +12175,16 @@ hr {
 
 .aboutbox {
 
-	background-color: #FFFFFF;
+	/* background-color: #FFFFFF; */
+	background-image: url(../images/shape/aboutshape.png);	
+    background-repeat: no-repeat;
+    background-size: contain;
 	border-radius: 25px;
 	width: 35%;
 	/* Adjust the width as desired */
 	display: inline-block;
 	margin-right: 50px;
-	/* Add some space between containers */
-	box-sizing: border-box;
-	border: 2px solid #ccc;
-	padding: 20px;
+	padding: 40px;
 }
 
 .aboutcont {
@@ -12175,8 +12193,10 @@ hr {
 }
 
 .aboutcont h3 {
-	color: #1963C6 !important;
-}
+    color: #1963C6 !important;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;}
 
 .aboutmar {
 	margin-bottom: 100px;
@@ -12302,11 +12322,15 @@ hr {
 }
 
 .flotright1 {
-	margin-top: 6%;
+	margin-top: 9% !important;
 	margin-right: -5%;
 }
 
 @media only screen and (max-width: 600px) {
+	.martop {
+		margin-top: 35px !important;
+		margin-left: 0% !important;
+	}
 	#popup-2 {
 		width: 300px !important;
 		box-shadow: 0 0 3px rgba(0, 0, 0, .16);
@@ -12444,13 +12468,13 @@ hr {
   
   .width50
   {
-	width: 96%;
-  }
+	width: 97%;  }
   .width50p
   {
 	text-align: center;
-    line-height: 24px;
+    line-height: 30px;
     margin-top: 15px;
+    font-size: 21px;
   }
   .modal-header .close {
     padding: 1rem 1rem;
@@ -12466,11 +12490,19 @@ hr {
     width: 93%;
     border-top-right-radius: 0.3rem;
 }
-/* body > div.fade.modal.show > div
+@media (min-width: 576px)
 {
-	@media (min-width: 576px)
-	{
 .modal-dialog {
-    max-width: 58%;
+    max-width: 650px !important;
     margin: 1.75rem auto;
-} */
+}
+}
+.textaligncenter
+{
+	text-align: center !important;
+}
+.martobutton
+{
+	margin-top: -7%;
+	margin-bottom: 7%;
+}

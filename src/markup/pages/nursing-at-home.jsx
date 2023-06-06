@@ -66,9 +66,9 @@ class nursingAtHome extends Component {
                                             Sometimes, especially for the elderly and for patients suffering from chronic illnesses, it becomes a challenge to travel to a hospital to get timely care.
                                             Furthermore, bedridden patients need timely care and assistance at all times to perform their daily routines.
                                         </p>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
 
                                     </div>
+                                    <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
 
 
 
@@ -111,7 +111,7 @@ class nursingAtHome extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/ps1.png')} alt="" className='width84' />
+                                        <img src={require('../../assets/images/shape/nursing3.png')} alt="" className='width84' />
                                     </div>
                                 </div>
                             </div>
@@ -125,51 +125,39 @@ class nursingAtHome extends Component {
                             </h2>
                                     <ul className='listicon'>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Assistance with daily routine 
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Administering medicines and treatments
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Hygiene care
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Movement assistance
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Critical nursing care
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Palliative care
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Tracheostomy care
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Spinal injury care
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             PEG feeding
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Catheter, stoma, and bowel management
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Domiciliary care
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Ventilator care and management
                                         </li>
 

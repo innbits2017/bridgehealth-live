@@ -41,23 +41,25 @@ class dermatology extends Component {
                         <div class="row">
 
                             <div class="col-lg-6">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
-                                        <img src={require('../../assets/images/shape/ps1.png')} alt="" className='width64' />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
                                 <div class="contact-form-area">
 
-                                    <div class="sec-title phybox">
+                                    <div class="sec-title phybox1">
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
                                             A good physical appearance is a reflection of youth and confidence. Unfortunately, as we age, our physical appearance deteriorates. This could be in the form of pimples, hair loss, stretch marks, unintended weight gain around the abdominal area, and scarring. Therefore,
                                             it’s important to take care of the physical features of our body so that we always remain confident about how we look.
                                         </p>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+                                        <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
 
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="image-wrapper">
+                                    <div class="image-one">
+                                        <img src={require('../../assets/images/shape/darma.png')} alt="" className='width64' />
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +79,7 @@ class dermatology extends Component {
                     <div class="col-lg-12">
                         <div class="contact-form-area">
 
-                            <div class="sec-title cont-box">
+                            <div class="sec-title cont-box martobutton">
                                 {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                 <p className='font22'>
                                     Our expert dermatologists at Bridge Health know how to give your physical appearance a boost. They will give you expert advice on skin and haircare routines, diet plans, product recommendations, and treatments so that you always look your best!
@@ -131,37 +133,30 @@ class dermatology extends Component {
                                     </div>
                                     <ul className='listicon'>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Hair transplant
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Skincare routine assistance
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Pigmentation treatment
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Face resurfacing
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Stretch mark removal
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Assistance in developing diet plans to <br></br> maintain healthy skin
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Consultations with expert dermatologists
                                         </li>
 

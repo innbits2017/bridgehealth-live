@@ -146,31 +146,24 @@ class pharmacy extends Component {
                                     </div>
                                     <ul className='listicon'>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Easy Booking through our onsite personnel
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Free home delivery of medicines*
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Easy order bookings through email, WhatsApp & direct call
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Emergency & institutional medical supplies available
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             All branded & generic medicines available
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Free mobile-based personal health records access
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Pharmacy opening and running support inside corporate and resident welfare associations
                                         </li>
 

@@ -67,10 +67,10 @@ class elderlyCare extends Component {
                                             Although we may stay young at heart, our body starts ageing. As we grow older, our physical abilities decline
                                             and we might find ourselves slower and more dependent on others for physical assistance.
                                         </p>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
 
                                     </div>
-                                    =
+                                    <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
+
 
                                 </div>
                             </div>
@@ -126,59 +126,49 @@ class elderlyCare extends Component {
                                     <div class="auto-container">
                                         <h2 className='header1'>
                                             <span className='headeingcolorblack'> The</span>
-                                            <span className='headeingcolorblue'>  Bridge Health</span><br></br>
+                                            <span className='headeingcolorblue'>  Bridge Health</span>
                                             <span className='headeingcolorblack'> Advantage </span>
                                         </h2>
 
                                     </div>
                                     <ul className='listicon'>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Home care
                                         </li>
 
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Consults with experts
                                         </li>
 
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Assistive care
                                         </li>
 
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Diet and exercise plans for improved health
                                         </li>
 
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Nursing at home
                                         </li>
 
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Dialysis at home
                                         </li>
 
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Physiotherapy at hom
                                         </li>
 
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Medicine delivered directly to your home
                                         </li>
 
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             X-ray and ECG at home
                                         </li>
 
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Blood and urine sample collection at home
                                         </li>
 

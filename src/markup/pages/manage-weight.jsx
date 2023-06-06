@@ -68,10 +68,10 @@ class manageWeight extends Component {
                                             Weight management is vital for maintaining good health. Failing to manage one's weight can lead to a range of health problems and complications, including an
                                             increased risk of heart disease, stroke, and diabetes. Obesity is linked to a higher risk of high blood pressure, high cholesterol, and sleep apnea.
                                         </p>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
 
                                     </div>
 
+                                    <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
 
                                 </div>
                             </div>
@@ -96,7 +96,7 @@ class manageWeight extends Component {
                                             Conversely, being underweight can lead to malnutrition, a weakened immune system, and osteoporosis. In addition to physical health issues, improper weight management can also have an impact on mental health and wellbeing, including depression, anxiety, and low self-esteem.
                                             It is important to take weight management seriously and seek support from healthcare professionals to help prevent these potential health problems.
                                         </p>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+                                        <button class="theme-btn btn-style-one" ><span class="btn-title">BOOK NOW</span></button>
 
 
                                     </div>
@@ -135,9 +135,9 @@ class manageWeight extends Component {
                                             Diabetes is a chronic condition that affects millions of people worldwide. If left untreated or improperly managed, it can lead to a range of complications,
                                             including nerve damage, blindness, kidney disease, and heart disease. Therefore, proper diabetes care is essential for maintaining good health and preventing these complications.
                                         </p>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
 
                                     </div>
+                                    <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
 
 
 
@@ -165,27 +165,22 @@ class manageWeight extends Component {
                                 <div class="contact-form-area">
                                     <ul className='listicon'>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Assess current health status, weight, BMI, and medical conditions
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Develop personalized weight management plan based on goals, lifestyle, and medical history
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Provide guidance on healthy eating habits and food choices
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Recommend appropriate physical activity and exercise
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Refer to other healthcare professionals as needed
                                         </li>
                                         
@@ -197,27 +192,22 @@ class manageWeight extends Component {
                                 <div class="contact-form-area">
                                     <ul className='listicon'>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Monitor progress and provide ongoing support and encouragement
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Offer resources such as weight management guides and videos
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Collaborate with other healthcare team members for comprehensive care
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Prescription of medications or other medical interventions
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Identify and address emotional or behavioural issues that may be underlying causes for weight issues
                                         </li>
                                        

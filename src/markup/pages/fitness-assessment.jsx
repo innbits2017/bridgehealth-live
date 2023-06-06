@@ -63,9 +63,9 @@ class fitnessAssessment extends Component {
                                             To stay healthy, regular exercise is a must! Regular exercise and keeping our bodies active reduces blood pressure, improves blood circulation, burns excess fat & calories, and reduces the risk of heart ailments.
                                             Taking it a step further, doctors and specialists have developed workout plans based on clinical fact-based evidence with the help of interdisciplinary teams. These programs are proven to have incredible benefits on the overall health of individuals.
                                         </p>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
 
                                     </div>
+                                    <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
 
 
                                 </div>
@@ -80,6 +80,25 @@ class fitnessAssessment extends Component {
                     <div class="auto-container">
                         <div class="row">
 
+                          
+
+
+                            <div class="col-lg-6">
+                                <div class="contact-form-area">
+
+                                    <div class="sec-title phybox1">
+                                        {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
+                                        <p className='font22'>
+                                            The <span style={{ fontWeight: 500 }}>Pro-Fit Program</span> at Bridge Health is designed based on clinical fact-based evidence. Our interdisciplinary team includes medical providers, licensed therapists,
+                                            and exercise specialists. Our qualified trainers have several years of experience in the fitness industry and are available to assist you in creating a customized exercise program for your body type.
+                                        </p>
+                                        <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
@@ -87,25 +106,6 @@ class fitnessAssessment extends Component {
                                     </div>
                                 </div>
                             </div>
-
-
-                            <div class="col-lg-6">
-                                <div class="contact-form-area">
-
-                                    <div class="sec-title phybox">
-                                        {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
-                                        <p className='font22'>
-                                            The <span style={{ fontWeight: 500 }}>Pro-Fit Program</span> at Bridge Health is designed based on clinical fact-based evidence. Our interdisciplinary team includes medical providers, licensed therapists,
-                                            and exercise specialists. Our qualified trainers have several years of experience in the fitness industry and are available to assist you in creating a customized exercise program for your body type.
-                                        </p>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-
 
                         </div>
                     </div>
@@ -224,42 +224,34 @@ class fitnessAssessment extends Component {
                                     </div>
                                     <ul className='listicon'>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Covid compliant atmosphere
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Daily vitals check
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Free trial session
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Early bird introductory offers on packages
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Pay in easy installments
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Flexible hours of workouts in a day
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Medical providers & licensed therapist support
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Supervision by an American Council-certified trainer
                                         </li>
 

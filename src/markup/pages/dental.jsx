@@ -63,9 +63,7 @@ class dental extends Component {
                                         </p>
                                     </div>
 
-                                    <div class="col-md-12 form-group" >
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                    </div>
+                                        <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
                                 </div>
                             </div>
 
@@ -157,7 +155,7 @@ class dental extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/ps1.png')} alt="" className='width84' />
+                                        <img src={require('../../assets/images/shape/dental2.png')} alt="" className='width84' />
                                     </div>
                                 </div>
                             </div>
@@ -171,39 +169,30 @@ class dental extends Component {
                             </h2>
                                     <ul className='listicon'>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Dental hygiene and routine
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Nutrition to maintain healthy teeth and gums
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Expert advice on dental procedures
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Tooth extraction
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Cavity removal and fillings
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Teeth whitening
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Preventive dentistry through fissure sealants and fluoride application
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Implant fixing
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Dentures
                                         </li>
                                     </ul>

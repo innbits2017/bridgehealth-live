@@ -61,10 +61,10 @@ class psychological_Health extends Component {
                                         <p className='font22'>
                                             Unlike physical health issues,<span className='headeingcolorblue'> psychological issues are not as visible. </span>They are generally ignored and are not given as much importance due to societal stigmas. However, if these are ignored for too long, they can affect your intellectual capabilities and overall behaviour.
                                         </p>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
 
                                     </div>
 
+                                    <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
 
                                 </div>
                             </div>
@@ -147,23 +147,18 @@ class psychological_Health extends Component {
                                     </div>
                                     <ul className='listicon'>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Management of eating disorders
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Pre and post-pregnancy mental well-being
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             CBT (Cognitive Behavioural Therapy)
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Mindfulness/Meditation
                                         </li>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Women’s supportive therapy
                                         </li>
 

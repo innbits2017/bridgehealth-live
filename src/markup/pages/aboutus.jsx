@@ -106,11 +106,11 @@ class aboutUs extends Component {
                         <div className='aboutcont '>
                             <div className='aboutbox '>
                                 <h3>OUR VISION</h3>
-                                <p> Spread Happiness <br></br> Through Good Health</p>
+                                <p className='textaligncenter'> Spread Happiness <br></br> Through Good Health</p>
 
                             </div><div className='aboutbox '>
                                 <h3 >OUR MISSION</h3>
-                                <p> Be Your Healthcare <br></br> Companion For Life</p>
+                                <p className='textaligncenter'> Be Your Healthcare <br></br> Companion For Life</p>
                             </div>
                         </div>
 
@@ -203,7 +203,7 @@ class aboutUs extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/apage2.png')} alt="" className='width84' />
+                                        <img src={require('../../assets/images/shape/graph.png')} alt="" className='width84' />
                                     </div>
                                 </div>
                             </div>

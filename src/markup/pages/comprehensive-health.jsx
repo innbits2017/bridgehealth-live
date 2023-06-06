@@ -66,9 +66,9 @@ class comprehensiveHealth extends Component {
                                             Health is defined as a state of complete physical, mental, and social well-being. If even one aspect isn’t satisfied, it means that you are not healthy. Most people today have some sort of vitamin deficiency or suffer from mental health issues like anxiety or depression.
                                             Technology in the form of AI and analytics have been implemented into the healthcare industry for seamless monitoring but are not being utilized effectively by healthcare providers. Therefore, there is a need to evaluate your entire health profile at all times with the highest possible accuracy.
                                         </p>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
 
                                     </div>
+                                    <button class="theme-btn btn-style-one" ><span class="btn-title">BOOK NOW</span></button>
 
                                 </div>
                             </div>
@@ -113,7 +113,7 @@ class comprehensiveHealth extends Component {
                 <section>
 
                     <div class="auto-container heath-margin">
-                        <h2 className='header1'>
+                        <h2 className='header1 textaligncenter'>
                             <span className='headeingcolorblack'> The</span>
                             <span className='headeingcolorblue'>  Bridge Health</span>
                             <span className='headeingcolorblack'> Advantage </span>
@@ -188,37 +188,30 @@ class comprehensiveHealth extends Component {
                                 <div class="contact-form-area">
                                     <ul className='listicon'>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Automated blood pressure measurement
                                         </li>
                                         
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Lung function tests
                                         </li>
                                         
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Wearable devices or sensors
                                         </li>
                                         
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Imaging tests like CT scans and MRIs
                                         </li>
                                         
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Virtual consultations using telemedicine
                                         </li>
                                         
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Advanced infectious disease testing
                                         </li>
                                         
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Blood tests for cholesterol, blood sugar, and other health indicators
                                         </li>
 
@@ -230,37 +223,30 @@ class comprehensiveHealth extends Component {
                                 <div class="contact-form-area">
                                     <ul className='listicon'>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Cardiac tests like ECGs
                                         </li>
                                         
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Cognitive tests
                                         </li>
                                         
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Pharmacogenetic testing
                                         </li>
                                         
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             AI-powered algorithms to analyze health data
                                         </li>
                                         
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Mental health screening using AI-powered tools
                                         </li>
                                         
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Point-of-care testing using handheld devices
                                         </li>
                                         
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Body composition analysis using bioelectrical impedance or similar technology
                                         </li>
                                     </ul>
