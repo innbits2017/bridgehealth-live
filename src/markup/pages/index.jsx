@@ -10,7 +10,7 @@ import emailjs from "@emailjs/browser";
 import 'reactjs-popup/dist/index.css';
 import { Modal, Button } from "react-bootstrap";
 import CaseStudy from '../element/case-study';
-
+const BRIDGE_HEALTH_SITE=process.env.BRIDGE_HEALTH_SITE;
 
 class Index extends Component {
     state = {
@@ -53,7 +53,7 @@ class Index extends Component {
 
         const { email, username, phone, message } = this.state;
 
-        const res = await fetch('https://bridgehealth.in/submit', {
+        const res = await fetch(`${BRIDGE_HEALTH_SITE}/submit`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ class Index extends Component {
 
         const { email, username } = this.state;
 
-        const res = await fetch('https://bridgehealth.in/register', {
+        const res = await fetch(`${BRIDGE_HEALTH_SITE}/register`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
