@@ -16,23 +16,78 @@ class Career extends Component {
         super(props);
         this.state = {
             searchTerm: '',
+
+            jobs: [
+                {
+                    title: 'Client Advisor',
+                    location: 'Bengaluru, Karnataka, India',
+                    department: 'Technology',
+                    timing: 'Full-time'
+                },
+                {
+                    title: 'Client Advisor',
+                    location: 'Bengaluru, Karnataka, India',
+                    department: 'Technology',
+                    timing: 'Full-time'
+                },
+                {
+                    title: 'Client Advisor',
+                    location: 'Bengaluru, Karnataka, India',
+                    department: 'Technology',
+                    timing: 'Full-time'
+                },
+                {
+                    title: 'Client Advisor',
+                    location: 'Bengaluru, Karnataka, India',
+                    department: 'Technology',
+                    timing: 'Full-time'
+                },
+            ],
+            filteredJobs: []
         };
-        // this.handleChange = this.handleChange.bind(this)
     }
+
+    componentDidMount() {
+        // Initially, set filteredJobs to contain all jobs
+        this.setState({ filteredJobs: this.state.jobs });
+      }
 
     handleChange = (event) => {
         console.log("I am in HanndleChange", event.target.value)
-        this.setState({ searchTerm: event.target.value });
+
+        this.setState({ searchTerm: event.target.value }, () => {
+            this.filterJobs();
+        });
+    };
+
+
+    filterJobs = () => {
+        const { searchTerm, jobs } = this.state;
+
+        const filteredJobs = jobs.filter((job) => {
+            const { title, location, department, timing } = job;
+            const lowerSearchTerm = searchTerm.toLowerCase();
+            return (
+                title.toLowerCase().includes(lowerSearchTerm) ||
+                location.toLowerCase().includes(lowerSearchTerm) ||
+                department.toLowerCase().includes(lowerSearchTerm) ||
+                timing.toLowerCase().includes(lowerSearchTerm)
+            );
+        });
+        this.setState({ filteredJobs });
     };
 
     handleSubmit = (event) => {
         console.log("I am in handleSubmit", event);
         event.preventDefault();
-        this.props.onSearch(this.state.searchTerm);
+        // this.props.onSearch(this.state.searchTerm);
+        this.filterJobs();
     };
 
 
     render() {
+
+        const { filteredJobs } = this.state;
         return (
             <>
 
@@ -96,99 +151,103 @@ class Career extends Component {
 
 
                 <section class="contact-section career-head">
-                    <div class="job-card">
-                        <div class="job-card-header">
-                            <h3 class="job-title">Client Advisor</h3>
-                            <p class="job-location"><svg width="20" height="25" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11 13.5C11.6875 13.5 12.2762 13.255 12.7662 12.765C13.2562 12.275 13.5008 11.6867 13.5 11C13.5 10.3125 13.255 9.72375 12.765 9.23375C12.275 8.74375 11.6867 8.49917 11 8.5C10.3125 8.5 9.72375 8.745 9.23375 9.235C8.74375 9.725 8.49917 10.3133 8.5 11C8.5 11.6875 8.745 12.2763 9.235 12.7663C9.725 13.2563 10.3133 13.5008 11 13.5ZM11 25.5313C10.8333 25.5313 10.6667 25.5 10.5 25.4375C10.3333 25.375 10.1875 25.2917 10.0625 25.1875C7.02083 22.5 4.75 20.005 3.25 17.7025C1.75 15.4 1 13.2492 1 11.25C1 8.125 2.00542 5.63542 4.01625 3.78125C6.02708 1.92708 8.355 1 11 1C13.6458 1 15.9742 1.92708 17.985 3.78125C19.9958 5.63542 21.0008 8.125 21 11.25C21 13.25 20.25 15.4013 18.75 17.7038C17.25 20.0063 14.9792 22.5008 11.9375 25.1875C11.8125 25.2917 11.6667 25.375 11.5 25.4375C11.3333 25.5 11.1667 25.5313 11 25.5313Z" stroke="#1963C6" stroke-width="2" />
-                            </svg>
-                                Bengaluru, Karnataka, India</p>
-                            <div class="job-card-footer">
-                                <a href="#" class="view-position">View Position &#8594;</a>
-                            </div>
-                        </div>
-
-                        <div class="job-card-details">
-                            <p class="job-department">Department: Technology</p>
-                            <p class="job-timing"> <svg width="25" height="25" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.25 15.099V9.75H14.75V14.4875V14.9017L15.0429 15.1946L18.9708 19.1225L18.6158 19.475L14.25 15.099ZM14.4875 1.5C7.03391 1.5 1 7.54902 1 15C1 22.451 7.03391 28.5 14.4875 28.5C21.9516 28.5 28 22.4529 28 15C28 7.54706 21.9516 1.5 14.4875 1.5Z" stroke="#1963C6" stroke-width="2" />
-                            </svg> Full-time</p>
-                        </div>
-
-                    </div>
-
-                    <div class="job-card">
-                        <div class="job-card-header">
-                            <h3 class="job-title">Client Advisor</h3>
-                            <p class="job-location"> <svg width="20" height="25" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11 13.5C11.6875 13.5 12.2762 13.255 12.7662 12.765C13.2562 12.275 13.5008 11.6867 13.5 11C13.5 10.3125 13.255 9.72375 12.765 9.23375C12.275 8.74375 11.6867 8.49917 11 8.5C10.3125 8.5 9.72375 8.745 9.23375 9.235C8.74375 9.725 8.49917 10.3133 8.5 11C8.5 11.6875 8.745 12.2763 9.235 12.7663C9.725 13.2563 10.3133 13.5008 11 13.5ZM11 25.5313C10.8333 25.5313 10.6667 25.5 10.5 25.4375C10.3333 25.375 10.1875 25.2917 10.0625 25.1875C7.02083 22.5 4.75 20.005 3.25 17.7025C1.75 15.4 1 13.2492 1 11.25C1 8.125 2.00542 5.63542 4.01625 3.78125C6.02708 1.92708 8.355 1 11 1C13.6458 1 15.9742 1.92708 17.985 3.78125C19.9958 5.63542 21.0008 8.125 21 11.25C21 13.25 20.25 15.4013 18.75 17.7038C17.25 20.0063 14.9792 22.5008 11.9375 25.1875C11.8125 25.2917 11.6667 25.375 11.5 25.4375C11.3333 25.5 11.1667 25.5313 11 25.5313Z" stroke="#1963C6" stroke-width="2" />
-                            </svg>
-                                Bengaluru, Karnataka, India</p>
-                            <div class="job-card-footer">
-                                <a href="#" class="view-position">View Position &#8594;</a>
-                            </div>
-                        </div>
-
-                        <div class="job-card-details">
-                            <p class="job-department">Department: Technology</p>
-                            <p class="job-timing">
-                                <svg width="25" height="25" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M14.25 15.099V9.75H14.75V14.4875V14.9017L15.0429 15.1946L18.9708 19.1225L18.6158 19.475L14.25 15.099ZM14.4875 1.5C7.03391 1.5 1 7.54902 1 15C1 22.451 7.03391 28.5 14.4875 28.5C21.9516 28.5 28 22.4529 28 15C28 7.54706 21.9516 1.5 14.4875 1.5Z" stroke="#1963C6" stroke-width="2" />
+                    {filteredJobs.map((job, index) => (
+                        <div class="job-card" key={index}>
+                            <div class="job-card-header">
+                                <h3 class="job-title">{job.title}</h3>
+                                <p class="job-location"><svg width="20" height="25" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 13.5C11.6875 13.5 12.2762 13.255 12.7662 12.765C13.2562 12.275 13.5008 11.6867 13.5 11C13.5 10.3125 13.255 9.72375 12.765 9.23375C12.275 8.74375 11.6867 8.49917 11 8.5C10.3125 8.5 9.72375 8.745 9.23375 9.235C8.74375 9.725 8.49917 10.3133 8.5 11C8.5 11.6875 8.745 12.2763 9.235 12.7663C9.725 13.2563 10.3133 13.5008 11 13.5ZM11 25.5313C10.8333 25.5313 10.6667 25.5 10.5 25.4375C10.3333 25.375 10.1875 25.2917 10.0625 25.1875C7.02083 22.5 4.75 20.005 3.25 17.7025C1.75 15.4 1 13.2492 1 11.25C1 8.125 2.00542 5.63542 4.01625 3.78125C6.02708 1.92708 8.355 1 11 1C13.6458 1 15.9742 1.92708 17.985 3.78125C19.9958 5.63542 21.0008 8.125 21 11.25C21 13.25 20.25 15.4013 18.75 17.7038C17.25 20.0063 14.9792 22.5008 11.9375 25.1875C11.8125 25.2917 11.6667 25.375 11.5 25.4375C11.3333 25.5 11.1667 25.5313 11 25.5313Z" stroke="#1963C6" stroke-width="2" />
                                 </svg>
-
-                                Full-time</p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="job-card">
-                        <div class="job-card-header">
-                            <h3 class="job-title">Client Advisor</h3>
-                            <p class="job-location"><svg width="20" height="25" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11 13.5C11.6875 13.5 12.2762 13.255 12.7662 12.765C13.2562 12.275 13.5008 11.6867 13.5 11C13.5 10.3125 13.255 9.72375 12.765 9.23375C12.275 8.74375 11.6867 8.49917 11 8.5C10.3125 8.5 9.72375 8.745 9.23375 9.235C8.74375 9.725 8.49917 10.3133 8.5 11C8.5 11.6875 8.745 12.2763 9.235 12.7663C9.725 13.2563 10.3133 13.5008 11 13.5ZM11 25.5313C10.8333 25.5313 10.6667 25.5 10.5 25.4375C10.3333 25.375 10.1875 25.2917 10.0625 25.1875C7.02083 22.5 4.75 20.005 3.25 17.7025C1.75 15.4 1 13.2492 1 11.25C1 8.125 2.00542 5.63542 4.01625 3.78125C6.02708 1.92708 8.355 1 11 1C13.6458 1 15.9742 1.92708 17.985 3.78125C19.9958 5.63542 21.0008 8.125 21 11.25C21 13.25 20.25 15.4013 18.75 17.7038C17.25 20.0063 14.9792 22.5008 11.9375 25.1875C11.8125 25.2917 11.6667 25.375 11.5 25.4375C11.3333 25.5 11.1667 25.5313 11 25.5313Z" stroke="#1963C6" stroke-width="2" />
-                            </svg>
-                                Bengaluru, Karnataka, India</p>
-                            <div class="job-card-footer">
-                                <a href="#" class="view-position">View Position &#8594;</a>
+                                    {job.location}</p>
+                                <div class="job-card-footer">
+                                    <a href="#" class="view-position">View Position &#8594;</a>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="job-card-details">
-                            <p class="job-department">Department: Technology</p>
-                            <p class="job-timing">
-                                <svg width="25" height="25" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div class="job-card-details">
+                                <p class="job-department">Department: {job.department}</p>
+                                <p class="job-timing"> <svg width="25" height="25" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14.25 15.099V9.75H14.75V14.4875V14.9017L15.0429 15.1946L18.9708 19.1225L18.6158 19.475L14.25 15.099ZM14.4875 1.5C7.03391 1.5 1 7.54902 1 15C1 22.451 7.03391 28.5 14.4875 28.5C21.9516 28.5 28 22.4529 28 15C28 7.54706 21.9516 1.5 14.4875 1.5Z" stroke="#1963C6" stroke-width="2" />
-                                </svg>
-
-                                Full-time</p>
-                        </div>
-
-                    </div>
-
-                    <div class="job-card">
-                        <div class="job-card-header">
-                            <h3 class="job-title">Client Advisor</h3>
-                            <p class="job-location"><svg width="20" height="25" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11 13.5C11.6875 13.5 12.2762 13.255 12.7662 12.765C13.2562 12.275 13.5008 11.6867 13.5 11C13.5 10.3125 13.255 9.72375 12.765 9.23375C12.275 8.74375 11.6867 8.49917 11 8.5C10.3125 8.5 9.72375 8.745 9.23375 9.235C8.74375 9.725 8.49917 10.3133 8.5 11C8.5 11.6875 8.745 12.2763 9.235 12.7663C9.725 13.2563 10.3133 13.5008 11 13.5ZM11 25.5313C10.8333 25.5313 10.6667 25.5 10.5 25.4375C10.3333 25.375 10.1875 25.2917 10.0625 25.1875C7.02083 22.5 4.75 20.005 3.25 17.7025C1.75 15.4 1 13.2492 1 11.25C1 8.125 2.00542 5.63542 4.01625 3.78125C6.02708 1.92708 8.355 1 11 1C13.6458 1 15.9742 1.92708 17.985 3.78125C19.9958 5.63542 21.0008 8.125 21 11.25C21 13.25 20.25 15.4013 18.75 17.7038C17.25 20.0063 14.9792 22.5008 11.9375 25.1875C11.8125 25.2917 11.6667 25.375 11.5 25.4375C11.3333 25.5 11.1667 25.5313 11 25.5313Z" stroke="#1963C6" stroke-width="2" />
-                            </svg>
-                                Bengaluru, Karnataka, India</p>
-                            <div class="job-card-footer">
-                                <a href="#" class="view-position">View Position &#8594;</a>
+                                </svg> {job.timing}</p>
                             </div>
-                        </div>
 
-                        <div class="job-card-details">
-                            <p class="job-department">Department: Technology</p>
-                            <p class="job-timing">
-                                <svg width="25" height="25" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M14.25 15.099V9.75H14.75V14.4875V14.9017L15.0429 15.1946L18.9708 19.1225L18.6158 19.475L14.25 15.099ZM14.4875 1.5C7.03391 1.5 1 7.54902 1 15C1 22.451 7.03391 28.5 14.4875 28.5C21.9516 28.5 28 22.4529 28 15C28 7.54706 21.9516 1.5 14.4875 1.5Z" stroke="#1963C6" stroke-width="2" />
+                        </div>
+                    ))}
+                    {/* {filteredJobs.map((job, index) => (
+                        <div class="job-card" key={index}>
+                            <div class="job-card-header">
+                                <h3 class="job-title">{job.title}</h3>
+                                <p class="job-location"> <svg width="20" height="25" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 13.5C11.6875 13.5 12.2762 13.255 12.7662 12.765C13.2562 12.275 13.5008 11.6867 13.5 11C13.5 10.3125 13.255 9.72375 12.765 9.23375C12.275 8.74375 11.6867 8.49917 11 8.5C10.3125 8.5 9.72375 8.745 9.23375 9.235C8.74375 9.725 8.49917 10.3133 8.5 11C8.5 11.6875 8.745 12.2763 9.235 12.7663C9.725 13.2563 10.3133 13.5008 11 13.5ZM11 25.5313C10.8333 25.5313 10.6667 25.5 10.5 25.4375C10.3333 25.375 10.1875 25.2917 10.0625 25.1875C7.02083 22.5 4.75 20.005 3.25 17.7025C1.75 15.4 1 13.2492 1 11.25C1 8.125 2.00542 5.63542 4.01625 3.78125C6.02708 1.92708 8.355 1 11 1C13.6458 1 15.9742 1.92708 17.985 3.78125C19.9958 5.63542 21.0008 8.125 21 11.25C21 13.25 20.25 15.4013 18.75 17.7038C17.25 20.0063 14.9792 22.5008 11.9375 25.1875C11.8125 25.2917 11.6667 25.375 11.5 25.4375C11.3333 25.5 11.1667 25.5313 11 25.5313Z" stroke="#1963C6" stroke-width="2" />
                                 </svg>
+                                    {job.location}</p>
+                                <div class="job-card-footer">
+                                    <a href="#" class="view-position">View Position &#8594;</a>
+                                </div>
+                            </div>
 
-                                Full-time</p>
+                            <div class="job-card-details">
+                                <p class="job-department">Department: {job.department}</p>
+                                <p class="job-timing">
+                                    <svg width="25" height="25" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.25 15.099V9.75H14.75V14.4875V14.9017L15.0429 15.1946L18.9708 19.1225L18.6158 19.475L14.25 15.099ZM14.4875 1.5C7.03391 1.5 1 7.54902 1 15C1 22.451 7.03391 28.5 14.4875 28.5C21.9516 28.5 28 22.4529 28 15C28 7.54706 21.9516 1.5 14.4875 1.5Z" stroke="#1963C6" stroke-width="2" />
+                                    </svg>
+
+                                    {job.timing}</p>
+                            </div>
+
                         </div>
+                    ))}
+                    {filteredJobs.map((job, index) => (
+                        <div class="job-card" key={index}>
+                            <div class="job-card-header">
+                                <h3 class="job-title">{job.title}</h3>
+                                <p class="job-location"><svg width="20" height="25" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 13.5C11.6875 13.5 12.2762 13.255 12.7662 12.765C13.2562 12.275 13.5008 11.6867 13.5 11C13.5 10.3125 13.255 9.72375 12.765 9.23375C12.275 8.74375 11.6867 8.49917 11 8.5C10.3125 8.5 9.72375 8.745 9.23375 9.235C8.74375 9.725 8.49917 10.3133 8.5 11C8.5 11.6875 8.745 12.2763 9.235 12.7663C9.725 13.2563 10.3133 13.5008 11 13.5ZM11 25.5313C10.8333 25.5313 10.6667 25.5 10.5 25.4375C10.3333 25.375 10.1875 25.2917 10.0625 25.1875C7.02083 22.5 4.75 20.005 3.25 17.7025C1.75 15.4 1 13.2492 1 11.25C1 8.125 2.00542 5.63542 4.01625 3.78125C6.02708 1.92708 8.355 1 11 1C13.6458 1 15.9742 1.92708 17.985 3.78125C19.9958 5.63542 21.0008 8.125 21 11.25C21 13.25 20.25 15.4013 18.75 17.7038C17.25 20.0063 14.9792 22.5008 11.9375 25.1875C11.8125 25.2917 11.6667 25.375 11.5 25.4375C11.3333 25.5 11.1667 25.5313 11 25.5313Z" stroke="#1963C6" stroke-width="2" />
+                                </svg>
+                                    {job.location}</p>
+                                <div class="job-card-footer">
+                                    <a href="#" class="view-position">View Position &#8594;</a>
+                                </div>
+                            </div>
 
-                    </div>
+                            <div class="job-card-details">
+                                <p class="job-department">Department: {job.department}</p>
+                                <p class="job-timing">
+                                    <svg width="25" height="25" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.25 15.099V9.75H14.75V14.4875V14.9017L15.0429 15.1946L18.9708 19.1225L18.6158 19.475L14.25 15.099ZM14.4875 1.5C7.03391 1.5 1 7.54902 1 15C1 22.451 7.03391 28.5 14.4875 28.5C21.9516 28.5 28 22.4529 28 15C28 7.54706 21.9516 1.5 14.4875 1.5Z" stroke="#1963C6" stroke-width="2" />
+                                    </svg>
+
+                                    {job.timing}</p>
+                            </div>
+
+                        </div>
+                    ))}
+                    {filteredJobs.map((job, index) => (
+                        <div class="job-card" key={index}>
+                            <div class="job-card-header">
+                                <h3 class="job-title">{job.title}</h3>
+                                <p class="job-location"><svg width="20" height="25" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 13.5C11.6875 13.5 12.2762 13.255 12.7662 12.765C13.2562 12.275 13.5008 11.6867 13.5 11C13.5 10.3125 13.255 9.72375 12.765 9.23375C12.275 8.74375 11.6867 8.49917 11 8.5C10.3125 8.5 9.72375 8.745 9.23375 9.235C8.74375 9.725 8.49917 10.3133 8.5 11C8.5 11.6875 8.745 12.2763 9.235 12.7663C9.725 13.2563 10.3133 13.5008 11 13.5ZM11 25.5313C10.8333 25.5313 10.6667 25.5 10.5 25.4375C10.3333 25.375 10.1875 25.2917 10.0625 25.1875C7.02083 22.5 4.75 20.005 3.25 17.7025C1.75 15.4 1 13.2492 1 11.25C1 8.125 2.00542 5.63542 4.01625 3.78125C6.02708 1.92708 8.355 1 11 1C13.6458 1 15.9742 1.92708 17.985 3.78125C19.9958 5.63542 21.0008 8.125 21 11.25C21 13.25 20.25 15.4013 18.75 17.7038C17.25 20.0063 14.9792 22.5008 11.9375 25.1875C11.8125 25.2917 11.6667 25.375 11.5 25.4375C11.3333 25.5 11.1667 25.5313 11 25.5313Z" stroke="#1963C6" stroke-width="2" />
+                                </svg>
+                                    {job.location}</p>
+                                <div class="job-card-footer">
+                                    <a href="#" class="view-position">View Position &#8594;</a>
+                                </div>
+                            </div>
+
+                            <div class="job-card-details">
+                                <p class="job-department">Department: {job.department}</p>
+                                <p class="job-timing">
+                                    <svg width="25" height="25" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.25 15.099V9.75H14.75V14.4875V14.9017L15.0429 15.1946L18.9708 19.1225L18.6158 19.475L14.25 15.099ZM14.4875 1.5C7.03391 1.5 1 7.54902 1 15C1 22.451 7.03391 28.5 14.4875 28.5C21.9516 28.5 28 22.4529 28 15C28 7.54706 21.9516 1.5 14.4875 1.5Z" stroke="#1963C6" stroke-width="2" />
+                                    </svg>
+
+                                    {job.timing}</p>
+                            </div>
+
+                        </div>
+                    ))} */}
 
                 </section>
 
