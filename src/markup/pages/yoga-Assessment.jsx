@@ -220,23 +220,18 @@ class yoga_Assessment extends Component {
                                     </div>
                                     <ul className='listicon'>
                                     <li className='listicon'>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Experienced yoga therapists
                                         </li>
                                         <li className='listicon'>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Customized plans and routines
                                         </li>
                                         <li className='listicon'>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Regular progress updates
                                         </li>
                                         <li className='listicon'>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             General wellbeing and mental fitness programs
                                         </li>
                                         <li className='listicon'>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Therapeutic yoga for effective disease management
                                         </li>
                                     </ul>

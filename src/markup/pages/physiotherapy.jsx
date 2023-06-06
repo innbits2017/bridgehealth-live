@@ -26,10 +26,9 @@ class physiotherapy extends Component {
                                 Schedule a physiotherapy<br></br> session with us
                                 </h3>
                             </div>
-                            <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
-
                         </div>
+
+                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
 
                     </div>
                 </section>
@@ -168,23 +167,18 @@ class physiotherapy extends Component {
                                     </div>
                                     <ul className='listicon'>
                                         <li className='listicon'>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Goal-oriented programs 
                                         </li>
                                         <li className='listicon'>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Regular progress monitoring
                                         </li>
                                         <li className='listicon'>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Personalized programs and sessions with expert guidance from physicians
                                         </li>
                                         <li className='listicon'>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             On-site sessions are available at medical hub
                                         </li>
                                         <li className='listicon'>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Home visits are available across Bangalore
                                         </li>
                                         

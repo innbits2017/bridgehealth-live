@@ -51,15 +51,16 @@ class doctor_consults extends Component {
                     <div class="col-lg-12">
                         <div class="contact-form-area">
 
-                            <div class="sec-title cont-box">
+                            <div class="sec-title cont-box martobutton">
                                 {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                 <p className='font22'>
                                     All of us get sick at some point in life. And whenever we get sick, we always go to the doctor to find out the reason and get the appropriate medicines so that we can better quickly.
                                     In the past, doctor consultations had to be done in the traditional way. You book an appointment, visit the doctor’s office, and get a prescription.
                                 </p>
-                                <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+                                <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
 
                             </div>
+
                         </div>
                     </div>
 
@@ -102,7 +103,7 @@ class doctor_consults extends Component {
                 <section>
 
                     <div class="auto-container">
-                        <h2 className='header1'>
+                        <h2 className='header1 textaligncenter'>
                             <span className='headeingcolorblack'> The</span>
                             <span className='headeingcolorblue'>  Bridge Health</span>
                             <span className='headeingcolorblack'> Advantage </span>
@@ -111,7 +112,6 @@ class doctor_consults extends Component {
 
                             <div class="col-sm-4">
                                 <img src={require('../../assets/images/gallery/fair1.png')} alt="" class="avtar" />
-
                                 <p className='treat'>Book your consultation<br></br> easily and quickly</p>
                             </div>
                             <div class="col-sm-4">

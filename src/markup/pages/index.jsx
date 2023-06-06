@@ -15,12 +15,12 @@ import CaseStudy from '../element/case-study';
 class Index extends Component {
     state = {
         isOpen: false
-      };
-      state1 = {
+    };
+    state1 = {
         isOpen1: false
-      };
-      openModal = () => this.setState({ isOpen: true });
-      closeModal = () => this.setState({ isOpen: false });
+    };
+    openModal = () => this.setState({ isOpen: true });
+    closeModal = () => this.setState({ isOpen: false });
 
     constructor(props) {
         super(props);
@@ -31,8 +31,8 @@ class Index extends Component {
             phone: '',
             message: '',
         };
-      }
-    
+    }
+
     handleChange = (event) => {
         const { name, value } = event.target;
         this.setState({ ...this.state, [name]: value });
@@ -53,7 +53,7 @@ class Index extends Component {
 
         const { email, username, phone, message } = this.state;
 
-        const res = await fetch('http://localhost:8000/submit', {
+        const res = await fetch('https://bridgehealth.in/submit', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ class Index extends Component {
 
         const { email, username } = this.state;
 
-        const res = await fetch('http://localhost:8000/register', {
+        const res = await fetch('https://bridgehealth.in/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -111,7 +111,7 @@ class Index extends Component {
             <>
 
                 <Header />
-              
+
                 {/* <!-- About --> */}
                 <div class="video-background-holder">
                     <div class="video-background-overlay"></div>
@@ -260,7 +260,7 @@ class Index extends Component {
 
 
 
-                  <section class="team-section">
+                <section class="team-section">
                     <div class="auto-container">
                         <div class="sec-title text-center marginbutton">
                             <h2 style={{ fontSize: 43 + 'px', lineHeight: 50 + 'px' }}> <span className=' headeingcolorblue'> Annual Preventive </span>
@@ -400,9 +400,9 @@ class Index extends Component {
                                 </div>
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div>
-                                    <CaseStudy/>
+                                        <CaseStudy />
 
-                                </div>
+                                    </div>
                                 </div>
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                     <div class="grow bozhover">
@@ -820,19 +820,23 @@ class Index extends Component {
                 </section>
                 <Modal show={this.state.isOpen} onHide={this.closeModal}>
                     <Modal.Header closeButton>
-                        <span><img class="width50" src={require('../../assets/images/shape/popup1.png')} alt="" />
-                            <p className='width50p'>Personal Membership Programme</p>
-                        </span>
-                        <span>
-                            <img class="width50" src={require('../../assets/images/shape/popup2.png')} alt="" />
-                            <p className='width50p'>Corporate Membership Programme</p>
-                        </span>
+                        <a href={'/personal-membership-program'}>
+                            <span><img class="width50" src={require('../../assets/images/shape/popup1.png')} alt="" />
+                                <p className='width50p'>Personal Membership Programme</p>
+                            </span>
+                        </a>
+                        <a href={'/corporate-membership-program'}>
+                            <span>
+                                <img class="width50" src={require('../../assets/images/shape/popup2.png')} alt="" />
+                                <p className='width50p'>Corporate Membership Programme</p>
+                            </span>
+                        </a>
 
                     </Modal.Header>
 
                 </Modal>
 
-            
+
                 <Footer />
             </>
         )

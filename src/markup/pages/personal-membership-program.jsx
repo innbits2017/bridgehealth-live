@@ -312,32 +312,6 @@ class b2cmembership extends Component {
                 <p class="small text-white">No VAT &amp; No Hidden Costs</p> */}
 
               </div>
-
-              {/* <div class="card-body d-flex flex-column">
-                <ul class="list-unstyled text-right">
-                  <li>Custom Design</li>
-                  <li>Choice of Layout</li>
-                  <li>Number of Pages Included</li>
-                  <li>Update and add pages (CMS)</li>
-                  <li>Mobile Friendly Design</li>
-                  <li>Homepage Banner Designs</li>
-                  <li>Professional Logo Design</li>
-                  <li>Search Engine Friendly</li>
-                  <li>Search Engine Submission</li>
-                  <li>Website Contact Form</li>
-                  <li>Built on Wordpress</li>
-                  <li>Search Engine Optimisation</li>
-                  <li>Website Visitor Statistics</li>
-                  <li>Full Website Ownership</li>
-                  <li>Google Maps Integration</li>
-                  <li>5GB SSD Disk Space</li>
-                  <li>5 Email Addresses</li>
-                  <li>Free Domain Name for 1 year</li>
-                  <li>Free Website hosting for 1 year</li>
-                  <li>UK Email Support</li>
-                  <li>Built in the UK, NO outsourcing</li>
-                </ul>
-              </div> */}
             </div>
 
 
@@ -381,78 +355,6 @@ class b2cmembership extends Component {
                   <li>Price</li>
                 </ul>
               </div>
-              {/* <div class="card-body d-flex flex-column">
-
-                <ul class="list-unstyled text-center">
-                  <li>
-                    <span class="d-lg-none">Custom Design  </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <span class="d-lg-none">Choice of Layout </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>1 - 3 Pages</li>
-                  <li>
-                    <span class="d-lg-none">Update and add pages (CMS) </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <span class="d-lg-none">Mobile Friendly Design  </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Homepage Banner Designs  </span>
-                    1</li>
-                  <li>
-                    <span class="d-lg-none">Professional Logo Design </span>
-                    <i class="fa fa-times" data-unicode="f00d"></i></li>
-                  <li>
-                    <span class="d-lg-none">Search Engine Friendly </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Search Engine Submission </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Website Contact Form </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Built on Wordpress </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Search Engine Optimisation </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Website Visitor Statistics </span>
-                    <i class="fa fa-times" data-unicode="f00d"></i></li>
-                  <li>
-                    <span class="d-lg-none">Full Website Ownership </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Google Maps Integration </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">5GB SSD Disk Space </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">5 Email Addresses </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Free Domain Name for 1 year </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Free Website hosting for 1 year </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">UK Telephone/Email Support </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Built in the UK, NO outsourcing </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-
-                </ul>
-                <a class="btn btn-lg btn-block btn-dark mt-auto" href="#">Get started</a>
-
-              </div> */}
             </div>
 
             <div class="w-100 d-md-none mt-4"></div>
@@ -529,30 +431,10 @@ class b2cmembership extends Component {
                     <span class="d-lg-none">Full Website Ownership </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>₹7999</li>
-                  {/* <li>
-                    <span class="d-lg-none">Google Maps Integration </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">5GB SSD Disk Space </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">5 Email Addresses </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Free Domain Name for 1 year </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Free Website hosting for 1 year </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">UK Telephone/Email Support </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Built in the UK, NO outsourcing </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li> */}
-
+<li>  <button class="theme-btn btn-style-one" type="submit" name="submit-form">
+                            <span class="btn-title" >SAY YES!</span></button>
+                        </li>
                 </ul>
-                {/* <a class="btn btn-lg btn-block btn-dark mt-auto" href="#">Get started</a> */}
 
               </div>
             </div>
@@ -632,30 +514,11 @@ class b2cmembership extends Component {
                     <span class="d-lg-none">Full Website Ownership </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>₹16999</li>
-                  {/* <li>
-                    <span class="d-lg-none">Google Maps Integration </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">5GB SSD Disk Space </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">5 Email Addresses </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Free Domain Name for 1 year </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Free Website hosting for 1 year </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">UK Telephone/Email Support </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Built in the UK, NO outsourcing </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li> */}
-
+                  <li>₹7999</li>
+<li>  <button class="theme-btn btn-style-one" type="submit" name="submit-form">
+                            <span class="btn-title" >SAY YES!</span></button>
+                        </li>
                 </ul>
-                {/* <a class="btn btn-lg btn-block btn-dark mt-auto" href="#">Get started</a> */}
 
               </div>
             </div>
@@ -732,31 +595,11 @@ class b2cmembership extends Component {
                     <span class="d-lg-none">Full Website Ownership </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>₹24999</li>
-                  {/* <li>
-                    <span class="d-lg-none">Google Maps Integration </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">5GB SSD Disk Space </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">5 Email Addresses </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Free Domain Name for 1 year </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Free Website hosting for 1 year </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">UK Telephone/Email Support </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Built in the UK, NO outsourcing </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li> */}
-
+                  <li>₹7999</li>
+<li>  <button class="theme-btn btn-style-one" type="submit" name="submit-form">
+                            <span class="btn-title" >SAY YES!</span></button>
+                        </li>
                 </ul>
-                {/* <a class="btn btn-lg btn-block btn-dark mt-auto" href="#">Get started</a> */}
-
               </div>
             </div>
             <div class="w-100 d-md-none mt-4"></div>
@@ -764,8 +607,6 @@ class b2cmembership extends Component {
             <div class="card business p-1">
               <div class="card-header text-center pb-4 item">
                 <h5 class="pt-3 text-white card-title">Platinum +</h5>
-                {/* <span class="h1 text-white">£549</span>
-                <p class="small text-white">No VAT &amp; No Hidden Costs</p> */}
               </div>
               <div class="card-body d-flex flex-column">
                 <ul class="list-unstyled text-center">
@@ -829,33 +670,12 @@ class b2cmembership extends Component {
                     <span class="d-lg-none">Website Visitor Statistics </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>₹29999</li>
-                  {/* <li>
-                    <span class="d-lg-none">Full Website Ownership </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Google Maps Integration </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">5GB SSD Disk Space </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">5 Email Addresses </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Free Domain Name for 1 year </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Free Website hosting for 1 year </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">UK Telephone/Email Support </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Built in the UK, NO outsourcing </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li> */}
+                  <li>₹7999</li>
+<li>  <button class="theme-btn btn-style-one" type="submit" name="submit-form">
+                            <span class="btn-title" >SAY YES!</span></button>
+                        </li>
 
                 </ul>
-                {/* <a class="btn btn-lg btn-block btn-dark mt-auto" href="#">Get started</a> */}
 
               </div>
             </div>

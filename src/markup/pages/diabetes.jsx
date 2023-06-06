@@ -51,7 +51,7 @@ class diabetes extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-6">
                                 <div class="contact-form-area">
                                     <div class="sec-title phybox">
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
@@ -112,32 +112,26 @@ class diabetes extends Component {
                                 <div class="contact-form-area">
                                     <ul className='listicon'>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Blood sugar monitoring and management
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Exercise recommendations and guidance
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Support for managing the emotional and psychological aspects of living with diabetes
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Referral to diabetes support groups or resources for additional support
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Referral to diabetes support groups or resources for additional support
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Regular check-ups and screenings for complications of diabetes, such as eye and kidney damage
                                         </li>
 
@@ -149,32 +143,26 @@ class diabetes extends Component {
                                 <div class="contact-form-area">
                                     <ul className='listicon'>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Nutritional counselling and meal planning
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Diabetes education and self-management training
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Wound care and management for diabetic ulcers or foot wounds
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Referral to specialists, such as endocrinologists, podiatrists, or dietitians
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Medication management, such as insulin injections or oral medications
                                         </li>
                                         <br></br>
                                         <li>
-                                            <img className='listicon2' src={require('../../assets/images/shape/nu11.png')} alt="" />
                                             Treatment and management of related conditions, such as high blood pressure or high cholesterol
                                         </li>
 
