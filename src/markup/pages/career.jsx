@@ -50,7 +50,7 @@ class Career extends Component {
     componentDidMount() {
         // Initially, set filteredJobs to contain all jobs
         this.setState({ filteredJobs: this.state.jobs });
-      }
+    }
 
     handleChange = (event) => {
         console.log("I am in HanndleChange", event.target.value)
