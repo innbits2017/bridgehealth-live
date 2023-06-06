@@ -53,7 +53,7 @@ class Index extends Component {
 
         const { email, username, phone, message } = this.state;
 
-        const res = await fetch('http://localhost:8000/submit', {
+        const res = await fetch('https://bridgehealth.in/submit', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ class Index extends Component {
 
         const { email, username } = this.state;
 
-        const res = await fetch('http://localhost:8000/register', {
+        const res = await fetch('https://bridgehealth.in/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
