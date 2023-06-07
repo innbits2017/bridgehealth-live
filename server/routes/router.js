@@ -3,7 +3,7 @@ const router = new express.Router();
 const nodemailer = require("nodemailer");
 const formController = require('../controllers/formController');
 
-
+console.log("BRIDGE_HEALTH_SITE ",process.env.BRIDGE_HEALTH_SITE)
 
 
 router.get("/health", (req, res) => {

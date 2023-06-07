@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import Popup from 'reactjs-popup';
+
 
 const aboutbg = require('./../../assets/images/shape/b2c2.png');
 
@@ -153,7 +155,82 @@ class b2cmembership extends Component {
                 <img src={require('../../assets/images/shape/imageb2c.png')} alt="" className='imgwidth' />
 
               </div>
-              <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">SAY YES!</span></button>
+              <Popup trigger={<button class="theme-btn btn-style-one" type="submit" name="submit-form">
+                <span class="btn-title btn-style-one">SAY YES!</span>
+              </button>
+              } position="left">
+                <div class="contact-form-area">
+
+                  {/* <!-- Contact Form--> */}
+                  <div class="contact-form">
+                    <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} action="#">
+                      {/* <form ref={form} onSubmit={sendEmail}> */}
+
+                      <div class="row clearfix">
+                        <div class="col-md-12 form-group">
+                          <input
+                            type="text"
+                            value={this.state.username}
+                            onChange={e => this.handleChange(e)}
+                            name="username"
+                            id="name"
+                            placeholder="Name*"
+                            required={true} />
+                        </div>
+
+                        <div class="col-md-12 form-group">
+                          <input
+                            type="email"
+                            value={this.state.email}
+                            onChange={e => this.handleChange(e)}
+                            name="email"
+                            id="email"
+                            placeholder="Email*"
+                            required={true} />
+                        </div>
+                        <div class="col-md-12 form-group">
+                          <input
+                            type="phone"
+                            value={this.state.phone}
+                            onChange={e => this.handleChange(e)}
+                            name="phone"
+                            id="phone"
+                            placeholder="Phone*"
+                            required="" />
+                        </div>
+
+                        <div class="col-md-12 form-group">
+                          <textarea
+                            name="message"
+                            value={this.state.message}
+                            onChange={e => this.handleChange(e)}
+                            id="message"
+                            placeholder="Message"
+                          ></textarea>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input"
+                            type="checkbox" id="checkbox1" name="option1" value="good" />
+                          <label class="form-check-label heading colorwhite">
+                            I agree that Bridge Health may contact me at the email address or phone number above.
+                          </label>
+                        </div>
+                        <div class="col-md-12 form-group">
+                          <button
+                            class="theme-btn btn-style-one btncontact"
+                            type="submit"
+                            name="submit-form"
+                            disabled={isSubmitDisabled}
+                            onSubmit={e => this.handleSubmit(e)}
+                          ><span class="btn-title">SUBMIT</span></button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+              </Popup>
+
 
             </div>
             <div class="col-lg-2"></div>
@@ -210,8 +287,81 @@ class b2cmembership extends Component {
 
 
                       <div class="col-md-12 form-group">
-                        <button class="theme-btn btn-style-one" type="submit" name="submit-form">
-                          <span class="btn-title">Say YES!</span></button>
+                        <Popup trigger={<button class="theme-btn btn-style-one" type="submit" name="submit-form">
+                          <span class="btn-title btn-style-one">SAY YES!</span>
+                        </button>
+                        } position="right">
+                          <div class="contact-form-area">
+
+                            {/* <!-- Contact Form--> */}
+                            <div class="contact-form">
+                              <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} action="#">
+                                {/* <form ref={form} onSubmit={sendEmail}> */}
+
+                                <div class="row clearfix">
+                                  <div class="col-md-12 form-group">
+                                    <input
+                                      type="text"
+                                      value={this.state.username}
+                                      onChange={e => this.handleChange(e)}
+                                      name="username"
+                                      id="name"
+                                      placeholder="Name*"
+                                      required={true} />
+                                  </div>
+
+                                  <div class="col-md-12 form-group">
+                                    <input
+                                      type="email"
+                                      value={this.state.email}
+                                      onChange={e => this.handleChange(e)}
+                                      name="email"
+                                      id="email"
+                                      placeholder="Email*"
+                                      required={true} />
+                                  </div>
+                                  <div class="col-md-12 form-group">
+                                    <input
+                                      type="phone"
+                                      value={this.state.phone}
+                                      onChange={e => this.handleChange(e)}
+                                      name="phone"
+                                      id="phone"
+                                      placeholder="Phone*"
+                                      required="" />
+                                  </div>
+
+                                  <div class="col-md-12 form-group">
+                                    <textarea
+                                      name="message"
+                                      value={this.state.message}
+                                      onChange={e => this.handleChange(e)}
+                                      id="message"
+                                      placeholder="Message"
+                                    ></textarea>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input"
+                                      type="checkbox" id="checkbox1" name="option1" value="good" />
+                                    <label class="form-check-label heading colorwhite">
+                                      I agree that Bridge Health may contact me at the email address or phone number above.
+                                    </label>
+                                  </div>
+                                  <div class="col-md-12 form-group">
+                                    <button
+                                      class="theme-btn btn-style-one btncontact"
+                                      type="submit"
+                                      name="submit-form"
+                                      disabled={isSubmitDisabled}
+                                      onSubmit={e => this.handleSubmit(e)}
+                                    ><span class="btn-title">SUBMIT</span></button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+
+                        </Popup>
                       </div>
                     </div>
                   </div>
@@ -253,8 +403,8 @@ class b2cmembership extends Component {
                     {/* <h4 className='textleft marginTop40'>A host of benefits await you as soon as you say <span className='headeingcolorblue'> YES</span>
           </h4> */}
                     <p className='font30'>
-                      Preventive healthcare helps in predicting & preventing 
-                      serious health conditions while prolonging your life. 
+                      Preventive healthcare helps in predicting & preventing
+                      serious health conditions while prolonging your life.
                       It also helps you in making proactive choices regarding your mental health and lifestyle to stay fit at all times
                     </p>
 
@@ -263,9 +413,82 @@ class b2cmembership extends Component {
 
                   <div class="contact-form">
 
-                          <button class="theme-btn btn-style-one" type="submit" name="submit-form">
-                            <span class="btn-title" >SAY YES!</span></button>
-                                         </div>
+                    <Popup trigger={<button class="theme-btn btn-style-one" type="submit" name="submit-form">
+                      <span class="btn-title btn-style-one">SAY YES!</span>
+                    </button>
+                    } position="left">
+                      <div class="contact-form-area">
+
+                        {/* <!-- Contact Form--> */}
+                        <div class="contact-form">
+                          <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} action="#">
+                            {/* <form ref={form} onSubmit={sendEmail}> */}
+
+                            <div class="row clearfix">
+                              <div class="col-md-12 form-group">
+                                <input
+                                  type="text"
+                                  value={this.state.username}
+                                  onChange={e => this.handleChange(e)}
+                                  name="username"
+                                  id="name"
+                                  placeholder="Name*"
+                                  required={true} />
+                              </div>
+
+                              <div class="col-md-12 form-group">
+                                <input
+                                  type="email"
+                                  value={this.state.email}
+                                  onChange={e => this.handleChange(e)}
+                                  name="email"
+                                  id="email"
+                                  placeholder="Email*"
+                                  required={true} />
+                              </div>
+                              <div class="col-md-12 form-group">
+                                <input
+                                  type="phone"
+                                  value={this.state.phone}
+                                  onChange={e => this.handleChange(e)}
+                                  name="phone"
+                                  id="phone"
+                                  placeholder="Phone*"
+                                  required="" />
+                              </div>
+
+                              <div class="col-md-12 form-group">
+                                <textarea
+                                  name="message"
+                                  value={this.state.message}
+                                  onChange={e => this.handleChange(e)}
+                                  id="message"
+                                  placeholder="Message"
+                                ></textarea>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input"
+                                  type="checkbox" id="checkbox1" name="option1" value="good" />
+                                <label class="form-check-label heading colorwhite">
+                                  I agree that Bridge Health may contact me at the email address or phone number above.
+                                </label>
+                              </div>
+                              <div class="col-md-12 form-group">
+                                <button
+                                  class="theme-btn btn-style-one btncontact"
+                                  type="submit"
+                                  name="submit-form"
+                                  disabled={isSubmitDisabled}
+                                  onSubmit={e => this.handleSubmit(e)}
+                                ><span class="btn-title">SUBMIT</span></button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+
+                    </Popup>
+                  </div>
                 </div>
               </div>
 
@@ -289,16 +512,16 @@ class b2cmembership extends Component {
             <div class="card set-price p-1 d-none d-lg-none d-lg-block">
               <div class="card-header text-center pb-4 item priceheight">
                 <h5 class="pt-3 card-title">Clinical
-Assessments</h5>
+                  Assessments</h5>
               </div>
               <div class="card-header text-center pb-4 item priceheight">
                 <h5 class="pt-3 card-title">Clinical
-Assessments</h5>
-              </div>  
-              
+                  Assessments</h5>
+              </div>
+
               <div class="card-header text-center pb-4 item priceheight">
                 <h5 class="pt-3 card-title">Lifestyle
-Consults</h5>
+                  Consults</h5>
               </div>
 
               <div class="card-header text-center pb-4 item">
@@ -377,98 +600,98 @@ Consults</h5>
                   <li>
                     <i data-unicode="f00c"></i></li>
                   <li>
-              <i data-unicode="f00c"></i></li>
+                    <i data-unicode="f00c"></i></li>
                   <li>
-                   </li>
-                    <li>
-                    <i data-unicode="f00c"></i></li> 
-                    <li>
+                  </li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
-                    <i data-unicode="f00c"></i></li> 
-                    <li>
-                    <i data-unicode="f00c"></i></li> 
-                    <li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
                     <i data-unicode="f00c"></i></li> <li>
                     <i data-unicode="f00c"></i></li> <li>
                     <i data-unicode="f00c"></i></li> <li>
                     <i data-unicode="f00c"></i></li>
                   <li>ECG / Ultrasound Abdomen + Pelvis</li>
                   <li>
-                    <i data-unicode="f00c"></i></li> 
+                    <i data-unicode="f00c"></i></li>
                   <li>2</li>
                   <li>
-                    <i data-unicode="f00c"></i></li> 
+                    <i data-unicode="f00c"></i></li>
                   <li>Paid Consult</li>
                   <li>
-                    <i data-unicode="f00c"></i></li> 
+                    <i data-unicode="f00c"></i></li>
                   <li>10% Off</li>
                   <li>
-                    <i data-unicode="f00c"></i></li> 
+                    <i data-unicode="f00c"></i></li>
                   <li>4</li>
                   <li>
-                    <i data-unicode="f00c"></i></li> 
+                    <i data-unicode="f00c"></i></li>
                   <li>1</li>
                   <li>
-                    <i data-unicode="f00c"></i></li> 
-                    <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
-                    <i data-unicode="f00c"></i></li> 
-                    <li>
-                    <i data-unicode="f00c"></i></li> 
-                    
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+
                   <li>
                     <i data-unicode="f00c"></i></li>
                   <li>4</li>
                   <li>
-                    <i data-unicode="f00c"></i></li> 
+                    <i data-unicode="f00c"></i></li>
                   <li>1</li>
                   <li>
-                    <i data-unicode="f00c"></i></li> 
+                    <i data-unicode="f00c"></i></li>
                   <li>4</li>
                   <li>
-                    <i data-unicode="f00c"></i></li> 
-                    <li>
                     <i data-unicode="f00c"></i></li>
-                    
-                   
-                    
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+
+
+
                   <li>
                     <span class="d-lg-none">Website Visitor Statistics </span>
                     <i data-unicode="f00c"></i></li>
 
                   <li>10% Off</li>
                   <li>
-                    <i data-unicode="f00c"></i></li> 
+                    <i data-unicode="f00c"></i></li>
                   <li>10% Off</li>
                   <li>
-                    <i data-unicode="f00c"></i></li> 
+                    <i data-unicode="f00c"></i></li>
                   <li>10% Off</li>
                   <li>
-                    <i data-unicode="f00c"></i></li> 
+                    <i data-unicode="f00c"></i></li>
                   <li>Paid</li>
                   <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-<li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
-                            <span class="btn-title" >₹7999</span></button>
-                        </li>
+                  <li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
+                    <span class="btn-title" >₹7999</span></button>
+                  </li>
                 </ul>
-               
+
               </div>
-              
+
             </div>
 
             <div class="w-100 d-md-none mt-4"></div>
@@ -476,7 +699,7 @@ Consults</h5>
             <div class="card business p-1">
               <div class="card-header text-center pb-4 item">
                 <h5 class="pt-3 card-title">GOLD</h5>
-             </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <ul class="list-unstyled text-center">
                   <li>122 Tests with ECG & U/S</li>
@@ -506,21 +729,21 @@ Consults</h5>
                     <i data-unicode="f00c"></i></li>
                   <li>
                     <i data-unicode="f00c"></i></li>
-                    <li>
-                    <i data-unicode="f00c"></i></li> 
-                    <li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
-                    <i data-unicode="f00c"></i></li> 
-                    <li>
-                    <i data-unicode="f00c"></i></li> 
-                    <li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
                   <li>ECG / Ultrasound Abdomen + Pelvis - ECHO</li>
                   <li> <i data-unicode="f00c"></i></li>
@@ -562,10 +785,10 @@ Consults</h5>
                   <li> <i data-unicode="f00c"></i></li>
                   <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                
-<li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
-                            <span class="btn-title" >₹16999</span></button>
-                        </li>
+
+                  <li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
+                    <span class="btn-title" >₹16999</span></button>
+                  </li>
                 </ul>
 
               </div>
@@ -604,59 +827,59 @@ Consults</h5>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                    <li> <i data-unicode="f00c"></i></li> 
-                    <li> <i data-unicode="f00c"></i></li> 
-                    <li> <i data-unicode="f00c"></i></li> 
-                    <li> <i data-unicode="f00c"></i></li> 
-                    <li> <i data-unicode="f00c"></i></li> 
+                  <li> <i data-unicode="f00c"></i></li>
+                  <li> <i data-unicode="f00c"></i></li>
+                  <li> <i data-unicode="f00c"></i></li>
+                  <li> <i data-unicode="f00c"></i></li>
+                  <li> <i data-unicode="f00c"></i></li>
 
                   <li>X-Ray / Echo / Ultrasound Abdomen + Pelvis / Breast Screening</li>
-                  <li> <i data-unicode="f00c"></i></li> 
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>2</li>
-                  <li> <i data-unicode="f00c"></i></li> 
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>Unlimited</li>
-                  <li> <i data-unicode="f00c"></i></li> 
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>10% Off</li>
-                  <li> <i data-unicode="f00c"></i></li> 
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>Unlimited</li>
-                  <li> <i data-unicode="f00c"></i></li> 
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>2</li>
                   <li>
-                    <i data-unicode="f00c"></i></li> 
-                    <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
-                    <i data-unicode="f00c"></i></li> 
-                    <li>
-                    <i data-unicode="f00c"></i></li> 
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
                   <li>
                     <span class="d-lg-none">Search Engine Optimisation </span>
                     <i data-unicode="f00c"></i></li>
                   <li>Unlimited</li>
-                  <li> <i data-unicode="f00c"></i></li> 
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>4</li>
-                  <li> <i data-unicode="f00c"></i></li> 
+                  <li> <i data-unicode="f00c"></i></li>
 
                   <li>
                     <i data-unicode="f00c"></i></li>
                   <li>15</li>
-                  <li> <i data-unicode="f00c"></i></li> 
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>20% Off</li>
-                  <li> <i data-unicode="f00c"></i></li> 
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>1 Session + 10% Off</li>
-                  <li> <i data-unicode="f00c"></i></li> 
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>15% Off</li>
-                  <li> <i data-unicode="f00c"></i></li> 
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>Free</li>
-                  <li> <i data-unicode="f00c"></i></li> 
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                 
-<li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
-                            <span class="btn-title" >₹24999</span></button>
-                        </li>
+
+                  <li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
+                    <span class="btn-title" >₹24999</span></button>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -670,7 +893,7 @@ Consults</h5>
                 <ul class="list-unstyled text-center">
                   <li>222 Tests with Echo & U/S</li>
                   <li>
-\                    <i class="fa fa-check" data-unicode="f00c"></i>
+                    \                    <i class="fa fa-check" data-unicode="f00c"></i>
                   </li>
                   <li>
                     <i class="fa fa-check" data-unicode="f00c"></i>
@@ -713,24 +936,24 @@ Consults</h5>
                     <i data-unicode="f00c"></i></li>
                   <li>1</li>
                   <li>
-                    <i data-unicode="f00c"></i></li> 
-                    <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
-                    <i data-unicode="f00c"></i></li> 
-                    <li>
-                    <i data-unicode="f00c"></i></li> 
-                    <li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     <li>
+                  <li>
                     <i data-unicode="f00c"></i></li>
-                     
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+
                   <li>Unlimited</li>
                   <li>
                     <i data-unicode="f00c"></i></li>
@@ -753,10 +976,10 @@ Consults</h5>
                   <li>Free</li>
                   <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                
-<li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
-                            <span class="btn-title" >₹29999</span></button>
-                        </li>
+
+                  <li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
+                    <span class="btn-title" >₹29999</span></button>
+                  </li>
 
                 </ul>
 
