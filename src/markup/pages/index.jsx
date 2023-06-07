@@ -10,7 +10,7 @@ import emailjs from "@emailjs/browser";
 import 'reactjs-popup/dist/index.css';
 import { Modal, Button } from "react-bootstrap";
 import CaseStudy from '../element/case-study';
-const BRIDGE_HEALTH_SITE=process.env.BRIDGE_HEALTH_SITE;
+const BRIDGE_HEALTH_SITE = process.env.BRIDGE_HEALTH_SITE;
 
 class Index extends Component {
     state = {
@@ -30,19 +30,51 @@ class Index extends Component {
             email: '',
             phone: '',
             message: '',
+            isSubmitDisabled: true,
+            errors: {}
         };
     }
 
     handleChange = (event) => {
-        const { name, value } = event.target;
-        this.setState({ ...this.state, [name]: value });
-        console.log(event)
+        // const { name, value } = event.target;
+        // this.setState({ ...this.state, [name]: value });
+        this.setState({ [event.target.name]: event.target.value }, () => {
+            this.validateForm();
+        });
     };
 
     handleSubmit = (event) => {
         event.preventDefault();
 
-        console.log(this.state);
+        // Perform form submission logic here
+        this.sendEmail();
+        this.saveData();
+    };
+
+
+    validateForm = () => {
+        const { username, email, phone } = this.state;
+        const errors = {};
+
+        // Username validation
+        if (username.trim() === "") {
+            errors.username = "Please enter your name*";
+        }
+
+        // Email validation
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            errors.email = "Please enter a valid email address*";
+        }
+
+        // Phone validation
+        if (!/^\d{10}$/.test(phone)) {
+            errors.phone = "Please enter a 10-digit phone number*";
+        }
+
+        this.setState({
+            errors,
+            isSubmitDisabled: Object.keys(errors).length > 0
+        });
     };
 
     saveData = async (e) => {
@@ -104,8 +136,8 @@ class Index extends Component {
 
     render() {
 
-        const { username, email } = this.state;
-        const isSubmitDisabled = username === '' || email === ''
+        const { username, email, phone, message, isSubmitDisabled, errors } = this.state;
+        // const isSubmitDisabled = username === '' || email === ''
 
         return (
             <>
@@ -762,7 +794,9 @@ class Index extends Component {
                                                         name="username"
                                                         id="name"
                                                         placeholder="Name*"
-                                                        required={true} />
+                                                        required
+                                                    />
+                                                    {errors.username && <div className="error">{errors.username}</div>}
                                                 </div>
 
                                                 <div class="col-md-6 form-group">
@@ -772,7 +806,9 @@ class Index extends Component {
                                                         name="email"
                                                         id="email"
                                                         placeholder="Email*"
-                                                        required={true} />
+                                                        required
+                                                    />
+                                                    {errors.email && <div className="error">{errors.email}</div>}
                                                 </div>
                                                 <div class="col-md-6 form-group">
                                                     <input type="phone"
@@ -780,8 +816,10 @@ class Index extends Component {
                                                         onChange={e => this.handleChange(e)}
                                                         name="phone"
                                                         id="phone"
-                                                        placeholder="Phone"
-                                                        required="" />
+                                                        placeholder="Phone*"
+                                                        required
+                                                    />
+                                                    {errors.phone && <div className="error">{errors.phone}</div>}
                                                 </div>
 
                                                 <div class="col-md-12 form-group">

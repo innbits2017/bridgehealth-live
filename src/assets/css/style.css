@@ -10184,18 +10184,20 @@ img.lazy-image.loaded {
 	line-height: 45px;
 
 }
+
 .listicon li::before {
 	position: absolute;
-    z-index: 2;
-    width: 32px;
-    background-size: contain;
-    height: 30px;
-    margin-left: -55px !important;
-    margin-top: 14px;
-    content: '';
-	background-image:url(../images/shape/nu11.png);
+	z-index: 2;
+	width: 32px;
+	background-size: contain;
+	height: 30px;
+	margin-left: -55px !important;
+	margin-top: 14px;
+	content: '';
+	background-image: url(../images/shape/nu11.png);
 
 }
+
 .listicon10 {
 	margin-bottom: 10px;
 	margin-left: 2rem;
@@ -10204,9 +10206,9 @@ img.lazy-image.loaded {
 ul,
 li {
 	list-style: none;
-    padding: 6px;
-    margin: 0px;
-    font-size: 20px;
+	padding: 6px;
+	margin: 0px;
+	font-size: 20px;
 
 }
 
@@ -11322,13 +11324,16 @@ hr {
 	.pull-right {
 		float: none !important;
 	}
+
 	.cont-box {
 		margin-left: 0% !important;
 		margin-right: 0% !important;
 	}
+
 	.width50 {
 		width: 90% !important;
 	}
+
 	.width50p {
 		text-align: center !important;
     line-height: 22px !important;
@@ -11337,8 +11342,8 @@ hr {
 	.modal-header {
 		width: 86% !important;
 	}
-	.marginto90
-	{
+
+	.marginto90 {
 		margin-top: 100%;
 	}
 
@@ -11646,7 +11651,8 @@ hr {
 	}
 
 	.aboutbox {
-background-image: url(../images/shape/aboutshape.png);	
+		background-image: url(../images/shape/aboutshape.png);
+		border-radius: 25px;
 		width: 100% !important;
 		display: inline-block;
 		margin-right: 0px !important;
@@ -12023,12 +12029,14 @@ background-image: url(../images/shape/aboutshape.png);
 	}
 
 	.box .textpara {
-	    font-size: 15.3px;
-    padding-left: 7px;
+		font-size: 15.3px;
+		padding-left: 7px;
 	}
+
 	.box img {
 		height: 86px;
 	}
+
 	.expertiseback1 {
 		background-image: none !important;
 	}
@@ -12118,9 +12126,10 @@ background-image: url(../images/shape/aboutshape.png);
 .aboutbox {
 
 	/* background-color: #FFFFFF; */
-	background-image: url(../images/shape/aboutshape.png);	
-    background-repeat: no-repeat;
-    background-size: contain;
+	background-image: url(../images/shape/aboutshape.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 25px;
 	width: 35%;
 	display: inline-block;
 	margin-right: 50px;
@@ -12133,10 +12142,11 @@ background-image: url(../images/shape/aboutshape.png);
 }
 
 .aboutcont h3 {
-    color: #1963C6 !important;
-    text-align: center;
-    font-weight: 600;
-    font-size: 18px;}
+	color: #1963C6 !important;
+	text-align: center;
+	font-weight: 600;
+	font-size: 18px;
+}
 
 .aboutmar {
 	margin-bottom: 100px;
@@ -12271,6 +12281,7 @@ background-image: url(../images/shape/aboutshape.png);
 		margin-top: 35px !important;
 		margin-left: 0% !important;
 	}
+
 	#popup-2 {
 		width: 300px !important;
 		box-shadow: 0 0 3px rgba(0, 0, 0, .16);
@@ -12405,44 +12416,46 @@ background-image: url(../images/shape/aboutshape.png);
 .car-head2 {
 	margin-left: 60px;
 }
-  
-  .width50
-  {
-	width: 97%;  }
-  .width50p
-  {
+
+.width50 {
+	width: 97%;
+}
+
+.width50p {
 	text-align: center;
-    line-height: 30px;
-    margin-top: 15px;
-    font-size: 21px;
-  }
-  .modal-header .close {
-    padding: 1rem 1rem;
-    margin: -1rem -3rem -3rem !important;
+	line-height: 30px;
+	margin-top: 15px;
+	font-size: 21px;
 }
+
+.modal-header .close {
+	padding: 1rem 1rem;
+	margin: -1rem -3rem -3rem !important;
+}
+
 .modal-header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 7px 12px;
-    border-bottom: 1px solid #dee2e6;
-    border-top-left-radius: 0.3rem;
-    width: 93%;
-    border-top-right-radius: 0.3rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 7px 12px;
+	border-bottom: 1px solid #dee2e6;
+	border-top-left-radius: 0.3rem;
+	width: 93%;
+	border-top-right-radius: 0.3rem;
 }
-@media (min-width: 576px)
-{
-.modal-dialog {
-    max-width: 650px !important;
-    margin: 1.75rem auto;
+
+@media (min-width: 576px) {
+	.modal-dialog {
+		max-width: 650px !important;
+		margin: 1.75rem auto;
+	}
 }
-}
-.textaligncenter
-{
+
+.textaligncenter {
 	text-align: center !important;
 }
-.martobutton
-{
+
+.martobutton {
 	margin-top: -7%;
 	margin-bottom: 7%;
 }
@@ -12486,4 +12499,5 @@ background-image: none !important;
 }
 .flex-column {
     flex-direction: column-reverse !important;
+	
 }
