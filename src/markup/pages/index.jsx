@@ -48,8 +48,6 @@ class Index extends Component {
         event.preventDefault();
 
         // Perform form submission logic here
-        this.sendEmail();
-        this.saveData();
     };
 
 
@@ -137,8 +135,7 @@ class Index extends Component {
 
     render() {
 
-        const { username, email, phone, message, isSubmitDisabled, errors } = this.state;
-        // const isSubmitDisabled = username === '' || email === ''
+        const { isSubmitDisabled, errors } = this.state;
 
         return (
             <>
@@ -322,7 +319,7 @@ class Index extends Component {
                                         </ul>
                                         <div class="btn-box marginleft20">
                                             <a class="theme-btn btn-style-one" href="#">
-                                                
+
                                                 <Popup trigger={<Link class="top-right flotright1" to="">  <span class="btn-title btn-style-one">KNOW MORE</span> </Link>
                                                 } position="left">
                                                     <div class="contact-form-area">
@@ -341,7 +338,9 @@ class Index extends Component {
                                                                             name="username"
                                                                             id="name"
                                                                             placeholder="Name*"
-                                                                            required={true} />
+                                                                            required={true}
+                                                                        />
+                                                                        {errors.username && <div className="error">{errors.username}</div>}
                                                                     </div>
 
                                                                     <div class="col-md-12 form-group">
@@ -352,7 +351,9 @@ class Index extends Component {
                                                                             name="email"
                                                                             id="email"
                                                                             placeholder="Email*"
-                                                                            required={true} />
+                                                                            required={true}
+                                                                        />
+                                                                        {errors.email && <div className="error">{errors.email}</div>}
                                                                     </div>
                                                                     <div class="col-md-12 form-group">
                                                                         <input
@@ -362,7 +363,10 @@ class Index extends Component {
                                                                             name="phone"
                                                                             id="phone"
                                                                             placeholder="Phone*"
-                                                                            required="" />
+                                                                            required=""
+                                                                        />
+                                                                        {errors.phone && <div className="error">{errors.phone}</div>}
+
                                                                     </div>
 
                                                                     <div class="col-md-12 form-group">

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Popup from 'reactjs-popup';
+const BRIDGE_HEALTH_SITE = process.env.BRIDGE_HEALTH_SITE;
+
 
 class ContactForm extends Component {
     constructor(props) {
@@ -9,13 +11,99 @@ class ContactForm extends Component {
             email: '',
             phone: '',
             message: '',
-            isSubmitDisabled: false
+            isSubmitDisabled: true,
+            errors: {}
         };
     }
 
-    handleChange = (e) => {
-        this.setState({ [e.target.name]: e.target.value });
+    handleChange = (event) => {
+        this.setState({ [event.target.name]: event.target.value }, () => {
+            this.validateForm();
+        });
     }
+
+    validateForm = () => {
+        const { username, email, phone } = this.state;
+        const errors = {};
+
+        // Username validation
+        if (username.trim() === "") {
+            errors.username = "Please enter your name*";
+        }
+
+        // Email validation
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            errors.email = "Please enter a valid email address*";
+        }
+
+        // Phone validation
+        if (!/^\d{10}$/.test(phone)) {
+            errors.phone = "Please enter a 10-digit phone number*";
+        }
+
+        this.setState({
+            errors,
+            isSubmitDisabled: Object.keys(errors).length > 0
+        });
+    };
+
+
+    saveData = async (e) => {
+
+        console.log(e, "Data is saving");
+
+        e.preventDefault();
+
+        const { email, username, phone, message } = this.state;
+
+        const res = await fetch(`${BRIDGE_HEALTH_SITE}/submit`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email, username, phone, message
+            }),
+        });
+
+        const data = await res.json();
+        console.log(data);
+
+        if (data.status === 401 || !data) {
+            console.log('error');
+        } else {
+            this.setState({ show: true, email: '', username: '', phone: '', message: '' });
+            console.log('Data saved');
+        }
+
+    }
+
+
+    sendEmail = async (e) => {
+        e.preventDefault();
+
+        const { email, username } = this.state;
+
+        const res = await fetch(`${BRIDGE_HEALTH_SITE}/register`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email, username
+            }),
+        });
+
+        const data = await res.json();
+        console.log(data);
+
+        if (data.status === 401 || !data) {
+            console.log('error');
+        } else {
+            this.setState({ show: true, email: '', username: '' });
+            console.log('Email sent');
+        }
+    };
 
     handleSubmit = (e) => {
         e.preventDefault();
@@ -23,7 +111,7 @@ class ContactForm extends Component {
     }
 
     render() {
-        const { username, email, phone, message, isSubmitDisabled } = this.state;
+        const { username, email, phone, message, isSubmitDisabled, errors } = this.state;
         const { buttonText, className } = this.props;
 
         return (
@@ -46,6 +134,7 @@ class ContactForm extends Component {
                                         placeholder="Name*"
                                         required
                                     />
+                                    {errors.username && <div className="error">{errors.username}</div>}
                                 </div>
 
                                 <div className="col-md-12 form-group">
@@ -58,6 +147,7 @@ class ContactForm extends Component {
                                         placeholder="Email*"
                                         required
                                     />
+                                    {errors.email && <div className="error">{errors.email}</div>}
                                 </div>
 
                                 <div className="col-md-12 form-group">
@@ -70,6 +160,7 @@ class ContactForm extends Component {
                                         placeholder="Phone*"
                                         required
                                     />
+                                    {errors.phone && <div className="error">{errors.phone}</div>}
                                 </div>
 
                                 <div className="col-md-12 form-group">
