@@ -10,6 +10,7 @@ import emailjs from "@emailjs/browser";
 import 'reactjs-popup/dist/index.css';
 import { Modal, Button } from "react-bootstrap";
 import CaseStudy from '../element/case-study';
+import ContactForm from '../element/contact-form';
 const BRIDGE_HEALTH_SITE = process.env.BRIDGE_HEALTH_SITE;
 
 class Index extends Component {
@@ -156,78 +157,7 @@ class Index extends Component {
                                 <h5 class="display-4"><span class="display-3">Lets help you </span>#BridgeTheGap</h5>
                                 <p class="lead mb-0">Personalised and holistic preventive health plans for <br></br>you and your loved ones
                                 </p>
-                                <Popup trigger={<div class="btn-box"><a class="theme-btn btn-style-one" href="#"><span class="btn-title">GET STARTED</span></a></div>
-                                } position="right">
-                                    <div class="contact-form-area">
-
-                                        {/* <!-- Contact Form--> */}
-                                        <div class="contact-form">
-                                            <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} action="#">
-                                                {/* <form ref={form} onSubmit={sendEmail}> */}
-
-                                                <div class="row clearfix">
-                                                    <div class="col-md-12 form-group">
-                                                        <input
-                                                            type="text"
-                                                            value={this.state.username}
-                                                            onChange={e => this.handleChange(e)}
-                                                            name="username"
-                                                            id="name"
-                                                            placeholder="Name*"
-                                                            required="" />
-                                                    </div>
-
-                                                    <div class="col-md-12 form-group">
-                                                        <input
-                                                            value={this.state.email}
-                                                            onChange={e => this.handleChange(e)}
-                                                            type="email"
-                                                            name="email"
-                                                            id="email"
-                                                            placeholder="Email*"
-                                                            required="" />
-                                                    </div>
-                                                    <div class="col-md-12 form-group">
-                                                        <input
-                                                            type="phone"
-                                                            name="phone"
-                                                            value={this.state.phone}
-                                                            onChange={e => this.handleChange(e)}
-                                                            id="phone"
-                                                            placeholder="Phone*"
-                                                            required="" />
-                                                    </div>
-
-                                                    <div class="col-md-12 form-group">
-                                                        <textarea
-                                                            value={this.state.message}
-                                                            onChange={e => this.handleChange(e)}
-                                                            name="message"
-                                                            id="message"
-                                                            placeholder="Message"
-                                                        ></textarea>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input"
-                                                            type="checkbox" id="checkbox1" name="option1" value="good" />
-                                                        <label class="form-check-label heading colorwhite">
-                                                            I agree that Bridge Health may contact me at the email address or phone number above.
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-md-12 form-group">
-                                                        <button
-                                                            disabled={isSubmitDisabled}
-                                                            onSubmit={e => this.handleSubmit(e)}
-                                                            class="theme-btn btn-style-one btncontact"
-                                                            type="submit"
-                                                            name="submit-form"
-                                                        ><span class="btn-title">SUBMIT</span></button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </Popup>
+                                <ContactForm buttonText="GET STARTED" className="btn-box" />
 
                             </div>
                         </div>
@@ -392,6 +322,7 @@ class Index extends Component {
                                         </ul>
                                         <div class="btn-box marginleft20">
                                             <a class="theme-btn btn-style-one" href="#">
+                                                
                                                 <Popup trigger={<Link class="top-right flotright1" to="">  <span class="btn-title btn-style-one">KNOW MORE</span> </Link>
                                                 } position="left">
                                                     <div class="contact-form-area">
