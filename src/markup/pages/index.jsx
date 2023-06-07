@@ -392,7 +392,79 @@ class Index extends Component {
                                         </ul>
                                         <div class="btn-box marginleft20">
                                             <a class="theme-btn btn-style-one" href="#">
-                                                <span class="btn-title">KNOW MORE</span>
+                                                <Popup trigger={<Link class="top-right flotright1" to="">  <span class="btn-title btn-style-one">KNOW MORE</span> </Link>
+                                                } position="left">
+                                                    <div class="contact-form-area">
+
+                                                        {/* <!-- Contact Form--> */}
+                                                        <div class="contact-form">
+                                                            <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} action="#">
+                                                                {/* <form ref={form} onSubmit={sendEmail}> */}
+
+                                                                <div class="row clearfix">
+                                                                    <div class="col-md-12 form-group">
+                                                                        <input
+                                                                            type="text"
+                                                                            value={this.state.username}
+                                                                            onChange={e => this.handleChange(e)}
+                                                                            name="username"
+                                                                            id="name"
+                                                                            placeholder="Name*"
+                                                                            required={true} />
+                                                                    </div>
+
+                                                                    <div class="col-md-12 form-group">
+                                                                        <input
+                                                                            type="email"
+                                                                            value={this.state.email}
+                                                                            onChange={e => this.handleChange(e)}
+                                                                            name="email"
+                                                                            id="email"
+                                                                            placeholder="Email*"
+                                                                            required={true} />
+                                                                    </div>
+                                                                    <div class="col-md-12 form-group">
+                                                                        <input
+                                                                            type="phone"
+                                                                            value={this.state.phone}
+                                                                            onChange={e => this.handleChange(e)}
+                                                                            name="phone"
+                                                                            id="phone"
+                                                                            placeholder="Phone*"
+                                                                            required="" />
+                                                                    </div>
+
+                                                                    <div class="col-md-12 form-group">
+                                                                        <textarea
+                                                                            name="message"
+                                                                            value={this.state.message}
+                                                                            onChange={e => this.handleChange(e)}
+                                                                            id="message"
+                                                                            placeholder="Message"
+                                                                        ></textarea>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input"
+                                                                            type="checkbox" id="checkbox1" name="option1" value="good" />
+                                                                        <label class="form-check-label heading colorwhite">
+                                                                            I agree that Bridge Health may contact me at the email address or phone number above.
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="col-md-12 form-group">
+                                                                        <button
+                                                                            class="theme-btn btn-style-one btncontact"
+                                                                            type="submit"
+                                                                            name="submit-form"
+                                                                            disabled={isSubmitDisabled}
+                                                                            onSubmit={e => this.handleSubmit(e)}
+                                                                        ><span class="btn-title">SUBMIT</span></button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+
+                                                </Popup>
                                             </a>
                                         </div>
                                     </div>
