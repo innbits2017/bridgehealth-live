@@ -180,12 +180,12 @@ class corporate_membership_program extends Component {
 
                 <div class="auto-container margin150">
                     <div class="sec-title">
-                        <h2 style={{ fontSize: 48 + 'px' }}>
+                        <h2>
                             <span className='headeingcolorblack'>THE CORPORATE </span>
                             <span className='headeingcolorblue'> WELLNESS </span>
                             <span className='headeingcolorblack'>MAP</span>
                         </h2>
-                        <h4 className='textleft marginTop40' style={{ fontSize: 33 + 'px' }}>Where are you on the well being journey?
+                        <h4 className='textleft marginTop40'>Where are you on the well being journey?
                         </h4>
                     </div>
 
@@ -220,8 +220,8 @@ class corporate_membership_program extends Component {
                 <section class="container-fluid b2bback margin150">
 
                     <div className='container '>
-                        <div class="sec-title text-center">
-                            <h3 className='' style={{ fontSize: 35 + 'px' }}> <span className='headeingcolorblue'>BRIDGE HEALTH </span>
+                        <div class="sec-title text-center textleft">
+                            <h3 className=''> <span className='headeingcolorblue'>BRIDGE HEALTH </span>
                                 makes it possible for  <span className='headeingcolorblue'> Employers </span>to <br></br>keep a check on their  <span className='headeingcolorblue'> Employees’ Health Metrics </span></h3>
 
                         </div>

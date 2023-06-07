@@ -64,16 +64,9 @@ class pharmacy extends Component {
 
                                     <div class="contact-form">
 
-                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
-                                            <div class="row clearfix">
-
-
-
-                                                <div class="col-md-12 form-group">
+                                     <div class="col-md-12 form-group">
                                                     <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
                                                 </div>
-                                            </div>
-                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -94,16 +87,9 @@ class pharmacy extends Component {
                                     </div>
                                     <div class="contact-form">
 
-                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
-                                            <div class="row clearfix">
-
-
-
-                                                <div class="col-md-12 form-group">
+                                     <div class="col-md-12 form-group">
                                                     <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
                                                 </div>
-                                            </div>
-                                        </form>
                                     </div>
 
                                 </div>
