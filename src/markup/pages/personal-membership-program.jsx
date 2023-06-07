@@ -185,19 +185,19 @@ class b2cmembership extends Component {
                   <div class="content-box">
 
                     <ul className='listicon'>
-                      <li>
+                      <li className='listper'>
                         <img className='listicon6' src={require('../../assets/images/shape/b21.png')} alt="" />
                         Reduce healthcare expenditure
                       </li>
-                      <li>
+                      <li className='listper'>
                         <img className='listicon6' src={require('../../assets/images/shape/b13.png')} alt="" />
                         Discover any hidden health conditions
                       </li>
-                      <li>
+                      <li className='listper'>
                         <img className='listicon6' src={require('../../assets/images/shape/b12.png')} alt="" />
                         Know your health score
                       </li>
-                      <li>
+                      <li className='listper'>
                         <img className='listicon6' src={require('../../assets/images/shape/b14.png')} alt="" />
                         Implement lifestyle changes for better quality of life
                       </li>
@@ -263,34 +263,15 @@ class b2cmembership extends Component {
 
                   <div class="contact-form">
 
-                    <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
-                      <div class="row clearfix">
-
-
-
-                        <div class="col-md-12 form-group" >
                           <button class="theme-btn btn-style-one" type="submit" name="submit-form">
                             <span class="btn-title" >SAY YES!</span></button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                                         </div>
                 </div>
               </div>
 
             </div>
           </div>
         </section>
-
-
-
-
-        {/* <!-- Video Section --> */}
-        {/* <VideoPopup1 /> */}
-
-
-        {/* <!-- About --> */}
-
 
         <div class="container-fulid margintop100">
           <div class="auto-container">
@@ -306,11 +287,22 @@ class b2cmembership extends Component {
           </div>
           <div class="pricing-plan card-group d-flex">
             <div class="card set-price p-1 d-none d-lg-none d-lg-block">
-              <div class="card-header text-center pb-4 item">
-                <h5 class="pt-3 text-white card-title">Clinical Assessments</h5>
-                {/* <span class="h1 text-white">Price</span>
-                <p class="small text-white">No VAT &amp; No Hidden Costs</p> */}
+              <div class="card-header text-center pb-4 item priceheight">
+                <h5 class="pt-3 card-title">Clinical
+Assessments</h5>
+              </div>
+              <div class="card-header text-center pb-4 item priceheight">
+                <h5 class="pt-3 card-title">Clinical
+Assessments</h5>
+              </div>  
+              
+              <div class="card-header text-center pb-4 item priceheight">
+                <h5 class="pt-3 card-title">Lifestyle
+Consults</h5>
+              </div>
 
+              <div class="card-header text-center pb-4 item">
+                <h5 class="pt-3 card-title">Discounts</h5>
               </div>
             </div>
 
@@ -318,13 +310,11 @@ class b2cmembership extends Component {
             <div class="w-100 d-md-none mt-4"></div>
 
             <div class="card p-1 starter">
-              <div class="card-header text-center pb-4 item">
-                <h5 class="pt-3 text-white card-title">Service Offering</h5>
-                {/* <span class="h1 text-white">£349</span> */}
-                {/* <p class="small text-white">No VAT &amp; No Hidden Costs</p> */}
+              <div class="card-header text-center pb-4 item service1">
+                <h5 class="pt-3 card-title">Service Offering</h5>
               </div>
               <div class="card-body d-flex flex-column">
-                <ul class="list-unstyled text-right">
+                <ul class="list-unstyled">
                   <li>Initial Health Assessment</li>
                   <li>Blood Health</li>
                   <li>Diabetic Profile</li>
@@ -361,162 +351,220 @@ class b2cmembership extends Component {
 
             <div class="card advanced p-1">
               <div class="card-header text-center pb-4 item">
-                <h5 class="pt-3 text-white card-title">SILVER</h5>
-                {/* <span class="h1 text-white">£449</span> */}
-                {/* <p class="small text-white">No VAT &amp; No Hidden Costs</p> */}
+                <h5 class="pt-3 card-title">SILVER</h5>
               </div>
               <div class="card-body d-flex flex-column">
                 <ul class="list-unstyled text-center">
                   <li>117 Tests with ECG & U/S</li>
                   <li>
-                    <span class="d-lg-none">Custom Design </span>
                     <i class="fa fa-check" data-unicode="f00c"></i>
                   </li>
                   <li>
-                    <span class="d-lg-none">Choice of Layout </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  {/* <li>3 - 6 Pages</li> */}
-                  <li>
-                    <span class="d-lg-none">Update and add pages (CMS) </span>
                     <i class="fa fa-check" data-unicode="f00c"></i>
                   </li>
                   <li>
-                    <span class="d-lg-none">Update and add pages (CMS) </span>
                     <i class="fa fa-check" data-unicode="f00c"></i>
                   </li>
                   <li>
-                    <span class="d-lg-none">Mobile Friendly Design </span>
+                    <i class="fa fa-check" data-unicode="f00c"></i>
+                  </li>
+                  <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Homepage Banner Designs </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Professional Logo Design </span>
                     <i data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Search Engine Friendly </span>
                     <i data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Search Engine Submission </span>
-                    <i data-unicode="f00c"></i></li>
+              <i data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Website Contact Form </span>
+                   </li>
+                    <li>
+                    <i data-unicode="f00c"></i></li> 
+                    <li>
                     <i data-unicode="f00c"></i></li>
-                  {/* <li>
-                    <span class="d-lg-none">Built on Wordpress </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li> */}
-
+                     <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li> 
+                    <li>
+                    <i data-unicode="f00c"></i></li> 
+                    <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li> <li>
+                    <i data-unicode="f00c"></i></li> <li>
+                    <i data-unicode="f00c"></i></li> <li>
+                    <i data-unicode="f00c"></i></li>
                   <li>ECG / Ultrasound Abdomen + Pelvis</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li> 
                   <li>2</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li> 
                   <li>Paid Consult</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li> 
                   <li>10% Off</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li> 
                   <li>4</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li> 
                   <li>1</li>
                   <li>
-                    <span class="d-lg-none">Search Engine Optimisation </span>
+                    <i data-unicode="f00c"></i></li> 
+                    <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li> 
+                    <li>
+                    <i data-unicode="f00c"></i></li> 
+                    
+                  <li>
                     <i data-unicode="f00c"></i></li>
                   <li>4</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li> 
                   <li>1</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li> 
                   <li>4</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li> 
+                    <li>
+                    <i data-unicode="f00c"></i></li>
+                    
+                   
+                    
                   <li>
                     <span class="d-lg-none">Website Visitor Statistics </span>
                     <i data-unicode="f00c"></i></li>
 
                   <li>10% Off</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li> 
                   <li>10% Off</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li> 
                   <li>10% Off</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li> 
                   <li>Paid</li>
                   <li>
-                    <span class="d-lg-none">Full Website Ownership </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>₹7999</li>
-<li>  <button class="theme-btn btn-style-one" type="submit" name="submit-form">
-                            <span class="btn-title" >SAY YES!</span></button>
+<li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
+                            <span class="btn-title" >₹7999</span></button>
                         </li>
                 </ul>
-
+               
               </div>
+              
             </div>
 
             <div class="w-100 d-md-none mt-4"></div>
 
             <div class="card business p-1">
               <div class="card-header text-center pb-4 item">
-                <h5 class="pt-3 text-white card-title">GOLD</h5>
-                {/* <span class="h1 text-white">£549</span>
-                <p class="small text-white">No VAT &amp; No Hidden Costs</p> */}
-              </div>
+                <h5 class="pt-3 card-title">GOLD</h5>
+             </div>
               <div class="card-body d-flex flex-column">
                 <ul class="list-unstyled text-center">
                   <li>122 Tests with ECG & U/S</li>
                   <li>
-                    <span class="d-lg-none">Custom Design </span>
                     <i class="fa fa-check" data-unicode="f00c"></i>
                   </li>
                   <li>
-                    <span class="d-lg-none">Choice of Layout </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  {/* <li>6 - 9 Pages</li> */}
-                  <li>
-                    <span class="d-lg-none">Update and add pages (CMS) </span>
                     <i class="fa fa-check" data-unicode="f00c"></i>
                   </li>
                   <li>
-                    <span class="d-lg-none">Update and add pages (CMS) </span>
                     <i class="fa fa-check" data-unicode="f00c"></i>
                   </li>
                   <li>
-                    <span class="d-lg-none">Mobile Friendly Design </span>
+                    <i class="fa fa-check" data-unicode="f00c"></i>
+                  </li>
+                  <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Homepage Banner Designs </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Professional Logo Design </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Search Engine Friendly </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
 
 
                   <li>
-                    <span class="d-lg-none">Search Engine Submission </span>
                     <i data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Website Contact Form </span>
                     <i data-unicode="f00c"></i></li>
-                  {/* <li>
-                    <span class="d-lg-none">Built on Wordpress </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li> */}
-
+                    <li>
+                    <i data-unicode="f00c"></i></li> 
+                    <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li> 
+                    <li>
+                    <i data-unicode="f00c"></i></li> 
+                    <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li>
                   <li>ECG / Ultrasound Abdomen + Pelvis - ECHO</li>
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>2</li>
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>Paid Consult</li>
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>10% Off</li>
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>12</li>
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>2</li>
+                  <li> <i data-unicode="f00c"></i></li>
+                  <li> <i data-unicode="f00c"></i></li>
+                  <li> <i data-unicode="f00c"></i></li>
+                  <li> <i data-unicode="f00c"></i></li>
+                  <li> <i data-unicode="f00c"></i></li>
+
                   <li>
-                    <span class="d-lg-none">Search Engine Optimisation </span>
                     <i data-unicode="f00c"></i></li>
                   <li>12</li>
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>4</li>
+                  <li> <i data-unicode="f00c"></i></li>
+                  <li> <i data-unicode="f00c"></i></li>
+                  <li> <i data-unicode="f00c"></i></li>
+
                   <li>
-                    <span class="d-lg-none">Website Visitor Statistics </span>
                     <i data-unicode="f00c"></i></li>
                   <li>5</li>
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>15% Off</li>
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>15% Off</li>
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>15% Off</li>
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>Free</li>
+                  <li> <i data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Full Website Ownership </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>₹16999</li>
-                  <li>₹7999</li>
-<li>  <button class="theme-btn btn-style-one" type="submit" name="submit-form">
-                            <span class="btn-title" >SAY YES!</span></button>
+                
+<li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
+                            <span class="btn-title" >₹16999</span></button>
                         </li>
                 </ul>
 
@@ -524,155 +572,190 @@ class b2cmembership extends Component {
             </div>
             <div class="w-100 d-md-none mt-4"></div>
 
-            <div class="card business p-1">
+            <div class="card Platinum p-1">
               <div class="card-header text-center pb-4 item">
-                <h5 class="pt-3 text-white card-title">Platinum</h5>
-                {/* <span class="h1 text-white">£549</span>
-                <p class="small text-white">No VAT &amp; No Hidden Costs</p> */}
+                <h5 class="pt-3  card-title">Platinum</h5>
               </div>
               <div class="card-body d-flex flex-column">
                 <ul class="list-unstyled text-center">
                   <li>138 Tests with Echo & U/S</li>
                   <li>
-                    <span class="d-lg-none">Custom Design </span>
                     <i class="fa fa-check" data-unicode="f00c"></i>
                   </li>
                   <li>
-                    <span class="d-lg-none">Choice of Layout </span>
                     <i class="fa fa-check" data-unicode="f00c"></i>
                   </li>
                   <li>
-                    <span class="d-lg-none">Update and add pages (CMS) </span>
                     <i class="fa fa-check" data-unicode="f00c"></i>
                   </li>
                   {/* <li>6 - 9 Pages</li> */}
                   <li>
-                    <span class="d-lg-none">Update and add pages (CMS) </span>
                     <i class="fa fa-check" data-unicode="f00c"></i>
                   </li>
                   <li>
-                    <span class="d-lg-none">Mobile Friendly Design </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  {/* <li>
-                    <span class="d-lg-none">Homepage Banner Designs </span>
-                    1</li> */}
-                  <li>
-                    <span class="d-lg-none">Professional Logo Design </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Search Engine Friendly </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Search Engine Submission </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Website Contact Form </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Built on Wordpress </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
+                  <li>
+                    <i class="fa fa-check" data-unicode="f00c"></i></li>
+                    <li> <i data-unicode="f00c"></i></li> 
+                    <li> <i data-unicode="f00c"></i></li> 
+                    <li> <i data-unicode="f00c"></i></li> 
+                    <li> <i data-unicode="f00c"></i></li> 
+                    <li> <i data-unicode="f00c"></i></li> 
+
                   <li>X-Ray / Echo / Ultrasound Abdomen + Pelvis / Breast Screening</li>
+                  <li> <i data-unicode="f00c"></i></li> 
                   <li>2</li>
+                  <li> <i data-unicode="f00c"></i></li> 
                   <li>Unlimited</li>
+                  <li> <i data-unicode="f00c"></i></li> 
                   <li>10% Off</li>
+                  <li> <i data-unicode="f00c"></i></li> 
                   <li>Unlimited</li>
+                  <li> <i data-unicode="f00c"></i></li> 
                   <li>2</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li> 
+                    <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li> 
+                    <li>
+                    <i data-unicode="f00c"></i></li> 
                   <li>
                     <span class="d-lg-none">Search Engine Optimisation </span>
                     <i data-unicode="f00c"></i></li>
                   <li>Unlimited</li>
+                  <li> <i data-unicode="f00c"></i></li> 
                   <li>4</li>
-                  <li>
-                    <span class="d-lg-none">Website Visitor Statistics </span>
-                    <i data-unicode="f00c"></i></li>
-                  <li>15</li>
-                  <li>20% Off</li>
-                  <li>1 Session + 10% Off</li>
-                  <li>15% Off</li>
-                  <li>Free</li>
+                  <li> <i data-unicode="f00c"></i></li> 
 
                   <li>
-                    <span class="d-lg-none">Full Website Ownership </span>
+                    <i data-unicode="f00c"></i></li>
+                  <li>15</li>
+                  <li> <i data-unicode="f00c"></i></li> 
+                  <li>20% Off</li>
+                  <li> <i data-unicode="f00c"></i></li> 
+                  <li>1 Session + 10% Off</li>
+                  <li> <i data-unicode="f00c"></i></li> 
+                  <li>15% Off</li>
+                  <li> <i data-unicode="f00c"></i></li> 
+                  <li>Free</li>
+                  <li> <i data-unicode="f00c"></i></li> 
+                  <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>₹24999</li>
-                  <li>₹7999</li>
-<li>  <button class="theme-btn btn-style-one" type="submit" name="submit-form">
-                            <span class="btn-title" >SAY YES!</span></button>
+                 
+<li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
+                            <span class="btn-title" >₹24999</span></button>
                         </li>
                 </ul>
               </div>
             </div>
             <div class="w-100 d-md-none mt-4"></div>
 
-            <div class="card business p-1">
+            <div class="card Platinump p-1">
               <div class="card-header text-center pb-4 item">
-                <h5 class="pt-3 text-white card-title">Platinum +</h5>
+                <h5 class="pt-3 card-title">Platinum +</h5>
               </div>
               <div class="card-body d-flex flex-column">
                 <ul class="list-unstyled text-center">
                   <li>222 Tests with Echo & U/S</li>
                   <li>
-                    <span class="d-lg-none">Custom Design </span>
+\                    <i class="fa fa-check" data-unicode="f00c"></i>
+                  </li>
+                  <li>
                     <i class="fa fa-check" data-unicode="f00c"></i>
                   </li>
                   <li>
-                    <span class="d-lg-none">Choice of Layout </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  {/* <li>6 - 9 Pages</li> */}
-                  <li>
-                    <span class="d-lg-none">Update and add pages (CMS) </span>
                     <i class="fa fa-check" data-unicode="f00c"></i>
                   </li>
                   <li>
-                    <span class="d-lg-none">Update and add pages (CMS) </span>
                     <i class="fa fa-check" data-unicode="f00c"></i>
                   </li>
                   <li>
-                    <span class="d-lg-none">Mobile Friendly Design </span>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  {/* <li>
-                    <span class="d-lg-none">Homepage Banner Designs </span>
-                    1</li> */}
-                  <li>
-                    <span class="d-lg-none">Professional Logo Design </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Search Engine Friendly </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Search Engine Submission </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Website Contact Form </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>
-                    <span class="d-lg-none">Built on Wordpress </span>
+                    <i class="fa fa-check" data-unicode="f00c"></i></li>
+                  <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>X-Ray / Echo / Ultrasound Abdomen + Pelvis / Breast Screening</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
                   <li>4</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
                   <li>Unlimited</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
                   <li>10% Off</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
                   <li>Unlimited</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
                   <li>4</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
                   <li>1</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li> 
+                    <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li> 
+                    <li>
+                    <i data-unicode="f00c"></i></li> 
+                    <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li>
+                     <li>
+                    <i data-unicode="f00c"></i></li>
+                     
                   <li>Unlimited</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
                   <li>4</li>
                   <li>
                     <span class="d-lg-none">Search Engine Optimisation </span>
                     <i data-unicode="f00c"></i></li>
                   <li>15</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
                   <li>20% Off</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
                   <li>1 Session + 15% Off</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
                   <li>15% Off</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
                   <li>Free</li>
                   <li>
-                    <span class="d-lg-none">Website Visitor Statistics </span>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>₹29999</li>
-                  <li>₹7999</li>
-<li>  <button class="theme-btn btn-style-one" type="submit" name="submit-form">
-                            <span class="btn-title" >SAY YES!</span></button>
+                
+<li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
+                            <span class="btn-title" >₹29999</span></button>
                         </li>
 
                 </ul>

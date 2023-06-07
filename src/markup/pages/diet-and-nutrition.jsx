@@ -71,16 +71,8 @@ class diet_and_nutrition extends Component {
 
                                     <div class="contact-form">
 
-                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
-                                            <div class="row clearfix">
-
-
-
-                                                <div class="col-md-12 form-group" style={{ marginLeft: 5 + 'rem' }}>
                                                     <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                                </div>
-                                            </div>
-                                        </form>
+                                              
                                     </div>
                                 </div>
                             </div>
@@ -116,20 +108,6 @@ class diet_and_nutrition extends Component {
                                     </div>
 
 
-                                    {/* <div class="contact-form">
-
-                                        <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
-                                            <div class="row clearfix">
-
-
-
-                                                <div class="col-md-12 form-group" style={{ marginLeft: 15 + 'rem' }}>
-                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">
-                                                        <span class="btn-title" >Say YES!</span></button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div> */}
                                 </div>
                             </div>
 

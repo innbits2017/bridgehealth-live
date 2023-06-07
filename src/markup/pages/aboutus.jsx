@@ -101,7 +101,7 @@ class aboutUs extends Component {
             <>
                 <Header />
 
-                <section class="internalpage style-two aboutback">
+                <section class="internalpage style-two aboutback ">
                     <div class="auto-container ">
                         <div className='aboutcont '>
                             <div className='aboutbox '>
