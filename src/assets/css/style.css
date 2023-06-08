@@ -11341,12 +11341,8 @@ hr {
 		line-height: 22px !important;
 		font-size: 13px !important;
 	}
-
-	.modal-header {
-		width: 86% !important;
-	}
-
-	.marginto90 {
+	.marginto90
+	{
 		margin-top: 100%;
 	}
 
@@ -12463,54 +12459,3 @@ hr {
 	margin-top: -7%;
 	margin-bottom: 7%;
 }
-
-.listicon .listper::before {
-	background-image: none !important;
-}
-
-.listper {
-	margin-left: 0px !important;
-}
-
-.card-title {
-	color: #000;
-	font-size: 15px !important;
-}
-
-.p-1 {
-	padding: 0 !important;
-}
-
-.priceheight {
-	height: 450px;
-	border-bottom: 10px solid #fff;
-}
-
-.service1 {
-
-	background: #E8EFF9;
-	border-radius: 4.52381px;
-
-}
-
-.priceamt {
-	width: 243px;
-	margin-left: -30px;
-	border: 1.80952px solid #1963C6;
-	border-radius: 13.5714px;
-	background: none !important;
-	color: #000;
-
-}
-
-.flex-column {
-	flex-direction: column-reverse !important;
-
-}
-
-.error {
-	color: red;
-	font-size: 13px;
-	margin-top: 5px;
-}
-
