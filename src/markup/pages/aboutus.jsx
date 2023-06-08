@@ -8,6 +8,9 @@ const aback = require('./../../assets/images/shape/aback.png');
 
 
 class aboutUs extends Component {
+    componentDidMount() {
+        document.title = 'About Us | Bridge Health';
+    }
 
     constructor(props) {
         super(props);

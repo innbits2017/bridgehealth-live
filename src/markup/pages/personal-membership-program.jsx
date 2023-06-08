@@ -9,6 +9,10 @@ const aboutbg = require('./../../assets/images/shape/b2c2.png');
 
 class b2cmembership extends Component {
 
+  componentDidMount() {
+    document.title = 'B2C Membership | Bridge Health';
+  }
+
   constructor(props) {
     super(props);
 
@@ -156,7 +160,7 @@ class b2cmembership extends Component {
                 <img src={require('../../assets/images/shape/imageb2c.png')} alt="" className='imgwidth' />
 
               </div>
-              <ContactForm buttonText="SAY YES!"/>
+              <ContactForm buttonText="SAY YES!" />
 
 
             </div>
@@ -214,7 +218,7 @@ class b2cmembership extends Component {
 
 
                       <div class="col-md-12 form-group">
-                      <ContactForm buttonText="SAY YES!"/>
+                        <ContactForm buttonText="SAY YES!" />
                       </div>
                     </div>
                   </div>
@@ -266,7 +270,7 @@ class b2cmembership extends Component {
 
                   <div class="contact-form">
 
-                    <ContactForm buttonText="SAY YES!"/>
+                    <ContactForm buttonText="SAY YES!" />
                   </div>
                 </div>
               </div>

@@ -4,6 +4,11 @@ import Footer from '../layout/footer'
 
 
 class dental extends Component {
+
+    componentDidMount() {
+        document.title = 'Dental | Bridge Health';
+    }
+    
     render() {
         return (
             <>

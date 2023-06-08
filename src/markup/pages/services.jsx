@@ -11,6 +11,10 @@ const aboutbg = require('./../../assets/images/background/image-11.jpg');
 
 class Services extends Component {
 
+  componentDidMount() {
+    document.title = 'Services | Bridge Health';
+  }
+
 
   render() {
     return (
@@ -20,29 +24,29 @@ class Services extends Component {
         <section class="team-section padding">
           {/* About Section Two */}
           <section class="auto-container">
-              <div class="row align-items-center">
+            <div class="row align-items-center">
 
-                <div class="col-lg-6">
-                  <div class="content-box">
+              <div class="col-lg-6">
+                <div class="content-box">
 
-                    <div class="sec-title text-center textleft">
-                      <h2 className='textleft'> <span className='headeingcolorblack'>    Your Good Health</span><br></br> <span className='headeingcolorblue'>is Our Plan</span></h2>
-                      <h3 className='textleft marginTop40'>Choose from a selection of<br></br> Annual Preventive Health plans
-                      </h3>
-                    </div>
-                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
-
+                  <div class="sec-title text-center textleft">
+                    <h2 className='textleft'> <span className='headeingcolorblack'>    Your Good Health</span><br></br> <span className='headeingcolorblue'>is Our Plan</span></h2>
+                    <h3 className='textleft marginTop40'>Choose from a selection of<br></br> Annual Preventive Health plans
+                    </h3>
                   </div>
+                  <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
+
+
                 </div>
-                <div class="col-lg-6">
-                  <div class="image-wrapper imgright">
-                    <div class="image-one">
-                      <img src={require('../../assets/images/shape/service.png')} alt="" className='imgwidth' />
-                    </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="image-wrapper imgright">
+                  <div class="image-one">
+                    <img src={require('../../assets/images/shape/service.png')} alt="" className='imgwidth' />
                   </div>
                 </div>
               </div>
+            </div>
           </section>
         </section>
         {/* <!-- Video Section --> */}
@@ -676,7 +680,7 @@ class Services extends Component {
         </div>
 
         {/* <div class="container-fulid"> */}
-          {/* <div class="auto-container">
+        {/* <div class="auto-container">
             <div class="sec-title text-center">
               <h2>
                 <span className='headeingcolorblack'> Explore Our</span>
@@ -686,14 +690,14 @@ class Services extends Component {
 
           </div> */}
 
-          {/* <div class="pricing-plan card-group d-flex">
+        {/* <div class="pricing-plan card-group d-flex">
             <div class="card business p-1">
               <div class="card-header text-center pb-4 item"> */}
-                {/* <h5 class="pt-3 text-white card-title">Clinical Assessments</h5> */}
+        {/* <h5 class="pt-3 text-white card-title">Clinical Assessments</h5> */}
 
-                {/* <p class="small text-white">No VAT &amp; No Hidden Costs</p> */}
-              {/* </div> */}
-              {/* <div class="card-body d-flex flex-column">
+        {/* <p class="small text-white">No VAT &amp; No Hidden Costs</p> */}
+        {/* </div> */}
+        {/* <div class="card-body d-flex flex-column">
                 <ul class="list-unstyled text-center">
                   <li>
                     <span class="d-lg-none">Custom Design </span>
@@ -764,14 +768,14 @@ class Services extends Component {
                 <a class="btn btn-lg btn-block btn-dark mt-auto" href="#">Get started</a>
 
               </div> */}
-            {/* </div> */}
-            {/* <div class="card p-1 starter">
+        {/* </div> */}
+        {/* <div class="card p-1 starter">
               <div class="card-header text-center pb-4 item"> */}
-                {/* <h5 class="pt-3 text-white card-title">Service Offering</h5> */}
-                {/* <span class="h1 text-white">£349</span> */}
-                {/* <p class="small text-white">No VAT &amp; No Hidden Costs</p> */}
-              {/* </div> */}
-              {/* <div class="card-body d-flex flex-column">
+        {/* <h5 class="pt-3 text-white card-title">Service Offering</h5> */}
+        {/* <span class="h1 text-white">£349</span> */}
+        {/* <p class="small text-white">No VAT &amp; No Hidden Costs</p> */}
+        {/* </div> */}
+        {/* <div class="card-body d-flex flex-column">
                 <ul class="list-unstyled text-right">
                   <li>Initial Health Assessment</li>
                   <li>Blood Health</li>
@@ -803,7 +807,7 @@ class Services extends Component {
                   <li>Price</li>
                 </ul>
               </div> */}
-              {/* <div class="card-body d-flex flex-column">
+        {/* <div class="card-body d-flex flex-column">
 
                 <ul class="list-unstyled text-center">
                   <li>
@@ -875,9 +879,9 @@ class Services extends Component {
                 <a class="btn btn-lg btn-block btn-dark mt-auto" href="#">Get started</a>
 
               </div> */}
-            {/* </div> */}
+        {/* </div> */}
 
-            {/* <div class="card set-price p-1 d-none d-lg-none d-lg-block">
+        {/* <div class="card set-price p-1 d-none d-lg-none d-lg-block">
               <div class="card-header text-center pb-4 item">
                 <h5 class="pt-3 text-white card-title">Service Offering</h5>
                
@@ -911,14 +915,14 @@ class Services extends Component {
               </div>
             </div> */}
 
-            <div class="w-100 d-md-none mt-4"></div>
+        <div class="w-100 d-md-none mt-4"></div>
 
 
 
-            <div class="w-100 d-md-none mt-4"></div>
+        <div class="w-100 d-md-none mt-4"></div>
 
 
-            {/* <div class="card advanced p-1">
+        {/* <div class="card advanced p-1">
               <div class="card-header text-center pb-4 item">
                 <h5 class="pt-3 text-white card-title">Gold</h5>
                 
@@ -997,9 +1001,9 @@ class Services extends Component {
               </div>
             </div> */}
 
-            <div class="w-100 d-md-none mt-4"></div>
+        <div class="w-100 d-md-none mt-4"></div>
 
-            {/* <div class="card business p-1">
+        {/* <div class="card business p-1">
               <div class="card-header text-center pb-4 item">
                 <h5 class="pt-3 text-white card-title">Platinum</h5>
                 
@@ -1077,9 +1081,9 @@ class Services extends Component {
 
               </div>
             </div> */}
-            <div class="w-100 d-md-none mt-4"></div>
+        <div class="w-100 d-md-none mt-4"></div>
 
-            {/* <div class="card business p-1">
+        {/* <div class="card business p-1">
               <div class="card-header text-center pb-4 item">
                 <h5 class="pt-3 text-white card-title">Platinum +</h5>
                
@@ -1157,9 +1161,9 @@ class Services extends Component {
 
               </div>
             </div> */}
-            <div class="w-100 d-md-none mt-4"></div>
+        <div class="w-100 d-md-none mt-4"></div>
 
-            {/* <div class="card business p-1">
+        {/* <div class="card business p-1">
               <div class="card-header text-center pb-4 item">
                 <h5 class="pt-3 text-white card-title">Platinum +</h5>
                 
@@ -1237,7 +1241,7 @@ class Services extends Component {
 
               </div>
             </div> */}
-          {/* </div>
+        {/* </div>
         </div> */}
 
 

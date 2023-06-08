@@ -4,6 +4,9 @@ import Footer from '../layout/footer'
 
 
 class nursingAtHome extends Component {
+    componentDidMount() {
+        document.title = 'Nursing at Home | Bridge Health';
+    }
     render() {
         return (
             <>

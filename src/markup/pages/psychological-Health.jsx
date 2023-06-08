@@ -5,6 +5,9 @@ import Footer from '../layout/footer'
 const aboutbg = require('./../../assets/images/shape/psychological-health.png');
 
 class psychological_Health extends Component {
+    componentDidMount() {
+        document.title = 'Psychological Health | Bridge Health';
+    }
 
 
     render() {

@@ -4,6 +4,9 @@ import Footer from '../layout/footer'
 const aboutbg = require('./../../assets/images/shape/Pharmacy.png');
 
 class pharmacy extends Component {
+    componentDidMount() {
+        document.title = 'Pharmacy | Bridge Health';
+    }
 
 
     render() {

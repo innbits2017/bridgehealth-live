@@ -12,6 +12,11 @@ const aboutbg = require('./../../assets/images/background/image-11.jpg');
 
 class corporate_membership_program extends Component {
 
+    componentDidMount() {
+        document.title = 'Corporate Membership Program | Bridge Health';
+    }
+
+
     constructor(props) {
         super(props);
 

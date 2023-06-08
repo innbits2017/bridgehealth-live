@@ -3,6 +3,11 @@ import Header from '../layout/header'
 import Footer from '../layout/footer'
 
 class fitnessAssessment extends Component {
+
+    componentDidMount() {
+        document.title = 'Fitness Assessment | Bridge Health';
+    }
+
     render() {
         return (
             <>

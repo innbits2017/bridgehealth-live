@@ -5,6 +5,10 @@ import Header from '../layout/header'
 import Footer from '../layout/footer'
 
 class comprehensiveHealth extends Component {
+
+    componentDidMount() {
+        document.title = 'Comprehensive Health | Bridge Health';
+    }
     render() {
         return (
             <>

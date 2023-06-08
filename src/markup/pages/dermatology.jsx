@@ -6,6 +6,11 @@ import Footer from '../layout/footer'
 const aboutfair = require('./../../assets/images/shape/der.png');
 
 class dermatology extends Component {
+
+    componentDidMount() {
+        document.title = 'Dermatology | Bridge Health';
+    }
+    
     render() {
         return (
             <>

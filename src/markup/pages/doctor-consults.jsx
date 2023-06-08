@@ -6,6 +6,10 @@ import Footer from '../layout/footer'
 
 class doctor_consults extends Component {
 
+    componentDidMount() {
+        document.title = 'Doctor Consults | Bridge Health';
+    }
+
     render() {
         return (
             <>

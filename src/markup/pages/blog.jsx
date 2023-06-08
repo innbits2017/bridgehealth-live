@@ -8,6 +8,10 @@ const aboutbg = require('./../../assets/images/background/image-11.jpg');
 
 class Blog extends Component {
 
+    componentDidMount() {
+        document.title = 'Blog | Bridge Health';
+    }
+
     constructor(props) {
         super(props);
         this.state = {

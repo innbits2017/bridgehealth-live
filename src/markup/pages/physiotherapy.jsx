@@ -6,6 +6,10 @@ const aboutbg = require('./../../assets/images/shape/Physiotherapy.png');
 
 class physiotherapy extends Component {
 
+    componentDidMount() {
+        document.title = 'Physiotherapy | Bridge Health';
+    }
+
 
     render() {
         return (

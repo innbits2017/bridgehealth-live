@@ -7,6 +7,9 @@ import Footer from '../layout/footer'
 const abouteye = require('./../../assets/images/shape/eyetest.png');
 
 class ophthalmologist extends Component {
+    componentDidMount() {
+        document.title = 'Ophthalmologist | Bridge Health';
+    }
     render() {
         return (
             <>
