@@ -10,7 +10,8 @@ import emailjs from "@emailjs/browser";
 import 'reactjs-popup/dist/index.css';
 import { Modal, Button } from "react-bootstrap";
 import CaseStudy from '../element/case-study';
-const BRIDGE_HEALTH_SITE=process.env.BRIDGE_HEALTH_SITE;
+import ContactForm from '../element/contact-form';
+
 
 class Index extends Component {
     state = {
@@ -46,7 +47,33 @@ class Index extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
 
-        console.log(this.state);
+        // Perform form submission logic here
+    };
+
+
+    validateForm = () => {
+        const { username, email, phone } = this.state;
+        const errors = {};
+
+        // Username validation
+        if (username.trim() === "") {
+            errors.username = "Please enter your name*";
+        }
+
+        // Email validation
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            errors.email = "Please enter a valid email address*";
+        }
+
+        // Phone validation
+        if (!/^\d{10}$/.test(phone)) {
+            errors.phone = "Please enter a 10-digit phone number*";
+        }
+
+        this.setState({
+            errors,
+            isSubmitDisabled: Object.keys(errors).length > 0
+        });
     };
 
     saveData = async (e) => {
@@ -108,8 +135,7 @@ class Index extends Component {
 
     render() {
 
-        const { username, email } = this.state;
-        const isSubmitDisabled = username === '' || email === ''
+        const { isSubmitDisabled, errors } = this.state;
 
         return (
             <>
