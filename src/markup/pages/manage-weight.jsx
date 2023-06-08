@@ -6,6 +6,11 @@ import Footer from '../layout/footer'
 
 
 class manageWeight extends Component {
+
+    componentDidMount() {
+        document.title = 'Manage Weight | Bridge Health';
+    }
+
     render() {
         return (
             <>

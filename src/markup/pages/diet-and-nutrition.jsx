@@ -12,6 +12,10 @@ const aboutbg = require('./../../assets/images/shape/Dietandnutrition.png');
 
 class diet_and_nutrition extends Component {
 
+    componentDidMount() {
+        document.title = 'Diet & Nutrition | Bridge Health';
+    }
+
 
     render() {
         return (
@@ -29,7 +33,7 @@ class diet_and_nutrition extends Component {
 
                                 </h2>
                                 <h3 className='textleft marginTop40'>
-                                Talk to our clinical nutritionists<br></br> and start eating healthy
+                                    Talk to our clinical nutritionists<br></br> and start eating healthy
                                 </h3>
                             </div>
                             <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
@@ -51,7 +55,7 @@ class diet_and_nutrition extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/nu3.png')} alt=""  className='width84'/>
+                                        <img src={require('../../assets/images/shape/nu3.png')} alt="" className='width84' />
                                     </div>
                                 </div>
                             </div>
@@ -71,8 +75,8 @@ class diet_and_nutrition extends Component {
 
                                     <div class="contact-form">
 
-                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                              
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+
                                     </div>
                                 </div>
                             </div>
@@ -124,12 +128,12 @@ class diet_and_nutrition extends Component {
 
 
                                 <div class="col-lg-6">
-                                <div class="">
-                            <h2 className='header1'>
-                                <span className='headeingcolorblack'> What We </span>
-                                <span className='headeingcolorblack1'>  Offer</span>
-                            </h2>
-                        </div>
+                                    <div class="">
+                                        <h2 className='header1'>
+                                            <span className='headeingcolorblack'> What We </span>
+                                            <span className='headeingcolorblack1'>  Offer</span>
+                                        </h2>
+                                    </div>
                                     <div class="content-box">
                                         {/* <div class="sec-title">
                                             <div class="text" style={{marginRight: 40 + 'px'}}>Predict the onset of
@@ -137,7 +141,7 @@ class diet_and_nutrition extends Component {
                                             </div>
                                         </div> */}
                                         <ul className='listicon'>
-                                        <li className='listicon'>
+                                            <li className='listicon'>
 
                                                 <img className='listicon3' src={require('../../assets/images/shape/nu6.png')} alt="" />
                                                 Reduce the risk of diseases like diabetes, heart disease, kidney disease, hypertension, PCOS, and thyroid through diet modification plans
@@ -250,10 +254,10 @@ class diet_and_nutrition extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                                            <a class="theme-btn btn-style-one" href="#">
-                                                <span class="btn-title">BOOK NOW</span>
-                                            </a>
-                                        </div>
+                            <a class="theme-btn btn-style-one" href="#">
+                                <span class="btn-title">BOOK NOW</span>
+                            </a>
+                        </div>
                     </div>
                 </section>
                 {/* <section>

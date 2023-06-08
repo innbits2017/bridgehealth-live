@@ -11,15 +11,40 @@ class Footer extends Component {
             email: '',
             phone: '',
             message: '',
+            isSubmitDisabled: true,
+            errors: {}
         };
-        // this.handleChange = this.handleChange.bind(this)
     }
 
     handleChange = (event) => {
+        this.setState({ [event.target.name]: event.target.value }, () => {
+            this.validateForm();
+        });
+    };
 
-        const { name, value } = event.target;
-        this.setState({ ...this.state, [name]: value });
-        console.log(event)
+    validateForm = () => {
+        const { username, email, phone } = this.state;
+        const errors = {};
+
+        // Username validation
+        if (username.trim() === "") {
+            errors.username = "Please enter your name*";
+        }
+
+        // Email validation
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            errors.email = "Please enter a valid email address*";
+        }
+
+        // Phone validation
+        if (!/^\d{10}$/.test(phone)) {
+            errors.phone = "Please enter a 10-digit phone number*";
+        }
+
+        this.setState({
+            errors,
+            isSubmitDisabled: Object.keys(errors).length > 0
+        });
     };
 
     handleSubmit = (event) => {
@@ -91,8 +116,7 @@ class Footer extends Component {
     render() {
 
 
-        const { username, email } = this.state;
-        const isSubmitDisabled = username === '' || email === ''
+        const { isSubmitDisabled, errors } = this.state;
 
         return (
             <>
@@ -177,7 +201,10 @@ class Footer extends Component {
                                                                 id="name"
                                                                 placeholder="Name*"
                                                                 required=""
-                                                                className='inputfooter' />
+                                                                className='inputfooter'
+                                                            />
+                                                            {errors.username && <div className="error">{errors.username}</div>}
+
                                                         </div>
                                                         <div class="col-md-12 form-group">
                                                             <input
@@ -188,7 +215,9 @@ class Footer extends Component {
                                                                 id="email"
                                                                 placeholder="Email ID"
                                                                 required=""
-                                                                className='inputfooter' />
+                                                                className='inputfooter'
+                                                            />
+                                                            {errors.email && <div className="error">{errors.email}</div>}
                                                         </div>
                                                         <div class="col-md-12 form-group">
                                                             <button

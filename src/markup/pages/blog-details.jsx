@@ -8,6 +8,9 @@ const addbg = require('./../../assets/images/background/image-15.jpg');
 
 
 class BlogDestails extends Component {
+    componentDidMount() {
+        document.title = 'Blog Details | Bridge Health';
+    }
 
 
     render() {
@@ -27,11 +30,11 @@ class BlogDestails extends Component {
                                 <div class="form-group">
                                     <fieldset>
                                         <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required />
-                                        <input type="submit" value="Search Now!" class="theme-btn"/>
+                                        <input type="submit" value="Search Now!" class="theme-btn" />
                                     </fieldset>
                                 </div>
                             </form>
-                            <br/>
+                            <br />
                             <h3>Recent Search Keywords</h3>
                             <ul class="recent-searches">
                                 <li><Link to={'/#'}>Finance</Link></li>
@@ -63,9 +66,9 @@ class BlogDestails extends Component {
                     <div class="auto-container">
                         <div class="row">
                             <div class="col-lg-8">
-                            {/* News Block Two */}
+                                {/* News Block Two */}
                                 <div class="news-block-two blog-single-post">
-                                    <div class="inner-box">                            
+                                    <div class="inner-box">
                                         <div class="lower-content">
                                             <div class="category">Business</div>
                                             <ul class="post-meta">
@@ -73,9 +76,9 @@ class BlogDestails extends Component {
                                                 <li><Link to={'/#'}><i class="far fa-comments"></i>35 Comments</Link></li>
                                                 <li><Link to={'/#'}><i class="far fa-calendar-alt"></i>26th March 2020</Link></li>
                                             </ul>
-                                            <h2>Lorem ipsum dolor sit amet, consecte <br/>cing elit, sed do eiusmod tempor.</h2>
+                                            <h2>Lorem ipsum dolor sit amet, consecte <br />cing elit, sed do eiusmod tempor.</h2>
                                             <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p></div>
-                                            <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/news-7.jpg')} alt=""/></Link></div>
+                                            <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/news-7.jpg')} alt="" /></Link></div>
                                             <div class="text-block-wrapper">
                                                 <div class="text-block">
                                                     <h3>A cleansing hot shower or bath</h3>
@@ -104,7 +107,7 @@ class BlogDestails extends Component {
                                             <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. </div>
                                             <div class="row">
                                                 <div class="col-md-5">
-                                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/news-8.jpg')}  alt=""/></Link></div>
+                                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/news-8.jpg')} alt="" /></Link></div>
                                                 </div>
                                                 <div class="col-md-7">
                                                     <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</div>
@@ -133,19 +136,19 @@ class BlogDestails extends Component {
                                             </div>
                                             <div class="blog-post-pagination">
                                                 <div class="wrapper-box">
-                                                    
+
                                                     <div class="prev-post">
                                                         <h5> Previous Post</h5>
                                                         <h4>Tips On Minimalist</h4>
                                                     </div>
 
                                                     <div class="page-view"><span class="fa fa-th"></span></div>
-                                                    
+
                                                     <div class="next-post">
                                                         <h5>Next Topic </h5>
                                                         <h4>Less Is More</h4>
                                                     </div>
-                                                    
+
                                                 </div>
                                             </div>
                                             <div class="related-post">
@@ -155,7 +158,7 @@ class BlogDestails extends Component {
                                                 <div class="row">
                                                     <div class="news-block-five col-md-6">
                                                         <div class="inner-box">
-                                                            <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/news-10.jpg')} alt=""/></Link></div>
+                                                            <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/news-10.jpg')} alt="" /></Link></div>
                                                             <div class="lower-content">
                                                                 <ul class="post-meta">
                                                                     <li><Link to={'/#'}><i class="far fa-calendar-alt"></i>24th March 2020</Link></li>
@@ -167,7 +170,7 @@ class BlogDestails extends Component {
                                                     </div>
                                                     <div class="news-block-five col-md-6">
                                                         <div class="inner-box">
-                                                            <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/news-11.jpg')} alt=""/></Link></div>
+                                                            <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/news-11.jpg')} alt="" /></Link></div>
                                                             <div class="lower-content">
                                                                 <ul class="post-meta">
                                                                     <li><Link to={'/#'}><i class="far fa-calendar-alt"></i>24th March 2020</Link></li>
@@ -177,19 +180,19 @@ class BlogDestails extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>                                        
+                                                </div>
                                             </div>
                                             <div class="author-box-two">
                                                 <div class="wrapper-area">
                                                     <div class="img-box">
-                                                        <img src={require('../../assets/images/resource/author-3.jpg')} alt="Awesome "/>
+                                                        <img src={require('../../assets/images/resource/author-3.jpg')} alt="Awesome " />
                                                     </div>
                                                     <div class="content">
                                                         <h5>Written by</h5>
                                                         <h3>Steve Anderson</h3>
                                                         <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation is enougn for today.</div>
                                                     </div>
-                                                        
+
                                                 </div>
                                             </div>
                                             <div class="comments-area">
@@ -199,7 +202,7 @@ class BlogDestails extends Component {
                                                 {/* <!--Comment Box--> */}
                                                 <div class="comment-box">
                                                     <div class="comment">
-                                                        <div class="author-thumb"><img src={require('../../assets/images/resource/thumb-12.jpg')} alt=""/></div>
+                                                        <div class="author-thumb"><img src={require('../../assets/images/resource/thumb-12.jpg')} alt="" /></div>
                                                         <div class="comment-inner">
                                                             <div class="comment-info"><h5>Rosalina Kelian</h5><span class="date">February 18, 2020</span></div>
                                                             <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
@@ -211,7 +214,7 @@ class BlogDestails extends Component {
                                                 {/* <!--Comment Box--> */}
                                                 <div class="comment-box comment-reply">
                                                     <div class="comment">
-                                                        <div class="author-thumb"><img src={require('../../assets/images/resource/thumb-13.jpg')} alt=""/></div>
+                                                        <div class="author-thumb"><img src={require('../../assets/images/resource/thumb-13.jpg')} alt="" /></div>
                                                         <div class="comment-inner">
                                                             <div class="comment-info"><h5>Steven Rich</h5><span class="date">February 20, 2020</span></div>
                                                             <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
@@ -223,7 +226,7 @@ class BlogDestails extends Component {
                                                 {/* <!--Comment Box--> */}
                                                 <div class="comment-box">
                                                     <div class="comment">
-                                                        <div class="author-thumb"><img src={require('../../assets/images/resource/thumb-14.jpg')} alt=""/></div>
+                                                        <div class="author-thumb"><img src={require('../../assets/images/resource/thumb-14.jpg')} alt="" /></div>
                                                         <div class="comment-inner">
                                                             <div class="comment-info"><h5>William Cobus</h5><span class="date">February 25, 2020</span></div>
                                                             <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
@@ -239,27 +242,27 @@ class BlogDestails extends Component {
                                                 {/* Contact Form */}
                                                 <div class="contact-form">
                                                     <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
-                                                        <div class="row clearfix">                                    
+                                                        <div class="row clearfix">
                                                             <div class="col-md-12 form-group">
                                                                 <textarea name="message" placeholder="Enter message here......"></textarea>
                                                                 <i class="fas fa-edit"></i>
                                                             </div>
 
                                                             <div class="col-md-12 form-group">
-                                                                <input type="text" name="username" placeholder="Enter name here......" required=""/>
+                                                                <input type="text" name="username" placeholder="Enter name here......" required="" />
                                                                 <i class="fas fa-user"></i>
                                                             </div>
-                                                            
-                                                            <div class="col-md-12 form-group">
-                                                                <input type="email" name="email" placeholder="Enter email here......" required=""/>
-                                                                <i class="fas fa-envelope"></i>
-                                                            </div> 
 
                                                             <div class="col-md-12 form-group">
-                                                                <input type="email" name="email" placeholder="Type your website...." required=""/>
+                                                                <input type="email" name="email" placeholder="Enter email here......" required="" />
+                                                                <i class="fas fa-envelope"></i>
+                                                            </div>
+
+                                                            <div class="col-md-12 form-group">
+                                                                <input type="email" name="email" placeholder="Type your website...." required="" />
                                                                 <i class="fas fa-globe"></i>
-                                                            </div>                        
-                                    
+                                                            </div>
+
                                                             <div class="col-md-12 form-group">
                                                                 <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Post Comment</span></button>
                                                             </div>
@@ -278,7 +281,7 @@ class BlogDestails extends Component {
                                     <div class="sidebar-widget about-me">
                                         <div class="sidebar-title"><h3>About Me</h3></div>
                                         <div class="widget-content">
-                                            <div class="image"><img src={require('../../assets/images/resource/author-2.jpg')} alt=""/></div>
+                                            <div class="image"><img src={require('../../assets/images/resource/author-2.jpg')} alt="" /></div>
                                             <h4>Rosalina D. Willaimson</h4>
                                             <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</div>
                                             <ul class="social-links">
@@ -290,13 +293,13 @@ class BlogDestails extends Component {
                                             </ul>
                                         </div>
                                     </div>
-                                    
+
                                     {/* <!-- Search --> */}
                                     <div class="sidebar-widget search-box">
                                         <div class="sidebar-title"><h3>Search Objects</h3></div>
                                         <form method="post" action="http://azim.commonsupport.com/Finandox/contact.html">
                                             <div class="form-group">
-                                                <input type="search" name="search-field" value="" placeholder="Search your keyword..." required=""/>
+                                                <input type="search" name="search-field" value="" placeholder="Search your keyword..." required="" />
                                                 <button type="submit"><span class="icon far fa-search"></span></button>
                                             </div>
                                         </form>
@@ -306,30 +309,30 @@ class BlogDestails extends Component {
                                     <div class="sidebar-widget popular-posts">
                                         <div class="sidebar-title"><h3>Popular Feeds</h3></div>
                                         <div class="widget-content">
-                                            
+
                                             {/* <!--News Post--> */}
                                             <div class="news-post">
-                                                <div class="post-thumb"><Link to={'/blog-details'}><img src={require('../../assets/images/resource/thumb-8.jpg')} data-src="" alt=""/></Link></div>
+                                                <div class="post-thumb"><Link to={'/blog-details'}><img src={require('../../assets/images/resource/thumb-8.jpg')} data-src="" alt="" /></Link></div>
                                                 <div class="date"><span class="fa fa-calendar-alt"></span> Feb 25, 2020</div>
-                                                <h4><Link to={'/blog-details'}>Lorem ipsum dolor sit <br/>cing elit, sed do. </Link></h4>
+                                                <h4><Link to={'/blog-details'}>Lorem ipsum dolor sit <br />cing elit, sed do. </Link></h4>
                                             </div>
                                             {/* <!--News Post--> */}
                                             <div class="news-post">
-                                                <div class="post-thumb"><Link to={'/blog-details'}><img src={require('../../assets/images/resource/thumb-9.jpg')} alt=""/></Link></div>
+                                                <div class="post-thumb"><Link to={'/blog-details'}><img src={require('../../assets/images/resource/thumb-9.jpg')} alt="" /></Link></div>
                                                 <div class="date"><span class="fa fa-calendar-alt"></span> Feb 20, 2020</div>
-                                                <h4><Link to={'/blog-details'}>Lorem ipsum dolor sit <br/>cing elit, sed do.</Link></h4>
+                                                <h4><Link to={'/blog-details'}>Lorem ipsum dolor sit <br />cing elit, sed do.</Link></h4>
                                             </div>
                                             {/* <!--News Post--> */}
                                             <div class="news-post">
-                                                <div class="post-thumb"><Link to={'/blog-details'}><img src={require('../../assets/images/resource/thumb-10.jpg')} alt=""/></Link></div>
+                                                <div class="post-thumb"><Link to={'/blog-details'}><img src={require('../../assets/images/resource/thumb-10.jpg')} alt="" /></Link></div>
                                                 <div class="date"><span class="fa fa-calendar-alt"></span> Feb 14, 2020</div>
-                                                <h4><Link to={'/blog-details'}>Lorem ipsum dolor sit <br/> cing elit, sed do.</Link></h4>
+                                                <h4><Link to={'/blog-details'}>Lorem ipsum dolor sit <br /> cing elit, sed do.</Link></h4>
                                             </div>
                                             {/* <!--News Post--> */}
                                             <div class="news-post">
-                                                <div class="post-thumb"><Link to={'/blog-details'}><img src={require('../../assets/images/resource/thumb-11.jpg')}  alt=""/></Link></div>
+                                                <div class="post-thumb"><Link to={'/blog-details'}><img src={require('../../assets/images/resource/thumb-11.jpg')} alt="" /></Link></div>
                                                 <div class="date"><span class="fa fa-calendar-alt"></span> Feb 14, 2020</div>
-                                                <h4><Link to={'/blog-details'}>Lorem ipsum dolor sit <br/> cing elit, sed do.</Link></h4>
+                                                <h4><Link to={'/blog-details'}>Lorem ipsum dolor sit <br /> cing elit, sed do.</Link></h4>
                                             </div>
                                         </div>
                                     </div>
@@ -390,39 +393,39 @@ class BlogDestails extends Component {
                                         <div class="inner-box">
                                             <div class="wrapper-box">
                                                 <div class="image">
-                                                    <img  src={require('../../assets/images/gallery/instagram-1.jpg')} alt=""/>
+                                                    <img src={require('../../assets/images/gallery/instagram-1.jpg')} alt="" />
                                                     <div class="overlay-link"><Link to={'/assets/images/gallery/instagram-1.jpg'} class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></Link></div>
                                                 </div>
                                                 <div class="image">
-                                                    <img  src={require('../../assets/images/gallery/instagram-2.jpg')} alt=""/>
+                                                    <img src={require('../../assets/images/gallery/instagram-2.jpg')} alt="" />
                                                     <div class="overlay-link"><Link to={'/assets/images/gallery/instagram-2.jpg'} class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></Link></div>
                                                 </div>
                                                 <div class="image">
-                                                    <img  src={require('../../assets/images/gallery/instagram-3.jpg')} alt=""/>
+                                                    <img src={require('../../assets/images/gallery/instagram-3.jpg')} alt="" />
                                                     <div class="overlay-link"><Link to={'/assets/images/gallery/instagram-3.jpg'} class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></Link></div>
                                                 </div>
                                                 <div class="image">
-                                                    <img  src={require('../../assets/images/gallery/instagram-4.jpg')} alt=""/>
+                                                    <img src={require('../../assets/images/gallery/instagram-4.jpg')} alt="" />
                                                     <div class="overlay-link"><Link to={'/assets/images/gallery/instagram-4.jpg'} class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></Link></div>
                                                 </div>
                                                 <div class="image">
-                                                    <img  src={require('../../assets/images/gallery/instagram-5.jpg')} alt=""/>
+                                                    <img src={require('../../assets/images/gallery/instagram-5.jpg')} alt="" />
                                                     <div class="overlay-link"><Link to={'/assets/images/gallery/instagram-5.jpg'} class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></Link></div>
                                                 </div>
                                                 <div class="image">
-                                                    <img  src={require('../../assets/images/gallery/instagram-6.jpg')} alt=""/>
+                                                    <img src={require('../../assets/images/gallery/instagram-6.jpg')} alt="" />
                                                     <div class="overlay-link"><Link to={'/assets/images/gallery/instagram-6.jpg'} class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></Link></div>
                                                 </div>
                                                 <div class="image">
-                                                    <img  src={require('../../assets/images/gallery/instagram-7.jpg')} alt=""/>
+                                                    <img src={require('../../assets/images/gallery/instagram-7.jpg')} alt="" />
                                                     <div class="overlay-link"><Link to={'/assets/images/gallery/instagram-7.jpg'} class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></Link></div>
                                                 </div>
                                                 <div class="image">
-                                                    <img  src={require('../../assets/images/gallery/instagram-8.jpg')} alt=""/>
+                                                    <img src={require('../../assets/images/gallery/instagram-8.jpg')} alt="" />
                                                     <div class="overlay-link"><Link to={'/assets/images/gallery/instagram-8.jpg'} class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></Link></div>
                                                 </div>
                                                 <div class="image">
-                                                    <img  src={require('../../assets/images/gallery/instagram-9.jpg')} alt=""/>
+                                                    <img src={require('../../assets/images/gallery/instagram-9.jpg')} alt="" />
                                                     <div class="overlay-link"><Link to={'/assets/images/gallery/instagram-9.jpg'} class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></Link></div>
                                                 </div>
                                             </div>
@@ -459,7 +462,7 @@ class BlogDestails extends Component {
                                                 <h3>Add Banner</h3>
                                             </div>
                                         </div>
-                                    </div>              
+                                    </div>
                                 </aside>
                             </div>
                         </div>

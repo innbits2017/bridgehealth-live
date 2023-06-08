@@ -8,6 +8,10 @@ const wellcomebg1 = require('./../../assets/images/resource/image-1.jpg');
 
 class leadership extends Component {
 
+    componentDidMount() {
+        document.title = 'Leadership | Bridge Health';
+    }
+
 
     render() {
         return (

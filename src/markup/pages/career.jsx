@@ -11,6 +11,9 @@ const aboutbg = require('./../../assets/images/shape/career1.png');
 
 
 class Career extends Component {
+    componentDidMount() {
+        document.title = 'Career | Bridge Health';
+    }
 
     constructor(props) {
         super(props);

@@ -9,6 +9,10 @@ const wellcomebg1 = require('./../../assets/images/resource/image-1.jpg');
 
 class Team extends Component {
 
+    componentDidMount() {
+        document.title = 'Team | Bridge Health';
+    }
+
 
     render() {
         return (

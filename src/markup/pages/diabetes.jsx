@@ -5,6 +5,9 @@ import Header from '../layout/header'
 import Footer from '../layout/footer'
 
 class diabetes extends Component {
+    componentDidMount() {
+        document.title = 'Diabetes | Bridge Health';
+    }
     render() {
         return (
             <>

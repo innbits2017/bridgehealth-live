@@ -6,6 +6,10 @@ const aboutbg = require('./../../assets/images/shape/YogaAssessmentandCoaching.p
 
 class yoga_Assessment extends Component {
 
+    componentDidMount() {
+        document.title = 'Yoga Assessment | Bridge Health';
+    }
+
 
     render() {
         return (

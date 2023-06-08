@@ -6,6 +6,10 @@ import Footer from '../layout/footer'
 
 class hypertension extends Component {
 
+    componentDidMount() {
+        document.title = 'Hypertension | Bridge Health';
+    }
+
     render() {
         return (
             <>

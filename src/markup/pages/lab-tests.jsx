@@ -4,6 +4,9 @@ import Footer from '../layout/footer'
 
 const aboutbg = require('./../../assets/images/shape/Lab-tests.png');
 class lab_tests extends Component {
+    componentDidMount() {
+        document.title = 'Lab Tests | Bridge Health';
+    }
 
 
     render() {
