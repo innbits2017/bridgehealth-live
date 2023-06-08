@@ -1,5 +1,4 @@
-require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
-console.log("path ",`.env.${process.env.NODE_ENV}`)
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const router = require("./routes/router");
