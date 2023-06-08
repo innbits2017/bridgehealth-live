@@ -20,7 +20,9 @@ const slides = [
 
 
 class b2c_page extends Component {
-
+    componentDidMount() {
+        document.title = 'B2C Page | Bridge Health';
+    }
 
     render() {
         return (
