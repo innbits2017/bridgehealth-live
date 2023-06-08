@@ -78,7 +78,7 @@ class Router extends Component {
                         <Route path='/hyper-tension' component={hypertension}/>
                         <Route path='/about-us' component={aboutUs}/>
                         <Route path='/career' component={Career}/>
-                        
+
                         <Route path='/faq-page' component={FaqPage}/>
                         <Route path='/experience-center' component={experienceCenter}/>
                         <Route path='/affiliate-partners' component={affiliatePartners}/>
