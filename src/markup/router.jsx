@@ -32,6 +32,14 @@ import manageWeight from './pages/manage-weight';
 import hypertension from './pages/hypertension';
 import aboutUs from './pages/aboutus';
 import Career from './pages/career';
+import FaqPage from './pages/faq-page';
+import experienceCenter from './pages/experience-center';
+import affiliatePartners from './pages/affiliate-partners';
+import HRA from './pages/hra';
+import devices_Technology from './pages/devices-and-technology';
+import mediaAndPR from './pages/media-and-pr';
+import termsOfUse from './pages/terms-of-use';
+import priacyPolicies from './pages/privacy-policies';
 
 class Router extends Component {
     render() {
@@ -69,9 +77,16 @@ class Router extends Component {
                         <Route path='/manage-weight' component={manageWeight}/>
                         <Route path='/hyper-tension' component={hypertension}/>
                         <Route path='/about-us' component={aboutUs}/>
-
                         <Route path='/career' component={Career}/>
-
+                        
+                        <Route path='/faq-page' component={FaqPage}/>
+                        <Route path='/experience-center' component={experienceCenter}/>
+                        <Route path='/affiliate-partners' component={affiliatePartners}/>
+                        <Route path='/hra' component={HRA}/>
+                        <Route path='/devices-and-technology' component={devices_Technology}/>
+                        <Route path='/media-and-pr' component={mediaAndPR}/>
+                        <Route path='/term-of-use' component={termsOfUse}/>
+                        <Route path='/priacy-policies' component={priacyPolicies}/>
                     </Switch>
                     <BackToTop />
                 </div>

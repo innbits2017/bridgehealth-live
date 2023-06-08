@@ -11,7 +11,7 @@ import 'reactjs-popup/dist/index.css';
 import { Modal, Button } from "react-bootstrap";
 import CaseStudy from '../element/case-study';
 import ContactForm from '../element/contact-form';
-const BRIDGE_HEALTH_SITE = process.env.BRIDGE_HEALTH_SITE;
+
 
 class Index extends Component {
     state = {
@@ -84,7 +84,7 @@ class Index extends Component {
 
         const { email, username, phone, message } = this.state;
 
-        const res = await fetch(`${BRIDGE_HEALTH_SITE}/submit`, {
+        const res = await fetch("http://localhost:8000/submit", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -112,7 +112,7 @@ class Index extends Component {
 
         const { email, username } = this.state;
 
-        const res = await fetch(`${BRIDGE_HEALTH_SITE}/register`, {
+        const res = await fetch("http://localhost:8000/register", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
