@@ -24,10 +24,9 @@ class lab_tests extends Component {
 
                                 </h2>
                                 <h3 className='textleft marginTop40'>
-                                    Get your lab tests done through us
-                                </h3>
+                                Personalized Lab Testing Solutions                                </h3>
                             </div>
-                            <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
+                            <button class="commonBtnforAll">BOOK NOW</button>
 
 
                         </div>
@@ -38,27 +37,26 @@ class lab_tests extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                        <div class="row">
-
+                    <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/lab1.png')} alt="" />
+                                        <img src={require('../../assets/images/shape/lab1.png')} alt="" className='widthimg' />
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
 
-                                    <div class="sec-title phybox">
+                                    <div class="sec-title squrebox">
                                         <p className='font22'>
-                                            The first step to treating any health condition is <span className='headeingcolorblue'>identification</span>. Lab tests are essential in this regard as they help to accurately examine a patient’s health profile and detect abnormalities or warning signs of many adverse health conditions,  <span className='headeingcolorblue'>paving the way for treatment </span>to begin swiftly.
+                                            The first step to treating any condition is <span className='headeingcolorblue'>identification</span>. Lab tests are essential in this regard as they help to accurately examine a patient’s health profile and detect abnormalities or warning signs of many adverse health conditions,  <span className='headeingcolorblue'>paving the way for right treatment. </span>
                                         </p>
 
                                     </div>
-
-                                    <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
-
+                                    <div class="btn-box text-center btn5">
+                        <button class="commonBtnforAll">BOOK NOW</button>
+                        </div>
 
                                 </div>
                             </div>
@@ -66,13 +64,39 @@ class lab_tests extends Component {
                         </div>
                     </div>
                 </section>
-                <section>
+
+
+                <section class="">
+
+
+<section>
+                    <div class="image-wrapper">
+                        <div class="image-one">
+                            <img src={require('../../assets/images/shape/labtext.png')} alt="" className='labwidth' />
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="contact-form-area">
+
+                            <div class="sec-title cont-box martobutton">
+                                {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
+                                <p className='font22'>
+                    At Bridge Health, we have a  <span className='headeingcolorblue'>state-of-the-art diagnostic facility.</span> We offer a <span className='headeingcolorblue'>comprehensive range </span>of clinical laboratory tests and profiles for the prediction, early detection, diagnostic screening, confirmation and/or monitoring of diseases and health conditions
+                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+</section>
+                {/* <section>
                     <div class="image-wrapper">
                         <div class="image-one">
                             <img src={require('../../assets/images/shape/lab2.png')} alt="" className='labwidth' />
                         </div>
                     </div>
-                </section>
+                </section> */}
                 <section class="team-section">
                     <div class="auto-container">
                         <h2 className='header2'>
@@ -87,7 +111,7 @@ class lab_tests extends Component {
 
 
 
-                                <div class="col-lg-6">
+                                <div class="col-lg-7">
                                     <div class="content-box">
                                         <div class="row">
                                             <div class="col-lg-6">
@@ -153,10 +177,10 @@ class lab_tests extends Component {
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6">
+                                <div class="col-lg-5">
                                     <div class="image-wrapper">
                                         <div class="image-one image-two">
-                                            <img src={require('../../assets/images/shape/lab3.png')} alt="" />
+                                            <img src={require('../../assets/images/shape/lab3.png')} alt=""  className='widthimg'/>
                                             {/* <img src={require('../../assets/images/shape/video2.gif')} alt="" /> */}
                                         </div>
 
@@ -252,16 +276,14 @@ class lab_tests extends Component {
 
                         </div>
                     
-                            <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="#">
-                                <span class="btn-title">BOOK NOW</span>
-                            </a>
+                        <div class="btn-box text-center btn5">
+                        <button class="commonBtnforAll">BOOK NOW</button>
                         </div>
                     </div>
                 </section>
 
 
-                <section class="contact-section">
+                <section class="">
 
                     <div class="auto-container">
                         <div class="row">
@@ -269,7 +291,7 @@ class lab_tests extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/lab5.png')} alt="" />
+                                        <img src={require('../../assets/images/shape/lab5.png')} alt="" className='widthimg' />
                                     </div>
                                 </div>
                             </div>
@@ -280,7 +302,7 @@ class lab_tests extends Component {
                                         <div class="">
                                             <h2 className='header1'>
                                                 <span className='headeingcolorblack'> The</span>
-                                                <span className='headeingcolorblue'>  Bridge Health</span><br></br>
+                                                <span className='headeingcolorblue'>  Bridge Health</span>
                                                 <span className='headeingcolorblack'> Advantage </span>
                                             </h2>
                                         </div>
@@ -324,9 +346,7 @@ class lab_tests extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="#">
-                                <span class="btn-title">BOOK NOW</span>
-                            </a>
+                        <button class="commonBtnforAll">BOOK NOW</button>
                         </div>
                     </div>
                 </section>

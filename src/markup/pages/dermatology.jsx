@@ -31,7 +31,7 @@ class dermatology extends Component {
                                 </h4>
 
                             </div>
-                            <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
+                            <button class="commonBtnforAll">BOOK NOW</button>
 
 
                         </div>
@@ -48,15 +48,16 @@ class dermatology extends Component {
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
 
-                                    <div class="sec-title phybox1">
+                                    <div class="sec-title squrebox">
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
                                             A good physical appearance is a reflection of youth and confidence. Unfortunately, as we age, our physical appearance deteriorates. This could be in the form of pimples, hair loss, stretch marks, unintended weight gain around the abdominal area, and scarring. Therefore,
                                             it’s important to take care of the physical features of our body so that we always remain confident about how we look.
                                         </p>
-                                        <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
-
                                     </div>
+                                    <div class="btn-box text-center btn5">
+                        <button class="commonBtnforAll">BOOK NOW</button>
+                        </div>
 
                                 </div>
                             </div>
@@ -64,7 +65,7 @@ class dermatology extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/darma.png')} alt="" className='width64' />
+                                        <img src={require('../../assets/images/shape/darma.png')} alt="" className='widthimg imgFloatRight' />
                                     </div>
                                 </div>
                             </div>
@@ -87,7 +88,7 @@ class dermatology extends Component {
                             <div class="sec-title cont-box martobutton">
                                 {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                 <p className='font22'>
-                                    Our expert dermatologists at Bridge Health know how to give your physical appearance a boost. They will give you expert advice on skin and haircare routines, diet plans, product recommendations, and treatments so that you always look your best!
+                                    Our expert dermatologists at Bridge Health know how to give your physical appearance a boost. They will give you expert advice on skin and haircare routines, diet plans, and treatments so that you always look your best!
                                 </p>
                             </div>
                         </div>
@@ -99,21 +100,17 @@ class dermatology extends Component {
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-4">
-                               
                                     <img src={require('../../assets/images/gallery/fair1.png')} alt="" class="avtar" />
-
                                 <p className='treat'>Non-surgical fat removal</p>
                             </div>
 
                             <div class="col-sm-4">
                                     <img src={require('../../assets/images/gallery/fair2.png')} alt="" class="avtar" />
-
                                 <p className='treat'>Laser Hair Removal</p>
                             </div>
 
                             <div class="col-sm-4">
                                     <img src={require('../../assets/images/gallery/fair3.png')} alt="" class="avtar" />
-
                                 <p className='treat'>Dandruff control and gray<br></br> hair treatment</p>
                             </div>
                         </div>
@@ -125,7 +122,7 @@ class dermatology extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                        <div class="row">
+                    <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
                                     <div class="auto-container">
@@ -140,27 +137,21 @@ class dermatology extends Component {
                                         <li>
                                             Hair transplant
                                         </li>
-                                        <br></br>
                                         <li>
                                             Skincare routine assistance
                                         </li>
-                                        <br></br>
                                         <li>
                                             Pigmentation treatment
                                         </li>
-                                        <br></br>
                                         <li>
                                             Face resurfacing
                                         </li>
-                                        <br></br>
                                         <li>
                                             Stretch mark removal
                                         </li>
-                                        <br></br>
                                         <li>
-                                            Assistance in developing diet plans to <br></br> maintain healthy skin
+                                            Assistance in developing diet plans to maintain healthy skin
                                         </li>
-                                        <br></br>
                                         <li>
                                             Consultations with expert dermatologists
                                         </li>
@@ -169,10 +160,10 @@ class dermatology extends Component {
                                 </div>
                             </div>
 
-                            <div class="col-lg-5">
+                            <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/fair4.png')} alt="" className='width84' />
+                                        <img src={require('../../assets/images/shape/fair4.png')} alt="" className='widthimg ' />
                                     </div>
                                 </div>
                             </div>
@@ -190,9 +181,7 @@ class dermatology extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="#">
-                                <span class="btn-title">BOOK NOW</span>
-                            </a>
+                        <button class="commonBtnforAll">BOOK NOW</button>
                         </div>
                     </div>
                 </section>

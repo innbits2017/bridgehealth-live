@@ -11,7 +11,8 @@ import 'reactjs-popup/dist/index.css';
 import { Modal, Button } from "react-bootstrap";
 import CaseStudy from '../element/case-study';
 import ContactForm from '../element/contact-form';
-
+import ContactPopup from '../element/popup';
+const BRIDGE_HEALTH_SITE = process.env.BRIDGE_HEALTH_SITE;
 
 class Index extends Component {
     state = {
@@ -141,7 +142,6 @@ class Index extends Component {
             <>
 
                 <Header />
-
                 {/* <!-- About --> */}
                 <div class="video-background-holder">
                     <div class="video-background-overlay"></div>
@@ -151,10 +151,11 @@ class Index extends Component {
                     <div class="video-background-content h-100 auto-container">
                         <div class="d-flex h-100 text-center align-items-center">
                             <div class="w-100 text-white floatleft">
-                                <h5 class="display-4"><span class="display-3">Lets help you </span>#BridgeTheGap</h5>
+                                <h5 class="display-4"><span class="display-3">Let’s help you </span>#BridgeTheGap</h5>
                                 <p class="lead mb-0">Personalised and holistic preventive health plans for <br></br>you and your loved ones
                                 </p>
                                 <ContactForm buttonText="GET STARTED" className="btn-box" />
+                                {/* <ContactPopup/> */}
 
                             </div>
                         </div>
@@ -166,7 +167,7 @@ class Index extends Component {
                         <div class="sec-title text-center">
                             <h2 className='fontwidth'>Confused about your health checks?<br></br>
                                 <span className='headeingcolorblack'> Scan our </span>
-                                <span className='headeingcolorblue'>BH Smart Guide <span className='headeingcolorblack'>!</span></span>
+                                <span className='headeingcolorblue'>BH Smart Guide<span className='headeingcolorblack'>!</span></span>
                             </h2>
                         </div>
 
@@ -180,7 +181,7 @@ class Index extends Component {
                                     <div class="content-box">
                                         <div class="sec-title">
                                             <div class="text textpadding">
-                                                Developed by our in-house clinical experts, BH Smart Guide is a smarter way to understand the right diagnostic tests for you based on your current health status, family history and lifestyle choices.
+                                            Developed by our in-house clinical experts, the BH Smart Guide is a smarter way to understand the right diagnostic tests for you based on your current health status, family history, and lifestyle choices.
                                             </div>
                                         </div>
                                         <div class="image-one">
@@ -201,8 +202,9 @@ class Index extends Component {
                                 <div class="col-lg-7">
                                     <div class="image-wrapper imgright">
                                         <div class="image-one imgpad">
-                                            <img src={require('../../assets/images/shape/Sequence-01.gif')} alt="" />
-                                        </div>
+                                        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"  className='videofull'>
+                        <source src={require('../../assets/images/Hand-phone-video.mp4')} type="video/mp4" />
+                    </video>                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -299,8 +301,10 @@ class Index extends Component {
                                 <div class="col-lg-6">
                                     <div class="content-box">
                                         <div class="sec-title">
-                                            <div class="text1 textpadding" style={{ marginRight: 40 + 'px' }}>Predict the onset of
-                                                <span className='headeingcolorblack'> hidden illnesses</span> and health conditions, prevent them by undergoing tests, check-ups and progress towards good health.
+                                            <div class="text1 textpadding" style={{ marginRight: 40 + 'px' }}>
+                                                Predict the onset of   <span className='headeingcolorblack'> hidden illnesses</span> and health conditions.<br></br>
+Prevent them by undergoing <span className='headeingcolorblack'>tests.</span><br></br>
+Progress towards <span className='headeingcolorblack'>good health.</span> 
                                             </div>
                                         </div>
                                         <ul className='listicon10'>
@@ -423,278 +427,223 @@ class Index extends Component {
                         <div class="auto-container">
                             <div class="row marginbutton30">
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one" >
                                     <div onClick={this.openModal}>
-                                        <div class="grow bozhover">
+                                        <div class="expanded-text grow bozhover">
+                                            <p class="text">
 
-                                            <img src={require('../../assets/images/shape/doctor.png')} alt="" />
-
-                                            <h2 className='expertise'>Annual Preventive<br></br> Health Plans</h2>
-
-                                            <p>
-                                                Explore our efficient membership services that provide a holistic care plan and guide you to start a healthy journey
+                                                <img src={require('../../assets/images/shape/doctor.png')} alt="" />
+                                                <div class="short-name expertise">Annual Preventive<br></br> Health Plans</div>
+                                                <div class="longer-name">No matter what you need, there’s always a plan for you. Choose from a selection of Annual Preventive Health plans and sign up for better health.
+                                                </div>
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one" >
                                     <div>
                                         <CaseStudy />
 
                                     </div>
                                 </div>
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <a href={'/comprehensive-health-checks'}>
+                                <div class="col-lg-3 team-block-one" >
+                                    <div class="expanded-text grow bozhover">
+                                        <p class="text">
+                                            <a href={'/comprehensive-health-checks'}>
 
-                                            <img src={require('../../assets/images/shape/s2.png')} alt="" />
-                                        </a>
-                                        <a href={'/comprehensive-health-checks'}>
-
-                                            <h2 className='expertise'>Comprehensive<br></br> Health Checks</h2>
-                                        </a>
-                                        <p>
-                                            Health is defined as a state of complete physical, mental, and social well-being.
-                                            If even one aspect isn’t satisfied, it means that you are not healthy
+                                                <img src={require('../../assets/images/shape/s2.png')} alt="" />
+                                            </a>
+                                            <div class="short-name expertise">Comprehensive<br></br> Health Checks</div>
+                                            <div class="longer-name">   Health is defined as a state of complete physical, mental, and social well-being.
+                                              </div>
                                         </p>
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
+                                <div class="col-lg-3 team-block-one" >
+
+                                    <div class="expanded-text grow bozhover">
+                                        <p class="text">
                                             <a href={'/doctor-consults'}>
 
                                                 <img src={require('../../assets/images/shape/k3.jpeg')} alt="" />
                                             </a>
-                                            <a href={'/doctor-consults'}>
-
-                                                <h2 className='expertise'>Doctor Consults</h2>
-                                            </a>
-                                            <p>
-                                                All of us get sick at some point in life. And whenever we get sick,
-                                                we always go to the doctor
-                                            </p>
-                                        </div>
+                                            <div class="short-name expertise">Doctor <br></br>Consults</div>
+                                            <div class="longer-name">  All of us get sick at some point in life. And whenever we get sick,
+                                                we always go to the doctor</div>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row marginbutton30">
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
+                                <div class="col-lg-3 team-block-one" >
+
+                                    
+                                    <div class="expanded-text grow bozhover">
+                                        <p class="text">
                                             <a href={'/psychological-health'}>
 
-                                                <img src={require('../../assets/images/shape/k2.jpeg')} alt="" />
-                                            </a>
-                                            <a href={'/psychological-health'}>
+                                                <img src={require('../../assets/images/shape/k2.jpeg')} alt="" /></a>
+                                            <div class="short-name expertise">Psychologist Consults</div>
+                                            <div class="longer-name"> Mental health is extremely important in the current times due to increased work and social pressures. Talk to our expert clinical psychologists.
+</div>
+                                        </p>
+                                    </div>
+                                </div>
+                                {/* <!-- Team Block One --> */}
+                                <div class="col-lg-3 team-block-one" >
+                                    <div class="expanded-text grow bozhover">
+                                        <p class="text">
+                                            <a href={'/dental-consults'}>
 
-                                                <h2 className='expertise'>Psychologist Consults</h2>
-                                            </a>
-                                            <p>
-                                                Unlike physical health issues, psychological issues are not as visible.
-                                                They are generally ignored
-                                            </p>
-                                        </div>
+                                                <img src={require('../../assets/images/shape/s5.png')} alt="" /></a>
+                                            <div class="short-name expertise">Dental Consults</div>
+                                            <div class="longer-name">  Our teeth are made of enamel which is the hardest substance in the human body.</div>
+                                        </p>
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
-                                            <a href={'/dental-consults'}>
-                                                <img src={require('../../assets/images/shape/s5.png')} alt="" />
-                                            </a>
-                                            <a href={'/dental-consults'}>
-                                                <h2 className='expertise'>Dental Consults</h2>
-                                            </a>
-                                            <p>
-                                                Our teeth are made of enamel which is the hardest substance in the human body.
-                                                Unhealthy food items like sugary carbonated drinks
-                                                and candies weaken our enamel which causes a variety of problems including
-                                                tooth decay.
-                                            </p>
-                                        </div>
+                                <div class="col-lg-3 team-block-one" >
+                                <div class="expanded-text grow bozhover">
+                                        <p class="text">
+                                        <a href={'/dermatology'}>
+
+                                            <img src={require('../../assets/images/shape/s7.png')} alt="" /></a>
+                                            <div class="short-name expertise">Dermatology</div>
+                                            <div class="longer-name">    A good physical appearance is a reflection of youth and confidence.
+                                                Unfortunately,</div>
+                                        </p>
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
-                                            <a href={'/dermatology'}>
-                                                <img src={require('../../assets/images/shape/s7.png')} alt="" />
+                                <div class="col-lg-3 team-block-one" >
+                                <div class="expanded-text grow bozhover">
+                                        <p class="text">
+                                        <a href={'/ophthalmologist'}>
+                                        <img src={require('../../assets/images/shape/s8.png')} alt="" />
                                             </a>
-                                            <a href={'/dermatology'}>
-                                                <h2 className='expertise'>Dermatology</h2>
-                                            </a>
-                                            <p>
-                                                A good physical appearance is a reflection of youth and confidence.
-                                                Unfortunately, as we age, our physical appearance deteriorates.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
-                                            <a href={'/ophthalmologist'}>
-                                                <img src={require('../../assets/images/shape/s8.png')} alt="" />
-                                            </a>
-                                            <a href={'/ophthalmologist'}>
-                                                <h2 className='expertise'>Ophthalmology</h2>
-                                            </a>
-                                            <p>
-                                                Our eyes are the windows to the world. They allow us to see every detail
-                                                and color, near and far.
-                                            </p>
-                                        </div>
+                                            <div class="short-name expertise">Ophthalmology</div>
+                                            <div class="longer-name">Our eyesight is a precious gift which allows us to see the beauty of the world. We need to take care of our eyes to prevent any eye-related illnesses. Meet our ophthalmologists today.
+</div>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row marginbutton30">
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
-                                            <a href={'/physio-therapy'}>
-                                                <img src={require('../../assets/images/shape/s9.png')} alt="" />
+                                <div class="col-lg-3 team-block-one" >
+                                <div class="expanded-text grow bozhover">
+                                        <p class="text">
+                                        <a href={'/physio-therapy'}>
+                                        <img src={require('../../assets/images/shape/s9.png')} alt="" />
                                             </a>
-                                            <a href={'/physio-therapy'}>
-                                                <h2 className='expertise'>Physiotherapy</h2>
-                                            </a>
-                                            <p>
-                                                Due to natural age progression, chronic illnesses, or accidents that cause
-                                                crippling injuries, your ability to move may be compromised.
-                                            </p>
-                                        </div>
+                                            <div class="short-name expertise">Physiotherapy</div>
+                                            <div class="longer-name">In life, we take our ability to move around freely for granted. Due to injuries or certain illnesses, our movement gets affected. Schedule a physiotherapy session with us and move with ease.
+</div>
+                                        </p>
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
-                                            <a href={'/elderly-care'}>
-                                                <img src={require('../../assets/images/shape/s10.png')} alt="" />
+                                <div class="col-lg-3 team-block-one" >
+                                <div class="expanded-text grow bozhover">
+                                        <p class="text">
+                                        <a href={'/elderly-care'}>
+                                        <img src={require('../../assets/images/shape/s10.png')} alt="" />
                                             </a>
-                                            <a href={'/elderly-care'}>
-                                                <h2 className='expertise'>Elderly Care</h2>
-                                            </a>
-                                            <p>
-                                                Although we may stay young at heart, our body starts ageing. As we grow older,
-                                                our physical abilities decline and
-                                                we might find ourselves slower and more dependent on others for physical
-                                                assistance.
-                                            </p>
-                                        </div>
+                                            <div class="short-name expertise">Elderly Care</div>
+                                            <div class="longer-name">Growing old is a natural part of our lives. As we age, our physical abilities gradually get compromised and we need assistance. Discover our elderly care services.
+</div>
+                                        </p>
                                     </div>
+                                  
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
-                                            <a href={'/lab-tests'}>
-                                                <img src={require('../../assets/images/shape/s11.png')} alt="" />
+                                <div class="col-lg-3 team-block-one" >
+                                <div class="expanded-text grow bozhover">
+                                        <p class="text">
+                                        <a href={'/lab-tests'}>
+                                        <img src={require('../../assets/images/shape/s11.png')} alt="" />
                                             </a>
-                                            <a href={'/lab-tests'}>
-                                                <h2 className='expertise'>Lab Tests</h2>
-                                            </a>
-                                            <p>
-                                                The first step to treating any health condition is identification.
-                                                Lab tests are essential in this regard as they help to accurately examine
-                                                a patient’s
-                                            </p>
-                                        </div>
+                                            <div class="short-name expertise">Lab Tests</div>
+                                            <div class="longer-name">  The key to an effective diagnosis is effective testing. Advancements in lab testing have allowed us to accurately determine illnesses and provide treatment plans. Discover our state-of-the-art lab facilities.
+</div>
+                                        </p>
                                     </div>
+                                  
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
-                                            <a href={'/diet-and-nutrition'}>
-                                                <img src={require('../../assets/images/shape/s12.png')} alt="" />
+                                <div class="col-lg-3 team-block-one" >
+                                <div class="expanded-text grow bozhover">
+                                        <p class="text">
+                                        <a href={'/diet-and-nutrition'}>
+                                        <img src={require('../../assets/images/shape/s12.png')} alt="" />
                                             </a>
-                                            <a href={'/diet-and-nutrition'}>
-                                                <h2 className='expertise'>Diet and Nutrition</h2>
-                                            </a>
-                                            <p>
-                                                It’s no secret that eating a balanced diet is the key to a longer and healthier life.
-                                                Therefore, it’s important to understand that making wise changes in your diet could improve your health
-                                            </p>
-                                        </div>
+                                            <div class="short-name expertise">Diet and Nutrition</div>
+                                            <div class="longer-name"> A healthy diet is the basis for good health. After all, you are what you eat. Find out how our expert clinical nutritionists help you eat healthy to stay healthy.
+</div>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row marginbutton30">
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
-                                            <a href={'/yoga-assessment'}>
-                                                <img src={require('../../assets/images/shape/s13.png')} alt="" />
+                                <div class="col-lg-3 team-block-one" >
+
+                                <div class="expanded-text grow bozhover">
+                                        <p class="text">
+                                        <a href={'/yoga-assessment'}>
+                                        <img src={require('../../assets/images/shape/s13.png')} alt="" />
                                             </a>
-                                            <a href={'/yoga-assessment'}>
-                                                <h2 className='expertise'>Yoga Assessment <br></br>and Coaching</h2>
-                                            </a>
-                                            <p>
-                                                Practiced for thousands of years, yoga has several benefits on your overall health.
-                                                Through a series of breathing exercises and poses, yoga
-                                            </p>
-                                        </div>
+                                            <div class="short-name expertise">Yoga Assessment <br></br>and Coaching</div>
+                                            <div class="longer-name">Yoga has been a part of our culture for centuries. The focus on harmony of mind, body, and spirit has been scientifically proven to have positive effects on health. Talk to our yoga therapists.
+</div>
+                                        </p>
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
-                                            <a href={'/fitness-assessment'}>
+                                <div class="col-lg-3 team-block-one" >
+
+                                    
+                                <div class="expanded-text grow bozhover">
+                                        <p class="text">
+                                        <a href={'/fitness-assessment'}>
                                                 <img src={require('../../assets/images/shape/s14.png')} alt="" />
                                             </a>
-                                            <a href={'/fitness-assessment'}>
-                                                <h2 className='expertise'>Fitness Assessment<br></br> and Coaching</h2>
-                                            </a>
-                                            <p>
-                                                To stay healthy, regular exercise is a must! Regular exercise and keeping our bodies active reduces blood pressure,
-                                                improves blood circulation, burns excess fat & calories, and reduces
-                                            </p>
-                                        </div>
+                                            <div class="short-name expertise">Fitness Assessment<br></br> and Coaching</div>
+                                            <div class="longer-name">For good health, exercise is important. We’ve taken this to another level and have adopted a clinical fact-based approach with our unique fitness program. Discover our pro-fit program.</div>
+                                        </p>
                                     </div>
+
+
+                            
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
-                                            <a
-                                                href={'/pharmacy'}>
-                                                <img src={require('../../assets/images/shape/s15.png')} alt="" />
+                                <div class="col-lg-3 team-block-one" >
+                                <div class="expanded-text grow bozhover">
+                                        <p class="text">
+                                        <a href={'/pharmacy'}>
+                                        <img src={require('../../assets/images/shape/s15.png')} alt="" />
                                             </a>
-                                            <a href={'/pharmacy'}>
-                                                <h2 className='expertise'>Pharmacy</h2>
-                                            </a>
-                                            <span>
-                                                It’s important to always keep an adequate supply of the medicines you need.
-                                                This is especially important if you suffer from any chronic conditions.
-                                            </span>
-                                        </div>
+                                            <div class="short-name expertise">Pharmacy</div>
+                                            <div class="longer-name"> It’s important to always keep an adequate supply of the medicines you need.</div>
+                                        </p>
                                     </div>
+                               
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                    <div class="grow bozhover">
-                                        <div>
-                                            <a href={'/nursing-at-home'}>
-                                                <img src={require('../../assets/images/shape/s16.png')} alt="" />
+                                <div class="col-lg-3 team-block-one" >
+                                <div class="expanded-text grow bozhover">
+                                        <p class="text">
+                                        <a href={'/nursing-at-home'}>
+                                        <img src={require('../../assets/images/shape/s16.png')} alt="" />
                                             </a>
-                                            <a href={'/nursing-at-home'}>
-                                                <h2 className='expertise'>Nursing At Home</h2>
-                                            </a>
-                                            <p>
-                                                Sometimes, especially for the elderly and for patients suffering from chronic illnesses,
-                                                it becomes a challenge to travel to a hospital to get timely care.
-                                            </p>
-                                        </div>
+                                            <div class="short-name expertise">Nursing At Home</div>
+                                            <div class="longer-name">With nursing services provided directly to you and your loved ones at the comfort of your own home, get the timely care and assistance you need at all times.
+</div>
+                                        </p>
                                     </div>
+                                
                                 </div>
                             </div>
                         </div>
@@ -705,14 +654,14 @@ class Index extends Component {
                 {/* <!-- Testimonial Section --> */}
                 <Testimonial2 />
                 <Testimonial1 />
-
+<popup/>
                 {/* <!-- News Section --> */}
                 <section class="auto-container3">
                     <div class="auto-container">
 
                         <div class="row">
                             {/* <!-- News Block One --> */}
-                            <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                            <div class="news-block-one col-lg-4" >
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/shape/blog.png')} alt="" /></Link></div>
                                     <div class="lower-content">
@@ -724,13 +673,13 @@ class Index extends Component {
                                 </div>
                             </div>
                             {/* <!-- News Block One --> */}
-                            <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                            <div class="news-block-one col-lg-4" >
                                 <div class="inner-box">
-                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/shape/blog1.png')} alt="" /></Link></div>
+                                    <div class="image"><Link to={'/'}><img src={require('../../assets/images/shape/blog1.png')} alt="" /></Link></div>
                                     <div class="lower-content">
                                         <div class="category">Blog heading</div>
 
-                                        <h3><Link to={'/blog-details'}>Myths And Facts About GI Foods</Link></h3>
+                                        <h3><Link to={''}>Myths And Facts About GI Foods</Link></h3>
                                         <div class="text">Carbohydrates have been villainized in recent years as the culprit for weight gain and even chronic diseases</div>
                                     </div>
                                 </div>
@@ -738,13 +687,13 @@ class Index extends Component {
 
                             </div>
                             {/* <!-- News Block One --> */}
-                            <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                            <div class="news-block-one col-lg-4" >
                                 <div class="inner-box">
                                     <div class="image"><Link to={'/#'}><img src={require('../../assets/images/shape/blog3.png')} alt="" /></Link></div>
                                     <div class="lower-content">
                                         <div class="category">Blog heading</div>
 
-                                        <h3><Link to={'/blog-details'}>Everything you need to know about Glycemic Index</Link></h3>
+                                        <h3><Link to={''}>Everything you need to know about Glycemic Index</Link></h3>
                                         <div class="text">Even with the world becoming more health-conscious, diseases seem to be on the rise. While you frantically</div>
                                     </div>
                                 </div>
@@ -772,7 +721,7 @@ class Index extends Component {
                         <div class="auto-container">
                             <div class="sec-title text-center">
                                 <h2 style={{ fontSize: 50 + 'px' }}> <span className='headeingcolorblue'>REACH </span> <span className='headeingcolorblack'>OUT TO US</span><br></br>
-                                    <p style={{ fontSize: 22 + 'px' }}>Our health advisor is ready to answer your queries about what we do and how <br></br>we can help you take care of yourself and your loved ones better.</p>
+                                    <p style={{ fontSize: 22 + 'px' }}>There is a plan to fit the specific health needs of everybody - your spouse, parents, kids & YOU! <br></br> <span className='headeingcolorblue'>Talk to our health advisor today!!</span></p>
                                 </h2>
                             </div>
 

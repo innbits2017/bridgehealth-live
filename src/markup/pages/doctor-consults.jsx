@@ -24,13 +24,12 @@ class doctor_consults extends Component {
                                 <div class="content-box marginTop40header">
 
                                     <div class="sec-title text-center textleft">
-                                        <h2 className='textleft'>
-                                            <span className='headeingcolorblack'> Your  </span> <span className='headeingcolorblue'>Good Health </span> <br></br><span className='headeingcolorblack'>is Our Plan</span></h2>
-                                        <h3 className='textleft marginTop40'>Choose from a selection of<br></br> Annual Preventive Health plans
+                                        <h2 className='textleft fontSize50'>
+                                           <span className='headeingcolorblack'>Your doctor is just</span> <br></br> <span className='headeingcolorblue'>a phone call away </span></h2>
+                                        <h3 className='textleft marginTop40'>Schedule a consultation with <br></br> one of our expert doctors
                                         </h3>
                                     </div>
-                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
+                                    <button class="commonBtnforAll">BOOK NOW</button>
 
                                 </div>
                             </div>
@@ -53,50 +52,43 @@ class doctor_consults extends Component {
                     </div>
 
                     <div class="col-lg-12">
-                        <div class="contact-form-area">
 
-                            <div class="sec-title cont-box martobutton">
-                                {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
-                                <p className='font22'>
-                                    All of us get sick at some point in life. And whenever we get sick, we always go to the doctor to find out the reason and get the appropriate medicines so that we can better quickly.
-                                    In the past, doctor consultations had to be done in the traditional way. You book an appointment, visit the doctor’s office, and get a prescription.
-                                </p>
-                                <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
-
+                        <div class="sec-title cont-box martobutton">
+                            {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
+                            <p className='font22'>
+                                All of us get sick at some point in life. And whenever we get sick, we always go to the doctor to find out the reason and get the appropriate medicines so that we can better quickly.
+                                In the past, doctor consultations had to be done in the traditional way. You book an appointment, visit the doctor’s office, and get a prescription.
+                            </p>
+                        </div>
+                        <div class="btn-box text-center btn5">
+                                <button class="commonBtnforAll">BOOK NOW</button>
                             </div>
 
-                        </div>
                     </div>
 
 
                 </section>
 
 
-                <section class="contact-section">
+                <section class="">
 
                     <div class="auto-container">
-                        <div class="row col-lg-12">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img src={require('../../assets/images/shape/doct3.png')} alt="" className='imgwidth' />
 
-                            <div class="col-lg-5">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
-                                        <img src={require('../../assets/images/shape/doct3.png')} alt="" />
-                                    </div>
-                                </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="contact-form-area">
 
-                                    <div class="sec-title">
-                                        <p className='font22'>
-                                            The expert doctors at Bridge Health have years of experience as practicing professionals. You can directly book an appointment with them and avail of virtual consultations with them wherever you are. This simplifies the process and eliminates the long queue times at the doctor’s clinic.
-                                        </p>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
+                                <div class="sec-title squrebox">
+                                    <p className='font22'>
+                                        The expert doctors at Bridge Health have years of experience as practicing professionals. You can directly book an appointment with them and avail of virtual consultations with them wherever you are. This simplifies the process and eliminates the long queue times at the doctor’s clinic.
+                                    </p>
+                                </div>
+                                <div class="btn-box text-center btn5 marBtnTop">
+                                        <button class="commonBtnforAll">BOOK NOW</button>
 
                                     </div>
-
-
-                                </div>
                             </div>
 
                         </div>
@@ -144,9 +136,8 @@ class doctor_consults extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="#">
-                                <span class="btn-title">BOOK NOW</span>
-                            </a>
+                            <button class="commonBtnforAll">BOOK NOW</button>
+
                         </div>
                     </div>
                 </section>

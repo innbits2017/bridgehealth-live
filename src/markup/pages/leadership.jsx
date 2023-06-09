@@ -5,7 +5,6 @@ import Footer from '../layout/footer'
 
 const aboutbg = require('./../../assets/images/background/leadership1.jpg');
 const wellcomebg1 = require('./../../assets/images/resource/image-1.jpg');
-
 class leadership extends Component {
 
     componentDidMount() {
@@ -17,10 +16,6 @@ class leadership extends Component {
         return (
             <>
                 <Header />
-
-
-
-
                 {/* <!-- Page Banner Section --> */}
                 <section class="page-banner">
                     <div className="page-banner-bg" style={{ backgroundImage: "url(" + aboutbg + ")" }}></div>
@@ -120,8 +115,8 @@ class leadership extends Component {
                 <section class="gallery-section teamleader">
                     <div class="auto-container">
                         <div class="auto-container">
-                            <div class="sec-title textalign ">
-                                <h2> <span className='headeingcolorblack'> LEADERSHIP</span><br></br> <span className='headeingcolorblue'> TEAM</span></h2>
+                            <div class="sec-title textalign martextleft ">
+                                <h2> <span className='headeingcolorblue'> LEADERSHIP</span><br></br> <span className='headeingcolorblack marginleftspan'> TEAM</span></h2>
                             </div>
 
                         </div>

@@ -20,7 +20,7 @@ class pharmacy extends Component {
 
                             <div class=" text-center textleft">
                                 <h2 className='textleft fontSize'>
-                                    <span className='headeingcolorblack'>All your Medicinal </span><br></br>
+                                    <span className='headeingcolorblack'>All your Pharmacy </span><br></br>
                                     <span className='headeingcolorblue'> Needs In One Place </span>
 
                                 </h2>
@@ -28,8 +28,7 @@ class pharmacy extends Component {
                                 Order your medicines through<br></br> Bridge Health Pharmacy
                                 </h3>
                             </div>
-                            <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
+                            <button class="commonBtnforAll">BOOK NOW</button>
 
                         </div>
 
@@ -41,82 +40,70 @@ class pharmacy extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                        <div class="row">
-
+                    <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/ph1.png')} alt="" className='width84' />
+                                        <img src={require('../../assets/images/shape/ph1.png')} alt="" className='' />
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
 
-                                    <div class="sec-title">
-                                        {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span>
-
-                                        </h2> */}
+                                    <div class="sec-title squrebox">
+                                   
                                         <p className='font22'>
                                             It’s important to always keep an adequate supply of the medicines you need. This is especially important if you suffer from any chronic conditions. The availability of a fully- stocked pharmacy near your residence is considered to be very important in case you need medicines urgently.
                                         </p>
 
 
                                     </div>
+                                    <div class="btn-box text-center btn5">
+                        <button class="commonBtnforAll">BOOK NOW</button>
 
-
-                                    <div class="contact-form">
-
-                                     <div class="col-md-12 form-group">
-                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                                </div>
-                                    </div>
+                        </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
                 </section>
-                <section class="contact-section container-fulid pharmacy">
-                    <div class="auto-container">
-                        <div class="row">
+                <section class=" container-fulid pharmacy">
+                <div class="row align-items-center">
                             <div class="col-lg-6" style={{ marginTop: 3 + 'rem' }}>
-                                <div class="contact-form-area">
+                                <div class="contact-form-area marginLeft12">
                                     <div class="sec-title">
-                                        <p className='font22'>
-                                            Get everything you need at the Bridge Health pharmacy. Our pharmacy is well-stocked with authentic prescription medicines and over-the-counter medicines at affordable prices. Bridge Health operates its pharmacy business through both wholesale and retail pharmacy formats.
+                                        <p className='font24'>
+                                            Get everything you need at the Bridge Health pharmacy. Our pharmacy is well-stocked with prescription medicines and over-the-counter medicines at affordable prices. Bridge Health<br></br> operates its pharmacy through both<br></br> online and offline pharmacy formats.
                                         </p>
 
                                     </div>
-                                    <div class="contact-form">
+                                    <div class="btn-box text-center btn5">
+                        <button class="commonBtnforAll">BOOK NOW</button>
 
-                                     <div class="col-md-12 form-group">
-                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                                </div>
-                                    </div>
+                        </div>
 
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/ph2.png')} alt="" />
+                                        <img src={require('../../assets/images/shape/phar1.png')} alt="" />
                                     </div>
                                 </div>
                             </div>
-
-                        </div>
                     </div>
                 </section>
 
-                <section class="contact-section">
+                <section class="contact-section margintop100">
                     <div class="auto-container">
                         <div class="row">
 
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/ph3.png')} alt="" className='width64' />
+                                        <img src={require('../../assets/images/shape/ph3.png')} alt="" className='widthimg' />
                                     </div>
                                 </div>
                             </div>
@@ -149,9 +136,7 @@ class pharmacy extends Component {
                                         <li>
                                             All branded & generic medicines available
                                         </li>
-                                        <li>
-                                            Free mobile-based personal health records access
-                                        </li>
+                                    
                                         <li>
                                             Pharmacy opening and running support inside corporate and resident welfare associations
                                         </li>
@@ -175,9 +160,7 @@ class pharmacy extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                                            <a class="theme-btn btn-style-one" href="#">
-                                                <span class="btn-title">BOOK NOW</span>
-                                            </a>
+                        <button class="commonBtnforAll">BOOK NOW</button>
                                         </div>
                     </div>
                 </section>
