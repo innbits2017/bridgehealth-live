@@ -22,16 +22,14 @@ class fitnessAssessment extends Component {
                                 <div class="content-box marginTop40header">
 
                                     <div class="sec-title text-center textleft">
-                                        <h2 className='textleft'>
+                                        <h2 className='textleft fontSize50'>
                                             <span className='headeingcolorblack'> It’s time to get</span> <br></br>
                                             <span className='headeingcolorblue fontitalic'> MOVING </span></h2>
                                         <h3 className='textleft marginTop40'>
                                             Stay fit and active with our  <br></br> pro-fit program
                                         </h3>
                                     </div>
-                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
-
+                                        <button class="commonBtnforAll">BOOK NOW</button>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -55,14 +53,14 @@ class fitnessAssessment extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/fitness4.png')} alt="" className='width64' />
+                                        <img src={require('../../assets/images/shape/fitness4.png')} alt="" className='widthimg' />
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
 
-                                    <div class="sec-title phybox">
+                                    <div class="sec-title squrebox">
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
                                             To stay healthy, regular exercise is a must! Regular exercise and keeping our bodies active reduces blood pressure, improves blood circulation, burns excess fat & calories, and reduces the risk of heart ailments.
@@ -70,8 +68,10 @@ class fitnessAssessment extends Component {
                                         </p>
 
                                     </div>
-                                    <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
+                                    <div class="btn-box text-center btn5 marBtnTop">
+                                        <button class="commonBtnforAll">BOOK NOW</button>
 
+                                    </div>
 
                                 </div>
                             </div>
@@ -80,27 +80,25 @@ class fitnessAssessment extends Component {
                     </div>
                 </section>
 
-                <section class="contact-section">
+                <section class="fitnessbox">
 
-                    <div class="auto-container">
-                        <div class="row">
-
-                          
-
-
+                    <div class="auto-container ">
+                    <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
 
-                                    <div class="sec-title phybox1">
+                                    <div class="sec-title squrebox">
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
-                                            The <span style={{ fontWeight: 500 }}>Pro-Fit Program</span> at Bridge Health is designed based on clinical fact-based evidence. Our interdisciplinary team includes medical providers, licensed therapists,
+                                            The  <span className='headeingcolorblack'>PRO-FIT PROGRAM</span>  at Bridge Health is designed based on clinical fact-based evidence. Our interdisciplinary team includes medical providers, licensed therapists,
                                             and exercise specialists. Our qualified trainers have several years of experience in the fitness industry and are available to assist you in creating a customized exercise program for your body type.
                                         </p>
-                                        <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
 
                                     </div>
+                                    <div class="btn-box text-center btn5 marBtnTop">
+                                        <button class="commonBtnforAll">BOOK NOW</button>
 
+                                    </div>
                                 </div>
                             </div>
 
@@ -122,11 +120,10 @@ class fitnessAssessment extends Component {
                     <section class="">
                         <div class="auto-container">
                             <div class="row align-items-center">
-
                                 <div class="col-lg-6">
                                     <div class="image-wrapper">
                                         <div class="image-one image-two">
-                                            <img src={require('../../assets/images/shape/fitness2.png')} alt="" className='width84' />
+                                            <img src={require('../../assets/images/shape/fitness2.png')} alt="" className='widthimg' />
                                             {/* <img src={require('../../assets/images/shape/video2.gif')} alt="" /> */}
                                         </div>
 
@@ -142,60 +139,39 @@ class fitnessAssessment extends Component {
                                         </h2>
 
                                         <ul className='listicon'>
-                                            <li className='listicon'>
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                        <li>
                                                 Cardiorespiratory Training
                                             </li>
-                                            <li className='listicon'>
-
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                            <li>
                                                 Strength and Conditioning
                                             </li>
-                                            <li className='listicon'>
-
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                            <li>
                                                 Functional Training
                                             </li>
-                                            <li className='listicon'>
-
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                            <li>
                                                 Prehabilitation and Rehabilitation services
                                             </li>
-                                            <li className='listicon'>
-
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                            <li>
                                                 Customized program for health issues
                                             </li>
 
-                                            <li className='listicon'>
-
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                            <li>
                                                 Posture and functional corrective exercises
                                             </li>
-                                            <li className='listicon'>
-
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                            <li>
                                                 Vitality exercises
                                             </li>
-                                            <li className='listicon'>
-
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                            <li>
                                                 Ability Improvement exercises
                                             </li>
 
-                                            <li className='listicon'>
-
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                            <li>
                                                 Group Classes
                                             </li>
-                                            <li className='listicon'>
-
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                            <li>
                                                 Corporate Fitness Programs
                                             </li>
-                                            <li className='listicon'>
-
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
+                                            <li>
                                                 Online Fitness Programs
                                             </li>
 
@@ -231,31 +207,20 @@ class fitnessAssessment extends Component {
                                         <li>
                                             Covid compliant atmosphere
                                         </li>
-                                        <br></br>
-                                        <li>
-                                            Daily vitals check
-                                        </li>
-                                        <br></br>
+                                      
                                         <li>
                                             Free trial session
                                         </li>
-                                        <br></br>
-                                        <li>
-                                            Early bird introductory offers on packages
-                                        </li>
-                                        <br></br>
+                                      
                                         <li>
                                             Pay in easy installments
                                         </li>
-                                        <br></br>
                                         <li>
                                             Flexible hours of workouts in a day
                                         </li>
-                                        <br></br>
                                         <li>
                                             Medical providers & licensed therapist support
                                         </li>
-                                        <br></br>
                                         <li>
                                             Supervision by an American Council-certified trainer
                                         </li>
@@ -267,7 +232,7 @@ class fitnessAssessment extends Component {
                             <div class="col-lg-5">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/fitness3.png')} alt="" className='width84' />
+                                        <img src={require('../../assets/images/shape/fitness3.png')} alt="" className='widthimg' />
                                     </div>
                                 </div>
                             </div>
@@ -282,13 +247,12 @@ class fitnessAssessment extends Component {
                         <div class="sec-title text-center">
                             <h2 className='header1'>
                                 <span className='headeingcolorblack'> Get moving & Stay Active to  </span>
-                                <span className='headeingcolorblue'> stay Healthy! </span>
+                                <span className='headeingcolorblue'> Stay Healthy! </span>
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="#">
-                                <span class="btn-title">BOOK NOW</span>
-                            </a>
+                        <button class="commonBtnforAll">BOOK NOW</button>
+
                         </div>
                     </div>
                 </section>

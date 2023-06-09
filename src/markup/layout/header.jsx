@@ -1,18 +1,44 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Popup from 'reactjs-popup';
-
-
-const options = [
-  { value: 'English', label: 'English' },
-  { value: 'French', label: 'French' },
-  { value: 'Spanish', label: 'Spanish' },
-  { value: 'Bengli', label: 'Bengli' }
-]
-
+import Menu from './menu'
 
 class Header extends Component {
 
+  state = {
+    scrolled: false
+};
+
+componentDidMount() {
+    var btn = document.querySelector('.mobile-nav-toggler');
+    var closeBtn = document.querySelector('.close-btn');
+    var body = document.getElementsByTagName('body')[0];
+
+    function addFunc() {
+        return body.classList.add("mobile-menu-visible");
+    }
+    function closeFunc() {
+        return body.classList.remove("mobile-menu-visible");
+    }
+
+    btn.addEventListener('click', addFunc);
+    closeBtn.addEventListener('click', closeFunc);
+
+    window.addEventListener("scroll", this.handleScroll);
+}
+
+componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+}
+
+handleScroll = event => {
+    if (window.scrollY > 100) {
+        this.setState({ scrolled: true });
+    }
+    else {
+        this.setState({ scrolled: false });
+    }
+};
 
   constructor(props) {
     super(props);
@@ -109,7 +135,7 @@ class Header extends Component {
     const { scrolled } = this.state;
     return (
       <>
-        <header class={scrolled ? "main-header fixed-header" : "main-header"}>
+        <header class={scrolled ? "main-header fixed-header" : "main-header mobilehide"}>
           <div class="header-top">
             <div class="auto-container">
               <div class="inner">
@@ -129,7 +155,7 @@ class Header extends Component {
               <ul class="mcd-menu">
                 <li>
                   <a href="#">
-                    <img src={require('../../assets/images/Group3.png')} alt="" />
+                    <img src={require('../../assets/images/menu.png')} alt="" />
                   </a>
                   <ul>
                     <li><a href="#">Menu</a>
@@ -166,100 +192,8 @@ class Header extends Component {
                     <li><a href="#">Search</a></li>
                   </ul>
                 </li>
-                <li>
-                  <a href="#" class="active">
-                    <img src={require('../../assets/images/Group.png')} alt="" />
-
-                  </a>
-                  {/* <ul>
-                <li><a href="#">Menu</a></li>
-                <li>
-                  <a href="#">Health Plan</a>
-                  <ul>
-                    <li><a href="#">Leyla Sparks</a></li>
-                    <li>
-                      <a href="#">Gleb Ismailov</a>
-                    </li>
-                    <li><a href="#">Viktoria Gibbers</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Health Risk Assessment</a></li>
-                <li><a href="#">Search</a></li>
-              </ul> */}
-                </li>
-                <li>
-                  <a href="#">
-                    <img src={require('../../assets/images/Group1.png')} alt="" />
-                  </a>
-                  {/* <ul>
-                <li><a href="#">Menu</a></li>
-                <li>
-                  <a href="#">Health Plan</a>
-                  <ul>
-                    <li><a href="#">Leyla Sparks</a></li>
-                    <li>
-                      <a href="#">Gleb Ismailov</a>
-                    </li>
-                    <li><a href="#">Viktoria Gibbers</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Health Risk Assessment</a></li>
-                <li><a href="#">Search</a></li>
-              </ul> */}
-                </li>
-                <li>
-                  <a href="#">
-                    <img src={require('../../assets/images/Group2.png')} alt="" />
-                  </a>
-                  {/* <ul>
-                <li><a href="#">Menu</a></li>
-                <li>
-                  <a href="#">Health Plan</a>
-                  <ul>
-                    <li><a href="#">Leyla Sparks</a></li>
-                    <li>
-                      <a href="#">Gleb Ismailov</a>
-                    </li>
-                    <li><a href="#">Viktoria Gibbers</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Health Risk Assessment</a></li>
-                <li><a href="#">Search</a></li>
-              </ul> */}
-                </li>
-                {/* <li>
-              <a href="">
-                <i class="fa fa-comments-o"></i>
-                <strong>Blog</strong>
-
-              </a>
-              <ul>
-                <li><a href="#"><i class="fa fa-globe"></i>Mission</a></li>
-                <li>
-                  <a href="#"><i class="fa fa-group"></i>Our Team</a>
-                  <ul>
-                    <li><a href="#"><i class="fa fa-female"></i>Leyla Sparks</a></li>
-                    <li>
-                      <a href="#"><i class="fa fa-male"></i>Gleb Ismailov</a>
-                      <ul>
-                        <li><a href="#"><i class="fa fa-leaf"></i>About</a></li>
-                        <li><a href="#"><i class="fa fa-tasks"></i>Skills</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#"><i class="fa fa-female"></i>Viktoria Gibbers</a></li>
-                  </ul>
-                </li>
-                <li><a href="#"><i class="fa fa-trophy"></i>Rewards</a></li>
-                <li><a href="#"><i class="fa fa-certificate"></i>Certificates</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa fa-picture-o"></i>
-                <strong>Portfolio</strong>
-              </a>
-            </li>
-           */}
+              
+          
               </ul>
             </nav>
           </div>
@@ -345,7 +279,66 @@ class Header extends Component {
 
           </Popup>
         </header>
+        <header class={scrolled ? "main-header header-style-two fixed-header" : "main-header header-style-two desktophide"}>
+                    
+                   
 
+                    <div class="header-upper">
+                        <div class="auto-container">
+                            <div class="inner-container">
+                                
+                                <div class="nav-outer clearfix">
+                                    
+                                    <div class="logo-box">
+                                        <div class="logo"><Link to={''}><img src={require('../../assets/images/logo.png')} alt=""/></Link></div>
+                                    </div>
+                                    
+                                    <div class="mobile-nav-toggler"><span class="icon fal fa-bars"></span></div>
+
+
+                                    <nav class="main-menu navbar-expand-md navbar-light">
+                                    <Menu />
+                                    </nav>
+                                    <div class="link-btn"><Link to={'/#'} class="theme-btn btn-style-one"><span class="btn-title">Get A Quote</span></Link></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+             <div class={scrolled ? "sticky-header animated slideInDown" : "sticky-header"}>
+                        {/* <div class="auto-container clearfix">
+                            
+                            <div class="logo pull-left">
+                                <Link to={'/#'} title=""><img src="assets/images/logo.png" alt="" title=""/></Link>
+                            </div>
+                            
+                            <div class="pull-right">
+                                
+                                <nav class="main-menu clearfix">
+                                <Menu />
+                                </nav>
+                                
+                            </div>
+                        </div> */}
+                    </div>
+                    
+
+
+                    <div class="mobile-menu">
+                        <div class="menu-backdrop"></div>
+                        <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
+                        
+                        <nav class="menu-box">
+                            <div class="nav-logo"><Link to={'/#'}><img src="assets/images/logo.png" alt="" title=""/></Link></div>
+                            <div class="menu-outer">
+                            <Menu />
+                            </div>
+                          
+                        </nav>
+                    </div>
+                </header>
       </>
     )
   }

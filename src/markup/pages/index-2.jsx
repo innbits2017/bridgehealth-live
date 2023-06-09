@@ -4,7 +4,7 @@ import Header2 from '../layout/header2';
 import HomeSlider2 from '../element/home-slider2';
 import Footer from '../layout/footer';
 import Testimonial1 from '../element/testimonial1'
-import VideoPopup2 from './../element/video-popup2'
+import VideoPopup2 from '../element/popup'
 import '../../assets/css/color-2.css';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 

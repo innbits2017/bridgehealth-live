@@ -31,8 +31,7 @@ class ophthalmologist extends Component {
                                     Talk to our Ophthalmologists today
                                 </h3>
                             </div>
-                            <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
+                            <button class="commonBtnforAll">BOOK NOW</button>
 
                         </div>
 
@@ -43,27 +42,27 @@ class ophthalmologist extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                        <div class="row">
-
+                    <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/eye1.png')} alt="" className='width64' />
+                                        <img src={require('../../assets/images/shape/eye1.png')} alt="" className='widthimg' />
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
 
-                                    <div class="sec-title phybox">
+                                    <div class="sec-title squrebox">
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
                                             Our eyes are the windows to the world. They allow us to see every detail and colour, near and far. However, because of our modern-day habits and work,
                                             we spend too much time looking at screens which strains our eyes. We also tend to blink less which leads to dry eyes. These factors contribute to poor eyesight in children and adults.
                                         </p>
                                     </div>
-                                    <button class="theme-btn btn-style-one" ><span class="btn-title">BOOK NOW</span></button>
-
+                                    <div class="btn-box text-center btn5">
+                                        <button class="commonBtnforAll">BOOK NOW</button>
+                                    </div>
 
                                 </div>
                             </div>
@@ -83,33 +82,22 @@ class ophthalmologist extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                        <div class="row">
-
+                    <div class="row align-items-center">
 
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
 
-                                    <div class="sec-title">
+                                    <div class="sec-title squrebox">
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
                                             Your eyes deserve great care. At Bridge Health, our expert ophthalmologists will help you through regular eye testing, vision enhancement recommendations, and treatments so
-                                            that you’ll never have to worry about squinting to read that sign board acRoss the street ever again!
+                                            that you’ll never have to worry about squinting to read that sign board across the street ever again!
                                         </p>
 
 
                                     </div>
-
-
-                                    <div class="contact-form">
-
-                                            <div class="row clearfix">
-
-
-
-                                                <div class="col-md-12 form-group">
-                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">BOOK NOW</span></button>
-                                                </div>
-                                            </div>
+                                    <div class="btn-box text-center btn5">
+                                        <button class="commonBtnforAll">BOOK NOW</button>
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +122,7 @@ class ophthalmologist extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/eye5.png')} alt="" className='width84' />
+                                        <img src={require('../../assets/images/shape/eye5.png')} alt="" className='widthimg' />
                                     </div>
                                 </div>
                             </div>
@@ -156,24 +144,14 @@ class ophthalmologist extends Component {
                                         <li>
                                             Expert advice on eye surgeries and procedures
                                         </li>
-                                        <li>
-                                            Diet plans to help you maintain good eyesight
-                                        </li>
-                                        <li>
-                                            Laser eye enhancement surgery
-                                        </li>
+                                      
                                         <li>
                                             Glasses and contact lens prescriptions
                                         </li>
                                         <li>
                                             Comprehensive eye tests and examinations
                                         </li>
-                                        <li>
-                                            Cataract surgery
-                                        </li>
-                                        <li>
-                                            Treatment of alignment disorders
-                                        </li>
+                                      
                                         <li>
                                             Prescriptions and medicines for various eye conditions like conjunctivitis
                                         </li>
@@ -194,9 +172,8 @@ class ophthalmologist extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="#">
-                                <span class="btn-title">BOOK NOW</span>
-                            </a>
+                        <button class="commonBtnforAll">BOOK NOW</button>
+
                         </div>
                     </div>
                 </section>

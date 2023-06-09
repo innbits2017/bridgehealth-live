@@ -22,16 +22,15 @@ class yoga_Assessment extends Component {
                       
                             <div class=" text-center textleft">
                                 <h2 className='textleft fontSize'>
-                                    <span className='headeingcolorblack'> Unite your mind,  </span>
-                                    <span className='headeingcolorblue'>  body & soul</span>
+                                    <span className='headeingcolorblack'> Unite your  </span>  <span className='headeingcolorblue'>  Mind,
+                                   Body & Soul</span>
 
                                 </h2>
                                 <h3 className='textleft marginTop40'>
                                 Connect with our yoga therapists
                                 </h3>
                             </div>
-                            <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
+                            <button class="commonBtnforAll">BOOK NOW</button>
 
                         </div>
 
@@ -56,7 +55,7 @@ class yoga_Assessment extends Component {
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
 
-                                    <div class="sec-title">
+                                    <div class="sec-title squrebox">
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span>
 
                                         </h2> */}
@@ -68,7 +67,10 @@ class yoga_Assessment extends Component {
                                         </p>
 
                                     </div>
+                                    <div class="btn-box text-center btn5 marBtnTop">
+                                        <button class="commonBtnforAll">BOOK NOW</button>
 
+                                    </div>
 
                                  
                                 </div>
@@ -78,41 +80,7 @@ class yoga_Assessment extends Component {
                     </div>
                 </section>
 
-                {/* <section class="contact-section">
-
-                    <div class="auto-container">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
-                                        <img src={require('../../assets/images/shape/nu4.png')} alt="" />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4" style={{ marginTop: 10 + 'rem' }}>
-                                <div class="contact-form-area">
-
-                                    <div class="sec-title">
-                                        <h2> <span className='headeingcolorblack1'>A Healthy Diet to the Rescue! </span>
-
-                                        </h2>
-
-                                        <p>
-                                            At Bridge Health, our dieticians are specialists in Medical Nutrition Therapy (MNT), an evidence-based approach to treating chronic conditions through the use of a tailored diet.
-                                        </p>
-
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section> */}
-
-                <section class="team-section">
+                <section class="team-section container-fulid whatbe">
                   
                     {/* About Section Two */}
                     <section class="">
@@ -130,51 +98,38 @@ class yoga_Assessment extends Component {
                             </h2>
                                         <ul className='listicon'>
                                             <li>
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for general Wellbeing
                                             </li>
                                             <li>
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for Mental Illness
                                             </li>
                                             <li>
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for Pregnancy
                                             </li>
                                             <li>
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Therapeutic Yoga
                                             </li>
                                             <li>
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for Cardiovascular Disorders
                                             </li>
                                             <li>
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for Respiratory Disorders
                                             </li>
                                             <li>
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for Gastrointestinal Disorders
                                             </li>
                                             <li>
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for Joints and Muscles
                                             </li>
                                             <li>
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for Urogenital Disorders
                                             </li>
                                             <li>
-                                                <img className='listicon5' src={require('../../assets/images/shape/y3.png')} alt="" />
                                                 Yoga for Mental Disorders
                                             </li>
                                         </ul>
-                                        <div class="btn-box martop90">
-                                            <a class="theme-btn btn-style-one" href="#">
-                                                <span class="btn-title">BOOK NOW</span>
-                                            </a>
-                                        </div>
+                                        <button class="commonBtnforAll">BOOK NOW</button>
+
                                     </div>
                                 </div>
 
@@ -182,7 +137,6 @@ class yoga_Assessment extends Component {
                                     <div class="image-wrapper">
                                         <div class="image-one image-two">
                                             <img src={require('../../assets/images/shape/y2.png')} alt="" className='width84'/>
-                                            {/* <img src={require('../../assets/images/shape/video2.gif')} alt="" /> */}
                                         </div>
 
                                     </div>
@@ -223,19 +177,19 @@ class yoga_Assessment extends Component {
 
                                     </div>
                                     <ul className='listicon'>
-                                    <li className='listicon'>
+                                    <li>
                                             Experienced yoga therapists
                                         </li>
-                                        <li className='listicon'>
+                                        <li>
                                             Customized plans and routines
                                         </li>
-                                        <li className='listicon'>
+                                        <li>
                                             Regular progress updates
                                         </li>
-                                        <li className='listicon'>
+                                        <li>
                                             General wellbeing and mental fitness programs
                                         </li>
-                                        <li className='listicon'>
+                                        <li>
                                             Therapeutic yoga for effective disease management
                                         </li>
                                     </ul>
@@ -251,16 +205,15 @@ class yoga_Assessment extends Component {
                         <div class="sec-title text-center">
                             <h2 className='header1'>
                                 <span className='headeingcolorblack'> Live a more spiritually  </span>
-                                <span className='headeingcolorblack1'> enriching</span>
+                                <span className='headeingcolorblue'> enriching</span>
                                 <span className='headeingcolorblack'> life!</span>
                                 
                             </h2>
                         </div>
-                        <div class="btn-box text-center btn5">
-                                            <a class="theme-btn btn-style-one" href="#">
-                                                <span class="btn-title">BOOK NOW</span>
-                                            </a>
-                                        </div>
+                        <div class="btn-box text-center btn5 marBtnTop">
+                                        <button class="commonBtnforAll">BOOK NOW</button>
+
+                                    </div>
                     </div>
                 </section>
                

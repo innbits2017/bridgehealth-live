@@ -26,7 +26,7 @@
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-  width: 70px;
+  width: 50px;
   float: right;
   background: #99BB5E;
   border-radius: 45px 0px 0px 45px;
@@ -37,7 +37,6 @@
 .mcd-menu li a {
   display: block;
   text-decoration: none;
-  padding: 5px 20px;
   color: #777;
   text-align: left;
   position: relative;
@@ -159,10 +158,10 @@
 .mcd-menu li ul,
 .mcd-menu li ul li ul {
   position: absolute;
-    height: auto;
+  /* height: 186px; */
     min-width: 200px;
     padding: 0;
-    margin-left: 66% !important;
+    margin-left: 67% !important;
     margin: 0;
     background: #99BB5E;
     border-radius: 8px 26px 8px 26px;
@@ -174,7 +173,7 @@
     -moz-transition: all 300ms linear;
     -webkit-transition: all 300ms linear;
     z-index: 1000;
-    top: 130px;
+    top: 140px;
 }
 /* .mcd-menu li ul:before {
   content: "";
@@ -332,15 +331,23 @@
 	
 }
 
+@media (min-width: 576px)
+{
+.modal-dialog {
+    margin-top: 12% !important;
+}
+}
 @media only screen and (max-width: 479px) {
     .mcd-menu { 
       width: 50px;
+      display: none !important;
     height: 190px;
 	}
   .mcd-menu li ul, .mcd-menu li ul li ul {
     position: absolute;
     height: auto;
-    min-width: 200px;
+    height: 225px !important;
+    min-width: 200px !important;
     padding: 0;
     margin-left: 28% !important;
     margin-top: -1%;

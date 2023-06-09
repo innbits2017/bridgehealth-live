@@ -30,7 +30,7 @@ class psychological_Health extends Component {
                                     Talk to our clinical psychologists today
                                 </h3>
                             </div>
-                            <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
+                            <button class="commonBtnforAll">BOOK NOW</button>
 
 
                         </div>
@@ -45,31 +45,28 @@ class psychological_Health extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                        <div class="row">
+                    <div class="row align-items-center">
 
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/ps1.png')} alt="" className='width64' />
+                                        <img src={require('../../assets/images/shape/ps1.png')} alt="" className='widthimg' />
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
 
-                                    <div class="sec-title phybox">
-                                        {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span>
-
-                                        </h2> */}
+                                    <div class="sec-title squrebox">
                                         <p className='font22'>
                                             Unlike physical health issues,<span className='headeingcolorblue'> psychological issues are not as visible. </span>They are generally ignored and are not given as much importance due to societal stigmas. However, if these are ignored for too long, they can affect your intellectual capabilities and overall behaviour.
                                         </p>
 
                                     </div>
+     <div class="btn-box text-center btn5">
+                            <button class="commonBtnforAll">BOOK NOW</button>
 
-                                    <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
-
-                                </div>
+                        </div>                                </div>
                             </div>
 
                         </div>
@@ -90,32 +87,28 @@ class psychological_Health extends Component {
 
                                         <ul className='listicon'>
                                             <li className='listicon'>
-                                                <img className='listicon3' src={require('../../assets/images/shape/ps2.png')} alt="" />
                                                 At <span className='headeingcolorblue'>Bridge Health, </span>our psychologists are trained to understand your mental state.
                                             </li>
                                             <li className='listicon'>
-                                                <img className='listicon3' src={require('../../assets/images/shape/ps2.png')} alt="" />
                                                 They help you manage your stress or any mental health difficulties that you are facing.
                                             </li>
                                             <li className='listicon'>
-                                                <img className='listicon3' src={require('../../assets/images/shape/ps2.png')} alt="" />
                                                 In doing so, you will be able to improve your mental well-being which has a positive effect on your overall physical health.
                                             </li>
 
                                         </ul>
 
-                                        <div class="btn-box">
-                                            <a class="theme-btn btn-style-one martop90" href="#">
-                                                <span class="btn-title">BOOK NOW</span>
-                                            </a>
-                                        </div>
+         <div class="btn-box text-center btn5">
+                            <button class="commonBtnforAll">BOOK NOW</button>
+
+                        </div>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-6">
                                     <div class="image-wrapper">
                                         <div class="image-one image-two">
-                                            <img src={require('../../assets/images/shape/ps3.png')} alt="" className='width84' />
+                                            <img src={require('../../assets/images/shape/ps3.png')} alt="" className='widthimg imgFloatRight' />
                                             {/* <img src={require('../../assets/images/shape/video2.gif')} alt="" /> */}
                                         </div>
 
@@ -128,12 +121,12 @@ class psychological_Health extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                        <div class="row">
+                    <div class="row align-items-center">
 
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/ps4.png')} alt="" className='width84' />
+                                        <img src={require('../../assets/images/shape/ps4.png')} alt="" className='widthimg' />
                                     </div>
                                 </div>
                             </div>
@@ -187,9 +180,7 @@ class psychological_Health extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="#">
-                                <span class="btn-title">BOOK NOW</span>
-                            </a>
+                        <button class="commonBtnforAll">BOOK NOW</button>
                         </div>
                     </div>
                 </section>

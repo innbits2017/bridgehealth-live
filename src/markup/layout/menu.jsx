@@ -9,9 +9,9 @@ class Menu extends Component {
     render() {
         return (
             <>
-                {/* <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                     <ul class="navigation clearfix">
-                        <li class="dropdown"><Link to={'/index-2'}>Home</Link>
+                        <li class="dropdown"><Link to={'/'}>About Us</Link>
                             <ul>
                                 <li><Link to={'/#'}>Home page 01</Link></li>
                                 <li><Link to={'/index-2'}>Home page 02</Link></li>
@@ -29,7 +29,7 @@ class Menu extends Component {
                                 </li>
                             </ul>
                         </li>
-                        <li><Link to={'/about'}>About Us</Link></li>
+                        <li><Link to={'/'}>Health Plan</Link></li>
                         <li class="dropdown"><Link to={'/#'}>Services</Link>
                             <ul>
                                 <li><Link to={'/services-1'}>Services One</Link></li>
@@ -37,42 +37,15 @@ class Menu extends Component {
                                 <li><Link to={'/services-details'}>Services Details</Link></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><Link to={'/#'}>Portfolio</Link>
+                        <li class="dropdown"><Link to={'/#'}>Health Risk Assessment</Link>
                             <ul>
                                 <li><Link to={'/portfolio-1'}>Portfolio One</Link></li>
                                 <li><Link to={'/portfolio-2'}>Portfolio Two</Link></li>
                                 <li><Link to={'/portfolio-details'}>Portfolio Details</Link></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><Link to={'/#'}>News</Link>
-                            <ul>
-                                <li><Link to={'/blog-grid'}>Blog Grid</Link></li>
-                                <li><Link to={'/blog-standard'}>Blog Standard</Link></li>
-                                <li><Link to={'/blog-details'}>Blog Details</Link></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><Link to={'/#'}>Pages</Link>
-                            <ul>
-                                <li><Link to={'/careers'}>Careers</Link></li>
-                                <li><Link to={'/team'}>Team</Link></li>
-                                <li><Link to={'/team-details'}>Team Details</Link></li>
-
-                                <li class="dropdown"><Link to={'/#'}>Shop</Link>
-                                    <ul>
-                                        <li><Link to={'/shop'}>Products</Link></li>
-                                        <li><Link to={'/product-details'}>Product Details</Link></li>
-                                        <li><Link to={'/shopping-cart'}>Shopping Cart</Link></li>
-                                        <li><Link to={'/checkout'}>Checkout</Link></li>
-                                    </ul>
-                                </li>
-                                <li><Link to={'/faq'}>Faq's</Link></li>
-                                <li><Link to={'/404'}>404</Link></li>
-                            </ul>
-                        </li>
-
-                        <li><Link to={'/contact'}>Contact</Link></li>
                     </ul>
-                </div> */}
+                </div>
 
             </>
         )

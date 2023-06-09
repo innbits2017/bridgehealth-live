@@ -148,7 +148,7 @@ class b2cmembership extends Component {
           </div>
           
         </section>  */}
-        <div class="container-fluid">
+        <div class="container-fluid marginTop80">
           <div class="row">
             <div class="col-lg-2"></div>
             <div class="col-lg-8 b2cimgcenter">
@@ -160,9 +160,11 @@ class b2cmembership extends Component {
                 <img src={require('../../assets/images/shape/imageb2c.png')} alt="" className='imgwidth' />
 
               </div>
-              <ContactForm buttonText="SAY YES!" />
+              {/* <ContactForm buttonText="SAY YES!"/> */}
+              <button class="theme-btn btn-style-one blogtext" type="submit" name="submit-form">
+                <span class="btn-title">SAY YES!</span>
 
-
+              </button>
             </div>
             <div class="col-lg-2"></div>
 
@@ -170,14 +172,14 @@ class b2cmembership extends Component {
           </div>
         </div>
 
-        <section class="contact-section">
+        <section class="">
 
           <div class="container-fluid annualback">
 
             <div class="row">
 
               <div class="col-lg-6">
-                <div class="contact-form-area">
+                <div class="contact-form-area marleft">
 
                   <div class="sec-title persona3">
                     <h2 style={{ fontSize: 48 + 'px' }}>
@@ -227,7 +229,7 @@ class b2cmembership extends Component {
               <div class="col-lg-6">
                 <div class="image-wrapper">
                   <div class="image-one">
-                    <img src={require('../../assets/images/shape/b2c3.png')} alt="" className='b2cimg' />
+                    {/* <img src={require('../../assets/images/shape/b2c3.png')} alt="" className='b2cimg' /> */}
                   </div>
                   <div>
                   </div>
@@ -237,11 +239,11 @@ class b2cmembership extends Component {
           </div>
         </section>
 
-        <section class="contact-section blogdesignerd1">
+        <section class="blogdesignerd1">
 
           <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-7">
                 {/* <div class="image-wrapper">
                   <div class="image-one">
                     <img src={require('../../assets/images/shape/b2c1.png')} alt="" className='b2cimg' />
@@ -249,17 +251,18 @@ class b2cmembership extends Component {
                 </div> */}
               </div>
 
-              <div class="col-lg-6">
+              <div class="col-lg-5">
                 <div class="contact-form-area margintop145">
 
                   <div class="sec-title marginto90" >
-                    <h2> <span className='headeingcolorblack'>Why </span>
-                      <span className='headeingcolorblue'> Preventive</span>
-                      <span className='headeingcolorblack'> Health Care?</span>
+                    <h2 style={{ fontSize: 48 + 'px' }} className='marginleft'>
+                      <span className='headeingcolorblack'>Why </span>
+                      <span className='headeingcolorblue'> Preventive </span><br></br>
+                      <span className='headeingcolorblack marginleft20forpersonal'>Health Care?</span>
                     </h2>
                     {/* <h4 className='textleft marginTop40'>A host of benefits await you as soon as you say <span className='headeingcolorblue'> YES</span>
           </h4> */}
-                    <p className='font30'>
+                    <p className='font20'>
                       Preventive healthcare helps in predicting & preventing
                       serious health conditions while prolonging your life.
                       It also helps you in making proactive choices regarding your mental health and lifestyle to stay fit at all times
@@ -268,7 +271,7 @@ class b2cmembership extends Component {
                   </div>
 
 
-                  <div class="contact-form">
+                  <div class="contact-form btnright">
 
                     <ContactForm buttonText="SAY YES!" />
                   </div>
@@ -938,8 +941,8 @@ class b2cmembership extends Component {
                             value={this.state.email}
                             onChange={e => this.handleChange(e)}
                             id="name"
-                            placeholder="Email*"
-                            required="" />
+                            placeholder="Email"
+                            />
                         </div>  <div class="col-md-12 form-group">
                           <input
                             type="phone"

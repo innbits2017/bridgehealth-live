@@ -5,47 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const bgimg7 = require('./../../assets/images/background/image-7.jpg');
-
-// const Testimonial1_content = [
-//     {
-//         thumb: require('./../../assets/images/resource/a1.png'),
-//         author: 'Dr. Dhanya Prabhu Ramadas',
-//         designation: 'Head - Clinical Services',
-//         title: 'Design Quality',
-//         description:
-//             'Dr. Dhanya is a highly motivated, team-oriented, and compassionate family physician. She believes in providing evidence-based holistic care to all her patients.',
-
-//     },
-//     {
-//         thumb: require('./../../assets/images/resource/a2.png'),
-//         author: 'Dr Vedavathi. N',
-//         designation: 'Consultant Physician',
-//         title: 'Design Quality',
-//         description:
-//             'Dr. Veda is an empathetic, competent and passionate doctor. She has over 10 years of experience in identifying and screening individuals',
-
-//     },
-//     {
-//         thumb: require('./../../assets/images/resource/a3.png'),
-//         author: 'Dr. Jyotsna Mathai',
-//         designation: 'Consultant Physician',
-//         title: 'Design Quality',
-//         description:
-//             'Dr. Jyotsna is a Consultant Physician with a special interest in Womens Health. She has completed her MBBS ',
-
-//     },
-//     {
-//         thumb: require('./../../assets/images/resource/thumb-4.jpg'),
-//         author: 'Alexer Valvin',
-//         designation: 'Founder, Coxer IT',
-//         title: 'Design Quality',
-//         description:
-//             'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ',
-
-//     },
-// ]
-
-
 class Testimonial1 extends Component {
 
 
@@ -114,7 +73,7 @@ class Testimonial1 extends Component {
                                             </div>
                                             <div class="inner-box test2">
                                                 <h5 className='heading12 spenheading'>Dr Vedavathi. N</h5>
-                                                <p className='textpara1'>Consultant Physician</p>
+                                                <p className='textpara1'>Family Physician</p>
 
                                                 <div class="text">
                                                     Dr. Veda is an empathetic, competent and passionate doctor. She has over 10 years of experience in identifying and screening individuals
@@ -223,7 +182,7 @@ class Testimonial1 extends Component {
                                             </div>
                                             <div class="inner-box test3">
                                                 <h5 className='heading12 spenheading'>Dr Vedavathi. N</h5>
-                                                <p className='textpara1'>Consultant Physician</p>
+                                                <p className='textpara1'>Family Physician</p>
 
                                                 <div class="text">
                                                     Dr. Jyotsna is a Consultant Physician with a special interest in Women's Health. She has completed her MBBS                                                </div>

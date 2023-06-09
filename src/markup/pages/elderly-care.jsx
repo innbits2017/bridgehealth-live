@@ -24,7 +24,7 @@ class elderlyCare extends Component {
                                 <div class="content-box marginTop40header">
 
                                     <div class="sec-title text-center textleft">
-                                        <h2 className='textleft'>
+                                        <h2 className='textleft fontSize50'>
                                             <span className='headeingcolorblack'> Age is not just </span>
                                             <br></br>
                                             <span className='headeingcolorblack'> a </span>
@@ -34,8 +34,7 @@ class elderlyCare extends Component {
                                             Professional elderly care at <br></br> your doorstep
                                         </h3>
                                     </div>
-                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
+                                    <button class="commonBtnforAll">BOOK NOW</button>
 
                                 </div>
                             </div>
@@ -54,19 +53,19 @@ class elderlyCare extends Component {
                 <section class="contact-section heath-margin">
 
                     <div class="auto-container">
-                        <div class="row">
+                    <div class="row align-items-center">
 
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/care2.png')} alt="" className='width64' />
+                                        <img src={require('../../assets/images/shape/care2.png')} alt="" className='widthimg' />
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-6">
                                 <div class="contact-form-area">
 
-                                    <div class="sec-title phybox">
+                                    <div class="sec-title squrebox">
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
                                             Although we may stay young at heart, our body starts ageing. As we grow older, our physical abilities decline
@@ -74,8 +73,10 @@ class elderlyCare extends Component {
                                         </p>
 
                                     </div>
-                                    <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
+                                    <div class="btn-box text-center btn5">
+                        <button class="commonBtnforAll">BOOK NOW</button>
 
+                        </div>
 
                                 </div>
                             </div>
@@ -84,7 +85,7 @@ class elderlyCare extends Component {
                     </div>
                 </section>
 
-                <section class="contact-section heath-margin">
+                <section class=" heath-margin">
 
                     <div class="auto-container">
                         <div class="row col-lg-12">
@@ -93,7 +94,7 @@ class elderlyCare extends Component {
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
 
-                                    <div class="sec-title">
+                                    <div class="sec-title squrebox">
                                         <p className='font22'>
 
                                             <span className='headeingcolorblue'>
@@ -111,7 +112,7 @@ class elderlyCare extends Component {
                             <div class="col-lg-5">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/care3.png')} alt="" />
+                                        <img src={require('../../assets/images/shape/care3.png')} alt="" className='widthimg imgFloatRight' />
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +163,7 @@ class elderlyCare extends Component {
                                         </li>
 
                                         <li>
-                                            Physiotherapy at hom
+                                            Physiotherapy at home
                                         </li>
 
                                         <li>
@@ -184,7 +185,7 @@ class elderlyCare extends Component {
                             <div class="col-lg-5">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/care4.png')} alt="" className='width84' />
+                                        <img src={require('../../assets/images/shape/care4.png')} alt="" className='widthimg' />
                                     </div>
                                 </div>
                             </div>
@@ -203,9 +204,7 @@ class elderlyCare extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="#">
-                                <span class="btn-title">BOOK NOW</span>
-                            </a>
+                        <button class="commonBtnforAll">BOOK NOW</button>
                         </div>
                     </div>
                 </section>

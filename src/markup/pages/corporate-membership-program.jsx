@@ -129,7 +129,7 @@ class corporate_membership_program extends Component {
                                             <span className='headeingcolorblack'>Redefining the Meaning of </span><br></br>
                                             <span className='headeingcolorblue'>Employee-Centric Care</span>
                                         </h3>
-                                        <h4 className='textleft marginTop40'>Variety of benefits for a healthier <br></br>and happier workforce
+                                        <h4 className='textleft marginTop40'>Array of benefits for a healthier <br></br>and happier workforce
                                         </h4>
                                     </div>
 
@@ -236,7 +236,10 @@ class corporate_membership_program extends Component {
                         <div class="row align-items-center">
                             <div class="image-wrapper">
                                 <div class="image-one">
-                                    <img src={require('../../assets/images/shape/Sequence1.gif')} alt="" className='imgwidth' />
+                                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                        <source src={require('../../assets/images/output.mp4')} type="video/mp4" />
+                    </video>                               
+                                    {/* <img src={require('../../assets/images/shape/Sequence1.gif')} alt="" className='imgwidth' /> */}
                                     {/* <img src={require('../../assets/images/shape/companey.png')} alt="" className='imgwidth' /> */}
                                 </div>
                             </div>
@@ -250,7 +253,7 @@ class corporate_membership_program extends Component {
                         <div class="auto-container">
                             <div class="sec-title text-center">
                                 <h2> <span className='headeingcolorblue'>BOOST  </span>
-                                    <span className='headeingcolorblack'>YOUR TEAM’S HEALTH</span><br></br>
+                                    <span className='headeingcolorblack'>YOUR EMPLOYEES  HEALTH</span><br></br>
                                 </h2>
                             </div>
 
@@ -264,7 +267,7 @@ class corporate_membership_program extends Component {
 
                                     {/* <!-- Contact Form--> */}
                                     <div class="contact-form">
-                                        <p>Reach out to us and we'll help you in setting up the <br></br>best of <span className='headeingcolorblue'>Preventive Healthcare</span> Services for your teams.</p>
+                                        <p>Reach out to us and we'll help you in setting up the <br></br>best of <span className='headeingcolorblue'>Preventive Healthcare</span> Services for your employee.</p>
                                         <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} id="contact-form">
                                             <div class="row clearfix">
                                                 <div class="col-md-12 form-group">

@@ -26,14 +26,12 @@ class nursingAtHome extends Component {
                                                 <span className='headeingcolorblack'>
                                                     The care you need in the
                                                 </span>
-                                                <br></br>
                                                 <span className='headeingcolorblue '> Comfort of your Home </span></h2>
                                             <h3 className='textleft marginTop40'>
                                                 Nursing services provided directly at your home
                                             </h3>
                                         </div>
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Book Now</span></button>
-
+                                        <button class="commonBtnforAll">BOOK NOW</button>
 
                                     </div>
                                 </div>
@@ -51,8 +49,7 @@ class nursingAtHome extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                        <div class="row">
-
+                    <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
@@ -63,7 +60,7 @@ class nursingAtHome extends Component {
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
 
-                                    <div class="sec-title phybox">
+                                    <div class="sec-title squrebox">
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
                                             Sometimes, especially for the elderly and for patients suffering from chronic illnesses, it becomes a challenge to travel to a hospital to get timely care.
@@ -71,8 +68,10 @@ class nursingAtHome extends Component {
                                         </p>
 
                                     </div>
-                                    <button class="theme-btn btn-style-one"><span class="btn-title">BOOK NOW</span></button>
+                                    <div class="btn-box text-center btn5">
+                        <button class="commonBtnforAll">BOOK NOW</button>
 
+                        </div>
 
 
 
@@ -114,7 +113,7 @@ class nursingAtHome extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/nursing3.png')} alt="" className='width84' />
+                                        <img src={require('../../assets/images/shape/nursing3.png')} alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -181,9 +180,8 @@ class nursingAtHome extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <a class="theme-btn btn-style-one" href="#">
-                                <span class="btn-title">BOOK NOW</span>
-                            </a>
+                        <button class="commonBtnforAll">BOOK NOW</button>
+
                         </div>
                     </div>
                 </section>
