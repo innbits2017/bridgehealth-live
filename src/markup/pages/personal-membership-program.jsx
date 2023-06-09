@@ -353,6 +353,133 @@ class b2cmembership extends Component {
               </div>
             </div>
 
+
+            <div class="w-100 d-md-none mt-4"></div>
+
+            <div class="card advanced p-1">
+              <div class="card-header text-center pb-4 item">
+                <h5 class="pt-3 card-title">BLUE</h5>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <ul class="list-unstyled text-center">
+                  <li>101 Tests + ECG​</li>
+                  <li>
+                    <i class="fa fa-check" data-unicode="f00c"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-check" data-unicode="f00c"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-check" data-unicode="f00c"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-check" data-unicode="f00c"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-check" data-unicode="f00c"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-check" data-unicode="f00c"></i>
+                  </li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                  </li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li> <li>
+                    <i data-unicode="f00c"></i></li> <li>
+                    <i data-unicode="f00c"></i></li> <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>ECG </li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>2</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>Paid Consult</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>10% Off</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>4</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>1</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>4</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>1</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>4</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+
+
+
+                  <li>
+                    <span class="d-lg-none">Website Visitor Statistics </span>
+                    <i data-unicode="f00c"></i></li>
+
+                  <li>10% Off</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>10% Off</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>10% Off</li>
+                  <li>
+                    <i data-unicode="f00c"></i></li>
+                  <li>Paid</li>
+                  <li>
+                    <i class="fa fa-check" data-unicode="f00c"></i></li>
+                  <li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
+                    <span class="btn-title" >₹7999</span></button>
+                  </li>
+                </ul>
+
+              </div>
+
+            </div>
+
             <div class="w-100 d-md-none mt-4"></div>
 
             <div class="card advanced p-1">
