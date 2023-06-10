@@ -12732,3 +12732,18 @@ margin-top: 50px;
 {
 	margin-left: 75px;
 }
+.triangleback
+{
+	margin-left: -18%;
+    width: 100%;
+    background: #FFBD3E;
+    border-radius: 0px 25px 159px 0px;
+    padding: 20px 10px 20px 80px;
+}
+.fitnesback
+{
+	margin-left: -18%;
+    width: 100%;
+background-image: url(../images/shape/fitnessback.png);    border-radius: 0px 25px 159px 0px;
+    padding: 20px 10px 20px 80px;
+}

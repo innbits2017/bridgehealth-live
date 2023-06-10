@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { Modal, Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 
 class ContactPopup extends Component {
     state = {
