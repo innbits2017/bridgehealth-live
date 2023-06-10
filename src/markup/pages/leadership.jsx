@@ -12,7 +12,24 @@ class leadership extends Component {
     }
 
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            expanded: false
+        };
+    }
+
+    toggleContent = () => {
+        this.setState(prevState => ({
+            expanded: !prevState.expanded
+        }));
+    };
+
+
     render() {
+
+        const { expanded } = this.state;
+
         return (
             <>
                 <Header />
@@ -61,51 +78,75 @@ class leadership extends Component {
                                                     one of the co-founders of Infosys. He also was selected to Thinkers 50, an elite list of global
                                                     business thinkers, in...
                                                 </i>
-                                                <h6 class="leader-btn">
-                                                        <i>KNOW MORE</i>
-                                                </h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            </div>
-                            </div>
-                            <div className='container-fulid teamback2'>
-
-                            <div class="auto-container marginTop50">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-10">
-                                        <div class="author-info">
-                                            <div class="wrapper-box text">
-                                                <h2 class="leader-heading1">Swami D Swaminathan</h2>
-                                                <div class="designation leader-heading2">Director & Co-Founder</div>
-                                                <hr></hr>
-                                                <div class="text1">
-                                                    <i>Swaminathan Dandapani in his earlier role as Executive Chairman of Manipal Health
-                                                        Enterprises, provided direction and leadership to the Healthcare business expanding the
-                                                        footprint of Manipal Hospitals in new geographies both within & outside India. He also was
-                                                        the Chairman of ...
-                                                    </i>
-                                                    <h6 class="leader-btn">
+                                                {!expanded && (
+                                                    <h6 className="leader-btn" onClick={this.toggleContent}>
                                                         <i>KNOW MORE</i>
                                                     </h6>
-                                                </div>
-                                                
-                                                {/* <div class="text">Senapathy “Kris” Gopalakrishnan served as the Vice Chairman of Infosys from 2011 to 2014 and the Chief Executive Officer and Managing Director of Infosys from 2007 to 2011. Kris is one of the co-founders of Infosys. He also was selected to Thinkers 50, an elite list of global business thinkers, in...</div> */}
+                                                )}
+                                                {expanded && (
+                                                    <div>
+                                                        <span>
+                                                            Additional content goes here...
+                                                        </span>
+                                                        <h6 className="leader-btn" onClick={this.toggleContent}>
+                                                            <i>SHOW LESS</i>
+                                                        </h6>
+                                                    </div>
+                                                )}
                                             </div>
                                         </div>
-
                                     </div>
-                                    <div class="col-lg-2">
-                                        <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                            <div class="image-one">
-                                                <img src={require('../../assets/images/shape/director1.png')} alt="" />
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='container-fulid teamback2'>
+
+                        <div class="auto-container marginTop50">
+                            <div class="row align-items-center">
+                                <div class="col-lg-10">
+                                    <div class="author-info">
+                                        <div class="wrapper-box text">
+                                            <h2 class="leader-heading1">Swami D Swaminathan</h2>
+                                            <div class="designation leader-heading2">Director & Co-Founder</div>
+                                            <hr></hr>
+                                            <div class="text1">
+                                                <i>Swaminathan Dandapani in his earlier role as Executive Chairman of Manipal Health
+                                                    Enterprises, provided direction and leadership to the Healthcare business expanding the
+                                                    footprint of Manipal Hospitals in new geographies both within & outside India. He also was
+                                                    the Chairman of ...
+                                                </i>
+                                                {!expanded && (
+                                                    <h6 className="leader-btn" onClick={this.toggleContent}>
+                                                        <i>KNOW MORE</i>
+                                                    </h6>
+                                                )}
+                                                {expanded && (
+                                                    <div>
+                                                        <span>
+                                                            Additional content goes here...
+                                                        </span>
+                                                        <h6 className="leader-btn" onClick={this.toggleContent}>
+                                                            <i>SHOW LESS</i>
+                                                        </h6>
+                                                    </div>
+                                                )}
                                             </div>
+
+                                            {/* <div class="text">Senapathy “Kris” Gopalakrishnan served as the Vice Chairman of Infosys from 2011 to 2014 and the Chief Executive Officer and Managing Director of Infosys from 2007 to 2011. Kris is one of the co-founders of Infosys. He also was selected to Thinkers 50, an elite list of global business thinkers, in...</div> */}
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                        <div class="image-one">
+                                            <img src={require('../../assets/images/shape/director1.png')} alt="" />
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -129,7 +170,7 @@ class leadership extends Component {
                                             <div class="texttitle">Karan Verma</div>
                                             <div className='designation1'>CEO</div>
                                             <div className='linkdinicon'>
-                                            <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+                                                <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
 
                                             </div>
 
@@ -145,7 +186,7 @@ class leadership extends Component {
                                             <div class="texttitle">Karan Verma</div>
                                             <div className='designation1'>CEO</div>
                                             <div className='linkdinicon'>
-                                            <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+                                                <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
 
                                             </div>
                                         </div>
@@ -158,7 +199,7 @@ class leadership extends Component {
                                             <div class="texttitle">Karan Verma</div>
                                             <div className='designation1'>CEO</div>
                                             <div className='linkdinicon'>
-                                            <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+                                                <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
 
                                             </div>
                                         </div>
@@ -176,7 +217,7 @@ class leadership extends Component {
                                             <div class="texttitle">Karan Verma</div>
                                             <div className='designation1'>CEO</div>
                                             <div className='linkdinicon'>
-                                            <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+                                                <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
 
                                             </div>
                                         </div>
@@ -189,7 +230,7 @@ class leadership extends Component {
                                             <div class="texttitle">Karan Verma</div>
                                             <div className='designation1'>CEO</div>
                                             <div className='linkdinicon'>
-                                            <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+                                                <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
 
                                             </div>
                                         </div>
@@ -214,7 +255,7 @@ class leadership extends Component {
                                             <div class="texttitle">Karan Verma</div>
                                             <div className='designation1'>CEO</div>
                                             <div className='linkdinicon'>
-                                            <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+                                                <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
 
                                             </div>
                                         </div>

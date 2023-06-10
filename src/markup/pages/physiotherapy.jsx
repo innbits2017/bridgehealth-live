@@ -129,10 +129,10 @@ class physiotherapy extends Component {
                     </section>
                 </section>
 
-                <section class="contact-section">
+                <section class="contact-section physi">
 
                     <div class="auto-container">
-                        <div class="row">
+                    <div class="row align-items-center">
 
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
