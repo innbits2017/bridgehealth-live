@@ -15,20 +15,27 @@ class leadership extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            expanded: false
+            showFullContent1: true,
+            showFullContent2: true,
         };
     }
 
-    toggleContent = () => {
-        this.setState(prevState => ({
-            expanded: !prevState.expanded
+    toggleContent1 = () => {
+        this.setState((prevState) => ({
+            showFullContent1: !prevState.showFullContent1,
+        }));
+    };
+
+    toggleContent2 = () => {
+        this.setState((prevState) => ({
+            showFullContent2: !prevState.showFullContent2,
         }));
     };
 
 
     render() {
 
-        const { expanded } = this.state;
+        const { showFullContent1, showFullContent2 } = this.state;
 
         return (
             <>
@@ -76,20 +83,21 @@ class leadership extends Component {
                                                 <i>Senapathy “Kris” Gopalakrishnan served as the Vice Chairman of Infosys from 2011 to 2014
                                                     and the Chief Executive Officer and Managing Director of Infosys from 2007 to 2011. Kris is
                                                     one of the co-founders of Infosys. He also was selected to Thinkers 50, an elite list of global
-                                                    business thinkers, in...
+                                                    business thinkers, in 2009.
                                                 </i>
-                                                {!expanded && (
-                                                    <h6 className="leader-btn" onClick={this.toggleContent}>
-                                                        <i>KNOW MORE</i>
+                                                {showFullContent1 ? (
+                                                    <h6 className="leader-btn" >
+                                                        <i onClick={this.toggleContent1}>SHOW MORE</i>
                                                     </h6>
-                                                )}
-                                                {expanded && (
-                                                    <div>
-                                                        <span>
-                                                            Additional content goes here...
-                                                        </span>
-                                                        <h6 className="leader-btn" onClick={this.toggleContent}>
-                                                            <i>SHOW LESS</i>
+                                                ) : (
+                                                    <div class="text">
+                                                        <i>
+                                                            He was elected president of India's apex industry chamber Confederation of Indian Industry (CII) for 2013-14, and served as one of the co-chairs of the World Economic Forum in Davos in January 2014.
+                                                            He serves on the Board of Governors of Okinawa Institute for Science and Technology (OIST) and is the Chairman, Board of Governors of IIIT, Bangalore. He is the Chairman of the Vision Group on Information
+                                                            Technology of Karnataka Government and the Chairman of CII Start up Council. In January 2011, the Government of India awarded Kris the Padma Bhushan, the country’s third-highest civilian honor. Kris holds Master’s degrees in physics and computer science from the Indian Institute of Technology, Madras. Kris is a Fellow of Indian National Academy of Engineers (INAE) and an Honorary Fellow of Institution of Electronics and Telecommunication Engineers (IETE) of India.
+                                                        </i>
+                                                        <h6 className="leader-btn" >
+                                                            <i onClick={this.toggleContent1}>SHOW LESS</i>
                                                         </h6>
                                                     </div>
                                                 )}
@@ -114,21 +122,20 @@ class leadership extends Component {
                                             <div class="text1">
                                                 <i>Swaminathan Dandapani in his earlier role as Executive Chairman of Manipal Health
                                                     Enterprises, provided direction and leadership to the Healthcare business expanding the
-                                                    footprint of Manipal Hospitals in new geographies both within & outside India. He also was
-                                                    the Chairman of ...
+                                                    footprint of Manipal Hospitals in new geographies both within & outside India.
                                                 </i>
-                                                {!expanded && (
-                                                    <h6 className="leader-btn" onClick={this.toggleContent}>
-                                                        <i>KNOW MORE</i>
+                                                {showFullContent2 ? (
+                                                    <h6 className="leader-btn" >
+                                                        <i onClick={this.toggleContent2}>SHOW MORE</i>
                                                     </h6>
-                                                )}
-                                                {expanded && (
-                                                    <div>
-                                                        <span>
-                                                            Additional content goes here...
-                                                        </span>
-                                                        <h6 className="leader-btn" onClick={this.toggleContent}>
-                                                            <i>SHOW LESS</i>
+                                                ) : (
+                                                    <div class="text1">
+                                                        <i>
+                                                            He also was the Chairman of Manipal Integrated Services the integrated facility management company in the Manipal group, Swami was also the initiative lead for the “Bridging the Health DivideLeveraging Digital India” sponsored by NASSCOM ( Association of Software & Services Companies in India) and NATHEALTH ( Association of Healthcare Services & Products providers in India) . Prior to joining Manipal Group, Swami was the Managing Director & Chief Executive Officer of Infosys BPO (a fully owned subsidiary of Infosys Ltd). Swami led the firm building a 25000 + team worldwide, of over 65+ different nationalities in their workforce, with global operations in 6 centers in India and over 12 centers outside India in Americas, Europe, China, LATAM and APAC. Swami, a Chartered Accountant has over 40 years of experience in General Management, Finance & Accounting, Sales & Marketing, International Trading and Human Resources Management. He has performed multiple roles in Sales, Marketing and Operations, leading global teams in the Automobiles, Consumer Durables, Technology, Manufacturing and Services industries. He has also been associated with infrastructure projects in India and overseas.
+                                                            Swami has successfully concluded & executed several M&A projects across US, Europe, APAC, Middle East & India in multiple business verticals.
+                                                        </i>
+                                                        <h6 className="leader-btn" >
+                                                            <i onClick={this.toggleContent2}>SHOW LESS</i>
                                                         </h6>
                                                     </div>
                                                 )}
@@ -170,7 +177,7 @@ class leadership extends Component {
                                             <div class="texttitle">Karan Verma</div>
                                             <div className='designation1'>CEO</div>
                                             <div className='linkdinicon'>
-                                                <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+                                                <a href={'https://www.linkedin.com/in/karanverma/'}><div class="fab fa-linkedin linkdinicon1"></div></a>
 
                                             </div>
 
@@ -183,8 +190,8 @@ class leadership extends Component {
                                     <div class="leadership">
                                         <img src={require('../../assets/images/gallery/L1.png')} alt="" class="avtar" />
                                         <div class="overlay">
-                                            <div class="texttitle">Karan Verma</div>
-                                            <div className='designation1'>CEO</div>
+                                            <div class="texttitle">Dr. Dhanya Prabhu Ramdas</div>
+                                            <div className='designation1'>Head – Clinical Services</div>
                                             <div className='linkdinicon'>
                                                 <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
 
@@ -197,7 +204,7 @@ class leadership extends Component {
                                         <img src={require('../../assets/images/gallery/L5.png')} alt="" class="avtar" />
                                         <div class="overlay">
                                             <div class="texttitle">Bipul Jha</div>
-                                            <div className='designation1'>CEO</div>
+                                            <div className='designation1'>Head of Operations</div>
                                             <div className='linkdinicon'>
                                                 <a href={'https://www.linkedin.com/in/bipul-jha-96286110/'}><div class="fab fa-linkedin linkdinicon1"></div></a>
 
@@ -215,7 +222,7 @@ class leadership extends Component {
                                         <img src={require('../../assets/images/gallery/L3.png')} alt="" class="avtar" />
                                         <div class="overlay">
                                             <div class="texttitle">Ravishankar Rao </div>
-                                            <div className='designation1'>CEO</div>
+                                            <div className='designation1'>VP - Affiliates & Alliance</div>
                                             <div className='linkdinicon'>
                                                 <a href={'https://www.linkedin.com/in/ravishankar-rao-2940858/'}><div class="fab fa-linkedin linkdinicon1"></div></a>
 
@@ -228,7 +235,7 @@ class leadership extends Component {
                                         <img src={require('../../assets/images/gallery/L6.png')} alt="" class="avtar" />
                                         <div class="overlay">
                                             <div class="texttitle">Pavan Biddanda</div>
-                                            <div className='designation1'>CEO</div>
+                                            <div className='designation1'>VP - Risk Management </div>
                                             <div className='linkdinicon'>
                                                 <a href={'https://www.linkedin.com/in/pavanba/'}><div class="fab fa-linkedin linkdinicon1"></div></a>
 
@@ -253,7 +260,7 @@ class leadership extends Component {
                                         <img src={require('../../assets/images/gallery/L7.png')} alt="" class="avtar" />
                                         <div class="overlay">
                                             <div class="texttitle">Jayeeta Swar</div>
-                                            <div className='designation1'>CEO</div>
+                                            <div className='designation1'>VP - Technology</div>
                                             <div className='linkdinicon'>
                                                 <a href={'https://www.linkedin.com/in/jayeeta-swar-92b9bb65/'}><div class="fab fa-linkedin linkdinicon1"></div></a>
 
