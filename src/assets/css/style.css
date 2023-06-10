@@ -12417,9 +12417,13 @@ hr {
 }
 
 .view-position {
-	/* margin-right: 530px; */
-	color: blue;
-	text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #1963C6;
 }
 
 .career-head {
@@ -12754,3 +12758,25 @@ margin-top: 50px;
     border-radius: 129px;
     padding: 50px;
 }
+.careerpadding
+{
+	padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fontweight
+{
+	font-weight: 600;
+}
+.padeight
+{
+    padding-right: 10px;
+    width: 30px;}
+
+	.job-timing
+	{
+		margin-left: 10px !important;
+	}
+	.marginleft10
+	{
+		margin-left: 10px;
+	}
