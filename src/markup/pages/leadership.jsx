@@ -196,10 +196,10 @@ class leadership extends Component {
                                     <div class="leadership">
                                         <img src={require('../../assets/images/gallery/L5.png')} alt="" class="avtar" />
                                         <div class="overlay">
-                                            <div class="texttitle">Karan Verma</div>
+                                            <div class="texttitle">Bipul Jha</div>
                                             <div className='designation1'>CEO</div>
                                             <div className='linkdinicon'>
-                                                <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+                                                <a href={'https://www.linkedin.com/in/bipul-jha-96286110/'}><div class="fab fa-linkedin linkdinicon1"></div></a>
 
                                             </div>
                                         </div>
@@ -214,10 +214,10 @@ class leadership extends Component {
                                     <div class="leadership">
                                         <img src={require('../../assets/images/gallery/L3.png')} alt="" class="avtar" />
                                         <div class="overlay">
-                                            <div class="texttitle">Karan Verma</div>
+                                            <div class="texttitle">Ravishankar Rao </div>
                                             <div className='designation1'>CEO</div>
                                             <div className='linkdinicon'>
-                                                <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+                                                <a href={'https://www.linkedin.com/in/ravishankar-rao-2940858/'}><div class="fab fa-linkedin linkdinicon1"></div></a>
 
                                             </div>
                                         </div>
@@ -227,10 +227,10 @@ class leadership extends Component {
                                     <div class="leadership">
                                         <img src={require('../../assets/images/gallery/L6.png')} alt="" class="avtar" />
                                         <div class="overlay">
-                                            <div class="texttitle">Karan Verma</div>
+                                            <div class="texttitle">Pavan Biddanda</div>
                                             <div className='designation1'>CEO</div>
                                             <div className='linkdinicon'>
-                                                <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+                                                <a href={'https://www.linkedin.com/in/pavanba/'}><div class="fab fa-linkedin linkdinicon1"></div></a>
 
                                             </div>
                                         </div>
@@ -252,10 +252,10 @@ class leadership extends Component {
                                     <div class="leadership div-heading">
                                         <img src={require('../../assets/images/gallery/L7.png')} alt="" class="avtar" />
                                         <div class="overlay">
-                                            <div class="texttitle">Karan Verma</div>
+                                            <div class="texttitle">Jayeeta Swar</div>
                                             <div className='designation1'>CEO</div>
                                             <div className='linkdinicon'>
-                                                <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+                                                <a href={'https://www.linkedin.com/in/jayeeta-swar-92b9bb65/'}><div class="fab fa-linkedin linkdinicon1"></div></a>
 
                                             </div>
                                         </div>

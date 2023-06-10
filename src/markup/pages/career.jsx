@@ -152,20 +152,20 @@ class Career extends Component {
                             <option value="option3">Option 3</option>
                         </select>
                     </div> */}
-                     <div class="container">
+                    <div class="container">
                         <div class="row" style={{ background: 'white' }}>
                             <div class="col-lg-8">
 
                                 <div class="bg-white p-5 ">
                                     {/* <!-- Search --> */}
                                     <div class=" search-box">
-                                        <form>
+                                        <form onSubmit={e => this.handleSubmit(e)}>
                                             <div class="form-group1">
                                                 <input
                                                     type="search"
                                                     name="search-field"
                                                     value={this.state.searchTerm}
-                                                    onChange={this.handleSearchTermChange}
+                                                    onChange={e => this.handleChange(e)}
                                                     placeholder="Search Topic"
                                                     required="" />
                                                 {/* <button type="submit" style={{marginLeft: 40 + '%'}}><span class="icon far fa-search searchblog"></span></button> */}
@@ -194,11 +194,11 @@ class Career extends Component {
                         <div class="job-card" key={index}>
                             <div class="job-card-header">
                                 <h3 class="job-title">{job.title}</h3>
-                             <div className='careerpadding'>   <span class="job-location"><img src={require('../../assets/images/shape/iconmap.png')} alt="" className='padeight' />
+                                <div className='careerpadding'>   <span class="job-location"><img src={require('../../assets/images/shape/iconmap.png')} alt="" className='padeight' />
 
                                     {job.location}</span>
                                     <span class="job-timing">
-                                    <img src={require('../../assets/images/shape/icontime.png')} alt="" className='padeight' /> {job.timing}</span></div>
+                                        <img src={require('../../assets/images/shape/icontime.png')} alt="" className='padeight' /> {job.timing}</span></div>
                                 <div class="job-card-footer">
                                     <a href="#" class="view-position">View Position &#8594;</a>
                                 </div>
@@ -206,19 +206,19 @@ class Career extends Component {
 
                             <div class="job-card-details">
                                 <p class="job-department"><span className='fontweight'>Department:</span> {job.department}</p>
-                              
+
                             </div>
 
                         </div>
                     ))}
-                 
+
                 </section>
 
 
 
                 <section class="contact-section">
                     <div class="auto-container">
-                    <div class="row align-items-center">
+                        <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
@@ -232,9 +232,9 @@ class Career extends Component {
 
                                     <div class="sec-title squrebox">
                                         <h2 className='header1'>
-                                        <span className='headeingcolorblack'> Why work at</span>
-                                        <span className='headeingcolorblue'>  Bridge Health</span>
-                                    </h2>
+                                            <span className='headeingcolorblack'> Why work at</span>
+                                            <span className='headeingcolorblue'>  Bridge Health</span>
+                                        </h2>
                                         <p className='font22'>
                                             At Bridge Health, we believe that proactive focus on personalised healthcare and swift curative actions to mitigate risks are of paramount importance to each one of us.
                                             Our journey is all about being your trusted “Healthcare Companion for Life”.
@@ -251,39 +251,39 @@ class Career extends Component {
 
 
 
-                    <div class="auto-container">
+                <div class="auto-container">
                     <div class="row align-items-center">
 
-                            <div class="col-lg-6">
-                                <div class="contact-form-area">
+                        <div class="col-lg-6">
+                            <div class="contact-form-area">
 
                                 <div class="sec-title squrebox">                                                <h2 className='header1'>
 
-                                                    <span className='headeingcolorblack'> Life at</span>
+                                    <span className='headeingcolorblack'> Life at</span>
 
-                                                    <span className='headeingcolorblue'>  Bridge Health</span>
-                                                </h2>
-                                           
-                                        {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
-                                        <p className='font22'>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis  ipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                            Ut enim ad minim veniam, quis ipiscing elit, sed do eiusmod tempor incididunt.
-                                        </p>
+                                    <span className='headeingcolorblue'>  Bridge Health</span>
+                                </h2>
+
+                                    {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
+                                    <p className='font22'>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis  ipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis ipiscing elit, sed do eiusmod tempor incididunt.
+                                    </p>
 
 
-                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
-                                        <img src={require('../../assets/images/shape/career3.png')} alt="" className='widthimg' />
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
+                        <div class="col-lg-6">
+                            <div class="image-wrapper">
+                                <div class="image-one">
+                                    <img src={require('../../assets/images/shape/career3.png')} alt="" className='widthimg' />
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+                </div>
 
                 <Footer />
 
