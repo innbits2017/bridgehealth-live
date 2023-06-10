@@ -192,7 +192,7 @@ class fitnessAssessment extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                        <div class="row">
+                    <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
                                     <div class="auto-container">
@@ -232,7 +232,7 @@ class fitnessAssessment extends Component {
                             <div class="col-lg-5">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/fitness3.png')} alt="" className='widthimg' />
+                                        <img src={require('../../assets/images/shape/fitness3.png')} alt="" className='widthimg imgFloatRight' />
                                     </div>
                                 </div>
                             </div>
