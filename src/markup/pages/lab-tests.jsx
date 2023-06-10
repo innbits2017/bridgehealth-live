@@ -41,7 +41,7 @@ class lab_tests extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/lab1.png')} alt="" className='widthimg' />
+                                        <img src={require('../../assets/images/shape/lab1.png')} alt="" className='' />
                                     </div>
                                 </div>
                             </div>
@@ -180,7 +180,7 @@ class lab_tests extends Component {
                                 <div class="col-lg-5">
                                     <div class="image-wrapper">
                                         <div class="image-one image-two">
-                                            <img src={require('../../assets/images/shape/lab3.png')} alt=""  className='widthimg'/>
+                                            <img src={require('../../assets/images/shape/lab3.png')} alt=""  className=''/>
                                             {/* <img src={require('../../assets/images/shape/video2.gif')} alt="" /> */}
                                         </div>
 

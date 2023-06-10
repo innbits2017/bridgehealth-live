@@ -46,7 +46,7 @@ class diabetes extends Component {
                 </section>
                 <section class="contact-section heath-margin">
                     <div class="auto-container">
-                        <div class="row">
+                    <div class="row align-items-center">
                             <div class="col-lg-6">
 
                                 <img src={require('../../assets/images/shape/dia2.png')} alt="" className='widthimg' />

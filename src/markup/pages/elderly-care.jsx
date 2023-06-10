@@ -185,7 +185,7 @@ class elderlyCare extends Component {
                             <div class="col-lg-5">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/care4.png')} alt="" className='widthimg' />
+                                        <img src={require('../../assets/images/shape/care4.png')} alt="" className='' />
                                     </div>
                                 </div>
                             </div>

@@ -108,7 +108,7 @@ class psychological_Health extends Component {
                                 <div class="col-lg-6">
                                     <div class="image-wrapper">
                                         <div class="image-one image-two">
-                                            <img src={require('../../assets/images/shape/ps3.png')} alt="" className='widthimg imgFloatRight' />
+                                            <img src={require('../../assets/images/shape/ps3.png')} alt="" className='imgFloatRight' />
                                             {/* <img src={require('../../assets/images/shape/video2.gif')} alt="" /> */}
                                         </div>
 

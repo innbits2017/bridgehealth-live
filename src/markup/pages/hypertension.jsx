@@ -55,7 +55,7 @@ class hypertension extends Component {
                 <section class="contact-section heath-margin">
 
                     <div class="auto-container">
-                        <div class="row">
+                    <div class="row align-items-center">
 
                             <div class="col-lg-6">
                                
@@ -146,7 +146,7 @@ class hypertension extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                        <div class="row">
+                    <div class="row align-items-center">
 
 
                             <div class="col-lg-6">

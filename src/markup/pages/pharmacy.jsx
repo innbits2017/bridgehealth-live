@@ -96,10 +96,9 @@ class pharmacy extends Component {
                     </div>
                 </section>
 
-                <section class="contact-section margintop100">
+                <section class="contact-section margintop100 pharback">
                     <div class="auto-container">
-                        <div class="row">
-
+                    <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">

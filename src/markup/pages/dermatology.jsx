@@ -119,7 +119,7 @@ class dermatology extends Component {
                 </section>
 
 
-                <section class="contact-section">
+                <section class="contact-section dermaback">
 
                     <div class="auto-container">
                     <div class="row align-items-center">
