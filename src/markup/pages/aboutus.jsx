@@ -123,13 +123,12 @@ class aboutUs extends Component {
 
 
                 <div class="auto-container marginTop50">
-                    <div class="row">
-
+                    <div class="row align-items-center">
 
                         <div class="col-lg-6">
                             <div class="contact-form-area">
 
-                                <div class="sec-title phybox1">
+                                <div class="sec-title squrebox">
                                     {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                     <p className='font22'>
                                         <span className='headeingcolorblue'>  Bridge Health</span>  is an integrated Medical & Digital Healthcare program designed to deliver Individualized Care Continuum proactively. This program is executed through well-curated and validated clinical protocols.
@@ -141,7 +140,7 @@ class aboutUs extends Component {
                         <div class="col-lg-6">
                             <div class="image-wrapper">
                                 <div class="image-one">
-                                    <img src={require('../../assets/images/shape/apage2.png')} alt="" />
+                                    <img src={require('../../assets/images/shape/apage2.png')} alt="" className='widthimg imgFloatRight' />
                                 </div>
                             </div>
                         </div>
@@ -151,20 +150,16 @@ class aboutUs extends Component {
 
 
 
-                <div class="auto-container">
-                    <div class="row">
+                <div class="auto-container contact-section">
+                    <div class="row align-items-center">
 
-                        <div class="col-lg-6">
-                            <div class="image-wrapper">
-                                <div class="image-one">
-                                    <img src={require('../../assets/images/shape/apage3.png')} alt="" />
-                                </div>
-                            </div>
+                        <div class="col-lg-6 aboutgraph">
+                                    <img src={require('../../assets/images/shape/apage3.png')} alt=""/>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <div class="contact-form-area">
 
-                                <div class="sec-title phybox">
+                                <div class="sec-title squrebox">
                                     <p className='font22'>
                                         With our in-house specialized clinical and support team along with our credentialed affiliate partners,
                                         we have put together a personalized physical and digital ecosystem for your continued wellbeing.
@@ -182,7 +177,7 @@ class aboutUs extends Component {
 
 
 
-                <section class="contact-section heath-margin">
+                <section class=" heath-margin">
 
                     <div class="auto-container">
                         <div class="row">
@@ -191,7 +186,7 @@ class aboutUs extends Component {
                             <div class="col-lg-5">
                                 <div class="contact-form-area">
 
-                                    <div class="sec-title">
+                                    <div class="sec-title squrebox">
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
                                             We, at Bridge Health, believe that a proactive focus on personalized healthcare and swift curative actions to mitigate risks are of paramount importance to each one of us.
@@ -239,7 +234,7 @@ class aboutUs extends Component {
 
                                 {/* <!-- Contact Form--> */}
                                 <div class="contact-form">
-                                    <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e)}} id="contact-form">
+                                    <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} id="contact-form">
                                         <div class="row clearfix">
                                             <div class="col-md-12 form-group">
                                                 <input

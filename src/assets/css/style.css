@@ -12740,10 +12740,17 @@ margin-top: 50px;
     border-radius: 0px 25px 159px 0px;
     padding: 20px 10px 20px 80px;
 }
-.fitnesback
-{
+.fitnesback {
 	margin-left: -18%;
-    width: 100%;
-background-image: url(../images/shape/fitnessback.png);    border-radius: 0px 25px 159px 0px;
-    padding: 20px 10px 20px 80px;
+	width: 100%;
+	background-image: url(../images/shape/fitnessback.png);
+	border-radius: 0px 25px 159px 0px;
+	padding: 20px 10px 20px 80px;
+}
+
+.aboutgraph {
+	background: linear-gradient(128.75deg, #D7F5FF 0%, #FFFFFF 88.74%);
+    border: 1px dashed #000000;
+    border-radius: 129px;
+    padding: 50px;
 }

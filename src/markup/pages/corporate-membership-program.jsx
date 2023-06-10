@@ -133,7 +133,7 @@ class corporate_membership_program extends Component {
                                         </h4>
                                     </div>
 
-                                 <ContactForm buttonText="SAY YES!"/>
+                                    <ContactForm buttonText="SAY YES!" />
 
 
                                 </div>
@@ -214,15 +214,15 @@ class corporate_membership_program extends Component {
 
                 <div className='container-fulid'>
                     <div className='container margintop100'>
-                        {/* <div className='sliderbox'>
-                        <div class="image-one">
-                                        <img src={require('../../assets/images/shape/imageb2c.png')} alt="" />
-                                    </div>
+                    <div class="row align-items-center">
+                            <div class="image-wrapper">
+                                <div class="image-one">
+                                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                                        <source src={require('../../assets/images/logo.mp4')} type="video/mp4" />
+                                    </video>
+                                </div>
+                            </div>
                         </div>
-<h2 className='sec-title text-center'>to take care of their employees</h2> */}
-
-                        <img src={require('../../assets/images/shape/Layer 2-B2B GIF 2_1.gif')} alt="" />
-
                     </div>
                 </div>
                 <section class="container-fluid b2bback margin150">
@@ -236,11 +236,9 @@ class corporate_membership_program extends Component {
                         <div class="row align-items-center">
                             <div class="image-wrapper">
                                 <div class="image-one">
-                                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                        <source src={require('../../assets/images/output.mp4')} type="video/mp4" />
-                    </video>                               
-                                    {/* <img src={require('../../assets/images/shape/Sequence1.gif')} alt="" className='imgwidth' /> */}
-                                    {/* <img src={require('../../assets/images/shape/companey.png')} alt="" className='imgwidth' /> */}
+                                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                                        <source src={require('../../assets/images/output.mp4')} type="video/mp4" />
+                                    </video>
                                 </div>
                             </div>
                         </div>
