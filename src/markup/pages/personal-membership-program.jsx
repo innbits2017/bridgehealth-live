@@ -116,7 +116,7 @@ class b2cmembership extends Component {
                 <div class="content-box marginTop40header">
 
                   <div class="sec-title text-center textleft personal">
-                    <h2 className='textleft'>
+                    <h2 className='textleft fontSize50'>
                       <span className='headeingcolorblack'> Your  </span>
                       <span className='headeingcolorblue'>Good Health </span> <br></br>
                       <span className='headeingcolorblack'>is Our Plan</span>
@@ -124,9 +124,8 @@ class b2cmembership extends Component {
                     <h3 className='textleft marginTop40 b2c-heading'>Choose from a selection of<br></br> Annual Preventive Health plans
                     </h3>
                   </div>
-                  <button class="theme-btn btn-style-one b2q" type="submit" name="submit-form">
-                    <span class="btn-title" >Book Now</span>
-                  </button>
+                  <button class="commonBtnforAll">BOOK NOW</button>
+
 
 
                 </div>

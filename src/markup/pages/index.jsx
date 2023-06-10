@@ -1,17 +1,14 @@
 import React, { Component, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import ReactDOM from "react-dom";
 import Header from '../layout/header';
 import Footer from '../layout/footer';
 import Testimonial1 from '../element/testimonial1';
 import Testimonial2 from '../element/testimonial2';
 import Popup from 'reactjs-popup';
-import emailjs from "@emailjs/browser";
 import 'reactjs-popup/dist/index.css';
 import { Modal, Button } from "react-bootstrap";
 import CaseStudy from '../element/case-study';
 import ContactForm from '../element/contact-form';
-import ContactPopup from '../element/popup';
 const BRIDGE_HEALTH_SITE = process.env.BRIDGE_HEALTH_SITE;
 
 class Index extends Component {

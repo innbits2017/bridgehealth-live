@@ -12,8 +12,8 @@ const aboutbg = require('./../../assets/images/shape/career1.png');
 
 class Career extends Component {
 
-    
-  
+
+
     constructor(props) {
         super(props);
         this.state = {
@@ -110,7 +110,7 @@ class Career extends Component {
                                 </h2>
 
                             </div>
-                            <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Apply Now</span></button>
+                            <button class="commonBtnforAll">Apply Now</button>
 
 
                         </div>
@@ -128,7 +128,7 @@ class Career extends Component {
                         </h2>
                     </div>
 
-                    <div className="search-fil">
+                    {/* <div className="search-fil">
                         <form onSubmit={e => this.handleSubmit(e)}>
 
                             <div className="search-container">
@@ -151,123 +151,78 @@ class Career extends Component {
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
                         </select>
+                    </div> */}
+                     <div class="container">
+                        <div class="row" style={{ background: 'white' }}>
+                            <div class="col-lg-8">
+
+                                <div class="bg-white p-5 ">
+                                    {/* <!-- Search --> */}
+                                    <div class=" search-box">
+                                        <form>
+                                            <div class="form-group1">
+                                                <input
+                                                    type="search"
+                                                    name="search-field"
+                                                    value={this.state.searchTerm}
+                                                    onChange={this.handleSearchTermChange}
+                                                    placeholder="Search Topic"
+                                                    required="" />
+                                                {/* <button type="submit" style={{marginLeft: 40 + '%'}}><span class="icon far fa-search searchblog"></span></button> */}
+                                            </div>
+                                        </form>
+                                        <div class="language marginleft10">
+                                            <form action="#" class="language-switcher">
+                                                <select>
+                                                    <option value="1">Filter</option>
+                                                    <option value="1">FR</option>
+                                                    <option value="1">SP</option>
+                                                    <option value="1">BE</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
 
-                <section class="contact-section career-head">
+                <section class=" career-head">
                     {filteredJobs.map((job, index) => (
                         <div class="job-card" key={index}>
                             <div class="job-card-header">
                                 <h3 class="job-title">{job.title}</h3>
-                                <p class="job-location"><svg width="20" height="25" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 13.5C11.6875 13.5 12.2762 13.255 12.7662 12.765C13.2562 12.275 13.5008 11.6867 13.5 11C13.5 10.3125 13.255 9.72375 12.765 9.23375C12.275 8.74375 11.6867 8.49917 11 8.5C10.3125 8.5 9.72375 8.745 9.23375 9.235C8.74375 9.725 8.49917 10.3133 8.5 11C8.5 11.6875 8.745 12.2763 9.235 12.7663C9.725 13.2563 10.3133 13.5008 11 13.5ZM11 25.5313C10.8333 25.5313 10.6667 25.5 10.5 25.4375C10.3333 25.375 10.1875 25.2917 10.0625 25.1875C7.02083 22.5 4.75 20.005 3.25 17.7025C1.75 15.4 1 13.2492 1 11.25C1 8.125 2.00542 5.63542 4.01625 3.78125C6.02708 1.92708 8.355 1 11 1C13.6458 1 15.9742 1.92708 17.985 3.78125C19.9958 5.63542 21.0008 8.125 21 11.25C21 13.25 20.25 15.4013 18.75 17.7038C17.25 20.0063 14.9792 22.5008 11.9375 25.1875C11.8125 25.2917 11.6667 25.375 11.5 25.4375C11.3333 25.5 11.1667 25.5313 11 25.5313Z" stroke="#1963C6" stroke-width="2" />
-                                </svg>
-                                    {job.location}</p>
+                             <div className='careerpadding'>   <span class="job-location"><img src={require('../../assets/images/shape/iconmap.png')} alt="" className='padeight' />
+
+                                    {job.location}</span>
+                                    <span class="job-timing">
+                                    <img src={require('../../assets/images/shape/icontime.png')} alt="" className='padeight' /> {job.timing}</span></div>
                                 <div class="job-card-footer">
                                     <a href="#" class="view-position">View Position &#8594;</a>
                                 </div>
                             </div>
 
                             <div class="job-card-details">
-                                <p class="job-department">Department: {job.department}</p>
-                                <p class="job-timing"> <svg width="25" height="25" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M14.25 15.099V9.75H14.75V14.4875V14.9017L15.0429 15.1946L18.9708 19.1225L18.6158 19.475L14.25 15.099ZM14.4875 1.5C7.03391 1.5 1 7.54902 1 15C1 22.451 7.03391 28.5 14.4875 28.5C21.9516 28.5 28 22.4529 28 15C28 7.54706 21.9516 1.5 14.4875 1.5Z" stroke="#1963C6" stroke-width="2" />
-                                </svg> {job.timing}</p>
+                                <p class="job-department"><span className='fontweight'>Department:</span> {job.department}</p>
+                              
                             </div>
 
                         </div>
                     ))}
-                    {/* {filteredJobs.map((job, index) => (
-                        <div class="job-card" key={index}>
-                            <div class="job-card-header">
-                                <h3 class="job-title">{job.title}</h3>
-                                <p class="job-location"> <svg width="20" height="25" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 13.5C11.6875 13.5 12.2762 13.255 12.7662 12.765C13.2562 12.275 13.5008 11.6867 13.5 11C13.5 10.3125 13.255 9.72375 12.765 9.23375C12.275 8.74375 11.6867 8.49917 11 8.5C10.3125 8.5 9.72375 8.745 9.23375 9.235C8.74375 9.725 8.49917 10.3133 8.5 11C8.5 11.6875 8.745 12.2763 9.235 12.7663C9.725 13.2563 10.3133 13.5008 11 13.5ZM11 25.5313C10.8333 25.5313 10.6667 25.5 10.5 25.4375C10.3333 25.375 10.1875 25.2917 10.0625 25.1875C7.02083 22.5 4.75 20.005 3.25 17.7025C1.75 15.4 1 13.2492 1 11.25C1 8.125 2.00542 5.63542 4.01625 3.78125C6.02708 1.92708 8.355 1 11 1C13.6458 1 15.9742 1.92708 17.985 3.78125C19.9958 5.63542 21.0008 8.125 21 11.25C21 13.25 20.25 15.4013 18.75 17.7038C17.25 20.0063 14.9792 22.5008 11.9375 25.1875C11.8125 25.2917 11.6667 25.375 11.5 25.4375C11.3333 25.5 11.1667 25.5313 11 25.5313Z" stroke="#1963C6" stroke-width="2" />
-                                </svg>
-                                    {job.location}</p>
-                                <div class="job-card-footer">
-                                    <a href="#" class="view-position">View Position &#8594;</a>
-                                </div>
-                            </div>
-
-                            <div class="job-card-details">
-                                <p class="job-department">Department: {job.department}</p>
-                                <p class="job-timing">
-                                    <svg width="25" height="25" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.25 15.099V9.75H14.75V14.4875V14.9017L15.0429 15.1946L18.9708 19.1225L18.6158 19.475L14.25 15.099ZM14.4875 1.5C7.03391 1.5 1 7.54902 1 15C1 22.451 7.03391 28.5 14.4875 28.5C21.9516 28.5 28 22.4529 28 15C28 7.54706 21.9516 1.5 14.4875 1.5Z" stroke="#1963C6" stroke-width="2" />
-                                    </svg>
-
-                                    {job.timing}</p>
-                            </div>
-
-                        </div>
-                    ))}
-                    {filteredJobs.map((job, index) => (
-                        <div class="job-card" key={index}>
-                            <div class="job-card-header">
-                                <h3 class="job-title">{job.title}</h3>
-                                <p class="job-location"><svg width="20" height="25" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 13.5C11.6875 13.5 12.2762 13.255 12.7662 12.765C13.2562 12.275 13.5008 11.6867 13.5 11C13.5 10.3125 13.255 9.72375 12.765 9.23375C12.275 8.74375 11.6867 8.49917 11 8.5C10.3125 8.5 9.72375 8.745 9.23375 9.235C8.74375 9.725 8.49917 10.3133 8.5 11C8.5 11.6875 8.745 12.2763 9.235 12.7663C9.725 13.2563 10.3133 13.5008 11 13.5ZM11 25.5313C10.8333 25.5313 10.6667 25.5 10.5 25.4375C10.3333 25.375 10.1875 25.2917 10.0625 25.1875C7.02083 22.5 4.75 20.005 3.25 17.7025C1.75 15.4 1 13.2492 1 11.25C1 8.125 2.00542 5.63542 4.01625 3.78125C6.02708 1.92708 8.355 1 11 1C13.6458 1 15.9742 1.92708 17.985 3.78125C19.9958 5.63542 21.0008 8.125 21 11.25C21 13.25 20.25 15.4013 18.75 17.7038C17.25 20.0063 14.9792 22.5008 11.9375 25.1875C11.8125 25.2917 11.6667 25.375 11.5 25.4375C11.3333 25.5 11.1667 25.5313 11 25.5313Z" stroke="#1963C6" stroke-width="2" />
-                                </svg>
-                                    {job.location}</p>
-                                <div class="job-card-footer">
-                                    <a href="#" class="view-position">View Position &#8594;</a>
-                                </div>
-                            </div>
-
-                            <div class="job-card-details">
-                                <p class="job-department">Department: {job.department}</p>
-                                <p class="job-timing">
-                                    <svg width="25" height="25" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.25 15.099V9.75H14.75V14.4875V14.9017L15.0429 15.1946L18.9708 19.1225L18.6158 19.475L14.25 15.099ZM14.4875 1.5C7.03391 1.5 1 7.54902 1 15C1 22.451 7.03391 28.5 14.4875 28.5C21.9516 28.5 28 22.4529 28 15C28 7.54706 21.9516 1.5 14.4875 1.5Z" stroke="#1963C6" stroke-width="2" />
-                                    </svg>
-
-                                    {job.timing}</p>
-                            </div>
-
-                        </div>
-                    ))}
-                    {filteredJobs.map((job, index) => (
-                        <div class="job-card" key={index}>
-                            <div class="job-card-header">
-                                <h3 class="job-title">{job.title}</h3>
-                                <p class="job-location"><svg width="20" height="25" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 13.5C11.6875 13.5 12.2762 13.255 12.7662 12.765C13.2562 12.275 13.5008 11.6867 13.5 11C13.5 10.3125 13.255 9.72375 12.765 9.23375C12.275 8.74375 11.6867 8.49917 11 8.5C10.3125 8.5 9.72375 8.745 9.23375 9.235C8.74375 9.725 8.49917 10.3133 8.5 11C8.5 11.6875 8.745 12.2763 9.235 12.7663C9.725 13.2563 10.3133 13.5008 11 13.5ZM11 25.5313C10.8333 25.5313 10.6667 25.5 10.5 25.4375C10.3333 25.375 10.1875 25.2917 10.0625 25.1875C7.02083 22.5 4.75 20.005 3.25 17.7025C1.75 15.4 1 13.2492 1 11.25C1 8.125 2.00542 5.63542 4.01625 3.78125C6.02708 1.92708 8.355 1 11 1C13.6458 1 15.9742 1.92708 17.985 3.78125C19.9958 5.63542 21.0008 8.125 21 11.25C21 13.25 20.25 15.4013 18.75 17.7038C17.25 20.0063 14.9792 22.5008 11.9375 25.1875C11.8125 25.2917 11.6667 25.375 11.5 25.4375C11.3333 25.5 11.1667 25.5313 11 25.5313Z" stroke="#1963C6" stroke-width="2" />
-                                </svg>
-                                    {job.location}</p>
-                                <div class="job-card-footer">
-                                    <a href="#" class="view-position">View Position &#8594;</a>
-                                </div>
-                            </div>
-
-                            <div class="job-card-details">
-                                <p class="job-department">Department: {job.department}</p>
-                                <p class="job-timing">
-                                    <svg width="25" height="25" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.25 15.099V9.75H14.75V14.4875V14.9017L15.0429 15.1946L18.9708 19.1225L18.6158 19.475L14.25 15.099ZM14.4875 1.5C7.03391 1.5 1 7.54902 1 15C1 22.451 7.03391 28.5 14.4875 28.5C21.9516 28.5 28 22.4529 28 15C28 7.54706 21.9516 1.5 14.4875 1.5Z" stroke="#1963C6" stroke-width="2" />
-                                    </svg>
-
-                                    {job.timing}</p>
-                            </div>
-
-                        </div>
-                    ))} */}
-
+                 
                 </section>
 
 
 
                 <section class="contact-section">
-
                     <div class="auto-container">
-
-                        <div class="row">
-
+                    <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/career2.png')} alt="" className='width84' />
+                                        <img src={require('../../assets/images/shape/career2.png')} alt="" className='widthimg' />
                                     </div>
                                 </div>
                             </div>
@@ -275,21 +230,11 @@ class Career extends Component {
                                 <div class="contact-form-area">
 
 
-                                    <div class="sec-title">
-
-                                        <div class="auto-container">
-                                            <div class="">
-                                                <h2 className='header1'>
-                                                    <span className='headeingcolorblack'> Why work at</span>
-                                                    <br></br>
-                                                    <span className='headeingcolorblue'>  Bridge Health</span>
-                                                </h2>
-                                            </div>
-
-                                        </div>
-                                        {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span>
-
-                                        </h2> */}
+                                    <div class="sec-title squrebox">
+                                        <h2 className='header1'>
+                                        <span className='headeingcolorblack'> Why work at</span>
+                                        <span className='headeingcolorblue'>  Bridge Health</span>
+                                    </h2>
                                         <p className='font22'>
                                             At Bridge Health, we believe that proactive focus on personalised healthcare and swift curative actions to mitigate risks are of paramount importance to each one of us.
                                             Our journey is all about being your trusted “Healthcare Companion for Life”.
@@ -305,27 +250,20 @@ class Career extends Component {
                 </section>
 
 
-                <section class="contact-section">
 
                     <div class="auto-container">
-                        <div class="row">
-
+                    <div class="row align-items-center">
 
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
 
-                                    <div class="sec-title">
+                                <div class="sec-title squrebox">                                                <h2 className='header1'>
 
-                                        <div class="auto-container">
-                                            <div class="">
-                                                <h2 className='header1'>
                                                     <span className='headeingcolorblack'> Life at</span>
 
                                                     <span className='headeingcolorblue'>  Bridge Health</span>
                                                 </h2>
-                                            </div>
-
-                                        </div>
+                                           
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis  ipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -339,14 +277,13 @@ class Career extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/career3.png')} alt="" className='width84' />
+                                        <img src={require('../../assets/images/shape/career3.png')} alt="" className='widthimg' />
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                </section>
 
                 <Footer />
 
