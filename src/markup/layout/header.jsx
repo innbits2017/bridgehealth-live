@@ -257,22 +257,22 @@ handleScroll = event => {
                                 
                                 <div class="nav-outer clearfix">
                                     
-                                    <div class="logo-box">
+                                    {/* <div class="logo-box">
                                         <div class="logo"><Link to={''}><img src={require('../../assets/images/logo.png')} alt=""/></Link></div>
-                                    </div>
+                                    </div> */}
                                     
                                     <div class="mobile-nav-toggler"><span class="icon fal fa-bars"></span></div>
 
 
-                                    <nav class="main-menu navbar-expand-md navbar-light">
+                                    {/* <nav class="main-menu navbar-expand-md navbar-light">
                                     <Menu />
-                                    </nav>
+                                    </nav> */}
                                 </div>
                             </div>
                         </div>
                     </div>
-             <div class={scrolled ? "sticky-header animated slideInDown" : "sticky-header"}>
-                    </div>
+             {/* <div class={scrolled ? "sticky-header animated slideInDown" : "sticky-header"}>
+                    </div> */}
                     
 
 

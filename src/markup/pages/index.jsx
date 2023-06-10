@@ -318,18 +318,15 @@ Progress towards <span className='headeingcolorblack'>good health.</span>
                                                 Pre and Post score comparisons
                                             </li>
                                         </ul>
-                                        <div class="btn-box marginleft20">
+                                        {/* <div class="btn-box marginleft20">
                                             <a class="theme-btn btn-style-one" href="#">
 
                                                 <Popup trigger={<Link class="top-right flotright1" to="">  <span class="btn-title btn-style-one">KNOW MORE</span> </Link>
                                                 } position="left">
                                                     <div class="contact-form-area">
 
-                                                        {/* <!-- Contact Form--> */}
                                                         <div class="contact-form">
                                                             <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} action="#">
-                                                                {/* <form ref={form} onSubmit={sendEmail}> */}
-
                                                                 <div class="row clearfix">
                                                                     <div class="col-md-12 form-group">
                                                                         <input
@@ -402,7 +399,12 @@ Progress towards <span className='headeingcolorblack'>good health.</span>
 
                                                 </Popup>
                                             </a>
-                                        </div>
+                                        </div> */}
+                                         <div class="btn-box text-center btn5">
+                            <button class="commonBtnforAll">KNOW MORE</button>
+
+
+                        </div>
                                     </div>
                                 </div>
                             </div>
