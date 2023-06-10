@@ -11,10 +11,9 @@ const aboutbg = require('./../../assets/images/shape/career1.png');
 
 
 class Career extends Component {
-    componentDidMount() {
-        document.title = 'Career | Bridge Health';
-    }
 
+    
+  
     constructor(props) {
         super(props);
         this.state = {
@@ -50,9 +49,12 @@ class Career extends Component {
         };
     }
 
+
     componentDidMount() {
         // Initially, set filteredJobs to contain all jobs
         this.setState({ filteredJobs: this.state.jobs });
+
+        document.title = 'Career | Bridge Health';
     }
 
     handleChange = (event) => {

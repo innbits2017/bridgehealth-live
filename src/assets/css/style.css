@@ -84,6 +84,7 @@ p,
 	text-decoration: underline;
 	color: #1963C6 !important;
 	margin-top: 1rem;
+	cursor: pointer;
 }
 
 .leader-btn1 {
