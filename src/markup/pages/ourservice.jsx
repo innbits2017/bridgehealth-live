@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 import CaseStudy from '../element/case-study';
-
-const aboutbg = require('./../../assets/images/background/image-11.jpg');
-const wellcomebg1 = require('./../../assets/images/resource/image-1.jpg');
-
+import { Modal, Button } from "react-bootstrap";
 class ourservice extends Component {
     state = {
         isOpen: false
