@@ -178,7 +178,8 @@ class Index extends Component {
                                     <div class="content-box">
                                         <div class="sec-title">
                                             <div class="text textpadding">
-                                            Developed by our in-house clinical experts, the BH Smart Guide is a smarter way to understand the right diagnostic tests for you based on your current health status, family history, and lifestyle choices.
+                                                Developed by our in-house clinical experts,
+                                                the BH Smart Guide is a smarter way to understand the right diagnostic tests for you based on your current health status, family history, and lifestyle choices.
                                             </div>
                                         </div>
                                         <div class="image-one">
@@ -199,9 +200,9 @@ class Index extends Component {
                                 <div class="col-lg-7">
                                     <div class="image-wrapper imgright">
                                         <div class="image-one imgpad">
-                                        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"  className='videofull'>
-                        <source src={require('../../assets/images/Hand-phone-video.mp4')} type="video/mp4" />
-                    </video>                                        </div>
+                                            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" className='videofull'>
+                                                <source src={require('../../assets/images/Hand-phone-video.mp4')} type="video/mp4" />
+                                            </video>                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -300,8 +301,8 @@ class Index extends Component {
                                         <div class="sec-title">
                                             <div class="text1 textpadding" style={{ marginRight: 40 + 'px' }}>
                                                 Predict the onset of   <span className='headeingcolorblack'> hidden illnesses</span> and health conditions.<br></br>
-Prevent them by undergoing <span className='headeingcolorblack'>tests.</span><br></br>
-Progress towards <span className='headeingcolorblack'>good health.</span> 
+                                                Prevent them by undergoing <span className='headeingcolorblack'>tests.</span><br></br>
+                                                Progress towards <span className='headeingcolorblack'>good health.</span>
                                             </div>
                                         </div>
                                         <ul className='listicon10'>
@@ -318,18 +319,15 @@ Progress towards <span className='headeingcolorblack'>good health.</span>
                                                 Pre and Post score comparisons
                                             </li>
                                         </ul>
-                                        <div class="btn-box marginleft20">
+                                        {/* <div class="btn-box marginleft20">
                                             <a class="theme-btn btn-style-one" href="#">
 
                                                 <Popup trigger={<Link class="top-right flotright1" to="">  <span class="btn-title btn-style-one">KNOW MORE</span> </Link>
                                                 } position="left">
                                                     <div class="contact-form-area">
 
-                                                        {/* <!-- Contact Form--> */}
                                                         <div class="contact-form">
                                                             <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} action="#">
-                                                                {/* <form ref={form} onSubmit={sendEmail}> */}
-
                                                                 <div class="row clearfix">
                                                                     <div class="col-md-12 form-group">
                                                                         <input
@@ -402,6 +400,11 @@ Progress towards <span className='headeingcolorblack'>good health.</span>
 
                                                 </Popup>
                                             </a>
+                                        </div> */}
+                                        <div class="btn-box text-center btn5">
+                                            <button class="commonBtnforAll">KNOW MORE</button>
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -431,7 +434,8 @@ Progress towards <span className='headeingcolorblack'>good health.</span>
 
                                                 <img src={require('../../assets/images/shape/doctor.png')} alt="" />
                                                 <div class="short-name expertise">Annual Preventive<br></br> Health Plans</div>
-                                                <div class="longer-name">No matter what you need, there’s always a plan for you. Choose from a selection of Annual Preventive Health plans and sign up for better health.
+                                                <div class="longer-name">
+                                                    No matter what you need, there’s always a plan for you. Choose from a selection of Annual Preventive Health plans and sign up for better health.
                                                 </div>
                                             </p>
                                         </div>
@@ -451,8 +455,9 @@ Progress towards <span className='headeingcolorblack'>good health.</span>
                                                 <img src={require('../../assets/images/shape/s2.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Comprehensive<br></br> Health Checks</div>
-                                            <div class="longer-name">   Health is defined as a state of complete physical, mental, and social well-being.
-                                              </div>
+                                            <div class="longer-name">
+                                                Prevention is better than cure. With advanced technology, we are able to understand your entire health profile and help you prevent illnesses. Book your Comprehensive Health Check today.
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
@@ -466,8 +471,10 @@ Progress towards <span className='headeingcolorblack'>good health.</span>
                                                 <img src={require('../../assets/images/shape/k3.jpeg')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Doctor <br></br>Consults</div>
-                                            <div class="longer-name">  All of us get sick at some point in life. And whenever we get sick,
-                                                we always go to the doctor</div>
+                                            <div class="longer-name">
+                                                Getting an appointment with your doctor at your nearest clinic can be burdensome.
+                                                We simplify the process and allow you to consult with our experts whenever, wherever.
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
@@ -476,15 +483,16 @@ Progress towards <span className='headeingcolorblack'>good health.</span>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one" >
 
-                                    
+
                                     <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/psychological-health'}>
 
                                                 <img src={require('../../assets/images/shape/k2.jpeg')} alt="" /></a>
                                             <div class="short-name expertise">Psychologist Consults</div>
-                                            <div class="longer-name"> Mental health is extremely important in the current times due to increased work and social pressures. Talk to our expert clinical psychologists.
-</div>
+                                            <div class="longer-name">
+                                                Mental health is extremely important in the current times due to increased work and social pressures. Talk to our expert clinical psychologists.
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
@@ -496,33 +504,38 @@ Progress towards <span className='headeingcolorblack'>good health.</span>
 
                                                 <img src={require('../../assets/images/shape/s5.png')} alt="" /></a>
                                             <div class="short-name expertise">Dental Consults</div>
-                                            <div class="longer-name">  Our teeth are made of enamel which is the hardest substance in the human body.</div>
+                                            <div class="longer-name">
+                                                Most people neglect their oral health which can be disastrous for their overall health. Book your dental consultation with us today and smile with confidence.
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one" >
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/dermatology'}>
+                                            <a href={'/dermatology'}>
 
-                                            <img src={require('../../assets/images/shape/s7.png')} alt="" /></a>
+                                                <img src={require('../../assets/images/shape/s7.png')} alt="" /></a>
                                             <div class="short-name expertise">Dermatology</div>
-                                            <div class="longer-name">    A good physical appearance is a reflection of youth and confidence.
-                                                Unfortunately,</div>
+                                            <div class="longer-name">
+                                                Contrary to popular belief, don’t just cater to the needs of fashion models.
+                                                Our hair, skin, and nails deserve to be treated well. Talk to our dermatologists today.
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one" >
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/ophthalmologist'}>
-                                        <img src={require('../../assets/images/shape/s8.png')} alt="" />
+                                            <a href={'/ophthalmologist'}>
+                                                <img src={require('../../assets/images/shape/s8.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Ophthalmology</div>
-                                            <div class="longer-name">Our eyesight is a precious gift which allows us to see the beauty of the world. We need to take care of our eyes to prevent any eye-related illnesses. Meet our ophthalmologists today.
-</div>
+                                            <div class="longer-name">
+                                                Our eyesight is a precious gift which allows us to see the beauty of the world. We need to take care of our eyes to prevent any eye-related illnesses. Meet our ophthalmologists today.
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
@@ -530,55 +543,62 @@ Progress towards <span className='headeingcolorblack'>good health.</span>
                             <div class="row marginbutton30">
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one" >
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/physio-therapy'}>
-                                        <img src={require('../../assets/images/shape/s9.png')} alt="" />
+                                            <a href={'/physio-therapy'}>
+                                                <img src={require('../../assets/images/shape/s9.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Physiotherapy</div>
-                                            <div class="longer-name">In life, we take our ability to move around freely for granted. Due to injuries or certain illnesses, our movement gets affected. Schedule a physiotherapy session with us and move with ease.
-</div>
+                                            <div class="longer-name">
+                                                In life, we take our ability to move around freely for granted. Due to injuries or certain illnesses, our movement gets affected.
+                                                Schedule a physiotherapy session with us and move with ease.
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one" >
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/elderly-care'}>
-                                        <img src={require('../../assets/images/shape/s10.png')} alt="" />
+                                            <a href={'/elderly-care'}>
+                                                <img src={require('../../assets/images/shape/s10.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Elderly Care</div>
-                                            <div class="longer-name">Growing old is a natural part of our lives. As we age, our physical abilities gradually get compromised and we need assistance. Discover our elderly care services.
-</div>
+                                            <div class="longer-name">
+                                                Growing old is a natural part of our lives. As we age, our physical abilities gradually get compromised and we need assistance. Discover our elderly care services.
+                                            </div>
                                         </p>
                                     </div>
-                                  
+
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one" >
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/lab-tests'}>
-                                        <img src={require('../../assets/images/shape/s11.png')} alt="" />
+                                            <a href={'/lab-tests'}>
+                                                <img src={require('../../assets/images/shape/s11.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Lab Tests</div>
-                                            <div class="longer-name">  The key to an effective diagnosis is effective testing. Advancements in lab testing have allowed us to accurately determine illnesses and provide treatment plans. Discover our state-of-the-art lab facilities.
-</div>
+                                            <div class="longer-name">
+                                                The key to an effective diagnosis is effective testing.
+                                                Advancements in lab testing have allowed us to accurately determine illnesses and provide treatment plans. Discover our state-of-the-art lab facilities.
+                                            </div>
                                         </p>
                                     </div>
-                                  
+
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one" >
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/diet-and-nutrition'}>
-                                        <img src={require('../../assets/images/shape/s12.png')} alt="" />
+                                            <a href={'/diet-and-nutrition'}>
+                                                <img src={require('../../assets/images/shape/s12.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Diet and Nutrition</div>
-                                            <div class="longer-name"> A healthy diet is the basis for good health. After all, you are what you eat. Find out how our expert clinical nutritionists help you eat healthy to stay healthy.
-</div>
+                                            <div class="longer-name">
+                                                A healthy diet is the basis for good health. After all, you are what you eat.
+                                                Find out how our expert clinical nutritionists help you eat healthy to stay healthy.
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
@@ -587,60 +607,66 @@ Progress towards <span className='headeingcolorblack'>good health.</span>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one" >
 
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/yoga-assessment'}>
-                                        <img src={require('../../assets/images/shape/s13.png')} alt="" />
+                                            <a href={'/yoga-assessment'}>
+                                                <img src={require('../../assets/images/shape/s13.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Yoga Assessment <br></br>and Coaching</div>
-                                            <div class="longer-name">Yoga has been a part of our culture for centuries. The focus on harmony of mind, body, and spirit has been scientifically proven to have positive effects on health. Talk to our yoga therapists.
-</div>
+                                            <div class="longer-name">
+                                                Yoga has been a part of our culture for centuries. The focus on harmony of mind, body,
+                                                and spirit has been scientifically proven to have positive effects on health. Talk to our yoga therapists.
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one" >
 
-                                    
-                                <div class="expanded-text grow bozhover">
+
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/fitness-assessment'}>
+                                            <a href={'/fitness-assessment'}>
                                                 <img src={require('../../assets/images/shape/s14.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Fitness Assessment<br></br> and Coaching</div>
-                                            <div class="longer-name">For good health, exercise is important. We’ve taken this to another level and have adopted a clinical fact-based approach with our unique fitness program. Discover our pro-fit program.</div>
+                                            <div class="longer-name">
+                                                For good health, exercise is important. We’ve taken this to another level and have adopted a clinical fact-based approach with our unique fitness program. Discover our pro-fit program.
+                                            </div>
                                         </p>
                                     </div>
 
 
-                            
+
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one" >
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/pharmacy'}>
-                                        <img src={require('../../assets/images/shape/s15.png')} alt="" />
+                                            <a href={'/pharmacy'}>
+                                                <img src={require('../../assets/images/shape/s15.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Pharmacy</div>
                                             <div class="longer-name"> It’s important to always keep an adequate supply of the medicines you need.</div>
                                         </p>
                                     </div>
-                               
+
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one" >
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/nursing-at-home'}>
-                                        <img src={require('../../assets/images/shape/s16.png')} alt="" />
+                                            <a href={'/nursing-at-home'}>
+                                                <img src={require('../../assets/images/shape/s16.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Nursing At Home</div>
-                                            <div class="longer-name">With nursing services provided directly to you and your loved ones at the comfort of your own home, get the timely care and assistance you need at all times.
-</div>
+                                            <div class="longer-name">
+                                                With nursing services provided directly to you and your loved ones at the comfort of your own home,
+                                                get the timely care and assistance you need at all times.
+                                            </div>
                                         </p>
                                     </div>
-                                
+
                                 </div>
                             </div>
                         </div>
@@ -651,7 +677,7 @@ Progress towards <span className='headeingcolorblack'>good health.</span>
                 {/* <!-- Testimonial Section --> */}
                 <Testimonial2 />
                 <Testimonial1 />
-<popup/>
+                <popup />
                 {/* <!-- News Section --> */}
                 <section class="auto-container3">
                     <div class="auto-container">
