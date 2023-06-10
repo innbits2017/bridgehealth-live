@@ -19,7 +19,7 @@ class nursingAtHome extends Component {
                             <div class="row align-items-center auto-container">
 
                                 <div class="col-lg-6">
-                                    <div class="content-box marginTop40header">
+                                    <div class="content-box marginTop40header triangleback">
 
                                         <div class="sec-title text-center textleft">
                                             <h2 className='textleft'>
