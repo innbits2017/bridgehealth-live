@@ -2048,16 +2048,14 @@ img {
 
 .mobile-menu .navigation li>a {
 	position: relative;
-	display: block;
-	line-height: 24px;
-	padding: 10px 25px;
-	font-size: 15px;
-	font-weight: 500;
-	color: #ffffff;
-	text-transform: uppercase;
-	-webkit-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	transition: all 500ms ease;
+    display: block;
+    line-height: 24px;
+    padding: 2px 33px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: all 500ms ease;
 }
 
 .mobile-menu .navigation li ul li>a {
@@ -2106,10 +2104,10 @@ img {
 	transform: rotate(90deg);
 }
 
-.mobile-menu .navigation li>ul,
+/* .mobile-menu .navigation li>ul,
 .mobile-menu .navigation li>ul>li>ul {
 	display: none;
-}
+} */
 
 .mobile-menu .social-links {
 	position: relative;
@@ -2340,14 +2338,6 @@ img {
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;
 	z-index: 5;
-}
-
-
-
-.side-menu .navigation li>ul,
-.side-menu .navigation li>ul>li>ul {
-	display: none;
-	background-color: rgba(255, 255, 255, 0.05);
 }
 
 .side-menu .social-links {

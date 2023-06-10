@@ -66,13 +66,9 @@ handleScroll = event => {
   };
 
   saveData = async (e) => {
-
     console.log(e, "Data is saving");
-
     e.preventDefault();
-
     const { email, username, phone, message } = this.state;
-
     const res = await fetch('http://localhost:8000/submit', {
       method: 'POST',
       headers: {
@@ -82,25 +78,20 @@ handleScroll = event => {
         email, username, phone, message
       }),
     });
-
     const data = await res.json();
     console.log(data);
-
     if (data.status === 401 || !data) {
       console.log('error');
     } else {
       this.setState({ show: true, email: '', username: '', phone: '', message: '' });
       console.log('Data saved');
     }
-
   }
 
 
   sendEmail = async (e) => {
     e.preventDefault();
-
     const { email, username } = this.state;
-
     const res = await fetch('http://localhost:8000/register', {
       method: 'POST',
       headers: {
@@ -110,10 +101,8 @@ handleScroll = event => {
         email, username
       }),
     });
-
     const data = await res.json();
     console.log(data);
-
     if (data.status === 401 || !data) {
       console.log('error');
     } else {
@@ -121,17 +110,12 @@ handleScroll = event => {
       console.log('Email sent');
     }
   };
-
-
   state = {
     scrolled: false
   };
   render() {
-
-
     const { username, email } = this.state;
     const isSubmitDisabled = username === '' || email === ''
-
     const { scrolled } = this.state;
     return (
       <>
@@ -140,10 +124,8 @@ handleScroll = event => {
             <div class="auto-container">
               <div class="inner">
                 <div class="top-left">
-
-
                   <div class="logo-box">
-                    <div class="logo"><Link to={'/#'}>
+                    <div class="logo"><Link to={'/'}>
                       <img src={require('../../assets/images/logo.png')} alt="" /></Link></div>
                   </div>
                 </div>
@@ -173,15 +155,12 @@ handleScroll = event => {
                           <a href="/our-services">Our Services</a>
                         </li>
                         <li><a href="#">Experience Center</a>
-
                         </li>
                         <li><a href="/blog">Blogs</a></li>
                         <li><a href="#">Media</a></li>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="/career">Career</a></li>
                         <li><a href="/contact-us">Contact</a></li>
-
-
                       </ul>
                     </li>
                     <li>
@@ -197,14 +176,6 @@ handleScroll = event => {
               </ul>
             </nav>
           </div>
-
-          {/* <div class="top-right flotright1">
-                        <a href={'/contact-us'}><span class="btn-title1">
-                        <img src={require('../../assets/images/Group53.png')} alt="" />
-                            </span>
-                        </a>
-                    </div>    */}
-
           <Popup trigger={<div class="top-right flotright1"><a class="top-right flotright1" href="#">  <img src={require('../../assets/images/Group53.png')} alt="" className='talkexpert' /></a></div>
           } position="bottom">
             <div class="contact-form-area">
@@ -280,10 +251,7 @@ handleScroll = event => {
           </Popup>
         </header>
         <header class={scrolled ? "main-header header-style-two fixed-header" : "main-header header-style-two desktophide"}>
-                    
-                   
-
-                    <div class="header-upper">
+              <div class="header-upper">
                         <div class="auto-container">
                             <div class="inner-container">
                                 
@@ -299,29 +267,11 @@ handleScroll = event => {
                                     <nav class="main-menu navbar-expand-md navbar-light">
                                     <Menu />
                                     </nav>
-                                    <div class="link-btn"><Link to={'/#'} class="theme-btn btn-style-one"><span class="btn-title">Get A Quote</span></Link></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-
-
              <div class={scrolled ? "sticky-header animated slideInDown" : "sticky-header"}>
-                        {/* <div class="auto-container clearfix">
-                            
-                            <div class="logo pull-left">
-                                <Link to={'/#'} title=""><img src="assets/images/logo.png" alt="" title=""/></Link>
-                            </div>
-                            
-                            <div class="pull-right">
-                                
-                                <nav class="main-menu clearfix">
-                                <Menu />
-                                </nav>
-                                
-                            </div>
-                        </div> */}
                     </div>
                     
 
@@ -331,7 +281,7 @@ handleScroll = event => {
                         <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
                         
                         <nav class="menu-box">
-                            <div class="nav-logo"><Link to={'/#'}><img src="assets/images/logo.png" alt="" title=""/></Link></div>
+                            <div class="nav-logo"><Link to={'/'}><img src="assets/images/logo.png" alt="" title=""/></Link></div>
                             <div class="menu-outer">
                             <Menu />
                             </div>
