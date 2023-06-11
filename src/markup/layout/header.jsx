@@ -257,9 +257,9 @@ handleScroll = event => {
                                 
                                 <div class="nav-outer clearfix">
                                     
-                                    {/* <div class="logo-box">
+                                    <div class="logo-box">
                                         <div class="logo"><Link to={''}><img src={require('../../assets/images/logo.png')} alt=""/></Link></div>
-                                    </div> */}
+                                    </div>
                                     
                                     <div class="mobile-nav-toggler"><span class="icon fal fa-bars"></span></div>
 

@@ -90,7 +90,8 @@ class manageWeight extends Component {
                                 <div class="btn-box text-center btn5">
                                     <button class="commonBtnforAll">BOOK NOW</button>
 
-                                </div>                            </div>
+                                </div>                      
+                                      </div>
                             <div class="col-lg-6">
 
                                 <img src={require('../../assets/images/shape/weight3.png')} alt="" className='widthimg imgFloatRight' />

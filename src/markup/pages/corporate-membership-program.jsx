@@ -131,9 +131,11 @@ class corporate_membership_program extends Component {
                                         </h3>
                                         <h4 className='textleft marginTop40'>Array of benefits for a healthier <br></br>and happier workforce
                                         </h4>
+                                        <button class="commonBtnforAll btnleft">SAY YES!</button>
+
                                     </div>
 
-                                    <ContactForm buttonText="SAY YES!" />
+                                    {/* <ContactForm buttonText="SAY YES!" /> */}
 
 
                                 </div>
@@ -146,9 +148,8 @@ class corporate_membership_program extends Component {
                 <section class="">
 
                     <div class="auto-container">
-                        <div class="row">
-
-                            <div class="col-lg-6 margin10rem">
+                    <div class="row align-items-center">             
+                                   <div class="col-lg-6 margin10rem">
                                 <div class="sec-title">
                                     <h3 className='sec-heading'>
                                         <span >  We help you figure out <br></br></span >

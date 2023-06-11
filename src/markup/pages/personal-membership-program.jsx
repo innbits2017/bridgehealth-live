@@ -123,8 +123,9 @@ class b2cmembership extends Component {
                     </h2>
                     <h3 className='textleft marginTop40 b2c-heading'>Choose from a selection of<br></br> Annual Preventive Health plans
                     </h3>
+                    <button class="commonBtnforAll btnleft">BOOK NOW</button>
+
                   </div>
-                  <button class="commonBtnforAll">BOOK NOW</button>
 
 
 
@@ -159,11 +160,11 @@ class b2cmembership extends Component {
                 <img src={require('../../assets/images/shape/imageb2c.png')} alt="" className='imgwidth' />
 
               </div>
-              {/* <ContactForm buttonText="SAY YES!"/> */}
-              <button class="theme-btn btn-style-one blogtext" type="submit" name="submit-form">
-                <span class="btn-title">SAY YES!</span>
+           
+              <div class="btn-box text-center btn5">
+                            <button class="commonBtnforAll marCard">SAY YES!</button>
 
-              </button>
+                        </div>
             </div>
             <div class="col-lg-2"></div>
 
@@ -213,16 +214,9 @@ class b2cmembership extends Component {
                     </ul>
 
                   </div>
-                  <div class="contact-form">
-                    <div class="row clearfix">
-
-
-
-                      <div class="col-md-12 form-group">
-                        <ContactForm buttonText="SAY YES!" />
-                      </div>
-                    </div>
-                  </div>
+                  <div class="btn-box text-center btn5">
+                            <button class="commonBtnforAll">SAY YES!</button>
+                        </div>
                 </div>
               </div>
               <div class="col-lg-6">
@@ -270,10 +264,14 @@ class b2cmembership extends Component {
                   </div>
 
 
-                  <div class="contact-form btnright">
+                  {/* <div class="contact-form btnright">
 
                     <ContactForm buttonText="SAY YES!" />
-                  </div>
+                  </div> */}
+                  <div class="btn-box text-center btn5">
+                            <button class="commonBtnforAll">SAY YES!</button>
+
+                        </div>
                 </div>
               </div>
 
@@ -473,8 +471,13 @@ class b2cmembership extends Component {
                   <li>Paid</li>
                   <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
-                    <span class="btn-title" >₹7999</span></button>
+                  <li>  
+                  <div class="btn-box text-center btn5">
+                                    <button class="commonBtnforAll priceamt">₹7999</button>
+
+                                </div>  
+                   
+                  
                   </li>
                 </ul>
 
@@ -597,8 +600,12 @@ class b2cmembership extends Component {
                   <li>Paid</li>
                   <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
-                    <span class="btn-title" >₹7999</span></button>
+                  <li> 
+                  <div class="btn-box text-center btn5">
+                                    <button class="commonBtnforAll priceamt">₹7999</button>
+
+                                </div>  
+                   
                   </li>
                 </ul>
 
@@ -698,8 +705,11 @@ class b2cmembership extends Component {
                   <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
 
-                  <li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
-                    <span class="btn-title" >₹16999</span></button>
+                  <li> 
+                    <div class="btn-box text-center btn5">
+                                    <button class="commonBtnforAll priceamt">₹16999</button>
+
+                                </div>  
                   </li>
                 </ul>
 
@@ -789,8 +799,12 @@ class b2cmembership extends Component {
                   <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
 
-                  <li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
-                    <span class="btn-title" >₹24999</span></button>
+                  <li>
+                    <div class="btn-box text-center btn5">
+                                    <button class="commonBtnforAll priceamt">₹24999</button>
+
+                                </div>  
+                   
                   </li>
                 </ul>
               </div>
@@ -889,8 +903,12 @@ class b2cmembership extends Component {
                   <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
 
-                  <li>  <button class="theme-btn btn-style-one priceamt" type="submit" name="submit-form">
-                    <span class="btn-title" >₹29999</span></button>
+                  <li>
+
+                    <div class="btn-box text-center btn5">
+                                    <button class="commonBtnforAll priceamt">₹29999</button>
+
+                                </div>  
                   </li>
 
                 </ul>
