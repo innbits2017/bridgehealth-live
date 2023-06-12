@@ -1498,7 +1498,7 @@ img {
     top: 25px;
     padding: 6px;
     font-size: 21px;
-    background-color: #1963C6;
+    background-color: #99BB5E;
 }
 
 /* Header Style Three */
@@ -4780,7 +4780,7 @@ img.lazy-image.loaded {
 .contact-form label {
 	margin-bottom: 17px;
 	font-size: 16.589px;
-	margin-left: 10%;
+	margin-left: 5%;
 	color: #000;
 	font-weight: 500;
 }
@@ -10619,7 +10619,7 @@ figure:hover+span {
 	padding: 8px 5px 11px 6px}
 
 .set-price {
-	background: #EAEAEA !important;
+	/* background: #EAEAEA !important; */
 	color: #000;
 	border-radius: 13.5714px !important;
 	margin-left: 10px !important;
@@ -11250,7 +11250,7 @@ hr {
 }
 
 .font18 {
-	font-size: 22px !important;
+	font-size: 20px !important;
 	line-height: 40px;
 
 }
@@ -12806,3 +12806,52 @@ margin-top: 50px;
 
 	}
 	
+	.tabcolor
+	{
+		background: linear-gradient(180deg, rgba(205, 229, 241, 0.25) 0%, #CDE5F1 100%);
+		border-radius: 22.619px;
+	}
+	.tablcolor1
+	{
+		background: linear-gradient(180deg, rgba(25, 99, 198, 0.25) 0%, #1963C6 100%);
+border-radius: 22.619px;
+	}
+	.tablcolor2
+	{
+		background: linear-gradient(180deg, rgba(227, 167, 198, 0.25) 0%, #E3A7C6 100%);
+border-radius: 13.5714px;
+	}
+	.top110
+	{
+		padding-top: 110% !important;
+	}
+	.border-radius
+	{
+		width: 100% !important;
+		border-radius: 14px !important;
+	}
+	.started
+	{
+		background: #E8EFF9 !important;
+    border-radius: 4.52381px !important;
+    color: #1F3075!important;
+    border: none !important;
+    font-weight: 400;
+	}
+	.blucolor
+	{
+		background: #1963C6 !important;
+		color: #fff !important;
+	}
+	.getstarted
+	{
+		width: 70% !IMPORTANT;
+		float: right;
+		margin-top: -26px;
+		font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+letter-spacing: 0em;
+text-align: center;
+
+	}

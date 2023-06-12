@@ -294,21 +294,21 @@ class b2cmembership extends Component {
           <div class="pricing-plan card-group d-flex">
             <div class="card set-price p-1 d-none d-lg-none d-lg-block">
               <div class="card-header text-center pb-4 item priceheight">
-                <h5 class="pt-3 card-title">Clinical
+                <h5 class="pt-3 card-title top110">Clinical
                   Assessments</h5>
               </div>
-              <div class="card-header text-center pb-4 item priceheight">
-                <h5 class="pt-3 card-title">Clinical
+              <div class="card-header text-center pb-4 item priceheight tabcolor">
+                <h5 class="pt-3 card-title top110">Clinical
                   Assessments</h5>
               </div>
 
-              <div class="card-header text-center pb-4 item priceheight">
-                <h5 class="pt-3 card-title">Lifestyle
+              <div class="card-header text-center pb-4 item priceheight tablcolor1">
+                <h5 class="pt-3 card-title top110">Lifestyle
                   Consults</h5>
               </div>
 
-              <div class="card-header text-center pb-4 item">
-                <h5 class="pt-3 card-title">Discounts</h5>
+              <div class="card-header text-center pb-4 item tablcolor2">
+                <h5 class="pt-3 card-title top110">Discounts</h5>
               </div>
             </div>
 
@@ -472,11 +472,9 @@ class b2cmembership extends Component {
                   <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li>  
-                  <div class="btn-box text-center btn5">
-                                    <button class="commonBtnforAll priceamt">₹7999</button>
-
-                                </div>  
-                   
+                                    <button class="commonBtnforAll priceamt border-radius">₹7999</button>       
+                                    <button class="commonBtnforAll priceamt border-radius started blucolor">Get Started</button>
+            
                   
                   </li>
                 </ul>
@@ -601,10 +599,9 @@ class b2cmembership extends Component {
                   <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
                   <li> 
-                  <div class="btn-box text-center btn5">
-                                    <button class="commonBtnforAll priceamt">₹7999</button>
+<button class="commonBtnforAll priceamt border-radius">₹7999</button>
+<button class="commonBtnforAll priceamt border-radius started">Get Started</button>
 
-                                </div>  
                    
                   </li>
                 </ul>
@@ -706,10 +703,10 @@ class b2cmembership extends Component {
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
 
                   <li> 
-                    <div class="btn-box text-center btn5">
-                                    <button class="commonBtnforAll priceamt">₹16999</button>
+                                    <button class="commonBtnforAll priceamt border-radius">₹16999</button>
+                                    <button class="commonBtnforAll priceamt border-radius started">Get Started</button>
 
-                                </div>  
+
                   </li>
                 </ul>
 
@@ -800,17 +797,16 @@ class b2cmembership extends Component {
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
 
                   <li>
-                    <div class="btn-box text-center btn5">
-                                    <button class="commonBtnforAll priceamt">₹24999</button>
+                                    <button class="commonBtnforAll priceamt border-radius">₹24999</button>
+                                    <button class="commonBtnforAll priceamt border-radius started">Get Started</button>
 
-                                </div>  
+
                    
                   </li>
                 </ul>
               </div>
             </div>
             <div class="w-100 d-md-none mt-4"></div>
-
             <div class="card Platinump p-1">
               <div class="card-header text-center pb-4 item">
                 <h5 class="pt-3 card-title">Platinum +</h5>
@@ -905,17 +901,18 @@ class b2cmembership extends Component {
 
                   <li>
 
-                    <div class="btn-box text-center btn5">
-                                    <button class="commonBtnforAll priceamt">₹29999</button>
+                                    <button class="commonBtnforAll priceamt border-radius">₹29999</button>
+                                    <button class="commonBtnforAll priceamt border-radius started">Get Started</button>
 
-                                </div>  
                   </li>
 
                 </ul>
-
               </div>
             </div>
+
           </div>
+          <button class="commonBtnforAll priceamt border-radius started getstarted">KNOW MORE</button>
+
         </div>
 
 
