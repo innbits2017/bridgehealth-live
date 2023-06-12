@@ -9,6 +9,7 @@ import 'reactjs-popup/dist/index.css';
 import { Modal, Button } from "react-bootstrap";
 import CaseStudy from '../element/case-study';
 import ContactForm from '../element/contact-form';
+import FormValidation from './formvalidation';
 const BRIDGE_HEALTH_SITE = process.env.BRIDGE_HEALTH_SITE;
 
 class Index extends Component {
@@ -151,7 +152,7 @@ class Index extends Component {
                                 <h5 class="display-4"><span class="display-3">Let’s help you </span>#BridgeTheGap</h5>
                                 <p class="lead mb-0">Personalised and holistic preventive health plans for <br></br>you and your loved ones
                                 </p>
-                               
+
                                 <button class="commonBtnforAll btnleft">GET STARTED</button>
 
                             </div>
@@ -758,79 +759,7 @@ class Index extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="contact-form-area">
-
-                                    {/* <!-- Contact Form--> */}
-                                    <div class="contact-form">
-                                        <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} action="#" id="contact-form">
-                                            <div class="row clearfix">
-                                                <div class="col-md-12 form-group">
-                                                    <input
-                                                        type="text"
-                                                        value={this.state.username}
-                                                        onChange={e => this.handleChange(e)}
-                                                        name="username"
-                                                        id="name"
-                                                        placeholder="Name*"
-                                                        required
-                                                    />
-                                                    {errors.username && <div className="error">{errors.username}</div>}
-                                                </div>
-
-                                                <div class="col-md-6 form-group">
-                                                    <input type="email"
-                                                        value={this.state.email}
-                                                        onChange={e => this.handleChange(e)}
-                                                        name="email"
-                                                        id="email"
-                                                        placeholder="Email*"
-                                                        required
-                                                    />
-                                                    {errors.email && <div className="error">{errors.email}</div>}
-                                                </div>
-                                                <div class="col-md-6 form-group">
-                                                    <input type="phone"
-                                                        value={this.state.phone}
-                                                        onChange={e => this.handleChange(e)}
-                                                        name="phone"
-                                                        id="phone"
-                                                        placeholder="Phone*"
-                                                        required
-                                                    />
-                                                    {errors.phone && <div className="error">{errors.phone}</div>}
-                                                </div>
-
-                                                <div class="col-md-12 form-group">
-                                                    <textarea
-                                                        name="message"
-                                                        value={this.state.message}
-                                                        onChange={e => this.handleChange(e)}
-                                                        id="message"
-                                                        placeholder="Message"
-                                                    ></textarea>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input"
-                                                        type="checkbox" id="checkbox1" name="option1" value="good" />
-                                                    <label class="form-check-label heading">
-                                                        I agree that Bridge Health may contact me at the email address or phone number above.
-                                                    </label>
-                                                </div>
-                                                <div class="col-md-12 form-group">
-                                                    <button
-                                                        disabled={isSubmitDisabled}
-                                                        onSubmit={e => this.handleSubmit(e)}
-                                                        class="theme-btn btn-style-one marginleft21"
-                                                        type="submit"
-                                                        name="submit-form"
-                                                    ><span class="btn-title">SUBMIT</span></button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+                            <FormValidation />
 
                         </div>
                     </div>
