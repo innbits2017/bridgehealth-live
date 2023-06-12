@@ -259,7 +259,11 @@ class ourservice extends Component {
                                                 <img src={require('../../assets/images/shape/s15.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Pharmacy</div>
-                                            <div class="longer-name"> It’s important to always keep an adequate supply of the medicines you need.</div>
+                                            <div class="longer-name">
+                                                It’s important to get the medicines you need at the right time.
+                                                At Bridge Health, we have a fully-stocked pharmacy which is built to meet your needs. Discover our pharmacy today.
+
+                                            </div>
                                         </p>
                                     </div>
                                 </div>

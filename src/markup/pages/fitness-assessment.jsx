@@ -29,7 +29,7 @@ class fitnessAssessment extends Component {
                                             Stay fit and active with our  <br></br> pro-fit program
                                         </h3>
                                     </div>
-                                        <button class="commonBtnforAll">BOOK NOW</button>
+                                    <button class="commonBtnforAll">BOOK NOW</button>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -83,15 +83,15 @@ class fitnessAssessment extends Component {
                 <section class="fitnessbox">
 
                     <div class="auto-container ">
-                    <div class="row align-items-center">
+                        <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
 
                                     <div class="sec-title squrebox">
                                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
-                                            The  <span className='headeingcolorblack'>PRO-FIT PROGRAM</span>  at Bridge Health is designed based on clinical fact-based evidence. Our interdisciplinary team includes medical providers, licensed therapists,
-                                            and exercise specialists. Our qualified trainers have several years of experience in the fitness industry and are available to assist you in creating a customized exercise program for your body type.
+                                            By combining their expertise, our team at Bridge Health takes into account various aspects of your health and well-being. Doctors offer medical insights, nutritionists provide guidance on proper dietary choices, and exercise specialists design tailored workout programs.
+                                            This collaborative approach ensures that all facets of your fitness journey are addressed, leading to optimal results.
                                         </p>
 
                                     </div>
@@ -139,7 +139,7 @@ class fitnessAssessment extends Component {
                                         </h2>
 
                                         <ul className='listicon'>
-                                        <li>
+                                            <li>
                                                 Cardiorespiratory Training
                                             </li>
                                             <li>
@@ -192,7 +192,7 @@ class fitnessAssessment extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                    <div class="row align-items-center">
+                        <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
                                     <div class="auto-container">
@@ -207,11 +207,11 @@ class fitnessAssessment extends Component {
                                         <li>
                                             Covid compliant atmosphere
                                         </li>
-                                      
+
                                         <li>
                                             Free trial session
                                         </li>
-                                      
+
                                         <li>
                                             Pay in easy installments
                                         </li>
@@ -251,7 +251,7 @@ class fitnessAssessment extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                        <button class="commonBtnforAll">BOOK NOW</button>
+                            <button class="commonBtnforAll">BOOK NOW</button>
 
                         </div>
                     </div>
