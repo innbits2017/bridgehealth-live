@@ -90,7 +90,9 @@ class ourservice extends Component {
                                                 <img src={require('../../assets/images/shape/s2.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Comprehensive<br></br> Health Checks</div>
-                                            <div class="longer-name">   Health is defined as a state of complete physical, mental, and social well-being.
+                                            <div class="longer-name">   Prevention is better than cure.
+                                                With advanced technology, we are able to understand your entire health profile and help you prevent illnesses. Book your Comprehensive Health Check today.
+
                                             </div>
                                         </p>
                                     </div>
@@ -105,8 +107,10 @@ class ourservice extends Component {
                                                 <img src={require('../../assets/images/shape/k3.jpeg')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Doctor <br></br>Consults</div>
-                                            <div class="longer-name">  All of us get sick at some point in life. And whenever we get sick,
-                                                we always go to the doctor</div>
+                                            <div class="longer-name">
+                                                Getting an appointment with your doctor at your nearest clinic can be burdensome.
+                                                We simplify the process and allow you to consult with our experts whenever, wherever.
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
@@ -133,7 +137,10 @@ class ourservice extends Component {
 
                                                 <img src={require('../../assets/images/shape/s5.png')} alt="" /></a>
                                             <div class="short-name expertise">Dental Consults</div>
-                                            <div class="longer-name">  Our teeth are made of enamel which is the hardest substance in the human body.</div>
+                                            <div class="longer-name">
+                                                Most people neglect their oral health which can be disastrous for their overall health.
+                                                Book your dental consultation with us today and smile with confidence.
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
