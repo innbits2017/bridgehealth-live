@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import FooterFormValidation from '../element/footer-form-validation';
 
 class Footer extends Component {
 
@@ -187,51 +188,7 @@ class Footer extends Component {
                                         <div class="contact-form-area">
 
                                             {/* <!-- Contact Form--> */}
-                                            <div class="contact-form">
-                                                <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} action="#" id="contact-form">
-                                                    <div class="row clearfix">
-
-                                                        <div class="col-md-12 form-group">
-                                                            <label for="email" style={{ marginLeft: 20 + '%' }}>Get in touch with us</label>
-                                                            <input
-                                                                type="text"
-                                                                name="username"
-                                                                value={this.state.username}
-                                                                onChange={e => this.handleChange(e)}
-                                                                id="name"
-                                                                placeholder="Name*"
-                                                                required=""
-                                                                className='inputfooter'
-                                                            />
-                                                            {errors.username && <div className="error">{errors.username}</div>}
-
-                                                        </div>
-                                                        <div class="col-md-12 form-group">
-                                                            <input
-                                                                type="email"
-                                                                name="email"
-                                                                value={this.state.email}
-                                                                onChange={e => this.handleChange(e)}
-                                                                id="email"
-                                                                placeholder="Email ID"
-                                                                required=""
-                                                                className='inputfooter'
-                                                            />
-                                                            {errors.email && <div className="error">{errors.email}</div>}
-                                                        </div>
-                                                        <div class="col-md-12 form-group">
-                                                            <button
-                                                                disabled={isSubmitDisabled}
-                                                                onSubmit={e => this.handleSubmit(e)}
-                                                                class="theme-btn btn-style-one footer-btn"
-                                                                type="submit"
-                                                                name="submit-form"
-                                                            ><span class="btn-title">SUBMIT</span></button>
-                                                        </div>
-
-                                                    </div>
-                                                </form>
-                                            </div>
+                                            <FooterFormValidation />
                                             <ul class="social-links clearfix">
                                                 <span className='socialp'>Follow Us On</span>
                                                 <li>
