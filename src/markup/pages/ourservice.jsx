@@ -63,7 +63,7 @@ class ourservice extends Component {
                             <div class="row">
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp margintop100" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div onClick={this.openModal}>
+                                    <div onClick={this.openModal}>
                                         <div class="expanded-text grow bozhover">
                                             <p class="text">
 
@@ -76,14 +76,14 @@ class ourservice extends Component {
                                     </div>
                                 </div>
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div>
+                                    <div>
                                         <CaseStudy />
 
                                     </div>
                                 </div>
 
                                 <div class="col-lg-3 team-block-one wow fadeInUp margontop50" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/comprehensive-health-checks'}>
 
@@ -91,14 +91,14 @@ class ourservice extends Component {
                                             </a>
                                             <div class="short-name expertise">Comprehensive<br></br> Health Checks</div>
                                             <div class="longer-name">   Health is defined as a state of complete physical, mental, and social well-being.
-                                              </div>
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp margin100" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                   
-                                <div class="expanded-text grow bozhover">
+
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/doctor-consults'}>
 
@@ -114,20 +114,20 @@ class ourservice extends Component {
                             <div class="row">
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp margintop100" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/psychological-health'}>
 
                                                 <img src={require('../../assets/images/shape/k2.jpeg')} alt="" /></a>
                                             <div class="short-name expertise">Psychologist Consults</div>
                                             <div class="longer-name"> Mental health is extremely important in the current times due to increased work and social pressures. Talk to our expert clinical psychologists.
-</div>
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/dental-consults'}>
 
@@ -139,27 +139,27 @@ class ourservice extends Component {
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp margontop50" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/dermatology'}>
+                                            <a href={'/dermatology'}>
 
-                                            <img src={require('../../assets/images/shape/s7.png')} alt="" /></a>
+                                                <img src={require('../../assets/images/shape/s7.png')} alt="" /></a>
                                             <div class="short-name expertise">Dermatology</div>
-                                            <div class="longer-name">    A good physical appearance is a reflection of youth and confidence.
-                                                Unfortunately,</div>
+                                            <div class="longer-name">     Contrary to popular belief, don’t just cater to the needs of fashion models.
+                                                Our hair, skin, and nails deserve to be treated well. Talk to our dermatologists today.</div>
                                         </p>
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp margin100" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/ophthalmologist'}>
-                                        <img src={require('../../assets/images/shape/s8.png')} alt="" />
+                                            <a href={'/ophthalmologist'}>
+                                                <img src={require('../../assets/images/shape/s8.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Ophthalmology</div>
                                             <div class="longer-name">Our eyesight is a precious gift which allows us to see the beauty of the world. We need to take care of our eyes to prevent any eye-related illnesses. Meet our ophthalmologists today.
-</div>
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
@@ -167,53 +167,53 @@ class ourservice extends Component {
                             <div class="row">
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp margintop100" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/physio-therapy'}>
-                                        <img src={require('../../assets/images/shape/s9.png')} alt="" />
+                                            <a href={'/physio-therapy'}>
+                                                <img src={require('../../assets/images/shape/s9.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Physiotherapy</div>
                                             <div class="longer-name">In life, we take our ability to move around freely for granted. Due to injuries or certain illnesses, our movement gets affected. Schedule a physiotherapy session with us and move with ease.
-</div>
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/elderly-care'}>
-                                        <img src={require('../../assets/images/shape/s10.png')} alt="" />
+                                            <a href={'/elderly-care'}>
+                                                <img src={require('../../assets/images/shape/s10.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Elderly Care</div>
                                             <div class="longer-name">Growing old is a natural part of our lives. As we age, our physical abilities gradually get compromised and we need assistance. Discover our elderly care services.
-</div>
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp margontop50" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/lab-tests'}>
-                                        <img src={require('../../assets/images/shape/s11.png')} alt="" />
+                                            <a href={'/lab-tests'}>
+                                                <img src={require('../../assets/images/shape/s11.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Lab Tests</div>
                                             <div class="longer-name">  The key to an effective diagnosis is effective testing. Advancements in lab testing have allowed us to accurately determine illnesses and provide treatment plans. Discover our state-of-the-art lab facilities.
-</div>
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp margin100" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/diet-and-nutrition'}>
-                                        <img src={require('../../assets/images/shape/s12.png')} alt="" />
+                                            <a href={'/diet-and-nutrition'}>
+                                                <img src={require('../../assets/images/shape/s12.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Diet and Nutrition</div>
                                             <div class="longer-name"> A healthy diet is the basis for good health. After all, you are what you eat. Find out how our expert clinical nutritionists help you eat healthy to stay healthy.
-</div>
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
@@ -221,22 +221,22 @@ class ourservice extends Component {
                             <div class="row">
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp margintop100" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/yoga-assessment'}>
-                                        <img src={require('../../assets/images/shape/s13.png')} alt="" />
+                                            <a href={'/yoga-assessment'}>
+                                                <img src={require('../../assets/images/shape/s13.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Yoga Assessment <br></br>and Coaching</div>
                                             <div class="longer-name">Yoga has been a part of our culture for centuries. The focus on harmony of mind, body, and spirit has been scientifically proven to have positive effects on health. Talk to our yoga therapists.
-</div>
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/fitness-assessment'}>
+                                            <a href={'/fitness-assessment'}>
                                                 <img src={require('../../assets/images/shape/s14.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Fitness Assessment<br></br> and Coaching</div>
@@ -246,10 +246,10 @@ class ourservice extends Component {
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp margontop50" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/pharmacy'}>
-                                        <img src={require('../../assets/images/shape/s15.png')} alt="" />
+                                            <a href={'/pharmacy'}>
+                                                <img src={require('../../assets/images/shape/s15.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Pharmacy</div>
                                             <div class="longer-name"> It’s important to always keep an adequate supply of the medicines you need.</div>
@@ -258,14 +258,14 @@ class ourservice extends Component {
                                 </div>
                                 {/* <!-- Team Block One --> */}
                                 <div class="col-lg-3 team-block-one wow fadeInUp margin100" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                <div class="expanded-text grow bozhover">
+                                    <div class="expanded-text grow bozhover">
                                         <p class="text">
-                                        <a href={'/nursing-at-home'}>
-                                        <img src={require('../../assets/images/shape/s16.png')} alt="" />
+                                            <a href={'/nursing-at-home'}>
+                                                <img src={require('../../assets/images/shape/s16.png')} alt="" />
                                             </a>
                                             <div class="short-name expertise">Nursing At Home</div>
                                             <div class="longer-name">With nursing services provided directly to you and your loved ones at the comfort of your own home, get the timely care and assistance you need at all times.
-</div>
+                                            </div>
                                         </p>
                                     </div>
                                 </div>

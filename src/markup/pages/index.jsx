@@ -151,8 +151,8 @@ class Index extends Component {
                                 <h5 class="display-4"><span class="display-3">Let’s help you </span>#BridgeTheGap</h5>
                                 <p class="lead mb-0">Personalised and holistic preventive health plans for <br></br>you and your loved ones
                                 </p>
-                                <ContactForm buttonText="GET STARTED" className="btn-box" />
-                                {/* <ContactPopup/> */}
+                               
+                                <button class="commonBtnforAll btnleft">GET STARTED</button>
 
                             </div>
                         </div>

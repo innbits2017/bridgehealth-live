@@ -146,7 +146,7 @@ handleScroll = event => {
                           <ul>
                             <li><a href="/leadership">Board of Directors</a></li>
                             <li>
-                              <a href="/team">Leadership Team</a>
+                              <a href="/leadership">Leadership Team</a>
                             </li>
                             <li><a href="/team">Clinical Team</a></li>
                           </ul>
@@ -257,9 +257,9 @@ handleScroll = event => {
                                 
                                 <div class="nav-outer clearfix">
                                     
-                                    {/* <div class="logo-box">
+                                    <div class="logo-box">
                                         <div class="logo"><Link to={''}><img src={require('../../assets/images/logo.png')} alt=""/></Link></div>
-                                    </div> */}
+                                    </div>
                                     
                                     <div class="mobile-nav-toggler"><span class="icon fal fa-bars"></span></div>
 
