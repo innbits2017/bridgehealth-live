@@ -12,27 +12,31 @@ class FormValidation extends Component {
                 username: '',
                 email: '',
                 phone: ''
-            }
+            },
+            submitted: false
         };
     }
 
-    handleChange = (event) => {
-        console.log("I am handle change", event.target)
-        const { name, value } = event.target;
+    closePopup = () => {
+        this.setState({ submitted: false });
+    };
 
+    handleChange = (event) => {
+        // console.log("I am handle change", event.target)
+        const { name, value } = event.target;
         const errors = { ...this.state.errors };
-      
+
         // Clear the error for the changed field
         errors[name] = '';
-      
+
         this.setState({
-          [name]: value,
-          errors
+            [name]: value,
+            errors
         });
     };
 
     handleSubmit = (event) => {
-        console.log("i am handle Submit", event)
+        // console.log("i am handle Submit", event)
         event.preventDefault();
 
         const { username, email, phone } = this.state;
@@ -61,6 +65,9 @@ class FormValidation extends Component {
             // Perform the form submission logic here
             // e.g., call an API endpoint, update the database, etc.
 
+            // Show the "Thank you" message
+            this.setState({ submitted: true });
+
             // Reset the form
             this.setState({
                 username: '',
@@ -76,42 +83,10 @@ class FormValidation extends Component {
     };
 
     render() {
-        const { username, email, phone, errors } = this.state;
+        const { username, email, phone, submitted, errors, isOpen } = this.state;
 
         return (
-            // <form onSubmit={this.handleSubmit}>
-            //     <div>
-            //         <label>Username:</label>
-            //         <input
-            //             type="text"
-            //             name="username"
-            //             value={username}
-            //             onChange={this.handleChange}
-            //         />
-            //         {errors.username && <span className="error">{errors.username}</span>}
-            //     </div>
-            //     <div>
-            //         <label>Email:</label>
-            //         <input
-            //             type="text"
-            //             name="email"
-            //             value={email}
-            //             onChange={this.handleChange}
-            //         />
-            //         {errors.email && <span className="error">{errors.email}</span>}
-            //     </div>
-            //     <div>
-            //         <label>Phone:</label>
-            //         <input
-            //             type="text"
-            //             name="phone"
-            //             value={phone}
-            //             onChange={this.handleChange}
-            //         />
-            //         {errors.phone && <span className="error">{errors.phone}</span>}
-            //     </div>
-            //     <button type="submit">Submit</button>
-            // </form>
+
             <div class="col-lg-6">
                 <div class="contact-form-area">
 
@@ -127,7 +102,7 @@ class FormValidation extends Component {
                                         name="username"
                                         id="name"
                                         placeholder="Name*"
-                                        // required
+                                    // required
                                     />
                                     {errors.username && <div className="error">{errors.username}</div>}
                                 </div>
@@ -139,7 +114,7 @@ class FormValidation extends Component {
                                         name="email"
                                         id="email"
                                         placeholder="Email*"
-                                        // required
+                                    // required
                                     />
                                     {errors.email && <div className="error">{errors.email}</div>}
                                 </div>
@@ -150,7 +125,7 @@ class FormValidation extends Component {
                                         name="phone"
                                         id="phone"
                                         placeholder="Phone*"
-                                        // required
+                                    // required
                                     />
                                     {errors.phone && <div className="error">{errors.phone}</div>}
                                 </div>
@@ -182,6 +157,13 @@ class FormValidation extends Component {
                                 </div>
                             </div>
                         </form>
+                        {submitted && (
+                            <div className="thankyou-popup" onClick={this.closePopup}>
+                                <h2>Thank You!</h2>
+                                <p>Your details has been successfully submitted. Thanks!</p>
+                                <button type='button' >OK</button>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
