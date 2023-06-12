@@ -90,7 +90,7 @@ p,
 .leader-btn1 {
 	text-decoration: underline;
 	color: #00B2FF !important;
-	margin-top: 1rem;
+	margin-top: 4rem;
 	margin-left: 87%;
 	font-size: 20px;
 	font-weight: 500;
@@ -12796,3 +12796,13 @@ margin-top: 50px;
 	{
 		float: left;
 	}
+	#root > div > div > section.testimonial-section.testback > div.auto-container.marginbtm.desktoptest > div > div > div > button.slick-arrow.slick-prev
+	{
+		margin-top: 3% !important;
+	}
+	#root > div > div > section.testimonial-section.testback > div.auto-container.marginbtm.desktoptest > div > div > div > button.slick-arrow.slick-next
+	{
+		margin-top: 3% !important;
+
+	}
+	
