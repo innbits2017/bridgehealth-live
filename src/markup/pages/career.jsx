@@ -236,8 +236,8 @@ class Career extends Component {
                                             <span className='headeingcolorblue'>  Bridge Health</span>
                                         </h2>
                                         <p className='font22'>
-                                            At Bridge Health, we believe that proactive focus on personalised healthcare and swift curative actions to mitigate risks are of paramount importance to each one of us.
-                                            Our journey is all about being your trusted “Healthcare Companion for Life”.
+                                            Join Bridge Health and be part of a transformative healthcare team. With a dynamic work environment and opportunities for growth, your contributions can truly make a difference.
+                                            We prioritize work-life balance and offer a supportive atmosphere where you can advance your career while positively impacting lives.
                                         </p>
 
 
@@ -266,8 +266,8 @@ class Career extends Component {
 
                                     {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                     <p className='font22'>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis  ipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis ipiscing elit, sed do eiusmod tempor incididunt.
+                                        Experience a fulfilling and inclusive life at Bridge Health. Our collaborative culture fosters teamwork and a sense of belonging.
+                                        From engaging activities to professional development opportunities, we prioritize your well-being and growth. Join our community dedicated to work-life balance and making a meaningful impact in the preventive healthcare industry.
                                     </p>
 
 

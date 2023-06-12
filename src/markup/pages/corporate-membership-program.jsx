@@ -5,6 +5,7 @@ import Footer from '../layout/footer'
 import Popup from 'reactjs-popup';
 import ServiceFilter1 from '../element/service-filter1'
 import ContactForm from '../element/contact-form';
+import TeamSizeDropdown from './teamsize';
 
 
 const aboutbg = require('./../../assets/images/background/image-11.jpg');
@@ -148,8 +149,8 @@ class corporate_membership_program extends Component {
                 <section class="">
 
                     <div class="auto-container">
-                    <div class="row align-items-center">             
-                                   <div class="col-lg-6 margin10rem">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 margin10rem">
                                 <div class="sec-title">
                                     <h3 className='sec-heading'>
                                         <span >  We help you figure out <br></br></span >
@@ -215,7 +216,7 @@ class corporate_membership_program extends Component {
 
                 <div className='container-fulid'>
                     <div className='container margintop100'>
-                    <div class="row align-items-center">
+                        <div class="row align-items-center">
                             <div class="image-wrapper">
                                 <div class="image-one">
                                     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -304,13 +305,9 @@ class corporate_membership_program extends Component {
                                                         id="name"
                                                         placeholder="Company Name"
                                                         required="" />
-                                                </div>  <div class="col-md-12 form-group">
-                                                    <input
-                                                        type="text"
-                                                        name="username"
-                                                        id="name"
-                                                        placeholder="Team Size"
-                                                        required="" />
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    < TeamSizeDropdown />
                                                 </div>
                                                 <div class="form-check">
                                                     <input class="form-check-input"
