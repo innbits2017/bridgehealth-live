@@ -111,25 +111,38 @@ class comprehensiveHealth extends Component {
                             <div class="col-sm-4 healts">
 
                                 <img src={require('../../assets/images/gallery/health4.png')} alt="" class="avtar " />
+                                <div className='treat1'>
+                                    <img src={require('../../assets/images/Healthquiz.svg')} alt="" class="avtar " />
+                                    <p >Health Quiz</p>
 
+                                </div>
 
-                                <p className='treat1'>Health Quiz</p>
                             </div>
 
                             <div class="col-sm-4 healts">
 
                                 <img src={require('../../assets/images/gallery/health4.png')} alt="" class="avtar " />
 
+                                <div className='treat1'>
+                                    <img src={require('../../assets/images/RegularCheckup.svg')} alt="" class="avtar " />
+                                    <p >Regular  check-ups <br></br>with experts</p>
 
-                                <p className='treat1'>Regular <br></br> check-ups <br></br>with experts</p>
+                                </div>
+
+
                             </div>
 
                             <div class="col-sm-4 healts">
 
                                 <img src={require('../../assets/images/gallery/health4.png')} alt="" class="avtar " />
 
+                                <div className='treat1'>
+                                    <img src={require('../../assets/images/weght.svg')} alt="" class="avtar " />
+                                    <p >BMI Tracker</p>
 
-                                <p className='treat1'>BMI Tracker</p>
+                                </div>
+
+
                             </div>
 
 
@@ -139,23 +152,36 @@ class comprehensiveHealth extends Component {
 
                                 <img src={require('../../assets/images/gallery/health4.png')} alt="" class="avtar " />
 
+                                <div className='treat1'>
+                                    <img src={require('../../assets/images/Thermometer.svg')} alt="" class="avtar " />
+                                    <p >Thermographic HRA</p>
 
-                                <p className='treat1'>Thermographic HRA</p>
+                                </div>
+
                             </div>
 
                             <div class="col-sm-4 healts">
 
                                 <img src={require('../../assets/images/gallery/health4.png')} alt="" class="avtar " />
 
+                                <div className='treat1'>
+                                    <img src={require('../../assets/images/Musclemass.svg')} alt="" class="avtar " />
+                                    <p >Muscle Mass Measurement</p>
 
-                                <p className='treat1'>Muscle Mass Measurement</p>
+                                </div>
+
                             </div>
 
                             <div class="col-sm-4 healts">
 
                                 <img src={require('../../assets/images/gallery/health4.png')} alt="" class="avtar " />
 
-                                <p className='treat1'>Body Fat Measurement</p>
+                                <div className='treat1'>
+                                    <img src={require('../../assets/images/Bodymeasurment.svg')} alt="" class="avtar " />
+                                    <p >Body Fat Measurement</p>
+
+                                </div>
+                               
 
                             </div>
 

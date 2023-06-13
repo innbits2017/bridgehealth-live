@@ -11263,6 +11263,10 @@ hr {
 
 }
 
+.internalimp {
+	padding: 350px 0 120px !important; 
+}
+
 .fontSize {
 	font-size: 54px;
 }
@@ -12891,4 +12895,8 @@ margin-top: 50px;
 	border-radius: 4px;
 	cursor: pointer;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mar-der{
+	padding-left: 120px;
 }
