@@ -11258,8 +11258,8 @@ hr {
 
 .internalpage {
 	position: relative;
-	padding: 350px 0 220px;
-	background-size: cover;
+	padding: 350px 0 120px;
+	/* background-size: cover; */
 
 }
 

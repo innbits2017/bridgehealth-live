@@ -105,7 +105,7 @@ class fitnessAssessment extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/fitness1.png')} alt="" className='width64' />
+                                        <img src={require('../../assets/images/shape/fit.png')} alt="" className='width64' />
                                     </div>
                                 </div>
                             </div>
@@ -232,7 +232,7 @@ class fitnessAssessment extends Component {
                             <div class="col-lg-5">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/fitness3.png')} alt="" className='widthimg imgFloatRight' />
+                                        <img src={require('../../assets/images/shape/Workout.png')} alt="" className='widthimg imgFloatRight' />
                                     </div>
                                 </div>
                             </div>

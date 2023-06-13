@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
-const aboutbg = require('./../../assets/images/shape/career1.png');
+const aboutbg = require('./../../assets/images/shape/Career.png');
 
 
 class Career extends Component {
