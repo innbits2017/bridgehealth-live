@@ -93,7 +93,7 @@ class comprehensiveHealth extends Component {
 
                             <div class="col-lg-6">
 
-                                <img src={require('../../assets/images/shape/health3.png')} alt="" className='widthimg imgFloatRight' />
+                                <img src={require('../../assets/images/shape/Healthcheck.png')} alt="" className='widthimg imgFloatRight' />
 
                             </div>
                         </div>

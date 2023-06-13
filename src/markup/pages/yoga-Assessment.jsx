@@ -136,7 +136,7 @@ class yoga_Assessment extends Component {
                                 <div class="col-lg-6">
                                     <div class="image-wrapper">
                                         <div class="image-one image-two">
-                                            <img src={require('../../assets/images/shape/y2.png')} alt="" className='width84'/>
+                                            <img src={require('../../assets/images/shape/Yoga.png')} alt="" className='width84'/>
                                         </div>
 
                                     </div>

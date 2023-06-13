@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 
-const aboutbg = require('./../../assets/images/shape/Physiotherapy.png');
+const aboutbg = require('./../../assets/images/shape/phesio.png');
 
 class physiotherapy extends Component {
 
