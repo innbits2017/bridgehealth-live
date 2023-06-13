@@ -1495,10 +1495,13 @@ img {
 
 .main-header.header-style-two .nav-outer .mobile-nav-toggler {
 	color: #ffffff;
-	top: 25px;
-	padding: 6px;
-	font-size: 21px;
-	background-color: #99BB5E;
+    font-weight: 900 !important;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 26px;
+    background-color: #99BB5E;
 }
 
 /* Header Style Three */
@@ -6757,11 +6760,15 @@ img.lazy-image.loaded {
 
 .contact-section-two .icon-box {
 	position: relative;
-	text-align: center;
-	padding: 65px 30px;
-	border: 2px solid #e4e4e4;
-	margin-bottom: 30px;
-	background: #fff;
+    text-align: center;
+    padding: 65px 30px;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 30px;
+    background: #fff;
+    margin-top: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
 }
 
 .contact-section-two .icon-box .icon {
@@ -11259,7 +11266,7 @@ hr {
 .internalpage {
 	position: relative;
 	padding: 350px 0 120px;
-	/* background-size: cover; */
+	background-size: cover;
 
 }
 
@@ -11327,7 +11334,23 @@ hr {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-	.btnleft {
+	.internalpageresponsive
+	{
+		padding: 120px 0 75px !important;
+		text-align: center !important;
+	}
+	.getstarted
+	{
+		width: 100% !IMPORTANT;
+		float: none;
+		margin-top: -26px;
+		font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+letter-spacing: 0em;
+text-align: center;	}
+	.btnleft
+	{
 		float: none !important;
 
 	}
@@ -12643,6 +12666,7 @@ body > div.fade.modal.show > div > div
 
 .videofull {
 	width: 100% !important;
+	margin-top: 5%;
 }
 
 .diabeates {
@@ -12655,7 +12679,7 @@ body > div.fade.modal.show > div > div
 }
 
 .widthimg {
-	width: 80%;
+	width: 100%;
 }
 
 .squrebox {
@@ -12693,7 +12717,9 @@ body > div.fade.modal.show > div > div
 .imgFloatRight {
 	float: right;
 }
-
+.footerbuttontop
+{
+	padding-top: 10px;}
 /* .marBtnTop
 {
 margin-top: 50px;
@@ -12899,4 +12925,31 @@ margin-top: 50px;
 
 .mar-der{
 	padding-left: 120px;
+}
+.contactheadeing
+{
+	font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 40px;
+	margin-top: 35px;
+    line-height: 89px;
+    text-align: center;
+    color: #1963C6 !important;
+}
+.contactlebel
+{
+	float: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 22px !important;
+    line-height: 27px;
+    color: #000000 !important;
+    margin-left: 0% !important;
+}
+.inputcontact
+{
+	background: #FFFFFF !important;
+    border: 1.20154px solid #C4C4C4 !important;
+    border-radius: 45px !important;
 }

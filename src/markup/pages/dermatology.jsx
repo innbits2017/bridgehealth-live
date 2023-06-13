@@ -16,7 +16,7 @@ class dermatology extends Component {
             <>
                 <Header />
 
-                <section class="internalpage style-two internalimp" style={{ backgroundImage: "url(" + aboutfair + ")" }}>
+                <section class="internalpage internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutfair + ")" }}>
                     <div class="auto-container">
                         <div class="content-box mar-der">
 

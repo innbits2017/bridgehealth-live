@@ -14,7 +14,7 @@ class pharmacy extends Component {
             <>
                 <Header />
 
-                <section class="internalpage style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
+                <section class="internalpage internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
                     <div class="auto-container">
                         <div class="content-box">
 

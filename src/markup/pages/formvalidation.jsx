@@ -147,13 +147,12 @@ class FormValidation extends Component {
                                     </label>
                                 </div>
                                 <div class="col-md-12 form-group">
-                                    <button
-                                        // disabled={isSubmitDisabled}
-                                        // onSubmit={e => this.handleSubmit(e)}
-                                        class="theme-btn btn-style-one marginleft21"
-                                        type="submit"
-                                        name="submit-form"
-                                    ><span class="btn-title">SUBMIT</span></button>
+
+                                    <div class="btn-box text-center">
+                                        <button class="commonBtnforAll" type="submit"
+                                            name="submit-form">SUBMIT</button>
+
+                                    </div>
                                 </div>
                             </div>
                         </form>

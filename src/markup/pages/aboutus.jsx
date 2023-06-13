@@ -214,11 +214,12 @@ class aboutUs extends Component {
 
                 <section class="">
                     <div class="auto-container">
-                        <div class="sec-title text-center">
-                            <h2 style={{ fontSize: 50 + 'px' }}> <span className='headeingcolorblue'>REACH </span> <span className='headeingcolorblack'>OUT TO US</span><br></br>
-                                <p style={{ fontSize: 22 + 'px' }}>Our health advisor is ready to answer your queries about what we do and how <br></br>we can help you take care of yourself and your loved ones better.</p>
-                            </h2>
-                        </div>
+                    <div class="sec-title text-center">
+                                <h2 style={{ fontSize: 50 + 'px' }}> <span className='headeingcolorblue'>REACH </span> <span className='headeingcolorblack'>OUT TO US</span><br></br>
+                                    <p style={{ fontSize: 22 + 'px' }}>There is a plan to fit the specific health needs of everybody - your spouse, parents, kids & YOU! <br></br> <span className='headeingcolorblue'>Talk to our health advisor today!!</span></p>
+                                </h2>
+                            </div>
+
 
                     </div></section>
                 <div class="auto-container">

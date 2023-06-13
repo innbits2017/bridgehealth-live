@@ -362,6 +362,46 @@ class Testimonial1 extends Component {
 
                                         </div>
                                     </div>
+                                    <div class="slide-item testimonal2">
+                                        {/* <!-- Testimonial-block --> */}
+                                        <div class="testimonial-block">
+                                            <div class="author-info">
+                                                <div class="thumb"><img src={require('../../assets/images/shape/ROUNDTEAM.png')} alt="" />
+                                                </div>
+
+                                            </div>
+                                            <div class="inner-box test2">
+                                                <h5 className='heading12 spenheading'>Dr. Krithika Prasad
+</h5>
+                                                <p className='textpara1'>Head – Pathologist
+</p>
+
+                                                <div class="text">
+                                                Dr. Krithika Prasad is the Head Pathologist at Bridge Health, where she brings over 7+ years of experience.                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="slide-item testimonal3">
+                                        {/* <!-- Testimonial-block --> */}
+                                        <div class="testimonial-block">
+                                            <div class="author-info">
+                                                <div class="thumb"><img src={require('../../assets/images/shape/ROUNDTEAM.png')} alt="" />
+                                                </div>
+
+                                            </div>
+                                            <div class="inner-box test3">
+                                                <h5 className='heading12 spenheading'>Srinivasa Murthy K
+
+</h5>
+                                                <p className='textpara1'>Senior Physiotherapist
+</p>
+
+                                                <div class="text">
+                                                Srinivasa Murthy has completed his Bachelor of Physiotherapy from NTR University in Andhra Pradesh and thereafter, MPT in Rehabilitation from Pondicherry University.                                             </div>
+</div>
+                                        </div>
+                                    </div>
                                 </Slider>
                             </div>
                             {/* SEE ALL */}

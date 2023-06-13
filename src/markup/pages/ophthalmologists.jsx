@@ -16,7 +16,7 @@ class ophthalmologist extends Component {
 
                 <Header />
 
-                <section class="internalpage style-two" style={{ backgroundImage: "url(" + abouteye + ")" }}>
+                <section class="internalpage style-two internalpageresponsive" style={{ backgroundImage: "url(" + abouteye + ")" }}>
                     <div class="auto-container">
                         <div class="content-box">
 
