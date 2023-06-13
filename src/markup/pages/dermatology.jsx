@@ -3,7 +3,7 @@ import Header from '../layout/header'
 import Footer from '../layout/footer'
 
 
-const aboutfair = require('./../../assets/images/shape/der.png');
+const aboutfair = require('./../../assets/images/shape/dera.png');
 
 class dermatology extends Component {
 
@@ -16,9 +16,9 @@ class dermatology extends Component {
             <>
                 <Header />
 
-                <section class="internalpage style-two" style={{ backgroundImage: "url(" + aboutfair + ")" }}>
+                <section class="internalpage style-two internalimp" style={{ backgroundImage: "url(" + aboutfair + ")" }}>
                     <div class="auto-container">
-                        <div class="content-box">
+                        <div class="content-box mar-der">
 
                             <div class=" text-center textleft">
                                 <h2 className='textleft fontSize'>
