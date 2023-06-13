@@ -202,7 +202,7 @@ class Index extends Component {
                                     <div class="image-wrapper imgright">
                                         <div class="image-one imgpad">
                                             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" className='videofull'>
-                                                <source src={require('../../assets/images/Hand-phone-video.mp4')} type="video/mp4" />
+                                                <source src={require('../../assets/images/hand.mp4')} type="video/mp4" />
                                             </video>                                        </div>
                                     </div>
                                 </div>
