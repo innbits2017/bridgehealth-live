@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import ContactForm from '../element/contact-form';
 
 const aboutbg = require('./../../assets/images/shape/YogaAssessmentandCoaching.png');
 
@@ -16,21 +17,25 @@ class yoga_Assessment extends Component {
             <>
                 <Header />
 
-                <section class="internalpage style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
+                <section class="internalpage internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
                     <div class="auto-container">
                         <div class="content-box">
-                      
+
                             <div class=" text-center textleft">
                                 <h2 className='textleft fontSize'>
                                     <span className='headeingcolorblack'> Unite your  </span>  <span className='headeingcolorblue'>  Mind,
-                                   Body & Soul</span>
+                                        Body & Soul</span>
 
                                 </h2>
                                 <h3 className='textleft marginTop40'>
-                                Connect with our yoga therapists
+                                    Connect with our yoga therapists
                                 </h3>
                             </div>
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <div class="btn-box btn5">
+
+                                <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                            </div>
 
                         </div>
 
@@ -60,28 +65,29 @@ class yoga_Assessment extends Component {
 
                                         </h2> */}
                                         <p className='font22'>
-                                        Practiced for thousands of years, yoga has several benefits on your overall health. Through a series of breathing exercises and poses, yoga improves blood flow and helps you focus your mind. This helps you obtain inner peace and happiness which leads to better health.
+                                            Practiced for thousands of years, yoga has several benefits on your overall health. Through a series of breathing exercises and poses, yoga improves blood flow and helps you focus your mind. This helps you obtain inner peace and happiness which leads to better health.
                                         </p>
                                         <p className='font22'>
-                                        The yoga therapists at Bridge Health are trained in yogic counseling, lifestyle and nutrition. They will assist you in developing a yoga regimen which helps you focus on improving the functionality of your mind, body, and breath. 
+                                            The yoga therapists at Bridge Health are trained in yogic counseling, lifestyle and nutrition. They will assist you in developing a yoga regimen which helps you focus on improving the functionality of your mind, body, and breath.
                                         </p>
 
                                     </div>
                                     <div class="btn-box text-center btn5 marBtnTop">
-                                        <button class="commonBtnforAll">BOOK NOW</button>
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="left" />
 
                                     </div>
 
-                                 
+
                                 </div>
                             </div>
-                       
+
                         </div>
                     </div>
                 </section>
 
                 <section class="team-section container-fulid whatbe">
-                  
+
                     {/* About Section Two */}
                     <section class="">
                         <div class="auto-container">
@@ -91,11 +97,11 @@ class yoga_Assessment extends Component {
 
                                 <div class="col-lg-6">
                                     <div class="content-box">
-                                     
-                                           <h2 >
-                                <span className='headeingcolorblack'> What We </span>
-                                <span className='headeingcolorblue'>  Offer</span>
-                            </h2>
+
+                                        <h2 >
+                                            <span className='headeingcolorblack'> What We </span>
+                                            <span className='headeingcolorblue'>  Offer</span>
+                                        </h2>
                                         <ul className='listicon'>
                                             <li>
                                                 Yoga for general Wellbeing
@@ -128,7 +134,10 @@ class yoga_Assessment extends Component {
                                                 Yoga for Mental Disorders
                                             </li>
                                         </ul>
-                                        <button class="commonBtnforAll">BOOK NOW</button>
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <div class="btn-box btn5 marBtnTop">
+                                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                                        </div>
 
                                     </div>
                                 </div>
@@ -136,7 +145,7 @@ class yoga_Assessment extends Component {
                                 <div class="col-lg-6">
                                     <div class="image-wrapper">
                                         <div class="image-one image-two">
-                                            <img src={require('../../assets/images/shape/Yoga.png')} alt="" className='width84'/>
+                                            <img src={require('../../assets/images/shape/Yoga.png')} alt="" className='width84' />
                                         </div>
 
                                     </div>
@@ -177,7 +186,7 @@ class yoga_Assessment extends Component {
 
                                     </div>
                                     <ul className='listicon'>
-                                    <li>
+                                        <li>
                                             Experienced yoga therapists
                                         </li>
                                         <li>
@@ -207,16 +216,17 @@ class yoga_Assessment extends Component {
                                 <span className='headeingcolorblack'> Live a more spiritually  </span>
                                 <span className='headeingcolorblue'> enriching</span>
                                 <span className='headeingcolorblack'> life!</span>
-                                
+
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5 marBtnTop">
-                                        <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 
-                                    </div>
+                        </div>
                     </div>
                 </section>
-               
+
 
 
                 <Footer />

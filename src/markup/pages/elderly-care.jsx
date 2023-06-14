@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Nav, Tab, } from 'react-bootstrap';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import ContactForm from '../element/contact-form';
 
 class elderlyCare extends Component {
 
@@ -34,7 +35,11 @@ class elderlyCare extends Component {
                                             Professional elderly care at <br></br> your doorstep
                                         </h3>
                                     </div>
-                                    <button class="commonBtnforAll">BOOK NOW</button>
+                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                    <div class="btn-box btn5">
+
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                                    </div>
 
                                 </div>
                             </div>
@@ -53,7 +58,7 @@ class elderlyCare extends Component {
                 <section class="contact-section heath-margin">
 
                     <div class="auto-container">
-                    <div class="row align-items-center">
+                        <div class="row align-items-center">
 
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
@@ -74,9 +79,10 @@ class elderlyCare extends Component {
 
                                     </div>
                                     <div class="btn-box text-center btn5">
-                        <button class="commonBtnforAll">BOOK NOW</button>
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="left" />
 
-                        </div>
+                                    </div>
 
                                 </div>
                             </div>
@@ -102,7 +108,9 @@ class elderlyCare extends Component {
                                             </span>
                                             <br></br>
 
-                                            From providing special movement assistance equipment to home care, all of our services are designed around accessibility to ensure that the elderly in your family are well looked after so that they experience the best health at all times.
+                                            Bridge Health's One Care Program revolutionizes geriatric care in India by providing specialized plans to improve the lifespan and health span of the elderly population.
+                                            It starts with a Comprehensive Elder Care Assessment (CECA) to evaluate functional abilities, physical and cognitive health, and mental well-being.
+                                            Our clinical experts then create personalized prevention and treatment plans based on the assessments.
 
                                         </p>
                                     </div>
@@ -204,7 +212,8 @@ class elderlyCare extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                        <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                         </div>
                     </div>
                 </section>

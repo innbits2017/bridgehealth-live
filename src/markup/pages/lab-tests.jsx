@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import ContactForm from '../element/contact-form';
 
 const aboutbg = require('./../../assets/images/shape/Lab-tests.png');
 class lab_tests extends Component {
@@ -13,7 +14,7 @@ class lab_tests extends Component {
         return (
             <>
                 <Header />
-                <section class="internalpage style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
+                <section class="internalpage internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
                     <div class="auto-container">
                         <div class="content-box">
 
@@ -24,9 +25,13 @@ class lab_tests extends Component {
 
                                 </h2>
                                 <h3 className='textleft marginTop40'>
-                                Personalized Lab Testing Solutions                                </h3>
+                                    Personalized Lab Testing Solutions                                </h3>
                             </div>
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <div class="btn-box btn5">
+
+                                <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                            </div>
 
 
                         </div>
@@ -37,7 +42,7 @@ class lab_tests extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                    <div class="row align-items-center">
+                        <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
@@ -55,8 +60,9 @@ class lab_tests extends Component {
 
                                     </div>
                                     <div class="btn-box text-center btn5">
-                        <button class="commonBtnforAll">BOOK NOW</button>
-                        </div>
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="left" />
+                                    </div>
 
                                 </div>
                             </div>
@@ -69,27 +75,27 @@ class lab_tests extends Component {
                 <section class="">
 
 
-<section>
-                    <div class="image-wrapper">
-                        <div class="image-one">
-                            <img src={require('../../assets/images/shape/labtext.png')} alt="" className='labwidth' />
-                        </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                        <div class="contact-form-area">
-
-                            <div class="sec-title cont-box martobutton">
-                                {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
-                                <p className='font22'>
-                    At Bridge Health, we have a  <span className='headeingcolorblue'>state-of-the-art diagnostic facility.</span> We offer a <span className='headeingcolorblue'>comprehensive range </span>of clinical laboratory tests and profiles for the prediction, early detection, diagnostic screening, confirmation and/or monitoring of diseases and health conditions
-                    </p>
+                    <section>
+                        <div class="image-wrapper">
+                            <div class="image-one">
+                                <img src={require('../../assets/images/shape/labtext.png')} alt="" className='labwidth' />
                             </div>
                         </div>
-                    </div>
-                </section>
 
-</section>
+                        <div class="col-lg-12">
+                            <div class="contact-form-area">
+
+                                <div class="sec-title cont-box martobutton">
+                                    {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
+                                    <p className='font22'>
+                                        At Bridge Health, we have a  <span className='headeingcolorblue'>state-of-the-art diagnostic facility.</span> We offer a <span className='headeingcolorblue'>comprehensive range </span>of clinical laboratory tests and profiles for the prediction, early detection, diagnostic screening, confirmation and/or monitoring of diseases and health conditions
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
                 {/* <section>
                     <div class="image-wrapper">
                         <div class="image-one">
@@ -117,28 +123,28 @@ class lab_tests extends Component {
                                             <div class="col-lg-6">
                                                 <ul className='listicon'>
                                                     <li>
-                                                            CBC
+                                                        CBC
                                                     </li>
                                                     <li>
-                                                            Blood Group And Type
+                                                        Blood Group And Type
                                                     </li>
                                                     <li>
-                                                            Lipid Profile
+                                                        Lipid Profile
                                                     </li>
                                                     <li>
-                                                            Diabetic Profile
+                                                        Diabetic Profile
                                                     </li>
                                                     <li>
-                                                            Liver Function Test-LFT
+                                                        Liver Function Test-LFT
                                                     </li>
                                                     <li>
-                                                            Renal Profile
+                                                        Renal Profile
                                                     </li>
                                                     <li>
-                                                            Serum Electrolytes
+                                                        Serum Electrolytes
                                                     </li>
                                                     <li>
-                                                            Urine Routine
+                                                        Urine Routine
                                                     </li>
 
                                                 </ul>
@@ -146,41 +152,41 @@ class lab_tests extends Component {
                                             <div class="col-lg-6">
                                                 <ul className='listicon'>
                                                     <li>
-                                                            Creatine ration
+                                                        Creatine ration
                                                     </li>
                                                     <li>
-                                                            Vitamin Profile
+                                                        Vitamin Profile
                                                     </li>
                                                     <li>
-                                                            Thyroid Profile
+                                                        Thyroid Profile
                                                     </li>
                                                     <li>
-                                                            Bone Density
+                                                        Bone Density
                                                     </li>
                                                     <li>
-                                                            Oncology Panel
+                                                        Oncology Panel
                                                     </li>
                                                     <li>
-                                                            Stool Tests
+                                                        Stool Tests
                                                     </li>
                                                     <li>
-                                                            Cultures
+                                                        Cultures
                                                     </li>
                                                     <li>
-                                                            Radiology
+                                                        Radiology
                                                     </li>
 
                                                 </ul>
                                             </div>
                                         </div>
-                                     
+
                                     </div>
                                 </div>
 
                                 <div class="col-lg-5">
                                     <div class="image-wrapper">
                                         <div class="image-one image-two">
-                                            <img src={require('../../assets/images/shape/lab3.png')} alt=""  className=''/>
+                                            <img src={require('../../assets/images/shape/lab3.png')} alt="" className='' />
                                             {/* <img src={require('../../assets/images/shape/video2.gif')} alt="" /> */}
                                         </div>
 
@@ -275,9 +281,10 @@ class lab_tests extends Component {
                             </div>
 
                         </div>
-                    
+
                         <div class="btn-box text-center btn5">
-                        <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                         </div>
                     </div>
                 </section>
@@ -346,7 +353,8 @@ class lab_tests extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                        <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                         </div>
                     </div>
                 </section>

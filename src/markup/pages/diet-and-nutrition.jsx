@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import ContactForm from '../element/contact-form';
 
 const aboutbg = require('./../../assets/images/shape/Dietandnutrition.png');
 
@@ -16,7 +17,7 @@ class diet_and_nutrition extends Component {
             <>
                 <Header />
 
-                <section class="internalpage style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
+                <section class="internalpage internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
                     <div class="auto-container">
                         <div class="content-box">
 
@@ -30,7 +31,11 @@ class diet_and_nutrition extends Component {
                                     Talk to our clinical nutritionists<br></br> and start eating healthy
                                 </h3>
                             </div>
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <div class="btn-box btn5">
+
+                                <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                            </div>
 
 
 
@@ -59,13 +64,14 @@ class diet_and_nutrition extends Component {
                                     <p className='font22'>
                                         It’s no secret that eating a balanced diet is the key to a longer and healthier life. Therefore, it’s important to understand that making wise changes in your diet could improve your health. Having paroper knowledge about which foods to consume and limit or avoid is the first step in eating healthy.
                                     </p>
-                                 
+
 
                                 </div>
                                 <div class="btn-box text-center btn5">
-                                        <button class="commonBtnforAll">BOOK NOW</button>
+                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                    <ContactForm buttonText="BOOK NOW" popupPosition="left" />
 
-                                    </div>
+                                </div>
                             </div>
 
                         </div>
@@ -136,7 +142,8 @@ class diet_and_nutrition extends Component {
                                             </li>
                                         </ul>
                                         <div class="btn-box text-center btn5">
-                                            <button class="commonBtnforAll">BOOK NOW</button>
+                                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 
                                         </div>
                                     </div>
@@ -211,7 +218,8 @@ class diet_and_nutrition extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 
                         </div>
                     </div>

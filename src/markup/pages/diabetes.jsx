@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Nav, Tab, } from 'react-bootstrap';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import ContactForm from '../element/contact-form';
 
 class diabetes extends Component {
     componentDidMount() {
@@ -31,7 +32,12 @@ class diabetes extends Component {
                                             Manage, control, and beat  <br></br>diabeates with our experts
                                         </h3>
                                     </div>
-                                    <button class="commonBtnforAll">BOOK NOW</button>
+                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+
+                                    <div class="btn-box btn5">
+
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="right"/>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -46,7 +52,7 @@ class diabetes extends Component {
                 </section>
                 <section class="contact-section heath-margin">
                     <div class="auto-container">
-                    <div class="row align-items-center">
+                        <div class="row align-items-center">
                             <div class="col-lg-6">
 
                                 <img src={require('../../assets/images/shape/dia2.png')} alt="" className='widthimg' />
@@ -62,10 +68,11 @@ class diabetes extends Component {
                                         </p>
                                     </div>
 
-     <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                                    <div class="btn-box text-center btn5">
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="left" />
 
-                        </div>                                </div>
+                                    </div>      </div>
                             </div>
                         </div>
                     </div>
@@ -82,10 +89,11 @@ class diabetes extends Component {
                                             At Bridge Health, we take an active role in helping you manage diabetes to help you significantly improve your quality of life and reduce your risk of long-term complications.
                                         </p>
                                     </div>
-     <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                                    <div class="btn-box text-center btn5">
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="right"/>
 
-                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -169,7 +177,8 @@ class diabetes extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <ContactForm buttonText="BOOK NOW" popupPosition="right"/>
 
 
                         </div>

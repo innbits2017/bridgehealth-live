@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import ContactForm from '../element/contact-form';
 
 class fitnessAssessment extends Component {
 
@@ -29,7 +30,11 @@ class fitnessAssessment extends Component {
                                             Stay fit and active with our  <br></br> pro-fit program
                                         </h3>
                                     </div>
-                                    <button class="commonBtnforAll">BOOK NOW</button>
+                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                    <div class="btn-box btn5">
+
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -69,7 +74,8 @@ class fitnessAssessment extends Component {
 
                                     </div>
                                     <div class="btn-box text-center btn5 marBtnTop">
-                                        <button class="commonBtnforAll">BOOK NOW</button>
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="left" />
 
                                     </div>
 
@@ -96,7 +102,8 @@ class fitnessAssessment extends Component {
 
                                     </div>
                                     <div class="btn-box text-center btn5 marBtnTop">
-                                        <button class="commonBtnforAll">BOOK NOW</button>
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 
                                     </div>
                                 </div>
@@ -251,7 +258,8 @@ class fitnessAssessment extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 
                         </div>
                     </div>

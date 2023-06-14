@@ -132,7 +132,11 @@ class corporate_membership_program extends Component {
                                         </h3>
                                         <h4 className='textleft marginTop40'>Array of benefits for a healthier <br></br>and happier workforce
                                         </h4>
-                                        <button class="commonBtnforAll btnleft">SAY YES!</button>
+                                        {/* <button class="commonBtnforAll btnleft">SAY YES!</button> */}
+
+                                        <div class="btn-box btn5">
+                                            <ContactForm buttonText="SAY YES!" popupPosition="right" />
+                                        </div>
 
                                     </div>
 
@@ -219,7 +223,7 @@ class corporate_membership_program extends Component {
                         <div class="row align-items-center">
                             <div class="image-wrapper">
                                 <div class="image-one">
-                                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" className='videofull'>
                                         <source src={require('../../assets/images/logo.mp4')} type="video/mp4" />
                                     </video>
                                 </div>
@@ -238,7 +242,7 @@ class corporate_membership_program extends Component {
                         <div class="row align-items-center">
                             <div class="image-wrapper">
                                 <div class="image-one">
-                                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" className='videofull'>
                                         <source src={require('../../assets/images/output.mp4')} type="video/mp4" />
                                     </video>
                                 </div>

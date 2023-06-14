@@ -153,7 +153,12 @@ class Index extends Component {
                                 <p class="lead mb-0">Personalised and holistic preventive health plans for <br></br>you and your loved ones
                                 </p>
 
-                                <button class="commonBtnforAll btnleft">GET STARTED</button>
+                                {/* <button class="commonBtnforAll btnleft">GET STARTED</button> */}
+
+                                <div class=" btnleft">
+
+                                    <ContactForm buttonText="GET STARTED" popupPosition="right" />
+                                </div>
 
                             </div>
                         </div>
@@ -402,11 +407,15 @@ class Index extends Component {
                                                 </Popup>
                                             </a>
                                         </div> */}
-                                        <div class="btn-box text-center btn5">
+                                        {/* <div class="btn-box text-center btn5">
                                             <button class="commonBtnforAll">KNOW MORE</button>
+                                        </div> */}
 
+                                        <div class="btn-box text-center btn5">
 
+                                            <ContactForm buttonText="KNOW MORE" popupPosition="left"/>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>

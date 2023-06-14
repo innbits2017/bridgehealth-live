@@ -123,7 +123,11 @@ class b2cmembership extends Component {
                     </h2>
                     <h3 className='textleft marginTop40 b2c-heading'>Choose from a selection of<br></br> Annual Preventive Health plans
                     </h3>
-                    <button class="commonBtnforAll btnleft">BOOK NOW</button>
+                    {/* <button class="commonBtnforAll btnleft">BOOK NOW</button> */}
+
+                    <div class=" btnleft">
+                      <ContactForm buttonText="BOOK NOW" popupPosition="right"/>
+                    </div>
 
                   </div>
 
@@ -160,11 +164,17 @@ class b2cmembership extends Component {
                 <img src={require('../../assets/images/shape/imageb2c.png')} alt="" className='imgwidth' />
 
               </div>
-           
-              <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll marCard">SAY YES!</button>
 
-                        </div>
+              {/* <div class="btn-box text-center btn5">
+                <button class="commonBtnforAll marCard">SAY YES!</button>
+
+              </div> */}
+
+              <div class="btn-box  btn5">
+                <ContactForm buttonText="SAY YES!" popupPosition="right" />
+              </div>
+
+
             </div>
             <div class="col-lg-2"></div>
 
@@ -214,9 +224,13 @@ class b2cmembership extends Component {
                     </ul>
 
                   </div>
-                  <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">SAY YES!</button>
-                        </div>
+                  {/* <div class="btn-box text-center btn5">
+                    <button class="commonBtnforAll">SAY YES!</button>
+                  </div> */}
+                  <div class="btn-box btn5">
+                    <ContactForm buttonText="SAY YES!" popupPosition="right"/>
+                  </div>
+
                 </div>
               </div>
               <div class="col-lg-6">
@@ -251,7 +265,7 @@ class b2cmembership extends Component {
                     <h2 style={{ fontSize: 48 + 'px' }} className='marginleft'>
                       <span className='headeingcolorblack'>Why </span>
                       <span className='headeingcolorblue'> Preventive </span><br></br>
-                      <span className='headeingcolorblack marginleft20forpersonal'>Health Care?</span>
+                      <span className='headeingcolorblack '>Health Care?</span>
                     </h2>
                     {/* <h4 className='textleft marginTop40'>A host of benefits await you as soon as you say <span className='headeingcolorblue'> YES</span>
           </h4> */}
@@ -268,10 +282,14 @@ class b2cmembership extends Component {
 
                     <ContactForm buttonText="SAY YES!" />
                   </div> */}
-                  <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">SAY YES!</button>
+                  {/* <div class="btn-box text-center btn5">
+                    <button class="commonBtnforAll">SAY YES!</button>
 
-                        </div>
+                  </div> */}
+
+                  <div class="btn-box text-center btn5">
+                    <ContactForm buttonText="SAY YES!" popupPosition="left"/>
+                  </div>
                 </div>
               </div>
 
@@ -471,11 +489,11 @@ class b2cmembership extends Component {
                   <li>Paid</li>
                   <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>  
-                                    <button class="commonBtnforAll priceamt border-radius">₹7999</button>       
-                                    <button class="commonBtnforAll priceamt border-radius started blucolor">Get Started</button>
-            
-                  
+                  <li>
+                    <button class="commonBtnforAll priceamt border-radius">₹7999</button>
+                    <button class="commonBtnforAll priceamt border-radius started blucolor">Get Started</button>
+
+
                   </li>
                 </ul>
 
@@ -598,11 +616,11 @@ class b2cmembership extends Component {
                   <li>Paid</li>
                   <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li> 
-<button class="commonBtnforAll priceamt border-radius">₹7999</button>
-<button class="commonBtnforAll priceamt border-radius started">Get Started</button>
+                  <li>
+                    <button class="commonBtnforAll priceamt border-radius">₹7999</button>
+                    <button class="commonBtnforAll priceamt border-radius started">Get Started</button>
 
-                   
+
                   </li>
                 </ul>
 
@@ -702,9 +720,9 @@ class b2cmembership extends Component {
                   <li>
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
 
-                  <li> 
-                                    <button class="commonBtnforAll priceamt border-radius">₹16999</button>
-                                    <button class="commonBtnforAll priceamt border-radius started">Get Started</button>
+                  <li>
+                    <button class="commonBtnforAll priceamt border-radius">₹16999</button>
+                    <button class="commonBtnforAll priceamt border-radius started">Get Started</button>
 
 
                   </li>
@@ -797,11 +815,11 @@ class b2cmembership extends Component {
                     <i class="fa fa-check" data-unicode="f00c"></i></li>
 
                   <li>
-                                    <button class="commonBtnforAll priceamt border-radius">₹24999</button>
-                                    <button class="commonBtnforAll priceamt border-radius started">Get Started</button>
+                    <button class="commonBtnforAll priceamt border-radius">₹24999</button>
+                    <button class="commonBtnforAll priceamt border-radius started">Get Started</button>
 
 
-                   
+
                   </li>
                 </ul>
               </div>
@@ -901,8 +919,8 @@ class b2cmembership extends Component {
 
                   <li>
 
-                                    <button class="commonBtnforAll priceamt border-radius">₹29999</button>
-                                    <button class="commonBtnforAll priceamt border-radius started">Get Started</button>
+                    <button class="commonBtnforAll priceamt border-radius">₹29999</button>
+                    <button class="commonBtnforAll priceamt border-radius started">Get Started</button>
 
                   </li>
 
@@ -956,7 +974,7 @@ class b2cmembership extends Component {
                             onChange={e => this.handleChange(e)}
                             id="name"
                             placeholder="Email"
-                            />
+                          />
                         </div>  <div class="col-md-12 form-group">
                           <input
                             type="phone"

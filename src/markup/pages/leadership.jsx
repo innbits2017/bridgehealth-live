@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 
-const aboutbg = require('./../../assets/images/background/leadership1.jpg');
+const aboutbg = require('./../../assets/images/background/direct.jpg');
 const wellcomebg1 = require('./../../assets/images/resource/image-1.jpg');
 class leadership extends Component {
 
@@ -193,7 +193,7 @@ class leadership extends Component {
                                             <div class="texttitle">Dr. Dhanya Prabhu Ramdas</div>
                                             <div className='designation1'>Head – Clinical Services</div>
                                             <div className='linkdinicon'>
-                                                <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link>
+                                                {/* <Link to={'/#'}><div class="fab fa-linkedin linkdinicon1"></div></Link> */}
 
                                             </div>
                                         </div>

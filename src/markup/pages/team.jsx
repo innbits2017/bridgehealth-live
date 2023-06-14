@@ -23,7 +23,7 @@ class Team extends Component {
                         <div class="row ">
 
                             <div class="col-lg-4">
-                                <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="image-wrapper" >
                                     <div class="image-one">
                                         <img src={require('../../assets/images/shape/team.png')} alt="" />
                                     </div>
@@ -34,9 +34,9 @@ class Team extends Component {
                                     <div class="wrapper-box text">
                                         <h3>Dr. Dhanya Prabhu Ramdas</h3>
                                         <h4>Head – Clinical Services</h4>
-                                        <div class="text font18">Dr. Dhanya Prabhu Ramadas is a highly motivated, team-<br></br>oriented, and compassionate family physician. She believes in <br></br>providing evidence-based holistic care to all her patients. Her <br></br>fields of interest are geriatrics, neurology, women & child health <br></br>and lifestyle medicine.<br></br>
-                                            She has completed her DNB from Bangalore Baptist Hospital<br></br> and thereafter, completed MRCGP [Int]. She is a member of The <br></br>Academy of Family Physicians of India (AFPI) and is certified by <br></br>the Karnataka Medical Council.<br></br>
-                                            When not with her patients, she is busy travelling, spending <br></br>time with family, listening to old English country music or <br></br>reading. She keeps herself fit by practicing yoga, jogging and <br></br>dancing.</div>
+                                        <div class="text font18">Dr. Dhanya Prabhu Ramadas is a highly motivated, team-oriented, and compassionate family physician. She believes in providing evidence-based holistic care to all her patients. Her fields of interest are geriatrics, neurology, women & child health and lifestyle medicine.<br></br>
+                                            She has completed her DNB from Bangalore Baptist Hospital and thereafter, completed MRCGP [Int]. She is a member of The Academy of Family Physicians of India (AFPI) and is certified by the Karnataka Medical Council.<br></br>
+                                            When not with her patients, she is busy travelling, spending time with family, listening to old English country music or reading. She keeps herself fit by practicing yoga, jogging and dancing.</div>
                                     </div>
                                 </div>
 
@@ -45,7 +45,7 @@ class Team extends Component {
                         <div class="row  marginTop50">
 
                             <div class="col-lg-4">
-                                <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="image-wrapper" >
                                     <div class="image-one">
                                         <img src={require('../../assets/images/shape/team1.png')} alt="" />
                                     </div>
@@ -57,9 +57,9 @@ class Team extends Component {
                                         <h3>Dr. Vedavathi. N</h3>
                                         <h4>Consultant Physician</h4>
                                         <div class="text font18">
-                                            Dr. Vedavathi. N is an empathetic, competent and passionate <br></br>doctor. She has over 10 years of experience in identifying and <br></br>screening individuals of all age groups for risk factors to <br></br>prevent diseases and their progression. She has a special <br></br>interest in preventive medicine and anatomy.<br></br>
-                                            She has completed her P.G Diploma in Family Medicine from<br></br> Apollo Hospitals, Bangalore, through the Royal College of<br></br> General Practitioners - United Kingdom. She is a certified NABH <br></br>Assessor and ISO Assessor. Dr. Veda has also been a faculty <br></br>member of the paramedical college at Dayanand Sagar<br></br> University.<br></br>
-                                            At a personal level, she loves learning rangoli designs and also <br></br>enjoys dancing.
+                                            Dr. Vedavathi. N is an empathetic, competent and passionate doctor. She has over 10 years of experience in identifying and screening individuals of all age groups for risk factors to prevent diseases and their progression. She has a special interest in preventive medicine and anatomy.<br></br>
+                                            She has completed her P.G Diploma in Family Medicine from Apollo Hospitals, Bangalore, through the Royal College of General Practitioners - United Kingdom. She is a certified NABH Assessor and ISO Assessor. Dr. Veda has also been a faculty member of the paramedical college at Dayanand Sagar University.<br></br>
+                                            At a personal level, she loves learning rangoli designs and also enjoys dancing.
                                         </div>
 
                                     </div>
@@ -71,7 +71,7 @@ class Team extends Component {
                         <div class="row  marginTop50">
 
                             <div class="col-lg-4">
-                                <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="image-wrapper" >
                                     <div class="image-one">
                                         <img src={require('../../assets/images/shape/team2.png')} alt="" />
                                     </div>
@@ -83,8 +83,8 @@ class Team extends Component {
                                         <h3>Dr. Jyotsna Kurien Mathai</h3>
                                         <h4>Consultant Physician</h4>
                                         <div class="text font18">
-                                            Dr. Jyotsna Mathai is a Consultant Physician with a special<br></br> interest in Women's Health. She has completed her MBBS from <br></br>Jawaharlal Nehru Medical College-Dharwad University and<br></br> DGO from College of Physician and Surgeons- Mumbai. She<br></br> was previously associated with Activ Doctors Clinic and <br></br>NationWide Primary Health Clinic. She is known for her knowledge of Obstetrics and Gynaecology.<br></br>
-                                            Dr Jyotsna believes in integrity, respect and responsibility,<br></br> which have led her to have a successful practice and career. <br></br>Her core beliefs have helped her reach out to all kinds of <br></br>people, from every walk of life. She also loves reading about spirituality, esoteric philosophy, and human behaviour analysis.<br></br>
+                                            Dr. Jyotsna Mathai is a Consultant Physician with a special interest in Women's Health. She has completed her MBBS from Jawaharlal Nehru Medical College-Dharwad University and DGO from College of Physician and Surgeons- Mumbai. She was previously associated with Activ Doctors Clinic and NationWide Primary Health Clinic. She is known for her knowledge of Obstetrics and Gynaecology.<br></br>
+                                            Dr Jyotsna believes in integrity, respect and responsibility, which have led her to have a successful practice and career.Her core beliefs have helped her reach out to all kinds of people, from every walk of life. She also loves reading about spirituality, esoteric philosophy, and human behaviour analysis.<br></br>
                                         </div>
 
                                     </div>
@@ -97,7 +97,7 @@ class Team extends Component {
                         <div class="row  marginTop50">
 
                             <div class="col-lg-4">
-                                <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="image-wrapper" >
                                     <div class="image-one">
                                         <img src={require('../../assets/images/team/Dr Jisha B.jpg')} alt="" />
                                     </div>
@@ -124,7 +124,7 @@ class Team extends Component {
                         <div class="row  marginTop50">
 
                             <div class="col-lg-4">
-                                <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="image-wrapper" >
                                     <div class="image-one">
                                         <img src={require('../../assets/images/team/Krithika.jpg')} alt="" />
                                     </div>
@@ -151,7 +151,7 @@ class Team extends Component {
                         <div class="row  marginTop50">
 
                             <div class="col-lg-4">
-                                <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="image-wrapper" >
                                     <div class="image-one">
                                         <img src={require('../../assets/images/team/dummy.jpg')} alt="" />
                                     </div>
@@ -175,7 +175,7 @@ class Team extends Component {
                         <div class="row  marginTop50">
 
                             <div class="col-lg-4">
-                                <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="image-wrapper" >
                                     <div class="image-one">
                                         <img src={require('../../assets/images/team/dummy.jpg')} alt="" />
                                     </div>
@@ -197,7 +197,7 @@ class Team extends Component {
                         </div>
                         <div class="row  marginTop50">
                             <div class="col-lg-4">
-                                <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="image-wrapper" >
                                     <div class="image-one">
                                         <img src={require('../../assets/images/team/dummy.jpg')} alt="" />
                                     </div>
@@ -219,7 +219,7 @@ class Team extends Component {
                         </div>
                         <div class="row  marginTop50">
                             <div class="col-lg-4">
-                                <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="image-wrapper" >
                                     <div class="image-one">
                                         <img src={require('../../assets/images/team/anup.jpg')} alt="" />
                                     </div>
@@ -242,7 +242,7 @@ class Team extends Component {
                         </div>
                         <div class="row  marginTop50">
                             <div class="col-lg-4">
-                                <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="image-wrapper" >
                                     <div class="image-one">
                                         <img src={require('../../assets/images/team/nayak.jpg')} alt="" />
                                     </div>
@@ -266,7 +266,7 @@ class Team extends Component {
                         </div>
                         <div class="row  marginTop50">
                             <div class="col-lg-4">
-                                <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="image-wrapper" >
                                     <div class="image-one">
                                         <img src={require('../../assets/images/team/Maitreyee.jpg')} alt="" />
                                     </div>
@@ -292,7 +292,7 @@ class Team extends Component {
                         <div class="row  marginTop50">
 
                             <div class="col-lg-4">
-                                <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="image-wrapper" >
                                     <div class="image-one">
                                         <img src={require('../../assets/images/team/partima.jpg')} alt="" />
                                     </div>
@@ -320,7 +320,7 @@ class Team extends Component {
                         <div class="row  marginTop50">
 
                             <div class="col-lg-4">
-                                <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="image-wrapper" >
                                     <div class="image-one">
                                         <img src={require('../../assets/images/team/Madhura.jpg')} alt="" />
                                     </div>
@@ -348,7 +348,7 @@ class Team extends Component {
                         <div class="row  marginTop50">
 
                             <div class="col-lg-4">
-                                <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="image-wrapper" >
                                     <div class="image-one">
                                         <img src={require('../../assets/images/team/dummy.jpg')} alt="" />
                                     </div>
@@ -371,7 +371,7 @@ class Team extends Component {
 
                         <div class="row  marginTop50">
                             <div class="col-lg-4">
-                                <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="image-wrapper" >
                                     <div class="image-one">
                                         <img src={require('../../assets/images/team/Shrilaxmi.jpg')} alt="" />
                                     </div>
@@ -397,7 +397,7 @@ class Team extends Component {
                         <div class="row  marginTop50">
 
                             <div class="col-lg-4">
-                                <div class="image-wrapper wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="image-wrapper" >
                                     <div class="image-one">
                                         <img src={require('../../assets/images/team/roshan.jpg')} alt="" />
                                     </div>

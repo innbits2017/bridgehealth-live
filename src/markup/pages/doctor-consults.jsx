@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import ContactForm from '../element/contact-form';
 
 
 
@@ -29,7 +30,11 @@ class doctor_consults extends Component {
                                         <h3 className='textleft marginTop40'>Schedule a consultation with <br></br> one of our expert doctors
                                         </h3>
                                     </div>
-                                    <button class="commonBtnforAll">BOOK NOW</button>
+                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                    <div class="btn-box btn5">
+
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                                    </div>
 
                                 </div>
                             </div>
@@ -61,7 +66,8 @@ class doctor_consults extends Component {
                             </p>
                         </div>
                         <div class="btn-box text-center btn5">
-                                <button class="commonBtnforAll">BOOK NOW</button>
+                                {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                             </div>
 
                     </div>
@@ -86,7 +92,8 @@ class doctor_consults extends Component {
                                     </p>
                                 </div>
                                 <div class="btn-box text-center btn5 marBtnTop">
-                                        <button class="commonBtnforAll">BOOK NOW</button>
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="left" />
 
                                     </div>
                             </div>
@@ -136,7 +143,8 @@ class doctor_consults extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 
                         </div>
                     </div>
