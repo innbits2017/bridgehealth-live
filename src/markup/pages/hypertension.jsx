@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Nav, Tab, } from 'react-bootstrap';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import ContactForm from '../element/contact-form';
 
 class hypertension extends Component {
 
@@ -20,47 +21,51 @@ class hypertension extends Component {
                 <section class="team-section padding">
                     {/* About Section Two */}
                     <section class="container-fluid">
-                            <div class="row align-items-center auto-container">
+                        <div class="row align-items-center auto-container">
 
-                                <div class="col-lg-6">
-                                    <div class="content-box marginTop40header">
+                            <div class="col-lg-6">
+                                <div class="content-box marginTop40header">
 
-                                        <div class="sec-title text-center textleft">
-                                            <h2 className='textleft fontSize50'>
-                                                <span className='headeingcolorblack'>
-                                                    Adios Hypertension,
-                                                </span>
-                                                <br></br>
-                                                <span className='headeingcolorblue'>  Hello Life </span>
-                                            </h2>
-                                            <h3 className='textleft marginTop40'>
-                                                Beat hypertension with   <br></br> our experts
-                                            </h3>
-                                        </div>
-                                        <button class="commonBtnforAll">BOOK NOW</button>
-
+                                    <div class="sec-title text-center textleft">
+                                        <h2 className='textleft fontSize50'>
+                                            <span className='headeingcolorblack'>
+                                                Adios Hypertension,
+                                            </span>
+                                            <br></br>
+                                            <span className='headeingcolorblue'>  Hello Life </span>
+                                        </h2>
+                                        <h3 className='textleft marginTop40'>
+                                            Beat hypertension with   <br></br> our experts
+                                        </h3>
                                     </div>
+                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                    <div class="btn-box btn5">
+
+                                        <ContactForm buttonText="BOOK NOW" />
+                                    </div>
+
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="image-wrapper imgright">
-                                        <div class="image-one">
-                                            <img src={require('../../assets/images/shape/tension1.png')} alt="" className='imgwidth' />
-                                        </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-wrapper imgright">
+                                    <div class="image-one">
+                                        <img src={require('../../assets/images/shape/tension1.png')} alt="" className='imgwidth' />
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </section>
                 </section>
 
                 <section class="contact-section heath-margin">
 
                     <div class="auto-container">
-                    <div class="row align-items-center">
+                        <div class="row align-items-center">
 
                             <div class="col-lg-6">
-                               
-                                        <img src={require('../../assets/images/shape/tension2.png')} alt="" className='widthimg' />
-                                  
+
+                                <img src={require('../../assets/images/shape/tension2.png')} alt="" className='widthimg' />
+
                             </div>
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
@@ -73,10 +78,11 @@ class hypertension extends Component {
                                         </p>
 
                                     </div>
-     <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                                    <div class="btn-box text-center btn5">
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <ContactForm buttonText="BOOK NOW" />
 
-                        </div>                                </div>
+                                    </div>                                </div>
                             </div>
 
                         </div>
@@ -92,20 +98,21 @@ class hypertension extends Component {
 
                             <div class="col-lg-6">
 
-                                    <div class="sec-title squrebox">
-                                        {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
-                                        <p className='font22'>
-                                            Fortunately, hypertension can be effectively managed with the right care, including lifestyle changes and medication when necessary.
-                                            By prioritizing hypertension management, individuals can significantly reduce their risk of developing serious health problems and improve their overall health and well-being
-                                        </p>
-                                    </div>
-     <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                                <div class="sec-title squrebox">
+                                    {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
+                                    <p className='font22'>
+                                        Fortunately, hypertension can be effectively managed with the right care, including lifestyle changes and medication when necessary.
+                                        By prioritizing hypertension management, individuals can significantly reduce their risk of developing serious health problems and improve their overall health and well-being
+                                    </p>
+                                </div>
+                                <div class="btn-box text-center btn5">
+                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                    <ContactForm buttonText="BOOK NOW" />
 
-                        </div>                            </div>
+                                </div>                            </div>
                             <div class="col-lg-6">
-                                        <img src={require('../../assets/images/shape/tension3.png')} alt="" className='widthimg imgFloatRight' />
-                                  
+                                <img src={require('../../assets/images/shape/tension3.png')} alt="" className='widthimg imgFloatRight' />
+
                             </div>
 
                         </div>
@@ -118,9 +125,9 @@ class hypertension extends Component {
                         <div class="row col-lg-12">
 
                             <div class="col-lg-6">
-                               
-                                        <img src={require('../../assets/images/shape/tension4.png')} alt="" />
-                                   
+
+                                <img src={require('../../assets/images/shape/tension4.png')} alt="" />
+
                             </div>
                             <div class="col-lg-6">
                                 <div class="martop">
@@ -131,10 +138,11 @@ class hypertension extends Component {
                                             personalized management plan that includes lifestyle modifications, like diet and exercise, as well as medication when needed. Using the latest technology and tools, we closely monitor blood pressure readings and provide ongoing support to help individuals achieve their goals.
                                         </p>
                                     </div>
-     <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                                    <div class="btn-box text-center btn5">
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <ContactForm buttonText="BOOK NOW" />
 
-                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -146,7 +154,7 @@ class hypertension extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                    <div class="row align-items-center">
+                        <div class="row align-items-center">
 
 
                             <div class="col-lg-6">
@@ -159,15 +167,16 @@ class hypertension extends Component {
                                             With Bridge Health, individuals can feel confident that they have the resources and support they need to effectively manage their hypertension and improve their overall health and well-being
                                         </p>
                                     </div>
-     <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                                    <div class="btn-box text-center btn5">
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <ContactForm buttonText="BOOK NOW" />
 
-                        </div>                                </div>
+                                    </div>                                </div>
                             </div>
                             <div class="col-lg-6">
-                              
-                                        <img src={require('../../assets/images/shape/tension5.png')} alt="" className='widthimg imgFloatRight' />
-                                   
+
+                                <img src={require('../../assets/images/shape/tension5.png')} alt="" className='widthimg imgFloatRight' />
+
                             </div>
 
                         </div>
@@ -185,7 +194,7 @@ class hypertension extends Component {
 
                 <section class="contact-section">
                     <div class="auto-container heath-margin">
-                    <h2 className='header1'>
+                        <h2 className='header1'>
                             <span className='headeingcolorblack'> The</span>
                             <span className='headeingcolorblue'>  Bridge Health</span>
                             <span className='headeingcolorblack'> Advantage </span>
@@ -198,7 +207,7 @@ class hypertension extends Component {
                                         <li>
                                             Develop a personalized management plan that includes lifestyle modifications and medication when necessary
                                         </li>
-                                      
+
                                         <li>
                                             Provide ongoing support to help individuals achieve their hypertension management goals
                                         </li>
@@ -248,7 +257,8 @@ class hypertension extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                        <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <ContactForm buttonText="BOOK NOW" />
                         </div>
                     </div>
                 </section>

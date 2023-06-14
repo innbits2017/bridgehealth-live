@@ -132,7 +132,11 @@ class corporate_membership_program extends Component {
                                         </h3>
                                         <h4 className='textleft marginTop40'>Array of benefits for a healthier <br></br>and happier workforce
                                         </h4>
-                                        <button class="commonBtnforAll btnleft">SAY YES!</button>
+                                        {/* <button class="commonBtnforAll btnleft">SAY YES!</button> */}
+
+                                        <div class="btn-box btn5">
+                                            <ContactForm buttonText="SAY YES!" />
+                                        </div>
 
                                     </div>
 

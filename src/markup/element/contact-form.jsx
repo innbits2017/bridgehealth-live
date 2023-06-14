@@ -112,7 +112,7 @@ class ContactForm extends Component {
 
     render() {
         const { username, email, phone, message, isSubmitDisabled, errors } = this.state;
-        const { buttonText, className } = this.props;
+        const { buttonText, className, position } = this.props;
 
         return (
             <Popup trigger={
