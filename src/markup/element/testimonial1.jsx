@@ -406,9 +406,9 @@ class Testimonial1 extends Component {
                             </div>
                             {/* SEE ALL */}
                             <h6 class="leader-btn1">
-                                <Link to={'/team'}>
+                                <a href={'/team'}>
                                     SEE ALL
-                                </Link>
+                                </a>
                             </h6>
                         </div>
                     </div>
