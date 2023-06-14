@@ -145,6 +145,7 @@ class comprehensiveHealth extends Component {
 
                                 <div className='treat1'>
                                     <img src={require('../../assets/images/weght.svg')} alt="" class="avtar " />
+                                    <br></br>
                                     <p >BMI Tracker</p>
 
                                 </div>

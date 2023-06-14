@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
-const aboutbg = require('./../../assets/images/shape/Career.png');
+const aboutbg = require('./../../assets/images/shape/car1.png');
 
 
 class Career extends Component {
@@ -98,7 +98,7 @@ class Career extends Component {
 
                 <Header />
 
-                <section class="internalpage internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
+                <section class="internalpage internalimp  internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
                     <div class="auto-container">
                         <div class="content-box">
 
