@@ -6761,7 +6761,7 @@ img.lazy-image.loaded {
 .contact-section-two .icon-box {
 	position: relative;
     text-align: center;
-    padding: 65px 30px;
+    /* padding: 65px 30px; */
     border: 1px solid #e4e4e4;
     margin-bottom: 30px;
     background: #fff;
@@ -6770,7 +6770,21 @@ img.lazy-image.loaded {
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
 }
-
+.boxpadding
+{
+padding: 65px 30px;
+}
+.boxcolor
+{
+	background: #EBF3DC;
+    border-radius: 30px;
+    padding: 0px;
+}
+.mapwidth
+{
+	width: 100%;
+	height: 300px;
+}
 .contact-section-two .icon-box .icon {
 	margin-bottom: 30px;
 	font-size: 100px;
@@ -6784,9 +6798,17 @@ img.lazy-image.loaded {
 }
 
 .contact-section-two .icon-box ul li {
-	font-size: 18px;
-	color: #282828;
-	line-height: 1.2em;
+    font-size: 20px;
+    color: #282828;
+    text-align: left;
+	font-weight: 600;
+    line-height: 1.2em;
+    padding-top: 24px;
+}
+.contact-section-two .icon-box ul li img{
+    padding-left: 24px;
+	padding-right: 24px;
+
 }
 
 .contact-section-two .icon-box ul li a {
@@ -12818,15 +12840,18 @@ margin-top: 50px;
 .marginleft10 {
 	margin-left: 10px;
 }
-
+/* 
 .card-body {
 	padding: 0px !important;
-}
+} */
 
 .marCard {
 	margin-top: 50px;
 }
-
+.textcnt
+{
+	margin-left: 63px;
+}
 .btnleft {
 	float: left;
 }
@@ -12870,6 +12895,7 @@ margin-top: 50px;
 	color: #1F3075 !important;
 	border: none !important;
 	font-weight: 400;
+	font-size: 15px ;
 }
 
 .blucolor {
