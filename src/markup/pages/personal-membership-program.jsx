@@ -126,7 +126,7 @@ class b2cmembership extends Component {
                     {/* <button class="commonBtnforAll btnleft">BOOK NOW</button> */}
 
                     <div class=" btnleft">
-                      <ContactForm buttonText="BOOK NOW" />
+                      <ContactForm buttonText="BOOK NOW" popupPosition="right"/>
                     </div>
 
                   </div>
@@ -171,7 +171,7 @@ class b2cmembership extends Component {
               </div> */}
 
               <div class="btn-box  btn5">
-                <ContactForm buttonText="SAY YES!" />
+                <ContactForm buttonText="SAY YES!" popupPosition="right" />
               </div>
 
 
@@ -227,8 +227,8 @@ class b2cmembership extends Component {
                   {/* <div class="btn-box text-center btn5">
                     <button class="commonBtnforAll">SAY YES!</button>
                   </div> */}
-                  <div class="btn-box text-center btn5">
-                    <ContactForm buttonText="SAY YES!" />
+                  <div class="btn-box btn5">
+                    <ContactForm buttonText="SAY YES!" popupPosition="right"/>
                   </div>
 
                 </div>
@@ -288,7 +288,7 @@ class b2cmembership extends Component {
                   </div> */}
 
                   <div class="btn-box text-center btn5">
-                    <ContactForm buttonText="SAY YES!" />
+                    <ContactForm buttonText="SAY YES!" popupPosition="left"/>
                   </div>
                 </div>
               </div>

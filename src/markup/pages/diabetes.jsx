@@ -36,7 +36,7 @@ class diabetes extends Component {
 
                                     <div class="btn-box btn5">
 
-                                        <ContactForm buttonText="BOOK NOW" />
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="right"/>
                                     </div>
                                 </div>
                             </div>
@@ -70,7 +70,7 @@ class diabetes extends Component {
 
                                     <div class="btn-box text-center btn5">
                                         {/* <button class="commonBtnforAll">BOOK NOW</button> */}
-                                        <ContactForm buttonText="BOOK NOW" />
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="left" />
 
                                     </div>      </div>
                             </div>
@@ -91,7 +91,7 @@ class diabetes extends Component {
                                     </div>
                                     <div class="btn-box text-center btn5">
                                         {/* <button class="commonBtnforAll">BOOK NOW</button> */}
-                                        <ContactForm buttonText="BOOK NOW" />
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="right"/>
 
                                     </div>
                                 </div>
@@ -178,7 +178,7 @@ class diabetes extends Component {
                         </div>
                         <div class="btn-box text-center btn5">
                             {/* <button class="commonBtnforAll">BOOK NOW</button> */}
-                            <ContactForm buttonText="BOOK NOW" />
+                            <ContactForm buttonText="BOOK NOW" popupPosition="right"/>
 
 
                         </div>

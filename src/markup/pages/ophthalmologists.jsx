@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import ContactForm from '../element/contact-form';
 
 
 
@@ -31,7 +32,11 @@ class ophthalmologist extends Component {
                                     Talk to our Ophthalmologists today
                                 </h3>
                             </div>
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <div class="btn-box btn5">
+
+                                <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                            </div>
 
                         </div>
 
@@ -42,7 +47,7 @@ class ophthalmologist extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                    <div class="row align-items-center">
+                        <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
@@ -61,7 +66,8 @@ class ophthalmologist extends Component {
                                         </p>
                                     </div>
                                     <div class="btn-box text-center btn5">
-                                        <button class="commonBtnforAll">BOOK NOW</button>
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="left" />
                                     </div>
 
                                 </div>
@@ -82,7 +88,7 @@ class ophthalmologist extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                    <div class="row align-items-center">
+                        <div class="row align-items-center">
 
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
@@ -97,7 +103,8 @@ class ophthalmologist extends Component {
 
                                     </div>
                                     <div class="btn-box text-center btn5">
-                                        <button class="commonBtnforAll">BOOK NOW</button>
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                                     </div>
                                 </div>
                             </div>
@@ -117,7 +124,7 @@ class ophthalmologist extends Component {
 
                     <div class="auto-container">
 
-                    <div class="row align-items-center">
+                        <div class="row align-items-center">
 
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
@@ -144,14 +151,14 @@ class ophthalmologist extends Component {
                                         <li>
                                             Expert advice on eye surgeries and procedures
                                         </li>
-                                      
+
                                         <li>
                                             Glasses and contact lens prescriptions
                                         </li>
                                         <li>
                                             Comprehensive eye tests and examinations
                                         </li>
-                                      
+
                                         <li>
                                             Prescriptions and medicines for various eye conditions like conjunctivitis
                                         </li>
@@ -172,7 +179,8 @@ class ophthalmologist extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                        <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 
                         </div>
                     </div>

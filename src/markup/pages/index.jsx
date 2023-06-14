@@ -157,7 +157,7 @@ class Index extends Component {
 
                                 <div class=" btnleft">
 
-                                    <ContactForm buttonText="GET STARTED" />
+                                    <ContactForm buttonText="GET STARTED" popupPosition="right" />
                                 </div>
 
                             </div>
@@ -413,7 +413,7 @@ class Index extends Component {
 
                                         <div class="btn-box text-center btn5">
 
-                                            <ContactForm buttonText="KNOW MORE" />
+                                            <ContactForm buttonText="KNOW MORE" popupPosition="left"/>
                                         </div>
 
                                     </div>

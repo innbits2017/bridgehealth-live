@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import ContactForm from '../element/contact-form';
 
 const aboutbg = require('./../../assets/images/shape/psychological-health.png');
 
@@ -30,7 +31,12 @@ class psychological_Health extends Component {
                                     Talk to our clinical psychologists today
                                 </h3>
                             </div>
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+
+                            <div class="btn-box btn5">
+
+                                <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                            </div>
 
 
                         </div>
@@ -45,7 +51,7 @@ class psychological_Health extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                    <div class="row align-items-center">
+                        <div class="row align-items-center">
 
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
@@ -63,10 +69,11 @@ class psychological_Health extends Component {
                                         </p>
 
                                     </div>
-     <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                                    <div class="btn-box text-center btn5">
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="left" />
 
-                        </div>                                </div>
+                                    </div>                                </div>
                             </div>
 
                         </div>
@@ -98,10 +105,11 @@ class psychological_Health extends Component {
 
                                         </ul>
 
-         <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                                        <div class="btn-box text-center btn5">
+                                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 
-                        </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -121,7 +129,7 @@ class psychological_Health extends Component {
                 <section class="contact-section">
 
                     <div class="auto-container">
-                    <div class="row align-items-center">
+                        <div class="row align-items-center">
 
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
@@ -180,7 +188,8 @@ class psychological_Health extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                        <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                         </div>
                     </div>
                 </section>

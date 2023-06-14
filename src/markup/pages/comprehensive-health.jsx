@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import ContactForm from '../element/contact-form';
 
 class comprehensiveHealth extends Component {
 
@@ -29,7 +30,11 @@ class comprehensiveHealth extends Component {
                                             Take a comprehensive <br></br> health check today!
                                         </h3>
                                     </div>
-                                    <button class="commonBtnforAll">BOOK NOW</button>
+                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                    <div class="btn-box btn5">
+
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -62,7 +67,8 @@ class comprehensiveHealth extends Component {
 
                                 </div>
                                 <div class="btn-box text-center btn5 marBtnTop">
-                                    <button class="commonBtnforAll">BOOK NOW</button>
+                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                    <ContactForm buttonText="BOOK NOW" popupPosition="left" />
 
                                 </div>
                             </div>
@@ -78,14 +84,15 @@ class comprehensiveHealth extends Component {
                                 <div class="sec-title squrebox">
                                     {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                     <p className='font22'>
-                                        The comprehensive health checks at Bridge Health evaluate all aspects of your health. We have a unique health quiz that assesses your physical health parameters and our experts regularly get in touch with you in order to make sure that you are at the peak of your healthy life.
-                                        Furthermore, we use the latest health-tracking devices and machines to ensure the that your health is monitored as accurately as possible.
-                                        When it comes to your health, we make no compromises.
+                                        The comprehensive health checks at Bridge Health evaluate all aspects of your health.
+                                        Our in-house clinical experts have developed a unique assessment tool - BH Smart Guide,
+                                        which is a smarter way to understand the right diagnostic tests for you based on your current health status, family history, and lifestyle choices.
                                     </p>
 
                                 </div>
                                 <div class="btn-box text-center btn5 marBtnTop">
-                                    <button class="commonBtnforAll">BOOK NOW</button>
+                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                    <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 
                                 </div>
                             </div>
@@ -181,7 +188,7 @@ class comprehensiveHealth extends Component {
                                     <p >Body Fat Measurement</p>
 
                                 </div>
-                               
+
 
                             </div>
 
@@ -283,7 +290,8 @@ class comprehensiveHealth extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 
                         </div>
                     </div>

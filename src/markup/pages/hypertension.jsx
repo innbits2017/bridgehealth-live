@@ -41,7 +41,7 @@ class hypertension extends Component {
                                     {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                                     <div class="btn-box btn5">
 
-                                        <ContactForm buttonText="BOOK NOW" />
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="right"/>
                                     </div>
 
                                 </div>
@@ -80,7 +80,7 @@ class hypertension extends Component {
                                     </div>
                                     <div class="btn-box text-center btn5">
                                         {/* <button class="commonBtnforAll">BOOK NOW</button> */}
-                                        <ContactForm buttonText="BOOK NOW" />
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="left"/>
 
                                     </div>                                </div>
                             </div>
@@ -107,7 +107,7 @@ class hypertension extends Component {
                                 </div>
                                 <div class="btn-box text-center btn5">
                                     {/* <button class="commonBtnforAll">BOOK NOW</button> */}
-                                    <ContactForm buttonText="BOOK NOW" />
+                                    <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 
                                 </div>                            </div>
                             <div class="col-lg-6">
@@ -140,7 +140,7 @@ class hypertension extends Component {
                                     </div>
                                     <div class="btn-box text-center btn5">
                                         {/* <button class="commonBtnforAll">BOOK NOW</button> */}
-                                        <ContactForm buttonText="BOOK NOW" />
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="left"/>
 
                                     </div>
                                 </div>
@@ -169,7 +169,7 @@ class hypertension extends Component {
                                     </div>
                                     <div class="btn-box text-center btn5">
                                         {/* <button class="commonBtnforAll">BOOK NOW</button> */}
-                                        <ContactForm buttonText="BOOK NOW" />
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="right"/>
 
                                     </div>                                </div>
                             </div>
@@ -258,7 +258,7 @@ class hypertension extends Component {
                         </div>
                         <div class="btn-box text-center btn5">
                             {/* <button class="commonBtnforAll">BOOK NOW</button> */}
-                            <ContactForm buttonText="BOOK NOW" />
+                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                         </div>
                     </div>
                 </section>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import ContactForm from '../element/contact-form';
 
 
 class manageWeight extends Component {
@@ -34,7 +35,12 @@ class manageWeight extends Component {
                                             Maintain the right weight  <br></br> with the help of our experts
                                         </h3>
                                     </div>
-                                    <button class="commonBtnforAll">BOOK NOW</button>
+
+                                    <div class="btn-box btn5">
+
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                                    </div>
+                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
 
 
                                 </div>
@@ -66,7 +72,8 @@ class manageWeight extends Component {
                                     </p>
                                 </div>
                                 <div class="btn-box text-center btn5">
-                                    <button class="commonBtnforAll">BOOK NOW</button>
+                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                    <ContactForm buttonText="BOOK NOW" popupPosition="left" />
 
                                 </div>                            </div>
 
@@ -88,13 +95,14 @@ class manageWeight extends Component {
                                     </p>
                                 </div>
                                 <div class="btn-box text-center btn5">
-                                    <button class="commonBtnforAll">BOOK NOW</button>
+                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                    <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 
-                                </div>                      
-                                      </div>
+                                </div>
+                            </div>
                             <div class="col-lg-6">
 
-                                <img src={require('../../assets/images/shape/weight3.png')} alt="" className='widthimg imgFloatRight' />
+                                <img src={require('../../assets/images/shape/mweight.png')} alt="" className='widthimg imgFloatRight' />
 
                             </div>
 
@@ -123,7 +131,8 @@ class manageWeight extends Component {
 
                                 </div>
                                 <div class="btn-box text-center btn5">
-                                    <button class="commonBtnforAll">BOOK NOW</button>
+                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                    <ContactForm buttonText="BOOK NOW" popupPosition="left" />
 
                                 </div></div>
                         </div>
@@ -202,7 +211,8 @@ class manageWeight extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 
                         </div>
                     </div>

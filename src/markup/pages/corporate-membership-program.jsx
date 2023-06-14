@@ -135,7 +135,7 @@ class corporate_membership_program extends Component {
                                         {/* <button class="commonBtnforAll btnleft">SAY YES!</button> */}
 
                                         <div class="btn-box btn5">
-                                            <ContactForm buttonText="SAY YES!" />
+                                            <ContactForm buttonText="SAY YES!" popupPosition="right" />
                                         </div>
 
                                     </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import ContactForm from '../element/contact-form';
 
 
 class dental extends Component {
@@ -8,7 +9,7 @@ class dental extends Component {
     componentDidMount() {
         document.title = 'Dental | Bridge Health';
     }
-    
+
     render() {
         return (
             <>
@@ -30,7 +31,12 @@ class dental extends Component {
                                         <h3 className='textleft marginTop40'>
                                             Book your dental <br></br> consultation today!
                                         </h3>
-                                    </div>                            <button class="commonBtnforAll">BOOK NOW</button>
+                                    </div>
+                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                    <div class="btn-box btn5">
+
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                                    </div>
 
 
                                 </div>
@@ -66,7 +72,8 @@ class dental extends Component {
                                         </p>
                                     </div>
                                     <div class="btn-box text-center btn5">
-                                        <button class="commonBtnforAll">BOOK NOW</button>
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="left" />
                                     </div>
                                 </div>
                             </div>
@@ -92,8 +99,9 @@ class dental extends Component {
                                     </p>
                                 </div>
                                 <div class="btn-box text-center btn5">
-                                        <button class="commonBtnforAll">BOOK NOW</button>
-                                    </div>
+                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                    <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -193,7 +201,8 @@ class dental extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                         </div>
                     </div>
                 </section>

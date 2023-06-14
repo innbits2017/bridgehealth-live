@@ -112,14 +112,14 @@ class ContactForm extends Component {
 
     render() {
         const { username, email, phone, message, isSubmitDisabled, errors } = this.state;
-        const { buttonText, className, position } = this.props;
+        const { buttonText, className, popupPosition } = this.props;
 
         return (
             <Popup trigger={
-                <button className={`theme-btn btn-style-one ${className}`} type="submit" name="submit-form">
+                <button  className={`theme-btn btn-style-one ${className}`} type="submit" name="submit-form">
                     <span className="btn-title btn-style-one">{buttonText}</span>
                 </button>
-            } position="right">
+            } position={popupPosition} repositionOnResize={true}>
                 <div className="contact-form-area">
                     <div className="contact-form">
                         <form onSubmit={this.handleSubmit} action="#">

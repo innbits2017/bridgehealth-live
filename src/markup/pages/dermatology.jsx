@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import ContactForm from '../element/contact-form';
 
 
 const aboutfair = require('./../../assets/images/shape/dera.png');
@@ -10,7 +11,7 @@ class dermatology extends Component {
     componentDidMount() {
         document.title = 'Dermatology | Bridge Health';
     }
-    
+
     render() {
         return (
             <>
@@ -31,7 +32,11 @@ class dermatology extends Component {
                                 </h4>
 
                             </div>
-                            <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <div class="btn-box btn5">
+
+                                <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                            </div>
 
 
                         </div>
@@ -56,12 +61,13 @@ class dermatology extends Component {
                                         </p>
                                     </div>
                                     <div class="btn-box text-center btn5">
-                        <button class="commonBtnforAll">BOOK NOW</button>
-                        </div>
+                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                                        <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                                    </div>
 
                                 </div>
                             </div>
-                            
+
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
@@ -100,17 +106,17 @@ class dermatology extends Component {
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-4">
-                                    <img src={require('../../assets/images/gallery/fair1.png')} alt="" class="avtar" />
+                                <img src={require('../../assets/images/gallery/fair1.png')} alt="" class="avtar" />
                                 <p className='treat'>Non-surgical fat removal</p>
                             </div>
 
                             <div class="col-sm-4">
-                                    <img src={require('../../assets/images/gallery/fair2.png')} alt="" class="avtar" />
+                                <img src={require('../../assets/images/gallery/fair2.png')} alt="" class="avtar" />
                                 <p className='treat'>Laser Hair Removal</p>
                             </div>
 
                             <div class="col-sm-4">
-                                    <img src={require('../../assets/images/gallery/fair3.png')} alt="" class="avtar" />
+                                <img src={require('../../assets/images/gallery/fair3.png')} alt="" class="avtar" />
                                 <p className='treat'>Dandruff control and gray<br></br> hair treatment</p>
                             </div>
                         </div>
@@ -122,7 +128,7 @@ class dermatology extends Component {
                 <section class="contact-section dermaback">
 
                     <div class="auto-container">
-                    <div class="row align-items-center">
+                        <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
                                     <div class="auto-container">
@@ -181,7 +187,8 @@ class dermatology extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                        <button class="commonBtnforAll">BOOK NOW</button>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                         </div>
                     </div>
                 </section>
