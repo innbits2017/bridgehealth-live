@@ -32,6 +32,14 @@ import manageWeight from './pages/manage-weight';
 import hypertension from './pages/hypertension';
 import aboutUs from './pages/aboutus';
 import Career from './pages/career';
+import FAQ from './pages/faq-page';
+import experienceCentre from './pages/experience-centre';
+import affiliatePartners from './pages/affiliate-partners';
+import HRA from './pages/hra-page';
+import deviceAndTechnology from './pages/device-and-technology';
+import mediaAndPR from './pages/media-and-pr';
+import termsOfUse from './pages/terms-of-use';
+import privacyPolicies from './pages/privacy-policies';
 
 
 class Router extends Component {
@@ -71,6 +79,14 @@ class Router extends Component {
                         <Route path='/hyper-tension' component={hypertension}/>
                         <Route path='/about-us' component={aboutUs}/>
                         <Route path='/career' component={Career}/>
+                        <Route path='/faq-page' component={FAQ}/>
+                        <Route path='/experience-centre' component={experienceCentre}/>
+                        <Route path='/affiliate-partners' component={affiliatePartners}/>
+                        <Route path='/hra-page' component={HRA}/>
+                        <Route path='/devices-and-technology' component={deviceAndTechnology}/>
+                        <Route path='/media-and-pr' component={mediaAndPR}/>
+                        <Route path='/terms-of-use' component={termsOfUse}/>
+                        <Route path='/privacy-policies' component={privacyPolicies}/>
 
                     </Switch>
                     <BackToTop />
