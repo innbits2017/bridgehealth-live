@@ -130,7 +130,7 @@ class Contact extends Component {
                                 <div class="">
                                     <ul>
                                         <li><img src={require('../../assets/images/icons/call.png')} alt="" /><Link to={'tell:+91 8047093866'}>+91 8047093866</Link></li>
-                                        <li><img src={require('../../assets/images/icons/mail.png')} alt="" /><Link to={'mailto:info@bridgehealthgroup.com'}>nfo@bridgehealthgroup.com</Link></li>
+                                        <li><img src={require('../../assets/images/icons/mail.png')} alt="" /><Link to={'mailto:info@bridgehealthgroup.com'}>info@bridgehealthgroup.com</Link></li>
                                         <li><img src={require('../../assets/images/icons/map.png')} alt="" /><span>No.166-167, 21st Main Road,<br></br> <span className='textcnt'>100 Feet Ring Road, 2nd Phase,</span><br></br> <span className='textcnt'>JP Nagar, Bangalore - 560078</span> </span></li>
                                     </ul>
                                 </div>

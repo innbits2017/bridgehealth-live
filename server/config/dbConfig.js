@@ -1,6 +1,6 @@
 const { MongoClient } = require('mongodb');
 
-const url = 'mongodb://localhost:27017'; // MongoDB connection URL
+const url = 'mongodb+srv://grinzy:grinzy%40123@cluster0.mm41oq3.mongodb.net/mailbridge'; // MongoDB connection URL
 const dbName = 'userData'; // Name of your database
 
 // Function to connect to the database
