@@ -19,6 +19,8 @@ router.post('/submit', formController.submitForm);
 
 // send mail
 router.post("/register", (req, res) => {
+    
+    console.log("I am ENV File",process.env)
 
 
     const { email, username } = req.body;
@@ -37,6 +39,7 @@ router.post("/register", (req, res) => {
 
 
         const mailOptions = {
+            
             from: `"Bridge Health" <${process.env.EMAIL}>`,
             to: `${username}   <${email}> `,
             subject: "Welcome to Bridge Health",
