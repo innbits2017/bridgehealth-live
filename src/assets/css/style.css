@@ -13013,3 +13013,11 @@ margin-top: 50px;
     width: 110px !important;
 }
 }
+.boxtitle
+{
+	font-size: 19.5px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 5.5px;
+    line-height: 25px;
+}
