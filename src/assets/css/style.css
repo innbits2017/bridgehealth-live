@@ -819,7 +819,20 @@ img {
 	filter: blur(53px);
 	background: linear-gradient(to top, #dbdbdb00 0%, right #ffffffa3 100%) !important;
 }
-
+.header-upper:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 50%;
+	content: "";
+	position: absolute;
+	inset: -5px;
+	/* transform: translate(10px,8px); */
+	z-index: -1;
+	background: conic-gradient(from 90deg at 82% 15%, #dbdbdb00, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3);
+	filter: blur(53px);
+	background: linear-gradient(to top, #dbdbdb00 0%, right #ffffffa3 100%) !important;
+}
 /* .header-top .btn-light:not(:disabled):not(.disabled).active,
 .header-top .btn-light:not(:disabled):not(.disabled):active,
 .header-top .show>.btn-light.dropdown-toggle,
@@ -11357,6 +11370,18 @@ hr {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	.btn-style-one .btn-title {
+		position: relative;
+		z-index: 1;
+		line-height: 33px !important;
+		font-size: 15px !important;
+		padding: 4px 21px !important;
+		border-radius: 24px;
+	}
+	.videowidthMobile
+	{
+		max-height: 207px !important;
+	}
 	.internalpageresponsive
 	{
 		padding: 120px 0 75px !important;
@@ -11505,7 +11530,7 @@ text-align: center;	}
 
 	.display-4 {
 		display: block;
-		font-size: 26px;
+		font-size: 19px;
 		line-height: 1.15em;
 		color: #ffffff !important;
 		font-weight: 700;
@@ -11515,20 +11540,21 @@ text-align: center;	}
 	}
 
 	.display-3 {
-		font-size: 36px;
+		font-size: 26px;
 		font-weight: 700;
+	
 	}
 
 	.video-background-content {
 		position: relative;
 		z-index: 2;
-		padding-top: 180px;
+		padding-top: 80px;
 	}
 
 	.video-background-holder {
 		position: relative;
 		background-color: black;
-		min-height: 40rem;
+		min-height: 20rem;
 		width: 100%;
 		overflow: hidden;
 	}
@@ -11539,7 +11565,7 @@ text-align: center;	}
 		line-height: 1.2em;
 		color: #ffffff;
 		font-weight: 400;
-		padding-top: 25px;
+		padding-top: 0px;
 		text-align: center;
 	}
 
@@ -12981,4 +13007,9 @@ margin-top: 50px;
 	background: #FFFFFF !important;
     border: 1.20154px solid #C4C4C4 !important;
     border-radius: 45px !important;
+}
+@media only screen and (max-width: 575px)
+{.main-header.header-style-two .header-upper .logo-box .logo img {
+    width: 110px !important;
+}
 }

@@ -143,7 +143,7 @@ class Index extends Component {
                 {/* <!-- About --> */}
                 <div class="video-background-holder">
                     <div class="video-background-overlay"></div>
-                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" className='videowidthMobile'>
                         <source src={require('../../assets/images/backgroundvideo.mp4')} type="video/mp4" />
                     </video>
                     <div class="video-background-content h-100 auto-container">
