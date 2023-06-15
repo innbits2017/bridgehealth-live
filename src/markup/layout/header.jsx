@@ -274,8 +274,6 @@ handleScroll = event => {
              {/* <div class={scrolled ? "sticky-header animated slideInDown" : "sticky-header"}>
                     </div> */}
                     
-
-
                     <div class="mobile-menu">
                         <div class="menu-backdrop"></div>
                         <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
@@ -285,9 +283,10 @@ handleScroll = event => {
                             <div class="menu-outer">
                             <Menu />
                             </div>
-                          
                         </nav>
+
                     </div>
+                    
                 </header>
       </>
     )
