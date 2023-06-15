@@ -90,7 +90,7 @@ class Footer extends Component {
 
         const { email, username } = this.state;
 
-        const res = await fetch('http://localhost:8000/register', {
+        const res = await fetch('https://mail.bridgehealth.in/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

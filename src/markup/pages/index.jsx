@@ -306,7 +306,7 @@ class Index extends Component {
                                     <div class="content-box">
                                         <div class="sec-title">
                                             <div class="text1 textpadding" style={{ marginRight: 40 + 'px' }}>
-                                                Predict the onset of   <span className='headeingcolorblack'> hidden illnesses</span> and health conditions.<br></br>
+                                                Predict the onset of   <span className='headeingcolorblack'> hidden illnesses</span> <br></br> and health conditions.<br></br>
                                                 Prevent them by undergoing <span className='headeingcolorblack'>tests.</span><br></br>
                                                 Progress towards <span className='headeingcolorblack'>good health.</span>
                                             </div>
