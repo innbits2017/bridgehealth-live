@@ -324,12 +324,11 @@ class b2cmembership extends Component {
           </div>
         </section>
       
-        <section class="health-plan pt-5 d-none d-lg-block">
+        <section class="health-plan pt-5 d-lg-block">
             <div class="container-fluid aos-init aos-animate" data-aos="fade-up">
                <div class="section-header">
-                  <h2>Annual Health <span>Plans</span></h2>
-                  <p>Say <span class="fw-bold">YES</span> to a plan just for you!</p>
-               </div>
+               <h2><span class="headeingcolorblack">Annual Preventive Health</span><span class="headeingcolorblue"> Plans</span></h2>
+               <p>Say<span class="headeingcolorblue"> YES </span>to a plan just for you!</p>               </div>
                <div class="row seven-cols gy-4">
                   <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                      <div class="health-plan-title-1">
