@@ -187,14 +187,12 @@ class ContactForm extends Component {
                                 </div>
 
                                 <div className="col-md-12 form-group">
-                                    <button
-                                        className="theme-btn btn-style-one btncontact"
-                                        type="submit"
-                                        name="submit-form"
-                                        disabled={isSubmitDisabled}
-                                    >
-                                        <span className="btn-title">SUBMIT</span>
-                                    </button>
+                                  
+                                    <div class="btn-box text-center btn5">
+                            <button class="commonBtnforAll"  type="submit"    disabled={isSubmitDisabled}
+                            onSubmit={e => this.handleSubmit(e)}
+                            name="submit-form">SUBMIT</button>
+                                    </div>
                                 </div>
                             </div>
                         </form>

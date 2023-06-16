@@ -44,7 +44,7 @@ class blog_Designv2 extends Component {
                 </section>
 
                 <div className='blogdesigner container-fluid'>
-                    <div class="container" style={{ marginTop: 2 + 'rem', textAlign: 'justify' }}>
+                    <div class="auto-container" style={{ marginTop: 2 + 'rem', textAlign: 'justify' }}>
                         <p>
                             As a child, you were likely cautioned to limit your intake of sweets. Remember the warning not to go overboard on candy or have that extra bowl of sugary breakfast cereal? However, as an adult, the temptation to indulge in whatever you want might be stronger than ever. But before you reach for that extra slice of cake or pack of biscuits, as you grow older, maintaining a healthy diet is more important than ever.
                         </p>

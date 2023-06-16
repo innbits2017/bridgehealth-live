@@ -33,8 +33,8 @@ class FooterFormValidation extends Component {
         });
     };
 
-    handleSubmit = async (event) => {
-        console.log("i am handle Submit", event)
+    handleSubmit = (event) => {
+        // console.log("i am handle Submit", event)
         event.preventDefault();
 
         const { username, email } = this.state;
@@ -56,51 +56,21 @@ class FooterFormValidation extends Component {
 
         // If there are no errors, submit the form
         if (Object.keys(errors).length === 0) {
-            try {
-                // Call the sendEmail function
-                await this.sendEmail();
+            // Perform the form submission logic here
+            // e.g., call an API endpoint, update the database, etc.
 
-                // Show the "Thank you" message
-                this.setState({ submitted: true });
+            // Show the "Thank you" message
+            this.setState({ submitted: true });
 
-                // Reset the form
-                this.setState({
+            // Reset the form
+            this.setState({
+                username: '',
+                email: '',
+                errors: {
                     username: '',
-                    email: '',
-                    errors: {
-                        username: '',
-                        email: ''
-                    }
-                });
-            } catch (error) {
-                console.log('Error sending email:', error);
-            }
-        }
-    };
-
-    sendEmail = async (e) => {
-        // e.preventDefault();
-
-        const { email, username } = this.state;
-
-        const res = await fetch('https://mail.bridgehealth.in/register',  {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                email, username
-            }),
-        });
-
-        const data = await res.json();
-        console.log(data);
-
-        if (data.status === 401 || !data) {
-            console.log('error');
-        } else {
-            this.setState({ show: true, email: '', username: '' });
-            console.log('Email sent');
+                    email: ''
+                }
+            });
         }
     };
 
@@ -140,10 +110,11 @@ class FooterFormValidation extends Component {
                             {errors.email && <div className="error">{errors.email}</div>}
                         </div>
                         <div class="col-md-12 form-group">
-                            <div class="btn-box text-center">
-                                <button class="commonBtnforAll" name="submit-form" type="submit">SUBMIT</button>
-
-                            </div>
+                            <button
+                                class="theme-btn btn-style-one footer-btn"
+                                type="submit"
+                                name="submit-form"
+                            ><span class="btn-title">SUBMIT</span></button>
                         </div>
 
                     </div>

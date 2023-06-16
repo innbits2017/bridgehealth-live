@@ -94,7 +94,7 @@ class Blog extends Component {
                                                     onChange={this.handleSearchTermChange}
                                                     placeholder="Search Topic"
                                                     required="" />
-                                                {/* <button type="submit" style={{marginLeft: 40 + '%'}}><span class="icon far fa-search searchblog"></span></button> */}
+                                                <button type="submit" className='submitsearch'><span class="icon far fa-search searchblog"></span></button>
                                             </div>
                                         </form>
                                     </div>

@@ -235,13 +235,11 @@ handleScroll = event => {
                       </label>
                     </div>
                     <div class="col-md-12 form-group">
-                      <button
-                        class="theme-btn btn-style-one btncontact"
-                        type="submit"
-                        name="submit-form"
-                        disabled={isSubmitDisabled}
-                        onSubmit={e => this.handleSubmit(e)}
-                      ><span class="btn-title">SUBMIT</span></button>
+                    <div class="btn-box text-center btn5">
+                            <button class="commonBtnforAll"  type="submit"    disabled={isSubmitDisabled}
+                            onSubmit={e => this.handleSubmit(e)}
+                            name="submit-form">SUBMIT</button>
+                                    </div>
                     </div>
                   </div>
                 </form>
@@ -260,20 +258,11 @@ handleScroll = event => {
                                     <div class="logo-box">
                                         <div class="logo"><Link to={''}><img src={require('../../assets/images/logo.png')} alt=""/></Link></div>
                                     </div>
-                                    
                                     <div class="mobile-nav-toggler"><span class="icon fal fa-bars"></span></div>
-
-
-                                    {/* <nav class="main-menu navbar-expand-md navbar-light">
-                                    <Menu />
-                                    </nav> */}
                                 </div>
                             </div>
                         </div>
-                    </div>
-             {/* <div class={scrolled ? "sticky-header animated slideInDown" : "sticky-header"}>
-                    </div> */}
-                    
+                    </div>  
                     <div class="mobile-menu">
                         <div class="menu-backdrop"></div>
                         <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
@@ -284,9 +273,8 @@ handleScroll = event => {
                             <Menu />
                             </div>
                         </nav>
-
                     </div>
-                    
+
                 </header>
       </>
     )

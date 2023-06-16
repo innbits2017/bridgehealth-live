@@ -114,7 +114,7 @@ class corporate_membership_program extends Component {
                 <section class="team-section padding">
                     {/* About Section Two */}
                     <div class="container-fulid">
-                        <div class="row align-items-center paddinground">
+                        <div class="row align-items-center corporatepaddinground">
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
@@ -233,7 +233,7 @@ class corporate_membership_program extends Component {
                 </div>
                 <section class="container-fluid b2bback margin150">
 
-                    <div className='container '>
+                    <div className='auto-container '>
                         <div class="sec-title text-center textleft">
                             <h3 className=''> <span className='headeingcolorblue'>BRIDGE HEALTH </span>
                                 makes it possible for  <span className='headeingcolorblue'> Employers </span>to <br></br>keep a check on their  <span className='headeingcolorblue'> Employees’ Health Metrics </span></h3>
@@ -322,13 +322,11 @@ class corporate_membership_program extends Component {
                                                 </div>
 
                                                 <div class="col-md-12 form-group">
-                                                    <button
-                                                        disabled={isSubmitDisabled}
-                                                        onSubmit={e => this.handleSubmit(e)}
-                                                        class="theme-btn btn-style-one"
-                                                        type="submit"
-                                                        name="submit-form"
-                                                    ><span class="btn-title">SUBMIT</span></button>
+                                                <div class="btn-box text-center btn5">
+                            <button class="commonBtnforAll"  type="submit"    disabled={isSubmitDisabled}
+                            onSubmit={e => this.handleSubmit(e)}
+                            name="submit-form">SUBMIT</button>
+                                    </div>
                                                 </div>
                                             </div>
                                         </form>
