@@ -12,6 +12,12 @@ router.get("/health", (req, res) => {
     })
 });
 
+router.get("/job", (req, res) => {
+    res.send({
+        data: "I am getting this job"
+    })
+});
+
 
 //save formData
 router.post('/submit', formController.submitForm);
@@ -56,7 +62,7 @@ router.post("/register", (req, res) => {
 
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
-                console.log("Error" + error)
+                console.log("Error123" + error)
             } else {
                 console.log("Email sent:" + info.response);
                 res.status(201).json({ status: 201, info })
