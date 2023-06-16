@@ -11,7 +11,8 @@ class FooterFormValidation extends Component {
                 username: '',
                 email: '',
             },
-            submitted: false
+            submitted: false,
+            isLoading: false
         };
     }
 
@@ -36,6 +37,7 @@ class FooterFormValidation extends Component {
     handleSubmit = async (event) => {
         console.log("i am handle Submit", event)
         event.preventDefault();
+        this.setState({ isLoading: true });
 
         const { username, email } = this.state;
         const errors = {};
@@ -57,11 +59,19 @@ class FooterFormValidation extends Component {
         // If there are no errors, submit the form
         if (Object.keys(errors).length === 0) {
             try {
-                // Call the sendEmail function
-                await this.sendEmail();
 
-                // Show the "Thank you" message
-                this.setState({ submitted: true });
+                setTimeout(async () => {
+                    // Call the sendEmail function
+                    await this.sendEmail();
+
+                    // Show the "Thank you" message
+                    this.setState({ submitted: true });
+
+                    // setting loader
+                    this.setState({ isLoading: false });
+
+                }, 2000)
+
 
                 // Reset the form
                 this.setState({

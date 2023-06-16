@@ -17,107 +17,9 @@ class Footer extends Component {
         };
     }
 
-    handleChange = (event) => {
-        this.setState({ [event.target.name]: event.target.value }, () => {
-            this.validateForm();
-        });
-    };
-
-    validateForm = () => {
-        const { username, email, phone } = this.state;
-        const errors = {};
-
-        // Username validation
-        if (username.trim() === "") {
-            errors.username = "Please enter your name*";
-        }
-
-        // Email validation
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-            errors.email = "Please enter a valid email address*";
-        }
-
-        // Phone validation
-        if (!/^\d{10}$/.test(phone)) {
-            errors.phone = "Please enter a 10-digit phone number*";
-        }
-
-        this.setState({
-            errors,
-            isSubmitDisabled: Object.keys(errors).length > 0
-        });
-    };
-
-    handleSubmit = (event) => {
-        event.preventDefault();
-
-        console.log(this.state);
-    };
-
-    saveData = async (e) => {
-
-        console.log(e, "Data is saving");
-
-        e.preventDefault();
-
-        const { email, username, phone, message } = this.state;
-
-        const res = await fetch('http://localhost:8000/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                email, username, phone, message
-            }),
-        });
-
-        const data = await res.json();
-        console.log(data);
-
-        if (data.status === 401 || !data) {
-            console.log('error');
-        } else {
-            this.setState({ show: true, email: '', username: '', phone: '', message: '' });
-            console.log('Data saved');
-        }
-
-    }
-
-
-    sendEmail = async (e) => {
-        e.preventDefault();
-
-        const { email, username } = this.state;
-
-        const res = await fetch('http://localhost:3001/register', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                email, username
-            }),
-        });
-
-        const data = await res.json();
-        console.log(data);
-
-        if (data.status === 401 || !data) {
-            console.log('error');
-        } else {
-            this.setState({ show: true, email: '', username: '' });
-            console.log('Email sent');
-        }
-    };
-
-
-
 
     render() {
 
-
-        const { isSubmitDisabled, errors } = this.state;
 
         return (
             <>
@@ -152,7 +54,7 @@ class Footer extends Component {
                                                         <li><a href={'/our-services'}>Our Services</a></li>
                                                         <li><a href={'/personal-membership-program'}>Personal Memberships</a></li>
                                                         <li><a href={'/corporate-membership-program'}>Corporate Memberships</a></li>
-                                                        <li><Link to={'/#'}>Health Risk Assessment</Link></li>
+                                                        <li><a href={'/#'}>Health Risk Assessment</a></li>
                                                         {/* <li><Link to={'/#'}>Experience Center</Link></li> */}
 
                                                     </ul>
@@ -162,7 +64,7 @@ class Footer extends Component {
                                                         <li><a href={'/about-us'}>About us</a></li>
                                                         <li><a href={'/leadership'}>Board of Directors</a></li>
                                                         <li><a href={'/team'}>Clinical Team</a></li>
-                                                        <li><Link to={'/#'}>Media</Link></li>
+                                                        <li><a href={'/media-and-pr'}>Media</a></li>
                                                         <li><a href={'/blog'}>Blogs</a></li>
 
                                                     </ul>
@@ -173,8 +75,8 @@ class Footer extends Component {
 
                                                         <li><a href={'/career'}>Careers</a></li>
                                                         <li><a href={'/contact-us'}>Contact</a></li>
-                                                        <li><a href={'/#'}>Terms & Conditions</a></li>
-                                                        <li><a href={'/#'}>FAQ</a></li>
+                                                        <li><a href={'/terms-of-use'}>Terms & Conditions</a></li>
+                                                        <li><a href={'/faq-page'}>FAQ</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
