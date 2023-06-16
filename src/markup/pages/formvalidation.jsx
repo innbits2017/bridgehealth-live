@@ -92,7 +92,7 @@ class FormValidation extends Component {
     sendEmail = async (e) => {
         // e.preventDefault();
 
-        const { email, username, phone } = this.state;
+        const { email, username, phone, message } = this.state;
 
         const res = await fetch('https://mail.bridgehealth.in/register', {
             method: 'POST',
@@ -100,7 +100,7 @@ class FormValidation extends Component {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                email, username, phone
+                email, username, phone, message
             }),
         });
 
