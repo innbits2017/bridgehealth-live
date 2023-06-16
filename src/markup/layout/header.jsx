@@ -154,17 +154,17 @@ handleScroll = event => {
                         <li>
                           <a href="/our-services">Our Services</a>
                         </li>
-                        <li><a href="#">Experience Center</a>
+                        <li><a href="/experience-centre">Experience Center</a>
                         </li>
                         <li><a href="/blog">Blogs</a></li>
-                        <li><a href="#">Media</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="/media-and-pr">Media</a></li>
+                        <li><a href="/faq-page">FAQ</a></li>
                         <li><a href="/career">Career</a></li>
                         <li><a href="/contact-us">Contact</a></li>
                       </ul>
                     </li>
                     <li>
-                      <a href="#">Health Plan</a>
+                      <a href="/personal-membership-program">Health Plan</a>
 
                     </li>
                     <li><a href="#">Health Risk Assessment</a></li>

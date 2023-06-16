@@ -145,7 +145,7 @@ class Testimonial1 extends Component {
                                         {/* <!-- Testimonial-block --> */}
                                         <div class="testimonial-block">
                                             <div class="author-info">
-                                                <div class="thumb"><img src={require('../../assets/images/shape/dum.jpge')} alt="" />
+                                                <div class="thumb"><img src={require('../../assets/images/shape/maleicon.svg')} alt="" />
                                                 </div>
 
                                             </div>
@@ -165,7 +165,7 @@ class Testimonial1 extends Component {
                                         {/* <!-- Testimonial-block --> */}
                                         <div class="testimonial-block">
                                             <div class="author-info">
-                                                <div class="thumb"><img src={require('../../assets/images/shape/dum.jpge')} alt="" />
+                                                <div class="thumb"><img src={require('../../assets/images/shape/femaleicon.svg')} alt="" />
                                                 </div>
 
                                             </div>
@@ -186,7 +186,7 @@ class Testimonial1 extends Component {
                                         {/* <!-- Testimonial-block --> */}
                                         <div class="testimonial-block">
                                             <div class="author-info">
-                                                <div class="thumb"><img src={require('../../assets/images/shape/dum.jpge')} alt="" />
+                                                <div class="thumb"><img src={require('../../assets/images/shape/femaleicon.svg')} alt="" />
                                                 </div>
 
                                             </div>
@@ -307,7 +307,7 @@ class Testimonial1 extends Component {
                                         {/* <!-- Testimonial-block --> */}
                                         <div class="testimonial-block">
                                             <div class="author-info">
-                                                <div class="thumb"><img src={require('../../assets/images/shape/dum.jpge')} alt="" />
+                                                <div class="thumb"><img src={require('../../assets/images/shape/maleicon.svg')} alt="" />
                                                 </div>
 
                                             </div>
@@ -366,7 +366,7 @@ class Testimonial1 extends Component {
                                         {/* <!-- Testimonial-block --> */}
                                         <div class="testimonial-block">
                                             <div class="author-info">
-                                                <div class="thumb"><img src={require('../../assets/images/shape/ROUNDTEAM.png')} alt="" />
+                                                <div class="thumb"><img src={require('../../assets/images/shape/femaleicon.svg')} alt="" />
                                                 </div>
 
                                             </div>
@@ -386,7 +386,7 @@ class Testimonial1 extends Component {
                                         {/* <!-- Testimonial-block --> */}
                                         <div class="testimonial-block">
                                             <div class="author-info">
-                                                <div class="thumb"><img src={require('../../assets/images/shape/ROUNDTEAM.png')} alt="" />
+                                                <div class="thumb"><img src={require('../../assets/images/shape/maleicon.svg')} alt="" />
                                                 </div>
 
                                             </div>
