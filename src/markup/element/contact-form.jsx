@@ -187,6 +187,7 @@ class ContactForm extends Component {
                                         id="checkbox1"
                                         name="option1"
                                         value="good"
+                                        required
                                     />
                                     <label className="form-check-label heading colorwhite">
                                         I agree that Bridge Health may contact me at the email address or phone number above.

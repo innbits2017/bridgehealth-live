@@ -315,7 +315,7 @@ class corporate_membership_program extends Component {
                                                 </div>
                                                 <div class="form-check">
                                                     <input class="form-check-input"
-                                                        type="checkbox" id="checkbox1" name="option1" value="good" />
+                                                        type="checkbox" id="checkbox1" name="option1" value="good" required/>
                                                     <label class="form-check-label heading">
                                                         I agree that Bridge Health may contact me at the email address or phone number above.
                                                     </label>
