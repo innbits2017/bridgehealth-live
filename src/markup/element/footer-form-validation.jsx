@@ -33,8 +33,8 @@ class FooterFormValidation extends Component {
         });
     };
 
-    handleSubmit = (event) => {
-        // console.log("i am handle Submit", event)
+    handleSubmit = async (event) => {
+        console.log("i am handle Submit", event)
         event.preventDefault();
 
         const { username, email } = this.state;
@@ -56,23 +56,54 @@ class FooterFormValidation extends Component {
 
         // If there are no errors, submit the form
         if (Object.keys(errors).length === 0) {
-            // Perform the form submission logic here
-            // e.g., call an API endpoint, update the database, etc.
+            try {
+                // Call the sendEmail function
+                await this.sendEmail();
 
-            // Show the "Thank you" message
-            this.setState({ submitted: true });
+                // Show the "Thank you" message
+                this.setState({ submitted: true });
 
-            // Reset the form
-            this.setState({
-                username: '',
-                email: '',
-                errors: {
+                // Reset the form
+                this.setState({
                     username: '',
-                    email: ''
-                }
-            });
+                    email: '',
+                    errors: {
+                        username: '',
+                        email: ''
+                    }
+                });
+            } catch (error) {
+                console.log('Error sending email:', error);
+            }
         }
     };
+
+    sendEmail = async (e) => {
+        // e.preventDefault();
+
+        const { email, username } = this.state;
+
+        const res = await fetch('https://mail.bridgehealth.in/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email, username
+            }),
+        });
+
+        const data = await res.json();
+        console.log(data);
+
+        if (data.status === 401 || !data) {
+            console.log('error');
+        } else {
+            this.setState({ show: true, email: '', username: '' });
+            console.log('Email sent');
+        }
+    };
+
 
     render() {
         const { username, email, submitted, errors } = this.state;
