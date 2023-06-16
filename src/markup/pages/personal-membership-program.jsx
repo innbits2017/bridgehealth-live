@@ -323,642 +323,318 @@ class b2cmembership extends Component {
             </div>
           </div>
         </section>
-
-        <div class="container-fulid margintop100">
-          <div class="auto-container">
-            <div class="sec-title text-center">
-              <h2>
-                <span className='headeingcolorblack'>Annual Preventive Health</span>
-                <span className='headeingcolorblue'> Plans</span>
-              </h2>
-              <p>Say
-                <span className='headeingcolorblue'> YES </span>to a plan just for you!</p>
+      
+        <section class="health-plan pt-5 d-none d-lg-block">
+            <div class="container-fluid aos-init aos-animate" data-aos="fade-up">
+               <div class="section-header">
+                  <h2>Annual Health <span>Plans</span></h2>
+                  <p>Say <span class="fw-bold">YES</span> to a plan just for you!</p>
+               </div>
+               <div class="row seven-cols gy-4">
+                  <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                     <div class="health-plan-title-1">
+                        <h3>Clinical Assessments</h3>
+                     </div>
+                     <div class="health-plan-title-2">
+                        <h3>Clinical Assessments</h3>
+                     </div>
+                     <div class="health-plan-title-3">
+                        <h3>Consults</h3>
+                     </div>
+                     <div class="health-plan-title-4">
+                        <h3>Discounts</h3>
+                     </div>
+                  </div>
+                  <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                     <div class="health-plan-item featured">
+                        <h3>Service Offering</h3>
+                        <ul>
+                           <li> Initial Health Assessment</li>
+                           <li> Blood Health</li>
+                           <li> Diabetic Profile</li>
+                           <li> Kidney Health</li>
+                           <li> Cardiac Health</li>
+                           <li> Liver Health</li>
+                           <li> Nutrition Health</li>
+                           <li> Bone Health</li>
+                           <li> Thyroid Profile	</li>
+                           <li> Oncology Assessment</li>
+                           <li> Respiratory Health</li>
+                           <li> Radiology - (+Echo)</li>
+                        </ul>
+                        <ul class="clinicAss">
+                           <li> Doctor Consultations</li>
+                           <li> Additional Physician<br></br> Consults</li>
+                           <li> Specialist Consults</li>
+                           <li> Emotional Wellness <br></br> Webinars / Group <br></br>Sessions</li>
+                           <li> 1 to 1 Emotional <br></br> Health Consult</li>
+                           <li> Dental/Ophthal <br></br>Screening/Dermatology <br></br>Consult</li>
+                        </ul>
+                        <ul>
+                           <li> Dietary / Nutrition <br></br>Webinars</li>
+                           <li> 1 to 1 Dietician / <br></br> Nutrition Consult</li>
+                           <li> Group Yoga Sessions <br></br>(1 Hour)</li>
+                           <li> Yoga Sessions (1 Hour)</li>
+                        </ul>
+                        <ul>
+                           <li> Medicines / e-Pharmacy <br></br>for Self and Family</li>
+                           <li> Physiotherapy Services <br></br>for Self and Family</li>
+                           <li> Lab / Clinical Services <br></br>&amp; Retail Health Plans <br></br>for Family <br></br></li>
+                           <li> Home Sample Collection</li>
+                           <li> BH Mobile App-Access</li>
+                        </ul>
+                        <p class="buy-btn">Price</p>
+                     </div>
+                  </div>
+                  <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                     <div class="health-plan-item silver">
+                        <h3>Silver</h3>
+                        <ul>
+                           <li> 117 Tests with ECG &amp; U/S</li>
+                           <li><i class="bi bi-check"></i> </li>
+                           <li><i class="bi bi-check"></i> </li>
+                           <li><i class="bi bi-check"></i> </li>
+                           <li><i class="bi bi-check"></i> </li>
+                           <li><i class="bi bi-check"></i> </li>
+                           <li><i class="bi bi-check"></i> </li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+                           <li>ECG / Ultrasound Abdomen + Pelvis</li>
+                        </ul>
+                        <ul class="clincAss-2">
+                           <li>2</li>
+                           <li>Paid Consult</li>
+                           <li class="mt-3">10% Off</li>
+                           <li class="mt-3">4</li>
+                           <li>1</li>
+                           <li>&nbsp;</li>
+                        </ul>
+                        <ul class="consults">
+                           <li>4</li>
+                           <li>1</li>
+                           <li>5</li>
+                           <li>&nbsp;</li>
+                        </ul>
+                        <ul class="discounts">
+                           <li>10% Off</li>
+                           <li>10% Off</li>
+                           <li>10% Off</li>
+                           <li>Paid</li>
+                           <li><i class="bi bi-check"></i> </li>
+                        </ul>
+                        <p class="buy-btn border-silver">₹7,999</p>
+                     </div>
+                  </div>
+                  <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                     <div class="health-plan-item silver">
+                        <h3>Silver</h3>
+                        <ul>
+                           <li> 117 Tests with ECG &amp; U/S</li>
+                           <li><i class="bi bi-check"></i> </li>
+                           <li><i class="bi bi-check"></i> </li>
+                           <li><i class="bi bi-check"></i> </li>
+                           <li><i class="bi bi-check"></i> </li>
+                           <li><i class="bi bi-check"></i> </li>
+                           <li><i class="bi bi-check"></i> </li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+                           <li>ECG / Ultrasound Abdomen + Pelvis</li>
+                        </ul>
+                        <ul class="clincAss-2">
+                           <li>2</li>
+                           <li>Paid Consult</li>
+                           <li class="mt-3">10% Off</li>
+                           <li class="mt-3">4</li>
+                           <li>1</li>
+                           <li>&nbsp;</li>
+                        </ul>
+                        <ul class="consults">
+                           <li>4</li>
+                           <li>1</li>
+                           <li>5</li>
+                           <li>&nbsp;</li>
+                        </ul>
+                        <ul class="discounts">
+                           <li>10% Off</li>
+                           <li>10% Off</li>
+                           <li>10% Off</li>
+                           <li>Paid</li>
+                           <li><i class="bi bi-check"></i> </li>
+                        </ul>
+                        <p class="buy-btn border-silver">₹7,999</p>
+                     </div>
+                  </div>
+                  <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                     <div class="health-plan-item gold">
+                        <h3>GOLD</h3>
+                        <ul>
+                           <li>122 Tests with ECG &amp; U/S</li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+                           <li>ECG / Ultrasound Abdomen + Pelvis + ECHO</li>
+                        </ul>
+                        <ul class="clincAss-2">
+                           <li> 2</li>
+                           <li>Paid Consult</li>
+                           <li class="mt-3">10% Off</li>
+                           <li class="mt-3">12</li>
+                           <li>2</li>
+                           <li>&nbsp;</li>
+                        </ul>
+                        <ul class="consults">
+                           <li>12</li>
+                           <li>4</li>
+                           <li>&nbsp;</li>
+                           <li>5</li>
+                        </ul>
+                        <ul class="discounts">
+                           <li>15% Off</li>
+                           <li>15% Off</li>
+                           <li>15% Off</li>
+                           <li>Free</li>
+                           <li><i class="bi bi-check"></i> </li>
+                        </ul>
+                        <p class="buy-btn border-gold">₹16,999</p>
+                     </div>
+                  </div>
+                  <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                     <div class="health-plan-item platinum">
+                        <h3>Platinum</h3>
+                        <ul>
+                           <li>138 Tests with Echo &amp; U/S</li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li>X-Ray / Echo / Ultrasound Abdomen + Pelvis / Breast Screening</li>
+                        </ul>
+                        <ul class="platinumMinh">
+                           <li>2</li>
+                           <li>Unlimited</li>
+                           <li class="mt-3">10% Off</li>
+                           <li class="mt-3">Unlimited</li>
+                           <li>2</li>
+                           <li>&nbsp;</li>
+                        </ul>
+                        <ul class="consults">
+                           <li>Unlimited</li>
+                           <li>4</li>
+                           <li>&nbsp;</li>
+                           <li>15</li>
+                        </ul>
+                        <ul class="discounts">
+                           <li>20% Off</li>
+                           <li>1 Session + 10% Off</li>
+                           <li>15% Off</li>
+                           <li>Free</li>
+                           <li><i class="bi bi-check"></i> </li>
+                        </ul>
+                        <p class="buy-btn border-platinum">₹24,999</p>
+                     </div>
+                  </div>
+                  <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                     <div class="health-plan-item platinum-plus">
+                        <h3>Platinum +</h3>
+                        <ul>
+                           <li>222 Tests with Echo &amp; U/S</li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li><i class="bi bi-check"></i></li>
+                           <li>X-Ray / Echo / Ultrasound Abdomen + Pelvis / Breast Screening</li>
+                        </ul>
+                        <ul class="platinumMinh">
+                           <li>4</li>
+                           <li>Unlimited</li>
+                           <li class="mt-3">10% Off</li>
+                           <li class="mt-3">Unlimited</li>
+                           <li>4</li>
+                           <li>1</li>
+                        </ul>
+                        <ul class="consults">
+                           <li>Unlimited</li>
+                           <li>4</li>
+                           <li>&nbsp;</li>
+                           <li>15</li>
+                        </ul>
+                        <ul class="discounts">
+                           <li>20% Off</li>
+                           <li>1 Session + 10% Off</li>
+                           <li>15% Off</li>
+                           <li>Free</li>
+                           <li><i class="bi bi-check"></i> </li>
+                        </ul>
+                        <p class="buy-btn border-platinum-plus">₹29,999</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row seven-cols">
+                  <div class="col-md-1 col-md-6">
+                  </div>
+                  <div class="col-md-1 col-md-6">
+                  </div>
+                  
+                  <div class="col-md-1 col-md-6">
+                     <div class="d-flex">
+                        <a href="pay.php/?amt=799900" class="getStarted">Get Started</a>
+                     </div>
+                  </div>
+                  <div class="col-md-1 col-md-6">
+                     <div class="d-flex">
+                        <a href="pay.php/?amt=1699900" class="getStarted">Get Started</a>
+                     </div>
+                  </div>
+                  <div class="col-md-1 col-md-6">
+                     <div class="d-flex">
+                        <a href="pay.php/?amt=2499900" class="getStarted">Get Started</a>
+                     </div>
+                  </div>
+                  <div class="col-md-1 col-md-6">
+                     <div class="d-flex">
+                        <a href="pay.php/?amt=2999900" class="getStarted">Get Started</a>
+                     </div>
+                  </div>
+                  <div class="col-md-1 col-md-6">
+                     <div class="d-flex">
+                        <a href="pay.php/?amt=2999900" class="getStarted">Get Started</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-3	">
+                  <div class="col-lg-4 col-md-6">
+                  </div>
+                  <div class="col-lg-8 col-md-6">
+                     <div class="d-flex">
+                        <a href="javascript:void(0)" class="knowMore toggle2">KNOW MORE</a>
+                     </div>
+                  </div>
+               </div>
             </div>
-
-          </div>
-          <div class="pricing-plan card-group d-flex">
-            <div class="card set-price p-1 d-none d-lg-none d-lg-block">
-              <div class="card-header text-center pb-4 item priceheight">
-                <h5 class="pt-3 card-title top110">Clinical
-                  Assessments</h5>
-              </div>
-              <div class="card-header text-center pb-4 item priceheight tabcolor">
-                <h5 class="pt-3 card-title top110">Clinical
-                  Assessments</h5>
-              </div>
-
-              <div class="card-header text-center pb-4 item priceheight tablcolor1">
-                <h5 class="pt-3 card-title top110">Lifestyle
-                  Consults</h5>
-              </div>
-
-              <div class="card-header text-center pb-4 item tablcolor2">
-                <h5 class="pt-3 card-title top110">Discounts</h5>
-              </div>
-            </div>
-
-
-            <div class="w-100 d-md-none mt-4"></div>
-
-            <div class="card p-1 starter">
-              <div class="card-header text-center pb-4 item service1">
-                <h5 class="pt-3 card-title">Service Offering</h5>
-              </div>
-              <div class="card-body d-flex flex-column">
-                <ul class="list-unstyled">
-                  <li>Initial Health Assessment</li>
-                  <li>Blood Health</li>
-                  <li>Diabetic Profile</li>
-                  <li>Kidney Health</li>
-                  <li>Cardiac Health</li>
-                  <li>Liver Health</li>
-                  <li>Nutrition Health</li>
-                  <li>Bone Health</li>
-                  <li>Thyroid Profile</li>
-                  <li>Oncology Assessment</li>
-                  <li>Respiratory Healt</li>
-                  <li>Radiology - (+Echo)</li>
-                  <li>Doctor Consultations</li>
-                  <li>Additional Physician Consults</li>
-                  <li>Specialist Consults</li>
-                  <li>Emotional Wellness Webinars / Group Sessions</li>
-                  <li>1-on-1 Emotional Health Consult</li>
-                  <li>Dental/Ophthal Screening/Dermatology Consult</li>
-                  <li>Dietary / Nutrition Webinars</li>
-                  <li>1 to 1 Dietician / Nutrition Consult</li>
-                  <li>Group Yoga Sessions(1 Hour)</li>
-                  <li>Yoga Sessions(1 Hour)</li>
-                  <li>Medicines /e-Pharmacy for Self and Family</li>
-                  <li>Physiotherapy Services for Self and Family</li>
-                  <li>Lab / Clinical Services & Retail Health Plans for Family</li>
-                  <li>Home Sample Collection</li>
-                  <li>BH Mobile App-Access</li>
-                  <li>Price</li>
-                </ul>
-              </div>
-            </div>
-
-
-            <div class="w-100 d-md-none mt-4"></div>
-
-            <div class="card advanced p-1">
-              <div class="card-header text-center pb-4 item">
-                <h5 class="pt-3 card-title">BLUE</h5>
-              </div>
-              <div class="card-body d-flex flex-column">
-                <ul class="list-unstyled text-center">
-                  <li>101 Tests + ECG​</li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                  </li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li> <li>
-                    <i data-unicode="f00c"></i></li> <li>
-                    <i data-unicode="f00c"></i></li> <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>ECG </li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>2</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>Paid Consult</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>10% Off</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>4</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>1</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>4</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>1</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>4</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-
-
-
-                  <li>
-                    <span class="d-lg-none">Website Visitor Statistics </span>
-                    <i data-unicode="f00c"></i></li>
-
-                  <li>10% Off</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>10% Off</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>10% Off</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>Paid</li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <button class="commonBtnforAll priceamt border-radius">₹7999</button>
-                    <button class="commonBtnforAll priceamt border-radius started blucolor">Get Started</button>
-
-
-                  </li>
-                </ul>
-
-              </div>
-
-            </div>
-
-            <div class="w-100 d-md-none mt-4"></div>
-
-            <div class="card advanced p-1">
-              <div class="card-header text-center pb-4 item">
-                <h5 class="pt-3 card-title">SILVER</h5>
-              </div>
-              <div class="card-body d-flex flex-column">
-                <ul class="list-unstyled text-center">
-                  <li>117 Tests with ECG & U/S</li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                  </li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li> <li>
-                    <i data-unicode="f00c"></i></li> <li>
-                    <i data-unicode="f00c"></i></li> <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>ECG / Ultrasound Abdomen + Pelvis</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>2</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>Paid Consult</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>10% Off</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>4</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>1</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>4</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>1</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>4</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-
-
-
-                  <li>
-                    <span class="d-lg-none">Website Visitor Statistics </span>
-                    <i data-unicode="f00c"></i></li>
-
-                  <li>10% Off</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>10% Off</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>10% Off</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>Paid</li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <button class="commonBtnforAll priceamt border-radius">₹7999</button>
-                    <button class="commonBtnforAll priceamt border-radius started">Get Started</button>
-
-
-                  </li>
-                </ul>
-
-              </div>
-
-            </div>
-
-            <div class="w-100 d-md-none mt-4"></div>
-
-            <div class="card business p-1">
-              <div class="card-header text-center pb-4 item">
-                <h5 class="pt-3 card-title">GOLD</h5>
-              </div>
-              <div class="card-body d-flex flex-column">
-                <ul class="list-unstyled text-center">
-                  <li>122 Tests with ECG & U/S</li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-
-
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>ECG / Ultrasound Abdomen + Pelvis - ECHO</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>2</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>Paid Consult</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>10% Off</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>12</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>2</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li> <i data-unicode="f00c"></i></li>
-
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>12</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>4</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li> <i data-unicode="f00c"></i></li>
-
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>5</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>15% Off</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>15% Off</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>15% Off</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>Free</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-
-                  <li>
-                    <button class="commonBtnforAll priceamt border-radius">₹16999</button>
-                    <button class="commonBtnforAll priceamt border-radius started">Get Started</button>
-
-
-                  </li>
-                </ul>
-
-              </div>
-            </div>
-            <div class="w-100 d-md-none mt-4"></div>
-
-            <div class="card Platinum p-1">
-              <div class="card-header text-center pb-4 item">
-                <h5 class="pt-3  card-title">Platinum</h5>
-              </div>
-              <div class="card-body d-flex flex-column">
-                <ul class="list-unstyled text-center">
-                  <li>138 Tests with Echo & U/S</li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  {/* <li>6 - 9 Pages</li> */}
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li> <i data-unicode="f00c"></i></li>
-
-                  <li>X-Ray / Echo / Ultrasound Abdomen + Pelvis / Breast Screening</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>2</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>Unlimited</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>10% Off</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>Unlimited</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>2</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <span class="d-lg-none">Search Engine Optimisation </span>
-                    <i data-unicode="f00c"></i></li>
-                  <li>Unlimited</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>4</li>
-                  <li> <i data-unicode="f00c"></i></li>
-
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>15</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>20% Off</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>1 Session + 10% Off</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>15% Off</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>Free</li>
-                  <li> <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-
-                  <li>
-                    <button class="commonBtnforAll priceamt border-radius">₹24999</button>
-                    <button class="commonBtnforAll priceamt border-radius started">Get Started</button>
-
-
-
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="w-100 d-md-none mt-4"></div>
-            <div class="card Platinump p-1">
-              <div class="card-header text-center pb-4 item">
-                <h5 class="pt-3 card-title">Platinum +</h5>
-              </div>
-              <div class="card-body d-flex flex-column">
-                <ul class="list-unstyled text-center">
-                  <li>222 Tests with Echo & U/S</li>
-                  <li>
-                    \                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i>
-                  </li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-                  <li>X-Ray / Echo / Ultrasound Abdomen + Pelvis / Breast Screening</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>4</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>Unlimited</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>10% Off</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>Unlimited</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>4</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>1</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-
-                  <li>Unlimited</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>4</li>
-                  <li>
-                    <span class="d-lg-none">Search Engine Optimisation </span>
-                    <i data-unicode="f00c"></i></li>
-                  <li>15</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>20% Off</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>1 Session + 15% Off</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>15% Off</li>
-                  <li>
-                    <i data-unicode="f00c"></i></li>
-                  <li>Free</li>
-                  <li>
-                    <i class="fa fa-check" data-unicode="f00c"></i></li>
-
-                  <li>
-
-                    <button class="commonBtnforAll priceamt border-radius">₹29999</button>
-                    <button class="commonBtnforAll priceamt border-radius started">Get Started</button>
-
-                  </li>
-
-                </ul>
-              </div>
-            </div>
-
-          </div>
-          <button class="commonBtnforAll priceamt border-radius started getstarted">KNOW MORE</button>
-
-        </div>
+         </section>
 
 
         {/* <!-- Contact Section --> */}

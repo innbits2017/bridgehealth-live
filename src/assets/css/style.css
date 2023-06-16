@@ -10548,8 +10548,9 @@ figure:hover+span {
 }
 
 .pricing-plan li {
-	font-size: 17px;
+	font-size: 15px;
 	list-style: none;
+	
 }
 
 .pricing-plan {
@@ -10562,7 +10563,8 @@ figure:hover+span {
 }
 
 .card li {
-	padding: 8px 5px 11px 6px
+	/* padding: 8px 5px 11px 6px; */
+	border: 1px solid;
 }
 
 .set-price {
@@ -12520,10 +12522,10 @@ text-align: center;	}
 
 }
 
-.flex-column {
+/* .flex-column {
 	flex-direction: column-reverse !important;
 
-}
+} */
 
 .error {
 	color: red;
@@ -12784,10 +12786,11 @@ margin-top: 50px;
 .marginleft10 {
 	margin-left: 10px;
 }
-/* 
+
 .card-body {
 	padding: 0px !important;
-} */
+	text-align: center;
+}
 
 .marCard {
 	margin-top: 50px;
@@ -12937,3 +12940,366 @@ margin-top: 50px;
     margin-top: 5.5px;
     line-height: 25px;
 }
+.width400
+{
+	min-width: 400px !important;
+}
+.martop29
+{
+	margin-top: 29px;
+}
+  .health-plan .section-header {
+	text-align: center;
+	padding: 0 0;
+	position: relative;
+	margin-bottom:2rem;
+  }
+  
+  .health-plan .section-header h2 {
+	font-size: 40px;
+	font-weight: bold;
+	padding-bottom: 0;
+	color: #001973;
+	position: relative;
+	z-index: 2;
+	position: relative;
+	font-family: var(--font-secondary);
+  }
+
+
+  
+  /*--------------------------------------------------------------
+  # health-plan Section
+  --------------------------------------------------------------*/
+  .health-plan .health-plan-item {
+	box-shadow: 0 3px 20px -2px rgba(108, 117, 125, 0.15);
+	background: #fff;
+	height: 99%;
+	border-radius: 5px;
+  }
+  .health-plan .health-plan-title-1 {
+	  box-shadow: 0 3px 20px -2px rgb(108 117 125 / 15%);
+	  background: linear-gradient(180deg, rgba(232, 239, 249, 0.25) 0%, #E8EFF9 100%);
+	  min-height: 455px;
+	  margin-bottom: 22px;
+	  border-radius: 25px;
+	  position:relative;
+	  color:#1F3075;
+  }
+  .health-plan .health-plan-title-2 {
+	  box-shadow: 0 3px 20px -2px rgb(108 117 125 / 15%);
+	  background: linear-gradient(180deg, rgba(205, 229, 241, 0.25) 0%, #CDE5F1 100%);
+	  min-height: 308px;
+	  margin-bottom: 20px;
+	  border-radius: 25px;
+	  position:relative;
+	  color:#1F3075;
+  }
+  .health-plan .health-plan-title-3 {
+	  box-shadow: 0 3px 20px -2px rgb(108 117 125 / 15%);
+	  background: linear-gradient(180deg, rgba(25, 99, 198, 0.25) 0%, #1963C6 100%);
+	  min-height: 186px;
+	  margin-bottom: 20px;
+	  border-radius: 25px;
+	  position:relative;
+	  color:#fff;
+  }
+  .health-plan .health-plan-title-4 {
+	  box-shadow: 0 3px 20px -2px rgb(108 117 125 / 15%);
+	  background: linear-gradient(180deg, rgba(227, 167, 198, 0.25) 0%, #E3A7C6 100%);
+	  min-height: 295px;
+	  margin-bottom: 22px;
+	  border-radius: 25px;
+	  position:relative;
+	  color:#1F3075;
+  }
+  .health-plan .health-plan-title-1 h3 {
+	  position:absolute;
+	  top:40%;
+	  left: 0;
+	  right: 0;
+  }
+  .health-plan .health-plan-title-2 h3 {
+	  position:absolute;
+	  top:40%;
+	  left: 0;
+	  right: 0;
+  }
+  .health-plan .health-plan-title-3 h3 {
+	  position: absolute;
+	  top: 40%;
+	  left: 0;
+	  right: 0;
+  }
+  .health-plan .health-plan-title-4 h3 {
+	  position: absolute;
+	  top: 40%;
+	  left: 0;
+	  right: 0;
+  }
+  .health-plan h3 {
+	  font-weight: 600;
+	  margin-bottom: 5px;
+	  font-size: 14px;
+	  border-radius: 5px;
+	  padding: 15px;
+	  text-align: center;
+	  text-transform: uppercase;
+  }
+  
+  .health-plan h4 {
+	font-size: 48px;
+	color: var(--color-primary);
+	font-weight: 400;
+	font-family: var(--font-primary);
+	margin-bottom: 25px;
+  }
+  
+  .health-plan h4 sup {
+	font-size: 28px;
+  }
+  
+  .health-plan h4 span {
+	color: rgba(108, 117, 125, 0.8);
+	font-size: 18px;
+  }
+  
+  .health-plan ul {
+	padding: 10px;
+	list-style: none;
+	color: #4A4A4A;
+	text-align: left;
+	line-height: 20px;
+	font-size:12px;
+	margin-bottom:0;
+  }
+  
+  .health-plan ul li {
+	padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 13px;
+  }
+  
+  .health-plan ul i {
+	color: #059652;
+	font-size: 20px;
+	padding-right: 3px;
+  }
+  
+  .health-plan ul .na {
+	color: rgba(108, 117, 125, 0.5);
+  }
+  
+  .health-plan ul .na i {
+	color: rgba(108, 117, 125, 0.5);
+  }
+  
+  .health-plan ul .na span {
+	text-decoration: line-through;
+  }
+  
+  .health-plan .buy-btn {
+	display: inline-block;
+	padding: 12px 20px;
+	border-radius: 5px;
+	text-align:center;
+	font-size: 15px;
+	font-weight: 500;
+	font-family: var(--font-primary);
+	transition: 0.3s;
+	width:100%
+  }
+  
+  .getStarted:hover {
+	background: #1963C6;
+	color: #fff;
+  }
+  
+  .getStarted {
+	  text-transform: uppercase;
+	  display: inline-block;
+	  padding: 12px 35px;
+	  background: #E8EFF9;
+	  border-radius: 5px;
+	  text-align: center;
+	  font-size: 14px;
+	  font-weight: 600;
+	  color: #1F3075;
+	  font-family: var(--font-primary);
+	  transition: 0.3s;
+	  width: 100%;
+	  margin-bottom:10px;
+  }
+  .knowMore:hover {
+	background: #1963C6;
+	color: #fff;
+  }
+  
+  .knowMore {
+	  text-transform: uppercase;
+	  display: inline-block;
+	  padding: 12px 35px;
+	  background: #E8EFF9;
+	  border-radius: 5px;
+	  text-align: center;
+	  font-size: 14px;
+	  font-weight: 600;
+	  color: #1F3075;
+	  font-family: var(--font-primary);
+	  transition: 0.3s;
+	  width: 100%;
+  }
+  
+  .border-silver {border:2px solid #1963C6; color:#00527C;}
+  .border-gold {border:2px solid #804D05; color:#804D05;}
+  .border-platinum {border:2px solid #4A4A4A; color:#484848;}
+  .border-platinum-plus {border:2px solid #5B5B77; color:#484848;}
+  
+  .health-plan .featured h3 {
+	  background-color: #E8EFF9;
+	  color:#1F3075;
+  }
+  .health-plan .featured ul {
+	  padding-left: 10px;
+  }
+  /* .health-plan .featured ul > nth-child(2) {
+	  padding-top:30px;
+  } */
+  .health-plan .featured ul li {
+	  text-align:left;
+	  justify-content: flex-start;
+  }
+  .consults {
+	  min-height:200px;
+  }
+  .consults > li:nth-child(2){ 
+	  margin-top:22px;
+   }
+  .consults > li:nth-child(3){ 
+	  margin-top:22px;
+   }
+  .consults > li:nth-child(4){ 
+	  margin-top:10px;
+   }
+  
+  .discounts > li:nth-child(2){ 
+	  margin-top:18px;
+   }
+   .discounts > li:nth-child(3){ 
+	  margin-top:21px;
+   }
+  .discounts > li:nth-child(4){ 
+	  margin-top:35px;
+   }
+  .clincAss-2 > li:nth-child(5){ 
+	  margin-top:35px;
+   }
+  .platinumMinh > li:nth-child(5){ 
+	  margin-top:35px;
+   }
+   .platinumMinh > li:nth-child(6){ 
+	  margin-top:35px;
+   }
+  ul.clinicAss {
+	  margin-top: 43px;
+  }
+  .clincAss-2 {
+	  margin-top:21px;
+	  min-height: 324px;
+  }
+  ul.platinumMinh {
+	  min-height: 324px;
+  }
+  
+  .health-plan .featured .buy-btn:hover {
+	  background:none;
+  }
+  .health-plan .featured .buy-btn {
+	text-align:left;
+	color: #000000;
+	padding-left: 10px;
+  }
+  .health-plan .featured {
+	  background-color: #EAEAEA;
+  }
+  .health-plan .silver {
+	  background: linear-gradient(180deg, #65DFCD 0%, #229FFD 100%);
+  }
+  .health-plan .gold {
+	  background: linear-gradient(180deg, #FFD89F 0%, #FFBB5A 100%);
+  }
+  .health-plan .platinum {
+	  background: linear-gradient(179.98deg, #E5EFF7 0.01%, #D2DCE4 12.93%, #939DA5 40.45%, #ABB5BD 49.19%, #D5DFE7 66.05%, #E5EFF7 74.71%, #C4CED5 99.42%, #C4CED5 99.98%);
+  }
+  .health-plan .platinum-plus {
+	  background: linear-gradient(180.02deg, #F4F4FF 0.02%, #E4E4F1 12.94%, #C6C6D3 40.45%, #E3E3EF 52.57%, #F4F4FF 61.46%, #ECECF9 74.71%, #CBCBD8 99.42%, #CBCBD8 99.98%);
+  }
+  .health-plan .silver h3 {
+	  background: linear-gradient(90deg, #8A979E 0%, #9AA3C3 99.44%);
+	  color:#1F3075;
+  }
+  .health-plan .gold h3 {
+	  background: linear-gradient(90deg, #F0AF3D 0%, #FDD852 100%);
+	  color:#1F3075;
+  }
+  .health-plan .platinum h3 {
+	  background: linear-gradient(90deg, #E5EFF7 0%, #D2DCE4 12.92%, #939DA5 40.45%, #ABB5BD 49.19%, #D5DFE7 66.06%, #E5EFF7 74.72%, #C4CED5 99.44%, #C4CED5 100%);
+	  color:#413F3F;
+  }
+  .health-plan .platinum-plus h3 {
+	  background: linear-gradient(90deg, #F4F4FF 0%, #E4E4F1 12.92%, #C6C6D3 40.45%, #E3E3EF 52.57%, #F4F4FF 61.46%, #ECECF9 74.72%, #CBCBD8 99.44%, #CBCBD8 100%);
+	  color:#1F3075;
+  }
+  
+  
+  @media (max-width: 992px) {
+	.health-plan .box {
+	  max-width: 60%;
+	  margin: 0 auto 30px auto;
+	}
+  }
+  
+  @media (max-width: 767px) {
+	.health-plan .box {
+	  max-width: 80%;
+	  margin: 0 auto 30px auto;
+	}
+  }
+  
+  @media (max-width: 420px) {
+	.health-plan .box {
+	  max-width: 100%;
+	  margin: 0 auto 30px auto;
+	}
+  }
+  
+  @media (min-width: 768px){
+	.seven-cols .col-md-1,
+	.seven-cols .col-sm-1,
+	.seven-cols .col-lg-1  {
+	  width: 100%;
+	}
+  }
+  
+  @media (min-width: 992px) {
+	.seven-cols .col-md-1,
+	.seven-cols .col-sm-1,
+	.seven-cols .col-lg-1 {
+	  width: 14.285714285714285714285714285714%;
+	  max-width: 14.285714285714285714285714285714% !important;
+  flex:none !important;
+	}
+  }
+   
+  @media (min-width: 1200px) {
+	.seven-cols .col-md-1,
+	.seven-cols .col-sm-1,
+	.seven-cols .col-lg-1 {
+	  width: 14.285714285714285714285714285714%;
+	  max-width: 14.285714285714285714285714285714% !important;
+  flex:none !important;
+	}
+  }
