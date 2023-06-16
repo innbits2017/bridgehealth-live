@@ -278,7 +278,7 @@ class Header extends Component {
                     <div class="form-check">
                       <input class="form-check-input"
                         type="checkbox" id="checkbox1" name="option1" value="good" required/>
-                      <label class="form-check-label heading colorwhite">
+                      <label class="form-check-label agree-tick heading colorwhite">
                         I agree that Bridge Health may contact me at the email address or phone number above.
                       </label>
                     </div>

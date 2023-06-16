@@ -189,7 +189,7 @@ class ContactForm extends Component {
                                         value="good"
                                         required
                                     />
-                                    <label className="form-check-label heading colorwhite">
+                                    <label className="form-check-label heading colorwhite agree-tick">
                                         I agree that Bridge Health may contact me at the email address or phone number above.
                                     </label>
                                 </div>

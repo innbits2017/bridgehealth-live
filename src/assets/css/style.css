@@ -4708,9 +4708,13 @@ img.lazy-image.loaded {
 .contact-form label {
 	margin-bottom: 17px;
 	font-size: 16.589px;
-	margin-left: 4%;
+	margin-left: 5%;
 	color: #000;
 	font-weight: 500;
+}
+
+.agree-tick {
+	margin-left: 10% !important;
 }
 
 .image-seven {
