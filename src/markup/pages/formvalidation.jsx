@@ -35,7 +35,7 @@ class FormValidation extends Component {
         });
     };
 
-    handleSubmit = (event) => {
+    handleSubmit = async (event) => {
         // console.log("i am handle Submit", event)
         event.preventDefault();
 
@@ -65,22 +65,56 @@ class FormValidation extends Component {
             // Perform the form submission logic here
             // e.g., call an API endpoint, update the database, etc.
 
-            // Show the "Thank you" message
-            this.setState({ submitted: true });
-
             // Reset the form
             this.setState({
                 username: '',
                 email: '',
                 phone: '',
+                message: '',
                 errors: {
                     username: '',
                     email: '',
-                    phone: ''
+                    phone: '',
+                    message: ''
                 }
             });
+
+            // Show the "Thank you" message
+            this.setState({ submitted: true });
+
+            // Call the sendEmail function
+            await this.sendEmail();
+
+            
         }
     };
+
+    sendEmail = async (e) => {
+        // e.preventDefault();
+
+        const { email, username, phone } = this.state;
+
+        const res = await fetch('https://mail.bridgehealth.in/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email, username, phone
+            }),
+        });
+
+        const data = await res.json();
+        console.log(data);
+
+        if (data.status === 401 || !data) {
+            console.log('error');
+        } else {
+            this.setState({ show: true, email: '', username: '', phone: '' });
+            console.log('Email sent');
+        }
+    };
+
 
     render() {
         const { username, email, phone, submitted, errors, isOpen } = this.state;

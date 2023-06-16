@@ -57,11 +57,6 @@ class FooterFormValidation extends Component {
         // If there are no errors, submit the form
         if (Object.keys(errors).length === 0) {
             try {
-                // Call the sendEmail function
-                await this.sendEmail();
-
-                // Show the "Thank you" message
-                this.setState({ submitted: true });
 
                 // Reset the form
                 this.setState({
@@ -72,6 +67,13 @@ class FooterFormValidation extends Component {
                         email: ''
                     }
                 });
+
+                // Show the "Thank you" message
+                this.setState({ submitted: true });
+
+                // Call the sendEmail function
+                await this.sendEmail();
+
             } catch (error) {
                 console.log('Error sending email:', error);
             }
