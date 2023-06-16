@@ -7,38 +7,38 @@ class Header extends Component {
 
   state = {
     scrolled: false
-};
+  };
 
-componentDidMount() {
+  componentDidMount() {
     var btn = document.querySelector('.mobile-nav-toggler');
     var closeBtn = document.querySelector('.close-btn');
     var body = document.getElementsByTagName('body')[0];
 
     function addFunc() {
-        return body.classList.add("mobile-menu-visible");
+      return body.classList.add("mobile-menu-visible");
     }
     function closeFunc() {
-        return body.classList.remove("mobile-menu-visible");
+      return body.classList.remove("mobile-menu-visible");
     }
 
     btn.addEventListener('click', addFunc);
     closeBtn.addEventListener('click', closeFunc);
 
     window.addEventListener("scroll", this.handleScroll);
-}
+  }
 
-componentWillUnmount() {
+  componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
-}
+  }
 
-handleScroll = event => {
+  handleScroll = event => {
     if (window.scrollY > 100) {
-        this.setState({ scrolled: true });
+      this.setState({ scrolled: true });
     }
     else {
-        this.setState({ scrolled: false });
+      this.setState({ scrolled: false });
     }
-};
+  };
 
   constructor(props) {
     super(props);
@@ -47,66 +47,107 @@ handleScroll = event => {
       username: '',
       email: '',
       phone: '',
-      message: '',
+      errors: {
+        username: '',
+        email: '',
+        phone: ''
+      },
+      submitted: false
     };
-    // this.handleChange = this.handleChange.bind(this)
   }
+
+  closePopup = () => {
+    this.setState({ submitted: false });
+  };
 
   handleChange = (event) => {
-
+    // console.log("I am handle change", event.target)
     const { name, value } = event.target;
-    this.setState({ ...this.state, [name]: value });
-    console.log(event)
+    const errors = { ...this.state.errors };
+
+    // Clear the error for the changed field
+    errors[name] = '';
+
+    this.setState({
+      [name]: value,
+      errors
+    });
   };
 
-  handleSubmit = (event) => {
+  handleSubmit = async (event) => {
+    // console.log("i am handle Submit", event)
     event.preventDefault();
 
-    console.log(this.state);
+    const { username, email, phone } = this.state;
+    const errors = {};
+
+    // Validate username
+    if (username.trim() === '') {
+      errors.username = 'Username is required';
+    }
+
+    // Validate email
+    if (!email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
+      errors.email = 'Invalid email format';
+    }
+
+    // Validate phone
+    if (!phone.match(/^\d{10}$/)) {
+      errors.phone = 'Phone number must be 10 digits';
+    }
+
+    // Update the state with the errors
+    this.setState({ errors });
+
+    // If there are no errors, submit the form
+    if (Object.keys(errors).length === 0) {
+      // Perform the form submission logic here
+      // e.g., call an API endpoint, update the database, etc.
+
+      // Reset the form
+      this.setState({
+        username: '',
+        email: '',
+        phone: '',
+        message: '',
+        errors: {
+          username: '',
+          email: '',
+          phone: '',
+          message: ''
+        }
+      });
+
+      // Show the "Thank you" message
+      this.setState({ submitted: true });
+
+      // Call the sendEmail function
+      await this.sendEmail();
+    }
   };
 
-  saveData = async (e) => {
-    console.log(e, "Data is saving");
-    e.preventDefault();
-    const { email, username, phone, message } = this.state;
-    const res = await fetch('http://localhost:8000/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email, username, phone, message
-      }),
-    });
-    const data = await res.json();
-    console.log(data);
-    if (data.status === 401 || !data) {
-      console.log('error');
-    } else {
-      this.setState({ show: true, email: '', username: '', phone: '', message: '' });
-      console.log('Data saved');
-    }
-  }
-
-
   sendEmail = async (e) => {
-    e.preventDefault();
-    const { email, username } = this.state;
-    const res = await fetch('http://localhost:8000/register', {
+    // e.preventDefault();
+
+    const { email, username, phone } = this.state;
+
+    const res = await fetch('https://mail.bridgehealth.in/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        email, username
+        email, username, phone
       }),
     });
+
     const data = await res.json();
     console.log(data);
+
     if (data.status === 401 || !data) {
       console.log('error');
     } else {
-      this.setState({ show: true, email: '', username: '' });
+      this.setState({ show: true, email: '', username: '', phone: '' });
       console.log('Email sent');
     }
   };
@@ -114,8 +155,7 @@ handleScroll = event => {
     scrolled: false
   };
   render() {
-    const { username, email } = this.state;
-    const isSubmitDisabled = username === '' || email === ''
+    const { username, email, phone, message, isSubmitDisabled, errors, submitted } = this.state;
     const { scrolled } = this.state;
     return (
       <>
@@ -171,8 +211,8 @@ handleScroll = event => {
                     <li><a href="#">Search</a></li>
                   </ul>
                 </li>
-              
-          
+
+
               </ul>
             </nav>
           </div>
@@ -182,7 +222,7 @@ handleScroll = event => {
 
               {/* <!-- Contact Form--> */}
               <div class="contact-form">
-                <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e)}}   action="#">
+                <form onSubmit={this.handleSubmit} action="#">
                   {/* <form ref={form} onSubmit={sendEmail}> */}
 
                   <div class="row clearfix">
@@ -194,28 +234,36 @@ handleScroll = event => {
                         name="username"
                         id="name"
                         placeholder="Name*"
-                        required={true} />
+                      // required={true}
+                      />
+                      {errors.username && <div className="error">{errors.username}</div>}
                     </div>
 
                     <div class="col-md-12 form-group">
                       <input
-                        type="email"
+                        type="text"
                         value={this.state.email}
                         onChange={e => this.handleChange(e)}
                         name="email"
                         id="email"
                         placeholder="Email*"
-                        required={true} />
+                      // required={true} 
+                      />
+                      {errors.email && <div className="error">{errors.email}</div>}
+
                     </div>
                     <div class="col-md-12 form-group">
                       <input
-                        type="phone"
+                        type="text"
                         value={this.state.phone}
                         onChange={e => this.handleChange(e)}
                         name="phone"
                         id="phone"
                         placeholder="Phone*"
-                        required="" />
+                      // required="" 
+                      />
+                      {errors.phone && <div className="error">{errors.phone}</div>}
+
                     </div>
 
                     <div class="col-md-12 form-group">
@@ -235,47 +283,55 @@ handleScroll = event => {
                       </label>
                     </div>
                     <div class="col-md-12 form-group">
-                    <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll"  type="submit"    disabled={isSubmitDisabled}
-                            onSubmit={e => this.handleSubmit(e)}
-                            name="submit-form">SUBMIT</button>
-                                    </div>
+                      <div class="btn-box text-center btn5">
+                        <button class="commonBtnforAll" type="submit"
+                          onSubmit={e => this.handleSubmit(e)}
+                          disabled={isSubmitDisabled}
+                          name="submit-form">SUBMIT</button>
+                      </div>
                     </div>
                   </div>
                 </form>
+                {submitted && (
+                  <div className="thankyou-popup" onClick={this.closePopup}>
+                    <h2>Thank You!</h2>
+                    <p>Your details has been successfully submitted. Thanks!</p>
+                    <button type='button' >OK</button>
+                  </div>
+                )}
               </div>
             </div>
 
           </Popup>
         </header>
         <header class={scrolled ? "main-header header-style-two fixed-header" : "main-header header-style-two desktophide"}>
-              <div class="header-upper">
-                        <div class="auto-container">
-                            <div class="inner-container">
-                                
-                                <div class="nav-outer clearfix">
-                                    
-                                    <div class="logo-box">
-                                        <div class="logo"><Link to={''}><img src={require('../../assets/images/logo.png')} alt=""/></Link></div>
-                                    </div>
-                                    <div class="mobile-nav-toggler"><span class="icon fal fa-bars"></span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="mobile-menu">
-                        <div class="menu-backdrop"></div>
-                        <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
-                        
-                        <nav class="menu-box">
-                            <div class="nav-logo"><Link to={'/'}><img src="assets/images/logo.png" alt="" title=""/></Link></div>
-                            <div class="menu-outer">
-                            <Menu />
-                            </div>
-                        </nav>
-                    </div>
+          <div class="header-upper">
+            <div class="auto-container">
+              <div class="inner-container">
 
-                </header>
+                <div class="nav-outer clearfix">
+
+                  <div class="logo-box">
+                    <div class="logo"><Link to={''}><img src={require('../../assets/images/logo.png')} alt="" /></Link></div>
+                  </div>
+                  <div class="mobile-nav-toggler"><span class="icon fal fa-bars"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
+
+            <nav class="menu-box">
+              <div class="nav-logo"><Link to={'/'}><img src="assets/images/logo.png" alt="" title="" /></Link></div>
+              <div class="menu-outer">
+                <Menu />
+              </div>
+            </nav>
+          </div>
+
+        </header>
       </>
     )
   }

@@ -20,67 +20,95 @@ class b2cmembership extends Component {
       username: '',
       email: '',
       phone: '',
-      message: '',
+      errors: {
+        username: '',
+        email: '',
+        phone: ''
+      },
+      submitted: false
     };
-    // this.handleChange = this.handleChange.bind(this)
   }
+
+  closePopup = () => {
+    this.setState({ submitted: false });
+  };
 
   handleChange = (event) => {
-
+    // console.log("I am handle change", event.target)
     const { name, value } = event.target;
-    this.setState({ ...this.state, [name]: value });
-    console.log(event)
+    const errors = { ...this.state.errors };
+
+    // Clear the error for the changed field
+    errors[name] = '';
+
+    this.setState({
+      [name]: value,
+      errors
+    });
   };
 
-  handleSubmit = (event) => {
+  handleSubmit = async (event) => {
+    // console.log("i am handle Submit", event)
     event.preventDefault();
 
-    console.log(this.state);
-  };
+    const { username, email, phone } = this.state;
+    const errors = {};
 
-  saveData = async (e) => {
-
-    console.log(e, "Data is saving");
-
-    e.preventDefault();
-
-    const { email, username, phone, message } = this.state;
-
-    const res = await fetch('http://localhost:8000/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email, username, phone, message
-      }),
-    });
-
-    const data = await res.json();
-    console.log(data);
-
-    if (data.status === 401 || !data) {
-      console.log('error');
-    } else {
-      this.setState({ show: true, email: '', username: '', phone: '', message: '' });
-      console.log('Data saved');
+    // Validate username
+    if (username.trim() === '') {
+      errors.username = 'Username is required';
     }
 
-  }
+    // Validate email
+    if (!email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
+      errors.email = 'Invalid email format';
+    }
 
+    // Validate phone
+    if (!phone.match(/^\d{10}$/)) {
+      errors.phone = 'Phone number must be 10 digits';
+    }
+
+    // Update the state with the errors
+    this.setState({ errors });
+
+    // If there are no errors, submit the form
+    if (Object.keys(errors).length === 0) {
+      // Perform the form submission logic here
+      // e.g., call an API endpoint, update the database, etc.
+
+      // Reset the form
+      this.setState({
+        username: '',
+        email: '',
+        phone: '',
+        errors: {
+          username: '',
+          email: '',
+          phone: '',
+        }
+      });
+
+      // Show the "Thank you" message
+      this.setState({ submitted: true });
+
+      // Call the sendEmail function
+      await this.sendEmail();
+    }
+  };
 
   sendEmail = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
-    const { email, username } = this.state;
+    const { email, username, phone } = this.state;
 
-    const res = await fetch('http://localhost:8000/register', {
+    const res = await fetch('https://mail.bridgehealth.in/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        email, username
+        email, username, phone
       }),
     });
 
@@ -90,7 +118,7 @@ class b2cmembership extends Component {
     if (data.status === 401 || !data) {
       console.log('error');
     } else {
-      this.setState({ show: true, email: '', username: '' });
+      this.setState({ show: true, email: '', username: '', phone: '' });
       console.log('Email sent');
     }
   };
@@ -100,8 +128,7 @@ class b2cmembership extends Component {
 
   render() {
 
-    const { username, email } = this.state;
-    const isSubmitDisabled = username === '' || email === ''
+    const { username, email, phone, message, isSubmitDisabled, errors, submitted } = this.state;
 
     return (
       <>
@@ -126,7 +153,7 @@ class b2cmembership extends Component {
                     {/* <button class="commonBtnforAll btnleft">BOOK NOW</button> */}
 
                     <div class=" btnleft">
-                      <ContactForm buttonText="BOOK NOW" popupPosition="right"/>
+                      <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                     </div>
 
                   </div>
@@ -228,7 +255,7 @@ class b2cmembership extends Component {
                     <button class="commonBtnforAll">SAY YES!</button>
                   </div> */}
                   <div class="btn-box btn5">
-                    <ContactForm buttonText="SAY YES!" popupPosition="right"/>
+                    <ContactForm buttonText="SAY YES!" popupPosition="right" />
                   </div>
 
                 </div>
@@ -288,7 +315,7 @@ class b2cmembership extends Component {
                   </div> */}
 
                   <div class="btn-box text-center btn5">
-                    <ContactForm buttonText="SAY YES!" popupPosition="left"/>
+                    <ContactForm buttonText="SAY YES!" popupPosition="left" />
                   </div>
                 </div>
               </div>
@@ -954,7 +981,7 @@ class b2cmembership extends Component {
                   {/* <!-- Contact Form--> */}
                   <div class="contact-form" style={{ marginTop: 5 + 'rem' }}>
                     {/* <p>Reach out to us and we'll help you in setting up the best of <span className='headeingcolorblue'>Preventive Healthcare</span> Services for your teams.</p> */}
-                    <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} action="#" id="contact-form">
+                    <form method="post" onSubmit={this.handleSubmit} action="#" id="contact-form">
                       <div class="row clearfix">
                         <div class="col-md-12 form-group">
                           <input
@@ -964,26 +991,31 @@ class b2cmembership extends Component {
                             onChange={e => this.handleChange(e)}
                             id="name"
                             placeholder="Name*"
-                            required="" />
+                          // required="" 
+                          />
+                          {errors.username && <div className="error">{errors.username}</div>}
                         </div>
                         <div class="col-md-12 form-group">
                           <input
-                            type="email"
+                            type="text"
                             name="email"
                             value={this.state.email}
                             onChange={e => this.handleChange(e)}
                             id="name"
                             placeholder="Email"
                           />
+                          {errors.email && <div className="error">{errors.email}</div>}
                         </div>  <div class="col-md-12 form-group">
                           <input
-                            type="phone"
+                            type="text"
                             name="phone"
                             value={this.state.phone}
                             onChange={e => this.handleChange(e)}
                             id="name"
                             placeholder="Phone*"
-                            required="" />
+                          // required="" 
+                          />
+                          {errors.phone && <div className="error">{errors.phone}</div>}
                         </div>
 
                         <div class="form-check">
@@ -994,15 +1026,22 @@ class b2cmembership extends Component {
                           </label>
                         </div>
                         <div class="col-md-12 form-group">
-                            <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll"  type="submit"    disabled={isSubmitDisabled}
-                            onSubmit={e => this.handleSubmit(e)}
-                            name="submit-form">SUBMIT</button>
-                        </div>
+                          <div class="btn-box text-center btn5">
+                            <button class="commonBtnforAll" type="submit" disabled={isSubmitDisabled}
+                              onSubmit={e => this.handleSubmit(e)}
+                              name="submit-form">SUBMIT</button>
+                          </div>
 
                         </div>
                       </div>
                     </form>
+                    {submitted && (
+                      <div className="thankyou-popup" onClick={this.closePopup}>
+                        <h2>Thank You!</h2>
+                        <p>Your details has been successfully submitted. Thanks!</p>
+                        <button type='button' >OK</button>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
