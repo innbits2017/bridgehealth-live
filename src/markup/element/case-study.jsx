@@ -27,6 +27,8 @@ class CaseStudy extends Component {
                         <img src={require('../../assets/images/shape/s1.png')} alt="" />
                         <div class="short-name expertise">Chronic Care <br></br>Programs</div>
                         <div class="longer-name">
+                        <h1 className='boxtitle'>Chronic Care <br></br>Programs</h1>
+
                             Long-term illnesses and chronic diseases can be very scary to think about. Discover our chronic care programs for effective chronic illness management.
                         </div>
                     </p>

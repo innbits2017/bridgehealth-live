@@ -143,7 +143,7 @@ class Index extends Component {
                 {/* <!-- About --> */}
                 <div class="video-background-holder">
                     <div class="video-background-overlay"></div>
-                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" className='videowidthMobile'>
                         <source src={require('../../assets/images/backgroundvideo.mp4')} type="video/mp4" />
                     </video>
                     <div class="video-background-content h-100 auto-container">
@@ -445,6 +445,7 @@ class Index extends Component {
                                                 <img src={require('../../assets/images/shape/doctor.png')} alt="" />
                                                 <div class="short-name expertise">Annual Preventive<br></br> Health Plans</div>
                                                 <div class="longer-name">
+                                                <h1 className='boxtitle'>Annual Preventive<br></br> Health Plans</h1>
                                                     No matter what you need, there’s always a plan for you. Choose from a selection of Annual Preventive Health plans and sign up for better health.
                                                 </div>
                                             </p>
@@ -466,6 +467,7 @@ class Index extends Component {
                                             </a>
                                             <div class="short-name expertise">Comprehensive<br></br> Health Checks</div>
                                             <div class="longer-name">
+                                            <h1 className='boxtitle'>Comprehensive <br></br>Health Checks</h1>
                                                 Prevention is better than cure. With advanced technology, we are able to understand your entire health profile and help you prevent illnesses. Book your Comprehensive Health Check today.
                                             </div>
                                         </p>
@@ -482,6 +484,8 @@ class Index extends Component {
                                             </a>
                                             <div class="short-name expertise">Doctor <br></br>Consults</div>
                                             <div class="longer-name">
+                                            <h1 className='boxtitle'>Doctor <br></br>Consults</h1>
+
                                                 Getting an appointment with your doctor at your nearest clinic can be burdensome.
                                                 We simplify the process and allow you to consult with our experts whenever, wherever.
                                             </div>
@@ -501,6 +505,8 @@ class Index extends Component {
                                                 <img src={require('../../assets/images/shape/k2.jpeg')} alt="" /></a>
                                             <div class="short-name expertise">Psychologist Consults</div>
                                             <div class="longer-name">
+                                            <h1 className='boxtitle'>Psychologist Consults</h1>
+
                                                 Mental health is extremely important in the current times due to increased work and social pressures. Talk to our expert clinical psychologists.
                                             </div>
                                         </p>
@@ -515,6 +521,7 @@ class Index extends Component {
                                                 <img src={require('../../assets/images/shape/s5.png')} alt="" /></a>
                                             <div class="short-name expertise">Dental Consults</div>
                                             <div class="longer-name">
+                                            <h1 className='boxtitle'>Dental Consults</h1>
                                                 Most people neglect their oral health which can be disastrous for their overall health. Book your dental consultation with us today and smile with confidence.
                                             </div>
                                         </p>
@@ -529,6 +536,7 @@ class Index extends Component {
                                                 <img src={require('../../assets/images/shape/s7.png')} alt="" /></a>
                                             <div class="short-name expertise">Dermatology</div>
                                             <div class="longer-name">
+                                            <h1 className='boxtitle'>Dermatology</h1>
                                                 Contrary to popular belief, don’t just cater to the needs of fashion models.
                                                 Our hair, skin, and nails deserve to be treated well. Talk to our dermatologists today.
                                             </div>
@@ -544,6 +552,7 @@ class Index extends Component {
                                             </a>
                                             <div class="short-name expertise">Ophthalmology</div>
                                             <div class="longer-name">
+                                            <h1 className='boxtitle'>Ophthalmology</h1>
                                                 Our eyesight is a precious gift which allows us to see the beauty of the world. We need to take care of our eyes to prevent any eye-related illnesses. Meet our ophthalmologists today.
                                             </div>
                                         </p>
@@ -560,6 +569,7 @@ class Index extends Component {
                                             </a>
                                             <div class="short-name expertise">Physiotherapy</div>
                                             <div class="longer-name">
+                                            <h1 className='boxtitle'>Physiotherapy</h1>
                                                 In life, we take our ability to move around freely for granted. Due to injuries or certain illnesses, our movement gets affected.
                                                 Schedule a physiotherapy session with us and move with ease.
                                             </div>
@@ -575,6 +585,7 @@ class Index extends Component {
                                             </a>
                                             <div class="short-name expertise">Elderly Care</div>
                                             <div class="longer-name">
+                                            <h1 className='boxtitle'>Elderly Care</h1>
                                                 Growing old is a natural part of our lives. As we age, our physical abilities gradually get compromised and we need assistance. Discover our elderly care services.
                                             </div>
                                         </p>
@@ -590,6 +601,7 @@ class Index extends Component {
                                             </a>
                                             <div class="short-name expertise">Lab Tests</div>
                                             <div class="longer-name">
+                                            <h1 className='boxtitle'>Lab Tests</h1>
                                                 The key to an effective diagnosis is effective testing.
                                                 Advancements in lab testing have allowed us to accurately determine illnesses and provide treatment plans. Discover our state-of-the-art lab facilities.
                                             </div>
@@ -606,6 +618,7 @@ class Index extends Component {
                                             </a>
                                             <div class="short-name expertise">Diet and Nutrition</div>
                                             <div class="longer-name">
+                                            <h1 className='boxtitle'>Diet and Nutrition</h1>
                                                 A healthy diet is the basis for good health. After all, you are what you eat.
                                                 Find out how our expert clinical nutritionists help you eat healthy to stay healthy.
                                             </div>
@@ -624,6 +637,7 @@ class Index extends Component {
                                             </a>
                                             <div class="short-name expertise">Yoga Assessment <br></br>and Coaching</div>
                                             <div class="longer-name">
+                                            <h1 className='boxtitle'>Yoga Assessment <br></br>and Coaching</h1>
                                                 Yoga has been a part of our culture for centuries. The focus on harmony of mind, body,
                                                 and spirit has been scientifically proven to have positive effects on health. Talk to our yoga therapists.
                                             </div>
@@ -641,6 +655,7 @@ class Index extends Component {
                                             </a>
                                             <div class="short-name expertise">Fitness Assessment<br></br> and Coaching</div>
                                             <div class="longer-name">
+                                            <h1 className='boxtitle'>Fitness Assessment<br></br> and Coaching</h1>
                                                 For good health, exercise is important. We’ve taken this to another level and have adopted a clinical fact-based approach with our unique fitness program. Discover our pro-fit program.
                                             </div>
                                         </p>
@@ -658,6 +673,7 @@ class Index extends Component {
                                             </a>
                                             <div class="short-name expertise">Pharmacy</div>
                                             <div class="longer-name">
+                                            <h1 className='boxtitle'>Pharmacy</h1>
                                                 It’s important to get the medicines you need at the right time.
                                                 At Bridge Health, we have a fully-stocked pharmacy which is built to meet your needs. Discover our pharmacy today.
 
@@ -675,6 +691,7 @@ class Index extends Component {
                                             </a>
                                             <div class="short-name expertise">Nursing At Home</div>
                                             <div class="longer-name">
+                                            <h1 className='boxtitle'>Nursing At Home</h1>
                                                 With nursing services provided directly to you and your loved ones at the comfort of your own home,
                                                 get the timely care and assistance you need at all times.
                                             </div>

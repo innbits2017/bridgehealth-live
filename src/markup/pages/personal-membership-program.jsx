@@ -994,13 +994,12 @@ class b2cmembership extends Component {
                           </label>
                         </div>
                         <div class="col-md-12 form-group">
-                          <button
-                            disabled={isSubmitDisabled}
+                            <div class="btn-box text-center btn5">
+                            <button class="commonBtnforAll"  type="submit"    disabled={isSubmitDisabled}
                             onSubmit={e => this.handleSubmit(e)}
-                            class="theme-btn btn-style-three"
-                            type="submit"
-                            name="submit-form">
-                            <span class="btn-title" style={{ fontSize: 20 + 'px' }}>SUBMIT</span></button>
+                            name="submit-form">SUBMIT</button>
+                        </div>
+
                         </div>
                       </div>
                     </form>

@@ -213,12 +213,11 @@ class Contact extends Component {
                                                 </div>
 
                                                 <div class="col-md-12 form-group">
-                                                    <button
-                                                        type="submit"
-                                                        name="submit-form"
-                                                        disabled={isSubmitDisabled}
-                                                        class="commonBtnforAll flotrightimg"
-                                                    >Submit</button>
+                                                <div class="btn-box text-center btn5">
+                            <button class="commonBtnforAll"  type="submit"    disabled={isSubmitDisabled}
+                            onSubmit={e => this.handleSubmit(e)}
+                            name="submit-form">SUBMIT</button>
+                                    </div>
                                                 </div>
                                             </div>
                                         </form>
