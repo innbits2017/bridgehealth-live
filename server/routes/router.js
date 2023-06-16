@@ -19,12 +19,14 @@ router.post('/submit', formController.submitForm);
 
 // send mail
 router.post("/register", (req, res) => {
-    
+
     console.log("I am ENV File",process.env)
 
 
     const { email, username } = req.body;
 
+    const EMAIL=process.env.EMAIL || "anandeng187@gmail.com";
+    const PASSWORD=process.env.PASSWORD || "vhhmsnrnwshlctdb";
 
     try {
 
@@ -32,15 +34,15 @@ router.post("/register", (req, res) => {
         const transporter = nodemailer.createTransport({
             service: "gmail",
             auth: {
-                user: process.env.EMAIL,
-                pass: process.env.PASSWORD
+                user: EMAIL,
+                pass: PASSWORD
             }
         });
 
 
         const mailOptions = {
             
-            from: `"Bridge Health" <${process.env.EMAIL}>`,
+            from: `"Bridge Health" <${EMAIL}>`,
             to: `${username}   <${email}> `,
             subject: "Welcome to Bridge Health",
             html: ` 
