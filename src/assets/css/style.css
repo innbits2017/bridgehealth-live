@@ -88,12 +88,12 @@ p,
 }
 
 .leader-btn1 {
-	text-decoration: underline;
-	color: #00B2FF !important;
-	margin-top: 4rem;
-	margin-left: 87%;
-	font-size: 20px;
-	font-weight: 500;
+    text-decoration: underline;
+    color: #00B2FF !important;
+    margin-top: 5rem;
+    margin-left: 85%;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 ::-webkit-input-placeholder {
@@ -215,10 +215,11 @@ figure {
 .btn-style-one {
 	color: #ffffff;
 	font-weight: 600;
+	font-size: 22px;
 	text-transform: capitalize;
 	border-radius: 30px;
-	/* background-color: #1963C6; */
-	background-image: url(../images/shape/button.png);
+	background-color: #1963C6;
+	/* background-image: url(../images/shape/button.png); */
 	margin-top: 20px;
     margin-left: 0rem;
     width: 244px;
@@ -227,6 +228,21 @@ figure {
     background-repeat: no-repeat;
 }
 
+.btn-style-one-home {
+	color: #ffffff;
+	background-image: none;
+	font-weight: 600;
+	font-size: 22px;
+	text-transform: capitalize;
+	border-radius: 30px;
+	background-color: #1963C6;
+	margin-top: 20px;
+    margin-left: 0rem;
+    width: 244px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 .btn-style-seven {
 	position: relative;
@@ -309,7 +325,7 @@ figure {
 	position: relative;
 	z-index: 1;
 	line-height: 44px;
-	font-size: 22px;
+	font-size: 21px;
 	padding: 4px 23px !important;
 	border-radius: 24px;
 }
@@ -10732,9 +10748,10 @@ h6,
 } */
 .testback {
 	background-image: url(../images/shape/LINE.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding-top: 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    background-position: center;
 
 
 }
@@ -10801,11 +10818,11 @@ border-radius: 26.5756px;
 
 input[type=checkbox],
 input[type=radio] {
-	box-sizing: border-box;
-	padding: 0;
-	height: 23px;
-	width: 23px;
-	margin-left: -1px;
+    box-sizing: border-box;
+    padding: 0;
+    height: 18px;
+    width: 18px;
+    margin-left: -1px;
 }
 
 .expertiseback {
@@ -13351,12 +13368,12 @@ margin-top: 50px;
 --------------------------------------------------------------*/
 .sidebar-contact{
     position: fixed;
-    top: 70%;
-    right: -281px;
+    top: 75%;
+    right: -420px;
     transform: translateY(-50%);
-    width: 280px;
+    width: 420px;
     height: auto;
-    padding: 40px;
+    padding: 20px;
     background: #1963C6;
     box-sizing: border-box;
     transition: 0.5s;
@@ -13427,12 +13444,18 @@ padding-right:30px;
 	vertical-align: top;
     
 }
-.talkTo img {margin-right:-7px; padding-bottom:5px;}
+.talkTo img {
+	
+	width: 55px;
+    margin-right: -17px;
+    padding-bottom: 5px;
+
+}
 @media(max-width:768px)
 {
   .sidebar-contact{
     width: 86%;
-    height: 42%;
+    /* height: 42%; */
     right: -87%
   }
   .sidebar-contact .toggle{
@@ -13455,23 +13478,48 @@ padding-right:30px;
 }
 body > div.fade.popupform.modal.show > div > div > div
 {
-	border-bottom: none !important;
+    border-bottom: none !important;
+    padding: 16px !important;
+    padding-top: 10% !important;
 
 }
-
+.close
+{
+    font-size: 33px;
+    color: #fff !important;
+    opacity: 2;
+}
+.modal-header .close {
+    padding: 1rem 1rem;
+    margin: -3rem -3rem -3rem !important;
+}
 body > div.fade.popupform.modal.show > div > div
 {
     width: 50% !important;
+	margin-left: 20%;
 	border-bottom: none !important;
     background: #1963C6;}
 
 	@media only screen and (max-width: 600px)
 {body > div.fade.popupform.modal.show > div > div {
 	width: 80% !important;}
+	body > div.fade.popupform.modal.show > div > div
+	{
+		margin-left: 10% !important;
+	}
+	.widthinput
+	{
+width: 270px !important;
+	}
+	.modal-header .close {
+		padding: 1rem 1rem;
+		margin: -3rem -1.5rem -3rem !important;
+	}
 }
+
 .widthinput
 {
-	width: 290px !important;
+	width: 290px;
     margin-bottom: 20px;}
 
 	.textareaheight
@@ -13496,6 +13544,7 @@ body > div.fade.popupform.modal.show > div > div
     border-radius: 30px;
     background-color: #1963C6;
     padding: 10px 50px 10px 50px;
+	margin-bottom: 20px;
 }
 button {
     margin: 0;

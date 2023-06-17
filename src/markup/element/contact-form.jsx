@@ -156,7 +156,7 @@ class ContactForm extends Component {
                                  <input class="form-control widthinput" type="number" name="phone" id="validationServer05" placeholder="Phone No" required></input>
                               </div>
                               <div class="col-md-12 mb-2">
-                                 <textarea name="message" placeholder="Message here.." class="widthinput textareaheight"></textarea>
+                                 <textarea name="message" placeholder="Message here.." class="widthinput textareaheight form-control"></textarea>
                               </div>
                               <div class="form-check">
                                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required></input>

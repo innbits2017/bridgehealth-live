@@ -207,7 +207,7 @@ class Header extends Component {
                       <a href="/personal-membership-program">Health Plan</a>
 
                     </li>
-                    <li><a href="#">Health Risk Assessment</a></li>
+                    <li><a href="/health-risk-assessment">Health Risk Assessment</a></li>
                     <li><a href="#">Search</a></li>
                   </ul>
                 </li>

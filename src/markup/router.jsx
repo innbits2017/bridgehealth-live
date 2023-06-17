@@ -40,6 +40,7 @@ import deviceAndTechnology from './pages/device-and-technology';
 import mediaAndPR from './pages/media-and-pr';
 import termsOfUse from './pages/terms-of-use';
 import privacyPolicies from './pages/privacy-policies';
+import HealthiskAssessment from'./pages/health-risk-assessment';
 
 
 class Router extends Component {
@@ -87,6 +88,7 @@ class Router extends Component {
                         <Route path='/media-and-pr' component={mediaAndPR}/>
                         <Route path='/terms-of-use' component={termsOfUse}/>
                         <Route path='/privacy-policies' component={privacyPolicies}/>
+                        <Route path='/health-risk-assessment' component={HealthiskAssessment}/>
 
                     </Switch>
                     <BackToTop />

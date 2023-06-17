@@ -157,7 +157,7 @@ class Index extends Component {
 
                                 <div class=" btnleft">
 
-                                    <ContactForm buttonText="GET STARTED" popupPosition="right" />
+                                    <ContactForm buttonText="GET STARTED" popupPosition="right"  className='btn-style-one-home'/>
                                 </div>
 
                             </div>
