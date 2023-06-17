@@ -124,7 +124,7 @@ class ophthalmologist extends Component {
 
                     <div class="auto-container">
 
-                        <div class="row align-items-center">
+                        <div class="row">
 
                             <div class="col-lg-6">
                                 <div class="image-wrapper">

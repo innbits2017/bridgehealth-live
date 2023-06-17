@@ -1,9 +1,19 @@
 import React, { Component } from 'react';
 import Popup from 'reactjs-popup';
+import { Modal, Button } from "react-bootstrap";
 const BRIDGE_HEALTH_SITE = process.env.BRIDGE_HEALTH_SITE;
 
 
 class ContactForm extends Component {
+    state = {
+        isOpen: false
+    };
+    state1 = {
+        isOpen1: false
+    };
+    openModal = () => this.setState({ isOpen: true });
+    closeModal = () => this.setState({ isOpen: false });
+
     constructor(props) {
         super(props);
 
@@ -122,98 +132,49 @@ class ContactForm extends Component {
         const { buttonText, className, popupPosition } = this.props;
 
         return (
-            <Popup trigger={
-                <button className={`theme-btn btn-style-one ${className}`} type="submit" name="submit-form">
-                    <span className="btn-title btn-style-one">{buttonText}</span>
-                </button>
-            } position={popupPosition} repositionOnResize={true}>
-                <div className="contact-form-area">
-                    <div className="contact-form">
-                        <form onSubmit={this.handleSubmit} action="#">
-                            <div className="row clearfix">
-                                <div className="col-md-12 form-group">
-                                    <input
-                                        type="text"
-                                        value={username}
-                                        onChange={this.handleChange}
-                                        name="username"
-                                        id="name"
-                                        placeholder="Name*"
-                                        // required
-                                    />
-                                    {errors.username && <div className="error">{errors.username}</div>}
-                                </div>
+            <>
+           
+            <button className={`theme-btn btn-style-one ${className}`} type="submit" name="submit-form"  onClick={this.openModal}>
+                <span className="btn-title btn-style-one">{buttonText}</span>
+            </button>
+                <Modal show={this.state.isOpen} onHide={this.closeModal} className='popupform'>
+                    <Modal.Header closeButton>
+                    <div class="form-body">
+               <div class="row">
+                  <div class="form-holder">
+                     <div class="form-content">
+                        <div class="form-items">
+                           <form action="forms/contact.php" method="POST" class="requires-validation" onsubmit="return validateForm()">
+                              <div class="col-md-12 mb-2">
+                                 <input class="form-control widthinput" type="text" name="name" id="validationTooltip01" placeholder="Name" required></input>
+						
+                              </div>
+                              <div class="col-md-12 mb-2">
+                                 <input class="form-control widthinput" type="number" name="phone" id="validationServer05" placeholder="Email" required></input>
+                              </div>
+                              <div class="col-md-12 mb-2">
+                                 <input class="form-control widthinput" type="number" name="phone" id="validationServer05" placeholder="Phone No" required></input>
+                              </div>
+                              <div class="col-md-12 mb-2">
+                                 <textarea name="message" placeholder="Message here.." class="widthinput textareaheight"></textarea>
+                              </div>
+                              <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required></input>
+                                 <label class="form-check-label">I agree that Bridge Health may contact me at the email address or phone number above.
+</label>
+                              </div>
+                              <div class="form-button mt-3 text-center">
+                                 <input type="submit" name="submit" value="Submit" className='submitbutton'></input>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+                    </Modal.Header>
 
-                                <div className="col-md-12 form-group">
-                                    <input
-                                        type="text"
-                                        value={email}
-                                        onChange={this.handleChange}
-                                        name="email"
-                                        id="email"
-                                        placeholder="Email*"
-                                        // required
-                                    />
-                                    {errors.email && <div className="error">{errors.email}</div>}
-                                </div>
-
-                                <div className="col-md-12 form-group">
-                                    <input
-                                        type="text"
-                                        value={phone}
-                                        onChange={this.handleChange}
-                                        name="phone"
-                                        id="phone"
-                                        placeholder="Phone*"
-                                        // required
-                                    />
-                                    {errors.phone && <div className="error">{errors.phone}</div>}
-                                </div>
-
-                                <div className="col-md-12 form-group">
-                                    <textarea
-                                        name="message"
-                                        value={message}
-                                        onChange={this.handleChange}
-                                        id="message"
-                                        placeholder="Message"
-                                    ></textarea>
-                                </div>
-
-                                <div className="form-check">
-                                    <input
-                                        className="form-check-input"
-                                        type="checkbox"
-                                        id="checkbox1"
-                                        name="option1"
-                                        value="good"
-                                        required
-                                    />
-                                    <label className="form-check-label heading colorwhite agree-tick">
-                                        I agree that Bridge Health may contact me at the email address or phone number above.
-                                    </label>
-                                </div>
-
-                                <div className="col-md-12 form-group">
-
-                                    <div class="btn-box text-center btn5">
-                                        <button class="commonBtnforAll" type="submit" disabled={isSubmitDisabled}
-                                            onSubmit={e => this.handleSubmit(e)}
-                                            name="submit-form">SUBMIT</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        {submitted && (
-                            <div className="thankyou-popup" onClick={this.closePopup}>
-                                <h2>Thank You!</h2>
-                                <p>Your details has been successfully submitted. Thanks!</p>
-                                <button type='button' >OK</button>
-                            </div>
-                        )}
-                    </div>
-                </div>
-            </Popup>
+                </Modal></>
         );
     }
 }

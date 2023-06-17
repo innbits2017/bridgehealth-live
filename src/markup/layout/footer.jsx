@@ -1,6 +1,37 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 import { Link } from 'react-router-dom';
 import FooterFormValidation from '../element/footer-form-validation';
+$(document).ready(function(){
+    $('.toggle').click(function(){
+      $('.sidebar-contact').toggleClass('active')
+      $('.toggle').toggleClass('active')
+    })
+    })
+ $(document).ready(function(){
+    $('.toggle2').click(function(){
+      $('.sidebar-contact').toggleClass('active')
+      $('.toggle2').toggleClass('active')
+    })
+    })
+   var wasSubmitted = false;
+    function validateForm() {
+if(!wasSubmitted) {
+   wasSubmitted = true;
+   return wasSubmitted;
+ }
+ return false;
+   let x = document.forms["name"]["name"].value;
+   if (x == "") {
+       alert("Name must be filled out");
+  return false;
+  }
+  let phone = document.forms["phone"]["phone"].value;
+   if (phone == "") {
+       alert("phone must be filled out");
+  return false;
+}
+}
 
 class Footer extends Component {
 
@@ -120,7 +151,46 @@ class Footer extends Component {
                     </div>
                 </footer>
 
-
+                <div class="sidebar-contact" id="sidebarCont">
+         <div class="toggle">
+            <div class="talkTo"> <img src={require('../../assets/images/Group53.png')} alt=""/></div>
+         </div>
+         <div class="scroll">
+            <div class="form-body">
+               <div class="row">
+                  <div class="form-holder">
+                     <div class="form-content">
+                        <div class="form-items">
+                           <form action="forms/contact.php" method="POST" class="requires-validation" onsubmit="return validateForm()">
+                              <div class="col-md-12 mb-2">
+                                 <input class="form-control inputWidth" type="text" name="name" id="validationTooltip01" placeholder="Name" required></input>
+						
+                              </div>
+                              <div class="col-md-12 mb-2">
+                                 <input class="form-control inputWidth" type="number" name="phone" id="validationServer05" placeholder="Email" required></input>
+                              </div>
+                              <div class="col-md-12 mb-2">
+                                 <input class="form-control inputWidth" type="number" name="phone" id="validationServer05" placeholder="Phone No" required></input>
+                              </div>
+                              <div class="col-md-12 mb-2">
+                                 <textarea name="message" placeholder="Message here.." class="inputWidth"></textarea>
+                              </div>
+                              <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required></input>
+                                 <label class="form-check-label">I agree that Bridge Health may contact me at the email address or phone number above.
+</label>
+                              </div>
+                              <div class="form-button mt-3 text-center">
+                                 <input type="submit" name="submit" value="Submit"></input>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
             </>
         );
     }

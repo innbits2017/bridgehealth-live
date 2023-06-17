@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
-import Popup from 'reactjs-popup';
 import ContactForm from '../element/contact-form';
-
-
 const aboutbg = require('./../../assets/images/shape/b2c2.png');
-
 class b2cmembership extends Component {
 
   componentDidMount() {
@@ -15,7 +11,6 @@ class b2cmembership extends Component {
 
   constructor(props) {
     super(props);
-
     this.state = {
       username: '',
       email: '',
@@ -34,13 +29,9 @@ class b2cmembership extends Component {
   };
 
   handleChange = (event) => {
-    // console.log("I am handle change", event.target)
     const { name, value } = event.target;
     const errors = { ...this.state.errors };
-
-    // Clear the error for the changed field
     errors[name] = '';
-
     this.setState({
       [name]: value,
       errors
@@ -48,17 +39,13 @@ class b2cmembership extends Component {
   };
 
   handleSubmit = async (event) => {
-    // console.log("i am handle Submit", event)
     event.preventDefault();
-
     const { username, email, phone } = this.state;
     const errors = {};
-
     // Validate username
     if (username.trim() === '') {
       errors.username = 'Username is required';
     }
-
     // Validate email
     if (!email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
       errors.email = 'Invalid email format';
@@ -122,20 +109,12 @@ class b2cmembership extends Component {
       console.log('Email sent');
     }
   };
-
-
-
-
   render() {
-
     const { username, email, phone, message, isSubmitDisabled, errors, submitted } = this.state;
-
     return (
       <>
         <Header />
-
         <section class="team-section padding">
-          {/* About Section Two */}
           <section class="container-fluid">
             <div class="row align-items-center auto-container">
 
@@ -150,16 +129,10 @@ class b2cmembership extends Component {
                     </h2>
                     <h3 className='textleft marginTop40 b2c-heading'>Choose from a selection of<br></br> Annual Preventive Health plans
                     </h3>
-                    {/* <button class="commonBtnforAll btnleft">BOOK NOW</button> */}
-
                     <div class=" btnleft">
                       <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                     </div>
-
                   </div>
-
-
-
                 </div>
               </div>
               <div class="col-lg-6">
@@ -172,13 +145,6 @@ class b2cmembership extends Component {
             </div>
           </section>
         </section>
-        {/* <b2c_page /> */}
-        {/* <section>
-          <div class="image-five">
-          <img src={require('../../assets/images/shape/b2c2.png')} alt="" className='imgwidth' />
-          </div>
-          
-        </section>  */}
         <div class="container-fluid marginTop80">
           <div class="row">
             <div class="col-lg-2"></div>
@@ -189,35 +155,19 @@ class b2cmembership extends Component {
               <h3>Preventive Health Plans</h3>
               <div class="image-one">
                 <img src={require('../../assets/images/shape/imageb2c.png')} alt="" className='imgwidth' />
-
               </div>
-
-              {/* <div class="btn-box text-center btn5">
-                <button class="commonBtnforAll marCard">SAY YES!</button>
-
-              </div> */}
-
               <div class="btn-box  btn5">
                 <ContactForm buttonText="SAY YES!" popupPosition="right" />
               </div>
-
-
             </div>
             <div class="col-lg-2"></div>
-
-
           </div>
         </div>
-
         <section class="">
-
           <div class="container-fluid annualback">
-
             <div class="row">
-
               <div class="col-lg-6">
                 <div class="contact-form-area marleft">
-
                   <div class="sec-title persona3">
                     <h2 style={{ fontSize: 48 + 'px' }}>
                       <span className='headeingcolorblack'>Why </span>
@@ -226,11 +176,8 @@ class b2cmembership extends Component {
                     </h2>
                     <h4 className='textleft marginTop40'>A host of benefits await you as soon as you say <span className='headeingcolorblue'> YES</span>
                     </h4>
-
                   </div>
-
                   <div class="content-box">
-
                     <ul className='listicon'>
                       <li className='listper'>
                         <img className='listicon6' src={require('../../assets/images/shape/b21.png')} alt="" />
@@ -249,21 +196,15 @@ class b2cmembership extends Component {
                         Implement lifestyle changes for better quality of life
                       </li>
                     </ul>
-
                   </div>
-                  {/* <div class="btn-box text-center btn5">
-                    <button class="commonBtnforAll">SAY YES!</button>
-                  </div> */}
                   <div class="btn-box btn5">
                     <ContactForm buttonText="SAY YES!" popupPosition="right" />
                   </div>
-
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="image-wrapper">
                   <div class="image-one">
-                    {/* <img src={require('../../assets/images/shape/b2c3.png')} alt="" className='b2cimg' /> */}
                   </div>
                   <div>
                   </div>
@@ -274,56 +215,32 @@ class b2cmembership extends Component {
         </section>
 
         <section class="blogdesignerd1">
-
           <div class="container-fluid">
             <div class="row">
               <div class="col-lg-7">
-                {/* <div class="image-wrapper">
-                  <div class="image-one">
-                    <img src={require('../../assets/images/shape/b2c1.png')} alt="" className='b2cimg' />
-                  </div>
-                </div> */}
               </div>
-
               <div class="col-lg-5">
                 <div class="contact-form-area margintop145">
-
                   <div class="sec-title marginto90" >
                     <h2 style={{ fontSize: 48 + 'px' }} className='marginleft'>
                       <span className='headeingcolorblack'>Why </span>
                       <span className='headeingcolorblue'> Preventive </span><br></br>
                       <span className='headeingcolorblack '>Health Care?</span>
                     </h2>
-                    {/* <h4 className='textleft marginTop40'>A host of benefits await you as soon as you say <span className='headeingcolorblue'> YES</span>
-          </h4> */}
                     <p className='font20'>
                       Preventive healthcare helps in predicting & preventing
                       serious health conditions while prolonging your life.
                       It also helps you in making proactive choices regarding your mental health and lifestyle to stay fit at all times
                     </p>
-
                   </div>
-
-
-                  {/* <div class="contact-form btnright">
-
-                    <ContactForm buttonText="SAY YES!" />
-                  </div> */}
-                  {/* <div class="btn-box text-center btn5">
-                    <button class="commonBtnforAll">SAY YES!</button>
-
-                  </div> */}
-
                   <div class="btn-box text-center btn5">
                     <ContactForm buttonText="SAY YES!" popupPosition="left" />
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </section>
-      
         <section class="health-plan pt-5 d-lg-block">
             <div class="container-fluid aos-init aos-animate" data-aos="fade-up">
                <div class="section-header">
@@ -634,8 +551,6 @@ class b2cmembership extends Component {
                </div>
             </div>
          </section>
-
-
         {/* <!-- Contact Section --> */}
         <section class="contact-section">
           <section class="">
@@ -644,19 +559,15 @@ class b2cmembership extends Component {
                 <h2> <span className='headeingcolorblue'>CONTACT US</span>
                 </h2>
               </div>
-
             </div>
           </section>
           <div class="auto-container">
             <div class="row">
-
               <div class="col-lg-6">
                 <div class="contact-form-area">
-
                   {/* <!-- Contact Form--> */}
                   <div class="contact-form" style={{ marginTop: 5 + 'rem' }}>
-                    {/* <p>Reach out to us and we'll help you in setting up the best of <span className='headeingcolorblue'>Preventive Healthcare</span> Services for your teams.</p> */}
-                    <form method="post" onSubmit={this.handleSubmit} action="#" id="contact-form">
+                   <form method="post" onSubmit={this.handleSubmit} action="#" id="contact-form">
                       <div class="row clearfix">
                         <div class="col-md-12 form-group">
                           <input
@@ -730,9 +641,6 @@ class b2cmembership extends Component {
             </div>
           </div>
         </section>
-
-
-
         <Footer />
       </>
     )

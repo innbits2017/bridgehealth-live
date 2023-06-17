@@ -1,14 +1,40 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Nav, Tab, } from 'react-bootstrap';
+import $ from 'jquery';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
 const aboutbg = require('./../../assets/images/shape/car1.png');
-
+// $(document).ready(function(){
+//     $('.toggle').click(function(){
+//       $('.sidebar-contact').toggleClass('active')
+//       $('.toggle').toggleClass('active')
+//     })
+//     })
+//  $(document).ready(function(){
+//     $('.toggle2').click(function(){
+//       $('.sidebar-contact').toggleClass('active')
+//       $('.toggle2').toggleClass('active')
+//     })
+//     })
+//    var wasSubmitted = false;
+//     function validateForm() {
+// if(!wasSubmitted) {
+//    wasSubmitted = true;
+//    return wasSubmitted;
+//  }
+//  return false;
+//    let x = document.forms["name"]["name"].value;
+//    if (x == "") {
+//        alert("Name must be filled out");
+//   return false;
+//   }
+//   let phone = document.forms["phone"]["phone"].value;
+//    if (phone == "") {
+//        alert("phone must be filled out");
+//   return false;
+// }
+// }
 
 class Career extends Component {
 
@@ -168,7 +194,7 @@ class Career extends Component {
                                                     onChange={e => this.handleChange(e)}
                                                     placeholder="Search Topic"
                                                     required="" />
-                                                {/* <button type="submit" style={{marginLeft: 40 + '%'}}><span class="icon far fa-search searchblog"></span></button> */}
+                                                <button type="submit" className='submitsearch'><span class="icon far fa-search searchblog"></span></button>
                                             </div>
                                         </form>
                                         <div class="language marginleft10">
@@ -277,19 +303,58 @@ class Career extends Component {
                         <div class="col-lg-6">
                             <div class="image-wrapper">
                                 <div class="image-one">
-                                    <img src={require('../../assets/images/shape/career3.png')} alt="" className='widthimg' />
+                                    <img src={require('../../assets/images/shape/career3.png')} alt="" className='widthimg imgFloatRight' />
                                 </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
-
+                {/* <div class="sidebar-contact" id="sidebarCont">
+         <div class="toggle">
+            <div class="talkTo"><img src="assets/img/talkto.png"></img><span>Talk to a Health Advisor</span></div>
+         </div>
+         <div class="scroll">
+            <div class="form-body">
+               <div class="row">
+                  <div class="form-holder">
+                     <div class="form-content">
+                        <div class="form-items">
+                           <form action="forms/contact.php" method="POST" class="requires-validation" onsubmit="return validateForm()">
+                              <div class="col-md-12 mb-2">
+                                 <input class="form-control inputWidth" type="text" name="name" id="validationTooltip01" placeholder="Name" required></input>
+						
+                              </div>
+                              <div class="col-md-12 mb-2">
+                                 <input class="form-control inputWidth" type="number" name="phone" id="validationServer05" placeholder="Phone" required></input>
+                              </div>
+                         
+                              <div class="col-md-12 mb-2">
+                                 <textarea name="message" placeholder="Message here.." class="inputWidth"></textarea>
+                              </div>
+                              <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required></input>
+                                 <label class="form-check-label">I confirm that all data are correct</label>
+                              </div>
+                              <div class="form-button mt-3 text-center">
+                                 <input type="submit" name="submit" value="Submit"></input>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div> */}
                 <Footer />
 
             </>
         )
     }
+
+
+
 }
 
 export default Career;

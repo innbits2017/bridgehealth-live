@@ -535,6 +535,12 @@ img {
 	line-height: inherit;
 }
 
+.doctoeback
+{
+	background-position: left top;
+    background-size: contain !important;
+	background-image: url(../images/shape/roundesign.png);
+}
 /*** 
 
 ====================================================================
@@ -4186,7 +4192,7 @@ img.lazy-image.loaded {
 }
 
 .teamleader {
-	background-size: contain;
+	background-size: cover;
 	background-image: url(../images/shape/teamleader.png);
 	background-repeat: no-repeat;
 }
@@ -10088,13 +10094,24 @@ padding: 65px 30px;
 .flotrightimg {
 	float: right;
 }
-
+.darmanorepeat
+{
+	background-size: cover !important;
+    background-repeat: no-repeat;
+}
+.margin300
+{
+    margin-top: 339px !important;
+    margin-left: 36px;}
 .marginTop40 {
 	margin-top: 20px;
-	font-weight: 500 !important;
+	/* font-weight: 700 !important; */
 	margin-left: 0rem;
 }
-
+.dermabacktext
+{
+	background-image: url(../images/shape/dermato.png);
+}
 .sec-heading {
 	font-size: 40px;
 }
@@ -10194,9 +10211,10 @@ li {
 
 .column div {
 	position: relative;
-	padding: 12px;
-	box-shadow: 0px 6.26446px 12.5289px rgba(0, 0, 0, 0.25);
-	border-radius: 31.3223px;
+    padding: 12px;
+    padding-left: 20px !important;
+    padding-top: 15px;
+    border-radius: 31.3223px;
 }
 
 .column div:first-child {
@@ -10998,6 +11016,7 @@ a:not([href]):not([tabindex]) {
 	padding-bottom: 15px;
 	box-shadow: 0px 6.26446px 12.5289px rgba(0, 0, 0, 0.25);
 	border-radius: 31.3223px;
+	background-color: #fff;
 }
 
 .ourservice {
@@ -11017,7 +11036,7 @@ a:not([href]):not([tabindex]) {
 .ourservice1 {
 	background-image: url(../images/shape/Group237659.png);
 	background-size: cover;
-	padding-top: 150px !important;
+	padding-top: 300px !important;
 }
 
 .margintop175 {
@@ -11221,7 +11240,7 @@ hr {
 }
 
 .internalimp {
-	padding: 400px 0 60px !important; 
+	padding: 550px 0 60px !important; 
 }
 
 .fontSize {
@@ -11291,6 +11310,14 @@ hr {
 		font-size: 15px !important;
 		padding: 4px 21px !important;
 		border-radius: 24px;
+	}
+	.margin-left97 {
+		margin-left: 0px !important;
+		margin-bottom: 100px;
+	}
+	.marginleft8
+	{
+	  margin-left: 0%;
 	}
 	.videowidthMobile
 	{
@@ -12478,6 +12505,7 @@ text-align: center;	}
 
 .textaligncenter {
 	text-align: center !important;
+	font-weight: 600;
 }
 
 .martobutton {
@@ -12542,6 +12570,7 @@ text-align: center;	}
 div.longer-name {
 	display: none;
 	font-size: 17px;
+	background-color: #fff;
 	line-height: 28px;
 	font-weight: 500;
 }
@@ -13303,3 +13332,168 @@ margin-top: 50px;
   flex:none !important;
 	}
   }
+  .margin-left97
+  {
+	margin-left: -92px;
+  }
+  .colz
+  {
+	z-index:2 !important;
+  }
+  .marginleft8
+  {
+	margin-left: 8%;
+  }
+
+
+  /*--------------------------------------------------------------
+# Sidebar Contact
+--------------------------------------------------------------*/
+.sidebar-contact{
+    position: fixed;
+    top: 70%;
+    right: -281px;
+    transform: translateY(-50%);
+    width: 280px;
+    height: auto;
+    padding: 40px;
+    background: #1963C6;
+    box-sizing: border-box;
+    transition: 0.5s;
+	z-index:99;
+}
+.sidebar-contact .form-check-label {
+    color: #ffffff;
+    font-size: 13px;
+    margin-left: 30px;
+}
+.sidebar-contact.active{
+  right:0;
+}
+.sidebar-contact .inputWidth {
+	width:100%;
+}
+.sidebar-contact input,
+.sidebar-contact textarea{
+  font-size:13px;
+  font-weight:600;
+  padding:8px;
+  margin-bottom:10px;
+  box-sizing:border-box;
+  border:1px solid rgba(0,0,0,.5);
+  outline:none;
+}
+.sidebar-contact h2{
+  margin:0 0 20px;
+  padding:0;
+}
+.sidebar-contact textarea{
+  height:60px;
+  resize:none;
+}
+.sidebar-contact input[type="submit"]{
+  background: #FFFFFF;
+border-radius: 5px;
+padding-left:30px;
+padding-right:30px;
+  color:#1963C6;
+  cursor:pointer;
+  border:none;
+  font-size:16px;
+  text-align:center;
+}
+.toggle {
+    position: absolute;
+    cursor: pointer;
+    left: -39px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    direction: ltr!important;
+   
+}
+.talkTo {
+	-webkit-writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    border-radius: 4px 4px 0 0;
+    line-height: 9px;
+    font-size: 14px;
+    padding: 0px 0px;
+    color: #fff;
+    margin-top: -19px;
+
+}
+.talkTo span {
+	vertical-align: top;
+    
+}
+.talkTo img {margin-right:-7px; padding-bottom:5px;}
+@media(max-width:768px)
+{
+  .sidebar-contact{
+    width: 86%;
+    height: 42%;
+    right: -87%
+  }
+  .sidebar-contact .toggle{
+    /*top:30%;
+    transform:translateY(-50%);*/
+    transition:0.5s;
+  }
+  .sidebar-contact.active .toggle
+  {
+    /*top:91px;
+    right:0;
+    transform:translateY(0);*/
+  }
+  .scroll{
+    width:100%;
+    height:100%;
+    overflow-y:auto;
+  }
+
+}
+body > div.fade.popupform.modal.show > div > div > div
+{
+	border-bottom: none !important;
+
+}
+
+body > div.fade.popupform.modal.show > div > div
+{
+    width: 50% !important;
+	border-bottom: none !important;
+    background: #1963C6;}
+
+	@media only screen and (max-width: 600px)
+{body > div.fade.popupform.modal.show > div > div {
+	width: 80% !important;}
+}
+.widthinput
+{
+	width: 290px !important;
+    margin-bottom: 20px;}
+
+	.textareaheight
+	{
+		height: 150px;
+	}
+
+.form-check-label
+{
+	font-size: 16px;
+    color: #fff;
+    margin-right: 33px;
+    margin-left: 27px;
+}
+.submitbutton
+{
+	color: #000000;
+    border: 1px solid white;
+    font-weight: 600;
+    background: #fff !important;
+    text-transform: capitalize;
+    border-radius: 30px;
+    background-color: #1963C6;
+    padding: 10px 50px 10px 50px;
+}

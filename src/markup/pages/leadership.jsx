@@ -40,18 +40,9 @@ class leadership extends Component {
         return (
             <>
                 <Header />
-                {/* <!-- Page Banner Section --> */}
-                <section class="page-banner">
-                    <div className="page-banner-bg" style={{ backgroundImage: "url(" + aboutbg + ")" }}></div>
-                    <div class="bottom-rotten-curve alternate"></div>
+                
+                <img src={require('./../../assets/images/background/direct.jpg')} alt="" />
 
-                    <div class="auto-container">
-                        {/* <h1 className='colorwhite'>LeaderShip</h1> */}
-                        <h1 className='colorwhite'></h1>
-
-                    </div>
-
-                </section>
                 {/* <!--End Banner Section --> */}
 
                 {/* <!-- About Section Two --> */}

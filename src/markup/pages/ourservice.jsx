@@ -27,8 +27,8 @@ class ourservice extends Component {
                     <section class="auto-container ourservice">
                         <div class="row align-items-center ">
 
-                            <div class="col-lg-6">
-                                <div class="content-box boxsha">
+                            <div class="col-lg-6 colz">
+                                <div class="content-box boxsha marginleft8">
 
                                     <div class=" text-center textleft">
                                         <h2 className='textleft'><span className='headeingcolorblue'>Our Services</span></h2>
@@ -46,7 +46,7 @@ class ourservice extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/service222.png')} alt="" className='imgwidth' />
+                                        <img src={require('../../assets/images/shape/service222.png')} alt="" className='imgwidth margin-left97' />
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@ class ourservice extends Component {
                         <div class="auto-container">
                             <div class="row">
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp margintop100" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 colz team-block-one wow fadeInUp margintop100" >
                                     <div onClick={this.openModal}>
                                         <div class="expanded-text grow bozhover">
                                             <p class="text">
@@ -77,14 +77,14 @@ class ourservice extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp" >
                                     <div>
                                         <CaseStudy />
 
                                     </div>
                                 </div>
 
-                                <div class="col-lg-3 team-block-one wow fadeInUp margontop50" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 colz team-block-one wow fadeInUp margontop50" >
                                     <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/comprehensive-health-checks'}>
@@ -101,7 +101,7 @@ class ourservice extends Component {
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp margin100" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 colz team-block-one wow fadeInUp margin100" >
 
                                     <div class="expanded-text grow bozhover">
                                         <p class="text">
@@ -122,7 +122,7 @@ class ourservice extends Component {
                             </div>
                             <div class="row">
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp margintop100" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margintop100" >
                                     <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/psychological-health'}>
@@ -137,7 +137,7 @@ class ourservice extends Component {
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp" >
                                     <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/dental-consults'}>
@@ -154,7 +154,7 @@ class ourservice extends Component {
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp margontop50" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 colz team-block-one wow fadeInUp margontop50" >
                                     <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/dermatology'}>
@@ -168,7 +168,7 @@ class ourservice extends Component {
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp margin100" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 colz team-block-one wow fadeInUp margin100" >
                                     <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/ophthalmologist'}>
@@ -185,7 +185,7 @@ class ourservice extends Component {
                             </div>
                             <div class="row">
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp margintop100" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margintop100" >
                                     <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/physio-therapy'}>
@@ -201,7 +201,7 @@ class ourservice extends Component {
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp" >
                                     <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/elderly-care'}>
@@ -217,7 +217,7 @@ class ourservice extends Component {
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp margontop50" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margontop50" >
                                     <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/lab-tests'}>
@@ -231,7 +231,7 @@ class ourservice extends Component {
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp margin100" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margin100" >
                                     <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/diet-and-nutrition'}>
@@ -247,7 +247,7 @@ A healthy diet is the basis for good health. After all, you are what you eat. Fi
                             </div>
                             <div class="row">
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp margintop100" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margintop100" >
                                     <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/yoga-assessment'}>
@@ -263,7 +263,7 @@ A healthy diet is the basis for good health. After all, you are what you eat. Fi
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp" >
                                     <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/fitness-assessment'}>
@@ -278,7 +278,7 @@ A healthy diet is the basis for good health. After all, you are what you eat. Fi
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp margontop50" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margontop50" >
                                     <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/pharmacy'}>
@@ -296,7 +296,7 @@ A healthy diet is the basis for good health. After all, you are what you eat. Fi
                                     </div>
                                 </div>
                                 {/* <!-- Team Block One --> */}
-                                <div class="col-lg-3 team-block-one wow fadeInUp margin100" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                <div class="col-lg-3 team-block-one wow fadeInUp margin100" >
                                     <div class="expanded-text grow bozhover">
                                         <p class="text">
                                             <a href={'/nursing-at-home'}>
