@@ -109,11 +109,11 @@ class aboutUs extends Component {
                     <div class="auto-container ">
                         <div className='aboutcont '>
                             <div className='aboutbox '>
-                                <h3>OUR VISION</h3>
+                                <h3 className='underline'>OUR VISION</h3>
                                 <p className='textaligncenter'> Spread Happiness <br></br> Through Good Health</p>
 
                             </div><div className='aboutbox '>
-                                <h3 >OUR MISSION</h3>
+                                <h3 className='underline'>OUR MISSION</h3>
                                 <p className='textaligncenter'> Be Your Healthcare <br></br> Companion For Life</p>
                             </div>
                         </div>

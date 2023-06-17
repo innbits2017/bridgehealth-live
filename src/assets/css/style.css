@@ -11148,7 +11148,7 @@ a:not([href]):not([tabindex]) {
 }
 
 .footer-btn {
-	margin-left: 26%;
+	margin-left: 16%;
 }
 
 /* Blog page css */
@@ -12269,7 +12269,7 @@ text-align: center;	}
 
 .imgright {
 
-	margin-right: -16%;
+	margin-right: -18%;
 
 }
 
@@ -13503,3 +13503,19 @@ button {
     background: transparent;
     line-height: inherit;
 }
+.underline {
+	text-decoration: none; 
+	position: relative; 
+  }   
+
+ .underline:after {
+	 position: absolute;
+	 content: '';
+	 height: 2px;
+	 bottom: -4px; 
+	 margin: 0 auto;
+	   left: 0;
+	 right: 0;
+	 width: 30%;
+	 background: #000;
+ }
