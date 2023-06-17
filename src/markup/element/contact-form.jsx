@@ -61,9 +61,9 @@ class ContactForm extends Component {
         }
 
         // Validate email
-        if (!email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
-            errors.email = 'Invalid email format';
-        }
+        // if (!email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
+        //     errors.email = 'Invalid email format';
+        // }
 
         // Validate phone
         if (!phone.match(/^\d{10}$/)) {
@@ -133,45 +133,72 @@ class ContactForm extends Component {
 
         return (
             <>
-           
-            <button className={`theme-btn btn-style-one ${className}`} type="submit" name="submit-form"  onClick={this.openModal}>
-             <span>{buttonText}</span> 
-            </button>
+
+                <button className={`theme-btn btn-style-one ${className}`} type="submit" name="submit-form" onClick={this.openModal}>
+                    <span>{buttonText}</span>
+                </button>
                 <Modal show={this.state.isOpen} onHide={this.closeModal} className='popupform'>
                     <Modal.Header closeButton>
-                    <div class="form-body">
-               <div class="row">
-                  <div class="form-holder">
-                     <div class="form-content">
-                        <div class="form-items">
-                           <form action="forms/contact.php" method="POST" class="requires-validation" onsubmit="return validateForm()">
-                              <div class="col-md-12 mb-2">
-                                 <input class="form-control widthinput" type="text" name="name" id="validationTooltip01" placeholder="Name" required></input>
-						
-                              </div>
-                              <div class="col-md-12 mb-2">
-                                 <input class="form-control widthinput" type="number" name="phone" id="validationServer05" placeholder="Email" required></input>
-                              </div>
-                              <div class="col-md-12 mb-2">
-                                 <input class="form-control widthinput" type="number" name="phone" id="validationServer05" placeholder="Phone No" required></input>
-                              </div>
-                              <div class="col-md-12 mb-2">
-                                 <textarea name="message" placeholder="Message here.." class="widthinput textareaheight form-control"></textarea>
-                              </div>
-                              <div class="form-check">
-                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required></input>
-                                 <label class="form-check-label">I agree that Bridge Health may contact me at the email address or phone number above.
-</label>
-                              </div>
-                              <div class="form-button mt-3 text-center">
-                                 <input type="submit" name="submit" value="Submit" className='submitbutton'></input>
-                              </div>
-                           </form>
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="form-holder">
+                                    <div class="form-content">
+                                        <div class="form-items">
+                                            <form action="forms/contact.php" class="requires-validation" method="post" onSubmit={this.handleSubmit}>
+                                                <div class="col-md-12 mb-2">
+                                                    <input class="form-control widthinput"
+                                                        type="text"
+                                                        name="name"
+                                                        id="validationTooltip01"
+                                                        placeholder="Name"
+                                                    //   required
+                                                    ></input>
+                                                    {errors.username && <div className="error">{errors.username}</div>}
+                                                </div>
+                                                <div class="col-md-12 mb-2">
+                                                    <input class="form-control widthinput"
+                                                        type="text"
+                                                        name="phone"
+                                                        id="validationServer05"
+                                                        placeholder="Email"
+                                                    // required
+                                                    ></input>
+                                                    {errors.email && <div className="error">{errors.email}</div>}
+                                                </div>
+                                                <div class="col-md-12 mb-2">
+                                                    <input class="form-control widthinput"
+                                                        type="text"
+                                                        name="phone"
+                                                        id="validationServer05"
+                                                        placeholder="Phone No"
+                                                    // required
+                                                    ></input>
+                                                    {errors.phone && <div className="error">{errors.phone}</div>}
+                                                </div>
+                                                <div class="col-md-12 mb-2">
+                                                    <textarea name="message" placeholder="Message here.." class="widthinput textareaheight"></textarea>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required></input>
+                                                    <label class="form-check-label">I agree that Bridge Health may contact me at the email address or phone number above.
+                                                    </label>
+                                                </div>
+                                                <div class="form-button mt-3 text-center">
+                                                    <input type="submit" name="submit" value="Submit" className='submitbutton'></input>
+                                                </div>
+                                            </form>
+                                            {submitted && (
+                                                <div className="thankyou-popup" onClick={this.closePopup}>
+                                                    <h2>Thank You!</h2>
+                                                    <p>Your details has been successfully submitted. Thanks!</p>
+                                                    <button type='button' >OK</button>
+                                                </div>
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
                     </Modal.Header>
 
                 </Modal></>
