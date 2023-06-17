@@ -11316,9 +11316,20 @@ hr {
 .blogtext {
 	margin-left: 38% !important;
 }
-
+.text-align-center
+{
+	text-align: center;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	.leader-btn1 {
+		text-decoration: underline;
+		color: #00B2FF !important;
+		margin-top: -1rem;
+		margin-left: 50%;
+		font-size: 20px;
+		font-weight: 500;
+	}
 	.btn-style-one .btn-title {
 		position: relative;
 		z-index: 1;
@@ -11430,8 +11441,8 @@ text-align: center;	}
 	}
 
 	.b2cimgcenter .theme-btn {
-		margin-left: 30% !important;
-		margin-top: 15% !important;
+	    margin-left: 20% !important;
+    margin-top: 15% !important;
 	}
 
 	.imgright {
@@ -11918,7 +11929,7 @@ text-align: center;	}
 	.btn5 {
 		margin-bottom: 40px;
 		margin-top: -60px;
-		/* margin-left: -25%; */
+		margin-left: 12% !important;
 	}
 
 	.lead1 {
@@ -12043,6 +12054,15 @@ text-align: center;	}
 }
 
 @media only screen and (max-width: 600px) {
+	.health-plan .health-plan-title-1
+	{
+		min-height: 200px !important;
+	}
+	.health-plan .health-plan-title-2
+	{
+		min-height: 200px !important;
+
+	}
 	.inputfooter {
 		width: 90% !important;
 		margin-left: 0% !important;
@@ -12680,7 +12700,7 @@ body > div.fade.modal.show > div > div
 
 .videofull {
 	width: 100% !important;
-	margin-top: -2%;}
+	margin-top: 5%;}
 
 .diabeates {
 	font-weight: 100;

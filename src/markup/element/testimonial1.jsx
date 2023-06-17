@@ -495,7 +495,11 @@ class Testimonial1 extends Component {
                                 </Slider>
                             </div>
                             {/* SEE ALL */}
-
+                            <h6 class="leader-btn1">
+                                <a href={'/team'}>
+                                    SEE ALL
+                                </a>
+                            </h6>
                         </div>
                     </div>
                 </section>

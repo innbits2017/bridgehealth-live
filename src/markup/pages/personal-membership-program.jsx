@@ -156,9 +156,9 @@ class b2cmembership extends Component {
               <div class="image-one">
                 <img src={require('../../assets/images/shape/imageb2c.png')} alt="" className='imgwidth' />
               </div>
-              <div class="btn-box  btn5">
-                <ContactForm buttonText="SAY YES!" popupPosition="right" />
-              </div>
+              <div>
+                      <ContactForm buttonText="Say Yes" popupPosition="right" />
+                    </div>
             </div>
             <div class="col-lg-2"></div>
           </div>

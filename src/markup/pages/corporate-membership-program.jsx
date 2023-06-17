@@ -161,8 +161,11 @@ class corporate_membership_program extends Component {
                                         <i><span className='headeingcolorblue'>where you are </span></i>on your
                                         <i><span className='headeingcolorblue'> wellbeing journey </span></i>
                                     </h3>
-                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">
-                                        <span class="btn-title sec-heading1">GET QUOTE</span></button>
+                                    <div class="btn-box btn5">
+                                            <ContactForm buttonText="GET QUOTE" popupPosition="right" />
+                                        </div>
+                                    {/* <button class="theme-btn btn-style-one" type="submit" name="submit-form">
+                                        <span class="btn-title sec-heading1">GET QUOTE</span></button> */}
 
                                 </div>
                             </div>
@@ -193,13 +196,13 @@ class corporate_membership_program extends Component {
 
 
                 <div class="auto-container margin150">
-                    <div class="sec-title">
+                    <div class="sec-title text-align-center">
                         <h2>
                             <span className='headeingcolorblack'>THE CORPORATE </span>
                             <span className='headeingcolorblue'> WELLNESS </span>
                             <span className='headeingcolorblack'>MAP</span>
                         </h2>
-                        <h4 className='textleft marginTop40'>Where are you on the well being journey?
+                        <h4 className='marginTop40 text-align-center'>Where are you on the well being journey?
                         </h4>
                     </div>
 
