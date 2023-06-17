@@ -217,17 +217,16 @@ figure {
 	font-weight: 600;
 	text-transform: capitalize;
 	border-radius: 30px;
-	background-color: #1963C6;
+	/* background-color: #1963C6; */
+	background-image: url(../images/shape/button.png);
 	margin-top: 20px;
-	margin-left: 0rem;
+    margin-left: 0rem;
+    width: 244px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.btn-style-one::before {
-position: absolute;
-content: '';
-border: 0.629479px dashed #000000;
-border-radius: 18.3686px;
-}
 
 .btn-style-seven {
 	position: relative;
@@ -13496,4 +13495,11 @@ body > div.fade.popupform.modal.show > div > div
     border-radius: 30px;
     background-color: #1963C6;
     padding: 10px 50px 10px 50px;
+}
+button {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    background: transparent;
+    line-height: inherit;
 }

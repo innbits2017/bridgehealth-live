@@ -135,7 +135,7 @@ class ContactForm extends Component {
             <>
            
             <button className={`theme-btn btn-style-one ${className}`} type="submit" name="submit-form"  onClick={this.openModal}>
-                <span className="btn-title btn-style-one">{buttonText}</span>
+             <span>{buttonText}</span> 
             </button>
                 <Modal show={this.state.isOpen} onHide={this.closeModal} className='popupform'>
                     <Modal.Header closeButton>
