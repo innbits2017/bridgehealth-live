@@ -35,7 +35,7 @@ class ContactForm extends Component {
     };
 
     handleChange = (event) => {
-        // console.log("I am handle change", event.target)
+        console.log("I am handle change", event.target)
         const { name, value } = event.target;
         const errors = { ...this.state.errors };
 
@@ -61,9 +61,9 @@ class ContactForm extends Component {
         }
 
         // Validate email
-        // if (!email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
-        //     errors.email = 'Invalid email format';
-        // }
+        if (!email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
+            errors.email = 'Invalid email format';
+        }
 
         // Validate phone
         if (!phone.match(/^\d{10}$/)) {
@@ -148,7 +148,8 @@ class ContactForm extends Component {
                                                 <div class="col-md-12 mb-2">
                                                     <input class="form-control widthinput"
                                                         type="text"
-                                                        name="name"
+                                                        onChange={this.handleChange}
+                                                        name="username"
                                                         id="validationTooltip01"
                                                         placeholder="Name"
                                                     //   required
@@ -158,16 +159,17 @@ class ContactForm extends Component {
                                                 <div class="col-md-12 mb-2">
                                                     <input class="form-control widthinput"
                                                         type="text"
+                                                        onChange={this.handleChange}
                                                         name="phone"
                                                         id="validationServer05"
                                                         placeholder="Email"
                                                     // required
                                                     ></input>
-                                                    {errors.email && <div className="error">{errors.email}</div>}
                                                 </div>
                                                 <div class="col-md-12 mb-2">
                                                     <input class="form-control widthinput"
                                                         type="text"
+                                                        onChange={this.handleChange}
                                                         name="phone"
                                                         id="validationServer05"
                                                         placeholder="Phone No"

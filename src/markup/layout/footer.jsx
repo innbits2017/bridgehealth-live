@@ -2,38 +2,47 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import { Link } from 'react-router-dom';
 import FooterFormValidation from '../element/footer-form-validation';
-$(document).ready(function(){
-    $('.toggle').click(function(){
-      $('.sidebar-contact').toggleClass('active')
-      $('.toggle').toggleClass('active')
+$(document).ready(function () {
+    $('.toggle').click(function () {
+        $('.sidebar-contact').toggleClass('active')
+        $('.toggle').toggleClass('active')
     })
+})
+$(document).ready(function () {
+    $('.toggle2').click(function () {
+        $('.sidebar-contact').toggleClass('active')
+        $('.toggle2').toggleClass('active')
     })
- $(document).ready(function(){
-    $('.toggle2').click(function(){
-      $('.sidebar-contact').toggleClass('active')
-      $('.toggle2').toggleClass('active')
-    })
-    })
-   var wasSubmitted = false;
-    function validateForm() {
-if(!wasSubmitted) {
-   wasSubmitted = true;
-   return wasSubmitted;
- }
- return false;
-   let x = document.forms["name"]["name"].value;
-   if (x == "") {
-       alert("Name must be filled out");
-  return false;
-  }
-  let phone = document.forms["phone"]["phone"].value;
-   if (phone == "") {
-       alert("phone must be filled out");
-  return false;
-}
+})
+var wasSubmitted = false;
+function validateForm() {
+    if (!wasSubmitted) {
+        wasSubmitted = true;
+        return wasSubmitted;
+    }
+    return false;
+    let x = document.forms["name"]["name"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    let phone = document.forms["phone"]["phone"].value;
+    if (phone == "") {
+        alert("phone must be filled out");
+        return false;
+    }
 }
 
 class Footer extends Component {
+
+    state = {
+        isOpen: false
+    };
+    state1 = {
+        isOpen1: false
+    };
+    openModal = () => this.setState({ isOpen: true });
+    closeModal = () => this.setState({ isOpen: false });
 
     constructor(props) {
         super(props);
@@ -42,15 +51,115 @@ class Footer extends Component {
             username: '',
             email: '',
             phone: '',
-            message: '',
-            isSubmitDisabled: true,
-            errors: {}
+            errors: {
+                username: '',
+                email: '',
+                phone: ''
+            },
+            submitted: false
         };
     }
 
+    closePopup = () => {
+        this.setState({ submitted: false });
+    };
+
+    handleChange = (event) => {
+        // console.log("I am handle change", event.target)
+        const { name, value } = event.target;
+        const errors = { ...this.state.errors };
+
+        // Clear the error for the changed field
+        errors[name] = '';
+
+        this.setState({
+            [name]: value,
+            errors
+        });
+    };
+
+    handleSubmit = async (event) => {
+        // console.log("i am handle Submit", event)
+        event.preventDefault();
+
+        const { username, email, phone } = this.state;
+        const errors = {};
+
+        // Validate username
+        if (username.trim() === '') {
+            errors.username = 'Username is required';
+        }
+
+        // Validate email
+        // if (!email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
+        //     errors.email = 'Invalid email format';
+        // }
+
+        // Validate phone
+        if (!phone.match(/^\d{10}$/)) {
+            errors.phone = 'Phone number must be 10 digits';
+        }
+
+        // Update the state with the errors
+        this.setState({ errors });
+
+        // If there are no errors, submit the form
+        if (Object.keys(errors).length === 0) {
+            // Perform the form submission logic here
+            // e.g., call an API endpoint, update the database, etc.
+
+            // Reset the form
+            this.setState({
+                username: '',
+                email: '',
+                phone: '',
+                message: '',
+                errors: {
+                    username: '',
+                    email: '',
+                    phone: '',
+                    message: ''
+                }
+            });
+
+            // Show the "Thank you" message
+            this.setState({ submitted: true });
+
+            // Call the sendEmail function
+            await this.sendEmail();
+        }
+    };
+
+    sendEmail = async (e) => {
+        // e.preventDefault();
+
+        const { email, username, phone, message } = this.state;
+
+        const res = await fetch('https://mail.bridgehealth.in/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email, username, phone, message
+            }),
+        });
+
+        const data = await res.json();
+        console.log(data);
+
+        if (data.status === 401 || !data) {
+            console.log('error');
+        } else {
+            this.setState({ show: true, email: '', username: '', phone: '' });
+            console.log('Email sent');
+        }
+    };
+
+
 
     render() {
-
+        const { errors, submitted } = this.state;
 
         return (
             <>
@@ -152,45 +261,75 @@ class Footer extends Component {
                 </footer>
 
                 <div class="sidebar-contact" id="sidebarCont">
-         <div class="toggle">
-            <div class="talkTo"> <img src={require('../../assets/images/Group53.png')} alt=""/></div>
-         </div>
-         <div class="scroll">
-            <div class="form-body">
-               <div class="row">
-                  <div class="form-holder">
-                     <div class="form-content">
-                        <div class="form-items">
-                           <form action="forms/contact.php" method="POST" class="requires-validation" onsubmit="return validateForm()">
-                              <div class="col-md-12 mb-2">
-                                 <input class="form-control inputWidth" type="text" name="name" id="validationTooltip01" placeholder="Name" required></input>
-						
-                              </div>
-                              <div class="col-md-12 mb-2">
-                                 <input class="form-control inputWidth" type="number" name="phone" id="validationServer05" placeholder="Email" required></input>
-                              </div>
-                              <div class="col-md-12 mb-2">
-                                 <input class="form-control inputWidth" type="number" name="phone" id="validationServer05" placeholder="Phone No" required></input>
-                              </div>
-                              <div class="col-md-12 mb-2">
-                                 <textarea name="message" placeholder="Message here.." class="inputWidth"></textarea>
-                              </div>
-                              <div class="form-check">
-                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required></input>
-                                 <label class="form-check-label">I agree that Bridge Health may contact me at the email address or phone number above.
-</label>
-                              </div>
-                              <div class="form-button mt-3 text-center">
-                                 <input type="submit" name="submit" value="Submit"></input>
-                              </div>
-                           </form>
+                    <div class="toggle">
+                        <div class="talkTo"> <img src={require('../../assets/images/Group53.png')} alt="" /></div>
+                    </div>
+                    <div class="scroll">
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="form-holder">
+                                    <div class="form-content">
+                                        <div class="form-items">
+                                            <form action="forms/contact.php" method="post" class="requires-validation" onSubmit={this.handleSubmit}>
+                                                <div class="col-md-12 mb-2">
+                                                    <input class="form-control inputWidth"
+                                                        type="text"
+                                                        onChange={this.handleChange}
+                                                        name="username"
+                                                        id="validationTooltip01"
+                                                        placeholder="Name"
+                                                    //   required
+                                                    ></input>
+                                                    {errors.username && <div className="error">{errors.username}</div>}
+                                                </div>
+                                                <div class="col-md-12 mb-2">
+                                                    <input class="form-control inputWidth"
+                                                        type="text"
+                                                        onChange={this.handleChange}
+                                                        name="phone"
+                                                        id="validationServer05"
+                                                        placeholder="Email"
+                                                    // required
+                                                    ></input>
+                                                    {errors.email && <div className="error">{errors.email}</div>}
+                                                </div>
+                                                <div class="col-md-12 mb-2">
+                                                    <input class="form-control inputWidth"
+                                                        type="text"
+                                                        onChange={this.handleChange}
+                                                        name="phone"
+                                                        id="validationServer05"
+                                                        placeholder="Phone No"
+                                                    // required
+                                                    ></input>
+                                                    {errors.phone && <div className="error">{errors.phone}</div>}
+                                                </div>
+                                                <div class="col-md-12 mb-2">
+                                                    <textarea name="message" placeholder="Message here.." class="inputWidth"></textarea>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required></input>
+                                                    <label class="form-check-label">I agree that Bridge Health may contact me at the email address or phone number above.
+                                                    </label>
+                                                </div>
+                                                <div class="form-button mt-3 text-center">
+                                                    <input type="submit" name="submit" value="Submit"></input>
+                                                </div>
+                                            </form>
+                                            {submitted && (
+                                                <div className="thankyou-popup" onClick={this.closePopup}>
+                                                    <h2>Thank You!</h2>
+                                                    <p>Your details has been successfully submitted. Thanks!</p>
+                                                    <button type='button' >OK</button>
+                                                </div>
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+                    </div>
+                </div>
             </>
         );
     }
