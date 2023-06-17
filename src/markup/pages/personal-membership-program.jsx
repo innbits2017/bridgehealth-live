@@ -252,14 +252,14 @@ class b2cmembership extends Component {
                         <h3>Clinical Assessments</h3>
                      </div>
                      <div class="health-plan-title-2">
-                        <h3>Clinical Assessments</h3>
+                        <h3>Consultations</h3>
                      </div>
                      <div class="health-plan-title-3">
-                        <h3>Consults</h3>
+                        <h3>Additional Discounts (Up to)</h3>
                      </div>
-                     <div class="health-plan-title-4">
+                     {/* <div class="health-plan-title-4">
                         <h3>Discounts</h3>
-                     </div>
+                     </div> */}
                   </div>
                   <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                      <div class="health-plan-item featured">
@@ -274,111 +274,116 @@ class b2cmembership extends Component {
                            <li> Nutrition Health</li>
                            <li> Bone Health</li>
                            <li> Thyroid Profile	</li>
-                           <li> Oncology Assessment</li>
+                           <li> Oncology Screening</li>
                            <li> Respiratory Health</li>
-                           <li> Radiology - (+Echo)</li>
+                           <li> Radiology Screening</li>
                         </ul>
                         <ul class="clinicAss">
-                           <li> Doctor Consultations</li>
-                           <li> Additional Physician<br></br> Consults</li>
-                           <li> Specialist Consults</li>
-                           <li> Emotional Wellness <br></br> Webinars / Group <br></br>Sessions</li>
-                           <li> 1 to 1 Emotional <br></br> Health Consult</li>
-                           <li> Dental/Ophthal <br></br>Screening/Dermatology <br></br>Consult</li>
+                           <li> Physician Consults​</li>
+                           <li> Emotional Health<br></br> Consults</li>
+                           <li> Webinars and Group Sessions</li>
+                           <li> Dental, Eye and Derma Screening </li>
+                           <li> Nutrition Assessment and Consults</li>
+                           <li> Yoga/Fitness Assessments and Sessions</li>
+                           <li>App Access</li>
                         </ul>
                         <ul>
-                           <li> Dietary / Nutrition <br></br>Webinars</li>
-                           <li> 1 to 1 Dietician / <br></br> Nutrition Consult</li>
-                           <li> Group Yoga Sessions <br></br>(1 Hour)</li>
-                           <li> Yoga Sessions (1 Hour)</li>
+                           <li> Medicines/Pharmacy (At-Home Delivery)</li>
+                           <li> Lab tests/ Annual Plans for Family</li>
+                           <li> Physiotherapy for Self & family</li>
+                           <li> Home Sample Collection</li>
                         </ul>
-                        <ul>
+                        {/* <ul>
                            <li> Medicines / e-Pharmacy <br></br>for Self and Family</li>
                            <li> Physiotherapy Services <br></br>for Self and Family</li>
                            <li> Lab / Clinical Services <br></br>&amp; Retail Health Plans <br></br>for Family <br></br></li>
                            <li> Home Sample Collection</li>
                            <li> BH Mobile App-Access</li>
-                        </ul>
+                        </ul> */}
                         <p class="buy-btn">Price</p>
                      </div>
                   </div>
                   <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                      <div class="health-plan-item silver">
-                        <h3>Silver</h3>
+                        <h3>BH Blue</h3>
                         <ul>
-                           <li> 117 Tests with ECG &amp; U/S</li>
-                           <li><i class="bi bi-check"></i> </li>
-                           <li><i class="bi bi-check"></i> </li>
-                           <li><i class="bi bi-check"></i> </li>
-                           <li><i class="bi bi-check"></i> </li>
-                           <li><i class="bi bi-check"></i> </li>
-                           <li><i class="bi bi-check"></i> </li>
+                           <li> 101Tests  + ECG</li>
+                           <li><i class="fa-solid fa-check"></i></li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
                            <li>&nbsp;</li>
                            <li>&nbsp;</li>
                            <li>&nbsp;</li>
                            <li>&nbsp;</li>
-                           <li>ECG / Ultrasound Abdomen + Pelvis</li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+                           <li>ECG</li>
                         </ul>
                         <ul class="clincAss-2">
-                           <li>2</li>
-                           <li>Paid Consult</li>
-                           <li class="mt-3">10% Off</li>
-                           <li class="mt-3">4</li>
+                           <li class="mt-3">2</li>
+                           <li>1</li>
+                           <li><i class="fa-solid fa-check"></i></li>
+                           <li>&nbsp;</li>
                            <li>1</li>
                            <li>&nbsp;</li>
+                           <li><i class="fa-solid fa-check"></i></li>
                         </ul>
-                        <ul class="consults">
+                        {/* <ul class="consults">
                            <li>4</li>
                            <li>1</li>
                            <li>5</li>
                            <li>&nbsp;</li>
-                        </ul>
+                        </ul> */}
                         <ul class="discounts">
-                           <li>10% Off</li>
-                           <li>10% Off</li>
-                           <li>10% Off</li>
-                           <li>Paid</li>
+                           <li>10% </li>
+                           <li>10% </li>
+                           <li>10%</li>
+                           {/* <li>Paid</li> */}
                            <li><i class="bi bi-check"></i> </li>
                         </ul>
-                        <p class="buy-btn border-silver">₹7,999</p>
+                        <p class="buy-btn border-blue">₹7,999</p>
                      </div>
                   </div>
                   <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                      <div class="health-plan-item silver">
-                        <h3>Silver</h3>
+                        <h3>BH Silver</h3>
                         <ul>
-                           <li> 117 Tests with ECG &amp; U/S</li>
-                           <li><i class="bi bi-check"></i> </li>
-                           <li><i class="bi bi-check"></i> </li>
-                           <li><i class="bi bi-check"></i> </li>
-                           <li><i class="bi bi-check"></i> </li>
-                           <li><i class="bi bi-check"></i> </li>
-                           <li><i class="bi bi-check"></i> </li>
+                           <li> 118 Tests + ECG + USG</li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
                            <li>&nbsp;</li>
                            <li>&nbsp;</li>
                            <li>&nbsp;</li>
                            <li>&nbsp;</li>
-                           <li>ECG / Ultrasound Abdomen + Pelvis</li>
+                           <li>ECG, USG (ABD. & PELVIS)</li>
                         </ul>
                         <ul class="clincAss-2">
                            <li>2</li>
-                           <li>Paid Consult</li>
-                           <li class="mt-3">10% Off</li>
-                           <li class="mt-3">4</li>
                            <li>1</li>
+                           <li><i class="fa-solid fa-check"></i> </li>
                            <li>&nbsp;</li>
+                           <li class="mt-3">1</li>
+                           <li>&nbsp;</li>
+                           <li><i class="fa-solid fa-check"></i> </li>
                         </ul>
-                        <ul class="consults">
+                        {/* <ul class="consults">
                            <li>4</li>
                            <li>1</li>
                            <li>5</li>
                            <li>&nbsp;</li>
-                        </ul>
+                        </ul> */}
                         <ul class="discounts">
-                           <li>10% Off</li>
-                           <li>10% Off</li>
-                           <li>10% Off</li>
-                           <li>Paid</li>
+                           <li>10% </li>
+                           <li>10% </li>
+                           <li>10% </li>
+                           {/* <li>Paid</li> */}
                            <li><i class="bi bi-check"></i> </li>
                         </ul>
                         <p class="buy-btn border-silver">₹7,999</p>
@@ -386,39 +391,41 @@ class b2cmembership extends Component {
                   </div>
                   <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                      <div class="health-plan-item gold">
-                        <h3>GOLD</h3>
+                        <h3>BH GOLD</h3>
                         <ul>
-                           <li>122 Tests with ECG &amp; U/S</li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
+                           <li>122 Tests + ECG + USG</li>
+                           <li><i class="fa-solid fa-check"></i></li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
                            <li>&nbsp;</li>
                            <li>&nbsp;</li>
-                           <li>ECG / Ultrasound Abdomen + Pelvis + ECHO</li>
+                           <li>ECG, USG (ABD. & PELVIS),ECHO</li>
                         </ul>
                         <ul class="clincAss-2">
-                           <li> 2</li>
-                           <li>Paid Consult</li>
-                           <li class="mt-3">10% Off</li>
-                           <li class="mt-3">12</li>
                            <li>2</li>
+                           <li>2</li>
+                           <li><i class="fa-solid fa-check"></i></li>
                            <li>&nbsp;</li>
+                           <li>4</li>
+                           <li>5</li>
+                           <li><i class="fa-solid fa-check"></i></li>
                         </ul>
-                        <ul class="consults">
+                        {/* <ul class="consults">
                            <li>12</li>
                            <li>4</li>
                            <li>&nbsp;</li>
                            <li>5</li>
-                        </ul>
+                        </ul> */}
                         <ul class="discounts">
-                           <li>15% Off</li>
-                           <li>15% Off</li>
-                           <li>15% Off</li>
+                           <li>15%</li>
+                           <li>15%</li>
+                           <li>10%</li>
                            <li>Free</li>
                            <li><i class="bi bi-check"></i> </li>
                         </ul>
@@ -427,39 +434,41 @@ class b2cmembership extends Component {
                   </div>
                   <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                      <div class="health-plan-item platinum">
-                        <h3>Platinum</h3>
+                        <h3>BH Platinum</h3>
                         <ul>
-                           <li>138 Tests with Echo &amp; U/S</li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li>X-Ray / Echo / Ultrasound Abdomen + Pelvis / Breast Screening</li>
+                           <li>138 Tests + ECG + USG</li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li>X-ray, ECG, USG (ABD. & PELVIS), ECHO</li>
                         </ul>
                         <ul class="platinumMinh">
                            <li>2</li>
-                           <li>Unlimited</li>
-                           <li class="mt-3">10% Off</li>
-                           <li class="mt-3">Unlimited</li>
                            <li>2</li>
+                           <li><i class="fa-solid fa-check"></i></li>
                            <li>&nbsp;</li>
+                           <li>4</li>
+                           <li>15</li>
+                           <li><i class="fa-solid fa-check"></i></li>
                         </ul>
-                        <ul class="consults">
+                        {/* <ul class="consults">
                            <li>Unlimited</li>
                            <li>4</li>
                            <li>&nbsp;</li>
                            <li>15</li>
-                        </ul>
+                        </ul> */}
                         <ul class="discounts">
-                           <li>20% Off</li>
-                           <li>1 Session + 10% Off</li>
-                           <li>15% Off</li>
+                           <li>20%</li>
+                           <li>15%</li>
+                           <li>1 session + 10%</li>
                            <li>Free</li>
                            <li><i class="bi bi-check"></i> </li>
                         </ul>
@@ -468,39 +477,41 @@ class b2cmembership extends Component {
                   </div>
                   <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                      <div class="health-plan-item platinum-plus">
-                        <h3>Platinum +</h3>
+                        <h3>BH Platinum +</h3>
                         <ul>
-                           <li>222 Tests with Echo &amp; U/S</li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li><i class="bi bi-check"></i></li>
-                           <li>X-Ray / Echo / Ultrasound Abdomen + Pelvis / Breast Screening</li>
+                           <li>222 Tests + ECG + USG</li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li><i class="fa-solid fa-check"></i> </li>
+                           <li>X-ray, ECG, USG (ABD. & PELVIS), ECHO</li>
                         </ul>
                         <ul class="platinumMinh">
                            <li>4</li>
-                           <li>Unlimited</li>
-                           <li class="mt-3">10% Off</li>
-                           <li class="mt-3">Unlimited</li>
                            <li>4</li>
-                           <li>1</li>
+                           <li><i class="fa-solid fa-check"></i></li>
+                           <li><i class="fa-solid fa-check"></i></li>
+                           <li>4</li>
+                           <li>15</li>
+                           <li><i class="fa-solid fa-check"></i></li>
                         </ul>
-                        <ul class="consults">
+                        {/* <ul class="consults">
                            <li>Unlimited</li>
                            <li>4</li>
                            <li>&nbsp;</li>
                            <li>15</li>
-                        </ul>
+                        </ul> */}
                         <ul class="discounts">
-                           <li>20% Off</li>
-                           <li>1 Session + 10% Off</li>
-                           <li>15% Off</li>
+                           <li>20% </li>
+                           <li>15%</li>
+                           <li>1 session + 10%</li>
                            <li>Free</li>
                            <li><i class="bi bi-check"></i> </li>
                         </ul>
@@ -516,27 +527,31 @@ class b2cmembership extends Component {
                   
                   <div class="col-md-1 col-md-6">
                      <div class="d-flex">
-                        <a href="pay.php/?amt=799900" class="getStarted">Get Started</a>
+                        <a href="https://razorpay.com/payment-link/inv_M2vyRWdM09nxcw" class="getStarted">Get Started</a>
                      </div>
                   </div>
                   <div class="col-md-1 col-md-6">
                      <div class="d-flex">
-                        <a href="pay.php/?amt=1699900" class="getStarted">Get Started</a>
+                        {/* <a href="pay.php/?amt=1699900" class="getStarted">Get Started</a> */}
+                        <a href="https://razorpay.com/payment-link/inv_M2vyRWdM09nxcw" class="getStarted">Get Started</a>
                      </div>
                   </div>
                   <div class="col-md-1 col-md-6">
                      <div class="d-flex">
-                        <a href="pay.php/?amt=2499900" class="getStarted">Get Started</a>
+                        {/* <a href="pay.php/?amt=2499900" class="getStarted">Get Started</a> */}
+                        <a href="https://razorpay.com/payment-link/inv_M2w1L4i4SwsI7p" class="getStarted">Get Started</a>
                      </div>
                   </div>
                   <div class="col-md-1 col-md-6">
                      <div class="d-flex">
-                        <a href="pay.php/?amt=2999900" class="getStarted">Get Started</a>
+                        {/* <a href="pay.php/?amt=2999900" class="getStarted">Get Started</a> */}
+                        <a href="https://razorpay.com/payment-link/inv_M2w30g1YwaCMwd" class="getStarted">Get Started</a>
                      </div>
                   </div>
                   <div class="col-md-1 col-md-6">
                      <div class="d-flex">
-                        <a href="pay.php/?amt=2999900" class="getStarted">Get Started</a>
+                        {/* <a href="pay.php/?amt=2999900" class="getStarted">Get Started</a> */}
+                        <a href="https://razorpay.com/payment-link/inv_M2wMTGZG5XdOa0" class="getStarted">Get Started</a>
                      </div>
                   </div>
                </div>

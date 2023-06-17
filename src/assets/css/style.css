@@ -12879,7 +12879,7 @@ margin-top: 50px;
 	color: #fff !important;
 }
 
-.getstarted {
+/* .getstarted {
 	width: 70% !IMPORTANT;
 	float: right;
 	margin-top: -26px;
@@ -12888,7 +12888,7 @@ margin-top: 50px;
 	font-weight: 600;
 	letter-spacing: 0em;
 	text-align: center;
-}
+} */
 
 .thankyou-popup {
 	width: 400px;
@@ -13149,7 +13149,7 @@ margin-top: 50px;
   .getStarted {
 	  text-transform: uppercase;
 	  display: inline-block;
-	  padding: 12px 35px;
+	  padding: 9px 18px;
 	  background: #E8EFF9;
 	  border-radius: 5px;
 	  text-align: center;
@@ -13181,10 +13181,11 @@ margin-top: 50px;
 	  width: 100%;
   }
   
-  .border-silver {border:2px solid #1963C6; color:#00527C;}
-  .border-gold {border:2px solid #804D05; color:#804D05;}
-  .border-platinum {border:2px solid #4A4A4A; color:#484848;}
-  .border-platinum-plus {border:2px solid #5B5B77; color:#484848;}
+  .border-blue {border:2px solid #1963C6; color:#00527C; margin-top: 5.3rem;}
+  .border-silver {border:2px solid #1963C6; color:#00527C; margin-top: 4rem;}
+  .border-gold {border:2px solid #804D05; color:#804D05; margin-top: 2.2rem;}
+  .border-platinum {border:2px solid #4A4A4A; color:#484848; margin-top: 3.4rem;}
+  .border-platinum-plus {border:2px solid #5B5B77; color:#484848; margin-top: 2.2rem;}
   
   .health-plan .featured h3 {
 	  background-color: #E8EFF9;
