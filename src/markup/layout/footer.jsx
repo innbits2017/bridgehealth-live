@@ -277,7 +277,7 @@ class Footer extends Component {
                                                         onChange={this.handleChange}
                                                         name="username"
                                                         id="validationTooltip01"
-                                                        placeholder="Name"
+                                                        placeholder="Name*"
                                                     //   required
                                                     ></input>
                                                     {errors.username && <div className="error">{errors.username}</div>}
@@ -291,7 +291,7 @@ class Footer extends Component {
                                                         placeholder="Email"
                                                     // required
                                                     ></input>
-                                                    {errors.email && <div className="error">{errors.email}</div>}
+                                                    {/* {errors.email && <div className="error">{errors.email}</div>} */}
                                                 </div>
                                                 <div class="col-md-12 mb-2">
                                                     <input class="form-control inputWidth"
@@ -299,7 +299,7 @@ class Footer extends Component {
                                                         onChange={this.handleChange}
                                                         name="phone"
                                                         id="validationServer05"
-                                                        placeholder="Phone No"
+                                                        placeholder="Phone No*"
                                                     // required
                                                     ></input>
                                                     {errors.phone && <div className="error">{errors.phone}</div>}

@@ -294,7 +294,7 @@ class corporate_membership_program extends Component {
                                                         value={this.state.email}
                                                         onChange={e => this.handleChange(e)}
                                                         id="name"
-                                                        placeholder="Email*"
+                                                        placeholder="Email"
                                                         required="" />
                                                 </div>  <div class="col-md-12 form-group">
                                                     <input

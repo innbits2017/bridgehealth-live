@@ -606,7 +606,7 @@ class b2cmembership extends Component {
                             id="name"
                             placeholder="Email"
                           />
-                          {errors.email && <div className="error">{errors.email}</div>}
+                          {/* {errors.email && <div className="error">{errors.email}</div>} */}
                         </div>  <div class="col-md-12 form-group">
                           <input
                             type="text"

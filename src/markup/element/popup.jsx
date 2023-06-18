@@ -42,7 +42,7 @@ class ContactPopup extends Component {
                 <input type="email"
                     name="email"
                     id="email"
-                    placeholder="Email*"
+                    placeholder="Email"
                     required
                 />
             </div>

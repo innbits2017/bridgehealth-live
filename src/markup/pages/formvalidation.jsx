@@ -147,10 +147,10 @@ class FormValidation extends Component {
                                         onChange={this.handleChange}
                                         name="email"
                                         id="email"
-                                        placeholder="Email*"
+                                        placeholder="Email"
                                     // required
                                     />
-                                    {errors.email && <div className="error">{errors.email}</div>}
+                                    {/* {errors.email && <div className="error">{errors.email}</div>} */}
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <input type="text"
