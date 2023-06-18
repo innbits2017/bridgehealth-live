@@ -34,7 +34,7 @@ class CaseStudy extends Component {
                     </p>
                 </div>
                 <Modal show={this.state.isOpen} onHide={this.closeModal}>
-                    <Modal.Header closeButton>
+                    <Modal.Header>
                         <a href={'/diabetes'}>
                             <span><img class="width50" src={require('../../assets/images/shape/popup3.png')} alt="" />
                                 <p className='width50p'>Diabetes Management</p>

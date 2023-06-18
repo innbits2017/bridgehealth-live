@@ -1,10 +1,9 @@
-import React, { Component, useRef } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../layout/header';
 import Footer from '../layout/footer';
 import Testimonial1 from '../element/testimonial1';
 import Testimonial2 from '../element/testimonial2';
-import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import { Modal, Button } from "react-bootstrap";
 import CaseStudy from '../element/case-study';
@@ -663,17 +662,17 @@ class Index extends Component {
                             </div>
 
                         </div>
-                        <div class="row">
-                            <button class="theme-btn btn-style-one btnblog blogtext" type="submit" name="submit-form">
-                                <a href='/blog'>
-                                    <span class="btn-title btnblog">READ ALL BLOGS</span>
-                                </a>
-
-                            </button>
-                        </div>
-                        {/* <div class="button-txt">
-                            <Button class="btn"></Button>
-                        </div> */}
+                        <section>
+                            <div class="auto-container">
+                                <div class="btn-box text-center btn5">
+                                    <button class="btn-style-one btnblog">
+                                        <a href='/blog'>
+                                            <span class="btn-title btnblog">READ ALL BLOGS</span>
+                                        </a>
+                                    </button>
+                                    </div>
+                            </div>
+                        </section>
 
                     </div>
                 </section>
@@ -716,12 +715,8 @@ class Index extends Component {
                                 <p className='width50p'>Corporate Membership Programme</p>
                             </span>
                         </a>
-
                     </Modal.Header>
-
                 </Modal>
-
-
                 <Footer />
             </>
         )

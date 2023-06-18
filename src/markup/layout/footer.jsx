@@ -21,16 +21,6 @@ function validateForm() {
         return wasSubmitted;
     }
     return false;
-    let x = document.forms["name"]["name"].value;
-    if (x == "") {
-        alert("Name must be filled out");
-        return false;
-    }
-    let phone = document.forms["phone"]["phone"].value;
-    if (phone == "") {
-        alert("phone must be filled out");
-        return false;
-    }
 }
 
 class Footer extends Component {
@@ -194,7 +184,7 @@ class Footer extends Component {
                                                         <li><a href={'/our-services'}>Our Services</a></li>
                                                         <li><a href={'/personal-membership-program'}>Personal Memberships</a></li>
                                                         <li><a href={'/corporate-membership-program'}>Corporate Memberships</a></li>
-                                                        <li><a href={'/#'}>Health Risk Assessment</a></li>
+                                                        <li><a href={'/health-risk-assessment'}>Health Risk Assessment</a></li>
                                                         {/* <li><Link to={'/#'}>Experience Center</Link></li> */}
 
                                                     </ul>

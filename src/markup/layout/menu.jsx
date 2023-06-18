@@ -23,7 +23,7 @@ class Menu extends Component {
                             <li><a href='/career'>Career</a></li>
                             <li><a href='/contact-us'>Contact</a></li>
                             <li><a href='/personal-membership-program'>Health Plans</a></li>
-                            <li><a href='/'>Health Risk Assessment</a></li>
+                            <li><a href='/health-risk-assessment'>Health Risk Assessment</a></li>
 
 
                         </ul>

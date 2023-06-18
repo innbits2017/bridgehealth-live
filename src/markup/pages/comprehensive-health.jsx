@@ -155,7 +155,7 @@ class comprehensiveHealth extends Component {
 
 
                         </div>
-                        <div class="row derm-data">
+                        <div class="row">
                             <div class="col-sm-4 healts">
 
                                 <img src={require('../../assets/images/gallery/health4.png')} alt="" class="avtar " />
@@ -291,9 +291,7 @@ class comprehensiveHealth extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                             <ContactForm buttonText="BOOK NOW" popupPosition="right" />
-
                         </div>
                     </div>
                 </section>

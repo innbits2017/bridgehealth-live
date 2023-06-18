@@ -5,41 +5,7 @@ import Footer from '../layout/footer'
 
 
 const aboutbg = require('./../../assets/images/shape/car1.png');
-// $(document).ready(function(){
-//     $('.toggle').click(function(){
-//       $('.sidebar-contact').toggleClass('active')
-//       $('.toggle').toggleClass('active')
-//     })
-//     })
-//  $(document).ready(function(){
-//     $('.toggle2').click(function(){
-//       $('.sidebar-contact').toggleClass('active')
-//       $('.toggle2').toggleClass('active')
-//     })
-//     })
-//    var wasSubmitted = false;
-//     function validateForm() {
-// if(!wasSubmitted) {
-//    wasSubmitted = true;
-//    return wasSubmitted;
-//  }
-//  return false;
-//    let x = document.forms["name"]["name"].value;
-//    if (x == "") {
-//        alert("Name must be filled out");
-//   return false;
-//   }
-//   let phone = document.forms["phone"]["phone"].value;
-//    if (phone == "") {
-//        alert("phone must be filled out");
-//   return false;
-// }
-// }
-
 class Career extends Component {
-
-
-
     constructor(props) {
         super(props);
         this.state = {
@@ -75,7 +41,6 @@ class Career extends Component {
         };
     }
 
-
     componentDidMount() {
         // Initially, set filteredJobs to contain all jobs
         this.setState({ filteredJobs: this.state.jobs });
@@ -90,7 +55,6 @@ class Career extends Component {
             this.filterJobs();
         });
     };
-
 
     filterJobs = () => {
         const { searchTerm, jobs } = this.state;
@@ -114,8 +78,6 @@ class Career extends Component {
         // this.props.onSearch(this.state.searchTerm);
         this.filterJobs();
     };
-
-
     render() {
 
         const { filteredJobs } = this.state;
@@ -124,9 +86,9 @@ class Career extends Component {
 
                 <Header />
 
-                <section class="internalpage internalimp  internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
+                <section class="internalpage carrerpadding  internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
                     <div class="auto-container">
-                        <div class="content-box">
+                        <div class="content-box careerbox">
 
                             <div class=" text-center textleft">
                                 <h2 className='textleft fontSize'>
@@ -144,46 +106,35 @@ class Career extends Component {
                     </div>
                 </section>
 
-                <section class="contact-section career-head1">
-                    <div className="car-head2">
-                        <h2>
-                            <svg width="70" height="69" viewBox="0 0 84 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M55.1264 23.8419V18.7026C55.1254 18.0252 54.9889 17.3548 54.7249 16.7308C54.461 16.1067 54.0748 15.5415 53.5892 15.0682C52.5966 14.1009 51.2637 13.5603 49.8764 13.5625H34.1264C32.7391 13.5603 31.4062 14.1009 30.4136 15.0682C29.9279 15.5415 29.5418 16.1067 29.2778 16.7308C29.0139 17.3548 28.8774 18.0252 28.8764 18.7026V23.8419M70.8789 23.8419H13.1289C11.6791 23.8419 10.5039 24.9922 10.5039 26.4116V67.5268C10.5039 68.9461 11.6799 70.0972 13.1289 70.0972H70.8789C72.3287 70.0972 73.5039 68.9461 73.5039 67.5268V26.4124C73.5039 24.993 72.3279 23.8419 70.8789 23.8419Z" stroke="#FBAD17" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M73.5039 41.287C63.9304 46.7088 53.0617 49.556 42.0014 49.5392C30.9428 49.556 20.0757 46.7096 10.5039 41.2895M38.0643 39.2598H45.9385" stroke="#FBAD17" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg> OPEN POSITIONS
-                        </h2>
+                <section>
+                    <div class="auto-container">
+                        <div class="text-center btn5 careertitle">
+                        <img src={require('../../assets/images/shape/careersicon.png')} alt="" />
+                        </div>
                     </div>
-
-                    {/* <div className="search-fil">
+                    {/* <!-- Search --> */}
+                    <div className=''>
                         <form onSubmit={e => this.handleSubmit(e)}>
-
-                            <div className="search-container">
-                                <input
-                                    name="search"
-                                    type="text"
-                                    placeholder="Search Topic"
-                                    value={this.state.searchTerm}
-                                    onChange={e => this.handleChange(e)}
-                                />
-                                <button type="submit" className="search-button">
-                                    <FontAwesomeIcon icon={faSearch} />
-                                </button>
-                            </div>
-                        </form>
-
-                        <select className="filter-search">
-                            <option value="">Filter</option>
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
-                            <option value="option3">Option 3</option>
-                        </select>
-                    </div> */}
+                        <div class="form-group1">
+                            <input
+                                type="search"
+                                name="search-field"
+                                value={this.state.searchTerm}
+                                onChange={e => this.handleChange(e)}
+                                placeholder="Search Topic"
+                                required="" />
+                            <button type="submit" className='submitsearch'><span class="icon far fa-search searchblog"></span></button>
+                        </div>
+                    </form>
+                    </div>
+                </section>
+                {/* 
+                <section class="career-head1">
                     <div class="container">
                         <div class="row" style={{ background: 'white' }}>
                             <div class="col-lg-8">
 
                                 <div class="bg-white p-5 ">
-                                    {/* <!-- Search --> */}
                                     <div class=" search-box">
                                         <form onSubmit={e => this.handleSubmit(e)}>
                                             <div class="form-group1">
@@ -212,16 +163,19 @@ class Career extends Component {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
 
-                <section class=" career-head">
+                <section class="auto-container marginTop50">
                     {filteredJobs.map((job, index) => (
                         <div class="job-card" key={index}>
                             <div class="job-card-header">
-                                <h3 class="job-title">{job.title}</h3>
-                                <div className='careerpadding'>   <span class="job-location"><img src={require('../../assets/images/shape/iconmap.png')} alt="" className='padeight' />
+                                <div>
+                                <span class="job-title">{job.title}</span>
+                                <span class="job-department"><span className='fontweight'>Department:</span> {job.department}</span>
 
+                                </div>
+                                <div className='careerpadding'>   <span class="job-location"><img src={require('../../assets/images/shape/iconmap.png')} alt="" className='padeight' />
                                     {job.location}</span>
                                     <span class="job-timing">
                                         <img src={require('../../assets/images/shape/icontime.png')} alt="" className='padeight' /> {job.timing}</span></div>
@@ -229,11 +183,11 @@ class Career extends Component {
                                     <a href="#" class="view-position">View Position &#8594;</a>
                                 </div>
                             </div>
-
+{/* 
                             <div class="job-card-details">
                                 <p class="job-department"><span className='fontweight'>Department:</span> {job.department}</p>
 
-                            </div>
+                            </div> */}
 
                         </div>
                     ))}
@@ -348,7 +302,6 @@ class Career extends Component {
          </div>
       </div> */}
                 <Footer />
-
             </>
         )
     }

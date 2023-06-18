@@ -14,9 +14,7 @@ class ophthalmologist extends Component {
     render() {
         return (
             <>
-
                 <Header />
-
                 <section class="internalpage style-two internalpageresponsive" style={{ backgroundImage: "url(" + abouteye + ")" }}>
                     <div class="auto-container">
                         <div class="content-box">
@@ -42,10 +40,7 @@ class ophthalmologist extends Component {
 
                     </div>
                 </section>
-
-
                 <section class="contact-section">
-
                     <div class="auto-container">
                         <div class="row align-items-center">
                             <div class="col-lg-6">
@@ -59,14 +54,12 @@ class ophthalmologist extends Component {
                                 <div class="contact-form-area">
 
                                     <div class="sec-title squrebox">
-                                        {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
                                             Our eyes are the windows to the world. They allow us to see every detail and colour, near and far. However, because of our modern-day habits and work,
                                             we spend too much time looking at screens which strains our eyes. We also tend to blink less which leads to dry eyes. These factors contribute to poor eyesight in children and adults.
                                         </p>
                                     </div>
                                     <div class="btn-box text-center btn5">
-                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                                         <ContactForm buttonText="BOOK NOW" popupPosition="left" />
                                     </div>
 
@@ -94,7 +87,6 @@ class ophthalmologist extends Component {
                                 <div class="contact-form-area">
 
                                     <div class="sec-title squrebox">
-                                        {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
                                             Your eyes deserve great care. At Bridge Health, our expert ophthalmologists will help you through regular eye testing, vision enhancement recommendations, and treatments so
                                             that you’ll never have to worry about squinting to read that sign board across the street ever again!
@@ -103,7 +95,6 @@ class ophthalmologist extends Component {
 
                                     </div>
                                     <div class="btn-box text-center btn5">
-                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                                         <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                                     </div>
                                 </div>
@@ -119,13 +110,9 @@ class ophthalmologist extends Component {
                         </div>
                     </div>
                 </section>
-
                 <section class="">
-
                     <div class="auto-container">
-
                         <div class="row flex-column-reverse">
-
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
@@ -133,7 +120,6 @@ class ophthalmologist extends Component {
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
                                     <h2 className='header1'>
@@ -165,11 +151,9 @@ class ophthalmologist extends Component {
                                     </ul>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </section>
-
                 <section>
                     <div class="auto-container">
                         <div class="sec-title text-center">
@@ -179,13 +163,10 @@ class ophthalmologist extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                             <ContactForm buttonText="BOOK NOW" popupPosition="right" />
-
                         </div>
                     </div>
                 </section>
-
                 <Footer />
 
             </>
