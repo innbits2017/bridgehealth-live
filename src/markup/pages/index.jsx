@@ -157,7 +157,7 @@ class Index extends Component {
 
                                 <div class=" btnleft">
 
-                                    <ContactForm buttonText="GET STARTED" popupPosition="right"  className='btn-style-one-home'/>
+                                    <ContactForm buttonText="GET STARTED" popupPosition="right"  className='btn-style-one'/>
                                 </div>
 
                             </div>
@@ -165,7 +165,7 @@ class Index extends Component {
                     </div>
                 </div>
 
-                <section class="team-section">
+                <section class="team-section ">
                     <div class="auto-container">
                         <div class="sec-title text-center">
                             <h2 className='fontwidth'>Confused about your health checks?<br></br>
@@ -176,7 +176,7 @@ class Index extends Component {
 
                     </div>
                     {/* About Section Two */}
-                    <section class="container-fluid">
+                    <section class="container-fluid margin-70">
                         <div class="auto-container">
                             <div class="row align-items-center">
 
@@ -194,12 +194,7 @@ class Index extends Component {
                                                 <img className='imgstyle1' src={require('../../assets/images/shape/Group3.png')} alt="" />
                                             </a>
                                         </div>
-                                        <div class="qr-text">
-                                            {/* <img className='imgstyle1' src={require('../../assets/images/shape/Group3.png')} alt="" /> */}
-                                            {/* <button class="scan-qr">Scan QR Code
-                                                <a style={{ color: '#fff' }} href="#" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
-                                            </button> */}
-                                        </div>
+                                       
 
                                     </div>
                                 </div>
@@ -305,7 +300,7 @@ class Index extends Component {
                                 <div class="col-lg-6">
                                     <div class="content-box">
                                         <div class="sec-title">
-                                            <div class="text1 textpadding" style={{ marginRight: 40 + 'px' }}>
+                                            <div class="text1 textpadding">
                                                 Predict the onset of   <span className='headeingcolorblack'> hidden illnesses</span> <br></br> and health conditions.<br></br>
                                                 Prevent them by undergoing <span className='headeingcolorblack'>tests.</span><br></br>
                                                 Progress towards <span className='headeingcolorblack'>good health.</span>
@@ -325,95 +320,9 @@ class Index extends Component {
                                                 Pre and Post score comparisons
                                             </li>
                                         </ul>
-                                        {/* <div class="btn-box marginleft20">
-                                            <a class="theme-btn btn-style-one" href="#">
-
-                                                <Popup trigger={<Link class="top-right flotright1" to="">  <span class="btn-title btn-style-one">KNOW MORE</span> </Link>
-                                                } position="left">
-                                                    <div class="contact-form-area">
-
-                                                        <div class="contact-form">
-                                                            <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} action="#">
-                                                                <div class="row clearfix">
-                                                                    <div class="col-md-12 form-group">
-                                                                        <input
-                                                                            type="text"
-                                                                            value={this.state.username}
-                                                                            onChange={e => this.handleChange(e)}
-                                                                            name="username"
-                                                                            id="name"
-                                                                            placeholder="Name*"
-                                                                            required={true}
-                                                                        />
-                                                                        {errors.username && <div className="error">{errors.username}</div>}
-                                                                    </div>
-
-                                                                    <div class="col-md-12 form-group">
-                                                                        <input
-                                                                            type="email"
-                                                                            value={this.state.email}
-                                                                            onChange={e => this.handleChange(e)}
-                                                                            name="email"
-                                                                            id="email"
-                                                                            placeholder="Email*"
-                                                                            required={true}
-                                                                        />
-                                                                        {errors.email && <div className="error">{errors.email}</div>}
-                                                                    </div>
-                                                                    <div class="col-md-12 form-group">
-                                                                        <input
-                                                                            type="phone"
-                                                                            value={this.state.phone}
-                                                                            onChange={e => this.handleChange(e)}
-                                                                            name="phone"
-                                                                            id="phone"
-                                                                            placeholder="Phone*"
-                                                                            required=""
-                                                                        />
-                                                                        {errors.phone && <div className="error">{errors.phone}</div>}
-
-                                                                    </div>
-
-                                                                    <div class="col-md-12 form-group">
-                                                                        <textarea
-                                                                            name="message"
-                                                                            value={this.state.message}
-                                                                            onChange={e => this.handleChange(e)}
-                                                                            id="message"
-                                                                            placeholder="Message"
-                                                                        ></textarea>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input"
-                                                                            type="checkbox" id="checkbox1" name="option1" value="good" required/>
-                                                                        <label class="form-check-label heading colorwhite">
-                                                                            I agree that Bridge Health may contact me at the email address or phone number above.
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="col-md-12 form-group">
-                                                                        <button
-                                                                            class="theme-btn btn-style-one btncontact"
-                                                                            type="submit"
-                                                                            name="submit-form"
-                                                                            disabled={isSubmitDisabled}
-                                                                            onSubmit={e => this.handleSubmit(e)}
-                                                                        ><span class="btn-title">SUBMIT</span></button>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-
-                                                </Popup>
-                                            </a>
-                                        </div> */}
-                                        {/* <div class="btn-box text-center btn5">
-                                            <button class="commonBtnforAll">KNOW MORE</button>
-                                        </div> */}
 
                                         <div class="btn-box text-center btn5">
-
-                                            <ContactForm buttonText="KNOW MORE" popupPosition="left"/>
+                                            <ContactForm buttonText="KNOW MORE" className='btn-style-one'/>
                                         </div>
 
                                     </div>
@@ -795,7 +704,7 @@ class Index extends Component {
                     </div>
                 </section>
                 <Modal show={this.state.isOpen} onHide={this.closeModal}>
-                    <Modal.Header closeButton>
+                    <Modal.Header>
                         <a href={'/personal-membership-program'}>
                             <span><img class="width50" src={require('../../assets/images/shape/popup1.png')} alt="" />
                                 <p className='width50p'>Personal Membership Programme</p>

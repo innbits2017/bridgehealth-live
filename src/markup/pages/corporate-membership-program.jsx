@@ -135,7 +135,7 @@ class corporate_membership_program extends Component {
                                         {/* <button class="commonBtnforAll btnleft">SAY YES!</button> */}
 
                                         <div class="btn-box btn5">
-                                            <ContactForm buttonText="SAY YES!" popupPosition="right" />
+                                            <ContactForm buttonText="SAY YES!"  className='submitcontact'/>
                                         </div>
 
                                     </div>
@@ -161,11 +161,11 @@ class corporate_membership_program extends Component {
                                         <i><span className='headeingcolorblue'>where you are </span></i>on your
                                         <i><span className='headeingcolorblue'> wellbeing journey </span></i>
                                     </h3>
-                                    <div class="btn-box btn5">
-                                            <ContactForm buttonText="GET QUOTE" popupPosition="right" />
+                                   
+                                        <div class="btn-box text-center btn5 btnleft">
+                                            <ContactForm buttonText="GET QUOTE" />
                                         </div>
-                                    {/* <button class="theme-btn btn-style-one" type="submit" name="submit-form">
-                                        <span class="btn-title sec-heading1">GET QUOTE</span></button> */}
+                                  
 
                                 </div>
                             </div>
@@ -238,7 +238,7 @@ class corporate_membership_program extends Component {
 
                     <div className='auto-container '>
                         <div class="sec-title text-center textleft">
-                            <h3 className=''> <span className='headeingcolorblue'>BRIDGE HEALTH </span>
+                            <h3 className='fonts'> <span className='headeingcolorblue'>BRIDGE HEALTH </span>
                                 makes it possible for  <span className='headeingcolorblue'> Employers </span>to <br></br>keep a check on their  <span className='headeingcolorblue'> Employees’ Health Metrics </span></h3>
 
                         </div>
@@ -326,7 +326,7 @@ class corporate_membership_program extends Component {
 
                                                 <div class="col-md-12 form-group">
                                                 <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll"  type="submit"    disabled={isSubmitDisabled}
+                            <button class=" submitcontact"  type="submit"    disabled={isSubmitDisabled}
                             onSubmit={e => this.handleSubmit(e)}
                             name="submit-form">SUBMIT</button>
                                     </div>

@@ -202,7 +202,7 @@ class Contact extends Component {
                                                 </div>
                                                 <div class="col-md-12 form-group">
                                                     <label for="message" className='contactlebel'>Message</label>
-                                                    <textarea className='inputcontact'
+                                                    <textarea className='textareacontact'
                                                         name="message"
                                                         value={message}
                                                         onChange={this.handleChange}
@@ -214,7 +214,7 @@ class Contact extends Component {
 
                                                 <div class="col-md-12 form-group">
                                                 <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll"  type="submit"    disabled={isSubmitDisabled}
+                            <button className='submitcontact'  type="submit"    disabled={isSubmitDisabled}
                             onSubmit={e => this.handleSubmit(e)}
                             name="submit-form">SUBMIT</button>
                                     </div>
@@ -229,8 +229,6 @@ class Contact extends Component {
 
                     </div>
                 </section>
-
-
 
 
 

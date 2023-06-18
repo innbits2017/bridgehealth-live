@@ -18,7 +18,7 @@ class physiotherapy extends Component {
                 <Header />
                 <section class="internalpage internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
                     <div class="auto-container">
-                        <div class="content-box">
+                        <div class="content-box margin-110">
 
                             <div class=" text-center textleft">
                                 <h2 className='textleft fontSize'>

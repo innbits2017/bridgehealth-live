@@ -183,7 +183,7 @@ class FormValidation extends Component {
                                 <div class="col-md-12 form-group">
 
                                     <div class="btn-box text-center">
-                                        <button class="commonBtnforAll" type="submit"
+                                        <button class="submitcontact" type="submit"
                                             name="submit-form">SUBMIT</button>
 
                                     </div>

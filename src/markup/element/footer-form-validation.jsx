@@ -143,11 +143,10 @@ class FooterFormValidation extends Component {
                             {errors.email && <div className="error">{errors.email}</div>}
                         </div>
                         <div class="col-md-12 form-group">
-                            <button
-                                class="theme-btn btn-style-one footer-btn"
-                                type="submit"
-                                name="submit-form"
-                            ><span class="btn-title">SUBMIT</span></button>
+                            <div class="btn-box text-center">
+                                <button class="submitcontact" type="submit"
+                                    name="submit-form">SUBMIT</button>
+                            </div>
                         </div>
 
                     </div>

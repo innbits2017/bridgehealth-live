@@ -141,7 +141,7 @@ class Contact extends Component {
                                         </div>
                 
                                         <div class="col-md-12 form-group">
-                                            <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Get In Touch</span></button>
+                                            <button class="btn-style-one" type="submit" name="submit-form"><span class="btn-title">Get In Touch</span></button>
                                         </div>
                                     </div>
                                 </form>

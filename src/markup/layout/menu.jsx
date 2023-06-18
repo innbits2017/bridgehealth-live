@@ -10,7 +10,7 @@ class Menu extends Component {
                         <ul class="navigation clearfix">
                             <li class="dropdown"><a href='/about-us'>About Us</a>
                                 <ul>
-                                    <li><a href='/leadership'>Board of Direchrefrs</a></li>
+                                    <li><a href='/leadership'>Board of directors</a></li>
                                     <li><a href='/team'>Leadership Team</a></li>
                                     <li><a href='/team'>Clinical Team</a></li>
                                 </ul>

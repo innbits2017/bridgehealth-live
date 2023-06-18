@@ -26,7 +26,7 @@ class Testimonial2 extends Component {
                                 </h5>
                             </div></h2>
                         </div>
-                        <div class="row">
+                        <div class="row marginTop50">
                             <div className="col-xl-12">
                                 <Slider {...settings} className="theme_carousel">
 

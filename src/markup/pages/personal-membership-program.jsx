@@ -156,9 +156,10 @@ class b2cmembership extends Component {
               <div class="image-one">
                 <img src={require('../../assets/images/shape/imageb2c.png')} alt="" className='imgwidth' />
               </div>
-              <div>
-                      <ContactForm buttonText="Say Yes" popupPosition="right" />
-                    </div>
+            
+                    <div class="btn-box text-center btn5">
+                                            <ContactForm buttonText="say yes" className='submitcontact'/>
+                                        </div>
             </div>
             <div class="col-lg-2"></div>
           </div>
@@ -169,7 +170,7 @@ class b2cmembership extends Component {
               <div class="col-lg-6">
                 <div class="contact-form-area marleft">
                   <div class="sec-title persona3">
-                    <h2 style={{ fontSize: 48 + 'px' }}>
+                    <h2>
                       <span className='headeingcolorblack'>Why </span>
                       <span className='headeingcolorblue'> Annual </span><br></br>
                       <span className='headeingcolorblack'>Health Plans?</span>
@@ -197,9 +198,9 @@ class b2cmembership extends Component {
                       </li>
                     </ul>
                   </div>
-                  <div class="btn-box btn5">
-                    <ContactForm buttonText="SAY YES!" popupPosition="right" />
-                  </div>
+                  <div class="btn-box text-center btn5">
+                                            <ContactForm buttonText="say yes"  className='submitcontact' />
+                                        </div>
                 </div>
               </div>
               <div class="col-lg-6">
@@ -222,7 +223,7 @@ class b2cmembership extends Component {
               <div class="col-lg-5">
                 <div class="contact-form-area margintop145">
                   <div class="sec-title marginto90" >
-                    <h2 style={{ fontSize: 48 + 'px' }} className='marginleft'>
+                    <h2 className='marginleft texttile1'>
                       <span className='headeingcolorblack'>Why </span>
                       <span className='headeingcolorblue'> Preventive </span><br></br>
                       <span className='headeingcolorblack '>Health Care?</span>
@@ -234,8 +235,8 @@ class b2cmembership extends Component {
                     </p>
                   </div>
                   <div class="btn-box text-center btn5">
-                    <ContactForm buttonText="SAY YES!" popupPosition="left" />
-                  </div>
+                                            <ContactForm buttonText="say yes"   className='submitcontact'/>
+                                        </div>
                 </div>
               </div>
             </div>
@@ -628,7 +629,7 @@ class b2cmembership extends Component {
                         </div>
                         <div class="col-md-12 form-group">
                           <div class="btn-box text-center btn5">
-                            <button class="commonBtnforAll" type="submit" disabled={isSubmitDisabled}
+                            <button class="submitcontact" type="submit" disabled={isSubmitDisabled}
                               onSubmit={e => this.handleSubmit(e)}
                               name="submit-form">SUBMIT</button>
                           </div>

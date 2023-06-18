@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Popup from 'reactjs-popup';
 import { Modal, Button } from "react-bootstrap";
 const BRIDGE_HEALTH_SITE = process.env.BRIDGE_HEALTH_SITE;
 
@@ -134,7 +133,7 @@ class ContactForm extends Component {
         return (
             <>
 
-                <button className={`theme-btn btn-style-one ${className}`} type="submit" name="submit-form" onClick={this.openModal}>
+                <button className={`commonBtnforAll  ${className}`} type="submit" name="submit-form" onClick={this.openModal}>
                     <span>{buttonText}</span>
                 </button>
                 <Modal show={this.state.isOpen} onHide={this.closeModal} className='popupform'>
@@ -188,6 +187,7 @@ class ContactForm extends Component {
                                                 <div class="form-button mt-3 text-center">
                                                     <input type="submit" name="submit" value="Submit" className='submitbutton'></input>
                                                 </div>
+                                                
                                             </form>
                                             {submitted && (
                                                 <div className="thankyou-popup" onClick={this.closePopup}>

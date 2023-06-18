@@ -13,34 +13,22 @@ class privacyPolicies extends Component {
         return (
             <>
                 <Header />
+                {/* <!-- Page Banner Section --> */}
+                <section class="page-banner">
+                    <div className="page-banner-bg" style={{ backgroundImage: "url(" + aboutbg + ")" }}></div>
+                    <div class="bottom-rotten-curve alternate"></div>
+                </section>
+                <div class="auto-container commimgsoon">
+                    <div class=" text-center">
+                        <h2 className='fontSize'>
+                            <span className='headeingcolorblue'> Coming Soon...  </span>
+                            <span className='headeingcolorblack'> </span><br></br>
+                            <span className='headeingcolorblack'>Privacy Policies </span>
 
-                <section class="internalpage internalimp  internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
-                    <div class="auto-container">
-                        <div class="content-box">
-
-                            <div class=" text-center textleft">
-                                <h2 className='textleft fontSize'>
-                                    <span className='headeingcolorblue'> Coming Soon...  </span>
-                                    <span className='headeingcolorblack'> </span><br></br>
-                                    <span className='headeingcolorblack'>Privacy Policies </span>
-
-                                </h2>
-
-                            </div>
-                            <button class="commonBtnforAll">Apply Now</button>
-
-
-                        </div>
-
+                        </h2>
                     </div>
-                </section>
 
-                <section class="internalpage ">
-
-
-                </section>
-
-
+                </div>
 
                 <Footer />
             </>
