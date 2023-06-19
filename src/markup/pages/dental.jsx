@@ -107,7 +107,7 @@ class dental extends Component {
                         <div class="col-lg-6">
                             <div class="image-wrapper">
                                 <div class="image-one">
-                                    <img src={require('../../assets/images/shape/dent1.png')} alt="" className='widthimg imgFloatRight' />
+                                    <img src={require('../../assets/images/shape/dent1.png')} alt="" className='imgwidth90 ' />
                                 </div>
                             </div>
                         </div>
@@ -142,7 +142,16 @@ class dental extends Component {
 
                 <section class="contact-section">
 
+
                     <div class="auto-container">
+                        <div class="sec-title text-center marbot">
+                            <h2 className='header1 '>
+                                <span className='headeingcolorblack'> The</span>
+                                <span className='headeingcolorblue'>  Bridge Health</span>
+                                <span className='headeingcolorblack'> Advantage </span>
+                            </h2>
+                        </div>
+
 
                         <div class="row">
 
@@ -153,11 +162,6 @@ class dental extends Component {
 
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
-                                    <h2 className='header1'>
-                                        <span className='headeingcolorblack'> The</span>
-                                        <span className='headeingcolorblue'>  Bridge Health</span>
-                                        <span className='headeingcolorblack'> Advantage </span>
-                                    </h2>
                                     <ul className='listicon'>
                                         <li>
                                             Dental hygiene and routine

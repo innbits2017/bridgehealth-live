@@ -103,122 +103,122 @@ class Blog extends Component {
                         </div>
                     </div>
 
-                    {this.state.searchResults.map((result, index) => (
-                        <div class="auto-container" key={index}>
-                            <div class="row">
-                                {/* <!-- News Block One --> */}
-                                <div class="news-block-one col-lg-4">
-                                    <div class="inner-box">
-                                        <div class="image"><Link to={'/#'}>
-                                            <img src={require('../../assets/images/resource/b1.png')} alt="" /></Link></div>
-                                        <div class="lower-content">
-                                            <div class="category">Blog heading</div>
 
-                                            <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
-                                        </div>
+                    <div class="auto-container" >
+                        <div class="row">
+                            {/* <!-- News Block One --> */}
+                            <div class="news-block-one col-lg-4">
+                                <div class="inner-box">
+                                    <div class="image"><Link to={'/#'}>
+                                        <img src={require('../../assets/images/resource/b1.png')} alt="" /></Link></div>
+                                    <div class="lower-content">
+                                        <div class="category">Blog heading</div>
+
+                                        <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
+                                        <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
                                     </div>
                                 </div>
-                                {/* <!-- News Block One --> */}
-                                <div class="news-block-one col-lg-4">
-                                    <div class="inner-box">
-                                        <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b2.png')} alt="" /></Link></div>
-                                        <div class="lower-content">
-
-                                            <div class="category">Blog heading</div>
-                                            <h3><Link to={'/blog-details'}>Top ten acai bowls to maintain that nice healthy glow</Link></h3>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectet adipisci elit, sed do eiusmod temp incididunt ut labore</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!-- News Block One --> */}
-                                <div class="news-block-one col-lg-4">
-                                    <div class="inner-box">
-                                        <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b1.png')} alt="" /></Link></div>
-                                        <div class="lower-content">
-
-                                            <div class="category">Blog heading</div>
-                                            <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!-- News Block One --> */}
-                                <div class="news-block-one col-lg-4 margintop175">
-                                    <div class="inner-box">
-                                        <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b4.png')} alt="" /></Link></div>
-                                        <div class="lower-content">
-                                            <div class="category">Blog heading</div>
-
-                                            <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!-- News Block One --> */}
-                                <div class="news-block-one col-lg-4">
-                                    <div class="inner-box">
-                                        <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b5.png')} alt="" /></Link></div>
-                                        <div class="lower-content">
-
-                                            <div class="category">Blog heading</div>
-                                            <h3><Link to={'/blog-details'}>Top ten acai bowls to maintain that nice healthy glow</Link></h3>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectet adipisci elit, sed do eiusmod temp incididunt ut labore</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!-- News Block One --> */}
-                                <div class="news-block-one col-lg-4 margintop175">
-                                    <div class="inner-box">
-                                        <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b6.png')} alt="" /></Link></div>
-                                        <div class="lower-content">
-
-                                            <div class="category">Blog heading</div>
-                                            <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!-- News Block One --> */}
-                                <div class="news-block-one col-lg-4 margin200">
-                                    <div class="inner-box">
-                                        <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b7.png')} alt="" /></Link></div>
-                                        <div class="lower-content">
-
-                                            <div class="category">Blog heading</div>
-                                            <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!-- News Block One --> */}
-                                <div class="news-block-one col-lg-4">
-                                    <div class="inner-box">
-                                        <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b8.png')} alt="" /></Link></div>
-                                        <div class="lower-content">
-
-                                            <div class="category">Blog heading</div>
-                                            <h3><Link to={'/blog-details'}>Top ten acai bowls to maintain that nice healthy glow</Link></h3>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectet adipisci elit, sed do eiusmod temp incididunt ut labore</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!-- News Block One --> */}
-                                <div class="news-block-one col-lg-4 margin200">
-                                    <div class="inner-box">
-                                        <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b9.png')} alt="" /></Link></div>
-                                        <div class="lower-content">
-                                            <div class="category">Blog heading</div>
-
-                                            <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
-                                        </div>
-                                    </div>
-                                </div>
-                             
                             </div>
+                            {/* <!-- News Block One --> */}
+                            <div class="news-block-one col-lg-4">
+                                <div class="inner-box">
+                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b2.png')} alt="" /></Link></div>
+                                    <div class="lower-content">
+
+                                        <div class="category">Blog heading</div>
+                                        <h3><Link to={'/blog-details'}>Top ten acai bowls to maintain that nice healthy glow</Link></h3>
+                                        <div class="text">Lorem ipsum dolor sit amet, consectet adipisci elit, sed do eiusmod temp incididunt ut labore</div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <!-- News Block One --> */}
+                            <div class="news-block-one col-lg-4">
+                                <div class="inner-box">
+                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b1.png')} alt="" /></Link></div>
+                                    <div class="lower-content">
+
+                                        <div class="category">Blog heading</div>
+                                        <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
+                                        <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <!-- News Block One --> */}
+                            <div class="news-block-one col-lg-4 margintop175">
+                                <div class="inner-box">
+                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b4.png')} alt="" /></Link></div>
+                                    <div class="lower-content">
+                                        <div class="category">Blog heading</div>
+
+                                        <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
+                                        <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <!-- News Block One --> */}
+                            <div class="news-block-one col-lg-4">
+                                <div class="inner-box">
+                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b5.png')} alt="" /></Link></div>
+                                    <div class="lower-content">
+
+                                        <div class="category">Blog heading</div>
+                                        <h3><Link to={'/blog-details'}>Top ten acai bowls to maintain that nice healthy glow</Link></h3>
+                                        <div class="text">Lorem ipsum dolor sit amet, consectet adipisci elit, sed do eiusmod temp incididunt ut labore</div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <!-- News Block One --> */}
+                            <div class="news-block-one col-lg-4 margintop175">
+                                <div class="inner-box">
+                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b6.png')} alt="" /></Link></div>
+                                    <div class="lower-content">
+
+                                        <div class="category">Blog heading</div>
+                                        <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
+                                        <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <!-- News Block One --> */}
+                            <div class="news-block-one col-lg-4 margin200">
+                                <div class="inner-box">
+                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b7.png')} alt="" /></Link></div>
+                                    <div class="lower-content">
+
+                                        <div class="category">Blog heading</div>
+                                        <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
+                                        <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <!-- News Block One --> */}
+                            <div class="news-block-one col-lg-4">
+                                <div class="inner-box">
+                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b8.png')} alt="" /></Link></div>
+                                    <div class="lower-content">
+
+                                        <div class="category">Blog heading</div>
+                                        <h3><Link to={'/blog-details'}>Top ten acai bowls to maintain that nice healthy glow</Link></h3>
+                                        <div class="text">Lorem ipsum dolor sit amet, consectet adipisci elit, sed do eiusmod temp incididunt ut labore</div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <!-- News Block One --> */}
+                            <div class="news-block-one col-lg-4 margin200">
+                                <div class="inner-box">
+                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/b9.png')} alt="" /></Link></div>
+                                    <div class="lower-content">
+                                        <div class="category">Blog heading</div>
+
+                                        <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
+                                        <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                    ))}
+                    </div>
+
                 </section>
 
 

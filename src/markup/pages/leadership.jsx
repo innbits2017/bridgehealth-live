@@ -154,8 +154,8 @@ class leadership extends Component {
                 <section class="gallery-section teamleader">
                     <div class="auto-container">
                         <div class="auto-container">
-                            <div class="sec-title textalign martextleft ">
-                                <h2> <span className='headeingcolorblue'> LEADERSHIP</span><br></br> <span className='headeingcolorblack marginleftspan'> TEAM</span></h2>
+                            <div class="sec-title textalign martextleft40 leadership-title">
+                                <h2> <span className='headeingcolorblue leadership-title' > LEADERSHIP</span><br></br> <span className='headeingcolorblack marginleftspan leadership-title'> TEAM</span></h2>
                             </div>
 
                         </div>
