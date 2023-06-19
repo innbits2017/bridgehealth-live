@@ -24,7 +24,7 @@ class HealthiskAssessment extends Component {
                         <h2 className='fontSize'>
                             <span className='headeingcolorblue'> Coming Soon...  </span>
                             <span className='headeingcolorblack'> </span><br></br>
-                            <span className='headeingcolorblack'>Affiliate Partners</span>
+                            <span className='headeingcolorblack'>Health Risk Assessment</span>
 
 
                         </h2>

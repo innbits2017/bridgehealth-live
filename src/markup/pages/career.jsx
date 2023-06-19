@@ -189,7 +189,7 @@ class Career extends Component {
                 </section> */}
 
 
-                <section class="auto-container marginTop50">
+                <section class="auto-container marginTop50 career-head1">
                     {filteredJobs.map((job, index) => (
                         <div class="job-card" key={index}>
                             <div class="job-card-header">

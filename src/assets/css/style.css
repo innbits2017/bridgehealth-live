@@ -12584,7 +12584,7 @@ text-align: center;	}
 
 .career-head1 {
 	padding-bottom: 0;
-	padding-left: 31%;
+	padding: 0 12% 0 12%;
 }
 
 .car-head2 {
@@ -13744,8 +13744,9 @@ button {
 {
 	background: #FFBD3E;
     border-radius: 0px 40px 245px 0px;
-    margin-left: -97px;
+    margin-left: -15px;
     width: 530px;
+	margin-top: 100px;
     padding: 3% 5% 1% 2%;
 }
 .carrerpadding
