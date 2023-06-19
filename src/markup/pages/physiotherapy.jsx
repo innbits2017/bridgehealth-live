@@ -44,12 +44,12 @@ class physiotherapy extends Component {
 
                 <section class="contact-section">
 
-                    <div class="auto-container">
+                    <div class="container-fluid">
                         <div class="row align-items-center">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 doctor-image">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/p1.png')} alt="" className='widthimg' />
+                                        <img src={require('../../assets/images/shape/p1.png')} alt=""  />
                                     </div>
                                 </div>
                             </div>

@@ -198,8 +198,8 @@ class b2cmembership extends Component {
                       </li>
                     </ul>
                   </div>
-                  <div class="btn-box text-center btn5">
-                    <ContactForm buttonText="say yes" className='submitcontact' />
+                  <div class="btn-box btn5">
+                    <ContactForm buttonText="say yes" className='submitcontact left' />
                   </div>
                 </div>
               </div>

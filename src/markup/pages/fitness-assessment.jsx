@@ -14,13 +14,13 @@ class fitnessAssessment extends Component {
             <>
                 <Header />
 
-                <section class="team-section padding">
+                <section class="team-section padding doctoeback">
                     {/* About Section Two */}
                     <section class="container-fluid">
                         <div class="row align-items-center auto-container">
 
                             <div class="col-lg-6">
-                                <div class="content-box marginTop40header triangleback">
+                                <div class="content-box marginTop40header fitnesback">
 
                                     <div class="sec-title text-center textleft">
                                         <h2 className='textleft fontSize50'>

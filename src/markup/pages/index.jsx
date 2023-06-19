@@ -139,8 +139,27 @@ class Index extends Component {
             <>
 
                 <Header />
-                {/* <!-- About --> */}
-                <div class="video-background-holder">
+                          {/* <!-- Mobile --> */}
+                  <div class="container bg-overlay desktophide">
+       <div class="d-flex h-100 text-center align-items-center">
+                            <div class="w-100 text-white floatleft">
+                                <h5 class="display-4"><span class="display-3">Let’s help you </span>#BridgeTheGap</h5>
+                                <p class="lead mb-0">Personalised and holistic preventive health plans for <br></br>you and your loved ones
+                                </p>
+
+                                {/* <button class="commonBtnforAll btnleft">GET STARTED</button> */}
+
+                                <div class=" btnleft">
+
+                                    <ContactForm buttonText="GET STARTED" popupPosition="right"  className='btn-style-one'/>
+                                </div>
+
+                            </div>
+                        </div>
+    </div>
+
+                {/* <!-- Desktop --> */}
+                <div class="video-background-holder mobilehide">
                     <div class="video-background-overlay"></div>
                     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" className='videowidthMobile'>
                         <source src={require('../../assets/images/backgroundvideo.mp4')} type="video/mp4" />
@@ -717,6 +736,7 @@ class Index extends Component {
                         </a>
                     </Modal.Header>
                 </Modal>
+                
                 <Footer />
             </>
         )

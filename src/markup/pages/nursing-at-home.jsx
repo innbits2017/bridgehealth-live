@@ -14,7 +14,7 @@ class nursingAtHome extends Component {
 
                 <Header />
 
-                <section class="team-section padding">
+                <section class="team-section padding doctoeback">
                     {/* About Section Two */}
                     <section class="container-fluid">
                         <div class="row align-items-center auto-container">
