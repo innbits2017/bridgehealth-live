@@ -11306,6 +11306,21 @@ hr {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	.physiobox {
+		background: rgba(255, 255, 255, 0.75);
+		border-radius: 0px 40px 245px 0px;
+		width: 375px !important;
+		text-align: left !important;
+		margin-left: -7%;
+		padding: 20px 18px 1px 30px;
+	}
+	.physiobox .textleft
+	{
+text-align: left !important;
+	}
+	.margin-110 {
+		margin-top: 235px !important;
+	}
 	.carrerpadding {
 		padding: 110px 0 60px !important;
 	}
@@ -12426,6 +12441,11 @@ text-align: center;	}
 }
 
 @media only screen and (max-width: 600px) {
+	.linkdinicon {
+		box-shadow: none !important;
+		margin-left: 18px;
+		margin-top: 18px;
+	}
 	.martop {
 		margin-top: 35px !important;
 		margin-left: 0% !important;
@@ -13734,4 +13754,21 @@ button {
 }
 .modal-content {
     width: 100% !important;
+}
+.filtter {
+    border: 1px solid #bab7b7;
+    padding: 10px 5px 0px 10px;
+    width: -moz-fit-content;
+    /* width: max-content; */
+    border-radius: 10px;
+    height: 48.8px;
+    margin-left: 20px;
+}
+.physiobox
+{
+	background: rgba(255, 255, 255, 0.75);
+    border-radius: 0px 40px 245px 0px;
+    width: 750px;
+    margin-left: -7%;
+    padding: 20px 18px 1px 30px;
 }

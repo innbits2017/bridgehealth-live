@@ -18,28 +18,28 @@ class physiotherapy extends Component {
                 <Header />
                 <section class="internalpage internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
                     <div class="auto-container">
-                        <div class="content-box margin-110">
+                        <div class="content-box physiobox">
 
-                            <div class=" text-center textleft">
+                            <div class="textleft">
                                 <h2 className='textleft fontSize'>
-                                    <span className='headeingcolorblack'> Improve your mobility </span><br></br>
-                                    <span className='headeingcolorblue'>  one step at a time  </span>
+                                    <span className='headeingcolorblack'>Improve your mobility </span><br></br>
+                                    <span className='headeingcolorblue'> one step at a time </span>
 
                                 </h2>
                                 <h3 className='textleft marginTop40'>
-                                    Schedule a physiotherapy<br></br> session with us
+                                Schedule a physiotherapy<br></br> session with us
                                 </h3>
                             </div>
+                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
+                            <div class="btn-box btn5">
+
+                                <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                            </div>
+
                         </div>
 
-                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
-                        <div class="btn-box btn5">
-
-                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
-                        </div>
                     </div>
                 </section>
-
 
 
                 <section class="contact-section">

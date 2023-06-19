@@ -113,10 +113,19 @@ class Career extends Component {
                         </div>
                     </div>
                     {/* <!-- Search --> */}
-                    <div className=''>
-                        <form onSubmit={e => this.handleSubmit(e)}>
-                        <div class="form-group1">
-                            <input
+                </section>
+
+                <div class="container">
+                        <div class="row" style={{ background: 'white' }}>
+                            <div class="col-lg-8 mx-auto">
+
+                                <div class="bg-white p-5 ">
+                                    {/* <!-- Search --> */}
+                                    <div class=" search-box">
+                                    
+                                        <form>
+                                            <div class="form-group1">
+                                            <input
                                 type="search"
                                 name="search-field"
                                 value={this.state.searchTerm}
@@ -124,10 +133,24 @@ class Career extends Component {
                                 placeholder="Search Topic"
                                 required="" />
                             <button type="submit" className='submitsearch'><span class="icon far fa-search searchblog"></span></button>
+                                            </div>
+                                        </form>
+                                        <div class="filtter">
+                                            <form action="#" class="language-switcher">
+                                                <select>
+                                                    <option value="1">Filter</option>
+                                                    <option value="1">FR</option>
+                                                    <option value="1">SP</option>
+                                                    <option value="1">BE</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </form>
                     </div>
-                </section>
+
                 {/* 
                 <section class="career-head1">
                     <div class="container">
