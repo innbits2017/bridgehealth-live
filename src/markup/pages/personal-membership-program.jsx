@@ -156,10 +156,10 @@ class b2cmembership extends Component {
               <div class="image-one">
                 <img src={require('../../assets/images/shape/imageb2c.png')} alt="" className='imgwidth' />
               </div>
-            
-                    <div class="btn-box text-center btn5">
-                                            <ContactForm buttonText="say yes" className='submitcontact'/>
-                                        </div>
+
+              <div class="btn-box text-center btn5">
+                <ContactForm buttonText="say yes" className='submitcontact' />
+              </div>
             </div>
             <div class="col-lg-2"></div>
           </div>
@@ -199,8 +199,8 @@ class b2cmembership extends Component {
                     </ul>
                   </div>
                   <div class="btn-box text-center btn5">
-                                            <ContactForm buttonText="say yes"  className='submitcontact' />
-                                        </div>
+                    <ContactForm buttonText="say yes" className='submitcontact' />
+                  </div>
                 </div>
               </div>
               <div class="col-lg-6">
@@ -235,338 +235,585 @@ class b2cmembership extends Component {
                     </p>
                   </div>
                   <div class="btn-box text-center btn5">
-                                            <ContactForm buttonText="say yes"   className='submitcontact'/>
-                                        </div>
+                    <ContactForm buttonText="say yes" className='submitcontact' />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <section class="health-plan pt-5 d-lg-block">
-            <div class="container-fluid aos-init aos-animate" data-aos="fade-up">
-               <div class="section-header">
-               <h2><span class="headeingcolorblack">Annual Preventive Health</span><span class="headeingcolorblue"> Plans</span></h2>
-               <p>Say<span class="headeingcolorblue"> YES </span>to a plan just for you!</p>               </div>
-               <div class="row seven-cols gy-4">
-                  <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                     <div class="health-plan-title-1">
-                        <h3>Clinical Assessments</h3>
-                     </div>
-                     <div class="health-plan-title-2">
-                        <h3>Consultations</h3>
-                     </div>
-                     <div class="health-plan-title-3">
-                        <h3>Additional Discounts (Up to)</h3>
-                     </div>
-                     {/* <div class="health-plan-title-4">
+          <div class="container-fluid aos-init aos-animate" data-aos="fade-up">
+            <div class="section-header">
+              <h2><span class="headeingcolorblack">Annual Preventive Health</span><span class="headeingcolorblue"> Plans</span></h2>
+              <p>Say<span class="headeingcolorblue"> YES </span>to a plan just for you!</p>
+            </div>
+            <div class="row seven-cols gy-4">
+              <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="health-plan-title-1">
+                  <h3>Clinical Assessments</h3>
+                </div>
+                <div class="health-plan-title-2">
+                  <h3>Consultations</h3>
+                </div>
+                <div class="health-plan-title-3">
+                  <h3>Additional Discounts (Up to)</h3>
+                </div>
+                {/* <div class="health-plan-title-4">
                         <h3>Discounts</h3>
                      </div> */}
-                  </div>
-                  <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                     <div class="health-plan-item featured">
-                        <h3>Service Offering</h3>
-                        <ul>
-                           <li> Initial Health Assessment</li>
-                           <li> Blood Health</li>
-                           <li> Diabetic Profile</li>
-                           <li> Kidney Health</li>
-                           <li> Cardiac Health</li>
-                           <li> Liver Health</li>
-                           <li> Nutrition Health</li>
-                           <li> Bone Health</li>
-                           <li> Thyroid Profile	</li>
-                           <li> Oncology Screening</li>
-                           <li> Respiratory Health</li>
-                           <li> Radiology Screening</li>
-                        </ul>
-                        <ul class="clinicAss">
-                           <li> Physician Consults​</li>
-                           <li> Emotional Health<br></br> Consults</li>
-                           <li> Webinars and Group Sessions</li>
-                           <li> Dental, Eye and Derma Screening </li>
-                           <li> Nutrition Assessment and Consults</li>
-                           <li> Yoga/Fitness Assessments and Sessions</li>
-                           <li>App Access</li>
-                        </ul>
-                        <ul>
-                           <li> Medicines/Pharmacy (At-Home Delivery)</li>
-                           <li> Lab tests/ Annual Plans for Family</li>
-                           <li> Physiotherapy for Self & family</li>
-                           <li> Home Sample Collection</li>
-                        </ul>
-                        {/* <ul>
+              </div>
+              <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <div class="health-plan-item featured">
+                  <h3>Service Offering</h3>
+                  <ul>
+                    <li> Initial Health Assessment</li>
+                    <li> Blood Health</li>
+                    <li> Diabetic Profile</li>
+                    <li> Kidney Health</li>
+                    <li> Cardiac Health</li>
+                    <li> Liver Health</li>
+                    <li> Nutrition Health</li>
+                    <li> Bone Health</li>
+                    <li> Thyroid Profile	</li>
+                    <li> Oncology Screening</li>
+                    <li> Respiratory Health</li>
+                    <li> Radiology Screening</li>
+                  </ul>
+                  <ul class="clinicAss">
+                    <li> Physician Consults​</li>
+                    <li> Emotional Health<br></br> Consults</li>
+                    <li> Webinars and Group Sessions</li>
+                    <li> Dental, Eye and Derma Screening </li>
+                    <li> Nutrition Assessment and Consults</li>
+                    <li> Yoga/Fitness Assessments and Sessions</li>
+                    <li>App Access</li>
+                  </ul>
+                  <ul>
+                    <li> Medicines/Pharmacy (At-Home Delivery)</li>
+                    <li> Lab tests/ Annual Plans for Family</li>
+                    <li> Physiotherapy for Self & family</li>
+                    <li> Home Sample Collection</li>
+                  </ul>
+                  {/* <ul>
                            <li> Medicines / e-Pharmacy <br></br>for Self and Family</li>
                            <li> Physiotherapy Services <br></br>for Self and Family</li>
                            <li> Lab / Clinical Services <br></br>&amp; Retail Health Plans <br></br>for Family <br></br></li>
                            <li> Home Sample Collection</li>
                            <li> BH Mobile App-Access</li>
                         </ul> */}
-                        <p class="buy-btn">Price</p>
-                     </div>
-                  </div>
-                  <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                     <div class="health-plan-item silver">
-                        <h3>BH Blue</h3>
-                        <ul>
-                           <li> 101Tests  + ECG</li>
-                           <li><i class="fa-solid fa-check"></i></li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li>&nbsp;</li>
-                           <li>&nbsp;</li>
-                           <li>&nbsp;</li>
-                           <li>&nbsp;</li>
-                           <li>&nbsp;</li>
-                           <li>&nbsp;</li>
-                           <li>ECG</li>
-                        </ul>
-                        <ul class="clincAss-2">
-                           <li class="mt-3">2</li>
-                           <li>1</li>
-                           <li><i class="fa-solid fa-check"></i></li>
-                           <li>&nbsp;</li>
-                           <li>1</li>
-                           <li>&nbsp;</li>
-                           <li><i class="fa-solid fa-check"></i></li>
-                        </ul>
-                        {/* <ul class="consults">
+                  <p class="buy-btn">Price</p>
+                </div>
+              </div>
+              <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="health-plan-item silver">
+                  <h3>BH Blue</h3>
+                  <ul>
+                    <li> 101Tests  + ECG</li>
+                    <li><i class="fa-solid fa-check"></i></li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>ECG</li>
+                  </ul>
+                  <ul class="clincAss-2">
+                    <li class="mt-3">2</li>
+                    <li>1</li>
+                    <li><i class="fa-solid fa-check"></i></li>
+                    <li>&nbsp;</li>
+                    <li>1</li>
+                    <li>&nbsp;</li>
+                    <li><i class="fa-solid fa-check"></i></li>
+                  </ul>
+                  {/* <ul class="consults">
                            <li>4</li>
                            <li>1</li>
                            <li>5</li>
                            <li>&nbsp;</li>
                         </ul> */}
-                        <ul class="discounts">
-                           <li>10% </li>
-                           <li>10% </li>
-                           <li>10%</li>
-                           {/* <li>Paid</li> */}
-                           <li><i class="bi bi-check"></i> </li>
-                        </ul>
-                        <p class="buy-btn border-blue">₹7,999</p>
-                     </div>
-                  </div>
-                  <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                     <div class="health-plan-item silver">
-                        <h3>BH Silver</h3>
-                        <ul>
-                           <li> 118 Tests + ECG + USG</li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li>&nbsp;</li>
-                           <li>&nbsp;</li>
-                           <li>&nbsp;</li>
-                           <li>&nbsp;</li>
-                           <li>ECG, USG (ABD. & PELVIS)</li>
-                        </ul>
-                        <ul class="clincAss-2">
-                           <li>2</li>
-                           <li>1</li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li>&nbsp;</li>
-                           <li class="mt-3">1</li>
-                           <li>&nbsp;</li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                        </ul>
-                        {/* <ul class="consults">
+                  <ul class="discounts">
+                    <li>10% </li>
+                    <li>10% </li>
+                    <li>10%</li>
+                    {/* <li>Paid</li> */}
+                    <li><i class="bi bi-check"></i> </li>
+                  </ul>
+                  <p class="buy-btn border-blue">₹7,999</p>
+                </div>
+              </div>
+              <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="health-plan-item silver">
+                  <h3>BH Silver</h3>
+                  <ul>
+                    <li> 118 Tests + ECG + USG</li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>ECG, USG (ABD. & PELVIS)</li>
+                  </ul>
+                  <ul class="clincAss-2">
+                    <li>2</li>
+                    <li>1</li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li>&nbsp;</li>
+                    <li class="mt-3">1</li>
+                    <li>&nbsp;</li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                  </ul>
+                  {/* <ul class="consults">
                            <li>4</li>
                            <li>1</li>
                            <li>5</li>
                            <li>&nbsp;</li>
                         </ul> */}
-                        <ul class="discounts">
-                           <li>10% </li>
-                           <li>10% </li>
-                           <li>10% </li>
-                           {/* <li>Paid</li> */}
-                           <li><i class="bi bi-check"></i> </li>
-                        </ul>
-                        <p class="buy-btn border-silver">₹7,999</p>
-                     </div>
-                  </div>
-                  <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                     <div class="health-plan-item gold">
-                        <h3>BH GOLD</h3>
-                        <ul>
-                           <li>122 Tests + ECG + USG</li>
-                           <li><i class="fa-solid fa-check"></i></li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li>&nbsp;</li>
-                           <li>&nbsp;</li>
-                           <li>ECG, USG (ABD. & PELVIS),ECHO</li>
-                        </ul>
-                        <ul class="clincAss-2">
-                           <li>2</li>
-                           <li>2</li>
-                           <li><i class="fa-solid fa-check"></i></li>
-                           <li>&nbsp;</li>
-                           <li>4</li>
-                           <li>5</li>
-                           <li><i class="fa-solid fa-check"></i></li>
-                        </ul>
-                        {/* <ul class="consults">
+                  <ul class="discounts">
+                    <li>10% </li>
+                    <li>10% </li>
+                    <li>10% </li>
+                    {/* <li>Paid</li> */}
+                    <li><i class="bi bi-check"></i> </li>
+                  </ul>
+                  <p class="buy-btn border-silver">₹7,999</p>
+                </div>
+              </div>
+              <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="health-plan-item gold">
+                  <h3>BH GOLD</h3>
+                  <ul>
+                    <li>122 Tests + ECG + USG</li>
+                    <li><i class="fa-solid fa-check"></i></li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>ECG, USG (ABD. & PELVIS),ECHO</li>
+                  </ul>
+                  <ul class="clincAss-2">
+                    <li>2</li>
+                    <li>2</li>
+                    <li><i class="fa-solid fa-check"></i></li>
+                    <li>&nbsp;</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li><i class="fa-solid fa-check"></i></li>
+                  </ul>
+                  {/* <ul class="consults">
                            <li>12</li>
                            <li>4</li>
                            <li>&nbsp;</li>
                            <li>5</li>
                         </ul> */}
-                        <ul class="discounts">
-                           <li>15%</li>
-                           <li>15%</li>
-                           <li>10%</li>
-                           <li>Free</li>
-                           <li><i class="bi bi-check"></i> </li>
-                        </ul>
-                        <p class="buy-btn border-gold">₹16,999</p>
-                     </div>
-                  </div>
-                  <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                     <div class="health-plan-item platinum">
-                        <h3>BH Platinum</h3>
-                        <ul>
-                           <li>138 Tests + ECG + USG</li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li>X-ray, ECG, USG (ABD. & PELVIS), ECHO</li>
-                        </ul>
-                        <ul class="platinumMinh">
-                           <li>2</li>
-                           <li>2</li>
-                           <li><i class="fa-solid fa-check"></i></li>
-                           <li>&nbsp;</li>
-                           <li>4</li>
-                           <li>15</li>
-                           <li><i class="fa-solid fa-check"></i></li>
-                        </ul>
-                        {/* <ul class="consults">
+                  <ul class="discounts">
+                    <li>15%</li>
+                    <li>15%</li>
+                    <li>10%</li>
+                    <li>Free</li>
+                    <li><i class="bi bi-check"></i> </li>
+                  </ul>
+                  <p class="buy-btn border-gold">₹16,999</p>
+                </div>
+              </div>
+              <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="health-plan-item platinum">
+                  <h3>BH Platinum</h3>
+                  <ul>
+                    <li>138 Tests + ECG + USG</li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li>X-ray, ECG, USG (ABD. & PELVIS), ECHO</li>
+                  </ul>
+                  <ul class="platinumMinh">
+                    <li>2</li>
+                    <li>2</li>
+                    <li><i class="fa-solid fa-check"></i></li>
+                    <li>&nbsp;</li>
+                    <li>4</li>
+                    <li>15</li>
+                    <li><i class="fa-solid fa-check"></i></li>
+                  </ul>
+                  {/* <ul class="consults">
                            <li>Unlimited</li>
                            <li>4</li>
                            <li>&nbsp;</li>
                            <li>15</li>
                         </ul> */}
-                        <ul class="discounts">
-                           <li>20%</li>
-                           <li>15%</li>
-                           <li>1 session + 10%</li>
-                           <li>Free</li>
-                           <li><i class="bi bi-check"></i> </li>
-                        </ul>
-                        <p class="buy-btn border-platinum">₹24,999</p>
-                     </div>
-                  </div>
-                  <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                     <div class="health-plan-item platinum-plus">
-                        <h3>BH Platinum +</h3>
-                        <ul>
-                           <li>222 Tests + ECG + USG</li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li><i class="fa-solid fa-check"></i> </li>
-                           <li>X-ray, ECG, USG (ABD. & PELVIS), ECHO</li>
-                        </ul>
-                        <ul class="platinumMinh">
-                           <li>4</li>
-                           <li>4</li>
-                           <li><i class="fa-solid fa-check"></i></li>
-                           <li><i class="fa-solid fa-check"></i></li>
-                           <li>4</li>
-                           <li>15</li>
-                           <li><i class="fa-solid fa-check"></i></li>
-                        </ul>
-                        {/* <ul class="consults">
+                  <ul class="discounts">
+                    <li>20%</li>
+                    <li>15%</li>
+                    <li>1 session + 10%</li>
+                    <li>Free</li>
+                    <li><i class="bi bi-check"></i> </li>
+                  </ul>
+                  <p class="buy-btn border-platinum">₹24,999</p>
+                </div>
+              </div>
+              <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="health-plan-item platinum-plus">
+                  <h3>BH Platinum +</h3>
+                  <ul>
+                    <li>222 Tests + ECG + USG</li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li><i class="fa-solid fa-check"></i> </li>
+                    <li>X-ray, ECG, USG (ABD. & PELVIS), ECHO</li>
+                  </ul>
+                  <ul class="platinumMinh">
+                    <li>4</li>
+                    <li>4</li>
+                    <li><i class="fa-solid fa-check"></i></li>
+                    <li><i class="fa-solid fa-check"></i></li>
+                    <li>4</li>
+                    <li>15</li>
+                    <li><i class="fa-solid fa-check"></i></li>
+                  </ul>
+                  {/* <ul class="consults">
                            <li>Unlimited</li>
                            <li>4</li>
                            <li>&nbsp;</li>
                            <li>15</li>
                         </ul> */}
-                        <ul class="discounts">
-                           <li>20% </li>
-                           <li>15%</li>
-                           <li>1 session + 10%</li>
-                           <li>Free</li>
-                           <li><i class="bi bi-check"></i> </li>
-                        </ul>
-                        <p class="buy-btn border-platinum-plus">₹29,999</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="row seven-cols">
-                  <div class="col-md-1 col-md-6">
-                  </div>
-                  <div class="col-md-1 col-md-6">
-                  </div>
-                  
-                  <div class="col-md-1 col-md-6">
-                     <div class="d-flex">
-                        <a href="https://razorpay.com/payment-link/inv_M2vyRWdM09nxcw" class="getStarted">Get Started</a>
-                     </div>
-                  </div>
-                  <div class="col-md-1 col-md-6">
-                     <div class="d-flex">
-                        {/* <a href="pay.php/?amt=1699900" class="getStarted">Get Started</a> */}
-                        <a href="https://razorpay.com/payment-link/inv_M2vyRWdM09nxcw" class="getStarted">Get Started</a>
-                     </div>
-                  </div>
-                  <div class="col-md-1 col-md-6">
-                     <div class="d-flex">
-                        {/* <a href="pay.php/?amt=2499900" class="getStarted">Get Started</a> */}
-                        <a href="https://razorpay.com/payment-link/inv_M2w1L4i4SwsI7p" class="getStarted">Get Started</a>
-                     </div>
-                  </div>
-                  <div class="col-md-1 col-md-6">
-                     <div class="d-flex">
-                        {/* <a href="pay.php/?amt=2999900" class="getStarted">Get Started</a> */}
-                        <a href="https://razorpay.com/payment-link/inv_M2w30g1YwaCMwd" class="getStarted">Get Started</a>
-                     </div>
-                  </div>
-                  <div class="col-md-1 col-md-6">
-                     <div class="d-flex">
-                        {/* <a href="pay.php/?amt=2999900" class="getStarted">Get Started</a> */}
-                        <a href="https://razorpay.com/payment-link/inv_M2wMTGZG5XdOa0" class="getStarted">Get Started</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="row mt-3	">
-                  <div class="col-lg-4 col-md-6">
-                  </div>
-                  <div class="col-lg-8 col-md-6">
-                     <div class="d-flex">
-                        <a href="javascript:void(0)" class="knowMore toggle2">KNOW MORE</a>
-                     </div>
-                  </div>
-               </div>
+                  <ul class="discounts">
+                    <li>20% </li>
+                    <li>15%</li>
+                    <li>1 session + 10%</li>
+                    <li>Free</li>
+                    <li><i class="bi bi-check"></i> </li>
+                  </ul>
+                  <p class="buy-btn border-platinum-plus">₹29,999</p>
+                </div>
+              </div>
             </div>
-         </section>
+            <div class="row seven-cols">
+              <div class="col-md-1 col-md-6">
+              </div>
+              <div class="col-md-1 col-md-6">
+              </div>
+
+              <div class="col-md-1 col-md-6">
+                <div class="d-flex">
+                  <a href="https://razorpay.com/payment-link/inv_M2vyRWdM09nxcw" class="getStarted">Get Started</a>
+                </div>
+              </div>
+              <div class="col-md-1 col-md-6">
+                <div class="d-flex">
+                  {/* <a href="pay.php/?amt=1699900" class="getStarted">Get Started</a> */}
+                  <a href="https://razorpay.com/payment-link/inv_M2vyRWdM09nxcw" class="getStarted">Get Started</a>
+                </div>
+              </div>
+              <div class="col-md-1 col-md-6">
+                <div class="d-flex">
+                  {/* <a href="pay.php/?amt=2499900" class="getStarted">Get Started</a> */}
+                  <a href="https://razorpay.com/payment-link/inv_M2w1L4i4SwsI7p" class="getStarted">Get Started</a>
+                </div>
+              </div>
+              <div class="col-md-1 col-md-6">
+                <div class="d-flex">
+                  {/* <a href="pay.php/?amt=2999900" class="getStarted">Get Started</a> */}
+                  <a href="https://razorpay.com/payment-link/inv_M2w30g1YwaCMwd" class="getStarted">Get Started</a>
+                </div>
+              </div>
+              <div class="col-md-1 col-md-6">
+                <div class="d-flex">
+                  {/* <a href="pay.php/?amt=2999900" class="getStarted">Get Started</a> */}
+                  <a href="https://razorpay.com/payment-link/inv_M2wMTGZG5XdOa0" class="getStarted">Get Started</a>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3 ">
+              <div class="col-lg-4 col-md-6">
+              </div>
+              <div class="col-lg-8 col-md-6">
+                <div class="d-flex">
+                  <a href="javascript:void(0)" class="knowMore toggle2">KNOW MORE</a>
+                </div>
+              </div>
+            </div>
+
+
+            {/* Mobile code */}
+            <div class="table-container d-block d-lg-none">
+              <div class="table-horizontal-container">
+                <table class="unfixed-table">
+                  <thead>
+                    <tr>
+                      <th>SERVICE OFFERING</th>
+                      <th>BH BLUE</th>
+                      <th>BH SILVER</th>
+                      <th>BH GOLD</th>
+                      <th>BH PLATINUM</th>
+                      <th>BH PLATINUM +</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th></th>
+                      <td>101Tests + ECG</td>
+                      <td>118 Tests + ECG + USG</td>
+                      <td>122 Tests + ECG + USG</td>
+                      <td>138 Tests + ECG + USG</td>
+                      <td>222 Tests + ECG + USG</td>
+                    </tr>
+                    <tr>
+                      <th>Initial Health Assessment</th>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th>Blood Health</th>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th>Diabetic Profile</th>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th>Kidney Health</th>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th>Cardiac Health</th>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th>Liver Health</th>
+                      <td></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th>Nutrition Health</th>
+                      <td></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th>Bone Health</th>
+                      <td></td>
+                      <td></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th>Thyroid Profile</th>
+                      <td></td>
+                      <td></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th>Oncology Screening</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th>Respiratory Health</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th>Radiology Screening</th>
+                      <td>ECG</td>
+                      <td>ECG, USG (ABD. & PELVIS)</td>
+                      <td>ECG, USG (ABD. & PELVIS),ECHO</td>
+                      <td>X-ray, ECG, USG (ABD. & PELVIS), ECHO</td>
+                      <td>X-ray, ECG, USG (ABD. & PELVIS), ECHO</td>
+                    </tr>
+                    <tr>
+                      <th>Physician Consults</th>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <th>Emotional Health Consults</th>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <th>Webinars and Group Sessions</th>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                      <th>Dental, Eye and Derma Screening</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th>Nutrition Assessment and Consults</th>
+                      <td>12</td>
+                      <td>1</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <th>Yoga/Fitness Assessments and Sessions</th>
+                      <td></td>
+                      <td></td>
+                      <td>5</td>
+                      <td>15</td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <th>App Access</th>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                      <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th>Medicines/Pharmacy (At-Home Delivery)</th>
+                      <td>10%</td>
+                      <td>10%</td>
+                      <td>15%</td>
+                      <td>20%</td>
+                      <td>20%</td>
+                    </tr>
+                    <tr>
+                      <th>Lab tests/ Annual Plans for Family</th>
+                      <td>10%</td>
+                      <td>10%</td>
+                      <td>15%</td>
+                      <td>15%</td>
+                      <td>15%</td>
+                    </tr>
+                    <tr>
+                      <th>Physiotherapy for Self & family</th>
+                      <td>10%</td>
+                      <td>10%</td>
+                      <td>10%^</td>
+                      <td>1 session + 10%</td>
+                      <td>1 session + 10%</td>
+                    </tr>
+                    <tr>
+                      <th>Home Sample Collection</th>
+                      <td></td>
+                      <td></td>
+                      <td>Free</td>
+                      <td>Free</td>
+                      <td>Free</td>
+                    </tr>
+                    <tr>
+                      <th>Price</th>
+                      <td>₹7,999</td>
+                      <td>₹7,999</td>
+                      <td>₹16,999</td>
+                      <td>₹24,999</td>
+                      <td>₹29,999</td>
+                    </tr>
+                  </tbody>
+
+                  <tfoot>
+                    <tr>
+                      <th></th>
+                      <td>
+                        <a href="https://razorpay.com/payment-link/inv_M2vyRWdM09nxcw" class="getStarted">Get Started</a>
+                      </td>
+                      <td>
+                        <a href="https://razorpay.com/payment-link/inv_M2vyRWdM09nxcw" class="getStarted">Get Started</a>
+                      </td>
+                      <td>
+                        <a href="https://razorpay.com/payment-link/inv_M2w1L4i4SwsI7p" class="getStarted">Get Started</a>
+                      </td>
+                      <td>
+                        <a href="https://razorpay.com/payment-link/inv_M2w30g1YwaCMwd" class="getStarted">Get Started</a>
+                      </td>
+                      <td>
+                        <a href="https://razorpay.com/payment-link/inv_M2wMTGZG5XdOa0" class="getStarted">Get Started</a>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+
+
+          </div>
+        </section>
+
         {/* <!-- Contact Section --> */}
         <section class="contact-section">
           <section class="">
@@ -583,7 +830,7 @@ class b2cmembership extends Component {
                 <div class="contact-form-area">
                   {/* <!-- Contact Form--> */}
                   <div class="contact-form" style={{ marginTop: 5 + 'rem' }}>
-                   <form method="post" onSubmit={this.handleSubmit} action="#" id="contact-form">
+                    <form method="post" onSubmit={this.handleSubmit} action="#" id="contact-form">
                       <div class="row clearfix">
                         <div class="col-md-12 form-group">
                           <input
@@ -622,7 +869,7 @@ class b2cmembership extends Component {
 
                         <div class="form-check">
                           <input class="form-check-input"
-                            type="checkbox" id="checkbox1" name="option1" value="good" required/>
+                            type="checkbox" id="checkbox1" name="option1" value="good" required />
                           <label class="form-check-label heading">
                             I agree that Bridge Health may contact me at the email address or phone number above.
                           </label>
