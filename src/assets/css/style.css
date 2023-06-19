@@ -5255,6 +5255,7 @@ img.lazy-image.loaded {
 .testimonial-block .inner-box .text {
 	position: relative;
 	margin-bottom: 0px;
+	text-align: center;
 }
 
 .testimonial-block .author-info {
@@ -10788,11 +10789,21 @@ h6,
 }
 
 .test1 {
-	background: #D3E3B7;
-	position: initial !important;
-	border-radius: 20px;
+	/* background: #D3E3B7; */
+	background-image: url(../images/shape/meet.png);
+    height: 390px;
+    position: initial !important;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+/* .testimonial-block::before
+{
+    content: "";
+    display: block;
+    border: 2px solid red;
+    height: 8px;
 
+} */
 .test2 {
 	background: #CDE5F1;
 	position: initial !important;
@@ -11325,6 +11336,17 @@ hr {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	.test1 {
+		height: 370px;
+		position: initial !important;
+		background-size: contain !important;
+		background-repeat: no-repeat;
+	}
+	.testimonial-block .inner-box .text {
+		position: relative;
+		font-size: 16px;
+		margin-bottom: 0px;
+	}
 	.fitnesback
 	{
 		margin-left: -42% !important;
@@ -11494,7 +11516,7 @@ text-align: center;	}
 	}
 
 	.modal-header {
-		width: 86% !important;
+		width: 100% !important;
 	}
 
 	.marginto90 {
@@ -12663,7 +12685,7 @@ text-align: center;	}
 	padding: 7px 12px;
 	border-bottom: 1px solid #dee2e6;
 	border-top-left-radius: 0.3rem;
-	width: 93%;
+	width: 100%;
 	border-top-right-radius: 0.3rem;
 }
 
@@ -13682,7 +13704,7 @@ padding-right:30px;
 body > div.fade.popupform.modal.show > div > div > div
 {
     border-bottom: none !important;
-    padding: 16px !important;
+    padding: 12px !important;
     padding-top: 10% !important;
 
 }
@@ -13694,7 +13716,7 @@ body > div.fade.popupform.modal.show > div > div > div
 }
 .modal-header .close {
     padding: 1rem 1rem;
-    margin: -3rem -3rem -3rem !important;
+    margin: -3rem -1rem -3rem !important;
 }
 body > div.fade.popupform.modal.show > div > div
 {
@@ -13734,7 +13756,7 @@ width: 270px !important;
 
 .form-check-label
 {
-	font-size: 16px;
+	font-size: 15px;
     color: #fff;
     margin-right: 33px;
     margin-left: 27px;
@@ -13986,6 +14008,6 @@ margin-bottom: 0px !important;}
     background-size: cover;
     background-position: center center;
     color: #fff;
-    height: 450px;
+    height: 600px;
     padding-top: 50px;
 }

@@ -48,7 +48,7 @@ class manageWeight extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper imgright">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/weight1.png')} alt="" className='imgwidth' />
+                                        <img src={require('../../assets/images/shape/weight1.png')} alt="" className='' />
                                     </div>
                                 </div>
                             </div>
