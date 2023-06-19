@@ -41,6 +41,7 @@ import mediaAndPR from './pages/media-and-pr';
 import termsOfUse from './pages/terms-of-use';
 import privacyPolicies from './pages/privacy-policies';
 import HealthiskAssessment from'./pages/health-risk-assessment';
+import FormComponent from './pages/career-form';
 
 
 class Router extends Component {
@@ -58,6 +59,7 @@ class Router extends Component {
                         <Route path='/team' component={Team} />
                         <Route path='/corporate-membership-program' component={corporate_membership_program}/>
                         <Route path='/blog-details' component={BlogDestails}/>
+                        <Route path='/career-form' component={FormComponent}/>
                         <Route path='/our-services' component={ourservice}/>
                         <Route path='/personal-membership-program' component={b2cmembership}/>
                         <Route path='/blog-design' component={blog_Designv2}/>

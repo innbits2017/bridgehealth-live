@@ -13775,8 +13775,11 @@ button {
 }
 
 
-/* Mobile code css */
-
+/* ===============================================Mobile code css */
+/* .desktop-plan-table{
+	display: none;
+	
+} */
 /* default styling. Nothing to do with freexing first row and column */
 main {display: flex;}
 main > * {border: 1px solid;}
@@ -13792,7 +13795,7 @@ td, th {border:  1px solid;
   position: relative;
   max-height:  100%;
   width: 100%;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 thead th {

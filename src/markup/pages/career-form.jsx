@@ -83,7 +83,7 @@ const FormComponent = () => {
   return (
     <form onSubmit={handleSubmit} className="container">
       <div className="mb-3">
-        <label htmlFor="name" className="form-label">Name:</label>
+        <label htmlFor="name" className="form-label" placeholder='Name'>Name:</label>
         <input
           type="text"
           id="name"
@@ -96,7 +96,7 @@ const FormComponent = () => {
       </div>
 
       <div className="mb-3">
-        <label htmlFor="email" className="form-label">Email:</label>
+        <label htmlFor="email" className="form-label"  placeholder="Email">Email:</label>
         <input
           type="email"
           id="email"
@@ -109,7 +109,7 @@ const FormComponent = () => {
       </div>
 
       <div className="mb-3">
-        <label htmlFor="mobile" className="form-label">Mobile:</label>
+        <label htmlFor="mobile" className="form-label"  placeholder="Mobile">Mobile:</label>
         <input
           type="text"
           id="mobile"
@@ -155,7 +155,7 @@ const FormComponent = () => {
         {errors.position && <div className="invalid-feedback">{errors.position}</div>}
       </div>
       <div className="mb-3">
-        <label htmlFor="dob" className="form-label">Date of Birth:</label>
+        <label htmlFor="dob" className="form-label"  placeholder="Date of Birth">Date of Birth:</label>
         <input
           type="date"
           id="dob"
