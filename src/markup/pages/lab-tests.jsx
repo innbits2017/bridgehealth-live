@@ -105,7 +105,7 @@ class lab_tests extends Component {
                 </section> */}
                 <section class="team-section">
                     <div class="auto-container">
-                        <h2 className='header2'>
+                        <h2 className='labtitle'>
                             <span className='headeingcolorblack'> What We </span>
                             <span className='headeingcolorblue'>  Offer</span>
                         </h2>
@@ -298,7 +298,7 @@ class lab_tests extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/lab5.png')} alt="" className='widthimg' />
+                                        <img src={require('../../assets/images/shape/lab5.png')} alt="" className='' />
                                     </div>
                                 </div>
                             </div>

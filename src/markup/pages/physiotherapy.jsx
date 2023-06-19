@@ -22,8 +22,8 @@ class physiotherapy extends Component {
 
                             <div class="textleft">
                                 <h2 className='textleft fontSize'>
-                                    <span className='headeingcolorblack'>Improve your mobility </span><br></br>
-                                    <span className='headeingcolorblue'> one step at a time </span>
+                                    <span className='headeingcolorblack'>Improve your<span className='headeingcolorblue'> mobility </span><br></br>
+                                     one step at a time </span>
 
                                 </h2>
                                 <h3 className='textleft marginTop40'>

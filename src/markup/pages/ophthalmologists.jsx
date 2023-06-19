@@ -27,7 +27,7 @@ class ophthalmologist extends Component {
 
                                 </h2>
                                 <h3 className='textleft marginTop40'>
-                                    Talk to our Ophthalmologists today
+                                    Talk to our OPHTHALMOLOGISTS today
                                 </h3>
                             </div>
                             {/* <button class="commonBtnforAll">BOOK NOW</button> */}
@@ -112,6 +112,11 @@ class ophthalmologist extends Component {
                 </section>
                 <section class="">
                     <div class="auto-container">
+                    <h2 className='header1 text-center'>
+                                        <span className='headeingcolorblack'> The</span>
+                                        <span className='headeingcolorblue'>  Bridge Health</span>
+                                        <span className='headeingcolorblack'> Advantage </span>
+                                    </h2>
                         <div class="row flex-column-reverse">
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
@@ -122,11 +127,11 @@ class ophthalmologist extends Component {
                             </div>
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
-                                    <h2 className='header1'>
+                                    {/* <h2 className='header1'>
                                         <span className='headeingcolorblack'> The</span>
                                         <span className='headeingcolorblue'>  Bridge Health</span>
                                         <span className='headeingcolorblack'> Advantage </span>
-                                    </h2>
+                                    </h2> */}
                                     <ul className='listicon'>
                                         <li>
                                             Eye care tips

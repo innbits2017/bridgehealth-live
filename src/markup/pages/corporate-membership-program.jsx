@@ -255,7 +255,7 @@ class corporate_membership_program extends Component {
                 </section>
 
                 {/* <!-- Contact Section --> */}
-                <section class="contact-section">
+                <section class="">
                     <section class="">
                         <div class="auto-container">
                             <div class="sec-title text-center">

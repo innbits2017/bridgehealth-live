@@ -114,7 +114,7 @@ class b2cmembership extends Component {
     return (
       <>
         <Header />
-        <section class="team-section padding">
+        <section class="team-section padding personal-health">
           <section class="container-fluid">
             <div class="row align-items-center auto-container">
 
@@ -145,7 +145,7 @@ class b2cmembership extends Component {
             </div>
           </section>
         </section>
-        <div class="container-fluid marginTop80">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-lg-2"></div>
             <div class="col-lg-8 b2cimgcenter">

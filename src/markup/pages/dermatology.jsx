@@ -106,17 +106,17 @@ class dermatology extends Component {
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-4">
-                                <img src={require('../../assets/images/gallery/fair1.png')} alt="" class="avtar" />
+                                <img src={require('../../assets/images/gallery/dermatology1.png')} alt="" class="avtar" />
                                 <p className='treat'>Non-surgical fat removal</p>
                             </div>
 
                             <div class="col-sm-4">
-                                <img src={require('../../assets/images/gallery/fair2.png')} alt="" class="avtar" />
+                                <img src={require('../../assets/images/gallery/dermatology2.png')} alt="" class="avtar" />
                                 <p className='treat'>Laser Hair Removal</p>
                             </div>
 
                             <div class="col-sm-4">
-                                <img src={require('../../assets/images/gallery/fair3.png')} alt="" class="avtar" />
+                                <img src={require('../../assets/images/gallery/dermatology3.png')} alt="" class="avtar" />
                                 <p className='treat'>Dandruff control and gray<br></br> hair treatment</p>
                             </div>
                         </div>

@@ -106,7 +106,7 @@ class diabetes extends Component {
 
                 <section class="contact-section">
                     <div class="auto-container">
-                        <h2 className='header1'>
+                        <h2 className='header1 text-center'>
                             <span className='headeingcolorblack'> The</span>
                             <span className='headeingcolorblue'>  Bridge Health</span>
                             <span className='headeingcolorblack'> Advantage </span>

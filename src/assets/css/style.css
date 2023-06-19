@@ -552,8 +552,16 @@ img {
 .doctoeback
 {
 	background-position: left top;
-	background-repeat: no-repeat;
-    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-size: 15% !important;
+	background-image: url(../images/shape/roundesign.png);
+}
+
+.personal-health
+{
+	background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 30% !important;
 	background-image: url(../images/shape/roundesign.png);
 }
 /*** 
@@ -2952,7 +2960,7 @@ img {
 	color: #25283a;
 	margin: 0;
 	margin-left: 38px;
-	word-spacing: 8px;
+	word-spacing: 3px;
 	text-align: justify;
 	line-height: 36px;
 }
@@ -10109,8 +10117,8 @@ padding: 65px 30px;
 }
 
 .flotrightimg {
-	float: right;
-}
+    float: right;
+    margin-right: 9px;}
 .darmanorepeat
 {
 	background-size: cover !important;
@@ -10154,7 +10162,7 @@ padding: 65px 30px;
 
 .listicon li {
 	margin-left: 4rem;
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	line-height: 45px;
 
 }
@@ -10963,9 +10971,10 @@ a:not([href]):not([tabindex]) {
 
 .b2bback {
 	background-image: url(../images/shape/Group237656.png);
-	background-size: 104% 92%;
-    padding-bottom: 125px;
+	background-position: bottom;
+    padding-bottom: 253px;
     background-repeat: no-repeat;
+    background-size: 100%;
 
 }
 
@@ -11316,6 +11325,15 @@ hr {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	.bloground {
+		margin-top: -3rem !important;
+		padding-top: 20%;
+		text-align: justify;
+	}
+	.textwidth
+	{
+		width: auto !important;
+	}
 	.physiobox {
 		background: rgba(255, 255, 255, 0.75);
 		border-radius: 0px 40px 245px 0px;
@@ -12127,6 +12145,12 @@ text-align: center;	}
 
 }
 @media only screen and (max-width: 600px) {
+	.talkTo img {
+		width: 36px !important;
+		padding-bottom: 5px;
+		margin-right: 0px !important;
+
+	}
 	.flex-column-reverse {
 		flex-direction: column-reverse!important;
 	}
@@ -12893,13 +12917,13 @@ margin-top: 50px;
 
 .pharback {
 	background-repeat: no-repeat;
-	background-position: top left;
+	background-position: left;
 	background-image: url(../images/shape/pharround.png);
 }
 
 .dermaback {
 	background-repeat: no-repeat;
-	background-position: top right;
+    background-position: center right;
 	background-image: url(../images/shape/dermaback.png);
 }
 
@@ -13514,7 +13538,14 @@ margin-top: 50px;
   }
   .colz
   {
-	z-index:2 !important;
+	position:relative;
+	left:0;
+	z-index:10000;
+		
+  }
+  .coly
+  {
+	z-index:999;
   }
   .marginleft8
   {
@@ -13899,4 +13930,35 @@ tr > :first-child {
     background-color: blue;
     color: #fff;
 	margin-bottom: 2rem;
+}
+.textwidth
+{
+	width: 400px;
+}
+.textwidth p
+{
+margin-bottom: 0px !important;}
+
+.outline
+{
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.bloground
+{
+	margin-top: -17rem;
+    padding-top: 20%;
+    text-align: justify;
+}
+.marginTopBottom
+{
+    margin-top: 4%;
+    margin-bottom: 4%;}
+.labtitle
+{
+		font-size: 3rem;
+}
+.dash
+{
+	width: 3%;
+    padding-left: 4px;
 }

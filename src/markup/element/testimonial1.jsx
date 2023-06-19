@@ -440,16 +440,15 @@ class Testimonial1 extends Component {
                                         {/* <!-- Testimonial-block --> */}
                                         <div class="testimonial-block">
                                             <div class="author-info">
-                                                <div class="thumb"><img src={require('../../assets/images/shape/test12.png')} alt="" />
+                                            <div class="thumb"><img src={require('../../assets/images/shape/test12.png')} alt="" />
                                                 </div>
-
                                             </div>
                                             <div class="inner-box test2">
-                                                <h5 className='heading12 spenheading'>Dr. Dhanya Prabhu Ramadas</h5>
-                                                <p className='textpara1'>Head - Clinical Services</p>
+                                                <h5 className='heading12 spenheading'>Dr Vedavathi. N</h5>
+                                                <p className='textpara1'>Family Physician</p>
 
                                                 <div class="text">
-                                                    Dr. Veda is an empathetic, competent and passionate doctor. She has over 10 years of experience in identifying and screening individuals
+Dr. Veda is an empathetic, competent and passionate doctor. She has over 10 years of experience in identifying and screening individuals
                                                 </div>
                                             </div>
 
@@ -464,11 +463,12 @@ class Testimonial1 extends Component {
 
                                             </div>
                                             <div class="inner-box test3">
-                                                <h5 className='heading12 spenheading'>Dr Vedavathi. N</h5>
-                                                <p className='textpara1'>Family Physician</p>
+                                                <h5 className='heading12 spenheading'>Dr. Jyotsna Mathai</h5>
+                                                <p className='textpara1'>Consultant Physician</p>
 
                                                 <div class="text">
-                                                    Dr. Jyotsna is a Consultant Physician with a special interest in Women's Health. She has completed her MBBS                                                </div>
+                                                Dr. Jyotsna is a Consultant Physician with a special interest in Women's Health. She has completed her MBBS                                                    
+                                                                                              </div>
                                             </div>
 
                                         </div>

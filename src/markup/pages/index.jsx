@@ -299,10 +299,10 @@ class Index extends Component {
                                 <div class="col-lg-6">
                                     <div class="content-box">
                                         <div class="sec-title">
-                                            <div class="text1 textpadding">
-                                                Predict the onset of   <span className='headeingcolorblack'> hidden illnesses</span> <br></br> and health conditions.<br></br>
-                                                Prevent them by undergoing <span className='headeingcolorblack'>tests.</span><br></br>
-                                                Progress towards <span className='headeingcolorblack'>good health.</span>
+                                            <div class="text1 textpadding textwidth">
+                                               <p> Predict the onset of<span className='headeingcolorblack'> hidden illnesses</span> and health conditions.
+                                               Prevent them by undergoing <span className='headeingcolorblack'>tests. </span>
+                                                Progress towards <span className='headeingcolorblack'>good health.</span></p>
                                             </div>
                                         </div>
                                         <ul className='listicon10'>

@@ -209,7 +209,7 @@ class Career extends Component {
 
                                 </div>
                                 <div className='careerpadding'>   <span class="job-location"><img src={require('../../assets/images/shape/iconmap.png')} alt="" className='padeight' />
-                                    {job.location}</span>
+                                    {job.location}<span> <img src={require('../../assets/images/shape/dash.png')} alt="" className='dash' /></span></span>
                                     <span class="job-timing">
                                         <img src={require('../../assets/images/shape/icontime.png')} alt="" className='padeight' /> {job.timing}</span></div>
                                 <div class="job-card-footer">

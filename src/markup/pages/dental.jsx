@@ -107,7 +107,7 @@ class dental extends Component {
                         <div class="col-lg-6">
                             <div class="image-wrapper">
                                 <div class="image-one">
-                                    <img src={require('../../assets/images/shape/dent1.png')} alt="" className='imgwidth90 ' />
+                                    <img src={require('../../assets/images/shape/dent1.png')} alt="" className=' imgFloatRight' />
                                 </div>
                             </div>
                         </div>
@@ -154,7 +154,7 @@ class dental extends Component {
 
 
                         <div class="row">
-
+                    
                             <div class="col-lg-6">
                                 <img src={require('../../assets/images/shape/dental2.png')} alt="" className='widthimg' />
 

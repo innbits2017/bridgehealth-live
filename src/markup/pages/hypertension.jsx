@@ -193,12 +193,14 @@ class hypertension extends Component {
 
 
                 <section class="contact-section">
+
                     <div class="auto-container heath-margin">
-                        <h2 className='header1'>
-                            <span className='headeingcolorblack'> The</span>
-                            <span className='headeingcolorblue'>  Bridge Health</span>
-                            <span className='headeingcolorblack'> Advantage </span>
-                        </h2>
+                    <h2 className='header1 text-center'>
+                                        <span className='headeingcolorblack'> The</span>
+                                        <span className='headeingcolorblue'>  Bridge Health</span>
+                                        <span className='headeingcolorblack'> Advantage </span>
+                                    </h2>
+                     
                         <div class="row">
 
                             <div class="col-lg-6">
