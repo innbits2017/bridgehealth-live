@@ -138,10 +138,20 @@ class Career extends Component {
                                         <div class="filtter">
                                             <form action="#" class="language-switcher">
                                                 <select>
-                                                    <option value="1">Filter</option>
-                                                    <option value="1">FR</option>
-                                                    <option value="1">SP</option>
-                                                    <option value="1">BE</option>
+                                                    <option value="">Filter</option>
+                                                    <option value="1">Clinical Services</option>
+                                                    <option value="2">Operations</option>
+                                                    <option value="3">Corporate Operations</option>
+                                                    <option value="4">Corporate Sales</option>
+                                                    <option value="5">Marketing</option>
+                                                    <option value="6">Technology</option>
+                                                    <option value="7">Pharmacy</option>
+                                                    <option value="8">Sales & Operations</option>
+                                                    <option value="7">Finance</option>
+                                                    <option value="7">HR</option>
+                                                    <option value="7">Facility & Admin</option>
+                                                    <option value="7">Strategic Initiatives</option>
+                                                    <option value="7">Affiliates & Alliances</option>
                                                 </select>
                                             </form>
                                         </div>

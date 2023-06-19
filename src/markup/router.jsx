@@ -42,6 +42,7 @@ import termsOfUse from './pages/terms-of-use';
 import privacyPolicies from './pages/privacy-policies';
 import HealthiskAssessment from'./pages/health-risk-assessment';
 import FormComponent from './pages/career-form';
+import careerAdmin from './pages/career-admin';
 
 
 class Router extends Component {
@@ -91,6 +92,8 @@ class Router extends Component {
                         <Route path='/terms-of-use' component={termsOfUse}/>
                         <Route path='/privacy-policies' component={privacyPolicies}/>
                         <Route path='/health-risk-assessment' component={HealthiskAssessment}/>
+                        <Route path='/career-admin' component={careerAdmin}/>
+                        
 
                     </Switch>
                     <BackToTop />
