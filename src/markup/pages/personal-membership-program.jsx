@@ -157,8 +157,8 @@ class b2cmembership extends Component {
                 <img src={require('../../assets/images/shape/imageb2c.png')} alt="" className='imgwidth' />
               </div>
 
-              <div class="btn-box text-center btn5">
-                <ContactForm buttonText="say yes" className='submitcontact' />
+              <div class="btn-box text-center ">
+                <ContactForm buttonText="say yes" className='submitcontact extra-mar' />
               </div>
             </div>
             <div class="col-lg-2"></div>

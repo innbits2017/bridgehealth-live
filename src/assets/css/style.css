@@ -10564,6 +10564,7 @@ figure:hover+span {
 
 .textleft {
 	text-align: left;
+	font-weight: 500 !important;
 
 }
 
@@ -11908,6 +11909,7 @@ text-align: center;	}
 	}
 
 	.textleft {
+		font-weight: 500 !important;
 		font-size: 23px !important;
 		text-align: center;
 	}
@@ -13843,4 +13845,9 @@ tr > :first-child {
 /* don't do this */
 tr > :first-child {
   box-shadow: inset 0px 1px black;
+}
+
+.extra-mar {
+	margin-top: 40px;
+    margin-left: 50px;
 }
