@@ -43,6 +43,7 @@ import privacyPolicies from './pages/privacy-policies';
 import HealthiskAssessment from'./pages/health-risk-assessment';
 import FormComponent from './pages/career-form';
 import careerAdmin from './pages/career-admin';
+import JobDescription from './pages/JobDescription';
 
 
 class Router extends Component {
@@ -93,6 +94,7 @@ class Router extends Component {
                         <Route path='/privacy-policies' component={privacyPolicies}/>
                         <Route path='/health-risk-assessment' component={HealthiskAssessment}/>
                         <Route path='/career-admin' component={careerAdmin}/>
+                        <Route path='/JobDescription' component={JobDescription}/>
                         
 
                     </Switch>

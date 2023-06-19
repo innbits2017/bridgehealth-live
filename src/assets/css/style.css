@@ -13879,3 +13879,24 @@ tr > :first-child {
 	margin-top: 40px;
     margin-left: 50px;
 }
+
+/* .first-child1 {
+    background: red;
+} */
+
+/* ===========================================================JobDescription CSS */
+
+.job-desc li {
+	list-style-type: circle !important;
+}
+
+.sub-btn {
+    text-align: center;
+    border: 2px solid;
+	border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    color: #fff;
+	margin-bottom: 2rem;
+}

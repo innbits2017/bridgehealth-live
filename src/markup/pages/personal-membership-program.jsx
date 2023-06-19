@@ -576,7 +576,7 @@ class b2cmembership extends Component {
                 <table class="unfixed-table">
                   <thead>
                     <tr>
-                      <th>SERVICE OFFERING</th>
+                      <th className="first-child1">SERVICE OFFERING</th>
                       <th>BH BLUE</th>
                       <th>BH SILVER</th>
                       <th>BH GOLD</th>
@@ -584,10 +584,10 @@ class b2cmembership extends Component {
                       <th>BH PLATINUM +</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody className="per-price">
                     <tr>
                       <th></th>
-                      <td>101Tests + ECG</td>
+                      <td>101 Tests + ECG</td>
                       <td>118 Tests + ECG + USG</td>
                       <td>122 Tests + ECG + USG</td>
                       <td>138 Tests + ECG + USG</td>
