@@ -124,7 +124,7 @@ class FooterFormValidation extends Component {
                                 onChange={this.handleChange}
                                 name="username"
                                 id="name"
-                                placeholder="Name*"
+                                placeholder="Name"
                                 className='inputfooter'
                             />
                             {errors.username && <div className="error">{errors.username}</div>}
