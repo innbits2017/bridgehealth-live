@@ -265,7 +265,7 @@ class b2cmembership extends Component {
                      </div> */}
               </div>
               <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                <div class="health-plan-item featured">
+                <div class="health-plan-item featured table-content">
                   <h3>Service Offering</h3>
                   <ul>
                     <li> Initial Health Assessment</li>
@@ -429,7 +429,7 @@ class b2cmembership extends Component {
                     <li>15%</li>
                     <li>15%</li>
                     <li>10%</li>
-                    <li>Free</li>
+                    <li>FREE</li>
                     <li><i class="bi bi-check"></i> </li>
                   </ul>
                   <p class="buy-btn border-gold">₹16,999</p>
@@ -472,7 +472,7 @@ class b2cmembership extends Component {
                     <li>20%</li>
                     <li>15%</li>
                     <li>1 session + 10%</li>
-                    <li>Free</li>
+                    <li>FREE</li>
                     <li><i class="bi bi-check"></i> </li>
                   </ul>
                   <p class="buy-btn border-platinum">₹24,999</p>
@@ -515,7 +515,7 @@ class b2cmembership extends Component {
                     <li>20% </li>
                     <li>15%</li>
                     <li>1 session + 10%</li>
-                    <li>Free</li>
+                    <li>FREE</li>
                     <li><i class="bi bi-check"></i> </li>
                   </ul>
                   <p class="buy-btn border-platinum-plus">₹29,999</p>
@@ -774,9 +774,9 @@ class b2cmembership extends Component {
                       <th>Home Sample Collection</th>
                       <td></td>
                       <td></td>
-                      <td>Free</td>
-                      <td>Free</td>
-                      <td>Free</td>
+                      <td>FREE</td>
+                      <td>FREE</td>
+                      <td>FREE</td>
                     </tr>
                     <tr>
                       <th>Price</th>

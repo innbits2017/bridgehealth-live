@@ -13293,7 +13293,7 @@ margin-top: 50px;
 	border-radius: 5px;
 	text-align:center;
 	font-size: 15px;
-	font-weight: 500;
+	font-weight: 600;
 	font-family: var(--font-primary);
 	transition: 0.3s;
 	width:100%
@@ -13339,11 +13339,11 @@ margin-top: 50px;
 	  width: 100%;
   }
   
-  .border-blue {border:2px solid #1963C6; color:#00527C; margin-top: 5.3rem;}
-  .border-silver {border:2px solid #1963C6; color:#00527C; margin-top: 4rem;}
-  .border-gold {border:2px solid #804D05; color:#804D05; margin-top: 2.2rem;}
-  .border-platinum {border:2px solid #4A4A4A; color:#484848; margin-top: 3.4rem;}
-  .border-platinum-plus {border:2px solid #5B5B77; color:#484848; margin-top: 2.2rem;}
+  .border-blue {border:2px solid #1963C6; color:#00527C; margin-top: 7rem;}
+  .border-silver {border:2px solid #1963C6; color:#00527C; margin-top: 5.9rem;}
+  .border-gold {border:2px solid #804D05; color:#804D05; margin-top: 4rem;}
+  .border-platinum {border:2px solid #4A4A4A; color:#484848; margin-top: 5.4rem;}
+  .border-platinum-plus {border:2px solid #5B5B77; color:#484848; margin-top: 4rem;}
   
   .health-plan .featured h3 {
 	  background-color: #E8EFF9;
@@ -13408,6 +13408,7 @@ margin-top: 50px;
 	text-align:left;
 	color: #000000;
 	padding-left: 10px;
+	text-align: center;
   }
   .health-plan .featured {
 	  background-color: #EAEAEA;
@@ -13777,11 +13778,21 @@ button {
 }
 
 
-/* ===============================================Mobile code css */
-/* .desktop-plan-table{
-	display: none;
-	
-} */
+/* ============================================================Mobile code css */
+.desktop-plan-table{
+	display: none;	
+}
+@media only screen and (min-width: 1200px) {
+	.desktop-plan-table {
+	  display: block;
+	}
+}
+
+div.table-content {
+    font-weight: 600;
+    font-size: 20px;
+}
+
 /* default styling. Nothing to do with freexing first row and column */
 main {display: flex;}
 main > * {border: 1px solid;}
