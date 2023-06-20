@@ -13880,12 +13880,13 @@ div.table-content {
 main {display: flex;}
 main > * {border: 1px solid;}
 table {border-collapse: collapse; font-family: helvetica}
-td, th {border:  1px solid;
-      padding: 10px;
-      min-width: 200px;
-      background: white;
-      box-sizing: border-box;
-      text-align: left;
+td, th {
+	border:  1px solid;
+    padding: 10px;
+    min-width: 200px;
+    background: white;
+    box-sizing: border-box;
+    text-align: center;
 }
 .table-container {
   position: relative;
@@ -13895,18 +13896,59 @@ td, th {border:  1px solid;
 }
 
 thead th {
+  text-align: center;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 2;
-  background: hsl(20, 50%, 70%);
+  /* background: hsl(20, 50%, 70%); */
+  background: #8A979E;
 }
-
+thead .pers-blue {
+	text-align: center;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	/* background: hsl(20, 50%, 70%); */
+	background: #1963c6;
+  }
+thead .pers-col {
+	position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  /* background: hsl(20, 50%, 70%); */
+    background: #F0AF3D;
+}
+thead .pers-plat{
+	background: linear-gradient(90deg, #E5EFF7 0%, #D2DCE4 12.92%, #939DA5 40.45%, #ABB5BD 49.19%, #D5DFE7 66.06%, #E5EFF7 74.72%, #C4CED5 99.44%, #C4CED5 100%);
+}
+thead .pers-serv{
+	background-color: #E8EFF9 !important;
+}
 thead th:first-child {
   left: 0;
   z-index: 3;
 }
-
+tbody .pers-bh{
+	background: #ADD8E6;
+	/* background: #5dd7d3; */
+	/* background: linear-gradient(180deg, #65DFCD 0%, #229FFD 100%); */
+}
+tbody .pers-bh1{
+	background: #5dd7d3;
+	/* background: linear-gradient(180deg, #65DFCD 0%, #229FFD 100%); */
+}
+tbody .pers-gold{
+	background: #ffd495;
+}
+tbody .pers-plat{
+	background: #c4ced6;
+}
+tbody .pers-plus{
+	background: #dfdfec;
+}
 tfoot {
   position: -webkit-sticky;
   bottom: 0;
@@ -13917,7 +13959,8 @@ tfoot td {
   position: sticky;
   bottom: 0;
   z-index: 2;
-  background: hsl(20, 50%, 70%);
+  background: #1963c6;
+  /* background: hsl(20, 50%, 70%); */
 }
 
 tfoot td:first-child {
@@ -13926,21 +13969,30 @@ tfoot td:first-child {
 
 tbody {
   overflow: scroll;
-  height: 200px;
+  height: 100px;
 }
 
 /* MAKE LEFT COLUMN FIXEZ */
 tr > :first-child {
+	text-align: center;
   position: -webkit-sticky;
   position: sticky; 
-  background: hsl(180, 50%, 70%);
+  background: #eaeaea;
+  /* background: hsl(180, 50%, 70%); */
   left: 0; 
 }
 /* don't do this */
 tr > :first-child {
   box-shadow: inset 0px 1px black;
 }
-
+tr > :second-child {
+	text-align: center;
+  position: -webkit-sticky;
+  position: sticky; 
+  background: #eaeaea;
+  /* background: hsl(180, 50%, 70%); */
+  left: 0; 
+}
 .extra-mar {
 	margin-top: 40px;
     margin-left: 50px;

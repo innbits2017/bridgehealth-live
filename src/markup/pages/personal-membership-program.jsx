@@ -576,215 +576,215 @@ class b2cmembership extends Component {
                 <table class="unfixed-table">
                   <thead>
                     <tr>
-                      <th className="first-child1">SERVICE OFFERING</th>
-                      <th>BH BLUE</th>
+                      <th className="pers-serv">SERVICE OFFERING</th>
+                      <th className="pers-blue">BH BLUE</th>
                       <th>BH SILVER</th>
-                      <th>BH GOLD</th>
-                      <th>BH PLATINUM</th>
-                      <th>BH PLATINUM +</th>
+                      <th className="pers-col">BH GOLD</th>
+                      <th className="pers-plat">BH PLATINUM</th>
+                      <th className="pers-plat">BH PLATINUM +</th>
                     </tr>
                   </thead>
                   <tbody className="per-price">
                     <tr>
                       <th></th>
-                      <td>101 Tests + ECG</td>
-                      <td>118 Tests + ECG + USG</td>
-                      <td>122 Tests + ECG + USG</td>
-                      <td>138 Tests + ECG + USG</td>
-                      <td>222 Tests + ECG + USG</td>
+                      <td className="pers-bh">101 Tests + ECG</td>
+                      <td className="pers-bh1">118 Tests + ECG + USG</td>
+                      <td className="pers-gold">122 Tests + ECG + USG</td>
+                      <td className="pers-plat">138 Tests + ECG + USG</td>
+                      <td className="pers-plus">222 Tests + ECG + USG</td>
                     </tr>
                     <tr>
                       <th>Initial Health Assessment</th>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plat"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
                     </tr>
                     <tr>
                       <th>Blood Health</th>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plat"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
                     </tr>
                     <tr>
                       <th>Diabetic Profile</th>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plat"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
                     </tr>
                     <tr>
                       <th>Kidney Health</th>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plat"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
                     </tr>
                     <tr>
                       <th>Cardiac Health</th>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plat"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
                     </tr>
                     <tr>
                       <th>Liver Health</th>
-                      <td></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh"></td>
+                      <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plat"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
                     </tr>
                     <tr>
                       <th>Nutrition Health</th>
-                      <td></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh"></td>
+                      <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plat"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
                     </tr>
                     <tr>
                       <th>Bone Health</th>
-                      <td></td>
-                      <td></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh"></td>
+                      <td className="pers-bh1"></td>
+                      <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plat"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
                     </tr>
                     <tr>
                       <th>Thyroid Profile</th>
-                      <td></td>
-                      <td></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh"></td>
+                      <td className="pers-bh1"></td>
+                      <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plat"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
                     </tr>
                     <tr>
                       <th>Oncology Screening</th>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh"></td>
+                      <td className="pers-bh1"></td>
+                      <td className="pers-gold"></td>
+                      <td className="pers-plat"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
                     </tr>
                     <tr>
                       <th>Respiratory Health</th>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh"></td>
+                      <td className="pers-bh1"></td>
+                      <td className="pers-gold"></td>
+                      <td className="pers-plat"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
                     </tr>
                     <tr>
                       <th>Radiology Screening</th>
-                      <td>ECG</td>
-                      <td>ECG, USG (ABD. & PELVIS)</td>
-                      <td>ECG, USG (ABD. & PELVIS),ECHO</td>
-                      <td>X-ray, ECG, USG (ABD. & PELVIS), ECHO</td>
-                      <td>X-ray, ECG, USG (ABD. & PELVIS), ECHO</td>
+                      <td className="pers-bh">ECG</td>
+                      <td className="pers-bh1">ECG, USG (ABD. & PELVIS)</td>
+                      <td className="pers-gold">ECG, USG (ABD. & PELVIS),ECHO</td>
+                      <td className="pers-plat">X-ray, ECG, USG (ABD. & PELVIS), ECHO</td>
+                      <td className="pers-plus">X-ray, ECG, USG (ABD. & PELVIS), ECHO</td>
                     </tr>
                     <tr>
                       <th>Physician Consults</th>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>4</td>
+                      <td className="pers-bh">2</td>
+                      <td className="pers-bh1">2</td>
+                      <td className="pers-gold">2</td>
+                      <td className="pers-plat">2</td>
+                      <td className="pers-plus">4</td>
                     </tr>
                     <tr>
                       <th>Emotional Health Consults</th>
-                      <td>1</td>
-                      <td>1</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>4</td>
+                      <td className="pers-bh">1</td>
+                      <td className="pers-bh1">1</td>
+                      <td className="pers-gold">2</td>
+                      <td className="pers-plat">2</td>
+                      <td className="pers-plus">4</td>
                     </tr>
                     <tr>
                       <th>Webinars and Group Sessions</th>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plat"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
                     </tr>
 
                     <tr>
                       <th>Dental, Eye and Derma Screening</th>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh"></td>
+                      <td className="pers-bh1"></td>
+                      <td className="pers-gold"></td>
+                      <td className="pers-plat"></td>
+                      <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
                     </tr>
                     <tr>
                       <th>Nutrition Assessment and Consults</th>
-                      <td>12</td>
-                      <td>1</td>
-                      <td>4</td>
-                      <td>4</td>
-                      <td>4</td>
+                      <td className="pers-bh">12</td>
+                      <td className="pers-bh1">1</td>
+                      <td className="pers-gold">4</td>
+                      <td className="pers-plat">4</td>
+                      <td className="pers-plus">4</td>
                     </tr>
                     <tr>
                       <th>Yoga/Fitness Assessments and Sessions</th>
-                      <td></td>
-                      <td></td>
-                      <td>5</td>
-                      <td>15</td>
-                      <td>15</td>
+                      <td className="pers-bh"></td>
+                      <td className="pers-bh1"></td>
+                      <td className="pers-gold">5</td>
+                      <td className="pers-plat">15</td>
+                      <td className="pers-plus">15</td>
                     </tr>
                     <tr>
                       <th>App Access</th>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
-                      <td><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plat"><i class="fa-solid fa-check"></i></td>
+                      <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
                     </tr>
                     <tr>
                       <th>Medicines/Pharmacy (At-Home Delivery)</th>
-                      <td>10%</td>
-                      <td>10%</td>
-                      <td>15%</td>
-                      <td>20%</td>
-                      <td>20%</td>
+                      <td className="pers-bh">10%</td>
+                      <td className="pers-bh1">10%</td>
+                      <td className="pers-gold">15%</td>
+                      <td className="pers-plat">20%</td>
+                      <td className="pers-plus">20%</td>
                     </tr>
                     <tr>
                       <th>Lab tests/ Annual Plans for Family</th>
-                      <td>10%</td>
-                      <td>10%</td>
-                      <td>15%</td>
-                      <td>15%</td>
-                      <td>15%</td>
+                      <td className="pers-bh">10%</td>
+                      <td className="pers-bh1">10%</td>
+                      <td className="pers-gold">15%</td>
+                      <td className="pers-plat">15%</td>
+                      <td className="pers-plus">15%</td>
                     </tr>
                     <tr>
                       <th>Physiotherapy for Self & family</th>
-                      <td>10%</td>
-                      <td>10%</td>
-                      <td>10%^</td>
-                      <td>1 session + 10%</td>
-                      <td>1 session + 10%</td>
+                      <td className="pers-bh">10%</td>
+                      <td className="pers-bh1">10%</td>
+                      <td className="pers-gold">10%^</td>
+                      <td className="pers-plat">1 session + 10%</td>
+                      <td className="pers-plus">1 session + 10%</td>
                     </tr>
                     <tr>
                       <th>Home Sample Collection</th>
-                      <td></td>
-                      <td></td>
-                      <td>FREE</td>
-                      <td>FREE</td>
-                      <td>FREE</td>
+                      <td className="pers-bh"></td>
+                      <td className="pers-bh1"></td>
+                      <td className="pers-gold">FREE</td>
+                      <td className="pers-plat">FREE</td>
+                      <td className="pers-plus">FREE</td>
                     </tr>
                     <tr>
                       <th>Price</th>
-                      <td>₹7,999</td>
-                      <td>₹7,999</td>
-                      <td>₹16,999</td>
-                      <td>₹24,999</td>
-                      <td>₹29,999</td>
+                      <td className="pers-bh">₹7,999</td>
+                      <td className="pers-bh1">₹7,999</td>
+                      <td className="pers-gold">₹16,999</td>
+                      <td className="pers-plat">₹24,999</td>
+                      <td className="pers-plus">₹29,999</td>
                     </tr>
                   </tbody>
 
