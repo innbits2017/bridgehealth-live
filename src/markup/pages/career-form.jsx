@@ -82,6 +82,7 @@ const FormComponent = () => {
 
   return (
     <form onSubmit={handleSubmit} className="container">
+      <h2 className="career-appl">Apply Now</h2>
       <div className="mb-3">
         <label htmlFor="name" className="form-label" placeholder='Name'>Name:</label>
         <input
@@ -189,8 +190,8 @@ const FormComponent = () => {
         />
         {errors.resume && <div className="invalid-feedback">{errors.resume}</div>}
       </div>
-
-      <button type="submit" className="form-bg">Submit</button>
+      <button className="sub-btn1">Submit</button>
+      {/* <button type="submit" className="form-bg">Submit</button> */}
     </form>
   );
 };

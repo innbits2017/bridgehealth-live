@@ -14124,3 +14124,23 @@ margin-bottom: 0px !important;}
 	 background-color: #45a049;
   } 
    
+/* ==================Career page css */
+.career-appl{
+	text-align: center;
+}
+
+.sub-btn1 {
+    text-align: center;
+    border: 2px solid;
+	border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    color: #fff;
+	margin-bottom: 2rem;
+}
+
+button.sub-btn1 {
+    /* text-align: center; */
+    margin-left: 40%;
+}
