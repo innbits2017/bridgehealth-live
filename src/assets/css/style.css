@@ -12243,7 +12243,7 @@ text-align: center;	}
 	}
 
 	.expertiseback {
-		margin-top: 50px;
+		/* margin-top: 50px; */
 		background-image: none !important;
 	}
 
@@ -14024,6 +14024,7 @@ tr > :second-child {
 }
 .textwidth p
 {
+	padding-top: 25px;
 margin-bottom: 0px !important;}
 
 .outline

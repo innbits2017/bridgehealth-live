@@ -290,6 +290,7 @@
 	}
 	.main-header.header-style-two .nav-outer .mobile-nav-toggler {
 	    top: 8px;
+		left: 12px;
 	}
 	.case-block-one .overlay {
 		position: relative;left: 0;padding: 30px;
