@@ -137,7 +137,7 @@ class Career extends Component {
                                     </form>
                                     <div class="filtter">
                                         <form action="#" class="language-switcher">
-                                            <select>
+                                            <select className='blog-bgcolor'>
                                                 <option value="">Filter</option>
                                                 <option value="1">Clinical Services</option>
                                                 <option value="2">Operations</option>

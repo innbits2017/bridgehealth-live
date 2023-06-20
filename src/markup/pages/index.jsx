@@ -339,7 +339,7 @@ class Index extends Component {
                                             </li>
                                         </ul>
 
-                                        <div class="btn-box text-center btn5">
+                                        <div class="btn-box text-center btn5 btn6">
                                             <ContactForm buttonText="KNOW MORE" className='btn-style-one'/>
                                         </div>
 

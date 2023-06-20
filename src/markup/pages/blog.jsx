@@ -77,8 +77,8 @@ class Blog extends Component {
                                     <div class=" search-box">
                                         <div class="language">
                                             <form action="#" class="language-switcher">
-                                                <select>
-                                                    <option value="1">Category</option>
+                                                <select className='blog-bgcolor'>
+                                                    <option value="1">Category </option>
                                                     <option value="1">FR</option>
                                                     <option value="1">SP</option>
                                                     <option value="1">BE</option>
