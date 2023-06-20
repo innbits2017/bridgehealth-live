@@ -94,7 +94,7 @@ class Router extends Component {
                         <Route path='/privacy-policies' component={privacyPolicies}/>
                         <Route path='/health-risk-assessment' component={HealthiskAssessment}/>
                         <Route path='/career-admin' component={careerAdmin}/>
-                        <Route path='/JobDescription' component={JobDescription}/>
+                        <Route path='/job-description' component={JobDescription}/>
                         
 
                     </Switch>

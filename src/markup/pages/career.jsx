@@ -215,7 +215,7 @@ class Career extends Component {
                                     <span  class="job-department"> <a href="/career-form" class="view-position">Apply Now</a> </span>
                                 </div>
                                 <div class="job-card-footer">
-                                    <a href="#" class="view-position">View Position &#8594;</a>
+                                    <a href="/job-description" class="view-position">View Position &#8594;</a>
 
                                 </div>
                             </div>

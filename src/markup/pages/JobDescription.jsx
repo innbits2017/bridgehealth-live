@@ -76,7 +76,7 @@ const JobDescription = () => {
                         Hence, he/she needs to be comfortable with varying expectations of different stakeholders. 
                         </p>
                     </div>
-                    <button className="sub-btn">Apply Now</button>
+                    <a href="/career-form"><button className="sub-btn">Apply Now</button></a>
                 </div>
                 <div className="col-lg-4">
                     <h4>Job Details</h4>
@@ -87,7 +87,7 @@ const JobDescription = () => {
                         <li><strong>Posted:</strong> June 16, 2023</li>
                         <li><strong>Expires:</strong> July 16, 2023</li>
                     </ul>
-                    <button className="sub-btn">Apply Now</button>
+                    <a href="/career-form"><button className="sub-btn">Apply Now</button></a>
                 </div>
             </div>
         </div>
