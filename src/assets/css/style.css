@@ -785,7 +785,7 @@ img {
 	/* transform: translate(10px,8px); */
 	z-index: -1;
 	background: conic-gradient(from 90deg at 82% 15%, #dbdbdb00, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3, #ffffffa3);
-	filter: blur(53px);
+	filter: blur(16px);
 	background: linear-gradient(to top, #dbdbdb00 0%, right #ffffffa3 100%) !important;
 }
 
@@ -10248,7 +10248,7 @@ li {
 .column div {
 	position: relative;
 	padding: 12px;
-	padding-left: 20px !important;
+	padding-left: 15px !important;
 	padding-top: 15px;
 	border-radius: 31.3223px;
 }
@@ -10858,9 +10858,9 @@ input[type=radio] {
 
 .expertiseback1 {
 	background-image: url(../images/shape/testback.png);
-	background-size: 15% 41%;
-	background-repeat: no-repeat;
-	background-position: top right;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 
 a:not([href]):not([tabindex]) {
@@ -12383,8 +12383,8 @@ hr {
 .treat {
 	color: #000000;
 	margin-top: 20px;
-	margin-left: 60px;
 	font-weight: 600;
+	text-align: center;
 }
 
 .fontimp {
@@ -14231,9 +14231,9 @@ tr> :second-child {
 }
 
 .bloground {
-	/* margin-top: -17rem; */
-	padding-top: 3%;
-	text-align: justify;
+    margin-top: -17rem !important;
+    padding-top: 23%;
+    text-align: justify;
 }
 
 .marginTopBottom {
@@ -14383,4 +14383,48 @@ button.sub-btn1 {
 }
 .health-plan .buy-btn {
     margin: 0px;
+}
+.marging
+{
+	margin-left: -60px;
+}
+.fontrem
+{
+	font-size: 3rem;
+}
+.fontSize18
+{
+	font-size: 28px;
+}
+.blogPagebackground
+{
+	margin-top: -6%;
+}
+.blogPagebox
+{
+	padding-top: 8%;
+}
+@media only screen and (max-width: 767px)
+{.sec-title h2 br {
+    display: block !important;
+}
+}
+
+@media only screen and (max-width: 600px) {
+.font25
+{
+	font-size: 23px !important;
+}
+.margintextbotton
+{
+			margin-bottom: 30px;
+
+}
+.martextleft40
+{
+	margin-left: 0px !important;
+}
+.marginleftspan {
+    margin-left: 0px !important;
+}
 }

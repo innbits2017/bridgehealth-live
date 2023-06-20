@@ -67,9 +67,9 @@ class Blog extends Component {
 
 
                 {/* <!-- News Section --> */}
-                <section class="news-section blogdesignerd">
-                    <div class="container">
-                        <div class="row" style={{ background: 'white' }}>
+                <section class="news-section blogdesignerd blogPagebackground">
+                    <div class="container blogPagebox">
+                        <div class="row">
                             <div class="col-lg-8 mx-auto">
 
                                 <div class="bg-white p-5 ">

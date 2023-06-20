@@ -105,7 +105,7 @@ class doctor_consults extends Component {
 
                 <section>
 
-                    <div class="auto-container">
+                    <div class="auto-container marginTop80">
                         <h2 className='header1 textaligncenter'>
                             <span className='headeingcolorblack'> The</span>
                             <span className='headeingcolorblue'>  Bridge Health</span>
@@ -134,7 +134,7 @@ class doctor_consults extends Component {
                 </section>
 
                 <section>
-                    <div class="auto-container">
+                    <div class="auto-container marginTop80">
                         <div class="sec-title text-center">
                             <h2 className='header1'>
                                 <span className='headeingcolorblack'> It’s a </span>

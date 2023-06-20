@@ -153,7 +153,7 @@ class physiotherapy extends Component {
                                 <div class="contact-form-area">
                                     <div class="auto-container">
 
-                                        <h2 className='header1'>
+                                        <h2 className='header1 fontrem'>
                                             <span className='headeingcolorblack'> The</span>
                                             <span className='headeingcolorblue'>  Bridge Health</span>
                                             <span className='headeingcolorblack'> Advantage </span>

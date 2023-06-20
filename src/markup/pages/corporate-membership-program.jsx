@@ -274,7 +274,7 @@ class corporate_membership_program extends Component {
 
                                     {/* <!-- Contact Form--> */}
                                     <div class="contact-form">
-                                        <p>Reach out to us and we'll help you in setting up the <br></br>best of <span className='headeingcolorblue'>Preventive Healthcare</span> Services for your employee.</p>
+                                        <p className='text-center'>Reach out to us and we'll help you in setting up the <br></br>best of <span className='headeingcolorblue'>Preventive Healthcare</span> Services for your employee.</p>
                                         <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} id="contact-form">
                                             <div class="row clearfix">
                                                 <div class="col-md-12 form-group">

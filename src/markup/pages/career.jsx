@@ -267,7 +267,7 @@ class Career extends Component {
 
 
 
-                <div class="auto-container">
+                <div class="auto-container marginbtm">
                     <div class="row align-items-center">
 
                         <div class="col-lg-6">

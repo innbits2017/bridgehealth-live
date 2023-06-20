@@ -187,8 +187,8 @@ class Index extends Component {
                     <div class="auto-container">
                         <div class="sec-title text-center">
                             <h2 className='fontwidth'>Confused about your health checks?<br></br>
-                                <span className='headeingcolorblack'> Scan our </span>
-                                <span className='headeingcolorblue'>BH Smart Guide<span className='headeingcolorblack'>!</span></span>
+                                <span className='headeingcolorblack font25'> Scan our </span>
+                                <span className='headeingcolorblue font25'>BH Smart Guide<span className='headeingcolorblack'>!</span></span>
                             </h2>
                         </div>
 
@@ -244,7 +244,7 @@ class Index extends Component {
                             <h2 style={{ fontSize: 43 + 'px', lineHeight: 50 + 'px' }}> <span className=' headeingcolorblue'> Annual Preventive </span>
                                 <span className='headeingcolorblack'>Health Plans</span>
                             </h2>
-                            <h5 className='heading'>Membership-based integrated programs covering various aspects
+                            <h5 className='heading margintextbotton'>Membership-based integrated programs covering various aspects
                             </h5>
                         </div>
 
@@ -257,10 +257,10 @@ class Index extends Component {
                                 <div class="col-lg-6">
                                     <div class="content-box">
                                         <div class="sec-title">
-                                            <div class="text textpadding1">
-                                                <span className='headeingcolorblue'>#BridgeTheGap</span> with our Annual Health<br></br> Plans that are membership-based <br></br>
-                                                integrated programs covering everything <br></br>from clinical assessments to <br></br>
-                                                consultations, lab tests to nutrition <br></br>sessions, lifestyle management to<br></br> emotional wellness and much more.
+                                            <div class="text textpadding1 fontSize18">
+                                                <span className='headeingcolorblue'>#BridgeTheGap</span> with our Annual Health Plans that are membership-based 
+                                                integrated programs covering everything from clinical assessments to 
+                                                consultations, lab tests to nutrition sessions, lifestyle management to emotional wellness and much more.
                                             </div>
                                         </div>
 

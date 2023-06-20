@@ -84,7 +84,7 @@ class dermatology extends Component {
                 <section>
                     <div class="image-wrapper">
                         <div class="image-one">
-                            <img src={require('../../assets/images/shape/doct.png')} alt="" className='labwidth' />
+                            <img src={require('../../assets/images/shape/dermatology.png')} alt="" className='labwidth' />
                         </div>
                     </div>
 
@@ -103,7 +103,7 @@ class dermatology extends Component {
 
                 <section>
 
-                    <div class="container">
+                    <div class="container marginTop80">
                         <div class="row">
                             <div class="col-sm-4">
                                 <img src={require('../../assets/images/gallery/dermatology1.png')} alt="" class="avtar" />

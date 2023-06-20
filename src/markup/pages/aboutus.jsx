@@ -212,7 +212,7 @@ class aboutUs extends Component {
                 </section>
 
 
-                <section class="">
+                <section class="marginTop80">
                     <div class="auto-container">
                     <div class="sec-title text-center">
                                 <h2 style={{ fontSize: 50 + 'px' }}> <span className='headeingcolorblue'>REACH </span> <span className='headeingcolorblack'>OUT TO US</span><br></br>
