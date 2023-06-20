@@ -96,7 +96,7 @@ const FormComponent = () => {
       </div>
 
       <div className="mb-3">
-        <label htmlFor="email" className="form-label"  placeholder="Email">Email:</label>
+        <label htmlFor="email" className="form-label" placeholder="Email">Email:</label>
         <input
           type="email"
           id="email"
@@ -109,7 +109,7 @@ const FormComponent = () => {
       </div>
 
       <div className="mb-3">
-        <label htmlFor="mobile" className="form-label"  placeholder="Mobile">Mobile:</label>
+        <label htmlFor="mobile" className="form-label" placeholder="Mobile">Mobile:</label>
         <input
           type="text"
           id="mobile"
@@ -148,14 +148,24 @@ const FormComponent = () => {
           onChange={handleChange}
         >
           <option value="">Select Position</option>
-          <option value="hr">HR</option>
-          <option value="java-developer">Java Developer</option>
-          <option value="ui-developer">UI Developer</option>
+          <option value="1">Clinical Services</option>
+          <option value="2">Operations</option>
+          <option value="3">Corporate Operations</option>
+          <option value="4">Corporate Sales</option>
+          <option value="5">Marketing</option>
+          <option value="6">Technology</option>
+          <option value="7">Pharmacy</option>
+          <option value="8">Sales & Operations</option>
+          <option value="7">Finance</option>
+          <option value="7">HR</option>
+          <option value="7">Facility & Admin</option>
+          <option value="7">Strategic Initiatives</option>
+          <option value="7">Affiliates & Alliances</option>
         </select>
         {errors.position && <div className="invalid-feedback">{errors.position}</div>}
       </div>
       <div className="mb-3">
-        <label htmlFor="dob" className="form-label"  placeholder="Date of Birth">Date of Birth:</label>
+        <label htmlFor="dob" className="form-label" placeholder="Date of Birth">Date of Birth:</label>
         <input
           type="date"
           id="dob"

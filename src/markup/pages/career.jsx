@@ -109,57 +109,57 @@ class Career extends Component {
                 <section>
                     <div class="auto-container">
                         <div class="text-center btn5 careertitle">
-                        <img src={require('../../assets/images/shape/careersicon.png')} alt="" />
+                            <img src={require('../../assets/images/shape/careersicon.png')} alt="" />
                         </div>
                     </div>
                     {/* <!-- Search --> */}
                 </section>
 
                 <div class="container">
-                        <div class="row" style={{ background: 'white' }}>
-                            <div class="col-lg-8 mx-auto">
+                    <div class="row" style={{ background: 'white' }}>
+                        <div class="col-lg-8 mx-auto">
 
-                                <div class="bg-white p-5 ">
-                                    {/* <!-- Search --> */}
-                                    <div class=" search-box">
-                                    
-                                        <form>
-                                            <div class="form-group1">
+                            <div class="bg-white p-5 ">
+                                {/* <!-- Search --> */}
+                                <div class=" search-box">
+
+                                    <form>
+                                        <div class="form-group1">
                                             <input
-                                type="search"
-                                name="search-field"
-                                value={this.state.searchTerm}
-                                onChange={e => this.handleChange(e)}
-                                placeholder="Search Topic"
-                                required="" />
-                            <button type="submit" className='submitsearch'><span class="icon far fa-search searchblog"></span></button>
-                                            </div>
-                                        </form>
-                                        <div class="filtter">
-                                            <form action="#" class="language-switcher">
-                                                <select>
-                                                    <option value="">Filter</option>
-                                                    <option value="1">Clinical Services</option>
-                                                    <option value="2">Operations</option>
-                                                    <option value="3">Corporate Operations</option>
-                                                    <option value="4">Corporate Sales</option>
-                                                    <option value="5">Marketing</option>
-                                                    <option value="6">Technology</option>
-                                                    <option value="7">Pharmacy</option>
-                                                    <option value="8">Sales & Operations</option>
-                                                    <option value="7">Finance</option>
-                                                    <option value="7">HR</option>
-                                                    <option value="7">Facility & Admin</option>
-                                                    <option value="7">Strategic Initiatives</option>
-                                                    <option value="7">Affiliates & Alliances</option>
-                                                </select>
-                                            </form>
+                                                type="search"
+                                                name="search-field"
+                                                value={this.state.searchTerm}
+                                                onChange={e => this.handleChange(e)}
+                                                placeholder="Search Topic"
+                                                required="" />
+                                            <button type="submit" className='submitsearch'><span class="icon far fa-search searchblog"></span></button>
                                         </div>
+                                    </form>
+                                    <div class="filtter">
+                                        <form action="#" class="language-switcher">
+                                            <select>
+                                                <option value="">Filter</option>
+                                                <option value="1">Clinical Services</option>
+                                                <option value="2">Operations</option>
+                                                <option value="3">Corporate Operations</option>
+                                                <option value="4">Corporate Sales</option>
+                                                <option value="5">Marketing</option>
+                                                <option value="6">Technology</option>
+                                                <option value="7">Pharmacy</option>
+                                                <option value="8">Sales & Operations</option>
+                                                <option value="7">Finance</option>
+                                                <option value="7">HR</option>
+                                                <option value="7">Facility & Admin</option>
+                                                <option value="7">Strategic Initiatives</option>
+                                                <option value="7">Affiliates & Alliances</option>
+                                            </select>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
                 {/* 
                 <section class="career-head1">
@@ -204,19 +204,22 @@ class Career extends Component {
                         <div class="job-card" key={index}>
                             <div class="job-card-header">
                                 <div>
-                                <span class="job-title">{job.title}</span>
-                                <span class="job-department"><span className='fontweight'>Department:</span> {job.department}</span>
+                                    <span class="job-title">{job.title}</span>
+                                    <span class="job-department"><span className='fontweight'>Department:</span> {job.department}</span>
 
                                 </div>
                                 <div className='careerpadding'>   <span class="job-location"><img src={require('../../assets/images/shape/iconmap.png')} alt="" className='padeight' />
                                     {job.location}<span> <img src={require('../../assets/images/shape/dash.png')} alt="" className='dash' /></span></span>
                                     <span class="job-timing">
-                                        <img src={require('../../assets/images/shape/icontime.png')} alt="" className='padeight' /> {job.timing}</span></div>
+                                        <img src={require('../../assets/images/shape/icontime.png')} alt="" className='padeight' /> {job.timing}</span>
+                                    <span  class="job-department"> <a href="/career-form" class="view-position">Apply Now</a> </span>
+                                </div>
                                 <div class="job-card-footer">
                                     <a href="#" class="view-position">View Position &#8594;</a>
+
                                 </div>
                             </div>
-{/* 
+                            {/* 
                             <div class="job-card-details">
                                 <p class="job-department"><span className='fontweight'>Department:</span> {job.department}</p>
 
