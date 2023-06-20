@@ -220,7 +220,7 @@ class Index extends Component {
                                     <div class="image-wrapper imgright">
                                         <div class="image-one imgpad">
                                             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" className='videofull'>
-                                                <source src={require('../../assets/images/hand.mp4')} type="video/mp4" />
+                                                <source src={require('../../assets/images/hand1.mp4')} type="video/mp4" />
                                             </video>                                        </div>
                                     </div>
                                 </div>
@@ -683,7 +683,7 @@ class Index extends Component {
                         </div>
                         <section>
                             <div class="auto-container">
-                                <div class="btn-box text-center btn5">
+                                <div class="btn-box text-center ">
                                     <button class="btn-style-one btnblog">
                                         <a href='/blog'>
                                             <span class="btn-title btnblog">READ ALL BLOGS</span>

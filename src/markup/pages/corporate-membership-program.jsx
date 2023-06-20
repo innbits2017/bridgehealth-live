@@ -310,7 +310,7 @@ class corporate_membership_program extends Component {
                                                         type="text"
                                                         name="username"
                                                         id="name"
-                                                        placeholder="Company Name"
+                                                        placeholder="Company Name*"
                                                         required="" />
                                                 </div>
                                                 <div class="col-md-12 form-group">

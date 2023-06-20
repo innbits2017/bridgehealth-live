@@ -12113,6 +12113,11 @@ hr {
 	margin-top: -20px;
 }
 
+.btn7 {
+	margin-bottom: 100px;
+	margin-top: -20px;
+}
+
 .btn6{
 	margin-right: 120px;
 }
@@ -13057,11 +13062,15 @@ margin-top: 50px;
 }
 
 .martextleft40 {
-	margin-left: 100px;
+	margin-left: 60px;
 }
 
 .marginleftspan {
 	margin-left: 75px;
+}
+
+.comp-margin{
+	padding-top: 50px;
 }
 
 .triangleback {
@@ -13311,6 +13320,9 @@ margin-top: 50px;
 	background: #fff;
 	height: 99%;
 	border-radius: 5px;
+	display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .health-plan .health-plan-title-1 {
@@ -13717,6 +13729,10 @@ ul.platinumMinh {
 	z-index: 999;
 }
 
+.colx {
+	z-index: 998;
+}
+
 .marginleft8 {
 	margin-left: 8%;
 }
@@ -14011,7 +14027,10 @@ body>div.fade.modal.show>div>div>div>button .yes {
 	margin-left: -7%;
 	padding: 20px 18px 1px 30px;
 }
-
+.seven-cols .service-offering {
+    padding: 0px !important;
+    max-width: 15% !important;
+}
 
 /* ============================================================Mobile code css */
 .desktop-plan-table {
@@ -14331,4 +14350,37 @@ button.sub-btn1 {
 
 .blog-bgcolor {
 	background-color: #FFFFFF;
+}
+
+
+.health-plan .health-plan-item ul:nth-child(2) {
+    height: 720px;
+}
+.health-plan .health-plan-item ul:nth-child(3) {
+    height: 500px	;
+    margin: 0px;
+}
+.health-plan .health-plan-item ul:nth-child(3) li {
+    height: 72px;
+    display: block;
+    margin: 0px !important;
+}
+.health-plan .health-plan-item ul:nth-child(4) {
+    height: 250px;
+    margin: 0px;
+}
+.health-plan .health-plan-item ul:nth-child(4) li {
+    height: 60px;
+    margin: 0px;
+    display: block;
+}
+.health-plan ul li {
+    height: 50px;
+}
+.health-plan .platinum-plus ul li:last-child, .health-plan .silver ul li:last-child, .health-plan .gold ul li:last-child, .health-plan .platinum ul li:last-child {
+    height: 120px;
+    display: block;
+}
+.health-plan .buy-btn {
+    margin: 0px;
 }

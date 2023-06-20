@@ -264,7 +264,7 @@ class b2cmembership extends Component {
                         <h3>Discounts</h3>
                      </div> */}
               </div>
-              <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-md-1 col-md-6 aos-init aos-animate service-offering" data-aos="fade-up" data-aos-delay="200">
                 <div class="health-plan-item featured table-content">
                   <h3>Service Offering</h3>
                   <ul>

@@ -217,7 +217,7 @@ class diet_and_nutrition extends Component {
                                 <span className='headeingcolorblack1'>  Healthier Diet!</span>
                             </h2>
                         </div>
-                        <div class="btn-box text-center btn5">
+                        <div class="btn-box text-center btn7">
                             {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                             <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 

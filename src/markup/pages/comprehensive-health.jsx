@@ -109,7 +109,7 @@ class comprehensiveHealth extends Component {
                 <section>
 
                     <div class="auto-container heath-margin">
-                        <h2 className='header1 textaligncenter'>
+                        <h2 className='header1 textaligncenter comp-margin'>
                             <span className='headeingcolorblack'> The</span>
                             <span className='headeingcolorblue'>  Bridge Health</span>
                             <span className='headeingcolorblack'> Advantage </span>
