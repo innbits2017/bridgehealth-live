@@ -10866,7 +10866,7 @@ input[type=radio] {
 a:not([href]):not([tabindex]) {
 	color: inherit;
 	text-decoration: none;
-	display: none !important;
+	/* display: none !important; */
 }
 
 .overlay_4 {
@@ -14199,7 +14199,9 @@ tr> :second-child {
 /* .first-child1 {
     background: red;
 } */
-
+.footer-submit{
+	margin-left: 5rem !important;
+}
 /* ===========================================================JobDescription CSS */
 
 .job-desc li {
@@ -14344,87 +14346,7 @@ button.sub-btn1 {
     margin-left: 40%;
 }
 
-.admin-btn:hover {
-	background-color: #45a049;
-}
+<<<<<<< Updated upstream
+=======
 
-.blog-bgcolor {
-	background-color: #FFFFFF;
-}
-
-
-.health-plan .health-plan-item ul:nth-child(2) {
-    height: 720px;
-}
-.health-plan .health-plan-item ul:nth-child(3) {
-    height: 500px	;
-    margin: 0px;
-}
-.health-plan .health-plan-item ul:nth-child(3) li {
-    height: 72px;
-    display: block;
-    margin: 0px !important;
-}
-.health-plan .health-plan-item ul:nth-child(4) {
-    height: 250px;
-    margin: 0px;
-}
-.health-plan .health-plan-item ul:nth-child(4) li {
-    height: 60px;
-    margin: 0px;
-    display: block;
-}
-.health-plan ul li {
-    height: 50px;
-}
-.health-plan .platinum-plus ul li:last-child, .health-plan .silver ul li:last-child, .health-plan .gold ul li:last-child, .health-plan .platinum ul li:last-child {
-    height: 120px;
-    display: block;
-}
-.health-plan .buy-btn {
-    margin: 0px;
-}
-.marging
-{
-	margin-left: -60px;
-}
-.fontrem
-{
-	font-size: 3rem;
-}
-.fontSize18
-{
-	font-size: 28px;
-}
-.blogPagebackground
-{
-	margin-top: -6%;
-}
-.blogPagebox
-{
-	padding-top: 8%;
-}
-@media only screen and (max-width: 767px)
-{.sec-title h2 br {
-    display: block !important;
-}
-}
-
-@media only screen and (max-width: 600px) {
-.font25
-{
-	font-size: 23px !important;
-}
-.margintextbotton
-{
-			margin-bottom: 30px;
-
-}
-.martextleft40
-{
-	margin-left: 0px !important;
-}
-.marginleftspan {
-    margin-left: 0px !important;
-}
-}
+>>>>>>> Stashed changes

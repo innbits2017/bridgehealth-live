@@ -1,0 +1,29 @@
+.logo_joblisting {
+    vertical-align: middle;
+    border-style: none;
+    height: 5rem;
+    width: 9rem;
+}
+img.only_logo {
+    /* text-align: center; */
+    height: 4rem;
+    margin-left: 31rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.sub-btn2 {
+    text-align: center;
+    border: 2px solid;
+	border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    color: #fff;
+	margin-bottom: 2rem;
+}
+
+button.sub-btn2 {
+    /* text-align: center; */
+    margin-left: 40%;
+}
