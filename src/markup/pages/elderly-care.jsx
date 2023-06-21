@@ -21,7 +21,7 @@ class elderlyCare extends Component {
                     <section class="container-fluid">
                         <div class="row align-items-center auto-container">
 
-                            <div class="col-lg-6">
+                            <div class="col-lg-5">
                                 <div class="content-box marginTop40header">
 
                                     <div class="sec-title text-center textleft">
@@ -43,7 +43,7 @@ class elderlyCare extends Component {
 
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-7">
                                 <div class="image-wrapper imgright">
                                     <div class="image-one">
                                         <img src={require('../../assets/images/shape/care1.png')} alt="" className='imgwidth' />

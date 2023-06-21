@@ -58,7 +58,7 @@ class diet_and_nutrition extends Component {
                             <div class="col-lg-6">
 
                                 <div class="sec-title squrebox">
-                                    <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span>
+                                    <h2> <span className='headeingcolorblue'>YOU ARE WHAT YOU EAT</span>
 
                                     </h2>
                                     <p className='font22'>
@@ -123,7 +123,7 @@ class diet_and_nutrition extends Component {
                                     <div class="">
                                         <h2 className='header1'>
                                             <span className='headeingcolorblack'> What We </span>
-                                            <span className='headeingcolorblack1'>  Offer</span>
+                                            <span className='headeingcolorblue'>  Offer</span>
                                         </h2>
                                     </div>
                                     <div class="content-box">
@@ -177,7 +177,7 @@ class diet_and_nutrition extends Component {
                                         <div class="">
                                             <h2 className='header1'>
                                                 <span className='headeingcolorblack'> The</span>
-                                                <span className='headeingcolorblack1'>  Bridge Health</span>
+                                                <span className='headeingcolorblue'>  Bridge Health</span>
                                                 <span className='headeingcolorblack'> Advantage </span>
                                             </h2>
                                         </div>
@@ -212,9 +212,9 @@ class diet_and_nutrition extends Component {
                         <div class="sec-title text-center">
                             <h2 className='header1'>
                                 <span className='headeingcolorblack'> The Secret to a</span>
-                                <span className='headeingcolorblack1'>  Healthier Life</span>
+                                <span className='headeingcolorblue'>  Healthier Life</span>
                                 <span className='headeingcolorblack'> is a </span>
-                                <span className='headeingcolorblack1'>  Healthier Diet!</span>
+                                <span className='headeingcolorblue'>  Healthier Diet!</span>
                             </h2>
                         </div>
                         <div class="btn-box text-center btn7">

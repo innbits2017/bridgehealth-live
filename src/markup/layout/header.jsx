@@ -184,14 +184,11 @@ class Header extends Component {
                     <li><a href="#">Menu</a>
                       <ul>
                         <li><a href="/about-us">About Us</a>
-                          <ul>
-                            <li><a href="/leadership">Board of Directors</a></li>
-                            <li>
+                        </li>
+                        <li>
                               <a href="/leadership">Leadership Team</a>
                             </li>
                             <li><a href="/team">Clinical Team</a></li>
-                          </ul>
-                        </li>
                         <li>
                           <a href="/our-services">Our Services</a>
                         </li>

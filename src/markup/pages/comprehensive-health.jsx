@@ -54,7 +54,7 @@ class comprehensiveHealth extends Component {
                         <div class="row align-items-center">
                             <div class="col-lg-6">
 
-                                <img src={require('../../assets/images/shape/health2.png')} alt="" className='widthimg' />
+                                <img src={require('../../assets/images/shape/health2.png')} alt="" className='widthimg imgFloatRight' />
 
                             </div>
                             <div class="col-lg-6">

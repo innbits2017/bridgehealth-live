@@ -172,7 +172,7 @@ class corporate_membership_program extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/Frame3.png')} alt=""
+                                        <img src={require('../../assets/images/shape/b2b12.png')} alt=""
                                             style={{ marginRight: 2 + 'rem' }} />
                                     </div>
                                 </div>
