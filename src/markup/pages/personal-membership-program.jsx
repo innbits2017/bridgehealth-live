@@ -270,12 +270,8 @@ class b2cmembership extends Component {
                 <div class="health-plan-item featured table-content">
                   <h3>Service Offering</h3>
                   <ul>
-<<<<<<< Updated upstream
                   <br></br>
 
-=======
-                    <br></br>
->>>>>>> Stashed changes
                     <li> Initial Health Assessment</li>
                     <li> Blood Health</li>
                     <li> Diabetic Profile</li>
