@@ -17,7 +17,7 @@ class yoga_Assessment extends Component {
             <>
                 <Header />
 
-                <section class="internalpage internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
+                <section class="yogaPage internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
                     <div class="auto-container">
                         <div class="content-box">
 
@@ -135,7 +135,7 @@ class yoga_Assessment extends Component {
                                             </li>
                                         </ul>
                                         {/* <button class="commonBtnforAll">BOOK NOW</button> */}
-                                        <div class="btn-box btn5 marBtnTop">
+                                        <div class="btn-box btn5 marBtnTop text-center">
                                             <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                                         </div>
 

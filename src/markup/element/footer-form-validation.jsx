@@ -112,7 +112,7 @@ class FooterFormValidation extends Component {
 
         return (
 
-            <div class="contact-form">
+            <div class="contact-form margincontact">
                 <form method="post" onSubmit={this.handleSubmit} action="#" id="contact-form">
                     <div class="row clearfix">
 

@@ -4211,7 +4211,7 @@ img.lazy-image.loaded {
 	line-height: 1.2em;
 	color: #ffffff;
 	font-weight: 400;
-	/* transform: translateY(-120px); */
+	transform: translateY(-20px);
 	padding-top: 25px;
 	text-align: left;
 }
@@ -4741,7 +4741,7 @@ img.lazy-image.loaded {
 }
 
 .contact-form label {
-	margin-bottom: 17px;
+	margin-bottom: 8px;
 	font-size: 16.589px;
 	margin-left: 5%;
 	color: #000;
@@ -10167,12 +10167,11 @@ img.lazy-image.loaded {
 
 .listicon {
 	margin-bottom: 10px;
-	margin-left: 0rem;
-	text-transform: capitalize;
+    text-transform: capitalize;
 }
 
 .listicon li {
-	margin-left: 4rem;
+	margin-left: 3rem;
 	text-transform: initial !important;
 	line-height: 45px;
 
@@ -13254,8 +13253,8 @@ margin-top: 50px;
 }
 
 .mar-der {
-	padding-left: 190px;
-}
+	padding-left: 126px;
+    margin-top: 28% !important;}
 
 .contactheadeing {
 	font-family: 'Montserrat';
@@ -14015,12 +14014,12 @@ body>div.fade.modal.show>div>div>div>button .yes {
 }
 
 .careerbox {
-	background: #FFBD3E;
-	border-radius: 0px 40px 245px 0px;
-	margin-left: -8%;
-	width: 530px;
-	margin-top: 100px;
-	padding: 3% 5% 1% 2%;
+    background: #FFBD3E;
+    border-radius: 0px 40px 245px 0px;
+    margin-left: -8%;
+    width: 611px;
+    margin-top: 100px;
+    padding: 2% 0% 1% 7%;
 }
 
 .carrerpadding {
@@ -14045,7 +14044,7 @@ body>div.fade.modal.show>div>div>div>button .yes {
 	background: rgba(255, 255, 255, 0.75);
 	border-radius: 0px 40px 245px 0px;
 	width: 750px;
-	margin-left: -7%;
+	margin-left: -8%;
 	padding: 20px 18px 1px 30px;
 }
 .seven-cols .service-offering {
@@ -14221,7 +14220,7 @@ tr> :second-child {
     background: red;
 } */
 .footer-submit{
-	margin-left: 5rem !important;
+	margin-left: 7rem !important;
 }
 /* ===========================================================JobDescription CSS */
 
@@ -14453,3 +14452,19 @@ button.sub-btn1 {
     font-size: 50px !important;
 }
 
+
+.drmabtm
+{
+	margin-left: -60px;
+    margin-top: 80px;
+}
+.margincontact
+{
+	margin-top: 12px;
+}
+
+.yogaPage {
+    position: relative;
+    padding: 350px 0 265px;
+    background-size: cover;
+}

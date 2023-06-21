@@ -88,7 +88,6 @@ class Blog extends Component {
                                         <form>
                                             <div class="form-group1">
                                                 <input
-                                                    type="search"
                                                     name="search-field"
                                                     value={this.state.searchTerm}
                                                     onChange={this.handleSearchTermChange}

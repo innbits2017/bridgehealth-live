@@ -274,7 +274,7 @@ class Footer extends Component {
                                                 </div>
                                                 <div class="col-md-12 mb-2">
                                                     <input class="form-control inputWidth"
-                                                        type="text"
+                                                        type="email"
                                                         onChange={this.handleChange}
                                                         name="phone"
                                                         id="validationServer05"

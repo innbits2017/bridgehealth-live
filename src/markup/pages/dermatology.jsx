@@ -22,20 +22,10 @@ class dermatology extends Component {
                         <div class="content-box mar-der">
 
                             <div class=" text-center textleft">
-                                {/* <h2 className='textleft fontSize'>
-                                    <span className='headeingcolorblack'> LOOKS DO</span><br></br>
-                                    <span className='headeingcolorblue'>  MATTER</span>
-                                </h2>
-
-                                <h4 className='textleft marginTop40 '>
-                                    Talk to our experts and find out <br></br>how you can look great!
-                                </h4> */}
-
                             </div>
-                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                             <div class="btn-box btn5 margin300">
 
-                                <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                                <ContactForm buttonText="BOOK NOW" class="drmabtm" />
                             </div>
 
 
