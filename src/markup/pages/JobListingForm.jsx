@@ -1,184 +1,104 @@
-import React, { useState } from 'react';
 
-const JobListingForm = () => {
-  const [formData, setFormData] = useState({
-    jobTitle: '',
-    jobCategory: '',
-    department: '',
-    requisitionNumber: '',
-    workInShifts: '',
-    reportingTo: '',
-    numberOfPersons: '',
-    jobDescription: '',
-  });
 
-  const [errors, setErrors] = useState({});
+import React from 'react';
+// import './sidenav.css'; // Assuming the CSS file is in the same directory
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+class JobListingForm extends React.Component {
+  render() {
+    return (
+        <><div>
+        <nav id="sidebar">
+          <div className="sidebar-header">
+            <img className="sidebar_logo" src={require('../../assets/images/shape/logo_bridgehealth.png')} alt="Bridge Health" />
+          </div>
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const validationErrors = validateForm();
-    setErrors(validationErrors);
-    if (Object.keys(validationErrors).length === 0) {
-      // Form submission logic goes here
-      console.log('Form submitted:', formData);
-    }
-  };
+          <ul className="list-unstyled components">
+            <li>
+              <a className="on_hover_components" href="#">
+                dashboard
+              </a>
+            </li>
 
-  const validateForm = () => {
-    let errors = {};
-    if (!formData.jobTitle) {
-      errors.jobTitle = 'Job Title is required';
-    }
-    if (!formData.jobCategory) {
-      errors.jobCategory = 'Job Category is required';
-    }
-    if (!formData.department) {
-      errors.department = 'Department/Group is required';
-    }
-    if (!formData.requisitionNumber) {
-      errors.requisitionNumber = 'Requisition Number is required';
-    }
-    if (!formData.workInShifts) {
-      errors.workInShifts = 'Shift requirement is required';
-    }
-    if (!formData.reportingTo) {
-      errors.reportingTo = 'Reporting To is required';
-    }
-    if (!formData.numberOfPersons) {
-      errors.numberOfPersons = 'Number of persons is required';
-    }
-    if (!formData.jobDescription) {
-      errors.jobDescription = 'Job Description is required';
-    }
-    return errors;
-  };
+            <li>
+              <a className="on_hover_components" href="#">Add New Job</a>
+            </li>
+            <li>
+              <a className="on_hover_components" href="#">Job listings</a>
+            </li>
+            <li>
+              <a className="on_hover_components" href="#">Settings</a>
+            </li>
+          </ul>
+        </nav>
+      </div><section class="sidebarmargin">
+          <div class="auto-container">
+            <div class="row">
+                <div class="contact-form-area">
 
-  return (
-    <div className="container">
-        <div className="logo_outlet">
-          <img className="only_logo" src={require('../../assets/images/shape/logo_bridgehealth.png')}  alt="logo_bridgehealth" />
-        </div>
-      <div className="row justify-content-center">
-        <div className="col-lg-6">
-          <form onSubmit={handleSubmit}>
-            <div className="mb-3">
-              <label htmlFor="jobTitle" className="form-label">Job Title</label>
-              <input
-                type="text"
-                className={`form-control ${errors.jobTitle ? 'is-invalid' : ''}`}
-                id="jobTitle"
-                name="jobTitle"
-                value={formData.jobTitle}
-                onChange={handleChange}
-                required
-              />
-              {errors.jobTitle && <div className="invalid-feedback">{errors.jobTitle}</div>}
+                    {/* <!-- Contact Form--> */}
+                    <div class="contact-form">
+                        <form method="post">
+                            <div class="row clearfix">
+                                <div class="col-md-12 form-group">
+                                    <input
+                                        type="text"
+                                        name="username"
+                                        id="name"
+                                        placeholder="Name*"
+                                    // required
+                                    />
+                                </div>
+
+                                <div class="col-md-6 form-group">
+                                    <input type="email"
+                                        name="email"
+                                        id="email"
+                                        placeholder="Email"
+                                    // required
+                                    />
+                                    {/* {errors.email && <div className="error">{errors.email}</div>} */}
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input type="text"
+                                        name="phone"
+                                        id="phone"
+                                        placeholder="Phone*"
+                                    // required
+                                    />
+                                </div>
+
+                                <div class="col-md-12 form-group">
+                                    <textarea
+                                        name="message"
+                                        id="message"
+                                        placeholder="Message"
+                                    ></textarea>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input"
+                                        type="checkbox" id="checkbox1" name="option1" value="good" required/>
+                                    <label class="form-check-label heading">
+                                        I agree that Bridge Health may contact me at the email address or phone number above.
+                                    </label>
+                                </div>
+                                <div class="col-md-12 form-group">
+
+                                    <div class="btn-box text-center">
+                                        <button class="submitcontact" type="submit"
+                                            name="submit-form">SUBMIT</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                     
+                    </div>
+                </div>
             </div>
-            <div className="mb-3">
-              <label htmlFor="jobCategory" className="form-label">Job Category</label>
-              <input
-                type="text"
-                className={`form-control ${errors.jobCategory ? 'is-invalid' : ''}`}
-                id="jobCategory"
-                name="jobCategory"
-                value={formData.jobCategory}
-                onChange={handleChange}
-                required
-              />
-              {errors.jobCategory && <div className="invalid-feedback">{errors.jobCategory}</div>}
-            </div>
-            <div className="mb-3">
-              <label htmlFor="department" className="form-label">Department/Group</label>
-              <input
-                type="text"
-                className={`form-control ${errors.department ? 'is-invalid' : ''}`}
-                id="department"
-                name="department"
-                value={formData.department}
-                onChange={handleChange}
-                required
-              />
-              {errors.department && <div className="invalid-feedback">{errors.department}</div>}
-            </div>
-            <div className="mb-3">
-              <label htmlFor="requisitionNumber" className="form-label">Requisition Number</label>
-              <input
-                type="tel"
-                className={`form-control ${errors.requisitionNumber ? 'is-invalid' : ''}`}
-                id="requisitionNumber"
-                name="requisitionNumber"
-                value={formData.requisitionNumber}
-                onChange={handleChange}
-                required
-              />
-              {errors.requisitionNumber && <div className="invalid-feedback">{errors.requisitionNumber}</div>}
-            </div>
-            <div className="mb-3">
-              <label htmlFor="workInShifts" className="form-label">Will be required to work in shifts?</label>
-              <input
-                type="text"
-                className={`form-control ${errors.workInShifts ? 'is-invalid' : ''}`}
-                id="workInShifts"
-                name="workInShifts"
-                value={formData.workInShifts}
-                onChange={handleChange}
-                required
-              />
-              {errors.workInShifts && <div className="invalid-feedback">{errors.workInShifts}</div>}
-            </div>
-            <div className="mb-3">
-              <label htmlFor="reportingTo" className="form-label">Reporting To</label>
-              <input
-                type="text"
-                className={`form-control ${errors.reportingTo ? 'is-invalid' : ''}`}
-                id="reportingTo"
-                name="reportingTo"
-                value={formData.reportingTo}
-                onChange={handleChange}
-                required
-              />
-              {errors.reportingTo && <div className="invalid-feedback">{errors.reportingTo}</div>}
-            </div>
-            <div className="mb-3">
-              <label htmlFor="numberOfPersons" className="form-label">Number of persons that would potentially report for this role</label>
-              <input
-                type="text"
-                className={`form-control ${errors.numberOfPersons ? 'is-invalid' : ''}`}
-                id="numberOfPersons"
-                name="numberOfPersons"
-                value={formData.numberOfPersons}
-                onChange={handleChange}
-                required
-              />
-              {errors.numberOfPersons && <div className="invalid-feedback">{errors.numberOfPersons}</div>}
-            </div>
-            <div className="mb-3">
-              <label htmlFor="jobDescription" className="form-label">Job Description</label>
-              <textarea
-                className={`form-control ${errors.jobDescription ? 'is-invalid' : ''}`}
-                id="jobDescription"
-                name="jobDescription"
-                value={formData.jobDescription}
-                onChange={handleChange}
-                placeholder="Tell us what you want more..."
-                required
-              ></textarea>
-              {errors.jobDescription && <div className="invalid-feedback">{errors.jobDescription}</div>}
-            </div>
-            <div className="mb-3">
-            <button type="submit" className="sub-btn2">Submit</button>
-              {/* <button type="submit" className="btn btn-primary">Submit</button> */}
-            </div>
-          </form>
-        </div>
-      
-      </div>
-    </div>
-  );
-};
+          </div>
+        </section></>
+    );
+  }
+}
 
 export default JobListingForm;
