@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+<<<<<<< Updated upstream
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 const aboutbg = require('./../../assets/images/shape/car1.png');
+=======
+>>>>>>> Stashed changes
 
 const JobListingForm = () => {
   const [formData, setFormData] = useState({
@@ -61,6 +64,7 @@ const JobListingForm = () => {
   };
 
   return (
+<<<<<<< Updated upstream
     <><><Header />
     
      {/* <!-- Page Banner Section --> */}
@@ -74,6 +78,17 @@ const JobListingForm = () => {
         <div className="col-lg-6">
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
+=======
+    <>
+      <div className="content-wrap-x1">
+        <h2 className="logo_outlet">Add New Job</h2>
+        {/* <div className="logo_outlet">
+          <img className="only_logo" src={require('../../assets/images/shape/logo_bridgehealth.png')} alt="logo_bridgehealth" />
+        </div> */}
+        <div className="form-wrap">
+          <form onSubmit={handleSubmit} className="job-form-x1">
+            <div className="">
+>>>>>>> Stashed changes
               <label htmlFor="jobTitle" className="form-label">Job Title</label>
               <input
                 type="text"
@@ -82,10 +97,18 @@ const JobListingForm = () => {
                 name="jobTitle"
                 value={formData.jobTitle}
                 onChange={handleChange}
+<<<<<<< Updated upstream
                 required />
               {errors.jobTitle && <div className="invalid-feedback">{errors.jobTitle}</div>}
             </div>
             <div className="mb-3">
+=======
+                required
+              />
+              {errors.jobTitle && <div className="invalid-feedback">{errors.jobTitle}</div>}
+            </div>
+            <div className="">
+>>>>>>> Stashed changes
               <label htmlFor="jobCategory" className="form-label">Job Category</label>
               <input
                 type="text"
@@ -94,10 +117,18 @@ const JobListingForm = () => {
                 name="jobCategory"
                 value={formData.jobCategory}
                 onChange={handleChange}
+<<<<<<< Updated upstream
                 required />
               {errors.jobCategory && <div className="invalid-feedback">{errors.jobCategory}</div>}
             </div>
             <div className="mb-3">
+=======
+                required
+              />
+              {errors.jobCategory && <div className="invalid-feedback">{errors.jobCategory}</div>}
+            </div>
+            <div className="">
+>>>>>>> Stashed changes
               <label htmlFor="department" className="form-label">Department/Group</label>
               <input
                 type="text"
@@ -106,10 +137,18 @@ const JobListingForm = () => {
                 name="department"
                 value={formData.department}
                 onChange={handleChange}
+<<<<<<< Updated upstream
                 required />
               {errors.department && <div className="invalid-feedback">{errors.department}</div>}
             </div>
             <div className="mb-3">
+=======
+                required
+              />
+              {errors.department && <div className="invalid-feedback">{errors.department}</div>}
+            </div>
+            <div className="">
+>>>>>>> Stashed changes
               <label htmlFor="requisitionNumber" className="form-label">Requisition Number</label>
               <input
                 type="tel"
@@ -118,10 +157,18 @@ const JobListingForm = () => {
                 name="requisitionNumber"
                 value={formData.requisitionNumber}
                 onChange={handleChange}
+<<<<<<< Updated upstream
                 required />
               {errors.requisitionNumber && <div className="invalid-feedback">{errors.requisitionNumber}</div>}
             </div>
             <div className="mb-3">
+=======
+                required
+              />
+              {errors.requisitionNumber && <div className="invalid-feedback">{errors.requisitionNumber}</div>}
+            </div>
+            <div className="">
+>>>>>>> Stashed changes
               <label htmlFor="workInShifts" className="form-label">Will be required to work in shifts?</label>
               <input
                 type="text"
@@ -130,10 +177,18 @@ const JobListingForm = () => {
                 name="workInShifts"
                 value={formData.workInShifts}
                 onChange={handleChange}
+<<<<<<< Updated upstream
                 required />
               {errors.workInShifts && <div className="invalid-feedback">{errors.workInShifts}</div>}
             </div>
             <div className="mb-3">
+=======
+                required
+              />
+              {errors.workInShifts && <div className="invalid-feedback">{errors.workInShifts}</div>}
+            </div>
+            <div className="">
+>>>>>>> Stashed changes
               <label htmlFor="reportingTo" className="form-label">Reporting To</label>
               <input
                 type="text"
@@ -142,10 +197,18 @@ const JobListingForm = () => {
                 name="reportingTo"
                 value={formData.reportingTo}
                 onChange={handleChange}
+<<<<<<< Updated upstream
                 required />
               {errors.reportingTo && <div className="invalid-feedback">{errors.reportingTo}</div>}
             </div>
             <div className="mb-3">
+=======
+                required
+              />
+              {errors.reportingTo && <div className="invalid-feedback">{errors.reportingTo}</div>}
+            </div>
+            <div className="">
+>>>>>>> Stashed changes
               <label htmlFor="numberOfPersons" className="form-label">Number of persons that would potentially report for this role</label>
               <input
                 type="text"
@@ -154,10 +217,18 @@ const JobListingForm = () => {
                 name="numberOfPersons"
                 value={formData.numberOfPersons}
                 onChange={handleChange}
+<<<<<<< Updated upstream
                 required />
               {errors.numberOfPersons && <div className="invalid-feedback">{errors.numberOfPersons}</div>}
             </div>
             <div className="mb-3">
+=======
+                required
+              />
+              {errors.numberOfPersons && <div className="invalid-feedback">{errors.numberOfPersons}</div>}
+            </div>
+            <div className="">
+>>>>>>> Stashed changes
               <label htmlFor="jobDescription" className="form-label">Job Description</label>
               <textarea
                 className={`form-control ${errors.jobDescription ? 'is-invalid' : ''}`}
@@ -170,16 +241,25 @@ const JobListingForm = () => {
               ></textarea>
               {errors.jobDescription && <div className="invalid-feedback">{errors.jobDescription}</div>}
             </div>
+<<<<<<< Updated upstream
             <div className="mb-3">
               <button type="submit" className="sub-btn2">Submit</button>
+=======
+            <div className="form-submit-wrap">
+              <button type="submit" className="sub-btn2">SUBMIT</button>
+>>>>>>> Stashed changes
               {/* <button type="submit" className="btn btn-primary">Submit</button> */}
             </div>
           </form>
         </div>
 
       </div>
+<<<<<<< Updated upstream
     </div></><Footer /></>
 
+=======
+    </>
+>>>>>>> Stashed changes
   );
 };
 

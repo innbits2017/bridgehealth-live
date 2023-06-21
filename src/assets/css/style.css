@@ -14456,6 +14456,7 @@ button.sub-btn1 {
     padding: 350px 0 265px;
     background-size: cover;
 }
+<<<<<<< Updated upstream
 body > div.fade.widthdialog.modalDialog.modal.show > div > div > div
 {
 	width: 1000px !important;
@@ -14474,3 +14475,14 @@ body > div.fade.widthdialog.modalDialog.modal.show > div > div
 {
  width: 100%;
 }
+=======
+
+
+
+/* =============================================== */
+/* #sidebar{
+	min-width: 100%;
+	max-width: 100%;
+	width: 100%;
+} */
+>>>>>>> Stashed changes
