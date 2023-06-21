@@ -120,7 +120,7 @@ class ContactForm extends Component {
         if (data.status === 401 || !data) {
             console.log('error');
         } else {
-            this.setState({ show: true, email: '', username: '', phone: '' });
+            this.setState({ show: true, email: '', username: '', phone: '', message: '' });
             console.log('Email sent');
         }
     };
@@ -182,7 +182,9 @@ class ContactForm extends Component {
                                                 <div class="col-md-12 mb-2">
                                                     <textarea
                                                         name="message"
-                                                        value={message}
+                                                        value={this.state.message}
+                                                        onChange={this.handleChange}
+                                                        id="message"
                                                         placeholder="Message here.."
                                                         class="widthinput textareaheight"
                                                     ></textarea>

@@ -132,25 +132,26 @@ class Header extends Component {
     const { email, username, phone, message } = this.state;
 
     const res = await fetch('https://mail.bridgehealth.in/register', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email, username, phone, message
-      }),
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            email, username, phone, message
+        }),
     });
 
     const data = await res.json();
     console.log(data);
 
     if (data.status === 401 || !data) {
-      console.log('error');
+        console.log('error');
     } else {
-      this.setState({ show: true, email: '', username: '', phone: '' });
-      console.log('Email sent');
+        this.setState({ show: true, email: '', username: '', phone: '', message: '' });
+        console.log('Email sent');
     }
-  };
+};
+
   state = {
     scrolled: false
   };

@@ -106,17 +106,17 @@ class Index extends Component {
 
 
     sendEmail = async (e) => {
-        e.preventDefault();
+        // e.preventDefault();
 
-        const { email, username } = this.state;
+        const { email, username, phone, message } = this.state;
 
-        const res = await fetch("http://localhost:8000/register", {
+        const res = await fetch('https://mail.bridgehealth.in/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                email, username
+                email, username, phone, message
             }),
         });
 
@@ -126,11 +126,10 @@ class Index extends Component {
         if (data.status === 401 || !data) {
             console.log('error');
         } else {
-            this.setState({ show: true, email: '', username: '' });
+            this.setState({ show: true, email: '', username: '', phone: '', message: '' });
             console.log('Email sent');
         }
     };
-
     render() {
 
         const { isSubmitDisabled, errors } = this.state;
