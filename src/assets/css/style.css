@@ -11368,6 +11368,21 @@ hr {
 		margin-bottom: 0px;
 	}
 
+	.contact-form label {
+		margin-bottom: 17px;
+		font-size: 16.589px;
+		margin-left: 8%;
+		color: #000;
+		font-weight: 500;
+	}
+
+	img {
+		padding-top: 45px;
+		display: inline-block;
+		max-width: 100%;
+		height: auto;
+	}
+
 	.fitnesback {
 		margin-left: -42% !important;
 		width: auto !important;
@@ -11583,7 +11598,7 @@ hr {
 
 	.b2cimgcenter h1 {
 		text-align: center;
-		margin-top: 20%;
+		margin-top: 10%;
 		padding-right: 0%;
 		padding-left: 0%;
 		font-size: 30px;
@@ -11926,6 +11941,7 @@ hr {
 
 	.margin100 {
 		margin-top: 0px;
+		padding-bottom: 20%;
 
 	}
 
@@ -12014,6 +12030,7 @@ hr {
 	}
 
 	.header1 {
+		padding-top: 30px;
 		text-align: center;
 	}
 
@@ -12062,6 +12079,7 @@ hr {
 	}
 
 	.widthimg {
+		padding-top: 18%;
 		width: 100% !important;
 	}
 
@@ -12269,6 +12287,7 @@ hr {
 	}
 
 	.annualback {
+		padding-top: 35px;
 		padding-bottom: 0px;
 	}
 
@@ -13233,7 +13252,7 @@ margin-top: 50px;
 }
 
 .mar-der {
-	padding-left: 120px;
+	padding-left: 190px;
 }
 
 .contactheadeing {
@@ -14346,7 +14365,4 @@ button.sub-btn1 {
     margin-left: 40%;
 }
 
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
