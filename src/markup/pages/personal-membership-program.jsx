@@ -90,25 +90,27 @@ class b2cmembership extends Component {
     const { email, username, phone, message } = this.state;
 
     const res = await fetch('https://mail.bridgehealth.in/register', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email, username, phone, message
-      }),
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            email, username, phone, message
+        }),
     });
 
     const data = await res.json();
     console.log(data);
 
     if (data.status === 401 || !data) {
-      console.log('error');
+        console.log('error');
     } else {
-      this.setState({ show: true, email: '', username: '', phone: '' });
-      console.log('Email sent');
+        this.setState({ show: true, email: '', username: '', phone: '', message: '' });
+        console.log('Email sent');
     }
-  };
+};
+
+
   render() {
     const { username, email, phone, message, isSubmitDisabled, errors, submitted } = this.state;
     return (
@@ -268,6 +270,8 @@ class b2cmembership extends Component {
                 <div class="health-plan-item featured table-content">
                   <h3>Service Offering</h3>
                   <ul>
+                  <br></br>
+
                     <li> Initial Health Assessment</li>
                     <li> Blood Health</li>
                     <li> Diabetic Profile</li>
@@ -347,7 +351,7 @@ class b2cmembership extends Component {
                     {/* <li>Paid</li> */}
                     <li><i class="bi bi-check"></i> </li>
                   </ul>
-                  <p class="buy-btn border-blue">₹7,999</p>
+                  <p class="buy-btn border-blue BhBlue">₹7,999</p>
                 </div>
               </div>
               <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
@@ -391,7 +395,7 @@ class b2cmembership extends Component {
                     {/* <li>Paid</li> */}
                     <li><i class="bi bi-check"></i> </li>
                   </ul>
-                  <p class="buy-btn border-silver">₹7,999</p>
+                  <p class="buy-btn border-silver BhBlue">₹7,999</p>
                 </div>
               </div>
               <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">

@@ -114,10 +114,7 @@ class lab_tests extends Component {
                     <section class="">
                         <div class="auto-container">
                             <div class="row align-items-center">
-
-
-
-                                <div class="col-lg-7">
+                                 <div class="col-lg-7">
                                     <div class="content-box">
                                         <div class="row">
                                             <div class="col-lg-6">
@@ -293,8 +290,7 @@ class lab_tests extends Component {
                 <section class="">
 
                     <div class="auto-container">
-                        <div class="row">
-
+                    <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">

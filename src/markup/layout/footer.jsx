@@ -141,7 +141,7 @@ class Footer extends Component {
         if (data.status === 401 || !data) {
             console.log('error');
         } else {
-            this.setState({ show: true, email: '', username: '', phone: '' });
+            this.setState({ show: true, email: '', username: '', phone: '', message: '' });
             console.log('Email sent');
         }
     };
@@ -193,7 +193,7 @@ class Footer extends Component {
                                                 <div class="col-md-4">
                                                     <ul>
                                                         <li><a href={'/about-us'}>About us</a></li>
-                                                        <li><a href={'/leadership'}>Board of Directors</a></li>
+                                                        <li><a href={'/leadership'}>Leadership Team</a></li>
                                                         <li><a href={'/team'}>Clinical Team</a></li>
                                                         <li><a href={'/media-and-pr'}>Media</a></li>
                                                         <li><a href={'/blog'}>Blogs</a></li>
@@ -301,7 +301,9 @@ class Footer extends Component {
                                                 <div class="col-md-12 mb-2">
                                                     <textarea 
                                                     name="message"
-                                                    value={message}
+                                                    value={this.state.message}
+                                                    onChange={this.handleChange}
+                                                    id="message"
                                                      placeholder="Message here.." 
                                                      class="inputWidth"
                                                      ></textarea>

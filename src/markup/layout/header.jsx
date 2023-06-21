@@ -132,25 +132,26 @@ class Header extends Component {
     const { email, username, phone, message } = this.state;
 
     const res = await fetch('https://mail.bridgehealth.in/register', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email, username, phone, message
-      }),
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            email, username, phone, message
+        }),
     });
 
     const data = await res.json();
     console.log(data);
 
     if (data.status === 401 || !data) {
-      console.log('error');
+        console.log('error');
     } else {
-      this.setState({ show: true, email: '', username: '', phone: '' });
-      console.log('Email sent');
+        this.setState({ show: true, email: '', username: '', phone: '', message: '' });
+        console.log('Email sent');
     }
-  };
+};
+
   state = {
     scrolled: false
   };
@@ -183,14 +184,11 @@ class Header extends Component {
                     <li><a href="#">Menu</a>
                       <ul>
                         <li><a href="/about-us">About Us</a>
-                          <ul>
-                            <li><a href="/leadership">Board of Directors</a></li>
-                            <li>
+                        </li>
+                        <li>
                               <a href="/leadership">Leadership Team</a>
                             </li>
                             <li><a href="/team">Clinical Team</a></li>
-                          </ul>
-                        </li>
                         <li>
                           <a href="/our-services">Our Services</a>
                         </li>

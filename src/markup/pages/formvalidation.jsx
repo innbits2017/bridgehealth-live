@@ -110,7 +110,7 @@ class FormValidation extends Component {
         if (data.status === 401 || !data) {
             console.log('error');
         } else {
-            this.setState({ show: true, email: '', username: '', phone: '' });
+            this.setState({ show: true, email: '', username: '', phone: '', message: '' });
             console.log('Email sent');
         }
     };

@@ -41,7 +41,7 @@ class leadership extends Component {
             <>
                 <Header />
                 
-                <img src={require('./../../assets/images/background/direct.jpg')} alt="" />
+                <img src={require('./../../assets/images/background/direct.jpg')} alt="" className='imgwidth100'/>
 
                 {/* <!--End Banner Section --> */}
 
