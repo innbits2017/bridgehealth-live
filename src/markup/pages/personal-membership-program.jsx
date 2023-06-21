@@ -223,7 +223,7 @@ class b2cmembership extends Component {
               <div class="col-lg-5">
                 <div class="contact-form-area margintop145">
                   <div class="sec-title marginto90" >
-                    <h2 className='marginleft texttile1'>
+                    <h2 className='marginleft texttile1 heathCareTitle'>
                       <span className='headeingcolorblack'>Why </span>
                       <span className='headeingcolorblue'> Preventive </span><br></br>
                       <span className='headeingcolorblack '>Health Care?</span>

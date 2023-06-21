@@ -11121,7 +11121,7 @@ a:not([href]):not([tabindex]) {
 .blogdesigner {
 	width: 100%;
 	background-position: top;
-	background-size: 100% 136%;
+	background-size: 100% 118%;
 	background-repeat: no-repeat;
 	background-image: url(../images/shape//blogback.png);
 }
@@ -11137,6 +11137,8 @@ a:not([href]):not([tabindex]) {
 	background-image: url(../images/shape//b2c1.png);
 	background-repeat: no-repeat;
 	padding-top: 150px;
+	background-size: contain;
+	margin-top: -6%;
 	padding-bottom: 150px;
 
 
@@ -11261,9 +11263,10 @@ a:not([href]):not([tabindex]) {
 
 .annualback {
 	background-image: url(../images/background/personalBackground.png);
-	background-size: cover;
-	padding-top: 150px;
-	padding-bottom: 150px;
+	background-size: contain;
+    padding-top: 189px;
+    padding-bottom: 150px;
+    background-repeat: no-repeat;
 }
 
 
@@ -11445,12 +11448,12 @@ hr {
 	}
 
 	.form-group1 {
-		width: 250px !important;
+		width: 218px !important;
 	}
 
 	.p-5 {
 		padding: 2rem !important;
-		margin-left: -42px;
+		margin-left: -32px;
 	}
 
 	.fonts {
@@ -12222,7 +12225,7 @@ hr {
 .linkdinicon1 {
 	box-shadow: none !important;
 	text-align: center;
-	margin-left: 32% !important;
+	margin-left: 35% !important;
 	margin-top: 9px !important;
 	font-size: 40px;
 	color: #fff;
@@ -14365,4 +14368,89 @@ button.sub-btn1 {
     margin-left: 40%;
 }
 
+
+.blog-bgcolor {
+	background-color: #FFFFFF;
+}
+
+
+.health-plan .health-plan-item ul:nth-child(2) {
+    height: 720px;
+}
+.health-plan .health-plan-item ul:nth-child(3) {
+    height: 500px	;
+    margin: 0px;
+}
+.health-plan .health-plan-item ul:nth-child(3) li {
+    height: 72px;
+    display: block;
+    margin: 0px !important;
+}
+.health-plan .health-plan-item ul:nth-child(4) {
+    height: 250px;
+    margin: 0px;
+}
+.health-plan .health-plan-item ul:nth-child(4) li {
+    height: 60px;
+    margin: 0px;
+    display: block;
+}
+.health-plan ul li {
+    height: 50px;
+}
+.health-plan .platinum-plus ul li:last-child, .health-plan .silver ul li:last-child, .health-plan .gold ul li:last-child, .health-plan .platinum ul li:last-child {
+    height: 120px;
+    display: block;
+}
+.health-plan .buy-btn {
+    margin: 0px;
+}
+.marging
+{
+	margin-left: -60px;
+}
+.fontrem
+{
+	font-size: 3rem !important;
+}
+.fontSize18
+{
+	font-size: 28px;
+}
+.blogPagebackground
+{
+	margin-top: -6%;
+}
+.blogPagebox
+{
+	padding-top: 8%;
+}
+@media only screen and (max-width: 767px)
+{.sec-title h2 br {
+    display: block !important;
+}
+}
+
+@media only screen and (max-width: 600px) {
+.font25
+{
+	font-size: 23px !important;
+}
+.margintextbotton
+{
+			margin-bottom: 30px;
+
+}
+.martextleft40
+{
+	margin-left: 0px !important;
+}
+.marginleftspan {
+    margin-left: 0px !important;
+}
+}
+.heathCareTitle
+{
+    font-size: 50px !important;
+}
 
