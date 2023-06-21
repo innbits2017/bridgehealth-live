@@ -143,15 +143,7 @@ class FooterFormValidation extends Component {
                             {errors.email && <div className="error">{errors.email}</div>}
                         </div>
                         <div class="col-md-12 form-group">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                            <div class="btn-box text-center marging">
-=======
                             <div class="btn-box footer-submit">
->>>>>>> Stashed changes
-=======
-                            <div class="btn-box footer-submit">
->>>>>>> Stashed changes
                                 <button class="submitcontact" type="submit"
                                     name="submit-form">SUBMIT</button>
                             </div>
