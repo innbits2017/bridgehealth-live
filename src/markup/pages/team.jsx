@@ -55,7 +55,7 @@ class Team extends Component {
                                 <div class="author-info">
                                     <div class="wrapper-box text">
                                         <h3>Dr. Vedavathi. N</h3>
-                                        <h4>Consultant Physician</h4>
+                                        <h4>Family Physician</h4>
                                         <div class="text font18">
                                             Dr. Vedavathi. N is an empathetic, competent and passionate doctor. She has over 10 years of experience in identifying and screening individuals of all age groups for risk factors to prevent diseases and their progression. She has a special interest in preventive medicine and anatomy.<br></br>
                                             She has completed her P.G Diploma in Family Medicine from Apollo Hospitals, Bangalore, through the Royal College of General Practitioners - United Kingdom. She is a certified NABH Assessor and ISO Assessor. Dr. Veda has also been a faculty member of the paramedical college at Dayanand Sagar University.<br></br>
