@@ -309,8 +309,9 @@ class b2cmembership extends Component {
               <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                 <div class="health-plan-item silver">
                   <h3>BH Blue</h3>
+                  <h6 className="form-check-list">101 Tests + ECG</h6>
                   <ul>
-                    <li> 101Tests  + ECG</li>
+                    {/* <li> 101Tests  + ECG</li> */}
                     <li><i class="fa-solid fa-check"></i></li>
                     <li><i class="fa-solid fa-check"></i> </li>
                     <li><i class="fa-solid fa-check"></i> </li>
@@ -352,8 +353,9 @@ class b2cmembership extends Component {
               <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                 <div class="health-plan-item silver">
                   <h3>BH Silver</h3>
+                  <h6 className="form-check-list">118 Tests + ECG + USG</h6>
                   <ul>
-                    <li> 118 Tests + ECG + USG</li>
+                    {/* <li> 118 Tests + ECG + USG</li> */}
                     <li><i class="fa-solid fa-check"></i> </li>
                     <li><i class="fa-solid fa-check"></i> </li>
                     <li><i class="fa-solid fa-check"></i> </li>
@@ -395,8 +397,9 @@ class b2cmembership extends Component {
               <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                 <div class="health-plan-item gold">
                   <h3>BH GOLD</h3>
+                  <h6 className="form-check-list">122 Tests + ECG + USG</h6>
                   <ul>
-                    <li>122 Tests + ECG + USG</li>
+                    {/* <li>122 Tests + ECG + USG</li> */}
                     <li><i class="fa-solid fa-check"></i></li>
                     <li><i class="fa-solid fa-check"></i> </li>
                     <li><i class="fa-solid fa-check"></i> </li>
@@ -438,8 +441,9 @@ class b2cmembership extends Component {
               <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                 <div class="health-plan-item platinum">
                   <h3>BH Platinum</h3>
+                  <h6 className="form-check-list">138 Tests + ECG + USG</h6>
                   <ul>
-                    <li>138 Tests + ECG + USG</li>
+                    {/* <li>138 Tests + ECG + USG</li> */}
                     <li><i class="fa-solid fa-check"></i> </li>
                     <li><i class="fa-solid fa-check"></i> </li>
                     <li><i class="fa-solid fa-check"></i> </li>
@@ -481,8 +485,9 @@ class b2cmembership extends Component {
               <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                 <div class="health-plan-item platinum-plus">
                   <h3>BH Platinum +</h3>
+                  <h6 className="form-check-list">222 Tests + ECG + USG</h6>
                   <ul>
-                    <li>222 Tests + ECG + USG</li>
+                    {/* <li>222 Tests + ECG + USG</li> */}
                     <li><i class="fa-solid fa-check"></i> </li>
                     <li><i class="fa-solid fa-check"></i> </li>
                     <li><i class="fa-solid fa-check"></i> </li>

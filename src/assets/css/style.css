@@ -13757,6 +13757,12 @@ ul.platinumMinh {
 	margin-left: 8%;
 }
 
+h6.form-check-list {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 
 /*--------------------------------------------------------------
 # Sidebar Contact
