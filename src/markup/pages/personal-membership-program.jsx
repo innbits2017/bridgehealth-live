@@ -848,7 +848,7 @@ class b2cmembership extends Component {
                         </div>
                         <div class="col-md-12 form-group">
                           <input
-                            type="text"
+                            type="email"
                             name="email"
                             value={this.state.email}
                             onChange={e => this.handleChange(e)}

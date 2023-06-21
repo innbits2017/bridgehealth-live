@@ -142,7 +142,7 @@ class FormValidation extends Component {
                                 </div>
 
                                 <div class="col-md-6 form-group">
-                                    <input type="text"
+                                    <input type="email"
                                         value={email}
                                         onChange={this.handleChange}
                                         name="email"
