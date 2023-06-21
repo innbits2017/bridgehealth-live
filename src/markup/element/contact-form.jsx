@@ -143,13 +143,14 @@ class ContactForm extends Component {
                                 <div class="form-holder">
                                     <div class="form-content">
                                         <div class="form-items">
-                                            <form action="forms/contact.php" class="requires-validation" method="post" onSubmit={this.handleSubmit}>
+                                            <form class="requires-validation" method="post" onSubmit={this.handleSubmit}>
                                                 <div class="col-md-12 mb-2">
                                                     <input class="form-control widthinput"
                                                         type="text"
+                                                        value={username}
                                                         onChange={this.handleChange}
                                                         name="username"
-                                                        id="validationTooltip01"
+                                                        id="name"
                                                         placeholder="Name*"
                                                     //   required
                                                     ></input>
@@ -158,9 +159,10 @@ class ContactForm extends Component {
                                                 <div class="col-md-12 mb-2">
                                                     <input class="form-control widthinput"
                                                         type="email"
+                                                        value={email}
                                                         onChange={this.handleChange}
-                                                        name="phone"
-                                                        id="validationServer05"
+                                                        name="email"
+                                                        id="email"
                                                         placeholder="Email"
                                                     // required
                                                     ></input>
@@ -168,16 +170,22 @@ class ContactForm extends Component {
                                                 <div class="col-md-12 mb-2">
                                                     <input class="form-control widthinput"
                                                         type="text"
+                                                        value={phone}
                                                         onChange={this.handleChange}
                                                         name="phone"
-                                                        id="validationServer05"
-                                                        placeholder="Phone No.*"
+                                                        id="phone"
+                                                        placeholder="Phone*"
                                                     // required
                                                     ></input>
                                                     {errors.phone && <div className="error">{errors.phone}</div>}
                                                 </div>
                                                 <div class="col-md-12 mb-2">
-                                                    <textarea name="message" placeholder="Message here.." class="widthinput textareaheight"></textarea>
+                                                    <textarea
+                                                        name="message"
+                                                        value={message}
+                                                        placeholder="Message here.."
+                                                        class="widthinput textareaheight"
+                                                    ></textarea>
                                                 </div>
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required></input>
@@ -187,7 +195,7 @@ class ContactForm extends Component {
                                                 <div class="form-button mt-3 text-center">
                                                     <input type="submit" name="submit" value="Submit" className='submitbutton'></input>
                                                 </div>
-                                                
+
                                             </form>
                                             {submitted && (
                                                 <div className="thankyou-popup" onClick={this.closePopup}>

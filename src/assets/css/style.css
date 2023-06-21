@@ -3109,7 +3109,8 @@ img {
 
 .main-footer .social-links {
 	position: relative;
-	margin-top: 20px;
+    margin-top: 20px;
+    margin-left: 6%;
 }
 
 .main-footer .social-links li {
@@ -5202,7 +5203,7 @@ img.lazy-image.loaded {
 
 .testimonial-block .inner-box {
 	position: relative;
-	padding: 26px 15px 15px 15px;
+	padding: 26px 36px 19px 15px;
 	margin-bottom: 30px;
 }
 
@@ -12255,6 +12256,9 @@ hr {
 
 
 @media only screen and (max-width: 600px) {
+	.footer-submit {
+		margin-left: 4rem !important;
+	}
 	.extra-mar {
 		margin-top: 40px !important;
 		margin-left: 10px !important;
@@ -13757,6 +13761,12 @@ ul.platinumMinh {
 	margin-left: 8%;
 }
 
+h6.form-check-list {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 
 /*--------------------------------------------------------------
 # Sidebar Contact
@@ -13930,8 +13940,9 @@ width: 270px !important;
 }
 
 .widthinput {
-	width: 290px;
-	margin-bottom: 20px;
+	width: 283px;
+    margin-bottom: 20px;
+    margin-left: 6px;
 }
 
 .textareaheight {
@@ -14045,7 +14056,7 @@ body>div.fade.modal.show>div>div>div>button .yes {
 	border-radius: 0px 40px 245px 0px;
 	width: 750px;
 	margin-left: -8%;
-	padding: 20px 18px 1px 30px;
+	padding: 20px 18px 1px 70px;
 }
 .seven-cols .service-offering {
     padding: 0px !important;
@@ -14220,7 +14231,7 @@ tr> :second-child {
     background: red;
 } */
 .footer-submit{
-	margin-left: 7rem !important;
+	margin-left: 7rem;
 }
 /* ===========================================================JobDescription CSS */
 

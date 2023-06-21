@@ -98,7 +98,7 @@ class Career extends Component {
                                 </h2>
 
                             </div>
-                            <button class="commonBtnforAll">Apply Now</button>
+                            <button class="commonBtnforAll"><a href='/career-form' className='textcolor'>Apply Now</a></button>
 
 
                         </div>
@@ -126,7 +126,7 @@ class Career extends Component {
                                     <form>
                                         <div class="form-group1">
                                             <input
-                                                type="search"
+                                                // type="search"
                                                 name="search-field"
                                                 value={this.state.searchTerm}
                                                 onChange={e => this.handleChange(e)}
