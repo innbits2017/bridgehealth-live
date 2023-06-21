@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import Header from '../layout/header';
+import Footer from '../layout/footer'
+const aboutbg = require('./../../assets/images/shape/car1.png');
+
 
 const FormComponent = () => {
   const [formData, setFormData] = useState({
@@ -81,6 +85,21 @@ const FormComponent = () => {
   };
 
   return (
+    <><><Header />
+      {/* <!-- Page Banner Section --> */}
+      <section class="page-banner">
+                <div className="page-banner-bg" style={{ backgroundImage: "url(" + aboutbg + ")" }}></div>
+                <div class="bottom-rotten-curve alternate"></div>
+            </section>
+            <div class="auto-container commimgsoon">
+                <div class=" text-center">
+                    <h2 className='fontSize'>
+
+
+                    </h2>
+                </div>
+
+            </div>
     <form onSubmit={handleSubmit} className="container">
       <h2 className="career-appl">Apply Now</h2>
       <div className="mb-3">
@@ -91,8 +110,7 @@ const FormComponent = () => {
           name="name"
           className={`form-control ${errors.name ? 'is-invalid' : ''}`}
           value={formData.name}
-          onChange={handleChange}
-        />
+          onChange={handleChange} />
         {errors.name && <div className="invalid-feedback">{errors.name}</div>}
       </div>
 
@@ -104,8 +122,7 @@ const FormComponent = () => {
           name="email"
           className={`form-control ${errors.email ? 'is-invalid' : ''}`}
           value={formData.email}
-          onChange={handleChange}
-        />
+          onChange={handleChange} />
         {errors.email && <div className="invalid-feedback">{errors.email}</div>}
       </div>
 
@@ -117,8 +134,7 @@ const FormComponent = () => {
           name="mobile"
           className={`form-control ${errors.mobile ? 'is-invalid' : ''}`}
           value={formData.mobile}
-          onChange={handleChange}
-        />
+          onChange={handleChange} />
         {errors.mobile && <div className="invalid-feedback">{errors.mobile}</div>}
       </div>
 
@@ -173,8 +189,7 @@ const FormComponent = () => {
           name="dob"
           className={`form-control ${errors.dob ? 'is-invalid' : ''}`}
           value={formData.dob}
-          onChange={handleChange}
-        />
+          onChange={handleChange} />
         {errors.dob && <div className="invalid-feedback">{errors.dob}</div>}
       </div>
 
@@ -186,13 +201,12 @@ const FormComponent = () => {
           name="resume"
           accept=".pdf,.doc,.docx"
           className={`form-control ${errors.resume ? 'is-invalid' : ''}`}
-          onChange={handleFileChange}
-        />
+          onChange={handleFileChange} />
         {errors.resume && <div className="invalid-feedback">{errors.resume}</div>}
       </div>
       <button className="sub-btn1">Submit</button>
       {/* <button type="submit" className="form-bg">Submit</button> */}
-    </form>
+    </form></><Footer /></>
   );
 };
 

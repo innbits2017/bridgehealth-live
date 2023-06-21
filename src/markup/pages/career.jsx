@@ -98,7 +98,7 @@ class Career extends Component {
                                 </h2>
 
                             </div>
-                            <button class="commonBtnforAll">Apply Now</button>
+                            <button class="commonBtnforAll"><a href='/career-form' className='textcolor'>Apply Now</a></button>
 
 
                         </div>
