@@ -26,7 +26,8 @@ function validateForm() {
 class Footer extends Component {
 
     state = {
-        isOpen: false
+        isOpen: false,
+        submitted: false
     };
     state1 = {
         isOpen1: false
@@ -51,7 +52,7 @@ class Footer extends Component {
     }
 
     closePopup = () => {
-        this.setState({ submitted: false });
+        this.setState({ submitted: false, isOpen: false });
     };
 
     handleChange = (event) => {
@@ -150,7 +151,7 @@ class Footer extends Component {
 
     render() {
 
-        const { username, email, phone, submitted, errors, isOpen, message } = this.state;
+        const { username, email, phone, submitted, errors } = this.state;
 
         return (
             <>
