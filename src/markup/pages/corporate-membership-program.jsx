@@ -370,16 +370,16 @@ class corporate_membership_program extends Component {
                                                     {errors.company && <div className="error">{errors.company}</div>}
                                                 </div>
                                                 <div class="col-md-12 form-group">
-                                                    <select>
-                                                        <input
-                                                            type="text"
-                                                            value={team}
-                                                            onChange={this.handleChange}
-                                                            name="team"
-                                                            id="team"
-                                                            placeholder="Team Size"
-                                                            required=""
-                                                        />
+                                                    <select 
+                                                        name="team"
+                                                        type="text"
+                                                        value={team}
+                                                        onChange={this.handleChange}
+                                                        id="team"
+                                                        placeholder="Team Size"
+                                                        required=""
+                                                        >
+
                                                         <option value="" >
                                                             Team Size
                                                         </option>
