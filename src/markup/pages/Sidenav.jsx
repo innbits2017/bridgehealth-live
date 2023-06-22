@@ -48,6 +48,7 @@ class Sidenav extends React.Component {
         <section class="sidebarmargin d-none">
 
           <div class="auto-container">
+            
             <div class="row">
               <div class="contact-form-area">
                 <JobListingForm />

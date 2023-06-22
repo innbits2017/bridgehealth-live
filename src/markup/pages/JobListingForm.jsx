@@ -60,10 +60,11 @@ const JobListingForm = () => {
   return (
     <>
       <div className="content-wrap-x1">
-        <h2 className="logo_outlet">Add New Job</h2>
-        {/* <div className="logo_outlet">
-          <img className="only_logo" src={require('../../assets/images/shape/logo_bridgehealth.png')} alt="logo_bridgehealth" />
-        </div> */}
+        <h2 className=' fontSize text-center'>
+                                    <span className='headeingcolorblue'> Add New </span>
+                                    <span className='headeingcolorblack'> Job </span>
+
+                                </h2>
         <div className="form-wrap">
           <form onSubmit={handleSubmit} className="job-form-x1">
             <div className="">
@@ -170,10 +171,10 @@ const JobListingForm = () => {
               ></textarea>
               {errors.jobDescription && <div className="invalid-feedback">{errors.jobDescription}</div>}
             </div>
-            <div className="form-submit-wrap">
-              <button type="submit" className="sub-btn2">SUBMIT</button>
-              {/* <button type="submit" className="btn btn-primary">Submit</button> */}
-            </div>
+            <div class="btn-box text-center btn5">
+                            <button class=" submitcontact"  type="submit" 
+                            name="submit-form">SUBMIT</button>
+                                    </div>
           </form>
         </div>
 

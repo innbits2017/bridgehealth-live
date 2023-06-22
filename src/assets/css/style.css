@@ -13528,31 +13528,31 @@ margin-top: 50px;
 .border-blue {
 	border: 2px solid #1963C6;
 	color: #00527C;
-	margin-top: 7rem;
+	margin-top: 9rem;
 }
 
 .border-silver {
 	border: 2px solid #1963C6;
 	color: #00527C;
-	margin-top: 5.9rem;
+	margin-top: 9rem;
 }
 
 .border-gold {
 	border: 2px solid #804D05;
 	color: #804D05;
-	margin-top: 4rem;
+	margin-top: 6rem;
 }
 
 .border-platinum {
 	border: 2px solid #4A4A4A;
 	color: #484848;
-	margin-top: 5.4rem;
+	margin-top: 6rem;
 }
 
 .border-platinum-plus {
 	border: 2px solid #5B5B77;
 	color: #484848;
-	margin-top: 4rem;
+	margin-top: 6rem;
 }
 
 .health-plan .featured h3 {
@@ -14361,7 +14361,7 @@ button.sub-btn1 {
 
 
 .health-plan .health-plan-item ul:nth-child(2) {
-    height: 720px;
+    height: 620px;
 }
 .health-plan .health-plan-item ul:nth-child(3) {
     height: 500px	;
@@ -14473,4 +14473,32 @@ body > div.fade.widthdialog.modalDialog.modal.show > div > div
 .imgwidth100
 {
  width: 100%;
+}
+
+/* body > div.fade.modal.show > div > div > div > button .te
+{
+padding: 0px !important;
+    margin: -15px !important;
+    color: #000 !important;
+} */
+.selectbox {
+    word-wrap: normal;
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+label {
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
