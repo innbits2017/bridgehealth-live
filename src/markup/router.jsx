@@ -45,8 +45,9 @@ import FormComponent from './pages/career-form';
 import careerAdmin from './pages/career-admin';
 import JobDescription from './pages/JobDescription';
 import LoginForm from './pages/LoginForm';
-import Sidenav from './pages/Sidenav';
 import JobListingForm from './pages/JobListingForm';
+import Sidenav from './pages/Sidenav';
+
 
 
 class Router extends Component {
@@ -99,7 +100,7 @@ class Router extends Component {
                         <Route path='/career-admin' component={careerAdmin}/>
                         <Route path='/job-description' component={JobDescription}/>
                         <Route path='/LoginForm' component={LoginForm}/>
-                        <Route path='/Sidenav' component={Sidenav}/>
+                        <Route path='/sidenav' component={Sidenav}/>
                         <Route path='/JobListingForm' component={JobListingForm}/>
                         
 

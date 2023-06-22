@@ -22,6 +22,12 @@ const JobDescription = () => {
             </div>
 
             <div className="container">
+            <h2 className=' fontSize text-center'>
+                                    <span className='headeingcolorblue'> Job   </span>
+                                    <span className='headeingcolorblack'> Description </span>
+
+                                </h2>
+
                 <div className="row">
                     <div className="col-lg-8">
                         <h3>Staff Nurse</h3>
@@ -95,18 +101,17 @@ const JobDescription = () => {
                                 Hence, he/she needs to be comfortable with varying expectations of different stakeholders.
                             </p>
                         </div>
-                        <a href="/career-form"><button className="sub-btn">Apply Now</button></a>
-                    </div>
+                                       </div>
                     <div className="col-lg-4">
                         <h4>Job Details</h4>
                         <ul className="list-unstyled">
                             <li><strong>Location:</strong> Bangalore, India</li>
-                            <li><strong>Salary Range:</strong> $XXXXX per year</li>
                             <li><strong>Contract Type:</strong> Full-time</li>
                             <li><strong>Posted:</strong> June 16, 2023</li>
-                            <li><strong>Expires:</strong> July 16, 2023</li>
                         </ul>
-                        <a href="/career-form"><button className="sub-btn">Apply Now</button></a>
+                        <a href="/career-form"> <button class=" submitcontact"  type="submit" 
+                            name="submit-form">Apply Now</button></a>
+
                     </div>
                 </div>
             </div></><Footer /></>

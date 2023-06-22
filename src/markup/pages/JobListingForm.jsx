@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import Header from '../layout/header'
-import Footer from '../layout/footer'
-const aboutbg = require('./../../assets/images/shape/car1.png');
 
 const JobListingForm = () => {
   const [formData, setFormData] = useState({
@@ -61,19 +58,16 @@ const JobListingForm = () => {
   };
 
   return (
-    <><><Header />
-    
-     {/* <!-- Page Banner Section --> */}
- <section class="page-banner">
-                    <div className="page-banner-bg" style={{ backgroundImage: "url(" + aboutbg + ")" }}></div>
-                    <div class="bottom-rotten-curve alternate"></div>
-                </section>
-              
-    <div className="container">
-      <div className="row justify-content-center">
-        <div className="col-lg-6">
-          <form onSubmit={handleSubmit}>
-            <div className="mb-3">
+    <>
+      <div className="content-wrap-x1">
+        <h2 className=' fontSize text-center'>
+                                    <span className='headeingcolorblue'> Add New </span>
+                                    <span className='headeingcolorblack'> Job </span>
+
+                                </h2>
+        <div className="form-wrap">
+          <form onSubmit={handleSubmit} className="job-form-x1">
+            <div className="">
               <label htmlFor="jobTitle" className="form-label">Job Title</label>
               <input
                 type="text"
@@ -82,10 +76,11 @@ const JobListingForm = () => {
                 name="jobTitle"
                 value={formData.jobTitle}
                 onChange={handleChange}
-                required />
+                required
+              />
               {errors.jobTitle && <div className="invalid-feedback">{errors.jobTitle}</div>}
             </div>
-            <div className="mb-3">
+            <div className="">
               <label htmlFor="jobCategory" className="form-label">Job Category</label>
               <input
                 type="text"
@@ -94,10 +89,11 @@ const JobListingForm = () => {
                 name="jobCategory"
                 value={formData.jobCategory}
                 onChange={handleChange}
-                required />
+                required
+              />
               {errors.jobCategory && <div className="invalid-feedback">{errors.jobCategory}</div>}
             </div>
-            <div className="mb-3">
+            <div className="">
               <label htmlFor="department" className="form-label">Department/Group</label>
               <input
                 type="text"
@@ -106,10 +102,11 @@ const JobListingForm = () => {
                 name="department"
                 value={formData.department}
                 onChange={handleChange}
-                required />
+                required
+              />
               {errors.department && <div className="invalid-feedback">{errors.department}</div>}
             </div>
-            <div className="mb-3">
+            <div className="">
               <label htmlFor="requisitionNumber" className="form-label">Requisition Number</label>
               <input
                 type="tel"
@@ -118,10 +115,11 @@ const JobListingForm = () => {
                 name="requisitionNumber"
                 value={formData.requisitionNumber}
                 onChange={handleChange}
-                required />
+                required
+              />
               {errors.requisitionNumber && <div className="invalid-feedback">{errors.requisitionNumber}</div>}
             </div>
-            <div className="mb-3">
+            <div className="">
               <label htmlFor="workInShifts" className="form-label">Will be required to work in shifts?</label>
               <input
                 type="text"
@@ -130,10 +128,11 @@ const JobListingForm = () => {
                 name="workInShifts"
                 value={formData.workInShifts}
                 onChange={handleChange}
-                required />
+                required
+              />
               {errors.workInShifts && <div className="invalid-feedback">{errors.workInShifts}</div>}
             </div>
-            <div className="mb-3">
+            <div className="">
               <label htmlFor="reportingTo" className="form-label">Reporting To</label>
               <input
                 type="text"
@@ -142,10 +141,11 @@ const JobListingForm = () => {
                 name="reportingTo"
                 value={formData.reportingTo}
                 onChange={handleChange}
-                required />
+                required
+              />
               {errors.reportingTo && <div className="invalid-feedback">{errors.reportingTo}</div>}
             </div>
-            <div className="mb-3">
+            <div className="">
               <label htmlFor="numberOfPersons" className="form-label">Number of persons that would potentially report for this role</label>
               <input
                 type="text"
@@ -154,10 +154,11 @@ const JobListingForm = () => {
                 name="numberOfPersons"
                 value={formData.numberOfPersons}
                 onChange={handleChange}
-                required />
+                required
+              />
               {errors.numberOfPersons && <div className="invalid-feedback">{errors.numberOfPersons}</div>}
             </div>
-            <div className="mb-3">
+            <div className="">
               <label htmlFor="jobDescription" className="form-label">Job Description</label>
               <textarea
                 className={`form-control ${errors.jobDescription ? 'is-invalid' : ''}`}
@@ -170,16 +171,15 @@ const JobListingForm = () => {
               ></textarea>
               {errors.jobDescription && <div className="invalid-feedback">{errors.jobDescription}</div>}
             </div>
-            <div className="mb-3">
-              <button type="submit" className="sub-btn2">Submit</button>
-              {/* <button type="submit" className="btn btn-primary">Submit</button> */}
-            </div>
+            <div class="btn-box text-center btn5">
+                            <button class=" submitcontact"  type="submit" 
+                            name="submit-form">SUBMIT</button>
+                                    </div>
           </form>
         </div>
 
       </div>
-    </div></><Footer /></>
-
+    </>
   );
 };
 

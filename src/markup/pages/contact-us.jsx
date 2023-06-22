@@ -47,11 +47,11 @@ class Contact extends Component {
         });
     };
 
-    handleSubmit = (event) => {
+    handleSubmit = async (event) => {
         // console.log("i am handle Submit", event)
         event.preventDefault();
 
-        const { username,company, email, phone } = this.state;
+        const { username, company, email, phone } = this.state;
         const errors = {};
 
         // Validate username
@@ -91,13 +91,48 @@ class Contact extends Component {
                 email: '',
                 phone: '',
                 company: '',
+                message: '',
                 errors: {
                     username: '',
                     company: '',
                     email: '',
-                    phone: ''
+                    phone: '',
+                    message: '',
                 }
             });
+
+            // Show the "Thank you" message
+            this.setState({ submitted: true });
+
+            // Call the sendEmail function
+            await this.sendEmail();
+        }
+    };
+
+
+    sendEmail = async (e) => {
+        // e.preventDefault();
+
+        const { email, username, phone, message } = this.state;
+
+        const res = await fetch('https://mail.bridgehealth.in/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email, username, phone, message
+            }),
+        });
+
+        const data = await res.json();
+        console.log(data);
+
+        if (data.status === 401 || !data) {
+            console.log('error');
+        } else {
+            this.setState({ show: true, email: '', username: '', phone: '', message: '' });
+            console.log('Email sent');
         }
     };
 
@@ -105,7 +140,7 @@ class Contact extends Component {
 
     render() {
 
-        const { username, company, email, phone, message, isSubmitDisabled, errors } = this.state;
+        const { username, company, email, phone, message, submitted, errors } = this.state;
         return (
             <>
                 <Header />
@@ -151,7 +186,7 @@ class Contact extends Component {
                                                         id="name"
                                                         name="username"
                                                         placeholder="Full name*"
-                                                        // required
+                                                    // required
                                                     />
                                                     <i class="fas fa-user"></i>
                                                     {errors.username && <div className="error">{errors.username}</div>}
@@ -166,7 +201,7 @@ class Contact extends Component {
                                                         name="company"
                                                         id="company"
                                                         placeholder="Company Name*"
-                                                        // required
+                                                    // required
                                                     />
                                                     <i class="fas fa-envelope"></i>
                                                     {errors.company && <div className="error">{errors.company}</div>}
@@ -174,16 +209,16 @@ class Contact extends Component {
                                                 <div class="col-md-6 form-group">
                                                     <label for="name" className='contactlebel'>Email</label>
                                                     <input className='inputcontact'
-                                                        type="text"
+                                                        type="email"
                                                         value={email}
                                                         onChange={this.handleChange}
                                                         name="email"
                                                         id="email"
                                                         placeholder="xyz@gmail.com*"
-                                                        // required
+                                                    // required
                                                     />
                                                     <i class="fas fa-user"></i>
-                                                    {errors.email && <div className="error">{errors.email}</div>}
+                                                    {/* {errors.email && <div className="error">{errors.email}</div>} */}
                                                 </div>
 
                                                 <div class="col-md-6 form-group">
@@ -195,7 +230,7 @@ class Contact extends Component {
                                                         name="phone"
                                                         id="phone"
                                                         placeholder="Phone no.*"
-                                                        // required=""
+                                                    // required=""
                                                     />
                                                     <i class="fas fa-envelope"></i>
                                                     {errors.phone && <div className="error">{errors.phone}</div>}
@@ -204,7 +239,7 @@ class Contact extends Component {
                                                     <label for="message" className='contactlebel'>Message</label>
                                                     <textarea className='textareacontact'
                                                         name="message"
-                                                        value={message}
+                                                        value={this.state.message}
                                                         onChange={this.handleChange}
                                                         id="message"
                                                         placeholder="I  would like to talk about............."
@@ -213,14 +248,22 @@ class Contact extends Component {
                                                 </div>
 
                                                 <div class="col-md-12 form-group">
-                                                <div class="btn-box text-center btn5">
-                            <button className='submitcontact'  type="submit"    disabled={isSubmitDisabled}
-                            onSubmit={e => this.handleSubmit(e)}
-                            name="submit-form">SUBMIT</button>
-                                    </div>
+                                                    <div class="btn-box text-center btn5">
+                                                        <button className='submitcontact'
+                                                            type="submit"
+                                                            name="submit-form"
+                                                        >SUBMIT</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </form>
+                                        {submitted && (
+                                            <div className="thankyou-popup" onClick={this.closePopup}>
+                                                <h2>Thank You!</h2>
+                                                <p>Your details has been successfully submitted. Thanks!</p>
+                                                <button type='button' >OK</button>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             </div>

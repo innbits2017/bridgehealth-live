@@ -100,10 +100,18 @@ const FormComponent = () => {
                 </div>
 
             </div>
-    <form onSubmit={handleSubmit} className="container">
-      <h2 className="career-appl">Apply Now</h2>
-      <div className="mb-3">
-        <label htmlFor="name" className="form-label" placeholder='Name'>Name:</label>
+            <section class="auto-container">
+            <form onSubmit={handleSubmit} className="container">
+              
+            <h2 className=' fontSize text-center'>
+                                    <span className='headeingcolorblue'> Apply   </span>
+                                    <span className='headeingcolorblack'> Now </span>
+
+                                </h2>
+
+                        <div class="row align-items-center ">
+                        <div class="col-md-6 form-group">
+                        <label htmlFor="name" className="form-label" placeholder='Name'>Name:</label>
         <input
           type="text"
           id="name"
@@ -112,10 +120,9 @@ const FormComponent = () => {
           value={formData.name}
           onChange={handleChange} />
         {errors.name && <div className="invalid-feedback">{errors.name}</div>}
-      </div>
-
-      <div className="mb-3">
-        <label htmlFor="email" className="form-label" placeholder="Email">Email:</label>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                <label htmlFor="email" className="form-label" placeholder="Email">Email:</label>
         <input
           type="email"
           id="email"
@@ -124,9 +131,9 @@ const FormComponent = () => {
           value={formData.email}
           onChange={handleChange} />
         {errors.email && <div className="invalid-feedback">{errors.email}</div>}
-      </div>
+                                </div>
 
-      <div className="mb-3">
+                                <div class="col-lg-6 form-group">
         <label htmlFor="mobile" className="form-label" placeholder="Mobile">Mobile:</label>
         <input
           type="text"
@@ -137,13 +144,12 @@ const FormComponent = () => {
           onChange={handleChange} />
         {errors.mobile && <div className="invalid-feedback">{errors.mobile}</div>}
       </div>
-
-      <div className="mb-3">
+      <div class="col-lg-6 form-group">
         <label htmlFor="gender" className="form-label">Gender:</label>
         <select
           id="gender"
           name="gender"
-          className={`form-select ${errors.gender ? 'is-invalid' : ''}`}
+          className="selectbox"
           value={formData.gender}
           onChange={handleChange}
         >
@@ -155,12 +161,34 @@ const FormComponent = () => {
         {errors.gender && <div className="invalid-feedback">{errors.gender}</div>}
       </div>
 
-      <div className="mb-3">
+      <div class="col-lg-6 form-group">
+
+      <div>
+                {/* <select value={selectedOption} onChange={this.handleDropdownChange}>
+                    <input
+                        type="text"
+                        name="username"
+                        id="name"
+                        value="" disabled
+                        placeholder="Team Size"
+                        required=""
+                    />
+                    <option value="" disabled>
+                        Team Size
+                    </option>
+                    <option value="0-10">0-10</option>
+                    <option value="11-50">11-50</option>
+                    <option value="51-100">51-100</option>
+                    <option value="101-500">101-500</option>
+                    <option value="501-1000">501-1000</option>
+                    <option value="1001-above">1001-above</option>
+                </select> */}
+            </div>
         <label htmlFor="position" className="form-label">Position Applying:</label>
         <select
           id="position"
           name="position"
-          className={`form-select ${errors.position ? 'is-invalid' : ''}`}
+          className="selectbox"
           value={formData.position}
           onChange={handleChange}
         >
@@ -181,7 +209,7 @@ const FormComponent = () => {
         </select>
         {errors.position && <div className="invalid-feedback">{errors.position}</div>}
       </div>
-      <div className="mb-3">
+      <div class="col-lg-6 form-group">
         <label htmlFor="dob" className="form-label" placeholder="Date of Birth">Date of Birth:</label>
         <input
           type="date"
@@ -193,7 +221,7 @@ const FormComponent = () => {
         {errors.dob && <div className="invalid-feedback">{errors.dob}</div>}
       </div>
 
-      <div className="mb-3">
+      <div class="col-lg-6 form-group">
         <label htmlFor="resume" className="form-label">Upload Resume:</label>
         <input
           type="file"
@@ -204,9 +232,21 @@ const FormComponent = () => {
           onChange={handleFileChange} />
         {errors.resume && <div className="invalid-feedback">{errors.resume}</div>}
       </div>
-      <button className="sub-btn1">Submit</button>
-      {/* <button type="submit" className="form-bg">Submit</button> */}
-    </form></><Footer /></>
+      <div class="col-lg-12">
+
+      <div class="btn-box text-center btn5">
+                            <button class=" submitcontact"  type="submit" 
+                            name="submit-form">SUBMIT</button>
+                                    </div>
+                                    </div>
+    </div>
+    </form>
+    </section>
+    
+    
+    
+    
+    </><Footer /></>
   );
 };
 

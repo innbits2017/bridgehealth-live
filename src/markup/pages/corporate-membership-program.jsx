@@ -25,53 +25,96 @@ class corporate_membership_program extends Component {
             username: '',
             email: '',
             phone: '',
-            message: '',
+            company: '',
+            errors: {
+                username: '',
+                email: '',
+                phone: '',
+                company: ''
+            },
+            submitted: false
         };
-        // this.handleChange = this.handleChange.bind(this)
     }
+
+    closePopup = () => {
+        this.setState({ submitted: false });
+    };
 
     handleChange = (event) => {
-
+        // console.log("I am handle change", event.target)
         const { name, value } = event.target;
-        this.setState({ ...this.state, [name]: value });
-        console.log(event)
+        const errors = { ...this.state.errors };
+
+        // Clear the error for the changed field
+        errors[name] = '';
+
+        this.setState({
+            [name]: value,
+            errors
+        });
     };
 
-    handleSubmit = (event) => {
+    handleSubmit = async (event) => {
+        // console.log("i am handle Submit", event)
         event.preventDefault();
 
-        console.log(this.state);
-    };
+        const { username, company, email, phone } = this.state;
+        const errors = {};
 
-    saveData = async (e) => {
-
-        console.log(e, "Data is saving");
-
-        e.preventDefault();
-
-        const { email, username, phone, message } = this.state;
-
-        const res = await fetch('http://localhost:8000/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                email, username, phone, message
-            }),
-        });
-
-        const data = await res.json();
-        console.log(data);
-
-        if (data.status === 401 || !data) {
-            console.log('error');
-        } else {
-            this.setState({ show: true, email: '', username: '', phone: '', message: '' });
-            console.log('Data saved');
+        // Validate username
+        if (username.trim() === '') {
+            errors.username = 'Username is required';
         }
 
-    }
+        // Validate Company
+        if (company.trim() === '') {
+            errors.company = 'Company name is required';
+        }
+
+        // Validate email
+        if (!email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
+            errors.email = 'Invalid email format';
+        }
+
+        // Validate phone
+        if (!phone.match(/^\d{10}$/)) {
+            errors.phone = 'Phone number must be 10 digits';
+        }
+
+        // Update the state with the errors
+        this.setState({ errors });
+
+        // If there are no errors, submit the form
+        if (Object.keys(errors).length === 0) {
+            // Perform the form submission logic here
+            // e.g., call an API endpoint, update the database, etc.
+
+            // Show the "Thank you" message
+            this.setState({ submitted: true });
+
+            // Reset the form
+            this.setState({
+                username: '',
+                email: '',
+                phone: '',
+                company: '',
+                message: '',
+                errors: {
+                    username: '',
+                    company: '',
+                    email: '',
+                    phone: '',
+                    message: '',
+                }
+            });
+
+            // Show the "Thank you" message
+            this.setState({ submitted: true });
+
+            // Call the sendEmail function
+            await this.sendEmail();
+        }
+    };
 
 
     sendEmail = async (e) => {
@@ -102,10 +145,11 @@ class corporate_membership_program extends Component {
 
 
 
+
+
     render() {
 
-        const { username, email } = this.state;
-        const isSubmitDisabled = username === '' || email === ''
+        const { username, email, phone, submitted, errors, isOpen } = this.state;
 
         return (
             <>
@@ -135,7 +179,7 @@ class corporate_membership_program extends Component {
                                         {/* <button class="commonBtnforAll btnleft">SAY YES!</button> */}
 
                                         <div class="btn-box btn5">
-                                            <ContactForm buttonText="SAY YES!"  className='submitcontact'/>
+                                            <ContactForm buttonText="SAY YES!" className='submitcontact' />
                                         </div>
 
                                     </div>
@@ -161,11 +205,11 @@ class corporate_membership_program extends Component {
                                         <i><span className='headeingcolorblue'>where you are </span></i>on your
                                         <i><span className='headeingcolorblue'> wellbeing journey </span></i>
                                     </h3>
-                                   
-                                        <div class="btn-box text-center btn5 btnleft">
-                                            <ContactForm buttonText="GET QUOTE" />
-                                        </div>
-                                  
+
+                                    <div class="btn-box text-center btn5 btnleft">
+                                        <ContactForm buttonText="GET QUOTE" />
+                                    </div>
+
 
                                 </div>
                             </div>
@@ -275,7 +319,7 @@ class corporate_membership_program extends Component {
                                     {/* <!-- Contact Form--> */}
                                     <div class="contact-form">
                                         <p className='text-center'>Reach out to us and we'll help you in setting up the <br></br>best of <span className='headeingcolorblue'>Preventive Healthcare</span> Services for your employee.</p>
-                                        <form method="post" onSubmit={e => { this.sendEmail(e); this.saveData(e) }} id="contact-form">
+                                        <form method="post" onSubmit={this.handleSubmit} id="contact-form">
                                             <div class="row clearfix">
                                                 <div class="col-md-12 form-group">
                                                     <input
@@ -285,7 +329,9 @@ class corporate_membership_program extends Component {
                                                         onChange={e => this.handleChange(e)}
                                                         id="name"
                                                         placeholder="Name*"
-                                                        required="" />
+                                                        required=""
+                                                    />
+                                                    {errors.username && <div className="error">{errors.username}</div>}
                                                 </div>
                                                 <div class="col-md-12 form-group">
                                                     <input
@@ -295,8 +341,10 @@ class corporate_membership_program extends Component {
                                                         onChange={e => this.handleChange(e)}
                                                         id="name"
                                                         placeholder="Email"
-                                                        required="" />
-                                                </div>  <div class="col-md-12 form-group">
+                                                        required=""
+                                                    />
+                                                </div>
+                                                <div class="col-md-12 form-group">
                                                     <input
                                                         type="phone"
                                                         name="phone"
@@ -304,35 +352,47 @@ class corporate_membership_program extends Component {
                                                         onChange={e => this.handleChange(e)}
                                                         id="name"
                                                         placeholder="Phone*"
-                                                        required="" />
-                                                </div>  <div class="col-md-12 form-group">
+                                                        required=""
+                                                    />
+                                                    {errors.phone && <div className="error">{errors.phone}</div>}
+                                                </div>
+                                                <div class="col-md-12 form-group">
                                                     <input
                                                         type="text"
-                                                        name="username"
-                                                        id="name"
+                                                        value={this.state.company}
+                                                        onChange={this.handleChange}
+                                                        name="company"
+                                                        id="company"
                                                         placeholder="Company Name*"
-                                                        required="" />
+                                                    />
+                                                    {errors.company && <div className="error">{errors.company}</div>}
                                                 </div>
                                                 <div class="col-md-12 form-group">
                                                     < TeamSizeDropdown />
                                                 </div>
                                                 <div class="form-check">
                                                     <input class="form-check-input"
-                                                        type="checkbox" id="checkbox1" name="option1" value="good" required/>
+                                                        type="checkbox" id="checkbox1" name="option1" value="good" required />
                                                     <label class="form-check-label heading">
                                                         I agree that Bridge Health may contact me at the email address or phone number above.
                                                     </label>
                                                 </div>
 
                                                 <div class="col-md-12 form-group">
-                                                <div class="btn-box text-center btn5">
-                            <button class=" submitcontact"  type="submit"    disabled={isSubmitDisabled}
-                            onSubmit={e => this.handleSubmit(e)}
-                            name="submit-form">SUBMIT</button>
-                                    </div>
+                                                    <div class="btn-box text-center btn5">
+                                                        <button class=" submitcontact" type="submit"
+                                                            name="submit-form">SUBMIT</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </form>
+                                        {submitted && (
+                                            <div className="thankyou-popup" onClick={this.closePopup}>
+                                                <h2>Thank You!</h2>
+                                                <p>Your details has been successfully submitted. Thanks!</p>
+                                                <button type='button' >OK</button>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             </div>
