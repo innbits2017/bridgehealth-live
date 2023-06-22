@@ -20,9 +20,10 @@ class TeamSizeDropdown extends Component {
                 <select value={selectedOption} onChange={this.handleDropdownChange}>
                     <input
                         type="text"
-                        name="username"
-                        id="name"
-                        value="" disabled
+                        value={this.state.team}
+                        onChange={this.handleChange}
+                        name="team"
+                        id="team"
                         placeholder="Team Size"
                         required=""
                     />
