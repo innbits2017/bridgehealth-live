@@ -8,7 +8,9 @@ const JobListingForm = () => {
     requisitionNumber: '',
     workInShifts: '',
     reportingTo: '',
-    numberOfPersons: '',
+    positionOfApply: '',
+    jobLocation: '',
+    jobPosting: '',
     jobDescription: '',
   });
 
@@ -48,8 +50,14 @@ const JobListingForm = () => {
     if (!formData.reportingTo) {
       errors.reportingTo = 'Reporting To is required';
     }
-    if (!formData.numberOfPersons) {
-      errors.numberOfPersons = 'Number of persons is required';
+    if (!formData.positionOfApply) {
+      errors.positionOfApply = 'Number of persons is required';
+    }
+    if (!formData.jobLocation) {
+      errors.jobLocation = 'Job Description is required';
+    }
+    if (!formData.jobPosting) {
+      errors.jobPosting = 'Job Description is required';
     }
     if (!formData.jobDescription) {
       errors.jobDescription = 'Job Description is required';
@@ -61,10 +69,10 @@ const JobListingForm = () => {
     <>
       <div className="content-wrap-x1">
         <h2 className=' fontSize text-center'>
-                                    <span className='headeingcolorblue'> Add New </span>
-                                    <span className='headeingcolorblack'> Job </span>
+          <span className='headeingcolorblue'> Add New </span>
+          <span className='headeingcolorblack'> Job </span>
 
-                                </h2>
+        </h2>
         <div className="form-wrap">
           <form onSubmit={handleSubmit} className="job-form-x1">
             <div className="">
@@ -145,7 +153,33 @@ const JobListingForm = () => {
               />
               {errors.reportingTo && <div className="invalid-feedback">{errors.reportingTo}</div>}
             </div>
-            <div className="">
+            <div class="">
+              <label htmlFor="positionOfApply" className="form-label">Position Applying:</label>
+              <select
+                id="positionOfApply"
+                name="positionOfApply"
+                className="selectbox"
+                value={formData.positionOfApply}
+                onChange={handleChange}
+              >
+                <option value="">Select Position</option>
+                <option value="1">Clinical Services</option>
+                <option value="2">Operations</option>
+                <option value="3">Corporate Operations</option>
+                <option value="4">Corporate Sales</option>
+                <option value="5">Marketing</option>
+                <option value="6">Technology</option>
+                <option value="7">Pharmacy</option>
+                <option value="8">Sales & Operations</option>
+                <option value="7">Finance</option>
+                <option value="7">HR</option>
+                <option value="7">Facility & Admin</option>
+                <option value="7">Strategic Initiatives</option>
+                <option value="7">Affiliates & Alliances</option>
+              </select>
+              {errors.positionOfApply && <div className="invalid-feedback">{errors.positionOfApply}</div>}
+            </div>
+            {/* <div className="">
               <label htmlFor="numberOfPersons" className="form-label">Number of persons that would potentially report for this role</label>
               <input
                 type="text"
@@ -157,6 +191,33 @@ const JobListingForm = () => {
                 required
               />
               {errors.numberOfPersons && <div className="invalid-feedback">{errors.numberOfPersons}</div>}
+            </div> */}
+
+            <div className="">
+              <label htmlFor="jobLocation" className="form-label">Job Location</label>
+              <input
+                type="text"
+                className={`form-control ${errors.jobLocation ? 'is-invalid' : ''}`}
+                id="jobLocation"
+                name="jobLocation"
+                value={formData.jobLocation}
+                onChange={handleChange}
+                required
+              />
+              {errors.jobLocation && <div className="invalid-feedback">{errors.jobLocation}</div>}
+            </div>
+            <div className="">
+              <label htmlFor="jobPosting" className="form-label">Job Posting</label>
+              <input
+                type="text"
+                className={`form-control ${errors.jobPosting ? 'is-invalid' : ''}`}
+                id="jobPosting"
+                name="jobPosting"
+                value={formData.jobPosting}
+                onChange={handleChange}
+                required
+              />
+              {errors.jobPosting && <div className="invalid-feedback">{errors.jobPosting}</div>}
             </div>
             <div className="">
               <label htmlFor="jobDescription" className="form-label">Job Description</label>
@@ -172,9 +233,9 @@ const JobListingForm = () => {
               {errors.jobDescription && <div className="invalid-feedback">{errors.jobDescription}</div>}
             </div>
             <div class="btn-box text-center btn5">
-                            <button class=" submitcontact"  type="submit" 
-                            name="submit-form">SUBMIT</button>
-                                    </div>
+              <button class=" submitcontact" type="submit"
+                name="submit-form">SUBMIT</button>
+            </div>
           </form>
         </div>
 
