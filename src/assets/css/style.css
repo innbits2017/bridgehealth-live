@@ -11392,11 +11392,7 @@ hr {
 		padding: 5px 20px 5px 20px !important;
 	}
 
-	.bloground {
-		margin-top: 1rem !important;
-		padding-top: 20%;
-		text-align: justify;
-	}
+	
 
 	.textwidth {
 		width: auto !important;
@@ -11695,7 +11691,7 @@ hr {
 		line-height: 1.2em;
 		color: #ffffff;
 		font-weight: 400;
-		padding-top: 0px;
+		padding-top: 25px;
 		text-align: center;
 	}
 
@@ -12265,6 +12261,11 @@ hr {
 		padding-bottom: 5px;
 		margin-right: 0px !important;
 
+	}
+
+	.bloground {
+		padding-top: 10%;
+		text-align: justify;
 	}
 
 	.flex-column-reverse {
@@ -14241,8 +14242,7 @@ tr> :second-child {
 }
 
 .bloground {
-    margin-top: -17rem !important;
-    padding-top: 23%;
+	padding-top: 2rem;
     text-align: justify;
 }
 
