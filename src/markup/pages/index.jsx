@@ -352,7 +352,7 @@ class Index extends Component {
                 <section class="team-section expertiseback">
                     <div class="auto-container">
                         <div class="sec-title text-center">
-                            <h2> <span className='headeingcolorblack'>  Explore Our </span> <span className='headeingcolorblue'> Expertise</span></h2>
+                            <h2> <span className='headeingcolorblack '>  Explore Our </span> <span className='headeingcolorblue'> Expertise</span></h2>
                             <h5 className='heading5'>From mental health and wellness to nutrition management, our services help <span className='headeingcolorblue'> #BridgeTheGap</span> between you and healthy living
                             </h5>
                         </div>

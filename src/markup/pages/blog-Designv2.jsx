@@ -117,7 +117,7 @@ class blog_Designv2 extends Component {
 
                 <section style={{ marginBottom: 4 + 'rem' }}>
                     <div class="auto-container">
-                        <h2 style={{ textAlign: 'center', marginTop: 6 + 'rem' }}>
+                        <h2 className='head-title-margin'>
                             {/* Confused about your health checks?<br></br> */}
                             <span className='headeingcolorblack'> More From </span> <span className='headeingcolorblue'>Bridge Health</span>
                         </h2>

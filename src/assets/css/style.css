@@ -12353,7 +12353,7 @@ hr {
 	}
 
 	.box .textpara {
-		font-size: 15.3px;
+		font-size: 17.3px;
 		padding-left: 23px;
 		margin-top: 20px;	}
 
@@ -13759,6 +13759,12 @@ h6.form-check-list {
     font-weight: 500;
 }
 
+.head-title-margin{
+	text-align: center;
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+}
+
 
 /*--------------------------------------------------------------
 # Sidebar Contact
@@ -13915,6 +13921,8 @@ body>div.fade.popupform.modal.show>div>div {
 	body>div.fade.popupform.modal.show>div>div {
 		margin-left: 1% !important;
 	}
+
+
 }
 
 .widthinput {
@@ -14422,6 +14430,12 @@ button.sub-btn1 {
 {
 	font-size: 23px !important;
 }
+
+.head-title-margin{
+	text-align: center;
+	margin-top: 2rem;
+}
+
 .margintextbotton
 {
 			margin-bottom: 30px;
@@ -14502,3 +14516,4 @@ label {
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
+
