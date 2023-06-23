@@ -3,8 +3,20 @@ import React, { Component } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Modal, Button } from "react-bootstrap";
+
 class Testimonial2 extends Component {
-    render() {
+    state = {
+        isOpen: false
+    };
+    state1 = {
+        isOpen1: false
+    };
+    openModal = () => this.setState({ isOpen: true });
+    closeModal = () => this.setState({ isOpen: false });
+
+    render()
+     {
         const settings = {
             dots: false,
             infinite: true,
@@ -13,6 +25,8 @@ class Testimonial2 extends Component {
             slidesToScroll: 1,
             autoplay: false
         };
+       
+    
         return (
             <>
                 <section class="testimonial-section  testimonialpadding expertiseback1">
@@ -38,7 +52,7 @@ class Testimonial2 extends Component {
 
                                                     <div class="col-lg-6">
                                                         <div class="image-wrapper">
-                                                            <div class="image-one">
+                                                            <div class="image-one"  onClick={this.openModal}>
                                                                 <img src={require('../../assets/images/shape/testimonial.png')} alt="" className='imgwidth' />
                                                             </div>
                                                         </div>
@@ -99,6 +113,12 @@ class Testimonial2 extends Component {
                             </div>
                         </div>
                     </div>
+                    <Modal show={this.state.isOpen} onHide={this.closeModal} className='widthdialog modalDialog'>
+                    <Modal.Header closeButton>
+                    <iframe width="1000" height="480" src="https://www.youtube.com/embed/Faz-OTvBuEk" title="Empowering transformation in employee wellness - Bridge Health" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </Modal.Header>
+
+                </Modal>
                 </section>
             </>
         )
