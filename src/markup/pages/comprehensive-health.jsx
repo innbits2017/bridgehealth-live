@@ -114,7 +114,7 @@ class comprehensiveHealth extends Component {
                             <span className='headeingcolorblue'>  Bridge Health</span>
                             <span className='headeingcolorblack'> Advantage </span>
                         </h2>
-                        <div class="row derm-data ">
+                        <div class="row">
                             <div class="col-sm-4 healts">
 
                                 <img src={require('../../assets/images/gallery/health4.png')} alt="" class="avtar " />

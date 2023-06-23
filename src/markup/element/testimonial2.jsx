@@ -85,7 +85,7 @@ class Testimonial2 extends Component {
 
                                                     <div class="col-lg-6">
                                                         <div class="image-wrapper">
-                                                            <div class="image-one">
+                                                        <div class="image-one"  onClick={this.openModal}>
                                                                 <img src={require('../../assets/images/shape/testimonial.png')} alt="" className='imgwidth' />
                                                             </div>
                                                         </div>
