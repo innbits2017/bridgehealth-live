@@ -721,7 +721,7 @@ class Index extends Component {
                     </div>
                 </section>
                 <Modal show={this.state.isOpen} onHide={this.closeModal}>
-                    <Modal.Header>
+                    <Modal.Header closeButton>
                         <a href={'/personal-membership-program'}>
                             <span><img class="width50" src={require('../../assets/images/shape/celebration.png')} alt="" />
                                 <p className='width50p'>Personal Membership Programme</p>

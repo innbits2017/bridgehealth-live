@@ -96,7 +96,7 @@ class yoga_Assessment extends Component {
 
 
                                 <div class="col-lg-6">
-                                    <div class="content-box">
+                                    <div class="content-box yogaltst">
 
                                         <h2 >
                                             <span className='headeingcolorblack'> What We </span>

@@ -81,7 +81,7 @@ class pharmacy extends Component {
                             <div class="contact-form-area marginLeft12">
                                 <div class="sec-title">
                                     <p className='font24'>
-                                        Get everything you need at the Bridge Health pharmacy. Our pharmacy is well-stocked with prescription medicines and over-the-counter medicines at affordable prices. Bridge Health<br></br> operates its pharmacy through both<br></br> online and offline pharmacy formats.
+                                        Get everything you need at the Bridge Health pharmacy. Our pharmacy is well-stocked with prescription medicines and over-the-counter medicines at affordable prices. Bridge Health  operates its pharmacy through both  online and offline pharmacy formats.
                                     </p>
 
                                 </div>
@@ -96,7 +96,7 @@ class pharmacy extends Component {
                         <div class="col-lg-6">
                             <div class="image-wrapper">
                                 <div class="image-one">
-                                    <img src={require('../../assets/images/shape/phar1.png')} alt="" />
+                                    <img src={require('../../assets/images/shape/phar1.png')} alt=""  className='marginLeft12'/>
                                 </div>
                             </div>
                         </div>

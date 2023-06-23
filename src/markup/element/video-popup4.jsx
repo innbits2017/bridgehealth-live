@@ -29,10 +29,7 @@ class VideoPopup4 extends Component {
                         <div class="default-video-box text-center wow zoomIn" data-wow-delay="200ms" data-wow-duration="1200ms">
                             <Link onClick={this.openModal} class="overlay-link lightbox-image video-fancybox ripple"><span class="fas fa-play"></span></Link>
                         </div>
-                        <div class="sec-title light text-center">
-                            <div class="sub-title">مقدمة الفيديو  </div>
-                            <h2>لدينا أحدث رؤى <br/> & نظرة عامة. </h2>
-                        </div>
+                     
                     </div>
                 </section>
 

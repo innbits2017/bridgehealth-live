@@ -27,9 +27,9 @@ class VideoPopup1 extends Component {
 
                 <section class="video-section" style={{ backgroundImage: "url(" + videobg1 + ")" }}>
                     <div class="auto-container">
-                        {/* <div class="default-video-box text-center wow zoomIn" data-wow-delay="200ms" data-wow-duration="1200ms">
+                        <div class="default-video-box text-center wow zoomIn" data-wow-delay="200ms" data-wow-duration="1200ms">
                             <Link onClick={this.openModal} class="overlay-link lightbox-image video-fancybox ripple"><span class="fas fa-play"></span></Link>
-                        </div> */}
+                        </div>
                         <div class="sec-title text-center paadintop">
                             {/* <div class="sub-title">Intro Video</div> */}
                             <h2  className='colorwhite'>Learn more about <br></br>Preventive Healthcare.</h2>
