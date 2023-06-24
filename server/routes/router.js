@@ -233,6 +233,22 @@ router.post("/employe", (req, res) => {
 });
 
 
+// Define a hardcoded admin username and password (for demonstration purposes only)
+const adminUsername = 'admin';
+const adminPassword = 'password';
+
+// Login endpoint
+router.post('/login', (req, res) => {
+    const { username, password } = req.body;
+
+    // Check if the provided username and password match the admin credentials
+    if (username === adminUsername && password === adminPassword) {
+        res.json({ message: 'Login successful' });
+    } else {
+        res.status(401).json({ message: 'Invalid credentials' });
+    }
+});
+
 
 
 

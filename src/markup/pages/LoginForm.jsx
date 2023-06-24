@@ -1,26 +1,92 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 
 
 class LoginForm extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
       checked: false,
+      username: '',
+      password: '',
+      error: null,
+      redirectToSidenav: false
     };
   }
+
+  handleInputChange = (event) => {
+    console.log("handleInputChange", event)
+    this.setState({
+      [event.target.name]: event.target.value,
+      error: null // Clear the error message
+    });
+
+  };
+
+
+  handleLogin = async (event) => {
+    console.log("handleLogin", event)
+    event.preventDefault();
+
+    const { username, password } = this.state;
+
+    if (!username || !password) {
+      this.setState({ error: 'Please enter both username and password' });
+      return;
+    }
+
+    const loginData = {
+      username: username,
+      password: password
+    };
+
+    try {
+      const response = await fetch('http://localhost:3001/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(loginData)
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data.message);
+      } else {
+        const errorData = await response.json();
+        throw new Error(errorData.message);
+      }
+
+      // Simulating a successful login
+      setTimeout(() => {
+        this.setState({ redirectToSidenav: true });
+      }, 1000);
+
+    } catch (error) {
+      console.error('Login failed:', error.message);
+      this.setState({ error: error.message });
+    }
+  };
+
 
   handleSignUpClick = () => {
     this.setState((prevState) => ({ checked: !prevState.checked }));
   };
 
+
   render() {
-    const { checked } = this.state;
+    const { checked, username, password, error, redirectToSidenav} = this.state;
+
+    if (redirectToSidenav) {
+      return <Redirect to="/sidenav" />;
+    }
 
     return (
       <div>
         <link href="d.css" rel='stylesheet' type='text/css' />
         <div className="logo_outlet">
-          <img className="only_logo1" src={require('../../assets/images/shape/logo_bridgehealth.png')}  alt="logo_bridgehealth" />
+          <img className="only_logo1" src={require('../../assets/images/shape/logo_bridgehealth.png')} alt="logo_bridgehealth" />
         </div>
         <div className="container1">
           <div className="frame1">
@@ -31,12 +97,28 @@ class LoginForm extends React.Component {
             </div>
             <div ng-app ng-init="checked = false">
               <form className="form-signin1" action="" method="post" name="form">
+
                 <label htmlFor="username" className="log-form">Username</label>
-                <input className="form-styling1" type="text" name="username" placeholder="" />
+                <input
+                  className="form-styling1"
+                  type="text"
+                  name="username"
+                  value={username}
+                  onChange={this.handleInputChange}
+                  placeholder=""
+                />
                 <label htmlFor="password" className="log-form">Password</label>
-                <input className="form-styling1" type="text" name="password" placeholder="" />
+                <input
+                  className="form-styling1"
+                  type="password"
+                  name="password"
+                  value={password}
+                  onChange={this.handleInputChange}
+                  placeholder=""
+                />
+                {error && <div>{error}</div>}
                 <div className="btn-animate">
-                  <a className="btn-signin1">Sign in</a>
+                  <a onClick={this.handleLogin} className="btn-signin1">Sign in</a>
                 </div>
               </form>
 
