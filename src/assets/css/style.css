@@ -11369,6 +11369,14 @@ hr {
 		background-repeat: no-repeat;
 	}
 
+	.testimonialpadding {
+		margin-bottom: 10px;
+	}
+
+	.marginTop50 {
+		margin-top: 10px;
+	}
+
 	.testimonial-block .inner-box .text {
 		position: relative;
 		font-size: 16px;
@@ -11465,7 +11473,7 @@ hr {
 	}
 
 	.margin150 {
-		margin-top: 70px;
+		margin-top: 60px;
 	}
 
 	.videofull {
@@ -11917,7 +11925,16 @@ hr {
 		border-top-right-radius: 80px 80px;
 		border-top-left-radius: 80px 80px;
 		background: none;
-		margin-top: 0px !important;
+		margin-top: 30px !important;
+	}
+
+	.about-section-two {
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+
+	.column:last-child {
+		padding-bottom: 0px;
 	}
 
 	.slick-list {
@@ -12106,7 +12123,7 @@ hr {
 
 	.btn5 {
 		text-align: center;
-		margin-bottom: 40px;
+		margin-bottom: 10px !important;
 		margin-top: -60px;
 		/* margin-left: 12% !important; */
 	}
@@ -12297,7 +12314,7 @@ hr {
 	}
 
 	.annualback {
-		padding-top: 35px;
+		/* padding-top: 35px; */
 		padding-bottom: 0px;
 	}
 
@@ -12321,7 +12338,7 @@ hr {
 	}
 
 	.margin10rem {
-		margin-top: 2rem !important;
+		margin-top: 5px !important;
 	}
 
 	.sec-heading {
