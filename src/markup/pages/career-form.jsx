@@ -5,6 +5,7 @@ const aboutbg = require('./../../assets/images/shape/car1.png');
 
 
 const FormComponent = () => {
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,87 +13,130 @@ const FormComponent = () => {
     gender: '',
     position: '',
     dob: '',
-    resume: null,
+    resume: null
   });
 
-  const [errors, setErrors] = useState({});
+  const [submitted, setSubmitted] = useState(false);
+  const [errors, setErrors] = useState({
+    name: '',
+    email: '',
+    mobile: '',
+    gender: '',
+    position: '',
+    dob: '',
+    resume: ''
+  });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  const closePopup = () => {
+    setSubmitted(false);
   };
 
-  const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    setFormData({ ...formData, resume: file });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    const updatedFormData = { ...formData, [name]: value };
+    const updatedErrors = { ...errors };
+    updatedErrors[name] = '';
+    setFormData(updatedFormData);
+    setErrors(updatedErrors);
   };
 
-  const validateForm = () => {
-    let formErrors = {};
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    const updatedFormData = { ...formData, resume: file };
+    setFormData(updatedFormData);
+  };
 
-    // Validate name
-    if (!formData.name) {
-      formErrors.name = 'Name is required';
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const updatedErrors = {};
+
+    if (formData.name.trim() === '') {
+      updatedErrors.name = 'Name is required';
     }
 
-    // Validate email
-    if (!formData.email) {
-      formErrors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      formErrors.email = 'Invalid email format';
+    if (formData.email.trim() === '') {
+      updatedErrors.email = 'Email is required';
+    } else if (!formData.email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
+      updatedErrors.email = 'Invalid email format';
     }
 
-    // Validate mobile
-    if (!formData.mobile) {
-      formErrors.mobile = 'Mobile is required';
+    if (formData.mobile.trim() === '') {
+      updatedErrors.mobile = 'Mobile number is required';
+    } else if (!formData.mobile.match(/^\d{10}$/)) {
+      updatedErrors.mobile = 'Mobile number must be 10 digits';
     }
 
-
-
-    // Validate gender
-    if (!formData.gender || formData.gender === "") {
-      formErrors.gender = 'Gender is required';
+    if (formData.gender.trim() === '') {
+      updatedErrors.gender = 'Gender is required';
     }
 
-    // Validate if "Select Gender" option is selected
-    if (formData.gender === "") {
-      formErrors.gender = 'Please select a valid Gender';
+    if (formData.position.trim() === '') {
+      updatedErrors.position = 'Position is required';
     }
 
-    // Validate position
-    if (!formData.position || formData.position === "") {
-      formErrors.position = 'Position is required';
+    if (formData.dob.trim() === '') {
+      updatedErrors.dob = 'Date of birth is required';
     }
 
-    // Validate if "Select Position" option is selected
-    if (formData.position === "") {
-      formErrors.position = 'Please select a valid position';
-    }
-
-    // Validate date of birth
-    if (!formData.dob) {
-      formErrors.dob = 'Date of birth is required';
-    }
-
-    // Validate resume
     if (!formData.resume) {
-      formErrors.resume = 'Resume is required';
+      updatedErrors.resume = 'Resume is required';
     }
 
-    setErrors(formErrors);
+    setErrors(updatedErrors);
 
-    return Object.keys(formErrors).length === 0;
+    if (Object.keys(updatedErrors).length === 0) {
+      // Perform the form submission logic here
+      // e.g., call an API endpoint, update the database, etc.
+
+      // Show the "Thank you" message
+      setSubmitted(true);
+
+      // Reset the form
+      setFormData({
+        name: '',
+        email: '',
+        mobile: '',
+        gender: '',
+        position: '',
+        dob: '',
+        resume: null
+      });
+
+      // Call the sendEmail function
+      await sendEmail();
+    }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const sendEmail = async () => {
+    const { name, email, mobile, gender, position, dob, resume } = formData;
 
-    if (validateForm()) {
-      // Form is valid, you can submit it
-      console.log('Form submitted:', formData);
+    const formDataToSend = new FormData();
+    formDataToSend.append('name', name);
+    formDataToSend.append('email', email);
+    formDataToSend.append('mobile', mobile);
+    formDataToSend.append('gender', gender);
+    formDataToSend.append('position', position);
+    formDataToSend.append('dob', dob);
+    formDataToSend.append('resume', resume);
+
+    const res = await fetch('http://localhost:3001/formdata', {
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ data: FormData }),
+    });
+
+    const data = await res.json();
+    console.log(data);
+
+    if (data.status
+      === 401 || !data) {
+      console.log('error');
     } else {
-      // Form is invalid, handle the errors
-      console.log('Form errors:', errors);
+      setSubmitted(true);
+      console.log('Email sent');
     }
   };
 
