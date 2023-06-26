@@ -8,13 +8,9 @@ class Menu extends Component {
                 <div class="collapse navbar-collapse show clearfix " id="navbarSupportedContent">
                     <div class="menu-outer">
                         <ul class="navigation clearfix">
-                            <li class="dropdown"><a href='/about-us'>About Us</a>
-                                <ul>
-                                    <li><a href='/leadership'>Board of directors</a></li>
-                                    <li><a href='/team'>Leadership Team</a></li>
-                                    <li><a href='/team'>Clinical Team</a></li>
-                                </ul>
-                            </li>
+                            <li><a href='/about-us'>About Us</a> </li>
+                            <li><a href="/leadership">Leadership Team</a></li>
+                            <li><a href="/team">Clinical Team</a></li>
                             <li><a href='/our-services' >Our Services</a></li>
                             <li><a href='/experience-centre' >Experience Center</a></li>
                             <li><a href='/blog'>Blogs</a></li>
