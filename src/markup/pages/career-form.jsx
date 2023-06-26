@@ -47,14 +47,26 @@ const FormComponent = () => {
       formErrors.mobile = 'Mobile is required';
     }
 
+
+
     // Validate gender
-    if (!formData.gender) {
+    if (!formData.gender || formData.gender === "") {
       formErrors.gender = 'Gender is required';
     }
 
+    // Validate if "Select Gender" option is selected
+    if (formData.gender === "") {
+      formErrors.gender = 'Please select a valid Gender';
+    }
+
     // Validate position
-    if (!formData.position) {
+    if (!formData.position || formData.position === "") {
       formErrors.position = 'Position is required';
+    }
+
+    // Validate if "Select Position" option is selected
+    if (formData.position === "") {
+      formErrors.position = 'Please select a valid position';
     }
 
     // Validate date of birth
@@ -149,7 +161,7 @@ const FormComponent = () => {
               <select
                 id="gender"
                 name="gender"
-                className="selectbox"
+                className={`selectbox ${errors.gender ? 'is-invalid' : ''}`}
                 value={formData.gender}
                 onChange={handleChange}
               >
@@ -162,50 +174,28 @@ const FormComponent = () => {
             </div>
 
             <div class="col-lg-6 form-group">
-
-              <div>
-                {/* <select value={selectedOption} onChange={this.handleDropdownChange}>
-                    <input
-                        type="text"
-                        name="username"
-                        id="name"
-                        value="" disabled
-                        placeholder="Team Size"
-                        required=""
-                    />
-                    <option value="" disabled>
-                        Team Size
-                    </option>
-                    <option value="0-10">0-10</option>
-                    <option value="11-50">11-50</option>
-                    <option value="51-100">51-100</option>
-                    <option value="101-500">101-500</option>
-                    <option value="501-1000">501-1000</option>
-                    <option value="1001-above">1001-above</option>
-                </select> */}
-              </div>
               <label htmlFor="position" className="form-label">Position Applying:</label>
               <select
                 id="position"
                 name="position"
-                className="selectbox"
+                className={`selectbox ${errors.position ? 'is-invalid' : ''}`}
                 value={formData.position}
                 onChange={handleChange}
               >
-                <option value="">Select Position</option>
-                <option value="1">Clinical Services</option>
-                <option value="2">Operations</option>
-                <option value="3">Corporate Operations</option>
-                <option value="4">Corporate Sales</option>
-                <option value="5">Marketing</option>
-                <option value="6">Technology</option>
-                <option value="7">Pharmacy</option>
-                <option value="8">Sales & Operations</option>
-                <option value="7">Finance</option>
-                <option value="7">HR</option>
-                <option value="7">Facility & Admin</option>
-                <option value="7">Strategic Initiatives</option>
-                <option value="7">Affiliates & Alliances</option>
+                <option value=" ">Select Position</option>
+                <option value="clinical-services">Clinical Services</option>
+                <option value="operations">Operations</option>
+                <option value="corporate-operations">Corporate Operations</option>
+                <option value="corporate-sales">Corporate Sales</option>
+                <option value="marketing">Marketing</option>
+                <option value="technology">Technology</option>
+                <option value="pharmacy">Pharmacy</option>
+                <option value="sales-operations">Sales & Operations</option>
+                <option value="finance">Finance</option>
+                <option value="hr">HR</option>
+                <option value="facility-admin">Facility & Admin</option>
+                <option value="strategic-initiatives">Strategic Initiatives</option>
+                <option value="affiliates-alliances">Affiliates & Alliances</option>
               </select>
               {errors.position && <div className="invalid-feedback">{errors.position}</div>}
             </div>
