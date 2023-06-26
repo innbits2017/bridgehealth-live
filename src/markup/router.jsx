@@ -47,6 +47,7 @@ import JobDescription from './pages/JobDescription';
 import LoginForm from './pages/LoginForm';
 import JobListingForm from './pages/JobListingForm';
 import Sidenav from './pages/Sidenav';
+import PrivateRoute from './pages/privateRoute';
 
 
 
@@ -99,7 +100,7 @@ class Router extends Component {
                         <Route path='/health-risk-assessment' component={HealthiskAssessment}/>
                         <Route path='/career-admin' component={careerAdmin}/>
                         <Route path='/job-description' component={JobDescription}/>
-                        <Route path='/LoginForm' component={LoginForm}/>
+                        <Route path='/login' component={LoginForm}/>
                         <Route path='/sidenav' component={Sidenav}/>
                         <Route path='/JobListingForm' component={JobListingForm}/>
                         

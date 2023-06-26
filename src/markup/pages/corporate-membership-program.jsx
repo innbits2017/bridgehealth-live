@@ -26,11 +26,13 @@ class corporate_membership_program extends Component {
             email: '',
             phone: '',
             company: '',
+            team: '',
             errors: {
                 username: '',
                 email: '',
                 phone: '',
-                company: ''
+                company: '',
+                team: '',
             },
             submitted: false
         };
@@ -98,13 +100,13 @@ class corporate_membership_program extends Component {
                 email: '',
                 phone: '',
                 company: '',
-                message: '',
+                team: '',
                 errors: {
                     username: '',
                     company: '',
                     email: '',
                     phone: '',
-                    message: '',
+                    team: '',
                 }
             });
 
@@ -120,15 +122,15 @@ class corporate_membership_program extends Component {
     sendEmail = async (e) => {
         // e.preventDefault();
 
-        const { email, username, phone, message } = this.state;
+        const { email, username, phone, team, company } = this.state;
 
-        const res = await fetch('https://mail.bridgehealth.in/register', {
+        const res = await fetch('https://mail.bridgehealth.in/employe', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                email, username, phone, message
+                email, username, phone, team, company
             }),
         });
 
@@ -138,7 +140,7 @@ class corporate_membership_program extends Component {
         if (data.status === 401 || !data) {
             console.log('error');
         } else {
-            this.setState({ show: true, email: '', username: '', phone: '', message: '' });
+            this.setState({ show: true, email: '', username: '', phone: '', company: '', team: '' });
             console.log('Email sent');
         }
     };
@@ -149,7 +151,7 @@ class corporate_membership_program extends Component {
 
     render() {
 
-        const { username, email, phone, submitted, errors, isOpen } = this.state;
+        const { submitted, errors, company, team } = this.state;
 
         return (
             <>
@@ -359,7 +361,7 @@ class corporate_membership_program extends Component {
                                                 <div class="col-md-12 form-group">
                                                     <input
                                                         type="text"
-                                                        value={this.state.company}
+                                                        value={company}
                                                         onChange={this.handleChange}
                                                         name="company"
                                                         id="company"
@@ -368,7 +370,26 @@ class corporate_membership_program extends Component {
                                                     {errors.company && <div className="error">{errors.company}</div>}
                                                 </div>
                                                 <div class="col-md-12 form-group">
-                                                    < TeamSizeDropdown />
+                                                    <select 
+                                                        name="team"
+                                                        type="text"
+                                                        value={team}
+                                                        onChange={this.handleChange}
+                                                        id="team"
+                                                        placeholder="Team Size"
+                                                        required=""
+                                                        >
+
+                                                        <option value="" >
+                                                            Team Size
+                                                        </option>
+                                                        <option value="0-10">0-10</option>
+                                                        <option value="11-50">11-50</option>
+                                                        <option value="51-100">51-100</option>
+                                                        <option value="101-500">101-500</option>
+                                                        <option value="501-1000">501-1000</option>
+                                                        <option value="1001-above">1001-above</option>
+                                                    </select>
                                                 </div>
                                                 <div class="form-check">
                                                     <input class="form-check-input"

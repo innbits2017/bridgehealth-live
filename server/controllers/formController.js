@@ -4,7 +4,7 @@ const Form = require('../models/formModel');
 const submitForm = async (req, res) => {
     try {
         // Get the form data from the request body
-        const { username, email, message, phone } = req.body;
+        const { username, email, message, phone, company, team } = req.body;
 
         // Create a new instance of the Form model
         const formData = new Form({
@@ -12,6 +12,8 @@ const submitForm = async (req, res) => {
             email,
             phone,
             message,
+            company,
+            team,
         });
 
         // Save the form data to the database

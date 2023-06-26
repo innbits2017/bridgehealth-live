@@ -324,7 +324,7 @@ A healthy diet is the basis for good health. After all, you are what you eat. Fi
                 </section>
 
                 <Modal show={this.state.isOpen} onHide={this.closeModal}>
-                    <Modal.Header>
+                    <Modal.Header closeButton>
                         <a href={'/personal-membership-program'}>
                             <span><img class="width50" src={require('../../assets/images/shape/popup1.png')} alt="" />
                                 <p className='width50p'>Personal Membership Programme</p>

@@ -352,7 +352,7 @@ class Index extends Component {
                 <section class="team-section expertiseback">
                     <div class="auto-container">
                         <div class="sec-title text-center">
-                            <h2> <span className='headeingcolorblack'>  Explore Our </span> <span className='headeingcolorblue'> Expertise</span></h2>
+                            <h2> <span className='headeingcolorblack '>  Explore Our </span> <span className='headeingcolorblue'> Expertise</span></h2>
                             <h5 className='heading5'>From mental health and wellness to nutrition management, our services help <span className='headeingcolorblue'> #BridgeTheGap</span> between you and healthy living
                             </h5>
                         </div>
@@ -721,15 +721,15 @@ class Index extends Component {
                     </div>
                 </section>
                 <Modal show={this.state.isOpen} onHide={this.closeModal}>
-                    <Modal.Header>
+                    <Modal.Header closeButton>
                         <a href={'/personal-membership-program'}>
-                            <span><img class="width50" src={require('../../assets/images/shape/popup1.png')} alt="" />
+                            <span><img class="width50" src={require('../../assets/images/shape/celebration.png')} alt="" />
                                 <p className='width50p'>Personal Membership Programme</p>
                             </span>
                         </a>
                         <a href={'/corporate-membership-program'}>
                             <span>
-                                <img class="width50" src={require('../../assets/images/shape/popup2.png')} alt="" />
+                                <img class="width50" src={require('../../assets/images/shape/four.png')} alt="" />
                                 <p className='width50p'>Corporate Membership Programme</p>
                             </span>
                         </a>

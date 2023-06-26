@@ -5,7 +5,8 @@ const BRIDGE_HEALTH_SITE = process.env.BRIDGE_HEALTH_SITE;
 
 class ContactForm extends Component {
     state = {
-        isOpen: false
+        isOpen: false,
+        submitted: false
     };
     state1 = {
         isOpen1: false
@@ -30,7 +31,7 @@ class ContactForm extends Component {
     }
 
     closePopup = () => {
-        this.setState({ submitted: false });
+        this.setState({ submitted: false, isOpen: false  });
     };
 
     handleChange = (event) => {
@@ -95,7 +96,7 @@ class ContactForm extends Component {
             this.setState({ submitted: true });
 
             // Call the sendEmail function
-            await this.sendEmail();
+            await this.sendEmail();         
         }
     };
 

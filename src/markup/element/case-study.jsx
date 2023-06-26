@@ -34,21 +34,21 @@ class CaseStudy extends Component {
                     </p>
                 </div>
                 <Modal show={this.state.isOpen} onHide={this.closeModal} className='widthdialog modalDialog'>
-                    <Modal.Header>
+                    <Modal.Header closeButton>
                         <a href={'/diabetes'}>
-                            <span><img class="width50" src={require('../../assets/images/shape/popup3.png')} alt="" />
+                            <span><img class="width50" src={require('../../assets/images/shape/healthdevice.png')} alt="" />
                                 <p className='width50p'>Diabetes Management</p>
                             </span>
                         </a>
                         <a href={'/hyper-tension'}>
                             <span>
-                                <img class="width50" src={require('../../assets/images/shape/popup4.png')} alt="" />
+                                <img class="width50" src={require('../../assets/images/shape/blood.png')} alt="" />
                                 <p className='width50p'>Hypertension Management</p>
                             </span>
                         </a>
                         <a href={'/manage-weight'}>
                             <span>
-                                <img class="width50" src={require('../../assets/images/shape/popup5.png')} alt="" />
+                                <img class="width50" src={require('../../assets/images/shape/apple.png')} alt="" />
                                 <p className='width50p'>Weight Management</p>
                             </span>
                         </a>

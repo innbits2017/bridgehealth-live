@@ -113,15 +113,15 @@ class Contact extends Component {
     sendEmail = async (e) => {
         // e.preventDefault();
 
-        const { email, username, phone, message } = this.state;
+        const { email, username, phone, message, company} = this.state;
 
-        const res = await fetch('https://mail.bridgehealth.in/register', {
+        const res = await fetch('https://mail.bridgehealth.in/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                email, username, phone, message
+                email, username, phone, message, company
             }),
         });
 
@@ -131,7 +131,7 @@ class Contact extends Component {
         if (data.status === 401 || !data) {
             console.log('error');
         } else {
-            this.setState({ show: true, email: '', username: '', phone: '', message: '' });
+            this.setState({ show: true, email: '', username: '', phone: '', message: '', company: '' });
             console.log('Email sent');
         }
     };

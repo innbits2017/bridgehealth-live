@@ -10,6 +10,14 @@ const formSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    team: {
+        type: String,
+        required: false,
+    },
+    company: {
+        type: String,
+        required: true,
+    },
     phone: {
         type: Number,
         required: false,
