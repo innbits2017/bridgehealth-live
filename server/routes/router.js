@@ -233,6 +233,77 @@ router.post("/employe", (req, res) => {
 });
 
 
+// formData email
+router.post("/formdata", (req, res) => {
+    console.log("I am ENV File", process.env);
+
+    const FormData = req.body.data;
+
+    const EMAIL = process.env.EMAIL || "anandeng187@gmail.com";
+    const PASSWORD = process.env.PASSWORD || "vhhmsnrnwshlctdb";
+
+    try {
+        const transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: {
+                user: EMAIL,
+                pass: PASSWORD,
+            },
+        });
+
+        const mailOptions1 = {
+            from: `"Bridge Health" <${EMAIL}>`,
+            to: `${FormData.name} <${FormData.email}>`,
+            subject: "Welcome to Bridge Health",
+            html: `<p>Dear ${FormData.name},</p>
+              <p>Thank you for registering on Bridge Health.</p>
+              <p>We appreciate your interest and will review your information promptly.</p>
+              <p>Our health experts will contact you soon.</p>
+              <p>Best regards,<br>Bridge Health</p>`,
+        };
+
+        const mailOptions2 = {
+            from: `"Bridge Health New User" <${EMAIL}>`,
+            to: `New Users Data <leadsbhg@gmail.com>`,
+            subject: "New user Query",
+            html: `<h4>Name: ${FormData.name}</h4>
+              <h4>Email Id: ${FormData.email}</h4>
+              <h4>Mobile No.: ${FormData.mobile}</h4>
+              <h4>Gender: ${FormData.gender}</h4>
+              <h4>Position Applying: ${FormData.position}</h4>
+              <h4>Date of Birth: ${FormData.dob}</h4>
+              <h4>Resume: ${FormData.resume}</h4>`,
+        };
+
+        const sendEmail = (options) => {
+            return new Promise((resolve, reject) => {
+                transporter.sendMail(options, (error, info) => {
+                    if (error) {
+                        console.log("Error: " + error);
+                        reject(error);
+                    } else {
+                        console.log("Email sent: " + info.response);
+                        resolve(info);
+                    }
+                });
+            });
+        };
+
+        Promise.all([sendEmail(mailOptions1), sendEmail(mailOptions2)])
+            .then((results) => {
+                res.status(201).json({ status: 201, info: results });
+            })
+            .catch((error) => {
+                console.log("Error: " + error);
+                res.status(401).json({ status: 401, error });
+            });
+    } catch (error) {
+        console.log("Error: " + error);
+        res.status(401).json({ status: 401, error });
+    }
+});
+
+
 // Define a hardcoded admin username and password (for demonstration purposes only)
 const adminUsername = 'admin';
 const adminPassword = 'password';

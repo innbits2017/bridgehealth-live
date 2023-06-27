@@ -26,6 +26,30 @@ const formSchema = new mongoose.Schema({
         type: String,
         required: false,
     },
+    name: {
+        type: String,
+        required: true,
+    },
+    mobile: {
+        type: Number,
+        required: false,
+    },
+    gender: {
+        type: String,
+        required: true,
+    },
+    position: {
+        type: String,
+        required: true,
+    },
+    dob: {
+        type: String,
+        required: true,
+    },
+    resume: {
+        type: String,
+        required: true,
+    }
 });
 
 // Create the Form model using the schema
