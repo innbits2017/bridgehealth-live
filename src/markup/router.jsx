@@ -65,7 +65,7 @@ class Router extends Component {
                         <Route path='/services-standalone' component={Services} />
                         <Route path='/team' component={Team} />
                         <Route path='/corporate-membership-program' component={corporate_membership_program}/>
-                        <Route path='/blog-details' component={BlogDestails}/>
+                        {/* <Route path='/blog-details' component={BlogDestails}/> */}
                         <Route path='/career-form' component={FormComponent}/>
                         <Route path='/our-services' component={ourservice}/>
                         <Route path='/personal-membership-program' component={b2cmembership}/>

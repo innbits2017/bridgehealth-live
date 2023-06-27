@@ -3550,6 +3550,14 @@ img.lazy-image.loaded {
     color: #777777;
 }
 
+.textpaextra {
+	padding-left: 100px;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #777777;
+}
+
+
 .spenheading {
 	margin-left: 8px !important;
 }
