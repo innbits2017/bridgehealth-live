@@ -9,7 +9,6 @@ import leadership from './pages/leadership'
 import corporate_membership_program from './pages/corporate-membership-program';
 import b2cmembership from './pages/personal-membership-program'
 import ourservice from './pages/ourservice'
-import BlogDestails from './pages/blog-details';
 import blog_Designv2 from './pages/blog-Designv2';
 import b2c_page from './pages/b2c-page';
 import diet_and_nutrition from './pages/diet-and-nutrition';
@@ -65,7 +64,6 @@ class Router extends Component {
                         <Route path='/services-standalone' component={Services} />
                         <Route path='/team' component={Team} />
                         <Route path='/corporate-membership-program' component={corporate_membership_program}/>
-                        {/* <Route path='/blog-details' component={BlogDestails}/> */}
                         <Route path='/career-form' component={FormComponent}/>
                         <Route path='/our-services' component={ourservice}/>
                         <Route path='/personal-membership-program' component={b2cmembership}/>
