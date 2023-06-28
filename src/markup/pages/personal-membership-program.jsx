@@ -138,10 +138,8 @@ class b2cmembership extends Component {
                 </div>
               </div>
               <div class="col-lg-6">
-                <div class="image-wrapper imgright">
-                  <div class="image-one">
+                <div class="imgright">
                     <img src={require('../../assets/images/shape/image2.png')} alt="" className='imgwidth' />
-                  </div>
                 </div>
               </div>
             </div>
@@ -225,7 +223,7 @@ class b2cmembership extends Component {
               <div class="col-lg-5">
                 <div class="contact-form-area margintop145">
                   <div class="sec-title marginto90" >
-                    <h2 className='marginleft texttile1 heathCareTitle'>
+                    <h2 className='texttile1 heathCareTitle'>
                       <span className='headeingcolorblack'>Why </span>
                       <span className='headeingcolorblue'> Preventive </span><br></br>
                       <span className='headeingcolorblack '>Health Care?</span>
@@ -338,12 +336,7 @@ class b2cmembership extends Component {
                     <li>&nbsp;</li>
                     <li><i class="fa-solid fa-check"></i></li>
                   </ul>
-                  {/* <ul class="consults">
-                           <li>4</li>
-                           <li>1</li>
-                           <li>5</li>
-                           <li>&nbsp;</li>
-                        </ul> */}
+              
                   <ul class="discounts">
                     <li>10% </li>
                     <li>10% </li>

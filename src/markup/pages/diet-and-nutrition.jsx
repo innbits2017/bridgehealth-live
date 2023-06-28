@@ -16,7 +16,6 @@ class diet_and_nutrition extends Component {
         return (
             <>
                 <Header />
-
                 <section class="internalpage internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
                     <div class="auto-container">
                         <div class="content-box">
@@ -31,14 +30,9 @@ class diet_and_nutrition extends Component {
                                     Talk to our clinical nutritionists<br></br> and start eating healthy
                                 </h3>
                             </div>
-                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                             <div class="btn-box btn5">
-
                                 <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                             </div>
-
-
-
                         </div>
 
                     </div>
@@ -49,11 +43,7 @@ class diet_and_nutrition extends Component {
                     <div class="auto-container">
                         <div class="row align-items-center">
                             <div class="col-lg-6">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
-                                        <img src={require('../../assets/images/shape/nu3.png')} alt="" className='' />
-                                    </div>
-                                </div>
+                                        <img src={require('../../assets/images/shape/nu3.png')} alt="" className='width100' />
                             </div>
                             <div class="col-lg-6">
 
@@ -68,7 +58,6 @@ class diet_and_nutrition extends Component {
 
                                 </div>
                                 <div class="btn-box text-center btn5">
-                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                                     <ContactForm buttonText="BOOK NOW" popupPosition="left" />
 
                                 </div>
@@ -77,42 +66,10 @@ class diet_and_nutrition extends Component {
                         </div>
                     </div>
                 </section>
-                {/* <section class="">
-                    <div class="auto-container">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
-                                        <img src={require('../../assets/images/shape/nu4.png')} alt="" />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4" style={{ marginTop: 10 + 'rem' }}>
-                                <div class="contact-form-area">
-
-                                    <div class="sec-title">
-                                        <h2> <span className='headeingcolorblack1'>A Healthy Diet to the Rescue! </span>
-
-                                        </h2>
-
-                                        <p>
-                                            At Bridge Health, our dieticians are specialists in Medical Nutrition Therapy (MNT), an evidence-based approach to treating chronic conditions through the use of a tailored diet.
-                                        </p>
-
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section> */}
-                {/* dieat */}
+         
                 <div class="auto-container">
 
-                    <img src={require('../../assets/images/shape/dieat.png')} alt="" />
+                    <img src={require('../../assets/images/shape/dieat.png')} alt="" className='width100' />
                 </div>
                 <section class="team-section">
                     {/* About Section Two */}
@@ -150,12 +107,7 @@ class diet_and_nutrition extends Component {
                                 </div>
 
                                 <div class="col-lg-6">
-                                    <div class="image-wrapper">
-                                        <div class="image-one image-two">
                                             <img src={require('../../assets/images/shape/nu5.png')} alt="" />
-                                        </div>
-
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +115,6 @@ class diet_and_nutrition extends Component {
                 </section>
                 {/* <!-- Contact Section --> */}
                 <section class="contact-section">
-
                     <div class="auto-container">
                         <div class="row align-items-center">
                             <div class="col-lg-6">
@@ -172,17 +123,12 @@ class diet_and_nutrition extends Component {
                             </div>
 
                             <div class="col-lg-6">
-                                <div class="contact-form-area">
-                                    <div class="auto-container">
-                                        <div class="">
                                             <h2 className='header1'>
                                                 <span className='headeingcolorblack'> The</span>
                                                 <span className='headeingcolorblue'>  Bridge Health</span>
                                                 <span className='headeingcolorblack'> Advantage </span>
                                             </h2>
-                                        </div>
 
-                                    </div>
                                     <ul className='listicon'>
                                         <li>
                                             Inclusion of the right mix of macro & micronutrients based on Bridge Health’s nutritional approach to lower the insulin needed by the body
@@ -200,9 +146,7 @@ class diet_and_nutrition extends Component {
                                             Inclusion of the right amount of all essential nutrients to ensure good health and satisfy the respective dietary reference intakes.
                                         </li>
                                     </ul>
-                                </div>
                             </div>
-
                         </div>
                     </div>
                 </section>
@@ -218,7 +162,6 @@ class diet_and_nutrition extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn7">
-                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                             <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 
                         </div>

@@ -14,7 +14,6 @@ class comprehensiveHealth extends Component {
                 <Header />
 
                 <section class="team-section padding">
-                    {/* About Section Two */}
                     <section class="container-fluid">
                         <div class="row align-items-center auto-container">
 
@@ -38,10 +37,8 @@ class comprehensiveHealth extends Component {
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="image-wrapper imgright">
-                                    <div class="image-one">
+                                <div class="imgright">
                                         <img src={require('../../assets/images/shape/health1.png')} alt="" className='imgwidth' />
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -53,13 +50,11 @@ class comprehensiveHealth extends Component {
                     <div class="auto-container">
                         <div class="row align-items-center">
                             <div class="col-lg-6">
-
                                 <img src={require('../../assets/images/shape/health2.png')} alt="" className='widthimg imgFloatRight' />
 
                             </div>
                             <div class="col-lg-6">
                                 <div class="sec-title squrebox">
-                                    {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                     <p className='font22'>
                                         Health is defined as a state of complete physical, mental, and social well-being. If even one aspect isn’t satisfied, it means that you are not healthy. Most people today have some sort of vitamin deficiency or suffer from mental health issues like anxiety or depression.
                                         Technology in the form of AI and analytics have been implemented into the healthcare industry for seamless monitoring but are not being utilized effectively by healthcare providers. Therefore, there is a need to evaluate your entire health profile at all times with the highest possible accuracy.
@@ -67,7 +62,6 @@ class comprehensiveHealth extends Component {
 
                                 </div>
                                 <div class="btn-box text-center btn5 marBtnTop">
-                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                                     <ContactForm buttonText="BOOK NOW" popupPosition="left" />
 
                                 </div>
@@ -91,7 +85,6 @@ class comprehensiveHealth extends Component {
 
                                 </div>
                                 <div class="btn-box text-center btn5 marBtnTop">
-                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                                     <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 
                                 </div>
@@ -99,7 +92,6 @@ class comprehensiveHealth extends Component {
 
 
                             <div class="col-lg-6">
-
                                 <img src={require('../../assets/images/shape/Healthcheck.png')} alt="" className='widthimg imgFloatRight' />
 
                             </div>
@@ -108,7 +100,7 @@ class comprehensiveHealth extends Component {
                 </section>
                 <section>
 
-                    <div class="auto-container heath-margin">
+                    <div class="auto-container">
                         <h2 className='header1 textaligncenter comp-margin'>
                             <span className='headeingcolorblack'> The</span>
                             <span className='headeingcolorblue'>  Bridge Health</span>
@@ -116,7 +108,6 @@ class comprehensiveHealth extends Component {
                         </h2>
                         <div class="row">
                             <div class="col-sm-4 healts">
-
                                 <img src={require('../../assets/images/gallery/health4.png')} alt="" class="avtar " />
                                 <div className='treat1'>
                                     <img src={require('../../assets/images/Healthquiz.svg')} alt="" class="avtar " />
@@ -204,11 +195,10 @@ class comprehensiveHealth extends Component {
 
                 <section class="contact-section">
 
-                    <div class="auto-container heath-margin">
+                    <div class="auto-container">
                         <div class="row">
 
                             <div class="col-lg-6">
-                                <div class="contact-form-area">
                                     <ul className='listicon'>
                                         <li>
                                             Automated blood pressure measurement
@@ -239,11 +229,9 @@ class comprehensiveHealth extends Component {
                                         </li>
 
                                     </ul>
-                                </div>
                             </div>
 
                             <div class="col-lg-6">
-                                <div class="contact-form-area">
                                     <ul className='listicon'>
                                         <li>
                                             Cardiac tests like ECGs
@@ -274,8 +262,6 @@ class comprehensiveHealth extends Component {
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-
                         </div>
                     </div>
                 </section>

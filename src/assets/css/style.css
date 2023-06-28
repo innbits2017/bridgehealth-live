@@ -128,8 +128,8 @@ p,
 
 .auto-container {
 	position: static;
-	max-width: 1360px;
-	padding: 0px 15px;
+	/* max-width: 1360px; */
+	padding: 0px 50px 0px 50px;
 	margin: 0 auto;
 
 }
@@ -622,7 +622,7 @@ img {
 }
 
 .main-header .auto-container {
-	max-width: 1360px;
+	/* max-width: 1360px; */
 	height: 90px;
 }
 
@@ -1426,7 +1426,7 @@ img {
 /* Header Style Two */
 
 .main-header.header-style-two .auto-container {
-	max-width: 1450px;
+	/* max-width: 1450px; */
 }
 
 .main-header.header-style-two .header-upper .inner-container {
@@ -1569,15 +1569,6 @@ img {
 
 /* Header Style Four */
 
-.main-header.header-style-four .auto-container {
-	max-width: 1470px;
-	padding: 0;
-}
-
-.main-header.header-style-four .sticky-header .auto-container {
-	max-width: 1200px;
-	padding: 0 15px;
-}
 
 .main-header.header-style-four .header-upper {
 	background: rgba(0, 0, 0, 0.01);
@@ -3523,10 +3514,11 @@ img.lazy-image.loaded {
 
 .imgstyle {
 	margin-left: 22%;
+	width: 45%;
 }
 
 .imgstyle1 {
-	margin-left: 18%;
+	margin-left: 22%;
 	margin-top: 20px;
 	width: 45%;
 }
@@ -3713,10 +3705,7 @@ img.lazy-image.loaded {
 	background: #fff;
 }
 
-.services-section .auto-container {
-	max-width: 100%;
-	padding: 0;
-}
+
 
 .services-section .wrapper-box {
 	position: relative;
@@ -5667,7 +5656,7 @@ img.lazy-image.loaded {
 	background-color: #000 !important;
 	font-size: 16px;
 	margin-bottom: 4px;
-	text-align: left !important;
+	text-align: left ;
 	margin-top: -7px;
 }
 
@@ -5966,10 +5955,6 @@ img.lazy-image.loaded {
 	-webkit-text-fill-color: inherit;
 }
 
-.services-section-two .auto-container {
-	max-width: 100%;
-	padding: 0;
-}
 
 .services-section-two .wrapper-box {
 	position: relative;
@@ -6360,9 +6345,6 @@ img.lazy-image.loaded {
 	color: #fff;
 }
 
-.cases-section .auto-container {
-	max-width: 920px;
-}
 
 .cases-section .case-tab-wrapper {
 	margin: 0 0px;
@@ -6880,7 +6862,7 @@ img.lazy-image.loaded {
     position: relative;
     color: #ffffff;
     text-align: center;
-    padding: 35% 0px 270px;
+    padding: 20% 0px 20%;
     z-index: 2;
 }
 
@@ -6901,13 +6883,11 @@ img.lazy-image.loaded {
 
 .leader-heading1 {
 	text-transform: uppercase;
-	margin-left: 55%;
-}
+text-align: right;}
 
 .leader-heading2 {
 	text-transform: uppercase;
-	margin-left: 75%;
-}
+text-align: right !important;}
 
 /* .page-banner .page-banner-bg:before {
 	content   : '';
@@ -6986,10 +6966,6 @@ img.lazy-image.loaded {
 .sponsors-section {
 	position: relative;
 	padding: 120px 0px;
-}
-
-.sponsors-section .auto-container {
-	max-width: 1550px;
 }
 
 .sponsors-section .slide-item {
@@ -7353,10 +7329,6 @@ img.lazy-image.loaded {
 	background-size: cover;
 }
 
-.feature-section-two .auto-container {
-	max-width: 100%;
-	padding: 0;
-}
 
 .feature-section-two .content-box {
 	background: #fff;
@@ -11289,6 +11261,7 @@ hr {
 .internalpage {
 	position: relative;
 	padding: 350px 0 120px;
+	background-repeat: no-repeat;
 	background-size: 100% !important;
 
 }
@@ -12831,6 +12804,8 @@ hr {
 	margin-top: 15px;
 	font-size: 21px;
 	width: 295px;
+	color: #000;
+	text-decoration: underline;
 }
 
 
@@ -13170,8 +13145,8 @@ margin-top: 50px;
 	margin-left: -21%;
 	background-image: url(../images/shape/fitnessback.png);
 	padding: 38px 23px 66px 56px;
-    background-size: cover;
-    background-repeat: repeat-x;
+	background-size: auto;
+    background-repeat: no-repeat;
     padding-top: 66px;
 }
 
@@ -13926,9 +13901,9 @@ h6.form-check-list {
 
 .talkTo img {
 
-	width: 55px;
-	margin-right: -17px;
-	padding-bottom: 5px;
+	width: 47px;
+    margin-right: -9px;
+    padding-bottom: 5px;
 
 }
 
@@ -14107,8 +14082,8 @@ body>div.fade.modal.show>div>div>div>button .yes {
 	background: rgba(255, 255, 255, 0.75);
 	border-radius: 0px 40px 245px 0px;
 	width: 750px;
-	margin-left: -8%;
-	padding: 20px 18px 1px 70px;
+	margin-left: -4%;
+	padding: 20px 18px 1px 50px;
 }
 .seven-cols .service-offering {
     padding: 0px !important;
@@ -14316,7 +14291,8 @@ tr> :second-child {
 }
 
 .bloground {
-	padding-top: 2rem;
+	margin-top: -20%;
+    padding-top: 23%;
     text-align: justify;
 }
 
@@ -14631,3 +14607,18 @@ label {
 	width:1000px;
 	height:480px;
  }
+ .width100
+ {
+	width: 100% !important;
+ }
+ @media (max-width:576px) {
+    .auto-container {
+    position: static;
+    padding: 0px 5px 0px 5px !important;
+    margin: 0 auto;
+}}
+@media (min-width: 576px)
+{
+.desktophide{
+    display: none;}
+}

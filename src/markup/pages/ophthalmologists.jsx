@@ -30,9 +30,7 @@ class ophthalmologist extends Component {
                                     Talk to our OPHTHALMOLOGISTS today
                                 </h3>
                             </div>
-                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                             <div class="btn-box btn5">
-
                                 <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                             </div>
 
@@ -44,11 +42,7 @@ class ophthalmologist extends Component {
                     <div class="auto-container">
                         <div class="row align-items-center">
                             <div class="col-lg-6">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
                                         <img src={require('../../assets/images/shape/eye1.png')} alt="" className='widthimg' />
-                                    </div>
-                                </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
@@ -71,15 +65,9 @@ class ophthalmologist extends Component {
                 </section>
 
                 <section>
-                    <div class="image-wrapper">
-                        <div class="image-one">
-                            <img src={require('../../assets/images/shape/eye2.png')} alt="" className='labwidth' />
-                        </div>
-                    </div>
+                    <img src={require('../../assets/images/shape/eye2.png')} alt="" className='labwidth' />
                 </section>
-
                 <section class="contact-section">
-
                     <div class="auto-container">
                         <div class="row align-items-center">
 
@@ -100,11 +88,7 @@ class ophthalmologist extends Component {
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
-                                        <img src={require('../../assets/images/shape/eye3.png')} alt="" className='width84' />
-                                    </div>
-                                </div>
+                                <img src={require('../../assets/images/shape/eye3.png')} alt="" className='width84' />
                             </div>
 
                         </div>
@@ -112,45 +96,39 @@ class ophthalmologist extends Component {
                 </section>
                 <section class="">
                     <div class="auto-container">
-                
-                                    <div class="row align-items-center">
+
+                        <div class="row align-items-center">
                             <div class="col-lg-6">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
-                                        <img src={require('../../assets/images/shape/eye5.png')} alt="" className='widthimg' />
-                                    </div>
-                                </div>
+                                <img src={require('../../assets/images/shape/eye5.png')} alt="" className='widthimg' />
                             </div>
                             <div class="col-lg-6">
-                                <div class="contact-form-area">
-                                    <h2 className='header1'>
-                                        <span className='headeingcolorblack'> The</span>
-                                        <span className='headeingcolorblue'>  Bridge Health</span>
-                                        <span className='headeingcolorblack'> Advantage </span>
-                                    </h2>
-                                    <ul className='listicon'>
-                                        <li>
-                                            Eye care tips
-                                        </li>
-                                        <li>
-                                            Consult with expert ophthalmologists
-                                        </li>
-                                        <li>
-                                            Expert advice on eye surgeries and procedures
-                                        </li>
+                                <h2 className='header1'>
+                                    <span className='headeingcolorblack'> The</span>
+                                    <span className='headeingcolorblue'>  Bridge Health</span>
+                                    <span className='headeingcolorblack'> Advantage </span>
+                                </h2>
+                                <ul className='listicon'>
+                                    <li>
+                                        Eye care tips
+                                    </li>
+                                    <li>
+                                        Consult with expert ophthalmologists
+                                    </li>
+                                    <li>
+                                        Expert advice on eye surgeries and procedures
+                                    </li>
 
-                                        <li>
-                                            Glasses and contact lens prescriptions
-                                        </li>
-                                        <li>
-                                            Comprehensive eye tests and examinations
-                                        </li>
+                                    <li>
+                                        Glasses and contact lens prescriptions
+                                    </li>
+                                    <li>
+                                        Comprehensive eye tests and examinations
+                                    </li>
 
-                                        <li>
-                                            Prescriptions and medicines for various eye conditions like conjunctivitis
-                                        </li>
-                                    </ul>
-                                </div>
+                                    <li>
+                                        Prescriptions and medicines for various eye conditions like conjunctivitis
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
