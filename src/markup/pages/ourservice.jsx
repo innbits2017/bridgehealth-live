@@ -24,7 +24,7 @@ class ourservice extends Component {
                 <Header />
                 <section class="team-section padding">
                     {/* About Section Two */}
-                    <section class="auto-container ourservice">
+                    <section class="auto-container ourservice serviceMarginTop">
                         <div class="row align-items-center ">
 
                             <div class="col-lg-6 colz">

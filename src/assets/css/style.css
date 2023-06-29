@@ -3485,9 +3485,7 @@ img.lazy-image.loaded {
 }
 
 .heading3 {
-	width: 700px !important;
 	text-align: center;
-	margin-left: 21%;
 	font-weight: 500;
 	font-size: 25px;
 	line-height: 20px;
@@ -14591,6 +14589,10 @@ label {
 	width: 100% !important;
  }
  @media (max-width:576px) {
+	.serviceMarginTop
+	{
+		margin-top: 100px !important;
+	}
     .auto-container {
     position: static;
     padding: 0px 5px 0px 5px !important;
