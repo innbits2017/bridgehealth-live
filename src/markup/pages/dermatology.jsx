@@ -20,9 +20,16 @@ class dermatology extends Component {
                 <section class="internalpage dermatologyresponsive style-two darmanorepeat" style={{ backgroundImage: "url(" + aboutfair + ")" }}>
                     <div class="auto-container">
                         <div class="content-box mar-der">
-                            <div class=" text-center textleft">
-                            </div>
-                            <div class="btn-box btn5 margin300">
+                        <h2 className='textleft fontSize boxtext'>
+                                    <span className='headeingcolorblack'> LOOKS DO
+  </span><br></br>
+                                    <span className='headeingcolorblue'> MATTER </span>
+
+                                </h2>
+                                <h3 className='textleft marginTop40 boxparagraph'>
+                                Talk to our experts and <br></br>find out how you can look great!
+                                </h3>
+                            <div class="btn-box  btnbox">
                                 <ContactForm buttonText="BOOK NOW" class="drmabtm" />
                             </div>
 

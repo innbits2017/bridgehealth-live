@@ -134,9 +134,9 @@ p,
 
 }
 
-/* .auto-container3 {
-	margin-top: 400px;
-} */
+.auto-container3 {
+	margin-top: 160px;
+}
 
 .auto-container1 {
 	position: static;
@@ -3537,18 +3537,11 @@ img.lazy-image.loaded {
 
 .textpa {
 	text-align: center;
+    margin-left: -11%;
     margin-top: 12px;
     font-weight: 600;
     color: #777777;
 }
-
-.textpaextra {
-	padding-left: 100px;
-    margin-top: 12px;
-    font-weight: 600;
-    color: #777777;
-}
-
 
 .spenheading {
 	margin-left: 8px !important;
@@ -10753,10 +10746,10 @@ h6,
 } */
 .testback {
 	background-image: url(../images/shape/LINE.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	padding-top: 0px;
-	background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    background-position: center;
 
 
 }
@@ -11345,7 +11338,7 @@ hr {
 	
 .about-section-two {
 	position: relative;
-	padding: 0px 0 90px;
+	padding: 50px 0 90px;
 }
 
 	.font18 {
@@ -11365,14 +11358,6 @@ hr {
 		position: initial !important;
 		background-size: contain !important;
 		background-repeat: no-repeat;
-	}
-
-	.testimonialpadding {
-		margin-bottom: 10px;
-	}
-
-	.marginTop50 {
-		margin-top: 10px;
 	}
 
 	.testimonial-block .inner-box .text {
@@ -11471,7 +11456,7 @@ hr {
 	}
 
 	.margin150 {
-		margin-top: 60px;
+		margin-top: 70px;
 	}
 
 	.videofull {
@@ -11923,16 +11908,7 @@ hr {
 		border-top-right-radius: 80px 80px;
 		border-top-left-radius: 80px 80px;
 		background: none;
-		margin-top: 30px !important;
-	}
-
-	.about-section-two {
-		padding-top: 10px;
-		padding-bottom: 15px;
-	}
-
-	.column:last-child {
-		padding-bottom: 0px;
+		margin-top: 0px !important;
 	}
 
 	.slick-list {
@@ -12121,7 +12097,7 @@ hr {
 
 	.btn5 {
 		text-align: center;
-		margin-bottom: 10px !important;
+		margin-bottom: 40px;
 		margin-top: -60px;
 		/* margin-left: 12% !important; */
 	}
@@ -12334,7 +12310,7 @@ hr {
 	}
 
 	.annualback {
-		/* padding-top: 35px; */
+		padding-top: 35px;
 		padding-bottom: 0px;
 	}
 
@@ -12358,7 +12334,7 @@ hr {
 	}
 
 	.margin10rem {
-		margin-top: 5px !important;
+		margin-top: 2rem !important;
 	}
 
 	.sec-heading {
@@ -13291,9 +13267,12 @@ margin-top: 50px;
 }
 
 .mar-der {
-	padding-left: 126px;
-    margin-top: 28% !important;}
-
+	padding-left: 0px;
+	width: 32%;
+	background-repeat: no-repeat;
+	background-image: url(../images/shape/dermato.png);
+    margin-top: 0% !important;
+}
 .contactheadeing {
 	font-family: 'Montserrat';
 	font-style: normal;
@@ -14320,7 +14299,7 @@ tr> :second-child {
 	background-size: cover;
 	background-position: center center;
 	color: #fff;
-	height: 700px;
+	height: 600px;
 	padding-top: 50px;
 }
 
@@ -14621,4 +14600,21 @@ label {
 {
 .desktophide{
     display: none;}
+}
+.boxtext
+{
+	padding-top: 60px;
+    text-align: center;
+}
+.boxparagraph
+{
+	text-align: center;
+    font-size: 22px;
+    padding-bottom: 17%;
+}
+.btnbox
+{
+	text-align: center;
+    margin-top: -82px;
+    padding-bottom: 90px;
 }

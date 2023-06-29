@@ -634,6 +634,12 @@ class Index extends Component {
                 {/* <!-- Testimonial Section --> */}
                 <Testimonial2 />
                 <Testimonial1 />
+                   {/* SEE ALL */}
+                   <h6 class="leader-btn1">
+                                <a href={'/team'}>
+                                    SEE ALL
+                                </a>
+                            </h6>
                 <popup />
                 {/* <!-- News Section --> */}
                 <section class="auto-container3">
