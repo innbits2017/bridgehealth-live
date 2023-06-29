@@ -209,7 +209,7 @@ class Blog extends Component {
                                     <div class="lower-content">
                                         <div class="category">Blog heading</div>
 
-                                        <h3><Link to={'/blog-details'}>Top 10 yoga poses for overall fitness</Link></h3>
+                                        <h3><Link to={'/'}>Top 10 yoga poses for overall fitness</Link></h3>
                                         <div class="text">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod temp incididunt ut labore</div>
                                     </div>
                                 </div>

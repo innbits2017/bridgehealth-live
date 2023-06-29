@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
-import Popup from 'reactjs-popup';
-import ServiceFilter1 from '../element/service-filter1'
 import ContactForm from '../element/contact-form';
-import TeamSizeDropdown from './teamsize';
 
 
 const aboutbg = require('./../../assets/images/background/image-11.jpg');

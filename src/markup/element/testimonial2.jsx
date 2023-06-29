@@ -69,8 +69,7 @@ class Testimonial2 extends Component {
                                                                 </div>
                                                             </div>
                                                             <div class="text">
-                                                            By incorporating preventive healthcare strategies, individuals can identify potential cancer risks, take proactive steps to minimize those risks and detect cancer at early stages when treatment options are often more successful. These efforts improve overall cancer outcomes and reduce the disease's burden.
-                                                            </div>
+                                                            By incorporating preventive healthcare strategies, individuals can identify potential cancer risks, take proactive steps to minimize those risks and detect cancer at early stages when treatment options are often more successful. These efforts improve overall cancer outcomes and reduce the disease's burden.                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>

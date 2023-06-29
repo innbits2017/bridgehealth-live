@@ -115,7 +115,7 @@ class blog_Designv2 extends Component {
                     </div>
                 </div>
 
-                <section style={{ marginBottom: 2 + 'rem' }}>
+                <section style={{ marginBottom: 4 + 'rem' }}>
                     <div class="auto-container">
                         <h2 className='head-title-margin'>
                             {/* Confused about your health checks?<br></br> */}
