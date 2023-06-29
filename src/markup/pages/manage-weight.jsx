@@ -88,15 +88,13 @@ class manageWeight extends Component {
                         <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="sec-title squrebox">
-                                    {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                     <p className='font22'>
                                         Conversely, being underweight can lead to malnutrition, a weakened immune system, and osteoporosis. In addition to physical health issues, improper weight management can also have an impact on mental health and wellbeing, including depression, anxiety, and low self-esteem.
                                         It is important to take weight management seriously and seek support from healthcare professionals to help prevent these potential health problems.
                                     </p>
                                 </div>
                                 <div class="btn-box text-center btn5">
-                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
-                                    <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+                                    \                                    <ContactForm buttonText="BOOK NOW" popupPosition="right" />
 
                                 </div>
                             </div>
@@ -141,13 +139,13 @@ class manageWeight extends Component {
 
 
                 <section class="">
-                <h2 className='header1 text-center'>
-                                        <span className='headeingcolorblack'> The</span>
-                                        <span className='headeingcolorblue'>  Bridge Health</span>
-                                        <span className='headeingcolorblack'> Advantage </span>
-                                    </h2>
+                    <h2 className='header1 text-center'>
+                        <span className='headeingcolorblack'> The</span>
+                        <span className='headeingcolorblue'>  Bridge Health</span>
+                        <span className='headeingcolorblack'> Advantage </span>
+                    </h2>
                     <div class="auto-container heath-margin">
-                   
+
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="contact-form-area">

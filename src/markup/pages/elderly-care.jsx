@@ -20,10 +20,8 @@ class elderlyCare extends Component {
                     {/* About Section Two */}
                     <section class="container-fluid">
                         <div class="row align-items-center auto-container">
-
                             <div class="col-lg-5">
                                 <div class="content-box marginTop40header">
-
                                     <div class="sec-title text-center textleft">
                                         <h2 className='textleft fontSize50'>
                                             <span className='headeingcolorblack'> Age is not just </span>
@@ -35,19 +33,15 @@ class elderlyCare extends Component {
                                             Professional elderly care at <br></br> your doorstep
                                         </h3>
                                     </div>
-                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                                     <div class="btn-box btn5">
-
                                         <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                                     </div>
 
                                 </div>
                             </div>
                             <div class="col-lg-7">
-                                <div class="image-wrapper imgright">
-                                    <div class="image-one">
-                                        <img src={require('../../assets/images/shape/care1.png')} alt="" className='imgwidth' />
-                                    </div>
+                                <div class="imgright">
+                                        <img src={require('../../assets/images/shape/care1.png')} alt="" className='width100' />
                                 </div>
                             </div>
                         </div>
@@ -56,22 +50,14 @@ class elderlyCare extends Component {
 
 
                 <section class="contact-section heath-margin">
-
                     <div class="auto-container">
                         <div class="row align-items-center">
-
                             <div class="col-lg-6">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
-                                        <img src={require('../../assets/images/shape/care2.png')} alt="" className='widthimg' />
-                                    </div>
-                                </div>
+                                        <img src={require('../../assets/images/shape/care2.png')} alt="" className='width100' />
                             </div>
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
-
                                     <div class="sec-title squrebox">
-                                        {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                                         <p className='font22'>
                                             Although we may stay young at heart, our body starts ageing. As we grow older, our physical abilities decline
                                             and we might find ourselves slower and more dependent on others for physical assistance.
@@ -79,7 +65,6 @@ class elderlyCare extends Component {
 
                                     </div>
                                     <div class="btn-box text-center btn5">
-                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                                         <ContactForm buttonText="BOOK NOW" popupPosition="left" />
 
                                     </div>
@@ -91,18 +76,11 @@ class elderlyCare extends Component {
                     </div>
                 </section>
 
-                <section class=" heath-margin">
-
                     <div class="auto-container">
-                        <div class="row col-lg-12">
-
-
+                        <div class="row">
                             <div class="col-lg-6">
-                                <div class="contact-form-area">
-
                                     <div class="sec-title squrebox">
                                         <p className='font22'>
-
                                             <span className='headeingcolorblue'>
                                                 At Bridge Health, we understand the <br></br> importance of elderly care.
                                             </span>
@@ -113,38 +91,25 @@ class elderlyCare extends Component {
                                             Our clinical experts then create personalized prevention and treatment plans based on the assessments.
 
                                         </p>
-                                    </div>
                                 </div>
                             </div>
 
                             <div class="col-lg-5">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
-                                        <img src={require('../../assets/images/shape/care3.png')} alt="" className='widthimg imgFloatRight' />
-                                    </div>
-                                </div>
+                                        <img src={require('../../assets/images/shape/care3.png')} alt="" className='width100 imgFloatRight' />
                             </div>
 
                         </div>
                     </div>
-                </section>
 
-
-
-                <section class="contact-section heath-margin">
-
+                <section class="contact-section">
                     <div class="auto-container">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="contact-form-area">
-                                    <div class="auto-container">
                                         <h2 className='header1'>
                                             <span className='headeingcolorblack'> The</span>
                                             <span className='headeingcolorblue'>  Bridge Health</span>
                                             <span className='headeingcolorblack'> Advantage </span>
                                         </h2>
-
-                                    </div>
                                     <ul className='listicon'>
                                         <li>
                                             Home care
@@ -187,21 +152,14 @@ class elderlyCare extends Component {
                                         </li>
 
                                     </ul>
-                                </div>
                             </div>
 
                             <div class="col-lg-5">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
-                                        <img src={require('../../assets/images/shape/care4.png')} alt="" className='' />
-                                    </div>
-                                </div>
+                                        <img src={require('../../assets/images/shape/care4.png')} alt="" className='width100' />
                             </div>
                         </div>
                     </div>
                 </section>
-
-
 
                 <section>
                     <div class="auto-container">
@@ -212,7 +170,6 @@ class elderlyCare extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                             <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                         </div>
                     </div>

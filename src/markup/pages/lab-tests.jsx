@@ -46,7 +46,7 @@ class lab_tests extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/lab1.png')} alt="" className='' />
+                                        <img src={require('../../assets/images/shape/lab1.png')} alt="" className='width100' />
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@ class lab_tests extends Component {
                     <section>
                         <div class="image-wrapper">
                             <div class="image-one">
-                                <img src={require('../../assets/images/shape/labtext.png')} alt="" className='labwidth' />
+                                <img src={require('../../assets/images/shape/labtext.png')} alt="" className='width100' />
                             </div>
                         </div>
 
@@ -181,14 +181,8 @@ class lab_tests extends Component {
                                 </div>
 
                                 <div class="col-lg-5">
-                                    <div class="image-wrapper">
-                                        <div class="image-one image-two">
-                                            <img src={require('../../assets/images/shape/lab3.png')} alt="" className='' />
-                                            {/* <img src={require('../../assets/images/shape/video2.gif')} alt="" /> */}
+                                            <img src={require('../../assets/images/shape/lab3.png')} alt="" className='width100' />
                                         </div>
-
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </section>
@@ -209,7 +203,6 @@ class lab_tests extends Component {
                     </div>
                     <div class="auto-container">
                         <div class="row">
-
                             <div class="col-lg-4">
                                 <div class="contact-form-area">
 
@@ -233,8 +226,6 @@ class lab_tests extends Component {
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <div class="contact-form-area">
-
                                     <ul className='listicon'>
                                         <li>
                                             Preemployment Health Check
@@ -252,12 +243,9 @@ class lab_tests extends Component {
                                             IT & ITes Health Check
                                         </li>
                                     </ul>
-                                </div>
                             </div>
                             <div class="col-lg-4">
-                                <div class="contact-form-area">
-
-                                    <ul className='listicon'>
+                                <ul className='listicon'>
                                         <li>
                                             Cardiac Health Check
                                         </li>
@@ -275,12 +263,9 @@ class lab_tests extends Component {
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-
                         </div>
 
                         <div class="btn-box text-center btn5">
-                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                             <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                         </div>
                     </div>
@@ -292,11 +277,7 @@ class lab_tests extends Component {
                     <div class="auto-container">
                     <div class="row align-items-center">
                             <div class="col-lg-6">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
                                         <img src={require('../../assets/images/shape/lab5.png')} alt="" className='' />
-                                    </div>
-                                </div>
                             </div>
 
                             <div class="col-lg-6">

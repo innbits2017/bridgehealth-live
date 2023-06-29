@@ -253,9 +253,9 @@ A healthy diet is the basis for good health. After all, you are what you eat. Fi
                                             <a href={'/yoga-assessment'}>
                                                 <img src={require('../../assets/images/shape/s13.png')} alt="" />
                                             </a>
-                                            <div class="short-name expertise">Yoga Assessment <br></br>and Coaching</div>
+                                            <div class="short-name expertise">Yoga Assessment</div>
                                             <div class="longer-name">
-                                            <h1 className='boxtitle'>Yoga Assessment <br></br>and Coaching</h1>
+                                            <h1 className='boxtitle'>Yoga Assessment</h1>
 
                                                 Yoga has been a part of our culture for centuries. The focus on harmony of mind, body, and spirit has been scientifically proven to have positive effects on health. Talk to our yoga therapists.
                                             </div>
@@ -269,9 +269,9 @@ A healthy diet is the basis for good health. After all, you are what you eat. Fi
                                             <a href={'/fitness-assessment'}>
                                                 <img src={require('../../assets/images/shape/s14.png')} alt="" />
                                             </a>
-                                            <div class="short-name expertise">Fitness Assessment<br></br> and Coaching</div>
+                                            <div class="short-name expertise">Fitness Assessment</div>
                                             <div class="longer-name">
-                                            <h1 className='boxtitle'>Fitness Assessment<br></br> and Coaching</h1>
+                                            <h1 className='boxtitle'>Fitness Assessment</h1>
 
                                                 For good health, exercise is important. We’ve taken this to another level and have adopted a clinical fact-based approach with our unique fitness program. Discover our pro-fit program.</div>
                                         </p>

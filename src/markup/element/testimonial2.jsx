@@ -69,8 +69,7 @@ class Testimonial2 extends Component {
                                                                 </div>
                                                             </div>
                                                             <div class="text">
-                                                            By incorporating preventive healthcare strategies, individuals can identify potential cancer risks, take proactive steps to minimize those risks and detect cancer at early stages when treatment options are often more successful. These efforts improve overall cancer outcomes and reduce the disease's burden.
-                                                            </div>
+                                                            By incorporating preventive healthcare strategies, individuals can identify potential cancer risks, take proactive steps to minimize those risks and detect cancer at early stages when treatment options are often more successful. These efforts improve overall cancer outcomes and reduce the disease's burden.                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -96,7 +95,7 @@ class Testimonial2 extends Component {
                                                             <div class="text mar25">
                                                                     <span><img src={require('../../assets/images/shape/testimonial1.png')} alt="" className='testthumb' /></span>
                                                                     <span className='headeingcolorblack spenheading'>Shanaya Gupta</span>
-                                                                    <p className=' textpaextra'>SUBSCRIBED TO THE PLATINUM PLAN</p>
+                                                                    <p className='textpa'>SUBSCRIBED TO THE PLATINUM PLAN</p>
                                                                 </div>
                                                             </div>
                                                             <div class="text">
