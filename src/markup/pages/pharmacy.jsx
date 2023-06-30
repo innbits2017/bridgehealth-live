@@ -18,60 +18,38 @@ class pharmacy extends Component {
                 <section class="internalpage internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
                     <div class="auto-container">
                         <div class="content-box">
-
                             <div class=" text-center textleft">
                                 <h2 className='textleft fontSize'>
                                     <span className='headeingcolorblack'>All your Pharmacy </span><br></br>
                                     <span className='headeingcolorblue'> Needs In One Place </span>
-
                                 </h2>
                                 <h3 className='textleft marginTop40'>
                                     Order your medicines through<br></br> Bridge Health Pharmacy
                                 </h3>
                             </div>
-                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                             <div class="btn-box btn5">
-
                                 <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                             </div>
-
                         </div>
-
                     </div>
                 </section>
 
-
-
                 <section class="contact-section">
-
                     <div class="auto-container">
                         <div class="row align-items-center">
                             <div class="col-lg-6">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
                                         <img src={require('../../assets/images/shape/ph1.png')} alt="" className='' />
-                                    </div>
-                                </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="contact-form-area">
-
-                                    <div class="sec-title squrebox">
-
+                                   <div class="sec-title squrebox">
                                         <p className='font22'>
                                             It’s important to always keep an adequate supply of the medicines you need. This is especially important if you suffer from any chronic conditions. The availability of a fully- stocked pharmacy near your residence is considered to be very important in case you need medicines urgently.
                                         </p>
-
-
                                     </div>
                                     <div class="btn-box text-center btn5">
-                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                                         <ContactForm buttonText="BOOK NOW" popupPosition="left" />
-
                                     </div>
-                                </div>
                             </div>
-
                         </div>
                     </div>
                 </section>
@@ -86,19 +64,13 @@ class pharmacy extends Component {
 
                                 </div>
                                 <div class="btn-box text-center btn5">
-                                    {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                                     <ContactForm buttonText="BOOK NOW" popupPosition="right" />
-
                                 </div>
 
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="image-wrapper">
-                                <div class="image-one">
                                     <img src={require('../../assets/images/shape/phar1.png')} alt=""  className='marginLeft12'/>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -107,26 +79,17 @@ class pharmacy extends Component {
                     <div class="auto-container">
                         <div class="row align-items-center">
                             <div class="col-lg-6">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
                                         <img src={require('../../assets/images/shape/ph3.png')} alt="" className='' />
-                                    </div>
-                                </div>
                             </div>
 
                             <div class="col-lg-6">
-                                <div class="contact-form-area">
-                                    <div class="auto-container">
-                                        <div class="">
+                               
                                             <h2 className='header1'>
                                                 <span className='headeingcolorblack'> The</span>
                                                 <span className='headeingcolorblue'>  Bridge Health</span>
                                                 <span className='headeingcolorblack'> Advantage </span>
                                             </h2>
-                                        </div>
-
-                                    </div>
-                                    <ul className='listicon'>
+                                        <ul className='listicon'>
                                         <li>
                                             Easy Booking through our onsite personnel
                                         </li>
@@ -149,8 +112,6 @@ class pharmacy extends Component {
 
                                     </ul>
                                 </div>
-                            </div>
-
                         </div>
                     </div>
                 </section>
@@ -166,14 +127,10 @@ class pharmacy extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                             <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                         </div>
                     </div>
                 </section>
-
-
-
                 <Footer />
             </>
         )

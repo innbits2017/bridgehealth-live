@@ -128,15 +128,15 @@ p,
 
 .auto-container {
 	position: static;
-	max-width: 1360px;
-	padding: 0px 15px;
+	/* max-width: 1360px; */
+	padding: 0px 50px 0px 50px;
 	margin: 0 auto;
 
 }
 
-/* .auto-container3 {
-	margin-top: 400px;
-} */
+.auto-container3 {
+	margin-top: 160px;
+}
 
 .auto-container1 {
 	position: static;
@@ -622,7 +622,7 @@ img {
 }
 
 .main-header .auto-container {
-	max-width: 1360px;
+	/* max-width: 1360px; */
 	height: 90px;
 }
 
@@ -1426,7 +1426,7 @@ img {
 /* Header Style Two */
 
 .main-header.header-style-two .auto-container {
-	max-width: 1450px;
+	/* max-width: 1450px; */
 }
 
 .main-header.header-style-two .header-upper .inner-container {
@@ -1569,15 +1569,6 @@ img {
 
 /* Header Style Four */
 
-.main-header.header-style-four .auto-container {
-	max-width: 1470px;
-	padding: 0;
-}
-
-.main-header.header-style-four .sticky-header .auto-container {
-	max-width: 1200px;
-	padding: 0 15px;
-}
 
 .main-header.header-style-four .header-upper {
 	background: rgba(0, 0, 0, 0.01);
@@ -3494,9 +3485,7 @@ img.lazy-image.loaded {
 }
 
 .heading3 {
-	width: 700px !important;
 	text-align: center;
-	margin-left: 21%;
 	font-weight: 500;
 	font-size: 25px;
 	line-height: 20px;
@@ -3523,10 +3512,11 @@ img.lazy-image.loaded {
 
 .imgstyle {
 	margin-left: 22%;
+	width: 45%;
 }
 
 .imgstyle1 {
-	margin-left: 18%;
+	margin-left: 22%;
 	margin-top: 20px;
 	width: 45%;
 }
@@ -3545,18 +3535,11 @@ img.lazy-image.loaded {
 
 .textpa {
 	text-align: center;
+    margin-left: -11%;
     margin-top: 12px;
     font-weight: 600;
     color: #777777;
 }
-
-.textpaextra {
-	padding-left: 100px;
-    margin-top: 12px;
-    font-weight: 600;
-    color: #777777;
-}
-
 
 .spenheading {
 	margin-left: 8px !important;
@@ -3713,10 +3696,7 @@ img.lazy-image.loaded {
 	background: #fff;
 }
 
-.services-section .auto-container {
-	max-width: 100%;
-	padding: 0;
-}
+
 
 .services-section .wrapper-box {
 	position: relative;
@@ -5667,7 +5647,7 @@ img.lazy-image.loaded {
 	background-color: #000 !important;
 	font-size: 16px;
 	margin-bottom: 4px;
-	text-align: left !important;
+	text-align: left ;
 	margin-top: -7px;
 }
 
@@ -5966,10 +5946,6 @@ img.lazy-image.loaded {
 	-webkit-text-fill-color: inherit;
 }
 
-.services-section-two .auto-container {
-	max-width: 100%;
-	padding: 0;
-}
 
 .services-section-two .wrapper-box {
 	position: relative;
@@ -6360,9 +6336,6 @@ img.lazy-image.loaded {
 	color: #fff;
 }
 
-.cases-section .auto-container {
-	max-width: 920px;
-}
 
 .cases-section .case-tab-wrapper {
 	margin: 0 0px;
@@ -6880,7 +6853,7 @@ img.lazy-image.loaded {
     position: relative;
     color: #ffffff;
     text-align: center;
-    padding: 35% 0px 270px;
+    padding: 20% 0px 20%;
     z-index: 2;
 }
 
@@ -6901,13 +6874,11 @@ img.lazy-image.loaded {
 
 .leader-heading1 {
 	text-transform: uppercase;
-	margin-left: 55%;
-}
+text-align: right;}
 
 .leader-heading2 {
 	text-transform: uppercase;
-	margin-left: 75%;
-}
+text-align: right !important;}
 
 /* .page-banner .page-banner-bg:before {
 	content   : '';
@@ -6986,10 +6957,6 @@ img.lazy-image.loaded {
 .sponsors-section {
 	position: relative;
 	padding: 120px 0px;
-}
-
-.sponsors-section .auto-container {
-	max-width: 1550px;
 }
 
 .sponsors-section .slide-item {
@@ -7353,10 +7320,6 @@ img.lazy-image.loaded {
 	background-size: cover;
 }
 
-.feature-section-two .auto-container {
-	max-width: 100%;
-	padding: 0;
-}
 
 .feature-section-two .content-box {
 	background: #fff;
@@ -10781,10 +10744,10 @@ h6,
 } */
 .testback {
 	background-image: url(../images/shape/LINE.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	padding-top: 0px;
-	background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    background-position: center;
 
 
 }
@@ -10931,6 +10894,9 @@ a:not([href]):not([tabindex]) {
 }
 
 @media (max-width:560px) {
+	.commimgsoon {
+		padding-top: 70% !important;
+	}
 	.review {
 		font-size: 14px;
 		font-weight: 600;
@@ -11289,6 +11255,7 @@ hr {
 .internalpage {
 	position: relative;
 	padding: 350px 0 120px;
+	background-repeat: no-repeat;
 	background-size: 100% !important;
 
 }
@@ -11372,7 +11339,7 @@ hr {
 	
 .about-section-two {
 	position: relative;
-	padding: 0px 0 90px;
+	padding: 50px 0 90px;
 }
 
 	.font18 {
@@ -11392,14 +11359,6 @@ hr {
 		position: initial !important;
 		background-size: contain !important;
 		background-repeat: no-repeat;
-	}
-
-	.testimonialpadding {
-		margin-bottom: 10px;
-	}
-
-	.marginTop50 {
-		margin-top: 10px;
 	}
 
 	.testimonial-block .inner-box .text {
@@ -11498,7 +11457,7 @@ hr {
 	}
 
 	.margin150 {
-		margin-top: 60px;
+		margin-top: 70px;
 	}
 
 	.videofull {
@@ -11833,7 +11792,7 @@ hr {
 	}
 
 	.imgstyle {
-		margin-left: 50px;
+		margin-left: 25%;
 		margin-top: 0px;
 	}
 
@@ -11950,16 +11909,7 @@ hr {
 		border-top-right-radius: 80px 80px;
 		border-top-left-radius: 80px 80px;
 		background: none;
-		margin-top: 30px !important;
-	}
-
-	.about-section-two {
-		padding-top: 10px;
-		padding-bottom: 15px;
-	}
-
-	.column:last-child {
-		padding-bottom: 0px;
+		margin-top: 0px !important;
 	}
 
 	.slick-list {
@@ -12148,7 +12098,7 @@ hr {
 
 	.btn5 {
 		text-align: center;
-		margin-bottom: 10px !important;
+		margin-bottom: 40px;
 		margin-top: -60px;
 		/* margin-left: 12% !important; */
 	}
@@ -12361,7 +12311,7 @@ hr {
 	}
 
 	.annualback {
-		/* padding-top: 35px; */
+		padding-top: 35px;
 		padding-bottom: 0px;
 	}
 
@@ -12385,7 +12335,7 @@ hr {
 	}
 
 	.margin10rem {
-		margin-top: 5px !important;
+		margin-top: 2rem !important;
 	}
 
 	.sec-heading {
@@ -12831,6 +12781,8 @@ hr {
 	margin-top: 15px;
 	font-size: 21px;
 	width: 295px;
+	color: #000;
+	text-decoration: underline;
 }
 
 
@@ -13170,8 +13122,8 @@ margin-top: 50px;
 	margin-left: -21%;
 	background-image: url(../images/shape/fitnessback.png);
 	padding: 38px 23px 66px 56px;
-    background-size: cover;
-    background-repeat: repeat-x;
+	background-size: auto;
+    background-repeat: no-repeat;
     padding-top: 66px;
 }
 
@@ -13316,9 +13268,12 @@ margin-top: 50px;
 }
 
 .mar-der {
-	padding-left: 126px;
-    margin-top: 28% !important;}
-
+	padding-left: 0px;
+	width: 32%;
+	background-repeat: no-repeat;
+	background-image: url(../images/shape/dermato.png);
+    margin-top: 0% !important;
+}
 .contactheadeing {
 	font-family: 'Montserrat';
 	font-style: normal;
@@ -13926,9 +13881,9 @@ h6.form-check-list {
 
 .talkTo img {
 
-	width: 55px;
-	margin-right: -17px;
-	padding-bottom: 5px;
+	width: 47px;
+    margin-right: -9px;
+    padding-bottom: 5px;
 
 }
 
@@ -14065,10 +14020,6 @@ body>div.fade.modal.show>div>div>div>button .yes {
 	margin-top: 110px;
 }
 
-.commimgsoon {
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
 
 .careertitle {
 	font-size: 34px;
@@ -14107,8 +14058,8 @@ body>div.fade.modal.show>div>div>div>button .yes {
 	background: rgba(255, 255, 255, 0.75);
 	border-radius: 0px 40px 245px 0px;
 	width: 750px;
-	margin-left: -8%;
-	padding: 20px 18px 1px 70px;
+	margin-left: -4%;
+	padding: 20px 18px 1px 50px;
 }
 .seven-cols .service-offering {
     padding: 0px !important;
@@ -14147,7 +14098,7 @@ table {
 
 td,
 th {
-	border: 1px solid;
+	/* border: 1px solid; */
 	padding: 10px;
 	min-width: 200px;
 	background: white;
@@ -14261,9 +14212,9 @@ tr> :first-child {
 }
 
 /* don't do this */
-tr> :first-child {
+/* tr> :first-child {
 	box-shadow: inset 0px 1px black;
-}
+} */
 
 tr> :second-child {
 	text-align: center;
@@ -14316,7 +14267,8 @@ tr> :second-child {
 }
 
 .bloground {
-	padding-top: 2rem;
+	margin-top: -20%;
+    padding-top: 23%;
     text-align: justify;
 }
 
@@ -14344,7 +14296,7 @@ tr> :second-child {
 	background-size: cover;
 	background-position: center center;
 	color: #fff;
-	height: 700px;
+	height: 600px;
 	padding-top: 50px;
 }
 
@@ -14442,7 +14394,7 @@ button.sub-btn1 {
     margin: 0px;
 }
 .health-plan .health-plan-item ul:nth-child(3) li {
-    height: 72px;
+    height: 60px;
     display: block;
     margin: 0px !important;
 }
@@ -14631,3 +14583,42 @@ label {
 	width:1000px;
 	height:480px;
  }
+ .width100
+ {
+	width: 100% !important;
+ }
+ @media (max-width:576px) {
+	.serviceMarginTop
+	{
+		margin-top: 100px !important;
+	}
+    .auto-container {
+    position: static;
+    padding: 0px 5px 0px 5px !important;
+    margin: 0 auto;
+}}
+@media (min-width: 576px)
+{
+.desktophide{
+    display: none;}
+}
+.boxtext
+{
+	padding-top: 60px;
+    text-align: center;
+}
+.boxparagraph
+{
+	text-align: center;
+    font-size: 22px;
+    padding-bottom: 17%;
+}
+.btnbox
+{
+	text-align: center;
+    margin-top: -82px;
+    padding-bottom: 90px;
+}
+.commimgsoon {
+padding-top: 30%;
+}

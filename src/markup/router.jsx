@@ -2,16 +2,13 @@ import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Index from './pages/index';
 import blog from './pages/blog'
-import Services from './pages/services'
 import Team from './pages/team';
 import BackToTop from './layout/backToTop'
 import leadership from './pages/leadership'
 import corporate_membership_program from './pages/corporate-membership-program';
 import b2cmembership from './pages/personal-membership-program'
 import ourservice from './pages/ourservice'
-import BlogDestails from './pages/blog-details';
 import blog_Designv2 from './pages/blog-Designv2';
-import b2c_page from './pages/b2c-page';
 import diet_and_nutrition from './pages/diet-and-nutrition';
 import yoga_Assessment from './pages/yoga-Assessment';
 import lab_tests from './pages/lab-tests';
@@ -47,7 +44,6 @@ import JobDescription from './pages/JobDescription';
 import LoginForm from './pages/LoginForm';
 import JobListingForm from './pages/JobListingForm';
 import Sidenav from './pages/Sidenav';
-import PrivateRoute from './pages/privateRoute';
 
 
 
@@ -58,14 +54,11 @@ class Router extends Component {
                 <div class="page-wrapper">
                     <Switch>
                         <Route path='/' exact component={Index} />
-                        <Route path='/b2c-page' exact component={b2c_page} />
                         <Route path='/contact-us' exact component={contact} />
                         <Route path='/blog' component={blog} />
                         <Route path='/leadership' component={leadership} />
-                        <Route path='/services-standalone' component={Services} />
                         <Route path='/team' component={Team} />
                         <Route path='/corporate-membership-program' component={corporate_membership_program}/>
-                        {/* <Route path='/blog-details' component={BlogDestails}/> */}
                         <Route path='/career-form' component={FormComponent}/>
                         <Route path='/our-services' component={ourservice}/>
                         <Route path='/personal-membership-program' component={b2cmembership}/>
@@ -100,7 +93,7 @@ class Router extends Component {
                         <Route path='/health-risk-assessment' component={HealthiskAssessment}/>
                         <Route path='/career-admin' component={careerAdmin}/>
                         <Route path='/job-description' component={JobDescription}/>
-                        <Route path='/login' component={LoginForm}/>
+                        <Route path='/LoginForm' component={LoginForm}/>
                         <Route path='/sidenav' component={Sidenav}/>
                         <Route path='/JobListingForm' component={JobListingForm}/>
                         

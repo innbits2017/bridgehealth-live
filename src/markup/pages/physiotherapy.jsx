@@ -30,9 +30,7 @@ class physiotherapy extends Component {
                                 Schedule a physiotherapy<br></br> session with us
                                 </h3>
                             </div>
-                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                             <div class="btn-box btn5">
-
                                 <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                             </div>
 
@@ -47,11 +45,7 @@ class physiotherapy extends Component {
                     <div class="container-fluid">
                         <div class="row align-items-center">
                             <div class="col-lg-6 doctor-image">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
-                                        <img src={require('../../assets/images/shape/p1.png')} alt=""  />
-                                    </div>
-                                </div>
+                                        <img src={require('../../assets/images/shape/p1.png')} alt="" className='width100' />
                             </div>
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
@@ -66,7 +60,6 @@ class physiotherapy extends Component {
 
                                     </div>
                                     <div class="btn-box text-center btn5">
-                                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                                         <ContactForm buttonText="BOOK NOW" popupPosition="left" />
                                     </div>
 
@@ -79,13 +72,9 @@ class physiotherapy extends Component {
                 <section class="team-section">
 
                     {/* About Section Two */}
-                    <section class="">
                         <div class="auto-container">
                             <div class="row align-items-center">
-
-
-
-                                <div class="col-lg-6">
+                                   <div class="col-lg-6">
                                     <div class="content-box">
                                         <h2>
                                             <span className='headeingcolorblack'> What We </span>
@@ -125,7 +114,7 @@ class physiotherapy extends Component {
                                 <div class="col-lg-6">
                                     <div class="image-wrapper">
                                         <div class="image-one image-two">
-                                            <img src={require('../../assets/images/shape/p2.png')} alt="" className='widthimg' />
+                                            <img src={require('../../assets/images/shape/p2.png')} alt="" className='width100' />
                                             {/* <img src={require('../../assets/images/shape/video2.gif')} alt="" /> */}
                                         </div>
 
@@ -134,32 +123,19 @@ class physiotherapy extends Component {
                             </div>
                         </div>
                     </section>
-                </section>
-
                 <section class="contact-section physi">
-
                     <div class="auto-container">
                         <div class="row align-items-center">
-
                             <div class="col-lg-6">
-                                <div class="image-wrapper">
-                                    <div class="image-one">
-                                        <img src={require('../../assets/images/shape/p3.png')} alt="" className='widthimg' />
-                                    </div>
-                                </div>
+                                        <img src={require('../../assets/images/shape/p3.png')} alt="" className='width100' />
                             </div>
 
                             <div class="col-lg-6">
-                                <div class="contact-form-area">
-                                    <div class="auto-container">
-
                                         <h2 className='header1 fontrem'>
                                             <span className='headeingcolorblack'> The</span>
                                             <span className='headeingcolorblue'>  Bridge Health</span>
                                             <span className='headeingcolorblack'> Advantage </span>
                                         </h2>
-
-                                    </div>
                                     <ul className='listicon'>
                                         <li>
                                             Goal-oriented programs
@@ -176,7 +152,6 @@ class physiotherapy extends Component {
                                         </li>
 
                                     </ul>
-                                </div>
                             </div>
 
                         </div>
@@ -194,7 +169,6 @@ class physiotherapy extends Component {
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">
-                            {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                             <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                         </div>
                     </div>

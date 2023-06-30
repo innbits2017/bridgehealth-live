@@ -46,7 +46,7 @@ class leadership extends Component {
                 {/* <!--End Banner Section --> */}
 
                 {/* <!-- About Section Two --> */}
-                <section class="about-section-two">
+                <section class="about-section-two marginTop0">
                     <div class="auto-container">
                         <div class="sec-title text-center">
                             <h2> <span className='headeingcolorblack'> BOARD OF</span> <span className='headeingcolorblue'> DIRECTORS</span></h2>
