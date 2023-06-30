@@ -344,7 +344,7 @@ class b2cmembership extends Component {
                     {/* <li>Paid</li> */}
                     <li><i class="bi bi-check"></i> </li>
                   </ul>
-                  <p class="buy-btn border-blue BhBlue">₹7,999</p>
+                  <p class="buy-btn border-blue BhBlue">₹3,999</p>
                 </div>
               </div>
               <div class="col-md-1 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
@@ -782,7 +782,7 @@ class b2cmembership extends Component {
                     </tr>
                     <tr>
                       <th>Price</th>
-                      <td className="pers-bh">₹7,999</td>
+                      <td className="pers-bh">₹3,999</td>
                       <td className="pers-bh1">₹7,999</td>
                       <td className="pers-gold">₹16,999</td>
                       <td className="pers-plat">₹24,999</td>
