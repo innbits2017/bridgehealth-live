@@ -4762,7 +4762,7 @@ img.lazy-image.loaded {
 
 .contact-section {
 	position: relative;
-	padding: 120px 0 90px;
+	padding: 80px 0 90px;
 }
 
 .contact-section .contact-form {
@@ -10894,6 +10894,9 @@ a:not([href]):not([tabindex]) {
 }
 
 @media (max-width:560px) {
+	.commimgsoon {
+		padding-top: 70% !important;
+	}
 	.review {
 		font-size: 14px;
 		font-weight: 600;
@@ -14017,10 +14020,6 @@ body>div.fade.modal.show>div>div>div>button .yes {
 	margin-top: 110px;
 }
 
-.commimgsoon {
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
 
 .careertitle {
 	font-size: 34px;
@@ -14099,7 +14098,7 @@ table {
 
 td,
 th {
-	border: 1px solid;
+	/* border: 1px solid; */
 	padding: 10px;
 	min-width: 200px;
 	background: white;
@@ -14213,9 +14212,9 @@ tr> :first-child {
 }
 
 /* don't do this */
-tr> :first-child {
+/* tr> :first-child {
 	box-shadow: inset 0px 1px black;
-}
+} */
 
 tr> :second-child {
 	text-align: center;
@@ -14292,7 +14291,7 @@ tr> :second-child {
 }
 
 .bg-overlay {
-	background-image: url(../images/Comp.gif);
+	background-image: url(../images/Comp1.gif);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -14395,7 +14394,7 @@ button.sub-btn1 {
     margin: 0px;
 }
 .health-plan .health-plan-item ul:nth-child(3) li {
-    height: 72px;
+    height: 60px;
     display: block;
     margin: 0px !important;
 }
@@ -14619,4 +14618,7 @@ label {
 	text-align: center;
     margin-top: -82px;
     padding-bottom: 90px;
+}
+.commimgsoon {
+padding-top: 30%;
 }
