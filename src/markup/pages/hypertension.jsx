@@ -17,13 +17,10 @@ return (
 
     <Header />
     <section class="team-section padding doctoeback">
-        {/* About Section Two */}
         <section class="container-fluid">
             <div class="row align-items-center auto-container">
-
                 <div class="col-lg-6">
                     <div class="content-box marginTop40header">
-
                         <div class="sec-title text-center textleft">
                             <h2 className='textleft fontSize50'>
                                 <span className='headeingcolorblack'>
@@ -36,12 +33,9 @@ return (
                                 Beat hypertension with <br></br> our experts
                             </h3>
                         </div>
-                        {/* <button class="commonBtnforAll">BOOK NOW</button> */}
                         <div class="btn-box btn5">
-
                             <ContactForm buttonText="BOOK NOW" popupPosition="right" />
                         </div>
-
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -56,18 +50,15 @@ return (
     </section>
 
     <section class="contact-section heath-margin">
-
         <div class="auto-container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <img src={require('../../assets/images/shape/tension2.png')} alt="" className='widthimg' />
-
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-form-area">
 
                         <div class="sec-title squrebox">
-                            {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
                             <p className='font22'>
                                 Hypertension, or high blood pressure, is a common and often asymptomatic condition that
                                 affects millions of people worldwide. If left unmanaged,
@@ -75,15 +66,12 @@ return (
                                 failure, and vision loss. It is a major risk factor for cardiovascular disease, which is
                                 the leading cause of death globally.
                             </p>
-
                         </div>
                         <div class="btn-box text-center btn5">
                             <ContactForm buttonText="BOOK NOW" popupPosition="left" />
-
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>

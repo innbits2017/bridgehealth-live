@@ -272,7 +272,7 @@ class comprehensiveHealth extends Component {
                         <div class="sec-title text-center">
                             <h2 className='header1'>
                                 <span className='headeingcolorblack'> The real  </span>
-                                <span className='headeingcolorblue'> wealth is health! </span>
+                                <span className='headeingcolorblue'> wealth is Health! </span>
 
                             </h2>
                         </div>
