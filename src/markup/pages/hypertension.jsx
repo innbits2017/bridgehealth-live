@@ -18,7 +18,7 @@ return (
     <Header />
     <section class="team-section padding doctoeback">
         <section class="container-fluid">
-            <div class="row align-items-center auto-container">
+            <div class="row align-items-center auto-container reverseFlex">
                 <div class="col-lg-6">
                     <div class="content-box marginTop40header">
                         <div class="sec-title text-center textleft">
@@ -79,7 +79,7 @@ return (
     <section class="">
 
         <div class="auto-container">
-            <div class="row align-items-center">
+            <div class="row align-items-center reverseFlex">
                 <div class="col-lg-6">
                     <div class="sec-title squrebox">
                         <p className='font22'>
@@ -138,7 +138,7 @@ return (
 
     <section class="contact-section">
         <div class="auto-container">
-            <div class="row align-items-center">
+            <div class="row align-items-center reverseFlex">
                 <div class="col-lg-6">
                     <div class="sec-title squrebox">
                         {/* <h2> <span className='headeingcolorblack1'>YOU ARE WHAT YOU EAT</span></h2> */}
@@ -158,7 +158,7 @@ return (
                 <div class="col-lg-6">
 
                     <img src={require('../../assets/images/shape/tension5.png')} alt=""
-                        className='widthimg imgFloatRight' />
+                        className='widthimg imgFloatRight marginTop40reverse' />
 
                 </div>
 

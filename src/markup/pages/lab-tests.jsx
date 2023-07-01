@@ -46,7 +46,7 @@ class lab_tests extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img src={require('../../assets/images/shape/lab1.png')} alt="" className='width100' />
+                                        <img src={require('../../assets/images/shape/lab1.png')} alt="" className='width100 marginTop40reverse' />
                                     </div>
                                 </div>
                             </div>

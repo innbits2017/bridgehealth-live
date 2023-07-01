@@ -11381,8 +11381,10 @@ hr {
 	}
 
 	.fitnesback {
-		margin-left: -42% !important;
+		margin-left: 0% !important;
 		width: auto !important;
+		padding: 0px !important;
+		background-image: none !important;
 		border-radius: unset !important;
 	}
 
@@ -11469,9 +11471,9 @@ hr {
 	}
 
 	.triangleback {
-		margin-left: -17% !important;
+		margin-left: 0% !important;
 		width: auto !important;
-		background: #FFBD3E;
+		background: transparent !important;
 		border-radius: 0px 25px 159px 0px;
 		padding: 20px 10px 20px 13px !important;
 	}
@@ -11603,9 +11605,9 @@ hr {
 		margin-top: 15% !important;
 	}
 
-	.imgright {
-		margin-top: 20px;
-	}
+	 .imgright {
+		margin-left: -12%;
+		} 
 
 	.testimonial-section .slick-prev {
 		position: absolute;
@@ -12073,7 +12075,7 @@ hr {
 	}
 
 	.widthimg {
-		padding-top: 18%;
+		/* padding-top: 18%; */
 		width: 100% !important;
 	}
 
@@ -12251,6 +12253,10 @@ hr {
 }
 
 @media only screen and (max-width: 600px) {
+	.reverseFlex
+	{
+		flex-direction: column-reverse;
+	}
 	.page-banner .page-banner-bg {
 		background-size: contain !important;
 	}
@@ -12347,7 +12353,7 @@ hr {
 	}
 
 	.marginTop40header {
-		margin-top: 40%;
+		/* margin-top: 40%; */
 		text-align: center !important;
 	}
 
@@ -12627,6 +12633,10 @@ hr {
 }
 
 @media only screen and (max-width: 600px) {
+	.marginTop40reverse
+	{
+		margin-top: 40px;
+	}
 	.linkdinicon {
 		box-shadow: none !important;
 		margin-left: 18px;
@@ -13119,7 +13129,7 @@ margin-top: 50px;
 	width: 100%;
 	background: #FFBD3E;
 	border-radius: 0px 25px 159px 0px;
-	padding: 20px 10px 20px 80px;
+	padding: 0px !important;
 }
 
 .fitnesback {

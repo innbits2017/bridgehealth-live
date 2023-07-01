@@ -16,7 +16,7 @@ return (
     <section class="team-section padding">
         {/* About Section Two */}
         <section class="container-fluid">
-            <div class="row align-items-center auto-container">
+            <div class="row align-items-center auto-container reverseFlex">
                 <div class="col-lg-6">
                     <div class="content-box marginTop40header">
 
@@ -81,7 +81,7 @@ return (
 
     <section class="">
         <div class="auto-container">
-            <div class="row">
+            <div class="row reverseFlex">
                 <div class="col-lg-6">
                     <div class="contact-form-area">
                         <div class="sec-title squrebox">
