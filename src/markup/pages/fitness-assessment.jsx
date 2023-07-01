@@ -13,7 +13,7 @@ class fitnessAssessment extends Component {
                 <Header />
                 <section class="team-section padding doctoeback">
                     <section class="container-fluid">
-                        <div class="row align-items-center auto-container">
+                        <div class="row align-items-center auto-container reverseFlex">
 
                             <div class="col-lg-5">
                                 <div class="content-box marginTop40header fitnesback">
@@ -63,7 +63,7 @@ class fitnessAssessment extends Component {
                 </section>
                 <section class="fitnessbox">
                     <div class="auto-container ">
-                        <div class="row align-items-center">
+                        <div class="row align-items-center reverseFlex">
                             <div class="col-lg-6">
                                 <div class="sec-title squrebox">
                                     <p className='font22'>
@@ -84,7 +84,7 @@ class fitnessAssessment extends Component {
                 </section>
                 <section class="team-section">
                     <div class="auto-container">
-                        <div class="row align-items-center">
+                        <div class="row align-items-center reverseFlex">
                             <div class="col-lg-6">
                                 <img src={require('../../assets/images/shape/fitness2.png')} alt="" className='widthimg' />
                             </div>

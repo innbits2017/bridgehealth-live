@@ -124,7 +124,7 @@ class aboutUs extends Component {
 
 
                 <div class="auto-container marginTop50 marginTop0">
-                    <div class="row align-items-center">
+                    <div class="row align-items-center reverseFlex">
 
                         <div class="col-lg-6">
                             <div class="contact-form-area">
@@ -181,7 +181,7 @@ class aboutUs extends Component {
                 <section class=" heath-margin">
 
                     <div class="auto-container">
-                        <div class="row">
+                        <div class="row reverseFlex">
 
 
                             <div class="col-lg-5">
