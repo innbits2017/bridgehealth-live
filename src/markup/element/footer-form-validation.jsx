@@ -42,7 +42,7 @@ class FooterFormValidation extends Component {
 
         // Validate username
         if (username.trim() === '') {
-            errors.username = 'Username is required';
+            errors.username = 'Name is required';
         }
 
         // Validate email

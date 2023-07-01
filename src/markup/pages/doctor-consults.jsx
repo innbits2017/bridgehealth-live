@@ -128,7 +128,7 @@ class doctor_consults extends Component {
                             <h2 className='header1'>
                                 <span className='headeingcolorblack'> It’s a </span>
                                 <span className='headeingcolorblue'> Doctor on call. </span>
-                                <span className='headeingcolorblack'> literally! </span>
+                                <span className='headeingcolorblack'> Literally! </span>
                             </h2>
                         </div>
                         <div class="btn-box text-center btn5">

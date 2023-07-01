@@ -10969,7 +10969,7 @@ a:not([href]):not([tabindex]) {
 .b2bback {
 	background-image: url(../images/shape/Group237656.png);
 	background-position: bottom;
-	padding-bottom: 253px;
+	padding-bottom: 150px;
 	background-repeat: no-repeat;
 	background-size: 100%;
 
@@ -11120,8 +11120,8 @@ a:not([href]):not([tabindex]) {
 
 .b2cimgcenter {
 	background-repeat: no-repeat;
-	background-size: contain;
-	height: 1000px;
+    background-size: cover;
+    height: 980px !important;
 	background-image: url(../images/shape/b2c2.png);
 }
 
@@ -11164,8 +11164,7 @@ a:not([href]):not([tabindex]) {
 }
 
 .margin150 {
-	margin-top: 150px;
-}
+    padding-top: 150px;}
 
 .footer-btn {
 	margin-left: 16%;
@@ -11232,7 +11231,7 @@ a:not([href]):not([tabindex]) {
 
 .annualback {
 	background-image: url(../images/background/personalBackground.png);
-	background-size: contain;
+	background-size: cover;
     padding-top: 189px;
     padding-bottom: 150px;
     background-repeat: no-repeat;
@@ -11871,9 +11870,10 @@ hr {
 	} */
 
 	.aboutcont {
-		display: flex !important;
-		margin-left: 0px !important;
-		padding: 5px !important;
+	    display: flex !important;
+    margin-left: 0px !important;
+    padding: 5px !important;
+    margin-top: 5px !important;
 	}
 
 	.aboutbox {
@@ -12241,11 +12241,14 @@ hr {
 
 .texttile1 {
 	text-align: right;
-	margin-right: 5%;
+	margin-right: 10%;
 
 }
 
-
+.marginRigh
+{
+	margin-right: 10% !important;
+}
 
 @media only screen and (max-width: 600px) {
 	.page-banner .page-banner-bg {
@@ -12485,6 +12488,7 @@ hr {
 .aboutcont {
 	margin-left: 200px;
 	padding: 50px;
+	margin-top: -29px;
 }
 
 .aboutcont h3 {
@@ -12949,7 +12953,7 @@ body > div.fade.modal.show > div > div
 
 .font20 {
 	margin-right: 32px;
-	font-size: 24px;
+	font-size: 22px;
 	text-align: right;
 }
 
@@ -13271,7 +13275,7 @@ margin-top: 50px;
 	padding-left: 0px;
 	width: 32%;
 	background-repeat: no-repeat;
-	background-image: url(../images/shape/dermato.png);
+	/* background-image: url(../images/shape/dermato.png); */
     margin-top: 0% !important;
 }
 .contactheadeing {
@@ -13550,7 +13554,7 @@ margin-top: 50px;
 .border-blue {
 	border: 2px solid #1963C6;
 	color: #00527C;
-	margin-top: 9rem;
+	/* margin-top: 9rem; */
 }
 
 .border-silver {
@@ -14102,6 +14106,7 @@ th {
 	padding: 10px;
 	min-width: 200px;
 	background: white;
+	border-right: 5px solid #fff;
 	box-sizing: border-box;
 	text-align: center;
 }
@@ -14120,7 +14125,7 @@ thead th {
 	top: 0;
 	z-index: 2;
 	/* background: hsl(20, 50%, 70%); */
-	background: #8A979E;
+	background: #d2dbe0;
 }
 
 thead .pers-blue {
@@ -14156,7 +14161,7 @@ thead th:first-child {
 }
 
 tbody .pers-bh {
-	background: #ADD8E6;
+	background: #ADD8E6 !important;
 	/* background: #5dd7d3; */
 	/* background: linear-gradient(180deg, #65DFCD 0%, #229FFD 100%); */
 }
@@ -14206,7 +14211,7 @@ tr> :first-child {
 	text-align: center;
 	position: -webkit-sticky;
 	position: sticky;
-	background: #eaeaea;
+	/* background: #eaeaea; */
 	/* background: hsl(180, 50%, 70%); */
 	left: 0;
 }
@@ -14296,7 +14301,7 @@ tr> :second-child {
 	background-size: cover;
 	background-position: center center;
 	color: #fff;
-	height: 600px;
+	height: 700px;
 	padding-top: 50px;
 }
 
@@ -14531,7 +14536,6 @@ padding: 0px !important;
 }
 label {
     display: inline-block;
-    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
@@ -14621,4 +14625,57 @@ label {
 }
 .commimgsoon {
 padding-top: 30%;
+}
+.pers-bh {
+	background: #65DFCD  !important;
+	/* background: #5dd7d3; */
+	/* background: linear-gradient(180deg, #65DFCD 0%, #229FFD 100%); */
+}
+.pers-bh1
+{
+	background: #65DFCD  !important;
+
+}
+.pers-gold
+{
+background-color: #FFD89F ;
+}
+.pers-plat
+{background-color: #939DA5 ;
+
+}
+.pers-plus
+{
+background-color: #CBCBD8 ;
+}
+.tablebox1
+{
+	box-shadow: 0 3px 20px -2px rgb(108 117 125 / 15%);
+    background: linear-gradient(180deg, rgba(232, 239, 249, 0.25) 0%, #E8EFF9 100%) !important;
+    margin-bottom: 22px;
+    border-radius: 25px;
+    position: relative;
+    color: #1F3075;
+
+}
+.tablebox2
+{
+	box-shadow: 0 3px 20px -2px rgb(108 117 125 / 15%);
+    background: linear-gradient(180deg, rgba(205, 229, 241, 0.25) 0%, #CDE5F1 100%) !important;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    position: relative;
+    color: #1F3075;
+	border-top: 20px solid #fff;
+
+}.tablebox3
+{
+    box-shadow: 0 3px 20px -2px rgb(108 117 125 / 15%);
+    background: linear-gradient(180deg, rgba(25, 99, 198, 0.25) 0%, #1963C6 100%) !important;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    position: relative;
+    color: #fff;
+	border-top: 20px solid #fff;
+
 }
