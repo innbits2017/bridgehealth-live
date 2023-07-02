@@ -29,10 +29,12 @@ return (
             style={{ backgroundImage: "url(" + aboutfair + ")" }}>
             <div class="auto-container">
                 <div class="content-box"  onClick={this.openModal}>
-                    <img src={require('../../assets/images/shape/dermato.png')} alt="" />
+                    <img src={require('../../assets/images/shape/dermato.png')} alt="" className='hidemobile' />
                 </div>
 
             </div>
+            <img src={require('../../assets/images/shape/dera.png')} alt="" className='d-lg-none' />
+
         </section>
 
         <section class="contact-section">
