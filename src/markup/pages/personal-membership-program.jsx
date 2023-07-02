@@ -117,7 +117,7 @@ return (
   <Header />
   <section class="team-section padding personal-health">
     <section class="container-fluid">
-      <div class="row align-items-center auto-container">
+      <div class="row align-items-center auto-container reverseFlex">
 
         <div class="col-lg-6">
           <div class="content-box marginTop40header">
