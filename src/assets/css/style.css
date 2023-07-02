@@ -10894,6 +10894,10 @@ a:not([href]):not([tabindex]) {
 }
 
 @media (max-width:560px) {
+	.hidemobile
+	{
+		display: none;
+	}
 	.commimgsoon {
 		padding-top: 70% !important;
 	}
@@ -11557,13 +11561,13 @@ hr {
 	}
 
 	.width50 {
-		width: 90% !important;
-	}
+		width: 149px !important;	}
 
 	.width50p {
 		text-align: center !important;
 		line-height: 22px !important;
 		font-size: 13px !important;
+		width: 164px !important;
 	}
 
 	.modal-header {
@@ -13143,9 +13147,11 @@ margin-top: 50px;
 
 .aboutgraph {
 	background: linear-gradient(128.75deg, #D7F5FF 0%, #FFFFFF 88.74%);
-	border: 1px dashed #000000;
-	border-radius: 129px;
-	padding: 50px;
+    border: 1px dashed #000000;
+    border-radius: 129px;
+    width: 75%;
+    padding: 50px;
+    margin-left: 10%;
 }
 
 .careerpadding {
