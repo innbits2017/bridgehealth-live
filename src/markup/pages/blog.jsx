@@ -68,7 +68,40 @@ class Blog extends Component {
 
                 {/* <!-- News Section --> */}
                 <section class="news-section blogdesignerd blogPagebackground">
-                    <div class="container blogPagebox">
+                    <div class="container blogPagebox d-lg-none">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+
+                                <div class="bg-white p-5">
+                                    {/* <!-- Search --> */}
+                                    <div class="">
+                                        <div class="mobile-input">
+                                            <form action="#" class="language-switcher">
+                                                <select className='blog-bgcolor'>
+                                                    <option value="1">Category </option>
+                                                    <option value="1">FR</option>
+                                                    <option value="1">SP</option>
+                                                    <option value="1">BE</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                        <form>
+                                            <div class="mobile-input">
+                                                <input
+                                                    name="search-field"
+                                                    value={this.state.searchTerm}
+                                                    onChange={this.handleSearchTermChange}
+                                                    placeholder="Search Topic"
+                                                    required="" />
+                                                <button type="submit" className='submitsearch'><span class="icon far fa-search searchblog"></span></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container blogPagebox mobilehide">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
 
@@ -101,7 +134,6 @@ class Blog extends Component {
                             </div>
                         </div>
                     </div>
-
 
                     <div class="auto-container" >
                         <div class="row">
