@@ -11448,8 +11448,7 @@ hr {
 	}
 
 	.p-5 {
-		padding: 2rem !important;
-		margin-left: -32px;
+		padding: 1rem !important;
 	}
 
 	.fonts {
@@ -11561,13 +11560,13 @@ hr {
 	}
 
 	.width50 {
-		width: 149px !important;	}
+		width: 169px !important;	}
 
 	.width50p {
 		text-align: center !important;
 		line-height: 22px !important;
 		font-size: 13px !important;
-		width: 164px !important;
+		width: 169px !important;
 	}
 
 	.modal-header {
@@ -11986,7 +11985,7 @@ hr {
 		margin-left: 10% !important;
 		margin-top: 20px;
 		font-weight: 600;
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	.testback {
@@ -12262,7 +12261,7 @@ hr {
 		flex-direction: column-reverse;
 	}
 	.page-banner .page-banner-bg {
-		background-size: contain !important;
+		background-size: contain;
 	}
 	.marginTop0
 	{
@@ -12938,8 +12937,19 @@ body > div.fade.modal.show > div > div
 }
 
 @media only screen and (max-width: 600px) {
+	.background-size-cover
+	{
+		background-size: cover !important;
+	}
 	.mobilehide {
 		display: none;
+	}
+	.mobile-input {
+		border: 1px solid #bab7b7;
+		padding: 10px;
+		width: -moz-fit-content;
+		border-radius: 10px;
+		margin-bottom: 15px
 	}
 }
 
@@ -13133,7 +13143,7 @@ margin-top: 50px;
 	width: 100%;
 	background: #FFBD3E;
 	border-radius: 0px 25px 159px 0px;
-	padding: 0px !important;
+	padding: 38px 0px 1px 105px;
 }
 
 .fitnesback {
@@ -14404,6 +14414,7 @@ button.sub-btn1 {
 
 .blog-bgcolor {
 	background-color: #FFFFFF;
+	width: 100%;
 }
 
 
@@ -14695,3 +14706,5 @@ background-color: #CBCBD8 ;
 	border-top: 20px solid #fff;
 
 }
+.marginleft20forpersonal1{
+    margin-top: 50px;}

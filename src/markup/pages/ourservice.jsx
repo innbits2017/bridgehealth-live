@@ -22,7 +22,39 @@ class ourservice extends Component {
         return (
             <>
                 <Header />
-                <section class="team-section padding">
+                <section class="team-section padding d-lg-none">
+                    {/* About Section Two */}
+                    <section class="auto-container ourservice serviceMarginTop">
+                        <div class="row align-items-center ">
+
+                            <div class="col-lg-6">
+                                <div class="content-box boxsha marginleft8">
+
+                                    <div class=" text-center textleft">
+                                        <h2 className='textleft'><span className='headeingcolorblue'>Our Services</span></h2>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="text">
+                                            With our suite of personalised preventive health plans, you and your loved ones can enjoy the benefits of a healthier tomorrow.
+                                            It’s time to #BridgeTheGap between you and your health.
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-wrapper">
+                                    <div class="image-one">
+                                        <img src={require('../../assets/images/shape/service222.png')} alt="" className='imgwidth margin-left97' />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                {/* <!--End Banner Section --> */}
+                <section class="team-section padding mobilehide">
                     {/* About Section Two */}
                     <section class="auto-container ourservice serviceMarginTop">
                         <div class="row align-items-center ">
@@ -54,7 +86,6 @@ class ourservice extends Component {
                     </section>
                 </section>
                 {/* <!--End Banner Section --> */}
-
 
                 {/* <!-- Gallery Section --> */}
                 <section class="gallery-section ourservice1">

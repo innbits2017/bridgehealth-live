@@ -276,10 +276,10 @@ class corporate_membership_program extends Component {
                         </div>
                     </div>
                 </div>
-                <section class="container-fluid b2bback margin150">
+                <section class="container-fluid b2bback">
 
                     <div className='auto-container '>
-                        <div class="sec-title text-center textleft">
+                        <div class="sec-title text-center textleft marginleft20forpersonal1">
                             <h3 className='fonts'> <span className='headeingcolorblue'>BRIDGE HEALTH </span>
                                 makes it possible for  <span className='headeingcolorblue'> Employers </span>to <br></br>keep a check on their  <span className='headeingcolorblue'> Employees’ Health Metrics </span></h3>
 

@@ -11,7 +11,7 @@ return (
         {/*
         <!-- Page Banner Section --> */}
         <section class="page-banner">
-            <div className="page-banner-bg" style={{ backgroundImage: "url(" + aboutbg + ")" }}></div>
+            <div className="page-banner-bg background-size-cover" style={{ backgroundImage: "url(" + aboutbg + ")" }}></div>
             <div class="bottom-rotten-curve alternate"></div>
         </section>
         <div class="auto-container  ">
