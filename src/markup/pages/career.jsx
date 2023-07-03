@@ -14,25 +14,25 @@ class Career extends Component {
             jobs: [
                 {
                     title: 'Client Advisor',
-                    location: 'Bengaluru, Karnataka, India',
+                    location: 'Bengaluru',
                     department: 'Technology',
                     timing: 'Full-time'
                 },
                 {
                     title: 'Client Advisor',
-                    location: 'Bengaluru, Karnataka, India',
+                    location: 'Bengaluru',
                     department: 'Technology',
                     timing: 'Full-time'
                 },
                 {
                     title: 'Client Advisor',
-                    location: 'Bengaluru, Karnataka, India',
+                    location: 'Bengaluru',
                     department: 'Technology',
                     timing: 'Full-time'
                 },
                 {
                     title: 'Client Advisor',
-                    location: 'Bengaluru, Karnataka, India',
+                    location: 'Bengaluru',
                     department: 'Technology',
                     timing: 'Full-time'
                 },
@@ -119,12 +119,12 @@ class Career extends Component {
                     <div class="row" style={{ background: 'white' }}>
                         <div class="col-lg-8 mx-auto">
 
-                            <div class="bg-white p-5 ">
+                            <div class="bg-white">
                                 {/* <!-- Search --> */}
-                                <div class=" search-box">
+                                <div class="d-lg-none">
 
                                     <form>
-                                        <div class="form-group1">
+                                        <div class="mobile-input">
                                             <input
                                                 // type="search"
                                                 name="search-field"
@@ -135,7 +135,7 @@ class Career extends Component {
                                             <button type="submit" className='submitsearch'><span class="icon far fa-search searchblog"></span></button>
                                         </div>
                                     </form>
-                                    <div class="filtter">
+                                    <div class="mobile-input">
                                         <form action="#" class="language-switcher">
                                             <select className='blog-bgcolor'>
                                                 <option value="">Filter</option>
@@ -156,6 +156,42 @@ class Career extends Component {
                                         </form>
                                     </div>
                                 </div>
+                                      {/* <!-- Search --> */}
+                                      <div class=" search-box mobilehide">
+
+<form>
+    <div class="form-group1">
+        <input
+            // type="search"
+            name="search-field"
+            value={this.state.searchTerm}
+            onChange={e => this.handleChange(e)}
+            placeholder="Search Topic"
+            required="" />
+        <button type="submit" className='submitsearch'><span class="icon far fa-search searchblog"></span></button>
+    </div>
+</form>
+<div class="filtter">
+    <form action="#" class="language-switcher">
+        <select className='blog-bgcolor'>
+            <option value="">Filter</option>
+            <option value="1">Clinical Services</option>
+            <option value="2">Operations</option>
+            <option value="3">Corporate Operations</option>
+            <option value="4">Corporate Sales</option>
+            <option value="5">Marketing</option>
+            <option value="6">Technology</option>
+            <option value="7">Pharmacy</option>
+            <option value="8">Sales & Operations</option>
+            <option value="7">Finance</option>
+            <option value="7">HR</option>
+            <option value="7">Facility & Admin</option>
+            <option value="7">Strategic Initiatives</option>
+            <option value="7">Affiliates & Alliances</option>
+        </select>
+    </form>
+</div>
+</div>
                             </div>
                         </div>
                     </div>
@@ -199,7 +235,7 @@ class Career extends Component {
                 </section> */}
 
 
-                <section class="auto-container marginTop50 career-head1">
+                <section class="auto-container marginTop50 career-head1 marginTop40reverse">
                     {filteredJobs.map((job, index) => (
                         <div class="job-card" key={index}>
                             <div class="job-card-header">

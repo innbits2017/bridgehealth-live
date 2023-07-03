@@ -45,7 +45,7 @@ class physiotherapy extends Component {
                     <div class="container-fluid">
                         <div class="row align-items-center">
                             <div class="col-lg-6 doctor-image">
-                                        <img src={require('../../assets/images/shape/p1.png')} alt="" className='width100' />
+                                        <img src={require('../../assets/images/shape/p1.png')} alt="" className='width100 marginTop40reverse' />
                             </div>
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
@@ -73,7 +73,7 @@ class physiotherapy extends Component {
 
                     {/* About Section Two */}
                         <div class="auto-container">
-                            <div class="row align-items-center">
+                            <div class="row align-items-center reverseFlex">
                                    <div class="col-lg-6">
                                     <div class="content-box">
                                         <h2>

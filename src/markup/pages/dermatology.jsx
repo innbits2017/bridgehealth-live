@@ -40,7 +40,7 @@ return (
         <section class="contact-section">
 
             <div class="auto-container">
-                <div class="row">
+                <div class="row reverseFlex">
 
                     <div class="col-lg-6">
                         <div class="sec-title squrebox">
@@ -60,7 +60,7 @@ return (
 
                     <div class="col-lg-6">
                         <img src={require('../../assets/images/shape/darma.png')} alt=""
-                            className='widthimg imgFloatRight' />
+                            className='widthimg imgFloatRight marginTop40reverse' />
                     </div>
 
                 </div>
