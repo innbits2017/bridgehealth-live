@@ -3,9 +3,14 @@ const path = require('path')
 
 
 /* 
-add any new route to this route array first and run script "npm run sitemap" , 
+1. add any new route to this route array first and run script "npm run sitemap" , 
 this script will update sitemap.xml file seo.
+
+2. please make sure the generated sitemap.xml file will be accesible at location 
+'https://bridgehealth.in/sitemap.xml' after deployment
  */
+
+
 function generateSitemap() {
   const routes = [
     '/',
