@@ -4163,8 +4163,7 @@ img.lazy-image.loaded {
 	z-index: 2;
 	padding-top: 300px;
 }
-
-.video-background-overlay {
+ /* .video-background-overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -4173,7 +4172,7 @@ img.lazy-image.loaded {
 	background-color: black;
 	opacity: 0.5;
 	z-index: 1;
-}
+}  */
 
 .display-4 {
 	display: block;
@@ -4217,6 +4216,9 @@ img.lazy-image.loaded {
 .floatleft {
 	float: left;
 }
+/* .video-item {
+   margin-bottom: 917px;
+} */
 
 .floatleft .btn-box {
 	float: left;
@@ -11509,7 +11511,9 @@ hr {
 	}
 
 	.videowidthMobile {
-		max-height: 207px !important;
+		/* max-height: 207px !important; */
+		max-height: 100% !important;
+        width: 100%;
 	}
 
 	.internalpageresponsive {
@@ -11665,9 +11669,17 @@ hr {
 		line-height: 1.15em;
 		color: #ffffff !important;
 		font-weight: 700;
-		margin-bottom: 20px;
+		/* margin-bottom: 20px; */
+		/* margin-bottom: -212px; */
 		letter-spacing: 0;
 		text-align: center;
+	}
+
+	h5.display-4 {
+		color: #fff !important;
+		margin-top: -265px;
+		z-index: 3;
+		position: relative;
 	}
 
 	.display-3 {
@@ -14322,13 +14334,13 @@ tr> :second-child {
 }
 
 .bg-overlay {
-	background-image: url(../images/Comp1.gif);
+	/* background-image: url(../images/Comp1.gif); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	color: #fff;
-	height: 700px;
-	padding-top: 50px;
+	/* height: 700px; */
+	/* padding-top: 50px; */
 }
 
 
