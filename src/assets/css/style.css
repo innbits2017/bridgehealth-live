@@ -12404,7 +12404,7 @@ hr {
 		margin-top: 20px;	}
 
 	.box img {
-		height: 86px;
+		height: 99px;
 	}
 
 	.expertiseback1 {
@@ -13999,10 +13999,12 @@ body>div.fade.popupform.modal.show>div>div {
 }
 
 .form-check-label {
-	font-size: 15px;
-	color: #fff;
-	margin-right: 33px;
-	margin-left: 27px;
+	font-size: 13px;
+    color: #fff;
+    font-weight: 400 !important;
+    margin-right: 20px;
+    line-height: 21px;
+    margin-left: 27px;
 }
 
 .submitbutton {
@@ -14339,6 +14341,7 @@ tr> :second-child {
 	background-size: cover;
 	background-position: center center;
 	color: #fff;
+	padding: 0px !important;
 	/* height: 700px; */
 	/* padding-top: 50px; */
 }
