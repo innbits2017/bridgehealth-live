@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 import ContactForm from '../element/contact-form';
+import { Helmet } from 'react-helmet-async';
 
 const aboutbg = require('./../../assets/images/shape/Lab-tests.png');
 class lab_tests extends Component {
@@ -11,8 +12,10 @@ class lab_tests extends Component {
 
 
     render() {
+
         return (
             <>
+            <Helmet> <title>lab_test</title> <meta name="lab-test"content="lab test description here"></meta></Helmet>  
                 <Header />
                 <section class="internalpage internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
                     <div class="auto-container">
