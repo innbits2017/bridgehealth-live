@@ -64,7 +64,7 @@ function generateSitemap() {
     .map((route) => {
       return `
     <url>
-      <loc>https://bridgehealth.in/${route}</loc>
+      <loc>https://bridgehealth.in${route}</loc>
     </url>`;
     })
     .join('')}
