@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 import ContactForm from '../element/contact-form';
-import { Helmet } from 'react-helmet-async';
 
 const aboutbg = require('./../../assets/images/shape/Lab-tests.png');
 class lab_tests extends Component {
@@ -15,7 +14,7 @@ class lab_tests extends Component {
 
         return (
             <>
-            <Helmet> <title>lab_test</title> <meta name="lab-test"content="lab test description here"></meta></Helmet>  
+
                 <Header />
                 <section class="internalpage internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
                     <div class="auto-container">
@@ -117,7 +116,7 @@ class lab_tests extends Component {
                     <section class="">
                         <div class="auto-container">
                             <div class="row align-items-center">
-                                 <div class="col-lg-7">
+                                <div class="col-lg-7">
                                     <div class="content-box">
                                         <div class="row">
                                             <div class="col-lg-6">
@@ -184,8 +183,8 @@ class lab_tests extends Component {
                                 </div>
 
                                 <div class="col-lg-5">
-                                            <img src={require('../../assets/images/shape/lab3.png')} alt="" className='width100' />
-                                        </div>
+                                    <img src={require('../../assets/images/shape/lab3.png')} alt="" className='width100' />
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -229,43 +228,43 @@ class lab_tests extends Component {
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                    <ul className='listicon'>
-                                        <li>
-                                            Preemployment Health Check
-                                        </li>
-                                        <li>
-                                            Intl. Travel Health Check
-                                        </li>
-                                        <li>
-                                            Golfers Health Check
-                                        </li>
-                                        <li>
-                                            Elderly Health Check
-                                        </li>
-                                        <li>
-                                            IT & ITes Health Check
-                                        </li>
-                                    </ul>
+                                <ul className='listicon'>
+                                    <li>
+                                        Preemployment Health Check
+                                    </li>
+                                    <li>
+                                        Intl. Travel Health Check
+                                    </li>
+                                    <li>
+                                        Golfers Health Check
+                                    </li>
+                                    <li>
+                                        Elderly Health Check
+                                    </li>
+                                    <li>
+                                        IT & ITes Health Check
+                                    </li>
+                                </ul>
                             </div>
                             <div class="col-lg-4">
                                 <ul className='listicon'>
-                                        <li>
-                                            Cardiac Health Check
-                                        </li>
-                                        <li>
-                                            Oncology Health Check
-                                        </li>
-                                        <li>
-                                            Diabetic Male/Female
-                                        </li>
-                                        <li>
-                                            Hypertension Health Check
-                                        </li>
-                                        <li>
-                                            Disease Specific Panels
-                                        </li>
-                                    </ul>
-                                </div>
+                                    <li>
+                                        Cardiac Health Check
+                                    </li>
+                                    <li>
+                                        Oncology Health Check
+                                    </li>
+                                    <li>
+                                        Diabetic Male/Female
+                                    </li>
+                                    <li>
+                                        Hypertension Health Check
+                                    </li>
+                                    <li>
+                                        Disease Specific Panels
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div class="btn-box text-center btn5">
@@ -278,9 +277,9 @@ class lab_tests extends Component {
                 <section class="">
 
                     <div class="auto-container">
-                    <div class="row align-items-center">
+                        <div class="row align-items-center">
                             <div class="col-lg-6">
-                                        <img src={require('../../assets/images/shape/lab5.png')} alt="" className='' />
+                                <img src={require('../../assets/images/shape/lab5.png')} alt="" className='' />
                             </div>
 
                             <div class="col-lg-6">
