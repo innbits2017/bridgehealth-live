@@ -11127,7 +11127,7 @@ a:not([href]):not([tabindex]) {
 .b2cimgcenter {
 	background-repeat: no-repeat;
     background-size: cover;
-    height: 980px !important;
+    height: 890px !important;
 	background-image: url(../images/shape/b2c2.png);
 }
 
@@ -11507,7 +11507,7 @@ hr {
 	}
 
 	.marginleft8 {
-		margin-left: 0%;
+		margin-left: 0% !important;
 	}
 
 	.videowidthMobile {
@@ -11677,7 +11677,7 @@ hr {
 
 	h5.display-4 {
 		color: #fff !important;
-		margin-top: -265px;
+		margin-top: -100%;
 		z-index: 3;
 		position: relative;
 	}
@@ -14535,7 +14535,7 @@ button.sub-btn1 {
     padding: 350px 0 265px;
     background-size: cover;
 }
-body > div.fade.widthdialog.modalDialog.modal.show > div > div > div
+/* body > div.fade.widthdialog.modalDialog.modal.show > div > div > div
 {
 	width: 960px !important;
 }
@@ -14544,7 +14544,7 @@ body > div.fade.widthdialog.modalDialog.modal.show > div > div
 	width: 960px !important;
 	margin-left: -17%;
 
-}
+} */
 .modal-header .close {
 	padding: 0px !important;
     margin: -35px -1rem -3rem auto !important;
@@ -14728,4 +14728,40 @@ background-color: #CBCBD8 ;
 .marginTopTeam
 {
 	margin-top: 12%;
+}
+.popup2
+{		    width: 200px;
+    margin-left: 9px !important;
+}
+.popup2p {
+    text-align: center;
+    line-height: 30px;
+    margin-top: 15px;
+    font-size: 21px;
+    width: 210px;
+    color: #000;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px)
+{
+
+.popup2 {
+    width: 110px !important;
+
+}
+.popup2p
+{
+	text-align: center;
+    line-height: 19px;
+    margin-top: 15px;
+    font-size: 13px;
+    width: 125px;
+    color: #000;
+    text-decoration: underline;
+}
+.modal-content {
+    margin-top: 30% !important;
+    width: 100% !important;
+}
 }
