@@ -85,7 +85,7 @@ class FooterFormValidation extends Component {
 
         const { email, username } = this.state;
 
-        const res = await fetch('https://mail.bridgehealth.in/footer', {
+        const res = await fetch('https://mail.bridgehealth.in/footer-contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
