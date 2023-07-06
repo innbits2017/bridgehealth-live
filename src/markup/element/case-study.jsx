@@ -36,20 +36,21 @@ class CaseStudy extends Component {
                 <Modal show={this.state.isOpen} onHide={this.closeModal} className='widthdialog modalDialog'>
                     <Modal.Header closeButton>
                         <a href={'/diabetes'}>
-                            <span><img class="width50" src={require('../../assets/images/shape/healthdevice.png')} alt="" />
-                                <p className='width50p'>Diabetes Management</p>
+                            <span><img class="popup2" src={require('../../assets/images/shape/healthdevice.png')} alt="" />
+                                <p className='popup2p'>Diabetes Management</p>
                             </span>
                         </a>
                         <a href={'/hyper-tension'}>
                             <span>
-                                <img class="width50" src={require('../../assets/images/shape/blood.png')} alt="" />
-                                <p className='width50p'>Hypertension Management</p>
+                                <img class="popup2" src={require('../../assets/images/shape/blood.png')} alt="" />
+                                <p className='popup2p'>Hypertension Management</p>
                             </span>
                         </a>
+                        
                         <a href={'/manage-weight'}>
                             <span>
-                                <img class="width50" src={require('../../assets/images/shape/apple.png')} alt="" />
-                                <p className='width50p'>Weight Management</p>
+                                <img class="popup2" src={require('../../assets/images/shape/apple.png')} alt="" />
+                                <p className='popup2p'>Weight Management</p>
                             </span>
                         </a>
                     </Modal.Header>

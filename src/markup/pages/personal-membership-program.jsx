@@ -483,7 +483,7 @@ return (
                 <p class="buy-btn border-blue BhBlue">₹16,999</p>
               </td>
               <td className="pers-plat">
-                <p class="buy-btn border-blue BhBlue">₹24,99</p>
+                <p class="buy-btn border-blue BhBlue">₹24,999</p>
               </td>
               <td className="pers-plus">
                 <p class="buy-btn border-blue BhBlue">₹29,999</p>
