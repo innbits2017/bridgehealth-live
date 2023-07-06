@@ -168,7 +168,7 @@ class Footer extends Component {
                                         <div class="widget-content">
 
                                             <div class="footer-logo">
-                                                <Link to="index.html">
+                                                <Link to="/">
                                                     <img class="" src={require('../../assets/images/logo.png')} alt="" /></Link>
                                             </div>
                                         </div>
