@@ -147,7 +147,7 @@ class Index extends Component {
                     </video>
                     <div class="video-background-content h-100">
                         <div class="text-center">
-                            <div class="text-white floatleft">
+                            <div class="text-white floatleft paddingtext">
                                 <h5 class="display-4"><span class="display-3">Let’s help you </span>#BridgeTheGap</h5>
                                 <p class="lead mb-0">Personalised and holistic preventive<br></br> health plans for you and your loved ones
                                 </p>

@@ -3,8 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { HelmetProvider } from 'react-helmet-async';
+import { hydrate, render } from "react-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+    hydrate(<HelmetProvider><App /></HelmetProvider>, rootElement);
+} else {
+    render(<HelmetProvider><App /></HelmetProvider>, rootElement);
+}
+
+
+// ReactDOM.render(<HelmetProvider><App /></HelmetProvider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

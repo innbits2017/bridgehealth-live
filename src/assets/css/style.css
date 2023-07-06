@@ -11486,7 +11486,7 @@ hr {
 	.leader-btn1 {
 		text-decoration: underline;
 		color: #00B2FF !important;
-		margin-top: -1rem;
+		margin-top: 6rem;
 		margin-left: 41%;
 		font-size: 20px;
 		font-weight: 500;
@@ -11513,7 +11513,7 @@ hr {
 	.videowidthMobile {
 		/* max-height: 207px !important; */
 		max-height: 100% !important;
-        width: 100%;
+        /* width: 100%; */
 	}
 
 	.internalpageresponsive {
@@ -11564,7 +11564,7 @@ hr {
 	}
 
 	.width50 {
-		width: 169px !important;	}
+		width: 150px !important;	}
 
 	.width50p {
 		text-align: center !important;
@@ -11994,7 +11994,7 @@ hr {
 
 	.textpa {
 		text-align: center;
-		margin-left: 10% !important;
+		margin-left: 20% !important;
 		margin-top: 20px;
 		font-weight: 600;
 		font-size: 12px;
@@ -13991,7 +13991,6 @@ body>div.fade.popupform.modal.show>div>div {
 .widthinput {
 	width: 100%;
     margin-bottom: 20px;
-    margin-left: 6px;
 }
 
 .textareaheight {
@@ -14745,9 +14744,21 @@ background-color: #CBCBD8 ;
 
 @media only screen and (max-width: 600px)
 {
-
+	.choose_slider_items .previous_item_2
+	{
+		opacity: 0 !important;
+	}
+	.choose_slider_items .previous_item
+	{
+		opacity: 0 !important;
+	}
+	.choose_slider_items ul li p {
+		font-size: 13px !important;
+		letter-spacing: 0.3px;
+		color: #000;
+	  }
 .popup2 {
-    width: 110px !important;
+    width: 100px !important;
 
 }
 .popup2p
@@ -14756,12 +14767,21 @@ background-color: #CBCBD8 ;
     line-height: 19px;
     margin-top: 15px;
     font-size: 13px;
-    width: 125px;
-    color: #000;
+    width: 100px;
+	color: #000;
     text-decoration: underline;
 }
 .modal-content {
     margin-top: 30% !important;
     width: 100% !important;
 }
+.paddingtext
+{
+	padding: 5px;
+}
+.textwidth p {
+    font-size: 15px !important;
+}
+
+
 }
