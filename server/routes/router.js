@@ -12,18 +12,6 @@ router.get("/health", (req, res) => {
     })
 });
 
-router.get("/job", (req, res) => {
-    res.send({
-        data: "I am getting this job"
-    })
-});
-
-router.get("/new", (req, res) => {
-    res.send({
-        data: "I am getting this job"
-    })
-});
-
 
 //save formData
 router.post('/submit', formController.submitForm);
@@ -97,7 +85,7 @@ router.post("/register", (req, res) => {
 });
 
 // foother mail
-router.post("/footer", (req, res) => {
+router.post("/footer-contact", (req, res) => {
     console.log("I am ENV File", process.env);
 
     const { email, username } = req.body;
