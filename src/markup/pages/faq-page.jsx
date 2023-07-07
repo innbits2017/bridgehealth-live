@@ -12,12 +12,12 @@ class FAQ extends Component {
             <>
                 <Header />
 
-              {/* <!-- Page Banner Section --> */}
-              <section class="page-banner commimgsoon">
+                {/* <!-- Page Banner Section --> */}
+                <section class="page-banner commimgsoon">
                     <div className="page-banner-bg" style={{ backgroundImage: "url(" + aboutbg + ")" }}></div>
                     <div class="bottom-rotten-curve alternate"></div>
                 </section>
-               
+
                 <Footer />
             </>
         )
