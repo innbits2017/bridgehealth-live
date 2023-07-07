@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import Seo from '../layout/seo';
 
 const aboutbg = require('./../../assets/images/background/direct.jpg');
 const wellcomebg1 = require('./../../assets/images/resource/image-1.jpg');
@@ -34,11 +35,15 @@ class leadership extends Component {
 
 
     render() {
+        const title = "Board of Directors: Inspiring Leaders at Bridge Health";
+        const description = "Meet the accomplished & experienced members of Bridge health's Board of Directors who provide strategic guidance and leadership to drive the success of our organization.";
+        // const metadata = "steel building, steel buildings";
 
         const { showFullContent1, showFullContent2 } = this.state;
 
         return (
             <>
+             <Seo title={title} description={description} />
                 <Header />
                 
                 <img src={require('./../../assets/images/background/direct.jpg')} alt="" className='imgwidth100'/>
