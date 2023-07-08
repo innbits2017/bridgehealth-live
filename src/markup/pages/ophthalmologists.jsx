@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 import ContactForm from '../element/contact-form';
-import Seo from '../layout/seo';
 
 
 
@@ -13,17 +12,13 @@ class ophthalmologist extends Component {
         document.title = 'Ophthalmologist | Bridge Health';
     }
     render() {
-        const title = "Best Ophthalmologist Services |Best Eye check up in Bangalore";
-        const description = "Book consultations with the best ophthalmologists in Bangalore. We need to take care of our eyes to prevent any eye-related illnesses. Meet our ophthalmologists today for expert eye checkup.";
-        // const metadata = "steel building, steel buildings";
         return (
             <>
-                <Seo title={title} description={description} />
                 <Header />
                 <section class="internalpage style-two internalpageresponsive" style={{ backgroundImage: "url(" + abouteye + ")" }}>
                     <div class="auto-container">
                         <div class="content-box">
-                            <h1 className='d-none'></h1>
+
                             <div class=" text-center textleft">
                                 <h2 className='textleft fontSize'>
                                     <span className='headeingcolorblack'> Experience the benefits </span><br></br>
@@ -47,7 +42,7 @@ class ophthalmologist extends Component {
                     <div class="auto-container">
                         <div class="row align-items-center">
                             <div class="col-lg-6">
-                                <img src={require('../../assets/images/shape/eye1.png')} alt="" className='widthimg' />
+                                        <img src={require('../../assets/images/shape/eye1.png')} alt="" className='widthimg' />
                             </div>
                             <div class="col-lg-6">
                                 <div class="contact-form-area">
