@@ -3,7 +3,6 @@ import Header from '../layout/header'
 import Footer from '../layout/footer'
 import CaseStudy from '../element/case-study';
 import { Modal, Button } from "react-bootstrap";
-import Seo from '../layout/seo';
 class ourservice extends Component {
     state = {
         isOpen: false
@@ -20,12 +19,8 @@ class ourservice extends Component {
 
 
     render() {
-        const title = "Best preventive healthcare services in Bangalore | Call for details -Bridge Health";
-        const description = "Explore Bridge health comprehensive range of services designed to meet your specific needs. From Doctor consultation, Lab test, health checks, chronic care programs, Personal annual health plans to home care & more.";
-        // const metadata = "steel building, steel buildings";
         return (
             <>
-              <Seo title={title} description={description} />
                 <Header />
                 <section class="team-section padding d-lg-none">
                     {/* About Section Two */}

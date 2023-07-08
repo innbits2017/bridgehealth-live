@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 import ContactForm from '../element/contact-form';
-import Seo from '../layout/seo';
 
 const aboutbg = require('./../../assets/images/shape/Lab-tests.png');
 class lab_tests extends Component {
@@ -12,20 +11,16 @@ class lab_tests extends Component {
 
 
     render() {
-        const title = "Best Blood Test Services & Best Pathology Lab In Bangalore - Bridge Health";
-        const description = "Best & wide range of lab tests & diagnostic services in Bangalore. Fast and reliable results, Book your lab tests today. Home sample available|Book Now";
-        // const metadata = "steel building, steel buildings";
 
         return (
             <>
-                <Seo title={title} description={description} />
+
                 <Header />
                 <section class="internalpage internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
                     <div class="auto-container">
                         <div class="content-box">
 
                             <div class=" text-center textleft">
-                                <h1 className='d-none'></h1>
                                 <h2 className='textleft fontSize'>
                                     <span className='headeingcolorblack'> Diagnostics done the  </span><br></br>
                                     <span className='headeingcolorblue'> right way</span>

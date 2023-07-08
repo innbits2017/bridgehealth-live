@@ -9,8 +9,6 @@ import { Modal, Button } from "react-bootstrap";
 import CaseStudy from '../element/case-study';
 import ContactForm from '../element/contact-form';
 import FormValidation from './formvalidation';
-import Seo from '../layout/seo';
-
 const BRIDGE_HEALTH_SITE = process.env.BRIDGE_HEALTH_SITE;
 
 class Index extends Component {
@@ -133,16 +131,11 @@ class Index extends Component {
         }
     };
     render() {
-        const title = "Personalised & Holistic Preventive Health-Bridge Health";
-        const description = "Best preventive healthcare services in Bangalore. Complete range of healthcare services under one roof. Achieve your health goals with Bridge Health's personalized & holistic preventive health plans. Customized plans & innovative solutions for a healthier lifestyle.";
-        // const metadata = "steel building, steel buildings";
-
 
         const { isSubmitDisabled, errors } = this.state;
 
         return (
             <>
-                <Seo title={title} description={description} />
 
                 <Header />
 

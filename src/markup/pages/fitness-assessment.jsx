@@ -2,19 +2,14 @@ import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 import ContactForm from '../element/contact-form';
-import Seo from '../layout/seo';
 
 class fitnessAssessment extends Component {
     componentDidMount() {
         document.title = 'Fitness Assessment | Bridge Health';
     }
     render() {
-        const title = "Stay Fit With Best Gym in Bangalore |Call now- Bridge Health";
-        const description = "Best gym in Bangalore for workouts with incredible offers on gym memberships. Join Bridge health, one of the top gyms in Bangalore. Contact gym trainer online. ";
-        // const metadata = "steel building, steel buildings";
         return (
             <>
-                <Seo title={title} description={description} />
                 <Header />
                 <section class="team-section padding doctoeback">
                     <section class="container-fluid">
@@ -22,7 +17,7 @@ class fitnessAssessment extends Component {
 
                             <div class="col-lg-5">
                                 <div class="content-box marginTop40header fitnesback">
-                                    <h1 className='d-none'></h1>
+
                                     <div class="sec-title text-center textleft">
                                         <h2 className='textleft fontSize50'>
                                             <span className='headeingcolorblack'> It’s time to get</span> <br></br>
