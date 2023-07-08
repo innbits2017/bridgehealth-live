@@ -2,14 +2,19 @@ import React, { Component } from 'react';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 import Testimonial1 from '../element/testimonial1';
+import Seo from '../layout/seo';
 
 const aboutbg = require('./../../assets/images/background/image-11.jpg');
 const wellcomebg1 = require('./../../assets/images/resource/image-1.jpg');
 
 class Team extends Component {
     render() {
+        const title = "Trusted Preventive Health Specialists | Bridge Health";
+        const description = "Get to know the talented individuals who make up Bridge health's exceptional team. Experienced & dedicated in delivering high-quality services & driving our mission forward.";
+        // const metadata = "steel building, steel buildings";
         return (
             <>
+            <Seo title={title} description={description} />
                 <Header />
 
                 <div className='marginTopTeam'>

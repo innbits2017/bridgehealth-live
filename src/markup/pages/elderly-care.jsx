@@ -4,6 +4,7 @@ import { Nav, Tab, } from 'react-bootstrap';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 import ContactForm from '../element/contact-form';
+import Seo from '../layout/seo';
 
 class elderlyCare extends Component {
 
@@ -12,8 +13,12 @@ document.title = 'Elderly Care | Bridge Health';
 }
 
 render() {
+    const title = "Best Elder care / Geriatric care Services in Bangalore | Bridge Health";
+    const description = "Comprehensive senior care services. Best Doctor for Geriatric care in Bangalore Discover our elderly care services at Bridge Health.";
+    // const metadata = "steel building, steel buildings";
 return (
 <>
+<Seo title={title} description={description} />
     <Header />
 
     <section class="team-section padding doctoeback">
@@ -23,6 +28,7 @@ return (
                 <div class="col-lg-5">
                     <div class="content-box marginTop40header">
                         <div class="sec-title text-center textleft">
+                            <h1 className='d-none'></h1>
                             <h2 className='textleft fontSize50'>
                                 <span className='headeingcolorblack'> Age is not just </span>
                                 <br></br>
