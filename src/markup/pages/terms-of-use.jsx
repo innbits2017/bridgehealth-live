@@ -23,7 +23,7 @@ class termsOfUse extends Component {
                         <div>
                             <h4>Welcome to Who We Are - Bridge Health Medical and Digital Solutions!</h4>
                             <p>
-                                These terms and conditions outline the rules and regulations for the use of Bridge Medical and Digital Solutions Private Limited's Website, located at https://www.bridgehealthgroup.com/. <br></br><br></br>
+                                These terms and conditions outline the rules and regulations for the use of Bridge Medical and Digital Solutions Private Limited's Website, located at <a href="https://www.bridgehealthgroup.com/">https://www.bridgehealthgroup.com/</a>. <br></br><br></br>
 
                                 By accessing this website we assume you accept these terms and conditions. Do not continue to use Who We Are - Bridge Health Medical and Digital Solutions if you do not agree to take all of the terms and conditions stated on this page. <br></br><br></br>
 

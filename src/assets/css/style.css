@@ -12963,6 +12963,11 @@ body > div.fade.modal.show > div > div
 		border-radius: 10px;
 		margin-bottom: 15px
 	}
+
+
+	.term-policy {
+		margin: -30px 50px 30px 50px !important;
+	}
 }
 
 
@@ -14787,5 +14792,5 @@ background-color: #CBCBD8 ;
 }
 
 .term-policy {
-	margin: 30px 100px 30px 100px;
+	margin: 0 100px 30px 100px;
 }
