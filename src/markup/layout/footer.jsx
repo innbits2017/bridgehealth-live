@@ -155,18 +155,12 @@ class Footer extends Component {
 
         return (
             <>
-                <footer class="main-footer">
+                <footer class="main-footer hidemobile">
                     <div class="ontainer-fluid">
-
-                        <div class="widgets-section">
                             <div class="row clearfix">
-
-
                                 <div class="col-lg-2">
                                     <div class="footer-widget logo-widget">
-
                                         <div class="widget-content">
-
                                             <div class="footer-logo">
                                                 <Link to="/">
                                                     <img class="" src={require('../../assets/images/logo.png')} alt="" /></Link>
@@ -242,7 +236,85 @@ class Footer extends Component {
 
                             </div>
 
+                    </div>
+
+                    <div class="auto-container copy">
+                        <div class="footer-bottom">
+                            <div class="copyright">Copyright © 2023 Bridge Health, All Rights Reserved</div>
                         </div>
+                    </div>
+                </footer>
+                <footer class="main-footer d-lg-none">
+                    <div class="ontainer-fluid">
+                            <div class="row clearfix">
+                                <div class="col-lg-2">
+                                    <div class="footer-widget logo-widget">
+                                        <div class="widget-content">
+                                            <div class="footer-logo">
+                                                <Link to="/">
+                                                    <img class="" src={require('../../assets/images/logo.png')} alt="" /></Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-6">
+                                    <div class="footer-widget links-widget">
+                                        <div class="widget-content">
+                                            <div class="displayflex">
+                                            <div class="footermobile">
+                                                <ul>
+                                                    <li><a href={'/our-services'}>Our Services</a></li>
+                                                    <li><a href={'/personal-membership-program'}>Personal Memberships</a></li>
+                                                    <li><a href={'/corporate-membership-program'}>Corporate Memberships</a></li>
+                                                    <li><a href={'/team'}>Clinical Team</a></li>
+                                                    <li><a href="/leadership">Leadership Team</a></li>
+                                                    <li><a href={'/experience-centre'}>Experience Center</a></li>
+                                                    <li><a href={'/health-risk-assessment'}>Health Risk Assessment</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="footermobile">
+                                                <ul>
+                                                    <li><a href={'/about-us'}>About us</a></li>
+                                                    <li><a href={'/media-and-pr'}>Media</a></li>
+                                                    <li><a href={'/blog'}>Blogs</a></li>
+                                                    <li><a href={'/career'}>Careers</a></li>
+                                                    <li><a href={'/contact-us'}>Contact</a></li>
+                                                    <li><a href={'/terms-of-use'}>T & C</a></li>
+                                                    <li><a href={'/faq-page'}>FAQ</a></li>
+
+                                                </ul>
+                                            </div>
+                                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-4">
+                                    <div class="footer-widget instagram-widget">
+                                        <div class="contact-form-area">
+                                            <ul class="social-links clearfix">
+                                                <span className='socialp'>Follow Us On</span>
+                                                <li>
+                                                    <a href="https://www.facebook.com/bridgehealthgroup" target="_blank" rel="noopener noreferrer"><span class="fab fa-facebook-f"></span></a>
+                                                </li>
+                                                <li><a href="https://www.linkedin.com/company/bhmds/" target="_blank" rel="noopener noreferrer"><span class="fab fa-linkedin"></span></a></li>
+                                                <li><a href="https://www.youtube.com/@bridgehealthmedicaldigital8758" target="_blank" rel="noopener noreferrer"><span class="fab fa-youtube"></span></a></li>
+                                                <li>
+                                                    <a href="https://www.instagram.com/bridgehealthgroup/" target="_blank" rel="noopener noreferrer"><span class="fab fa-instagram"></span></a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
                     </div>
 
                     <div class="auto-container copy">
