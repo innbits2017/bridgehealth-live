@@ -14732,3 +14732,26 @@ margin-top: 50px;
       {
         margin-left: 3%;
       }
+
+
+      /* LeaderShip page */
+
+      .mobile-img {
+        display: none; /* Initially hide the mobile image for desktop */
+      }
+      
+      .desktop-img {
+        display: block; /* Initially show the desktop image for desktop */
+      }
+      
+      /* Media query for mobile devices */
+      @media only screen and (max-width: 768px) {
+        .mobile-img {
+          display: block; /* Show the mobile image for mobile devices */
+        }
+        
+        .desktop-img {
+          display: none; /* Hide the desktop image for mobile devices */
+        }
+      }
+      
