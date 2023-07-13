@@ -641,6 +641,14 @@ class Index extends Component {
                 <popup />
                 {/* <!-- News Section --> */}
                 <section class="auto-container3">
+                <section class="">
+                        <div class="auto-container">
+                            <div class="sec-title text-center blogTitle">
+                                <h2> <span className='headeingcolorblue'>OUR </span> <span className='headeingcolorblack'>BLOGS</span><br></br>
+                                </h2>
+                            </div>
+
+                        </div></section>
                     <div class="auto-container">
 
                         <div class="row">
