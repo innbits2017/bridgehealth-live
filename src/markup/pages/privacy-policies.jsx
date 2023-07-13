@@ -18,7 +18,7 @@ class privacyPolicies extends Component {
                 </section>
 
                 <section>
-                    <section class="contact-section term-policy" >
+                    <section class="term-policy auto-container" >
                         <div>
                             <h4>Preface</h4>
                             <p>
