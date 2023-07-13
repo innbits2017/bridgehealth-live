@@ -2517,14 +2517,14 @@
         left: 0 !important;
     }
     .sbs-testimonial-slider .sbs-arrowleft {
-        bottom: 0;
-        left: 50%;
+        bottom: -20%;
+        left: 80%;
         right: auto;
         margin-left: -55px;
     }
     .sbs-testimonial-slider .sbs-arrowright {
-        bottom: 0;
-        left: 50%;
+        bottom: -20%;
+        left: 80%;
         right: auto;
     }
     .choose_slider_items ul li img {

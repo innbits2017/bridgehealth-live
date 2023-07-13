@@ -19,7 +19,7 @@ class termsOfUse extends Component {
                 </section>
 
                 <section>
-                    <section class="contact-section term-policy">
+                    <section class="term-policy auto-container">
                         <div>
                             <h4>Welcome to Who We Are - Bridge Health Medical and Digital Solutions!</h4>
                             <p>
