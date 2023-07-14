@@ -48,7 +48,7 @@ class privacyPolicies extends Component {
                         </div>
 
                         <div>
-                            <h3>Purpose of the Policy</h3>
+                            <h4>Purpose of the Policy</h4>
                             <p>
                                 This Policy conveys the mode, method and way in which Bridge Health collects, stores and disseminates the Personal Information/Data ("Information") from the User(s) (hereinafter referred to as "User(s)").
                                 For the purpose of this Policy, User(s) shall mean such individuals who are competent to contract under the Indian Contract Act, 1872 and wish to subscribe to the Services (offered by Bridge Health by itself or through third party service providers)
@@ -57,7 +57,7 @@ class privacyPolicies extends Component {
                                 herein they are advised to forthwith disengage and leave this Digital Platform.
                             </p>
 
-                            <h3>User Information and Processing</h3>
+                            <h4>User Information and Processing</h4>
                             <p>
                                 'User(s) information' for the purpose of this Policy includes the User(s)'s personally identifiable information including but not limited to name, email address, residential address, phone number, photograph, identity and address proof and other information
                                 collected by Bridge Health to provide its Services/Products to the User(s) through their Digital Platform. User(s) have the option not to provide any information if they do not intend to avail any Service/Product. If any User(s) are providing information on
@@ -98,7 +98,7 @@ class privacyPolicies extends Component {
 
                         <div>
 
-                            <h3>Purpose for Information Collection</h3>
+                            <h4>Purpose for Information Collection</h4>
 
                             <p>The Information provided by User(s) and collected by us on the Digital Platform may be accessed/used/disseminated for the following purposes and the User(s) explicitly consent to the same:</p>
 
@@ -123,16 +123,16 @@ class privacyPolicies extends Component {
                                 When User(s) interact with or respond to an email campaign shared by Bridge Health, User(s) may be redirected to a third party website(s). The third-party website may collect information about the User(s) device, browser, IP address, operating system, interaction with an email etc. The third-party websites may also use cookies or other tracking technologies to identify the behavioral pattern of the User(s).
                             </p>
 
-                            <h3> Editing of Information</h3>
+                            <h4> Editing of Information</h4>
                             <p>
                                 After User(s) create the account and if there is any change in the Information provided earlier, the User(s) can edit their profile and make necessary modifications. User(s) are solely responsible for the Information provided by them.
                             </p>
                            
-                            <h3>Teleconsultation Consent</h3>
+                            <h4>Teleconsultation Consent</h4>
                             <p>By agreeing to the terms of this Policy, User(s) consent to avail consultation via telemedicine. Bridge Health shall consider the consent implied as and when the User(s) initiate the consultation via the Digital Platform. </p>
                           
 
-                            <h2>Disclosure and Sharing of Information</h2>
+                            <h4>Disclosure and Sharing of Information</h4>
 
                             
 
@@ -172,7 +172,7 @@ class privacyPolicies extends Component {
 
                             <div>
 
-                                <h3>Information Modification</h3>
+                                <h4>Information Modification</h4>
 
                                 <p>
                                     Notwithstanding anything contained herein or the Terms of Use, Bridge Health reserves its right to add, update, change, edit, alter, amend, modify, review, revise, vary or substitute this Policy with or without prior notice to the User(s) once an initial agreement and consent is taken after a complete understanding of the Policy, first displayed.
@@ -184,7 +184,7 @@ class privacyPolicies extends Component {
                             </div>
 
                             <div>
-                                <h3>Financial Information</h3>
+                                <h4>Financial Information</h4>
                                 <p>
                                     For availing certain Services/Products the User(s) may be required to subscribe/purchase such Services by entering requisite payment details. The payment details are captured by third party service providers and the User(s)
                                     are advised to read the terms and conditions of such third-party service providers before making any payment. For the purpose of this section it is clarified that the Digital Platform does not collect sensitive personal or security related information like passwords etc.,
@@ -194,7 +194,7 @@ class privacyPolicies extends Component {
                             </div>
 
                             <div>
-                                <h3>Cookie Policy</h3>
+                                <h4>Cookie Policy</h4>
                                 <p>
                                     Cookies are small pieces of text used to store information on web browsers. Cookies are used to store and receive identifiers and other information on computers, phones and other devices. Other technologies, including data we store on User(s)r web browser or device, identifiers associated with User(s)r device, and other software, are used for similar purposes.
                                 </p>
@@ -206,7 +206,7 @@ class privacyPolicies extends Component {
                             </div>
 
                             <div>
-                                <h3>Creation of User(s) on behalf of third party and Third Party Links</h3>
+                                <h4>Creation of User(s) on behalf of third party and Third Party Links</h4>
                                 <p>
                                     If any User(s) creates an account on this Digital Platform for and on behalf of any other Party/ third party (other than for his use) like their family member(s)/friend(s) such User(s) acknowledge that they are duly authorized by the other Party/third party to create an account on this Digital Platform by furnishing such details as may be required for availing the Services, In case any User(s) is/are creating account on behalf of a minor, such User(s) acknowledge that they are legally authorized to act on behalf of such minors. User(s) acknowledge that Bridge Health shall in no case be held responsible/liable for any third party claims/damages if any arising from any action in this regard. Bridge Health strongly encourages parents and guardians to supervise the online activities of their minor children.
                                 </p>
@@ -220,7 +220,7 @@ class privacyPolicies extends Component {
                             </div>
 
                             <div>
-                                <h3>Promotions and Survey</h3>
+                                <h4>Promotions and Survey</h4>
                                 <p>
                                     With a view to provide better Services Bridge Health may send various communications to the User(s) regarding its Products/Services If the User(s) do not wish to receive such communications they may unsubscribe to such communications as per the procedure set out in those communications.
                                 </p>
@@ -230,7 +230,7 @@ class privacyPolicies extends Component {
                             </div>
 
                             <div>
-                                <h3>Access to the Digital Platform</h3>
+                                <h4>Access to the Digital Platform</h4>
                                 <p>
                                     a.  Registered User(s) will have complete access to the Digital Platform <br></br><br></br>
                                     b.  Unregistered User(s) will have restricted access to the Digital Platform. However, Unregistered User(s) shall also be bound by the terms of this Policy

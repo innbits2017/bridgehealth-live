@@ -2513,17 +2513,17 @@
     }
     .choose_slider_items ul li {
         width: 100%;
-        padding: 30px 30px 20px 35px !important;
+        padding: 10px 30px 20px 35px !important;
         left: 0 !important;
     }
     .sbs-testimonial-slider .sbs-arrowleft {
-        bottom: -20%;
+        bottom: -38%;
         left: 80%;
         right: auto;
         margin-left: -55px;
     }
     .sbs-testimonial-slider .sbs-arrowright {
-        bottom: -20%;
+        bottom: -38%;
         left: 80%;
         right: auto;
     }
