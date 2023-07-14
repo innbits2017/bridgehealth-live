@@ -19,6 +19,18 @@ class privacyPolicies extends Component {
 
                 <section>
                     <section class="term-policy auto-container" >
+                        <div className='terms-heading'>
+                            <h2>Privacy Policy</h2>
+
+                            <p>
+                                Last updated: June 2023
+
+                                <br></br><br></br>
+
+                                This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
+                                We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.
+                            </p>
+                        </div>
                         <div>
                             <h4>Preface</h4>
                             <p>
@@ -92,7 +104,7 @@ class privacyPolicies extends Component {
                                 Bridge Health may keep records of electronic communications and telephone calls received and made for making appointments or other purposes for the purpose of administration of Services,
                                 customer support, research and development.
                             </p>
-                           
+
 
                         </div>
 
@@ -127,14 +139,14 @@ class privacyPolicies extends Component {
                             <p>
                                 After User(s) create the account and if there is any change in the Information provided earlier, the User(s) can edit their profile and make necessary modifications. User(s) are solely responsible for the Information provided by them.
                             </p>
-                           
+
                             <h4>Teleconsultation Consent</h4>
                             <p>By agreeing to the terms of this Policy, User(s) consent to avail consultation via telemedicine. Bridge Health shall consider the consent implied as and when the User(s) initiate the consultation via the Digital Platform. </p>
-                          
+
 
                             <h4>Disclosure and Sharing of Information</h4>
 
-                            
+
 
                             <div>
                                 <p>
