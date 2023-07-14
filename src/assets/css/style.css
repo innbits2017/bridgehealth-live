@@ -10860,6 +10860,10 @@ position: relative;
 }
 
 @media (max-width:560px) {
+    .marginRigh {
+        margin-right: 0% !important;
+        text-align: center !important;
+    }
 .hidemobile
 {
 display: none;
@@ -11297,6 +11301,53 @@ text-align: center;
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .column div {
+        position: relative;
+        padding: 0px;
+        text-align: center;
+        padding-left: 0px !important;
+        padding-top: 18px;
+        border-radius: 31.3223px;
+    }
+    .avtar {
+        display: block;
+        width: 90% !important;
+        height: auto;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .designation1 {
+        color: #fff;
+        font-size: 16px !important;
+        line-height: 20px;
+        position: absolute;
+        top: 24%;
+        font-weight: 400;
+        left: 50%;
+        box-shadow: none !important;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .careerpadding {
+        padding-top: 0px !important;
+        padding-bottom: 10px;
+    }
+    .job-timing {
+        margin-left: 0px !important;
+    }
+    .job-location, .job-timing {
+        font-size: 15px;
+    }
+    .job-department {
+        float: right;
+        margin-right: -12px;
+    }
+    .view-position {
+        font-size: 15px !important;
+    }
+    .job-title {
+        font-size: 18px !important;
+    }
     .texttitle {
         font-size: 16px !important;
     }
@@ -11633,10 +11684,11 @@ text-align: center;
 }
 
 h5.display-4 {
-color: #fff !important;
-margin-top: -100%;
-z-index: 3;
-position: relative;
+    color: #fff !important;
+    margin-top: -131%;
+    z-index: 3;
+    line-height: 35px;
+    position: relative;
 }
 
 .display-3 {
@@ -11660,13 +11712,13 @@ overflow: hidden;
 }
 
 .lead {
-display: block;
-font-size: 20px;
-line-height: 1.2em;
-color: #ffffff;
-font-weight: 400;
-padding-top: 25px;
-text-align: center;
+    display: block;
+    font-size: 20px;
+    line-height: 1.2em;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 7px;
+    text-align: center;
 }
 
 .blogdesigner {
@@ -11738,7 +11790,7 @@ line-height: 40px !important;
     position: relative;
     margin-top: 10%;
     margin-bottom: 0px;
-    margin-left: 25%;
+    margin-left: 30%;
 }
 
 .main-footer .footer-widget {
@@ -11839,15 +11891,8 @@ margin-left: 0px !important;
 font-weight: 500;
 }
 
-/* .aboutback {
-background-size: contain !important;
-background-image: url(/static/media/aboutback.5cc1ad30.png);
-background-repeat: no-repeat;
-padding: 60% 0 0px;
-} */
-
 .aboutcont {
-display: flex !important;
+display: flow-root;
 margin-left: 0px !important;
 padding: 5px !important;
 margin-top: 5px !important;
@@ -11855,22 +11900,20 @@ margin-top: 5px !important;
 
 .aboutbox {
 background-image: url(../images/shape/aboutshape.png);
-border-radius: 25px;
 width: 100% !important;
-display: inline-block;
 margin-right: 0px !important;
 box-sizing: border-box;
-padding: 0px !important;
-margin: 2px;
+background-size: 100% !important;
+margin-bottom: -3px;
 }
 
 .aboutcont h3 {
-font-size: 14px !important;
-padding-top: 9px;
+    font-size: 20px !important;
+    padding-top: 0px;
 }
 
 .aboutcont p {
-font-size: 9.885px !important;
+font-size: 18px !important;
 margin-top: -9px;
 }
 
@@ -12276,7 +12319,7 @@ text-align: center !important;
 }
 
 .texttile1 {
-margin-right: 21%;
+margin-right: 0% !important;
 text-align: center;
 }
 
@@ -13094,12 +13137,12 @@ padding-top: 66px;
 }
 
 .aboutgraph {
-background: linear-gradient(128.75deg, #D7F5FF 0%, #FFFFFF 88.74%);
-border: 1px dashed #000000;
-border-radius: 129px;
-width: 75%;
-padding: 50px;
-margin-left: 10%;
+    background: linear-gradient(128.75deg, #D7F5FF 0%, #FFFFFF 88.74%);
+    border: 1px dashed #000000;
+    border-radius: 129px;
+    width: 90%;
+    padding: 50px;
+    margin-left: 5%;
 }
 
 .careerpadding {
@@ -13117,7 +13160,7 @@ width: 30px;
 }
 
 .job-timing {
-margin-left: 10px !important;
+margin-left: 10px;
 }
 
 .marginleft10 {
@@ -14062,6 +14105,7 @@ background: white;
 border-right: 5px solid #fff;
 box-sizing: border-box;
 text-align: center;
+font-size: 14px;
 }
 
 .table-container {
@@ -14723,9 +14767,10 @@ margin-top: 50px;
       }
       .teamtext
       {
-        font-size: 15px;
-        padding-top: 27px;
-        margin-right: 10px;
+        font-size: 12px;
+        line-height: 22px;
+        padding-top: 36px;
+        margin-right: 6px;
         text-transform: uppercase;
       }
       .marginleftteam
@@ -14755,3 +14800,7 @@ margin-top: 50px;
         }
       }
       
+      .priceTextLeft
+      {
+        text-align: left !important;
+      }

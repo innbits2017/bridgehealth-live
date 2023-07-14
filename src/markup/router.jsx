@@ -90,7 +90,7 @@ class Router extends Component {
                         <Route path='/devices-and-technology' component={deviceAndTechnology}/>
                         <Route path='/media-and-pr' component={mediaAndPR}/>
                         <Route path='/terms-of-use' component={termsOfUse}/>
-                        <Route path='/privacy-policies' component={privacyPolicies}/>
+                        <Route path='/privacy-policy' component={privacyPolicies}/>
                         <Route path='/health-risk-assessment' component={HealthiskAssessment}/>
                         <Route path='/career-admin' component={careerAdmin}/>
                         <Route path='/job-description' component={JobDescription}/>

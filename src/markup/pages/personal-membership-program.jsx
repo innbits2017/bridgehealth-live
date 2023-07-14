@@ -527,7 +527,7 @@ return (
           <table class="unfixed-table">
             <thead>
               <tr>
-                <th className="pers-serv">SERVICE OFFERING</th>
+                <th className="pers-serv priceTextLeft">SERVICE OFFERING</th>
                 <th className="pers-blue">BH BLUE</th>
                 <th>BH SILVER</th>
                 <th className="pers-col">BH GOLD</th>
@@ -545,7 +545,7 @@ return (
                 <td className="pers-plus">222 Tests + ECG + USG</td>
               </tr>
               <tr>
-                <th>Initial Health Assessment</th>
+                <th className='priceTextLeft'>Initial Health Assessment</th>
                 <td className="pers-bh"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
@@ -553,7 +553,7 @@ return (
                 <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
               </tr>
               <tr>
-                <th>Blood Health</th>
+                 <th className='priceTextLeft'>Blood Health</th>
                 <td className="pers-bh"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
@@ -561,7 +561,7 @@ return (
                 <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
               </tr>
               <tr>
-                <th>Diabetic Profile</th>
+                 <th className='priceTextLeft'>Diabetic Profile</th>
                 <td className="pers-bh"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
@@ -569,7 +569,7 @@ return (
                 <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
               </tr>
               <tr>
-                <th>Kidney Health</th>
+                 <th className='priceTextLeft'>Kidney Health</th>
                 <td className="pers-bh"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
@@ -577,7 +577,7 @@ return (
                 <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
               </tr>
               <tr>
-                <th>Cardiac Health</th>
+                 <th className='priceTextLeft'>Cardiac Health</th>
                 <td className="pers-bh"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
@@ -585,7 +585,7 @@ return (
                 <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
               </tr>
               <tr>
-                <th>Liver Health</th>
+                 <th className='priceTextLeft'>Liver Health</th>
                 <td className="pers-bh"></td>
                 <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
@@ -593,7 +593,7 @@ return (
                 <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
               </tr>
               <tr>
-                <th>Nutrition Health</th>
+                 <th className='priceTextLeft'>Nutrition Health</th>
                 <td className="pers-bh"></td>
                 <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
@@ -601,15 +601,7 @@ return (
                 <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
               </tr>
               <tr>
-                <th>Bone Health</th>
-                <td className="pers-bh"></td>
-                <td className="pers-bh1"></td>
-                <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
-                <td className="pers-plat"><i class="fa-solid fa-check"></i></td>
-                <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
-              </tr>
-              <tr>
-                <th>Thyroid Profile</th>
+                 <th className='priceTextLeft'>Bone Health</th>
                 <td className="pers-bh"></td>
                 <td className="pers-bh1"></td>
                 <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
@@ -617,15 +609,15 @@ return (
                 <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
               </tr>
               <tr>
-                <th>Oncology Screening</th>
+                 <th className='priceTextLeft'>Thyroid Profile</th>
                 <td className="pers-bh"></td>
                 <td className="pers-bh1"></td>
-                <td className="pers-gold"></td>
+                <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-plat"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
               </tr>
               <tr>
-                <th>Respiratory Health</th>
+                 <th className='priceTextLeft'>Oncology Screening</th>
                 <td className="pers-bh"></td>
                 <td className="pers-bh1"></td>
                 <td className="pers-gold"></td>
@@ -633,7 +625,15 @@ return (
                 <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
               </tr>
               <tr>
-                <th>Radiology Screening</th>
+                 <th className='priceTextLeft'>Respiratory Health</th>
+                <td className="pers-bh"></td>
+                <td className="pers-bh1"></td>
+                <td className="pers-gold"></td>
+                <td className="pers-plat"><i class="fa-solid fa-check"></i></td>
+                <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr>
+                 <th className='priceTextLeft'>Radiology Screening</th>
                 <td className="pers-bh">ECG</td>
                 <td className="pers-bh1">ECG, USG (ABD. & PELVIS)</td>
                 <td className="pers-gold">ECG, USG (ABD. & PELVIS),ECHO</td>
@@ -641,7 +641,7 @@ return (
                 <td className="pers-plus">X-ray, ECG, USG (ABD. & PELVIS), ECHO</td>
               </tr>
               <tr>
-                <th>Physician Consults</th>
+                 <th className='priceTextLeft'>Physician Consults</th>
                 <td className="pers-bh">2</td>
                 <td className="pers-bh1">2</td>
                 <td className="pers-gold">2</td>
@@ -649,7 +649,7 @@ return (
                 <td className="pers-plus">4</td>
               </tr>
               <tr>
-                <th>Emotional Health Consults</th>
+                 <th className='priceTextLeft'>Emotional Health Consults</th>
                 <td className="pers-bh">1</td>
                 <td className="pers-bh1">1</td>
                 <td className="pers-gold">2</td>
@@ -657,7 +657,7 @@ return (
                 <td className="pers-plus">4</td>
               </tr>
               <tr>
-                <th>Webinars and Group Sessions</th>
+                 <th className='priceTextLeft'>Webinars and Group Sessions</th>
                 <td className="pers-bh"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
@@ -666,7 +666,7 @@ return (
               </tr>
 
               <tr>
-                <th>Dental, Eye and Derma Screening</th>
+                 <th className='priceTextLeft'>Dental, Eye and Derma Screening</th>
                 <td className="pers-bh"></td>
                 <td className="pers-bh1"></td>
                 <td className="pers-gold"></td>
@@ -674,7 +674,7 @@ return (
                 <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
               </tr>
               <tr>
-                <th>Nutrition Assessment and Consults</th>
+                 <th className='priceTextLeft'>Nutrition Assessment and Consults</th>
                 <td className="pers-bh">12</td>
                 <td className="pers-bh1">1</td>
                 <td className="pers-gold">4</td>
@@ -682,7 +682,7 @@ return (
                 <td className="pers-plus">4</td>
               </tr>
               <tr>
-                <th>Yoga/Fitness Assessments and Sessions</th>
+                 <th className='priceTextLeft'>Yoga/Fitness Assessments and Sessions</th>
                 <td className="pers-bh"></td>
                 <td className="pers-bh1"></td>
                 <td className="pers-gold">5</td>
@@ -690,7 +690,7 @@ return (
                 <td className="pers-plus">15</td>
               </tr>
               <tr>
-                <th>App Access</th>
+                 <th className='priceTextLeft'>App Access</th>
                 <td className="pers-bh"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-bh1"><i class="fa-solid fa-check"></i></td>
                 <td className="pers-gold"><i class="fa-solid fa-check"></i></td>
@@ -698,7 +698,7 @@ return (
                 <td className="pers-plus"><i class="fa-solid fa-check"></i></td>
               </tr>
               <tr>
-                <th>Medicines/Pharmacy (At-Home Delivery)</th>
+                 <th className='priceTextLeft'>Medicines/Pharmacy (At-Home Delivery)</th>
                 <td className="pers-bh">10%</td>
                 <td className="pers-bh1">10%</td>
                 <td className="pers-gold">15%</td>
@@ -706,7 +706,7 @@ return (
                 <td className="pers-plus">20%</td>
               </tr>
               <tr>
-                <th>Lab tests/ Annual Plans for Family</th>
+                 <th className='priceTextLeft'>Lab tests/ Annual Plans for Family</th>
                 <td className="pers-bh">10%</td>
                 <td className="pers-bh1">10%</td>
                 <td className="pers-gold">15%</td>
@@ -714,7 +714,7 @@ return (
                 <td className="pers-plus">15%</td>
               </tr>
               <tr>
-                <th>Physiotherapy for Self & family</th>
+                 <th className='priceTextLeft'>Physiotherapy for Self & family</th>
                 <td className="pers-bh">10%</td>
                 <td className="pers-bh1">10%</td>
                 <td className="pers-gold">10%^</td>
@@ -722,7 +722,7 @@ return (
                 <td className="pers-plus">1 session + 10%</td>
               </tr>
               <tr>
-                <th>Home Sample Collection</th>
+                 <th className='priceTextLeft'>Home Sample Collection</th>
                 <td className="pers-bh"></td>
                 <td className="pers-bh1"></td>
                 <td className="pers-gold">FREE</td>
@@ -730,7 +730,7 @@ return (
                 <td className="pers-plus">FREE</td>
               </tr>
               <tr>
-                <th>Price</th>
+                 <th className='priceTextLeft'>Price</th>
                 <td className="pers-bh">₹3,999</td>
                 <td className="pers-bh1">₹7,999</td>
                 <td className="pers-gold">₹16,999</td>

@@ -241,7 +241,7 @@ class Career extends Component {
                             <div class="job-card-header">
                                 <div>
                                     <span class="job-title">{job.title}</span>
-                                    <span class="job-department"><span className='fontweight'>Department:</span> {job.department}</span>
+                                    <span class="job-department"><span className='fontweight'>Dept:</span> {job.department}</span>
 
                                 </div>
                                 <div className='careerpadding'>   <span class="job-location"><img src={require('../../assets/images/shape/iconmap.png')} alt="" className='padeight' />

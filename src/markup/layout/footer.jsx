@@ -202,6 +202,7 @@ class Footer extends Component {
                                                         <li><a href={'/career'}>Careers</a></li>
                                                         <li><a href={'/contact-us'}>Contact</a></li>
                                                         <li><a href={'/terms-of-use'}>Terms & Conditions</a></li>
+                                                        <li><a href={'/privacy-policy'}>Privacy Policy</a></li>
                                                         <li><a href={'/faq-page'}>FAQ</a></li>
                                                     </ul>
                                                 </div>
@@ -268,6 +269,7 @@ class Footer extends Component {
                                                     <li><a href={'/our-services'}>Our Services</a></li>
                                                     <li><a href={'/personal-membership-program'}>Personal Memberships</a></li>
                                                     <li><a href={'/corporate-membership-program'}>Corporate Memberships</a></li>
+                                                    <li><a href={'/personal-membership-program'}>Health Plan</a></li>
                                                     <li><a href={'/team'}>Clinical Team</a></li>
                                                     <li><a href="/leadership">Leadership Team</a></li>
                                                     <li><a href={'/experience-centre'}>Experience Center</a></li>
@@ -282,6 +284,7 @@ class Footer extends Component {
                                                     <li><a href={'/career'}>Careers</a></li>
                                                     <li><a href={'/contact-us'}>Contact</a></li>
                                                     <li><a href={'/terms-of-use'}>T & C</a></li>
+                                                    <li><a href={'/privacy-policy'}>Privacy Policy</a></li>
                                                     <li><a href={'/faq-page'}>FAQ</a></li>
 
                                                 </ul>
