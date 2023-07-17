@@ -3,6 +3,9 @@ import Header from '../layout/header'
 import Footer from '../layout/footer'
 import ContactForm from '../element/contact-form';
 import { Link } from 'react-router-dom';
+import Diagnosis from './diagnosis';
+
+
 
 class shingles extends Component {
 
@@ -40,7 +43,7 @@ class shingles extends Component {
                             </div>
                             <div class="col-lg-6">
                                 <div class="imgright">
-                                    <img src={require('../../assets/images/shape/shingles1.png')} alt="" className='imgwidth' />
+                                    <img src={require('../../assets/images/shape/shingles4.png')} alt="" className='imgwidth' />
                                 </div>
                             </div>
                         </div>
@@ -135,7 +138,7 @@ class shingles extends Component {
                     <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" />
                 </div>
 
-                <section className='container'>
+                <section className='container wrap-shingles-img'>
                     <div className='row'>
                         <div className='col-lg-6'>
                             <div className="card wrap-inter">
@@ -175,6 +178,12 @@ class shingles extends Component {
                     </div>
                 </section>
 
+                <section className="container">
+                    <div className="wrap-image-item">
+                        <img src={require('../../assets/images/shape/symp.png')} alt="" className="image-symp" />
+                    </div>
+                </section>
+
                 <section className='container mt-5'>
                     <div className='wrap-sites'>
                         <div class="sec-title text-center textleft">
@@ -193,6 +202,45 @@ class shingles extends Component {
                     </div>
                 </section>
 
+                <section className="container d-none">
+                    <div class="sec-title text-center textleft">
+                        <h2 className='textleft fontSize50 wrap-sites-poss'>
+                            <span className='headeingcolorblack'>POSSIBLE COMPLICATIONS </span>
+                            <span className='headeingcolorblue'> OF SHINGLES</span>
+                        </h2>
+                        <p class="subheading_shingles">While most people recover from Shingles infection fully, some might face health complications</p>
+                    </div>
+                   
+                    <div class="centre_content">
+                        <div class="list">
+                            <ul>
+                                <li class="list_items" onclick="myFunction()">Postherpetic neuralgia (PHN)</li>
+                                <li class="list_items" onclick="myFunction()">Vision Problems</li>
+                                <li class="list_items" onclick="myFunction()">Skin Infections</li>
+                                <li class="list_items" onclick="myFunction()">Neurological Issues</li>
+                                <li class="list_items" onclick="myFunction()">Disseminated Shingles</li>
+                                <li class="list_items" onclick="myFunction()">Nerve Damage</li>
+                            </ul>
+                        </div>
+
+                        <div id="image_para_section">
+                            <img src={require('../../assets/images/shape/possible.png')} alt="" className='image_shingles' />
+                            {/* <img class="image_shingles" src="shingles_image.png" /> */}
+                            <p class="paragraph_after_image">
+                            PHN is a health complication that affects up to 25% of people with Shingles. One of the 
+                            main symptoms of PHN is nerve pain that continues for months or years after the Shingles 
+                            rash is healed. The pain usually is experienced in the affected area.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+                {/* MORE ABOUT SHINGLE  */}
                 <section className='mt-5'>
                     <div className='wrap-sites'>
                         <div class="sec-title text-center textleft">
@@ -212,7 +260,9 @@ class shingles extends Component {
                         <div className='col-lg-3'>
                             <div className="card wrap-inter5">
                                 <div className="card-body">
-                                    <p className="card-text-partners5">Symptoms and<br></br> Diagnosis</p>
+                                    <a href='' >
+                                        <p className="card-text-partners5">Symptoms and<br></br> Diagnosis</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -240,10 +290,8 @@ class shingles extends Component {
                     </div>
                 </section>
 
-                
 
-
-
+                <Diagnosis />
 
                 <section style={{ marginBottom: 4 + 'rem' }}>
                     <div class="auto-container">
