@@ -14808,3 +14808,271 @@ margin-top: 50px;
       .terms-heading {
         margin-bottom: 40px;
       }
+
+
+/*=================================================== Shingles Page CSS ============= */
+.wrap-shin{
+    text-transform: uppercase;
+}
+img.wrap-labwidth {
+    height: 596px;
+    width: 100%;
+}
+.card.wrap-shig {
+    width: 223px;
+    height: 103px;
+    display: flex;
+    /* float: left; */
+    background-color: #fff;
+}
+
+.wrap-tpo {
+    margin-top: -457px;
+    margin-left: 93px;
+}
+
+.wrap-item-header {
+    margin-bottom: 18px;
+}
+
+.card.wrap-shig.bg1 {
+    border: 6px solid #fdad17;
+    border-radius: 5px;
+}
+
+.card.wrap-shig.bg2 {
+    border: 6px solid #1963C6;
+    border-radius: 5px;
+}
+.card.wrap-shig.bg3 {
+    border: 6px solid #69A9FF;
+    border-radius: 5px;
+}
+.card.wrap-shig.bg4 {
+    border: 6px solid #A0C167;
+    border-radius: 5px;
+}
+.card.wrap-shig.bg5 {
+    border: 6px solid #A0C167;
+    border-radius: 5px;
+}
+.card.wrap-shig.bg6 {
+    border: 6px solid #fdad17;
+    border-radius: 5px;
+}
+
+p.card-text-partners {
+    margin-top: 16px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.wrap-cont-col {
+    color: #000000;
+}
+
+.auto-container.marginTop80.wrap-header {
+    margin-top: 12rem !important;
+}
+span.wrap-header1 {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.card.wrap-inter {
+    width: 100%;
+    border: 0px solid;
+    border-radius: 10px;
+    box-shadow: #fff;
+}
+
+.btn-box.text-center.btn5.wrap-btn {
+    margin-top: -87px;
+}
+
+h3.card-text-partners {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card.wrap-inter1 {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+img.imgwidth1 {
+  position: relative;
+  z-index: 1;
+}
+
+.card.wrap-inter1 {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFF;
+    width: 554px;
+    height: 527px;
+    /* margin-top: -754px; */
+    margin-left: 104px;
+    position: absolute;
+    z-index: 2;
+    top: 38%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    padding: 71px;
+}
+
+p.card-text-partners1 {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+h2.wrap-heading {
+    font-size: 37px;
+    font-weight: 800;
+    color: #fff !important;
+}
+
+h2.textleft.fontSize50.wrap-sites-item {
+    text-align: center;
+}
+
+.card.wrap-inter5 {
+    border-radius: 10px;
+    background-color: #f7f8f7;
+}
+.card.wrap-inter5:hover {
+    background-color: #1963C6;
+    /* color: #fff; */
+}
+p.card-text-partners5 {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 9px;
+}
+p.card-text-partners5:hover {
+    color: #fff;
+}
+
+.wrap-image-item {
+    margin-bottom: 128px;
+    margin-top: 84px;
+}
+
+.image-symp {
+    width: 100%;
+}
+
+.wrap-shingles-img {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.backimag {
+    background-image: url(../images/shape/back1.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin-top: 20px;
+}
+/* ===============================================Accordion CSS =============================*/
+  
+.accordion {
+    max-width: 100%;
+    margin: 2rem auto;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+.accordion-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+  
+.accordion-title:hover {
+    background-color: #3ab4cc;
+}
+  
+.accordion-title,
+.accordion-content {
+    padding: 1rem;
+}
+
+.accordion-title {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.accordion-content { 
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.accordion-content {
+    background-color: #39b9d2;
+}
+
+/* POSSIBLE COMPLICATIONS OF SHINGLES Section CSS  */
+
+.list_items{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+li.list_items {
+margin-top: 2rem;
+height: 3rem;
+width: 22rem;
+}
+p.subheading_shingles {
+    /* text-align: center; */
+    font-size: 23px;
+}
+.centre_content {
+display: flex;
+gap: 5rem;
+margin-left: -2rem;
+}
+
+img.image_shingles {
+height: 19rem;
+width: 37rem;
+margin-top: 2rem;
+}
+/* div#image_para_section {
+display: none;
+} */
+
+.list_items:hover{
+font-weight: bolder;
+cursor: pointer;
+
+}
+h2.shingles_heading {
+text-align: center;
+font-weight: bolder;
+}
+li.list_items {
+margin-top: 2rem;
+height: 2.5rem;
+width: 26rem;
+font-weight: 500;
+border-radius: 10px;
+text-align: center;
+padding-top: 0px;
+list-style: none;
+}
+p.paragraph_after_image {
+width: 38rem;
+}
+
+h2.textleft.fontSize50.wrap-sites-poss {
+    font-size: 40px !important;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 135px;
+}
