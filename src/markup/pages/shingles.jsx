@@ -202,7 +202,7 @@ class shingles extends Component {
                     </div>
                 </section>
 
-                <section className="container d-none">
+                <section className="container">
                     <div class="sec-title text-center textleft">
                         <h2 className='textleft fontSize50 wrap-sites-poss'>
                             <span className='headeingcolorblack'>POSSIBLE COMPLICATIONS </span>
