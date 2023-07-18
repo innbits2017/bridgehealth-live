@@ -46,7 +46,7 @@ const Diagnosis = () => {
     ];
 
     return (
-        <div className="backimag">
+        <div className="container-fluid">
             <div className="container">
                 <div className="accordion">
                     {accordionData.map(({ title, content }) => (

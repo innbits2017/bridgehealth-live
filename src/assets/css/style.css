@@ -14883,18 +14883,19 @@ span.wrap-header1 {
 }
 
 .card.wrap-inter {
-    width: 100%;
-    border: 0px solid;
     border-radius: 10px;
-    box-shadow: #fff;
+    fill: #FFF;
+    filter: drop-shadow(0px 3.117845058441162px 23.383838653564453px rgba(0, 0, 0, 0.10));
+    padding: 20px;
+    border: none !important;
 }
 
 .btn-box.text-center.btn5.wrap-btn {
-    margin-top: -87px;
+    margin-top: -24%;
 }
 
 h3.card-text-partners {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -14912,11 +14913,10 @@ img.imgwidth1 {
     color: #FFF;
     width: 554px;
     height: 527px;
-    /* margin-top: -754px; */
     margin-left: 104px;
     position: absolute;
     z-index: 2;
-    top: 38%;
+    top: 37%;
     left: 22%;
     transform: translate(-50%, -50%);
     padding: 71px;
@@ -15005,8 +15005,11 @@ p.card-text-partners5:hover {
 }
 
 .accordion-title {
+    fill: #FFF;
+    filter: drop-shadow(0px 2.9042577743530273px 15px rgba(0, 0, 0, 0.10));
     font-size: 21px;
-    font-weight: 600;
+    border-radius: 10px;
+    font-weight: 500;
 }
 
 .accordion-content { 
@@ -15070,9 +15073,66 @@ p.paragraph_after_image {
 width: 38rem;
 }
 
-h2.textleft.fontSize50.wrap-sites-poss {
-    font-size: 40px !important;
+.wrap-sites-poss {
+    font-size: 30px !important;
     font-weight: 900;
     text-align: center;
     margin-top: 135px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #fff;
+    color: #000;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.nav-link.active:after
+{
+    content: "";
+    width: 26px;
+    height: 26px;
+    background: url("../images/shape/arrow.png");
+    position: absolute;
+    background-size: contain;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active:after
+{
+display: none;
+}
+.nav-item
+{
+margin-top: 5%;
+background-color: #fff;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+color: #000;
+padding: 5px;
+font-size: 19px;
+font-weight: 500;
+
+}
+.nav-item a
+{ color: #000;
+}
+.nav-justified .nav-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 25px;
+    line-height: 34px;
+    margin-right: 12px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #1963C6;
+    font-size: 24px;
+    border-color: #dee2e6 #dee2e6 #fff;
+    line-height: 32px;
 }
