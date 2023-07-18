@@ -364,15 +364,34 @@ class shingles extends Component {
 
                 {/* MORE ABOUT SHINGLE  */}
                 <section className='mt-5'>
-                    <div className='wrap-sites'>
-                        <div class="sec-title text-center textleft">
-                            <h2 className='wrap-sites-poss'>
-                                <span className='headeingcolorblack'>MORE ABOUT </span>
-                                <span className='headeingcolorblue'> SHINGLES</span>
-                            </h2>
+                    <div className="more-desktop">
+                        <div className='wrap-sites'>
+                            <div class="sec-title text-center textleft">
+                                <h2 className='wrap-sites-poss'>
+                                    <span className='headeingcolorblack'>MORE ABOUT </span>
+                                    <span className='headeingcolorblue'> SHINGLES</span>
+                                </h2>
+                            </div>
+                            <div className="wrap-img-sec7">
+                                <img src={require('../../assets/images/shape/Shingles8.png')} alt="" className='imgwidth3' />
+                            </div>
                         </div>
-                        <div className="wrap-img-sec7">
-                            <img src={require('../../assets/images/shape/Shingles8.png')} alt="" className='imgwidth3' />
+                    </div>
+                </section>
+
+                {/* Mobile code  */}
+                <section className='mt-3'>
+                    <div className="more-mobile">
+                        <div className='wrap-sites'>
+                            <div class="sec-title text-center textleft">
+                                <h2 className='wrap-sites-poss1'>
+                                    <span className='headeingcolorblack'>MORE ABOUT </span>
+                                    <span className='headeingcolorblue'> SHINGLES</span>
+                                </h2>
+                            </div>
+                            <div className="wrap-img-sec7">
+                                <img src={require('../../assets/images/shape/mob12.png')} alt="" className='imgwidth3' />
+                            </div>
                         </div>
                     </div>
                 </section>

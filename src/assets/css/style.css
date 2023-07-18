@@ -15253,7 +15253,7 @@ font-weight: 500;
         margin-left: 104px;
         position: absolute;
         z-index: 1;
-        top: 30.3%;
+        top: 29.9%;
         left: 22%;
         transform: translate(-50%, -50%);
         padding: 19px;
@@ -15330,6 +15330,33 @@ font-weight: 500;
     }
 }
 
+/* Styles for desktop */
+.more-desktop {
+    display: block; 
+}
+  
+  /* Styles for mobile */
+@media (max-width: 767px) {
+    .more-desktop {
+      display: none;
+    }
+}
+  
+.more-mobile {
+    display: none; 
+}
+  
+@media (max-width: 767px) {
+    .more-mobile {
+      display: block;
+    }
+    h2.wrap-sites-poss1 {
+        font-size: 20px !important;
+        font-weight: 900;
+        text-align: center;
+        line-height: 68px;
+    }
+}
 
 
   
