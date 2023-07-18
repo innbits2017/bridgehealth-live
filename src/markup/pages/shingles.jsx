@@ -4,7 +4,9 @@ import Footer from '../layout/footer'
 import ContactForm from '../element/contact-form';
 import { Link } from 'react-router-dom';
 import Diagnosis from './diagnosis';
-
+import ShinglesPopup from '../element//shinglesPopup'
+import ShinglessTab from '../element/ShinglessTab';
+import TabAccordian from '../element/TabAccordian';
 
 
 class shingles extends Component {
@@ -36,7 +38,7 @@ class shingles extends Component {
                                         </h3>
                                     </div>
                                     <div class="btn-box btn5">
-                                        <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" />
+                                        <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one'/>
                                     </div>
 
                                 </div>
@@ -132,10 +134,10 @@ class shingles extends Component {
                     </div>
                 </section >
                 <div>
-                    <iframe width="100%" height="815" src="https://www.youtube.com/embed/Abglsl0eL3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
+               < ShinglesPopup/>                </div>
                 <div class="btn-box text-center btn5">
-                    <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" />
+                    <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one'/>
+
                 </div>
 
                 <section className='container wrap-shingles-img'>
@@ -156,7 +158,8 @@ class shingles extends Component {
                                 </div>
                                 <img src={require('../../assets/images/shape/shi1.png')} alt="" className='wrap-labwidth1' />
                                 <div class="btn-box text-center btn5 wrap-btn">
-                                    <ContactForm buttonText="CHECK NOW" popupPosition="right" />
+                                    <ContactForm buttonText="CHECK NOW" popupPosition="right" className='btn-style-one'/>
+
                                 </div>
                             </div>
                         </div>
@@ -187,7 +190,7 @@ class shingles extends Component {
                 <section className='container mt-5'>
                     <div className='wrap-sites'>
                         <div class="sec-title text-center textleft">
-                            <h2 className='textleft fontSize50 wrap-sites-item'>
+                            <h2 className='wrap-sites-item'>
                                 <span className='headeingcolorblue'> SITES</span>
                                 <span className='headeingcolorblack'> WHERE SHINGLES OCCUR</span>
                             </h2>
@@ -196,45 +199,13 @@ class shingles extends Component {
                             <img src={require('../../assets/images/shape/sites.png')} alt="" className='imgwidth3' />
                         </div>
                         <div class="btn-box text-center btn5">
-                            <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" />
+                            <ContactForm buttonText="CHECK NOW" popupPosition="right" />
 
                         </div>
                     </div>
                 </section>
 
-                <section className="container">
-                    <div class="sec-title text-center textleft">
-                        <h2 className='textleft fontSize50 wrap-sites-poss'>
-                            <span className='headeingcolorblack'>POSSIBLE COMPLICATIONS </span>
-                            <span className='headeingcolorblue'> OF SHINGLES</span>
-                        </h2>
-                        <p class="subheading_shingles">While most people recover from Shingles infection fully, some might face health complications</p>
-                    </div>
-                   
-                    <div class="centre_content">
-                        <div class="list">
-                            <ul>
-                                <li class="list_items" onclick="myFunction()">Postherpetic neuralgia (PHN)</li>
-                                <li class="list_items" onclick="myFunction()">Vision Problems</li>
-                                <li class="list_items" onclick="myFunction()">Skin Infections</li>
-                                <li class="list_items" onclick="myFunction()">Neurological Issues</li>
-                                <li class="list_items" onclick="myFunction()">Disseminated Shingles</li>
-                                <li class="list_items" onclick="myFunction()">Nerve Damage</li>
-                            </ul>
-                        </div>
-
-                        <div id="image_para_section">
-                            <img src={require('../../assets/images/shape/possible.png')} alt="" className='image_shingles' />
-                            {/* <img class="image_shingles" src="shingles_image.png" /> */}
-                            <p class="paragraph_after_image">
-                            PHN is a health complication that affects up to 25% of people with Shingles. One of the 
-                            main symptoms of PHN is nerve pain that continues for months or years after the Shingles 
-                            rash is healed. The pain usually is experienced in the affected area.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
+          <ShinglessTab/>
 
 
 
@@ -244,7 +215,7 @@ class shingles extends Component {
                 <section className='mt-5'>
                     <div className='wrap-sites'>
                         <div class="sec-title text-center textleft">
-                            <h2 className='textleft fontSize50 wrap-sites-item'>
+                            <h2 className='wrap-sites-poss'>
                                 <span className='headeingcolorblack'>MORE ABOUT </span>
                                 <span className='headeingcolorblue'> SHINGLES</span>
                             </h2>
@@ -255,7 +226,7 @@ class shingles extends Component {
                     </div>
                 </section>
 
-                <section className='container mt-5'>
+                {/* <section className='container mt-5'>
                     <div className='row'>
                         <div className='col-lg-3'>
                             <div className="card wrap-inter5">
@@ -288,11 +259,12 @@ class shingles extends Component {
                             </div>
                         </div>
                     </div>
-                </section>
-
-
-                <Diagnosis />
-
+                </section> */}
+                <div className='container-fulid backimag'>
+                <div className='container'>
+                    <TabAccordian/>
+                </div>
+</div>
                 <section style={{ marginBottom: 4 + 'rem' }}>
                     <div class="auto-container">
                         <h2 className='head-title-margin'>
@@ -346,6 +318,7 @@ class shingles extends Component {
 
                     </div>
                 </section>
+               
                 {/* <section>
                     <div className="wrap-header">
                         <div class="auto-container marginTop80">
