@@ -47,14 +47,13 @@ const RadioButtonComponent = () => {
         <div className="popup-container">
             {!isClicked ? (
                 <div>
-                    <h1>ARE YOU AT RISK OF SHINGLES?</h1>
-                    <button className="check-btn" onClick={handleClick}>Check Now</button>
+                    <button className="check-btn btn-style-one" onClick={handleClick}>Check Now</button>
                 </div>
             ) : (
                 <div>
                     {isAbove50 === null ? (
                         <div>
-                            <h2>Are you 50 years and above?</h2>
+                            <h2 className="question">Are you 50 years and above?</h2>
                             <div className="buttons-wrapper">
                                 <button className="yes-btn" onClick={handleYesClick}>Yes</button>
                                 <button className="no-btn" onClick={handleNoClick}>No</button>
@@ -64,7 +63,7 @@ const RadioButtonComponent = () => {
                         <div>
                             {isImmunocompromised === null ? (
                                 <div>
-                                    <h2>
+                                    <h2 className="question">
                                         Are you immunocompromised (have a weak immune system)?
                                     </h2>
                                     <div className="buttons-wrapper">
@@ -78,7 +77,9 @@ const RadioButtonComponent = () => {
                                 <div>
                                     {hadChickenpox === null ? (
                                         <div>
-                                            <h2>Have you had Chickenpox?</h2>
+                                                                             <h2 className="question">
+
+                                                Have you had Chickenpox?</h2>
                                             <div className="buttons-wrapper">
                                                 <button className="yes-btn" onClick={handleChickenpoxYesClick}>Yes</button>
                                                 <button className="no-btn" onClick={handleChickenpoxNoClick}>No</button>
@@ -88,7 +89,9 @@ const RadioButtonComponent = () => {
                                         <div>
                                             {hasChronicCondition === null ? (
                                                 <div>
-                                                    <h2>Do you have Diabetes, Asthma, or COPD?</h2>
+                                                                                       <h2 className="question">
+
+                                                        Do you have Diabetes, Asthma, or COPD?</h2>
                                                     <div className="buttons-wrapper">
                                                         <button className="yes-btn" onClick={handleChronicConditionYesClick}>
                                                             Yes
@@ -100,7 +103,7 @@ const RadioButtonComponent = () => {
                                                 </div>
                                             ) : (
                                                 <div>
-                                                    <h2 className="high-risk-msg">
+                                                    <h2 className="question">
                                                         You are at high risk of Shingles, consult your
                                                         doctor about Shingles and its prevention
                                                     </h2>
