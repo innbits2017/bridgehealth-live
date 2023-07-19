@@ -14916,7 +14916,7 @@ img.imgwidth1 {
     margin-left: 104px;
     position: absolute;
     z-index: 2;
-    top: 37%;
+    top: 36.5%;
     left: 22%;
     transform: translate(-50%, -50%);
     padding: 71px;
@@ -14968,7 +14968,25 @@ p.card-text-partners5:hover {
     margin-top: 100px;
     margin-bottom: 100px;
 }
-
+.parg1-item p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+}
+.shin-btn1 {
+    margin-top: 25px;
+}
+img.imgwidth123 {
+    position: relative;
+    z-index: 1;
+    height: 700px;
+    width: 100%;
+}
+img.wrap-labwidth12 {
+    height: 351px;
+    width: 100%;
+}
 .backimag {
     background-image: url(../images/shape/back1.png);
     background-size: auto;
@@ -14976,6 +14994,22 @@ p.card-text-partners5:hover {
     background-position: top right;
     margin-top: 20px;
 }
+
+.backimg2 {
+    background-image: url(../images/shape/back123.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin-top: 20px;
+}
+
+/* .backimg3 {
+    background-image: url(../images/shape/back12345.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top left;
+    margin-top: 20px;
+} */
 /* ===============================================Accordion CSS =============================*/
   
 .accordion {
@@ -14984,7 +15018,7 @@ p.card-text-partners5:hover {
 }
 
 .accordion-item {
-    margin-bottom: 10px;
+    margin-bottom: 21px;
 }
 .accordion-title {
     display: flex;
@@ -15136,3 +15170,213 @@ font-weight: 500;
     border-color: #dee2e6 #dee2e6 #fff;
     line-height: 32px;
 }
+
+
+/* =====================================================Shingles Mobile Code CSS  */
+
+/* Styles for desktop */
+.wrap-shi {
+    display: block; /* or any other desired styling */
+}
+  
+  /* Styles for mobile */
+@media (max-width: 767px) {
+    .wrap-shi {
+      display: none;
+    }
+}
+  
+.mobile-element {
+    display: none; /* or any other desired styling */
+}
+  
+@media (max-width: 767px) {
+    .mobile-element {
+      display: block;
+    }
+
+    .card.wrap-shig1 {
+        width: 199px;
+        height: 64px;
+        display: flex;
+        background-color: #fff;
+    }
+    
+    .card.wrap-shig1.bg11 {
+        border: 6px solid #fdad17;
+        border-radius: 5px;
+    }
+    
+    .card.wrap-shig1.bg21 {
+        border: 6px solid #1963C6;
+        border-radius: 5px;
+    }
+    .card.wrap-shig1.bg31 {
+        border: 6px solid #69A9FF;
+        border-radius: 5px;
+    }
+    .card.wrap-shig1.bg41 {
+        border: 6px solid #A0C167;
+        border-radius: 5px;
+    }
+    .card.wrap-shig1.bg51 {
+        border: 6px solid #A0C167;
+        border-radius: 5px;
+    }
+    .card.wrap-shig1.bg61 {
+        border: 6px solid #fdad17;
+        border-radius: 5px;
+    }
+    .wrap-tpo1 {
+        margin-top: -541px;
+        margin-left: 97px;
+    }
+    p.card-text-partners1 {
+        margin-top: 1px;
+        text-align: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 24px;
+    }
+  
+}
+
+/* WHAT IS SHINGLES Mobile CSS  */
+
+
+  /* Styles for desktop */
+.shi-wrap {
+    display: block; /* or any other desired styling */
+  }
+  
+  /* Styles for mobile */
+  @media (max-width: 767px) {
+    .shi-wrap {
+      display: none;
+    }
+  }
+  
+  .shi-wrap-mobile {
+    display: none; /* or any other desired styling */
+  }
+  
+  @media (max-width: 767px) {
+    .shi-wrap-mobile {
+      display: block;
+    }
+    .card.wrap-inter12 {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #FFF;
+        width: 100%;
+        height: 276px;
+        margin-left: 104px;
+        position: absolute;
+        z-index: 1;
+        top: 29.9%;
+        left: 22%;
+        transform: translate(-50%, -50%);
+        padding: 19px;
+    }
+    img.imgwidth12 {
+        width: 100%;
+        height: 655px;
+    }
+
+    h2.wrap-heading1 {
+        font-size: 21px;
+        font-weight: 900;
+        line-height: 25px;
+        color: #fff !important;
+    }
+    p.card-text-partners12 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23px;
+        padding: 0px 0px 0px 40px;
+    }
+}
+
+.desktop-element {
+    display: block; 
+}
+  
+  /* Styles for mobile */
+@media (max-width: 767px) {
+    .desktop-element {
+      display: none;
+    }
+}
+  
+.mobile-element-item {
+    display: none; 
+}
+  
+@media (max-width: 767px) {
+    .mobile-element-item {
+      display: block;
+    }
+}
+
+.sites-desktop {
+    display: block; 
+}
+  
+  /* Styles for mobile */
+@media (max-width: 767px) {
+    .sites-desktop {
+      display: none;
+    }
+}
+  
+.sites-mobile {
+    display: none; 
+}
+  
+@media (max-width: 767px) {
+    .sites-mobile {
+      display: block;
+    }
+    h2.wrap-sites-item12 {
+        font-size: 20px !important;
+        font-weight: 900;
+        line-height: 24px;
+        text-align: center;
+    }
+    .parg12-item p {
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+/* Styles for desktop */
+.more-desktop {
+    display: block; 
+}
+  
+  /* Styles for mobile */
+@media (max-width: 767px) {
+    .more-desktop {
+      display: none;
+    }
+}
+  
+.more-mobile {
+    display: none; 
+}
+  
+@media (max-width: 767px) {
+    .more-mobile {
+      display: block;
+    }
+    h2.wrap-sites-poss1 {
+        font-size: 20px !important;
+        font-weight: 900;
+        text-align: center;
+        line-height: 68px;
+    }
+}
+
+
+  
