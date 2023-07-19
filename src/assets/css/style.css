@@ -13053,6 +13053,17 @@ margin-left: 38%;
 .fontSize50 {
 font-size: 55px !important;
 }
+.wrap-font {
+    font-size: 55px !important;
+    font-weight: 700 !important;
+    line-height: 90px !important;
+}
+
+h3.textleft.marginTop40.wrap-text1 {
+    font-size: 55px !important;
+    font-weight: 400;
+    line-height: 90px;
+}
 
 .imgFloatRight {
 float: right;
@@ -14916,7 +14927,7 @@ img.imgwidth1 {
     margin-left: 104px;
     position: absolute;
     z-index: 2;
-    top: 36.5%;
+    top: 36.3%;
     left: 22%;
     transform: translate(-50%, -50%);
     padding: 71px;
@@ -14984,8 +14995,16 @@ img.imgwidth123 {
     width: 100%;
 }
 img.wrap-labwidth12 {
-    height: 351px;
     width: 100%;
+}
+img.wrap-labwidth123 {
+    height: 306px;
+    width: 100%;
+}
+button.btn-style-one.btn-diag {
+    text-align: center !important;
+    margin-left: 369px;
+    margin-top: 41px;
 }
 .backimag {
     background-image: url(../images/shape/back1.png);
@@ -15030,7 +15049,7 @@ img.wrap-labwidth12 {
 }
   
 .accordion-title:hover {
-    background-color: #3ab4cc;
+    background-color: #FFFFF7;
 }
   
 .accordion-title,
@@ -15052,7 +15071,7 @@ img.wrap-labwidth12 {
 }
 
 .accordion-content {
-    background-color: #39b9d2;
+    background-color: #FFFFF7;
 }
 
 /* POSSIBLE COMPLICATIONS OF SHINGLES Section CSS  */
