@@ -105,8 +105,8 @@ class ShinglessTab extends Component {
                             </Col>
                         </Row>
                     </Tab.Container>
-                    <div class="btn-box text-center btn5 mt-4">
-                        <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" />
+                    <div class="btn-box text-center btn5 shin-btn1">
+                        <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one' />
 
                     </div>
                 </section>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Accordion from '../../assets/js/Accordion';
+import ContactForm from '../element/contact-form';
 
 const Diagnosis = () => {
     const accordionData = [
@@ -52,6 +53,9 @@ const Diagnosis = () => {
                     {accordionData.map(({ title, content }) => (
                         <Accordion title={title} content={content} />
                     ))}
+                </div>
+                <div class="btn-box btn5">
+                    <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one btn-diag' />
                 </div>
             </div>
         </div>

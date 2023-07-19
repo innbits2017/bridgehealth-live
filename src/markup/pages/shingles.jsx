@@ -31,12 +31,12 @@ class shingles extends Component {
                                 <div class="content-box marginTop40header">
 
                                     <div class="sec-title text-center textleft">
-                                        <h2 className='textleft fontSize50'>
+                                        <h2 className='textleft fontSize50 wrap-font mt-5'>
                                             <span className='headeingcolorblue wrap-shin'>Are you 50 years</span> <br></br> <span
                                                 className='headeingcolorblue wrap-shin'> of age or older? </span>
                                         </h2>
 
-                                        <h3 className='textleft marginTop40'>You could be at risk<br></br> for Shingles.
+                                        <h3 className='textleft marginTop40 wrap-text1'>You could be at risk<br></br> for Shingles.
                                         </h3>
                                     </div>
                                     <div class="btn-box btn5">
@@ -229,7 +229,7 @@ class shingles extends Component {
                                 <div className="card-body">
                                     <h3 className="card-text-partners">How Painful is Shingles</h3>
                                 </div>
-                                <img src={require('../../assets/images/shape/bridge-health.gif')} alt="" className='wrap-labwidth12' />
+                                <img src={require('../../assets/images/shape/bridge-health12.gif')} alt="" className='wrap-labwidth12' />
 
                             </div>
                         </div>
@@ -238,7 +238,7 @@ class shingles extends Component {
                                 <div className="card-body">
                                     <h3 className="card-text-partners">Are you at risk OF SHINGLES?</h3>
                                 </div>
-                                <img src={require('../../assets/images/shape/shi1.png')} alt="" className='wrap-labwidth1' />
+                                <img src={require('../../assets/images/shape/shi1.png')} alt="" className='wrap-labwidth123' />
                                 <div class="btn-box text-center btn5 wrap-btn">
                                     <RadioButtonComponent buttonText="CHECK NOW" popupPosition="right" className='btn-style-one' />
 
@@ -314,8 +314,8 @@ class shingles extends Component {
                             <div className="parg1-item">
                                 <p><i>*Characteristics of Herpes Zoster</i></p>
                             </div>
-                            <div class="btn-box text-center btn5">
-                                <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" />
+                            <div class="btn-box text-center btn5 shin-btn1">
+                                <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one' />
 
                             </div>
                         </div>
@@ -338,9 +338,8 @@ class shingles extends Component {
                             <div className="parg12-item">
                                 <p><i>*Characteristics of Herpes Zoster</i></p>
                             </div>
-                            <div class="btn-box text-center btn5">
-                                <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" />
-
+                            <div class="btn-box btn5">
+                                <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one btn-diag' />
                             </div>
                         </div>
                     </div>
