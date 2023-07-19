@@ -8,6 +8,7 @@ import ShinglesPopup from '../element//shinglesPopup'
 import ShinglessTab from '../element/ShinglessTab';
 import TabAccordian from '../element/TabAccordian';
 import Postherpetic from './postherpetic';
+import RadioButtonComponent from '../element/shingles-popup';
 
 
 class shingles extends Component {
@@ -239,7 +240,7 @@ class shingles extends Component {
                                 </div>
                                 <img src={require('../../assets/images/shape/shi1.png')} alt="" className='wrap-labwidth1' />
                                 <div class="btn-box text-center btn5 wrap-btn">
-                                    <ContactForm buttonText="CHECK NOW" popupPosition="right" className='btn-style-one' />
+                                    <RadioButtonComponent buttonText="CHECK NOW" popupPosition="right" className='btn-style-one' />
 
                                 </div>
                             </div>
