@@ -14998,7 +14998,7 @@ img.wrap-labwidth12 {
     width: 100%;
 }
 img.wrap-labwidth123 {
-    height: 306px;
+    height: 366px;
     width: 100%;
 }
 button.btn-style-one.btn-diag {
@@ -15396,6 +15396,44 @@ font-weight: 500;
         line-height: 68px;
     }
 }
-
-
-  
+.question
+{
+    margin-top: -16%;
+    font-size: 26px;
+}
+.yes-btn
+{
+    margin-right: 10px;
+margin-right: 2%;
+color: #ffffff;
+font-weight: 600;
+font-size: 20px;
+text-transform: capitalize;
+border-radius: 30px;
+background-color: #1963C6;
+background-image: none !important;
+margin-top: 20px;
+margin-left: 0rem;
+padding: 10px 30px 10px 30px !important;
+background-size: contain;
+height: auto !important;
+background-repeat: no-repeat;
+}
+.no-btn
+{
+    margin-right: 10px;
+margin-right: 2%;
+color: #ffffff;
+font-weight: 600;
+font-size: 20px;
+text-transform: capitalize;
+border-radius: 30px;
+background-color: #1963C6;
+background-image: none !important;
+margin-top: 20px;
+margin-left: 0rem;
+padding: 10px 30px 10px 30px !important;
+background-size: contain;
+height: auto !important;
+background-repeat: no-repeat;
+}
