@@ -23,7 +23,7 @@ class shingles extends Component {
 
                 <section class="team-section padding doctoeback">
                     {/* About Section Two */}
-                    <section class="container-fluid">
+                    <section class="container-fluid backimg3">
                         <div class="row align-items-center auto-container reverseFlex">
 
                             <div class="col-lg-6">
@@ -208,7 +208,7 @@ class shingles extends Component {
                 <section>
                     <div class="auto-container marginTop80 wrap-header">
                         <h2 className='header1 textaligncenter'>
-                            <span className='headeingcolorblack wrap-header1'>Listen to what the doctor have to <br></br>say about Shingles/Herpes</span>
+                            <span className='headeingcolorblack wrap-header1'>Listen to what the doctor have to <br></br>say about</span>
                             <span className='headeingcolorblue wrap-header1'> Shingles/Herpes</span>
                         </h2>
                     </div>
@@ -216,7 +216,7 @@ class shingles extends Component {
                 <div>
                     < ShinglesPopup />
                 </div>
-                <div class="btn-box text-center btn5">
+                <div class="btn-box text-center btn5 shin-btn1">
                     <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one' />
 
                 </div>
@@ -228,7 +228,7 @@ class shingles extends Component {
                                 <div className="card-body">
                                     <h3 className="card-text-partners">How Painful is Shingles</h3>
                                 </div>
-                                <img src={require('../../assets/images/shape/sh2.jpeg')} alt="" className='wrap-labwidth1' />
+                                <img src={require('../../assets/images/shape/bridge-health.gif')} alt="" className='wrap-labwidth12' />
 
                             </div>
                         </div>
@@ -251,7 +251,7 @@ class shingles extends Component {
                 <section>
                     <div className="shi-wrap">
                         <div className="wrap-img-sec4">
-                            <img src={require('../../assets/images/shape/shg1.png')} alt="" className='imgwidth1' />
+                            <img src={require('../../assets/images/shape/shg1.png')} alt="" className='imgwidth123' />
                         </div>
                         <div>
                             <div className="card wrap-inter1">
@@ -301,13 +301,13 @@ class shingles extends Component {
                 <section className='container mt-5'>
                     <div className="sites-desktop">
                         <div className='wrap-sites'>
-                            <div class="sec-title text-center textleft">
+                            <div class="sec-title text-center textleft mb-5">
                                 <h2 className='wrap-sites-item'>
                                     <span className='headeingcolorblue'> SITES</span>
                                     <span className='headeingcolorblack'> WHERE SHINGLES OCCUR</span>
                                 </h2>
                             </div>
-                            <div className="wrap-img-sec7">
+                            <div className="wrap-img-sec7 mt-4">
                                 <img src={require('../../assets/images/shape/sites.png')} alt="" className='imgwidth3' />
                             </div>
                             <div className="parg1-item">
