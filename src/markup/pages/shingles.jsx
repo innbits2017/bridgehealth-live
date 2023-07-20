@@ -235,10 +235,10 @@ class shingles extends Component {
                         </div>
                         <div className='col-lg-6'>
                             <div className="card wrap-inter">
-                                <div className="card-body">
+                                {/* <div className="card-body">
                                     <h3 className="card-text-partners">Are you at risk OF SHINGLES?</h3>
                                 </div>
-                                <img src={require('../../assets/images/shape/shi1.png')} alt="" className='wrap-labwidth123' />
+                                <img src={require('../../assets/images/shape/shi1.png')} alt="" className='wrap-labwidth123' /> */}
                                 <div class="btn-box text-center btn5 wrap-btn">
                                     <RadioButtonComponent buttonText="CHECK NOW" popupPosition="right" className='btn-style-one' />
 
