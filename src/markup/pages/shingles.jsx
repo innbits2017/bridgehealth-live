@@ -32,11 +32,11 @@ class shingles extends Component {
 
                                     <div class="sec-title text-center textleft">
                                         <h2 className='textleft fontSize50 wrap-font mt-5'>
-                                            <span className='headeingcolorblue wrap-shin'>Are you 50 years</span> <br></br> <span
-                                                className='headeingcolorblue wrap-shin'> of age or older? </span>
+                                            <span className='headeingcolorblue wrap-shin'>Shield Yourself </span> <br></br> <span
+                                                className='headeingcolorblue wrap-shin'> from Shingles </span>
                                         </h2>
 
-                                        <h3 className='textleft marginTop40 wrap-text1'>You could be at risk<br></br> for Shingles.
+                                        <h3 className='textleft marginTop40 wrap-text1'>Prioritize prevention and <br></br> enjoy a shingles-free life
                                         </h3>
                                     </div>
                                     <div class="btn-box btn5">
@@ -209,8 +209,8 @@ class shingles extends Component {
                 <section>
                     <div class="auto-container marginTop80 wrap-header">
                         <h2 className='header1 textaligncenter'>
-                            <span className='headeingcolorblack wrap-header1'>Listen to what the doctor have to <br></br>say about</span>
-                            <span className='headeingcolorblue wrap-header1'> Shingles/Herpes</span>
+                            <span className='headeingcolorblack wrap-header1 wrap-header2'>Listen to what the doctor have to <br></br>say about</span>
+                            <span className='headeingcolorblue wrap-header1 wrap-header2'> Shingles/Herpes</span>
                         </h2>
                     </div>
                 </section >
@@ -225,11 +225,11 @@ class shingles extends Component {
                 <section className='container wrap-shingles-img'>
                     <div className='row'>
                         <div className='col-lg-6'>
-                            <div className="card wrap-inter">
+                            <div className="card wrap-inter6">
                                 <div className="card-body">
-                                    <h3 className="card-text-partners">How Painful is Shingles</h3>
+                                    <h3 className="card-text-partners5">How Painful is Shingles</h3>
                                 </div>
-                                <img src={require('../../assets/images/shape/bridge-health12.gif')} alt="" className='wrap-labwidth12' />
+                                <img src={require('../../assets/images/shape/bridge-health-(Final).gif')} alt="" className='wrap-labwidth12' />
 
                             </div>
                         </div>
@@ -298,7 +298,7 @@ class shingles extends Component {
                         </div>
                     </div>
                 </section>
-
+               
                 <section className='container mt-5'>
                     <div className="sites-desktop">
                         <div className='wrap-sites'>
@@ -321,6 +321,7 @@ class shingles extends Component {
                         </div>
                     </div>
                 </section>
+                
 
                 {/* Mobile Code  */}
                 <section className='container mt-5'>
@@ -344,7 +345,7 @@ class shingles extends Component {
                         </div>
                     </div>
                 </section>
-
+                
                 <div className="desk-item">
                     <div className='container-fulid backimg2'>
                         <div className='container'>
@@ -363,7 +364,7 @@ class shingles extends Component {
 
 
                 {/* MORE ABOUT SHINGLE  */}
-                <section className='mt-5'>
+                <section>
                     <div className="more-desktop">
                         <div className='wrap-sites'>
                             <div class="sec-title text-center textleft">
