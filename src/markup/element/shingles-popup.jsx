@@ -51,6 +51,18 @@ const RadioButtonComponent = () => {
         setHasChronicCondition(null);
     };
 
+    const handleBack = () => {
+        if (hasChronicCondition !== null) {
+            setHasChronicCondition(null);
+        } else if (hadChickenpox !== null) {
+            setHadChickenpox(null);
+        } else if (isImmunocompromised !== null) {
+            setIsImmunocompromised(null);
+        } else if (isAbove50 !== null) {
+            setIsAbove50(null);
+        }
+    };
+
     return (
         <div className="popup-container">
             {!isClicked ? (
@@ -89,6 +101,7 @@ const RadioButtonComponent = () => {
                                         </button>
                                         <button className="no-btn" onClick={handleImmunocompromisedNoClick}>No</button>
                                     </div>
+                                    <img src={require('../../assets/images/shape/Arrow 13.png')} alt="Back" onClick={handleBack} />
                                 </div>
                             ) : (
                                 <div>
@@ -102,6 +115,7 @@ const RadioButtonComponent = () => {
                                                 <button className="yes-btn" onClick={handleChickenpoxYesClick}>Yes</button>
                                                 <button className="no-btn" onClick={handleChickenpoxNoClick}>No</button>
                                             </div>
+                                            <img src={require('../../assets/images/shape/Arrow 13.png')} alt="Back" onClick={handleBack} />
                                         </div>
                                     ) : (
                                         <div>
@@ -119,6 +133,7 @@ const RadioButtonComponent = () => {
                                                             No
                                                         </button>
                                                     </div>
+                                                    <img src={require('../../assets/images/shape/Arrow 13.png')} alt="Back" onClick={handleBack} />
                                                 </div>
                                             ) : (
                                                 <div>
