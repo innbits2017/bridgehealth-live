@@ -226,6 +226,21 @@ background-size: contain;
 height: auto !important;
 background-repeat: no-repeat;
 }
+.btn-style-two {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    background-color: #1963C6;
+    background-image: none !important;
+    margin-top: 20px;
+    margin-left: 47px;
+    padding: 10px 17px 10px 17px !important;
+    background-size: contain;
+    height: auto !important;
+    background-repeat: no-repeat;
+}
 
 .btn-style-one-home {
 color: #ffffff;
@@ -385,7 +400,7 @@ transform-origin: top left;
 
 /* Btn Style Two */
 
-.btn-style-two {
+.btn-style-twos {
 position: relative;
 display: inline-block;
 font-size: 16px;
@@ -12143,7 +12158,8 @@ margin-top: 0px;
 
 .btn5 {
 margin-bottom: 40px;
-margin-top: -20px;
+margin-top: -11px;
+margin-left: 47px;
 }
 
 .btn7 {
@@ -13054,17 +13070,22 @@ margin-left: 38%;
 font-size: 55px !important;
 }
 .wrap-font {
-    font-size: 55px !important;
-    font-weight: 700 !important;
-    line-height: 90px !important;
+    font-size: 50px !important;
+    font-weight: 500!important;
+    line-height: 79px !important;
+    margin-left: 47px;
+    margin-top: 161px !important;
+    font-family: 'Montserrat' !important;
 }
 
 h3.textleft.marginTop40.wrap-text1 {
-    font-size: 55px !important;
-    font-weight: 400;
-    line-height: 90px;
+    font-size: 42px !important;
+    font-weight: 400 !important;
+    line-height: 63px;
+    font-family: 'Montserrat' !important;
+    margin-left: 47px;
+    color: #2C2C2C;
 }
-
 .imgFloatRight {
 float: right;
 }
@@ -14872,11 +14893,15 @@ img.wrap-labwidth {
     border-radius: 5px;
 }
 
+
 p.card-text-partners {
     margin-top: 16px;
     text-align: center;
     justify-content: center;
     font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Montserrat' !important;
 }
 
 .wrap-cont-col {
@@ -14884,7 +14909,7 @@ p.card-text-partners {
 }
 
 .auto-container.marginTop80.wrap-header {
-    margin-top: 12rem !important;
+    margin-top: 250px !important;
 }
 span.wrap-header1 {
     text-transform: uppercase;
@@ -14892,22 +14917,46 @@ span.wrap-header1 {
     font-weight: 700;
     line-height: 60px;
 }
-
+span.wrap-header2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 53px;
+}
+.image-wrapper {
+    margin-top: 40px;
+}
 .card.wrap-inter {
-    border-radius: 10px;
+    border-radius: 19px;
     fill: #FFF;
     filter: drop-shadow(0px 3.117845058441162px 23.383838653564453px rgba(0, 0, 0, 0.10));
-    padding: 20px;
+    padding: 16px;
+    border: none !important;
+}
+.card.wrap-inter6 {
+    border-radius: 19px;
+    fill: #FFF;
+    filter: drop-shadow(0px 3.117845058441162px 23.383838653564453px rgba(0, 0, 0, 0.10));
+    padding: 64px;
     border: none !important;
 }
 
 .btn-box.text-center.btn5.wrap-btn {
-    margin-top: -24%;
+    margin-top: 0%;
 }
 
+h3.card-text-partners5 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-top: -33px;
+}
 h3.card-text-partners {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 0px;
     text-transform: uppercase;
 }
 
@@ -14927,7 +14976,7 @@ img.imgwidth1 {
     margin-left: 104px;
     position: absolute;
     z-index: 2;
-    top: 36.3%;
+    top: 36.9%;
     left: 22%;
     transform: translate(-50%, -50%);
     padding: 71px;
@@ -14986,7 +15035,8 @@ p.card-text-partners5:hover {
     line-height: 30px;
 }
 .shin-btn1 {
-    margin-top: 25px;
+    margin-top: 19px;
+    margin-left: -6px;
 }
 img.imgwidth123 {
     position: relative;
@@ -14998,37 +15048,59 @@ img.wrap-labwidth12 {
     width: 100%;
 }
 img.wrap-labwidth123 {
-    height: 366px;
-    width: 100%;
+    width: 75%;
+    margin-top: 0px;
 }
 button.btn-style-one.btn-diag {
     text-align: center !important;
     margin-left: 369px;
     margin-top: 41px;
 }
-.backimag {
+/* .backimag {
     background-image: url(../images/shape/back1.png);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: top right;
     margin-top: 20px;
-}
+} */
 
 .backimg2 {
     background-image: url(../images/shape/back123.png);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: top right;
-    margin-top: 20px;
+    padding-top: 20px;
+}
+.backGroundRight {
+    background-image: url(../images/shape/shinglesRightBackground.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left bottom; 
+
 }
 
-/* .backimg3 {
+.backFaqsRight {
+    background-image: url(../images/shape/shinglesFaqsLeft.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    
+}
+
+.backFaqsLeft {
+    background-image: url(../images/shape/shinglesFaqsRight.png);
+    background-size: 13%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    
+}
+.backimg3 {
     background-image: url(../images/shape/back12345.png);
-    background-size: auto;
+    background-size: initial;
     background-repeat: no-repeat;
     background-position: top left;
     margin-top: 20px;
-} */
+}
 /* ===============================================Accordion CSS =============================*/
   
 .accordion {
@@ -15038,14 +15110,6 @@ button.btn-style-one.btn-diag {
 
 .accordion-item {
     margin-bottom: 21px;
-}
-.accordion-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    cursor: pointer;
-    background-color: #fff;
-    color: #000;
 }
   
 .accordion-title:hover {
@@ -15061,8 +15125,15 @@ button.btn-style-one.btn-diag {
     fill: #FFF;
     filter: drop-shadow(0px 2.9042577743530273px 15px rgba(0, 0, 0, 0.10));
     font-size: 21px;
-    border-radius: 10px;
+    border-radius: 18px;
     font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
 }
 
 .accordion-content { 
@@ -15086,7 +15157,12 @@ width: 22rem;
 }
 p.subheading_shingles {
     /* text-align: center; */
-    font-size: 23px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 43px;
+}
+.desk-item {
+    margin-top: -82px;
 }
 .centre_content {
 display: flex;
@@ -15123,7 +15199,7 @@ padding-top: 0px;
 list-style: none;
 }
 p.paragraph_after_image {
-width: 38rem;
+margin-top: 15px !important;
 }
 
 .wrap-sites-poss {
@@ -15162,7 +15238,8 @@ margin-top: 5%;
 background-color: #fff;
 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 color: #000;
-padding: 5px;
+padding: 6px;
+border-radius: 18px;
 font-size: 19px;
 font-weight: 500;
 
@@ -15178,9 +15255,10 @@ font-weight: 500;
     text-align: center;
     font-size: 25px;
     line-height: 34px;
-    margin-right: 12px;
+    margin-right: 15px;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: #F7F8F7;
+    margin-left: 15px;
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: #ffffff;
@@ -15398,7 +15476,6 @@ font-weight: 500;
 }
 .question
 {
-    margin-top: -16%;
     font-size: 26px;
 }
 .yes-btn
@@ -15437,3 +15514,70 @@ background-size: contain;
 height: auto !important;
 background-repeat: no-repeat;
 }
+.nav-tabs {
+    border-bottom: none !important;
+}
+.firstQuestion
+{
+    width: 100%;
+    margin-top: 0px;
+}
+.questionCheckNow
+{
+    margin-top: -72px;
+}
+.backQuestion
+{
+    float: left;
+    margin-left: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.fourQuestion {
+    width: 42%;
+    margin-top: 0px;
+}
+.refresh
+{
+    margin-left: 35px;
+    width: 40px;
+    cursor: pointer;
+}
+.shareSocial
+{
+    width: 40px;
+    cursor: pointer;
+}
+
+/* Adding this CSS code to style the share popup */
+.share-popup {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+  
+  .share-popup img {
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+  }
+  
+  .share-popup button {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

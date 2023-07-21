@@ -48,7 +48,7 @@ const Diagnosis = () => {
 
     return (
         <div className="container-fluid">
-            <div className="container">
+            <div className="auto-container">
                 <div className="accordion">
                     {accordionData.map(({ title, content }) => (
                         <Accordion title={title} content={content} />

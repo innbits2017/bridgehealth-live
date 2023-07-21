@@ -49,7 +49,7 @@ class ShinglessTab extends Component {
                                     <Tab.Pane eventKey="first">
                                         <div id="image_para_section">
                                             <img src={require('../../assets/images/shape/possible.png')} alt="" className='image_shingles' />
-                                            <p class="paragraph_after_image">
+                                            <p class="paragraph_after_image mt-2">
                                                 PHN is a health complication that affects up to 25% of people with Shingles. One of the main symptoms of PHN is nerve pain that continues for months or years after
                                                 the Shingles rash is healed. The pain usually is experienced in the affected area.
                                             </p>
@@ -58,7 +58,7 @@ class ShinglessTab extends Component {
                                     <Tab.Pane eventKey="second">
                                         <div id="image_para_section">
                                             <img src={require('../../assets/images/shape/possible1.png')} alt="" className='image_shingles' />
-                                            <p class="paragraph_after_image">
+                                            <p class="paragraph_after_image mt-2">
                                                 Shingles affecting the eyes (known as ophthalmic shingles) can lead to vision problems in around 10-25% of cases,
                                                 and without prompt treatment, it can result in permanent vision loss.
                                             </p>
@@ -67,7 +67,7 @@ class ShinglessTab extends Component {
                                     <Tab.Pane eventKey="third">
                                         <div id="image_para_section">
                                             <img src={require('../../assets/images/shape/possible2.png')} alt="" className='image_shingles' />
-                                            <p class="paragraph_after_image">
+                                            <p class="paragraph_after_image mt-2">
                                                 The risk of bacterial skin infections increases when shingles blisters are scratched or become contaminated,
                                                 affecting around 2-5% of shingles cases.
                                             </p>
@@ -76,7 +76,7 @@ class ShinglessTab extends Component {
                                     <Tab.Pane eventKey="four">
                                         <div id="image_para_section">
                                             <img src={require('../../assets/images/shape/possible3.png')} alt="" className='image_shingles' />
-                                            <p class="paragraph_after_image">
+                                            <p class="paragraph_after_image mt-2">
                                                 Neurological complications from shingles, such as encephalitis (inflammation of the brain) or myelitis (inflammation of the spinal cord),
                                                 are rare but can occur in approximately 1 in 1,000 cases.
                                             </p>
@@ -85,7 +85,7 @@ class ShinglessTab extends Component {
                                     <Tab.Pane eventKey="five">
                                         <div id="image_para_section">
                                             <img src={require('../../assets/images/shape/possible4.png')} alt="" className='image_shingles' />
-                                            <p class="paragraph_after_image">
+                                            <p class="paragraph_after_image mt-2">
                                                 Disseminated shingles, where the rash spreads beyond the initial area, is relatively rare, occurring in less than 1% of cases.
                                                 It is more commonly seen in individuals with weakened immune systems.
                                             </p>
@@ -94,7 +94,7 @@ class ShinglessTab extends Component {
                                     <Tab.Pane eventKey="six">
                                         <div id="image_para_section">
                                             <img src={require('../../assets/images/shape/possible5.png')} alt="" className='image_shingles' />
-                                            <p class="paragraph_after_image">
+                                            <p class="paragraph_after_image mt-2">
                                                 Shingles can cause nerve damage, known as post-shingles neuralgia,
                                                 which can affect up to 30% of individuals aged 60 and older.
                                             </p>
