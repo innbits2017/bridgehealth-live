@@ -11,30 +11,30 @@ import RadioButtonComponent from '../element/shingles-popup';
 
 function shingles() {
     const handleClickScroll = () => {
-      const element = document.getElementById('section-1');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-   
-    
+        const element = document.getElementById('section-1');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+
+
     };
     const handleClickScroll1 = () => {
         const element1 = document.getElementById('section-2');
 
         if (element1) {
-          element1.scrollIntoView({ behavior: 'smooth' });
+            element1.scrollIntoView({ behavior: 'smooth' });
         }
-      
-      };
-      const handleClickScroll2 = () => {
+
+    };
+    const handleClickScroll2 = () => {
         const element2 = document.getElementById('section-3');
 
         if (element2) {
-          element2.scrollIntoView({ behavior: 'smooth' });
+            element2.scrollIntoView({ behavior: 'smooth' });
         }
-      
-      };
-  
+
+    };
+
     return (
         <>
             <Header />
@@ -79,48 +79,48 @@ function shingles() {
                     <div className="wrap-tpo">
                         <div className="row">
                             <div className="col-lg-3 wrap-item-header">
-                                    <div className="card wrap-shig bg1" onClick={handleClickScroll}>
-                                        <div className="card-body wrap-shig-text">
-                                            <p className="card-text-partners">What is Shingles/Herpes?</p>
-                                        </div>
+                                <div className="card wrap-shig bg1" onClick={handleClickScroll}>
+                                    <div className="card-body wrap-shig-text">
+                                        <p className="card-text-partners">What is Shingles/Herpes?</p>
                                     </div>
-                                
+                                </div>
+
                             </div>
                             <div className="col-lg-3 wrap-item-header" >
-                                    <div className="card wrap-shig bg2"  onClick={handleClickScroll1}>
-                                        <div className="card-body wrap-shig-text">
-                                            <p className="card-text-partners">Symptoms and intensity of pain</p>
-                                        </div>
+                                <div className="card wrap-shig bg2" onClick={handleClickScroll1}>
+                                    <div className="card-body wrap-shig-text">
+                                        <p className="card-text-partners">Symptoms and intensity of pain</p>
                                     </div>
+                                </div>
                             </div>
                         </div>
 
                         <div className="row">
 
                             <div className="col-lg-3 wrap-item-header">
-                                    <div className="card wrap-shig bg3"  onClick={handleClickScroll2}>
-                                        <div className="card-body wrap-shig-text">
-                                            <p className="card-text-partners">About the <br></br>Vaccine</p>
-                                        </div>
+                                <div className="card wrap-shig bg3" onClick={handleClickScroll2}>
+                                    <div className="card-body wrap-shig-text">
+                                        <p className="card-text-partners">About the <br></br>Vaccine</p>
                                     </div>
+                                </div>
                             </div>
 
                             <div className="col-lg-3 wrap-item-header">
-                                    <div className="card wrap-shig bg4">
-                                        <div className="card-body wrap-shig-text">
-                                            <p className="card-text-partners">Are you at risk <br></br>for Shingles?</p>
-                                        </div>
+                                <div className="card wrap-shig bg4">
+                                    <div className="card-body wrap-shig-text">
+                                        <p className="card-text-partners">Are you at risk <br></br>for Shingles?</p>
                                     </div>
+                                </div>
                             </div>
                         </div>
 
                         <div className="row">
                             <div className="col-lg-3 wrap-item-header">
-                                    <div className="card wrap-shig bg5" onClick={handleClickScroll2}>
-                                        <div className="card-body wrap-shig-text">
-                                            <p className="card-text-partners">Why take <br></br>the vaccine?</p>
-                                        </div>
+                                <div className="card wrap-shig bg5" onClick={handleClickScroll2}>
+                                    <div className="card-body wrap-shig-text">
+                                        <p className="card-text-partners">Why take <br></br>the vaccine?</p>
                                     </div>
+                                </div>
                             </div>
                             <div className="col-lg-3 wrap-item-header">
                                 <a href='' className="wrap-cont-col">
@@ -302,7 +302,7 @@ function shingles() {
                     </div>
                 </div>
             </section>
-           
+
             <section className='container mt-5'>
                 <div className="sites-desktop">
                     <div className='wrap-sites'>
@@ -325,7 +325,7 @@ function shingles() {
                     </div>
                 </div>
             </section>
-            
+
 
             {/* Mobile Code  */}
             <section className='container mt-5'>
@@ -349,7 +349,7 @@ function shingles() {
                     </div>
                 </div>
             </section>
-            
+
             <div className="desk-item backGroundRight">
                 <div className='container-fulid backimg2'>
                     <div className='container'>
@@ -392,12 +392,12 @@ function shingles() {
                 </div>
             </section>
 
-            <div className='backFaqsRight'  id="section-3">
-            <div className='container-fulid backFaqsLeft'>
-                <div className='auto-container'>
-                    <TabAccordian />
+            <div className='backFaqsRight' id="section-3">
+                <div className='container-fulid backFaqsLeft'>
+                    <div className='auto-container'>
+                        <TabAccordian />
+                    </div>
                 </div>
-            </div>
             </div>
             <section style={{ marginBottom: 4 + 'rem' }}>
                 <div class="auto-container">
@@ -472,7 +472,7 @@ function shingles() {
             </section> */}
             <Footer />
         </>
-    ) ;
-  }
-  
-  export default shingles;
+    );
+}
+
+export default shingles;

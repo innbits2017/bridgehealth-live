@@ -168,14 +168,14 @@ const RadioButtonComponent = () => {
                                             ) : (
                                                 <div>
                                                     <div>
-                                                        <h2 className="question">
+                                                        <h2 className="question consult-msg1">
                                                             You are at high risk of Shingles, consult your
                                                             doctor about Shingles and its prevention
                                                         </h2>
                                                     </div>
 
                                                     <div>
-                                                        <p>
+                                                        <p className="share-msg">
                                                             Share this risk test with others and help them understand more about Shingles and its
                                                             prevention.
                                                         </p>
@@ -201,7 +201,7 @@ const RadioButtonComponent = () => {
                                 </h2>
                             </div>
                             <div>
-                                <p>
+                                <p className="share-msg">
                                     Share this risk test with others and help them understand more about Shingles and its
                                     prevention.
                                 </p>
@@ -215,9 +215,15 @@ const RadioButtonComponent = () => {
             )}
             {showSharePopup && (
                 <div className="share-popup">
-                    <img src={require('../../assets/images/shape/Facebook_Logo1 (1).png')} alt="WhatsApp" />
-                    <img src={require('../../assets/images/shape/whatsapp-logo1 (1).png')} alt="Facebook" />
-                    <img src={require('../../assets/images/shape/linked_logo1 (1).png')} alt="LinkedIn" />
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=URL_TO_SHARE" target="_blank">
+                        <img src={require('../../assets/images/shape/Facebook_Logo1 (1).png')} alt="Facebook" />
+                    </a>
+                    <a href='https://api.whatsapp.com/send?phone=916366504753&text=Hey%20Bridge%20Health' target="_blank">
+                        <img src={require('../../assets/images/shape/whatsapp-logo1 (1).png')} alt="WhatsApp" />
+                    </a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=URL_TO_SHARE" target="_blank">
+                        <img src={require('../../assets/images/shape/linked_logo1 (1).png')} alt="LinkedIn" />
+                    </a>
                     <button onClick={closeSharePopup}>Close</button>
                 </div>
             )}
