@@ -7,11 +7,11 @@ const Prevention = () => {
         {
             title: '1. What are the potential complications of shingles?',
             content: `Shingles can lead to various potential complications including:
-            •	Postherpetic Neuralgia (PHN): PHN is a condition characterized by persistent, severe pain that lasts for weeks, months, or even years after the rash has healed. It occurs due to nerve damage caused by the viral infection.
-            •	Vision Problems: If the shingles rash affects the area around the eye (Herpes ZosterOphthalmicus), it can lead to eye-related complications such as corneal damage, uveitis (inflammation of the middle layer of the eye), and even vision loss.
-            •	Neurological Complications:Shingles can involve the nerves of the face, earsand head, leading to conditions Ramsay Hunt syndrome or RHS(facial paralysis) which can result in facial muscle weakness or paralysis and sometimes cause hearing loss and dizziness.
-            •	Bacterial Infections: The shingles rash can be open, allowing bacteria to enter the skin and cause secondary infections. Cellulitis, a bacterial skin infection, is a common complication of untreated shingles.
-            •	Disseminated Shingles: In people with weakened immune systems, the varicella-zoster virus can spread beyond the original site of the rash, leading to a widespread and severe infection known as disseminated shingles.`
+              • <strong>Postherpetic Neuralgia (PHN)</strong>: PHN is a condition characterized by persistent, severe pain that lasts for weeks, months, or even years after the rash has healed. It occurs due to nerve damage caused by the viral infection.
+              • <strong>Vision Problems</strong>: If the shingles rash affects the area around the eye (Herpes Zoster Ophthalmicus), it can lead to eye-related complications such as corneal damage, uveitis (inflammation of the middle layer of the eye), and even vision loss.
+              • <strong>Neurological Complications</strong>: Shingles can involve the nerves of the face, ears, and head, leading to conditions Ramsay Hunt syndrome or RHS (facial paralysis) which can result in facial muscle weakness or paralysis and sometimes cause hearing loss and dizziness.
+              • <strong>Bacterial Infections</strong>: The shingles rash can be open, allowing bacteria to enter the skin and cause secondary infections. Cellulitis, a bacterial skin infection, is a common complication of untreated shingles.
+              • <strong>Disseminated Shingles</strong>: In people with weakened immune systems, the varicella-zoster virus can spread beyond the original site of the rash, leading to a widespread and severe infection known as disseminated shingles.`
         },
         {
             title: '2. How does shingles impact individuals? Is shingles a potentially dangerous or a fatal condition?',
@@ -55,9 +55,11 @@ const Prevention = () => {
             <div className="auto-container">
                 <div className="accordion">
                     {accordionData.map(({ title, content }) => (
-                        <Accordion title={title} content={content.split("\n").map((item, index) => (
-                            <li key={index}>{item}</li>
-                          ))} />
+                        <Accordion title={title} content={content.split('\n').map((point, idx) => (
+                            <li key={idx}>
+                                <span dangerouslySetInnerHTML={{ __html: point.trim() }} />
+                            </li>
+                        ))} />
                     ))}
                 </div>
                 <div class="btn-box btn5">

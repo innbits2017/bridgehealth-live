@@ -7,6 +7,7 @@ import Vaccine from '../pages/vaccine';
 import Questions from '../pages/questions';
 
 function TabAccordian() {
+  const titleWithLineBreak = 'Shingles<br>Vaccine';
   return (
     <Tabs
       defaultActiveKey="profile"
@@ -18,7 +19,7 @@ function TabAccordian() {
       <Diagnosis />      </Tab>
       <Tab eventKey="profile" title="Treatment &  Prevention">
       <Prevention />      </Tab>
-      <Tab eventKey="longer-tab" title="Shingles Vaccine">
+      <Tab eventKey="longer-tab" title={<span dangerouslySetInnerHTML={{ __html: titleWithLineBreak }} />}>
       <Vaccine />      </Tab>
       <Tab eventKey="contact" title="Other Common Questions">
       <Questions />      </Tab>
