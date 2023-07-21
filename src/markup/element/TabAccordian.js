@@ -2,6 +2,9 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import React, { Component } from 'react';
 import Diagnosis from '../pages/diagnosis';
+import Prevention from '../pages/prevention';
+import Vaccine from '../pages/vaccine';
+import Questions from '../pages/questions';
 
 function TabAccordian() {
   return (
@@ -14,11 +17,11 @@ function TabAccordian() {
       <Tab eventKey="home" title="Symptoms and Diagnosis" className='linksAll'>
       <Diagnosis />      </Tab>
       <Tab eventKey="profile" title="Treatment &  Prevention">
-      <Diagnosis />      </Tab>
+      <Prevention />      </Tab>
       <Tab eventKey="longer-tab" title="Shingles Vaccine">
-      <Diagnosis />      </Tab>
+      <Vaccine />      </Tab>
       <Tab eventKey="contact" title="Other Common Questions">
-      <Diagnosis />      </Tab>
+      <Questions />      </Tab>
     </Tabs>
   );
 }
