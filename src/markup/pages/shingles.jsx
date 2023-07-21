@@ -225,7 +225,7 @@ function shingles() {
             <div>
                 < ShinglesPopup />
             </div>
-            <div class="btn-box text-center btn5">
+            <div class="btn-box text-center btn10">
                 <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one' />
 
             </div>
