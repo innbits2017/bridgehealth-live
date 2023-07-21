@@ -99,7 +99,7 @@ const RadioButtonComponent = () => {
                     <img src={require('../../assets/images/shape/shi1.png')} alt="" className='firstQuestion' />
 
                     <div className="questionCheckNow">
-                        <button className="check-btn btn-style-one" onClick={handleClick}>Check Now</button>
+                        <button className="check-btn btn-style-ten" onClick={handleClick}>Check Now</button>
                     </div>
                 </div>
             ) : (
@@ -138,7 +138,7 @@ const RadioButtonComponent = () => {
                                             <h2 className="question">
                                                 Have you had Chickenpox?
                                             </h2>
-                                            <img src={require('../../assets/images/shape/OBJECTS.png')} alt="" className='fourQuestion' />
+                                            <img src={require('../../assets/images/shape/OBJECTS.png')} alt="" className='fiveQuestion' />
                                             <div className="buttons-wrapper">
                                                 <img src={require('../../assets/images/shape/Arrow 13.png')} alt="Back" onClick={handleBack}
                                                     className="backQuestion" />
