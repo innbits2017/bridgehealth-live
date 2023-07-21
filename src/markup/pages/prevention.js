@@ -23,8 +23,8 @@ const Prevention = () => {
             content: `There is no standard care procedure or treatment plan for shingles. Prescription drugs can reduce pain and lower the risk of complications. Most common line of treatment includes:
             •	<strong>Antiviral Medications:</strong> Antiviral drugs are most effective when started within 72 hours (about 3 days) of the appearance of the rash. They work by blocking the replication of the varicella-zoster virus, which causes shingles. By doing so, they can help reduce the severity and duration of the outbreak, as well as the risk of complications.
             •	<strong>Supportive Care:</strong> In addition to antiviral medications, various measures can help manage the symptoms of shingles and promote healing. These may include:
-            o	Over-the-counter pain relievers to help alleviate discomfort. In some cases, stronger prescription pain medications may be necessary.
-            o	Topical creams to help soothe the rash and reduce itching.
+            •	Over-the-counter pain relievers to help alleviate discomfort. In some cases, stronger prescription pain medications may be necessary.
+            •	Topical creams to help soothe the rash and reduce itching.
             •	<strong>Rest:</strong> Adequate rest can aid the body in fighting the infection and promote healing.
             •	<strong>Cool Compresses:</strong> Applying cool, damp compresses to the affected area may provide relief. `
         },

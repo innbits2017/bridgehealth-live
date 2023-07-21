@@ -168,14 +168,14 @@ const RadioButtonComponent = () => {
                                             ) : (
                                                 <div>
                                                     <div>
-                                                        <h2 className="question">
+                                                        <h2 className="question consult-msg1">
                                                             You are at high risk of Shingles, consult your
                                                             doctor about Shingles and its prevention
                                                         </h2>
                                                     </div>
 
                                                     <div>
-                                                        <p>
+                                                        <p className="share-msg">
                                                             Share this risk test with others and help them understand more about Shingles and its
                                                             prevention.
                                                         </p>
@@ -201,7 +201,7 @@ const RadioButtonComponent = () => {
                                 </h2>
                             </div>
                             <div>
-                                <p>
+                                <p className="share-msg">
                                     Share this risk test with others and help them understand more about Shingles and its
                                     prevention.
                                 </p>

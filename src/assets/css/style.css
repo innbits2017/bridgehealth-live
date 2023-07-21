@@ -15520,22 +15520,35 @@ background-repeat: no-repeat;
 .firstQuestion
 {
     width: 100%;
-    margin-top: 0px;
+    margin-top: 12px;
 }
 .questionCheckNow
 {
     margin-top: -72px;
 }
-.backQuestion
-{
+.backQuestion {
+    width: 4%;
+    font-size: 53px;
     float: left;
     margin-left: 10px;
-    margin-top: 25px;
+    margin-top: 30px;
     cursor: pointer;
 }
 
+.consult-msg {
+    margin-top: 21%;
+}
+
+.consult-msg1 {
+    margin-top: 25%;
+}
+
+.share-msg {
+    margin-top: 15%;
+}
+
 .fourQuestion {
-    width: 42%;
+    width: 48%;
     margin-top: 0px;
 }
 .refresh
@@ -15553,7 +15566,7 @@ background-repeat: no-repeat;
 /* Adding this CSS code to style the share popup */
 .share-popup {
     position: fixed;
-    top: 55%;
+    top: 72%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
