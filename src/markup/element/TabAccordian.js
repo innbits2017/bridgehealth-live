@@ -10,7 +10,7 @@ function TabAccordian() {
   const titleWithLineBreak = 'Shingles<br>Vaccine';
   return (
     <Tabs
-      defaultActiveKey="profile"
+      defaultActiveKey="home"
       id="justify-tab-example"
       className="mb-3 auto-container"
       justify
