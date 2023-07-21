@@ -16,10 +16,10 @@ const Vaccine = () => {
             title: '3. What is the importance of vaccination against shingles? ',
             content: `Vaccination against shingles is crucial for preventing the disease and reducing its severity in those who still contract it. 
             Importance of Vaccination:
-            •	Prevention of Shingles: The primary benefit of vaccination is preventing shingles in the first place. By stimulating the immune system against the varicella-zoster virus, the vaccine significantly reduces the risk of developing shingles.
-            •	Reduced Severity: In cases, where vaccinated individuals still develop shingles, the vaccine can help reduce the severity and duration of the illness. Vaccinated individuals are less likely to experience the intense pain associated with shingles and are less likely to suffer from complications.
-            •	Postherpetic Neuralgia Prevention: One of the most concerning complications of shingles is postherpetic neuralgia (PHN), which is persistent nerve pain that can last for months or even years after the rash has healed. Vaccination has been found to be highly effective in reducing the risk of developing PHN in those who still contract shingles.
-            •	Protection for Immunocompromised Individuals: Vaccination is essential for individuals with compromised immune systems who are more susceptible to getting shingles. By reducing the risk of infection, the vaccine helps protect vulnerable populations.`
+            <strong>•	Prevention of Shingles:</strong> The primary benefit of vaccination is preventing shingles in the first place. By stimulating the immune system against the varicella-zoster virus, the vaccine significantly reduces the risk of developing shingles.
+            <strong>•	Reduced Severity:</strong> In cases, where vaccinated individuals still develop shingles, the vaccine can help reduce the severity and duration of the illness. Vaccinated individuals are less likely to experience the intense pain associated with shingles and are less likely to suffer from complications.
+            <strong>•	Postherpetic Neuralgia Prevention:</strong> One of the most concerning complications of shingles is postherpetic neuralgia (PHN), which is persistent nerve pain that can last for months or even years after the rash has healed. Vaccination has been found to be highly effective in reducing the risk of developing PHN in those who still contract shingles.
+            <strong>•	Protection for Immunocompromised Individuals:</strong> Vaccination is essential for individuals with compromised immune systems who are more susceptible to getting shingles. By reducing the risk of infection, the vaccine helps protect vulnerable populations.`
         },
         {
             title: '4. Who should consider getting vaccinated against shingles?  ',
@@ -36,12 +36,12 @@ const Vaccine = () => {
             title: '5. Are there any side effects of the shingles vaccine, and how common are they?',
             content: `The shingles vaccine, also known as the herpes zoster vaccine, is generally safe and well-tolerated. Like any other vaccine, it can have side effects although they are typically mild to moderate and transient in nature. 
             Most Common Side Effects
-            •	Injection site reactions: This may include pain, redness, swelling, or tenderness at the site of injection. These reactions are usually mild and go away on their own within 2 to 3 days.
-            •	Headache: Some individuals may experience a mild headache after receiving the vaccine. This symptom is usually temporary and resolves without intervention.
-            •	Fatigue: Feeling tired or experiencing fatigue is a possible side effect, but it is usually short-lived.
+            <strong>•	Injection site reactions:</strong> This may include pain, redness, swelling, or tenderness at the site of injection. These reactions are usually mild and go away on their own within 2 to 3 days.
+            <strong>•	Headache:</strong> Some individuals may experience a mild headache after receiving the vaccine. This symptom is usually temporary and resolves without intervention.
+            <strong>•	Fatigue:</strong> Feeling tired or experiencing fatigue is a possible side effect, but it is usually short-lived.
             Less Commonly Experienced Side Effects
-            •	Muscle pain: Some people may have temporary muscle pain, typically in the arm where the vaccine was administered.
-            •	Fever: Low-grade fever may occur as a response to the vaccine. It is usually mild and transient.
+            <strong>•	Muscle pain:</strong> Some people may have temporary muscle pain, typically in the arm where the vaccine was administered.
+            <strong>•	Fever:</strong> Low-grade fever may occur as a response to the vaccine. It is usually mild and transient.
             Severe side effects are rare. However, if they do occur, they can include allergic reactions (such as difficulty breathing, swelling of the face or throat, or hives) or a rare neurological condition called Guillain-Barré syndrome (GBS).
             It's important to note that the risk of these severe side effects is extremely low.`
         },
@@ -73,13 +73,16 @@ const Vaccine = () => {
             <div className="auto-container">
                 <div className="accordion">
                     {accordionData.map(({ title, content }) => (
-                        <Accordion title={title} content={content.split("\n").map((item, index) => (
-                            <li key={index}>{item}</li>
-                          ))} />
+                        <Accordion title={title} content={content.split('\n').map((point, idx) => (
+                            <li key={idx}>
+                                <span dangerouslySetInnerHTML={{ __html: point.trim() }} />
+                            </li>
+                        ))} />
                     ))}
                 </div>
-                <div class="btn-box btn5">
-                    <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one btn-diag' />
+                <div class="btn-box text-center btn5 shin-btn1">
+                    <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one' />
+
                 </div>
             </div>
         </div>

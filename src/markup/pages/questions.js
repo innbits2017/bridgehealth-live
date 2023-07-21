@@ -23,7 +23,7 @@ const Questions = () => {
             title: '3. What is the chance of someone getting shingles? ',
             content: `According to the Centers for Disease Control and Prevention (CDC), the chance of getting shingles above the age of 50 years is‘1 in 3individuals’. `
         }
-        
+
     ];
 
     return (
@@ -31,13 +31,16 @@ const Questions = () => {
             <div className="auto-container">
                 <div className="accordion">
                     {accordionData.map(({ title, content }) => (
-                        <Accordion title={title} content= {content.split("\n").map((item, index) => (
-                            <li key={index}>{item}</li>
-                          ))} />
+                        <Accordion title={title} content={content.split('\n').map((point, idx) => (
+                            <li key={idx}>
+                                <span dangerouslySetInnerHTML={{ __html: point.trim() }} />
+                            </li>
+                        ))} />
                     ))}
                 </div>
-                <div class="btn-box btn5">
-                    <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one btn-diag' />
+                <div class="btn-box text-center btn5 shin-btn1">
+                    <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one' />
+
                 </div>
             </div>
         </div>

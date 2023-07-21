@@ -21,12 +21,12 @@ const Prevention = () => {
         {
             title: '3. What is the recommended treatment for shingles, and are antiviral medications effective in managing the disease?',
             content: `There is no standard care procedure or treatment plan for shingles. Prescription drugs can reduce pain and lower the risk of complications. Most common line of treatment includes:
-            •	Antiviral Medications: Antiviral drugs are most effective when started within 72 hours (about 3 days) of the appearance of the rash. They work by blocking the replication of the varicella-zoster virus, which causes shingles. By doing so, they can help reduce the severity and duration of the outbreak, as well as the risk of complications.
-            •	Supportive Care: In addition to antiviral medications, various measures can help manage the symptoms of shingles and promote healing. These may include:
+            •	<strong>Antiviral Medications:</strong> Antiviral drugs are most effective when started within 72 hours (about 3 days) of the appearance of the rash. They work by blocking the replication of the varicella-zoster virus, which causes shingles. By doing so, they can help reduce the severity and duration of the outbreak, as well as the risk of complications.
+            •	<strong>Supportive Care:</strong> In addition to antiviral medications, various measures can help manage the symptoms of shingles and promote healing. These may include:
             o	Over-the-counter pain relievers to help alleviate discomfort. In some cases, stronger prescription pain medications may be necessary.
             o	Topical creams to help soothe the rash and reduce itching.
-            •	Rest: Adequate rest can aid the body in fighting the infection and promote healing.
-            •	Cool Compresses: Applying cool, damp compresses to the affected area may provide relief. `
+            •	<strong>Rest:</strong> Adequate rest can aid the body in fighting the infection and promote healing.
+            •	<strong>Cool Compresses:</strong> Applying cool, damp compresses to the affected area may provide relief. `
         },
         {
             title: '4. What are some general tips for managing shingles symptoms? ',
@@ -62,8 +62,9 @@ const Prevention = () => {
                         ))} />
                     ))}
                 </div>
-                <div class="btn-box btn5">
-                    <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one btn-diag' />
+                <div class="btn-box text-center btn5 shin-btn1">
+                    <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one' />
+
                 </div>
             </div>
         </div>
