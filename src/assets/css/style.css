@@ -15079,21 +15079,21 @@ button.btn-style-one.btn-diag {
 
 }
 
-.backFaqsRight {
+/* .backFaqsRight {
     background-image: url(../images/shape/shinglesFaqsLeft.png);
     background-size: 15%;
     background-repeat: no-repeat;
     background-position: right bottom;
     
-}
+} */
 
-.backFaqsLeft {
+/* .backFaqsLeft {
     background-image: url(../images/shape/shinglesFaqsRight.png);
     background-size: 13%;
     background-repeat: no-repeat;
     background-position: left center;
     
-}
+} */
 .backimg3 {
     background-image: url(../images/shape/back12345.png);
     background-size: initial;
