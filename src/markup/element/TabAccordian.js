@@ -8,7 +8,7 @@ function TabAccordian() {
     <Tabs
       defaultActiveKey="profile"
       id="justify-tab-example"
-      className="mb-3"
+      className="mb-3 auto-container"
       justify
     >
       <Tab eventKey="home" title="Symptoms and Diagnosis" className='linksAll'>

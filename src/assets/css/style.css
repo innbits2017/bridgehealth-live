@@ -14942,7 +14942,7 @@ span.wrap-header2 {
 }
 
 .btn-box.text-center.btn5.wrap-btn {
-    margin-top: -24%;
+    margin-top: 0%;
 }
 
 h3.card-text-partners5 {
@@ -14956,6 +14956,7 @@ h3.card-text-partners {
     font-size: 25px;
     font-weight: 700;
     line-height: 48px;
+    margin-bottom: 0px;
     text-transform: uppercase;
 }
 
@@ -15047,8 +15048,8 @@ img.wrap-labwidth12 {
     width: 100%;
 }
 img.wrap-labwidth123 {
-    height: 370px;
-    width: 100%;
+    width: 75%;
+    margin-top: 0px;
 }
 button.btn-style-one.btn-diag {
     text-align: center !important;
@@ -15070,7 +15071,29 @@ button.btn-style-one.btn-diag {
     background-position: top right;
     padding-top: 20px;
 }
+.backGroundRight {
+    background-image: url(../images/shape/shinglesRightBackground.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left bottom; 
 
+}
+
+.backFaqsRight {
+    background-image: url(../images/shape/shinglesFaqsLeft.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    
+}
+
+.backFaqsLeft {
+    background-image: url(../images/shape/shinglesFaqsRight.png);
+    background-size: 13%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    
+}
 .backimg3 {
     background-image: url(../images/shape/back12345.png);
     background-size: initial;
@@ -15088,14 +15111,6 @@ button.btn-style-one.btn-diag {
 .accordion-item {
     margin-bottom: 21px;
 }
-.accordion-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    cursor: pointer;
-    background-color: #fff;
-    color: #000;
-}
   
 .accordion-title:hover {
     background-color: #FFFFF7;
@@ -15110,8 +15125,15 @@ button.btn-style-one.btn-diag {
     fill: #FFF;
     filter: drop-shadow(0px 2.9042577743530273px 15px rgba(0, 0, 0, 0.10));
     font-size: 21px;
-    border-radius: 10px;
+    border-radius: 18px;
     font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
 }
 
 .accordion-content { 
@@ -15177,7 +15199,7 @@ padding-top: 0px;
 list-style: none;
 }
 p.paragraph_after_image {
-width: 38rem;
+margin-top: 15px !important;
 }
 
 .wrap-sites-poss {
@@ -15216,7 +15238,8 @@ margin-top: 5%;
 background-color: #fff;
 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 color: #000;
-padding: 5px;
+padding: 6px;
+border-radius: 18px;
 font-size: 19px;
 font-weight: 500;
 
@@ -15232,9 +15255,10 @@ font-weight: 500;
     text-align: center;
     font-size: 25px;
     line-height: 34px;
-    margin-right: 12px;
+    margin-right: 15px;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: #F7F8F7;
+    margin-left: 15px;
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: #ffffff;
@@ -15452,7 +15476,6 @@ font-weight: 500;
 }
 .question
 {
-    margin-top: -16%;
     font-size: 26px;
 }
 .yes-btn
@@ -15490,4 +15513,37 @@ padding: 10px 30px 10px 30px !important;
 background-size: contain;
 height: auto !important;
 background-repeat: no-repeat;
+}
+.nav-tabs {
+    border-bottom: none !important;
+}
+.firstQuestion
+{
+    width: 100%;
+    margin-top: 0px;
+}
+.questionCheckNow
+{
+    margin-top: -72px;
+}
+.backQuestion
+{
+    float: left;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.fourQuestion {
+    width: 42%;
+    margin-top: 0px;
+}
+.refresh
+{
+    margin-left: 35px;
+    width: 40px;
+}
+.shareSocial
+{
+    width: 40px;
+
 }
