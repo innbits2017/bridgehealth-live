@@ -20,13 +20,13 @@ class physiotherapy extends Component {
                     <div class="auto-container">
                         <div class="content-box physiobox">
 
-                            <div class="textleft">
+                            <div class="textleft marginTop40">
                                 <h2 className='textleft fontSize'>
                                     <span className='headeingcolorblack'>Improve your<span className='headeingcolorblue'> mobility </span><br></br>
                                      one step at a time </span>
 
                                 </h2>
-                                <h3 className='textleft marginTop40'>
+                                <h3 className='textleft'>
                                 Schedule a physiotherapy<br></br> session with us
                                 </h3>
                             </div>

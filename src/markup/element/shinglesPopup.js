@@ -20,8 +20,12 @@ return (
         <div class="image-one" onClick={this.openModal}>
             <img src={require('../../assets/images/shape/videobackground.png')} alt="" className='imgwidth' />
         </div>
-        <div className='container margin100'>
+        <div className='container margin100 mobilehide'>
         <img src={require('../../assets/images/shape/herpes.png')} alt="" className='imgwidth' />
+
+        </div>
+        <div className='container desktophide mobilemargin'>
+        <img src={require('../../assets/images/shape/mobileShingles.png')} alt="" className='imgwidth' />
 
         </div>
 
