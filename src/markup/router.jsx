@@ -46,6 +46,7 @@ import JobListingForm from './pages/JobListingForm';
 import Sidenav from './pages/Sidenav';
 import TermPolicy from './pages/term-policy';
 import shingles from './pages/shingles';
+import HealthApp from './pages/healthTable';
 
 
 
@@ -99,6 +100,8 @@ class Router extends Component {
                         <Route path='/sidenav' component={Sidenav}/>
                         <Route path='/JobListingForm' component={JobListingForm}/>
                         <Route path='/shingles' component={shingles}/>
+                        <Route path='/health-table' component={HealthApp}/>
+
 
                     </Switch>
                     <BackToTop />

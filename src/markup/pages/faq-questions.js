@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Accordion from '../../assets/js/Accordion';
-import ContactForm from '../element/contact-form';
+import HealthTable from './healthTable';
+
 
 const FaqQuestions = () => {
+
     const accordionData = [
         {
             title: '1. What is Proactive Healthcare? ',
@@ -43,8 +45,7 @@ const FaqQuestions = () => {
         },
         {
             title: '2. Which AHP do you recommend? How do I choose my AHP? ',
-            content: `Our expert clinicians have created 5 Annual Health Plans to cover age groups from below 25 years to above 55 years as indicated below. These are broad guidelines, and our Health & Wellness Advisors can help you choose the right plan, based on your specific health status, family history and health goals.
-            Talk to your health advisor today to understand the best fit for you - <Insert number to chat>.`
+            content: <HealthTable />
         },
         {
             title: '3. How are our Annual Health Plans different from others?',
@@ -77,7 +78,7 @@ const FaqQuestions = () => {
         {
             title: '3. Can I get diet or nutrition-related advice at Bridge Health?',
             content: `Yes, at Bridge Health, you can receive diet and nutrition-related advice from our team of qualified & experienced nutritionists. Our nutritionists possess extensive knowledge of food and nutrition, and they will customize diet plans based on your preferences, choice, and ease of cooking, taking into account time considerations. They are also experienced in creating customized diet charts for individuals with health conditions like diabetes, hypertension, PCOS, obesity, among others. `
-        
+
         },
         {
             title: '4. What are the available services that cater to physical activity or exercise?',
@@ -119,21 +120,40 @@ const FaqQuestions = () => {
         },
     ];
 
+
+
+
     return (
         <div className="container-fluid">
             <div className="auto-container">
                 <div className="accordion">
                     {accordionData.map(({ title, content }) => (
-                        <Accordion title={title} content={content.split('\n').map((point, idx) => (
-                            <li key={idx}>
-                                <span dangerouslySetInnerHTML={{ __html: point.trim() }} />
-                            </li>
-                        ))} />
+                        <Accordion
+                            key={title}
+                            title={title}
+                            content={
+                                typeof content === 'string' ? (
+                                    // Check if content has list items (ul or ol)
+                                    content.includes('<ul') || content.includes('<ol') ? (
+                                        <div dangerouslySetInnerHTML={{ __html: content }} />
+                                    ) : (
+                                        // If no list items, use ul tag to wrap content
+                                        <ul>
+                                            {content.split('\n').map((item, index) => (
+                                                <li key={index}>
+                                                    <span dangerouslySetInnerHTML={{ __html: item }} />
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )
+                                ) : (
+                                    content
+                                )
+                            }
+                        />
                     ))}
                 </div>
-                <div class="btn-box text-center btn5 shin-btn1">
-                    <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one' />
-                </div>
+
             </div>
         </div>
     );
