@@ -10875,6 +10875,10 @@ position: relative;
 }
 
 @media (max-width:560px) {
+    .nav-justified .nav-item
+    {
+        font-size: 18px !important;
+        line-height: 28px !important;    }
     .marginRigh {
         margin-right: 0% !important;
         text-align: center !important;
@@ -15389,6 +15393,14 @@ font-weight: 500;
   }
   
   @media (max-width:560px) {
+    .backimg2 {
+        background-image: none !important;
+    }
+    .backGroundRight
+    {
+        background-image: none !important;
+
+    }
     .shi-wrap-mobile {
       display: block;
     }
@@ -15700,6 +15712,13 @@ background-repeat: no-repeat;
 
 /* SearchInput.css */
 
+.faqBack
+{
+    background-image: url(../images/shape/faqback.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .search-containerfaq {
     display: flex;
     align-items: center;
@@ -15710,7 +15729,7 @@ background-repeat: no-repeat;
   
   .custom-searchfaq {
     /* Add custom styles for the search container here */
-    background-color: #fff;
+    margin-top: 10%;
     /* border: 1px solid #ccc; */
     border-radius: 5px;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
@@ -15722,6 +15741,7 @@ background-repeat: no-repeat;
     font-size: 28px;
     border: none;
     outline: none;
+    background-color: transparent;
     flex: 1;
     color: #787878;
   }
@@ -15733,6 +15753,7 @@ background-repeat: no-repeat;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    width: 60px;
   }  
 
 /* Add this CSS in a separate CSS file or in a style block within your component file */
@@ -15747,6 +15768,9 @@ background-repeat: no-repeat;
   
   .checkbox-row-faq label {
     display: flex;
+    font-size: 18px;
+    margin-top: 2%;
+    margin-bottom: 2%;
     align-items: center;
   }
 
@@ -15784,7 +15808,7 @@ background-repeat: no-repeat;
 
 /* SeeMore.css */
 .see-more-btn {
-    background-color: #007bff;
+    background-color: #1963C6;
     color: #fff;
     border: none;
     padding: 10px 25px;

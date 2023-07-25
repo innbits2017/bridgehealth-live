@@ -47,7 +47,7 @@ class FAQ extends Component {
                 <Header />
 
                 {/* <!-- Page Banner Section --> */}
-                <section class="internalpage-faq internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
+                {/* <section class="internalpage-faq internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
                     <div class="auto-container">
                         <div class="content-box">
                             <div class=" text-center textleft">
@@ -59,9 +59,34 @@ class FAQ extends Component {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
+ <section class="team-section padding">
+        {/* About Section Two */}
+        <section class="container-fluid">
+            <div class="row align-items-center auto-container reverseFlex blogPagebox">
 
-                <section>
+                <div class="col-lg-5">
+                    <div class="content-box marginTop40header">
+
+                        <div class="sec-title text-center textleft">
+                        <h2 className='textleft fontSize'>
+                                    <span className='headeingcolorblack'> Got a </span>
+                                    <span className='headeingcolorblue'> query? </span> <br></br>
+                                    <span className='headeingcolorblack'> We are here to help. </span>
+                                </h2>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class=" imgright">
+                        <img src={require('./../../assets/images/shape/faqhead.png')} alt=""/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+                <section className='faqBack'>
                     <div className="container-fluid">
                         <div className="auto-container">
                             <div className="search-containerfaq custom-searchfaq">
@@ -106,9 +131,7 @@ class FAQ extends Component {
                                             {checkbox.name}
                                         </label>
                                     ))}
-                                </div>
-                                <div className="checkbox-row-faq ">
-                                    {checkboxes.slice(2).map((checkbox, index) => (
+                                      {checkboxes.slice(2).map((checkbox, index) => (
                                         <label key={index + 2}>
                                             <input
                                                 type="checkbox"
@@ -119,6 +142,9 @@ class FAQ extends Component {
                                         </label>
                                     ))}
                                 </div>
+                                {/* <div className="checkbox-row-faq ">
+                                  
+                                </div> */}
                             </div>
                         </div>
                     </div>
