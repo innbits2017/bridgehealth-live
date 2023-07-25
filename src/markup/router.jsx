@@ -98,7 +98,6 @@ class Router extends Component {
                         <Route path='/LoginForm' component={LoginForm}/>
                         <Route path='/sidenav' component={Sidenav}/>
                         <Route path='/JobListingForm' component={JobListingForm}/>
-                        <Route path='/terms-policy' component={TermPolicy}/>
                         <Route path='/shingles' component={shingles}/>
 
                     </Switch>
