@@ -15781,4 +15781,28 @@ background-repeat: no-repeat;
   .custom-dropdown-faq option {
     padding: 8px 12px;
   }
+
+/* SeeMore.css */
+.see-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 21px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
   
+  .see-more-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .faq-btn-bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+    

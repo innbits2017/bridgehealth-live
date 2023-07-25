@@ -154,6 +154,12 @@ const FaqQuestions = () => {
                     ))}
                 </div>
 
+                <div className='faq-btn-bot'>
+                    <button className="see-more-btn">
+                        SEE MORE
+                    </button>
+                </div>
+
             </div>
         </div>
     );
