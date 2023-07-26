@@ -203,7 +203,7 @@ class Footer extends Component {
                                                         <li><a href={'/contact-us'}>Contact</a></li>
                                                         <li><a href={'/terms-of-use'}>Terms & Conditions</a></li>
                                                         <li><a href={'/privacy-policy'}>Privacy Policy</a></li>
-                                                        <li><a href={'/faq-page'}>FAQ</a></li>
+                                                        <li><a href={'/faq'}>FAQ</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -285,7 +285,7 @@ class Footer extends Component {
                                                     <li><a href={'/contact-us'}>Contact</a></li>
                                                     <li><a href={'/terms-of-use'}>T & C</a></li>
                                                     <li><a href={'/privacy-policy'}>Privacy Policy</a></li>
-                                                    <li><a href={'/faq-page'}>FAQ</a></li>
+                                                    <li><a href={'/faq'}>FAQ</a></li>
 
                                                 </ul>
                                             </div>

@@ -346,10 +346,11 @@ function shingles() {
                 <div className="sites-mobile">
                     <div className='wrap-sites'>
                         <div class="sec-title text-center textleft">
-                            <h2 className='wrap-sites-item12'>
-                                <span className='headeingcolorblue'> SITES</span>
-                                <span className='headeingcolorblack'> WHERE SHINGLES OCCUR</span>
-                            </h2>
+                            <h2 className='textleft fontSize50'>
+                                 <span
+                                    className='headeingcolorblue'>SHIELD YOURSELF <br></br>  FROM SHINGLES</span></h2>
+                            <h3 className='textleft marginTop40'>Prioritize prevention and<br></br> enjoy a shingles-free life
+                            </h3> 
                         </div>
                         <div className="wrap-img-sec7">
                             <img src={require('../../assets/images/shape/Mobile12345.png')} alt="" className='imgwidth3' />

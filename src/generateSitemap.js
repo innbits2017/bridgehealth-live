@@ -42,7 +42,7 @@ function generateSitemap() {
     '/hyper-tension',
     '/about-us',
     '/career',
-    '/faq-page',
+    '/faq',
     '/experience-centre',
     '/affiliate-partners',
     '/hra-page',
