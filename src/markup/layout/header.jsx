@@ -196,7 +196,7 @@ class Header extends Component {
                         </li>
                         <li><a href="/blog">Blogs</a></li>
                         <li><a href="/media-and-pr">Media</a></li>
-                        <li><a href="/faq-page">FAQ</a></li>
+                        <li><a href="/faq">FAQ</a></li>
                         <li><a href="/career">Career</a></li>
                         <li><a href="/contact-us">Contact</a></li>
                       </ul>

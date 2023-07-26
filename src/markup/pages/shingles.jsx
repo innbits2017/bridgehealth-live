@@ -8,7 +8,6 @@ import ShinglessTab from '../element/ShinglessTab';
 import TabAccordian from '../element/TabAccordian';
 import RadioButtonComponent from '../element/shingles-popup';
 
-
 function shingles() {
     const handleClickScroll = () => {
         const element = document.getElementById('section-1');
@@ -16,16 +15,29 @@ function shingles() {
             element.scrollIntoView({ behavior: 'smooth' });
         }
 
-
     };
     const handleClickScroll1 = () => {
         const element1 = document.getElementById('section-2');
+
+        console.log("handleClickScroll1", handleClickScroll1)
 
         if (element1) {
             element1.scrollIntoView({ behavior: 'smooth' });
         }
 
     };
+
+    const handleClickScroll10 = () => {
+        const element1 = document.getElementById('section-mobile1');
+
+        console.log("handleClickScroll10", handleClickScroll10)
+
+        if (element1) {
+            element1.scrollIntoView({ behavior: 'smooth' });
+        }
+
+    };
+
     const handleClickScroll2 = () => {
         const element2 = document.getElementById('section-3');
 
@@ -38,25 +50,23 @@ function shingles() {
     return (
         <>
             <Header />
-
-            <section class="team-section padding doctoeback">
+            <section class="team-section padding backimg3">
                 {/* About Section Two */}
-                <section class="container-fluid backimg3">
+                <section class="container-fluid">
                     <div class="row align-items-center auto-container reverseFlex">
 
                         <div class="col-lg-6">
                             <div class="content-box marginTop40header">
 
                                 <div class="sec-title text-center textleft">
-                                    <h2 className='textleft fontSize50 wrap-font mt-5'>
-                                        <span className='headeingcolorblue wrap-shin'>Shield Yourself </span> <br></br> <span
-                                            className='headeingcolorblue wrap-shin'> from Shingles </span>
-                                    </h2>
-
-                                    <h3 className='textleft marginTop40 wrap-text1'>Prioritize prevention and <br></br> enjoy a shingles-free life
+                                    <h2 className='textleft fontSize50'>
+                                        <span
+                                            className='headeingcolorblue'>ARE YOU 50 YEARS <br></br>  OF AGE OR OLDER?</span></h2>
+                                    <h3 className='textleft marginTop40'>You could be at risk<br></br> for Shingles.
                                     </h3>
                                 </div>
-                                <div class="btn-box btn5">
+                                <div class="btn-box">
+
                                     <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one' />
                                 </div>
 
@@ -86,7 +96,7 @@ function shingles() {
                                 </div>
 
                             </div>
-                            <div className="col-lg-3 wrap-item-header" >
+                            <div className="col-lg-3 wrap-item-header">
                                 <div className="card wrap-shig bg2" onClick={handleClickScroll1}>
                                     <div className="card-body wrap-shig-text">
                                         <p className="card-text-partners">Symptoms and intensity of pain</p>
@@ -134,9 +144,9 @@ function shingles() {
                         </div>
                     </div>
                 </div>
-            </section >
+            </section>
 
-            {/* Mobile Code  */}
+            {/* Mobile Code */}
 
             <section className="container">
                 <div className="mobile-element">
@@ -146,86 +156,84 @@ function shingles() {
                     <div className="wrap-tpo1">
                         <div className="row">
                             <div className="col-lg-6 col-md-6 wrap-item-header">
-                                <a href='' className="wrap-cont-col">
-                                    <div className="card wrap-shig1 bg11">
-                                        <div className="card-body wrap-shig-text">
-                                            <p className="card-text-partners1">What is Shingles/Herpes?</p>
-                                        </div>
+                                {/* <a href='' className="wrap-cont-col"> */}
+                                <div className="card wrap-shig1 bg11" onClick={handleClickScroll}>
+                                    <div className="card-body wrap-shig-text">
+                                        <p className="card-text-partners1">What is Shingles/Herpes?</p>
                                     </div>
-                                </a>
+                                </div>
+                                {/* </a> */}
                             </div>
                             <div className="col-lg-6 col-md-6 wrap-item-header">
-                                <a href='' className="wrap-cont-col">
-                                    <div className="card wrap-shig1 bg21">
-                                        <div className="card-body wrap-shig-text">
-                                            <p className="card-text-partners1">Symptoms and intensity of pain</p>
-                                        </div>
+                                {/* <a href='' className="wrap-cont-col"> */}
+                                <div className="card wrap-shig1 bg21" onClick={handleClickScroll10}>
+                                    <div className="card-body wrap-shig-text">
+                                        <p className="card-text-partners1">Symptoms and intensity of pain</p>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="row">
-                            <div className="col-lg-6 col-md-6 wrap-item-header">
-                                <a href='' className="wrap-cont-col">
-                                    <div className="card wrap-shig1 bg31">
-                                        <div className="card-body wrap-shig-text">
-                                            <p className="card-text-partners1">About the Vaccine</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div className="col-lg-6 col-md-6 wrap-item-header">
-                                <a href='' className="wrap-cont-col">
-                                    <div className="card wrap-shig1 bg41">
-                                        <div className="card-body wrap-shig-text">
-                                            <p className="card-text-partners1">Are you at risk for Shingles?</p>
-                                        </div>
-                                    </div>
-                                </a>
+                                </div>
+                                {/* </a> */}
                             </div>
                         </div>
 
                         <div className="row">
                             <div className="col-lg-6 col-md-6 wrap-item-header">
-                                <a href='' className="wrap-cont-col">
-                                    <div className="card wrap-shig1 bg51">
-                                        <div className="card-body wrap-shig-text">
-                                            <p className="card-text-partners1">Why take the vaccine?</p>
-                                        </div>
+                                {/* <a href='' className="wrap-cont-col"> */}
+                                <div className="card wrap-shig1 bg31" onClick={handleClickScroll2}>
+                                    <div className="card-body wrap-shig-text">
+                                        <p className="card-text-partners1">About the Vaccine</p>
                                     </div>
-                                </a>
+                                </div>
+                                {/* </a> */}
+                            </div>
+
+                            <div className="col-lg-6 col-md-6 wrap-item-header">
+                                {/* <a href='' className="wrap-cont-col"> */}
+                                <div className="card wrap-shig1 bg41">
+                                    <div className="card-body wrap-shig-text">
+                                        <p className="card-text-partners1">Are you at risk for Shingles?</p>
+                                    </div>
+                                </div>
+                                {/* </a> */}
+                            </div>
+                        </div>
+
+                        <div className="row">
+                            <div className="col-lg-6 col-md-6 wrap-item-header">
+                                {/* <a href='' className="wrap-cont-col"> */}
+                                <div className="card wrap-shig1 bg51" onClick={handleClickScroll2}>
+                                    <div className="card-body wrap-shig-text">
+                                        <p className="card-text-partners1">Why take the vaccine?</p>
+                                    </div>
+                                </div>
+                                {/* </a> */}
                             </div>
                             <div className="col-lg-6 col-md-6 wrap-item-header">
-                                <a href='' className="wrap-cont-col">
-                                    <div className="card wrap-shig1 bg61">
-                                        <div className="card-body wrap-shig-text">
-                                            <p className="card-text-partners1">Take the vaccine today!</p>
-                                        </div>
+                                {/* <a href='' className="wrap-cont-col"> */}
+                                <div className="card wrap-shig1 bg61">
+                                    <div className="card-body wrap-shig-text">
+                                        <p className="card-text-partners1">Take the vaccine today!</p>
                                     </div>
-                                </a>
+                                </div>
+                                {/* </a> */}
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-
-
-
             <section>
                 <div class="auto-container marginTop80 wrap-header">
                     <h2 className='header1 textaligncenter'>
-                        <span className='headeingcolorblack wrap-header1 wrap-header2'>Listen to what the doctor have to <br></br>say about</span>
+                        <span className='headeingcolorblack wrap-header1 wrap-header2'>Listen to what the doctor have to
+                            <br></br>say about</span>
                         <span className='headeingcolorblue wrap-header1 wrap-header2'> Shingles/Herpes</span>
                     </h2>
                 </div>
-            </section >
+            </section>
             <div>
                 < ShinglesPopup />
             </div>
-            <div class="btn-box text-center btn10">
+            <div class="btn-box text-center">
                 <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one' />
 
             </div>
@@ -237,7 +245,8 @@ function shingles() {
                             <div className="card-body">
                                 <h3 className="card-text-partners5">How Painful is Shingles</h3>
                             </div>
-                            <img src={require('../../assets/images/shape/bridge-health-(Final).gif')} alt="" className='wrap-labwidth12' />
+                            <img src={require('../../assets/images/shape/bridge-health-(Final).gif')} alt=""
+                                className='wrap-labwidth12' />
 
                         </div>
                     </div>
@@ -262,14 +271,17 @@ function shingles() {
                         <div className="card wrap-inter1">
                             <div className="card-body">
                                 <h2 className='wrap-heading'>WHAT IS SHINGLES?</h2>
-                                <p className="card-text-partners1">Shingles, also known as herpes zoster, is a viral infection caused by the varicella-zoster virus—the same virus that causes chickenpox. After recovering from chickenpox, the virus can remain dormant in the body and reactivate later in life, leading to shingles.</p>
+                                <p className="card-text-partners1">Shingles, also known as herpes zoster, is a viral infection
+                                    caused by the varicella-zoster virus—the same virus that causes chickenpox. After recovering
+                                    from chickenpox, the virus can remain dormant in the body and reactivate later in life,
+                                    leading to shingles.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Mobile Code  */}
+            {/* Mobile Code */}
             <section>
                 <div className="shi-wrap-mobile">
                     <div className="wrap-img-sec4">
@@ -279,7 +291,10 @@ function shingles() {
                         <div className="card wrap-inter12">
                             <div className="card-body">
                                 <h2 className='wrap-heading1'>WHAT IS SHINGLES?</h2>
-                                <p className="card-text-partners12">Shingles, also known as herpes zoster, is a viral infection caused by the varicella-zoster virus—the same virus that causes chickenpox. After recovering from chickenpox, the virus can remain dormant in the body and reactivate later in life, leading to shingles.</p>
+                                <p className="card-text-partners12">Shingles, also known as herpes zoster, is a viral infection
+                                    caused by the varicella-zoster virus—the same virus that causes chickenpox. After recovering
+                                    from chickenpox, the virus can remain dormant in the body and reactivate later in life,
+                                    leading to shingles.</p>
                             </div>
                         </div>
                     </div>
@@ -294,9 +309,9 @@ function shingles() {
                 </div>
             </section>
 
-            {/* Mobile Code  */}
+            {/* Mobile Code */}
             <section className="container">
-                <div className="mobile-element-item">
+                <div className="mobile-element-item" id="section-mobile1">
                     <div className="wrap-image-item">
                         <img src={require('../../assets/images/shape/mobile1234.png')} alt="" className="image-symp" />
                     </div>
@@ -318,24 +333,24 @@ function shingles() {
                         <div className="parg1-item">
                             <p><i>*Characteristics of Herpes Zoster</i></p>
                         </div>
-                        <div class="btn-box text-center btn5 shin-btn1">
-                            <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one' />
+                        <div class="btn-box text-center">
+                            <ContactForm buttonText="CONSULT / BOOK" className='btn-style-one' />
 
                         </div>
                     </div>
                 </div>
             </section>
 
-
-            {/* Mobile Code  */}
+            {/* Mobile Code */}
             <section className='container mt-5'>
                 <div className="sites-mobile">
                     <div className='wrap-sites'>
                         <div class="sec-title text-center textleft">
-                            <h2 className='wrap-sites-item12'>
-                                <span className='headeingcolorblue'> SITES</span>
-                                <span className='headeingcolorblack'> WHERE SHINGLES OCCUR</span>
-                            </h2>
+                            <h2 className='textleft fontSize50'>
+                                 <span
+                                    className='headeingcolorblue'>SHIELD YOURSELF <br></br>  FROM SHINGLES</span></h2>
+                            <h3 className='textleft marginTop40'>Prioritize prevention and<br></br> enjoy a shingles-free life
+                            </h3> 
                         </div>
                         <div className="wrap-img-sec7">
                             <img src={require('../../assets/images/shape/Mobile12345.png')} alt="" className='imgwidth3' />
@@ -343,7 +358,7 @@ function shingles() {
                         <div className="parg12-item">
                             <p><i>*Characteristics of Herpes Zoster</i></p>
                         </div>
-                        <div class="btn-box btn5">
+                        <div class="btn-box text-center">
                             <ContactForm buttonText="CONSULT / BOOK" popupPosition="right" className='btn-style-one' />
                         </div>
                     </div>
@@ -358,7 +373,7 @@ function shingles() {
                 </div>
             </div>
 
-            {/* MORE ABOUT SHINGLE  */}
+            {/* MORE ABOUT SHINGLE */}
             <section>
                 <div className="more-desktop">
                     <div className='wrap-sites'>
@@ -375,7 +390,7 @@ function shingles() {
                 </div>
             </section>
 
-            {/* Mobile code  */}
+            {/* Mobile code */}
             <section className='mt-3'>
                 <div className="more-mobile">
                     <div className='wrap-sites'>
@@ -406,70 +421,92 @@ function shingles() {
                     </h2>
 
                     <div class="row">
-                        {/* <!-- News Block One --> */}
+                        {/*
+                <!-- News Block One --> */}
                         <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                             <div class="inner-box">
-                                <div class="image"><Link to={'/#'}><img src={require('../../assets/images/shape/blog.png')} alt="" /></Link></div>
+                                <div class="image">
+                                    <Link to={'/#'}> <img src={require('../../assets/images/shape/blog.png')} alt="" />
+                                    </Link>
+                                </div>
                                 <div class="lower-content">
                                     <div class="category">Blog heading</div>
 
-                                    <h3><Link to={''}>What Does Your GI Score Indicate?</Link></h3>
-                                    <div class="text">As a child, you were likely cautioned to limit your intake of sweets. Remember the warning not to go</div>
+                                    <h3>
+                                        <Link to={''}>What Does Your GI Score Indicate?</Link>
+                                    </h3>
+                                    <div class="text">As a child, you were likely cautioned to limit your intake of sweets.
+                                        Remember the warning not to go</div>
                                 </div>
                             </div>
                         </div>
-                        {/* <!-- News Block One --> */}
+                        {/*
+                <!-- News Block One --> */}
                         <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                             <div class="inner-box">
-                                <div class="image"><Link to={'/#'}><img src={require('../../assets/images/shape/blog1.png')} alt="" /></Link></div>
+                                <div class="image">
+                                    <Link to={'/#'}> <img src={require('../../assets/images/shape/blog1.png')} alt="" />
+                                    </Link>
+                                </div>
                                 <div class="lower-content">
                                     <div class="category">Blog heading</div>
 
-                                    <h3><Link to={''}>Myths And Facts About GI Foods</Link></h3>
-                                    <div class="text">Carbohydrates have been villainized in recent years as the culprit for weight gain and even chronic diseases</div>
+                                    <h3>
+                                        <Link to={''}>Myths And Facts About GI Foods</Link>
+                                    </h3>
+                                    <div class="text">Carbohydrates have been villainized in recent years as the culprit for
+                                        weight gain and even chronic diseases</div>
                                 </div>
                             </div>
-                            {/* <button class="theme-btn btn-style-one btnblog" type="submit" name="submit-form"><span class="btn-title btnblog">READ ALL BLOGS</span></button> */}
+                            {/* <button class="theme-btn btn-style-one btnblog" type="submit" name="submit-form"><span
+                            class="btn-title btnblog">READ ALL BLOGS</span></button> */}
 
                         </div>
-                        {/* <!-- News Block One --> */}
+                        {/*
+                <!-- News Block One --> */}
                         <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                             <div class="inner-box">
-                                <div class="image"><Link to={'/#'}><img src={require('../../assets/images/shape/blog3.png')} alt="" /></Link></div>
+                                <div class="image">
+                                    <Link to={'/#'}> <img src={require('../../assets/images/shape/blog3.png')} alt="" />
+                                    </Link>
+                                </div>
                                 <div class="lower-content">
                                     <div class="category">Blog heading</div>
 
-                                    <h3><Link to={''}>Everything you need to know about Glycemic Index</Link></h3>
-                                    <div class="text">Even with the world becoming more health-conscious, diseases seem to be on the rise. While you frantically</div>
+                                    <h3>
+                                        <Link to={''}>Everything you need to know about Glycemic Index</Link>
+                                    </h3>
+                                    <div class="text">Even with the world becoming more health-conscious, diseases seem to be on
+                                        the rise. While you frantically</div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
                     {/* <div class="button-txt">
-                        <Button class="btn"></Button>
-                    </div> */}
+                <Button class="btn"></Button>
+            </div> */}
 
                 </div>
             </section>
 
             {/* <section>
-                <div className="wrap-header">
-                    <div class="auto-container marginTop80">
-                        <div class="sec-title text-center">
-                            <h2 className='header1'>
-                                <span className='headeingcolorblack'> It’s a </span>
-                                <span className='headeingcolorblue'> Doctor on call. </span>
-                                <span className='headeingcolorblack'> Literally! </span>
-                            </h2>
-                        </div>
-                        <div class="btn-box text-center btn5">
-                            <ContactForm buttonText="BOOK NOW" popupPosition="right" />
-
-                        </div>
-                    </div>
+        <div className="wrap-header">
+            <div class="auto-container marginTop80">
+                <div class="sec-title text-center">
+                    <h2 className='header1'>
+                        <span className='headeingcolorblack'> It’s a </span>
+                        <span className='headeingcolorblue'> Doctor on call. </span>
+                        <span className='headeingcolorblack'> Literally! </span>
+                    </h2>
                 </div>
-            </section> */}
+                <div class="btn-box text-center btn5">
+                    <ContactForm buttonText="BOOK NOW" popupPosition="right" />
+
+                </div>
+            </div>
+        </div>
+    </section> */}
             <Footer />
         </>
     );

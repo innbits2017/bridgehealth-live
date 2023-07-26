@@ -46,6 +46,7 @@ import JobListingForm from './pages/JobListingForm';
 import Sidenav from './pages/Sidenav';
 import TermPolicy from './pages/term-policy';
 import shingles from './pages/shingles';
+import HealthApp from './pages/healthTable';
 
 
 
@@ -84,7 +85,7 @@ class Router extends Component {
                         <Route path='/hyper-tension' component={hypertension}/>
                         <Route path='/about-us' component={aboutUs}/>
                         <Route path='/career' component={Career}/>
-                        <Route path='/faq-page' component={FAQ}/>
+                        <Route path='/faq' component={FAQ}/>
                         <Route path='/experience-centre' component={experienceCentre}/>
                         <Route path='/affiliate-partners' component={affiliatePartners}/>
                         <Route path='/hra-page' component={HRA}/>
@@ -98,8 +99,9 @@ class Router extends Component {
                         <Route path='/LoginForm' component={LoginForm}/>
                         <Route path='/sidenav' component={Sidenav}/>
                         <Route path='/JobListingForm' component={JobListingForm}/>
-                        <Route path='/terms-policy' component={TermPolicy}/>
                         <Route path='/shingles' component={shingles}/>
+                        <Route path='/health-table' component={HealthApp}/>
+
 
                     </Switch>
                     <BackToTop />
