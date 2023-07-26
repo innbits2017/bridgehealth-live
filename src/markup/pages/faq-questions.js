@@ -127,7 +127,7 @@ const accordionData4 = [
 ]
 
 
-const FaqQuestions = ({ selectedCategory }) => {
+const FaqQuestions = ({ selectedCategory, selectedCategories }) => {
     let selectedData = [];
 
     switch (selectedCategory) {
@@ -148,7 +148,24 @@ const FaqQuestions = ({ selectedCategory }) => {
             selectedData = accordionData4;
             break;
         default:
-            selectedData = accordionData;
+            selectedData = [];
+    }
+
+    // Filter the accordion data based on the selected categories
+    if (selectedCategories.includes('About Proactive Health')) {
+        selectedData = selectedData.concat(accordionData);
+    }
+    if (selectedCategories.includes('Annual Health Plans')) {
+        selectedData = selectedData.concat(accordionData2);
+    }
+    if (selectedCategories.includes('All Health Services')) {
+        selectedData = selectedData.concat(accordionData3);
+    }
+    if (selectedCategories.includes('Payments & Refunds')) {
+        selectedData = selectedData.concat(accordionData3);
+    }
+    if (selectedCategories.includes('More Common Questions')) {
+        selectedData = selectedData.concat(accordionData4);
     }
 
     return (
