@@ -11,7 +11,6 @@ class FAQ extends Component {
         super(props);
         this.state = {
             searchQuery: '',
-            category: 'Category',
             selectedCategory: 'Category',
             checkboxes: [
                 { name: 'About Proactive Health', checked: false },
@@ -46,26 +45,12 @@ class FAQ extends Component {
     };
 
     render() {
-        // const { searchQuery, category, checkboxes } = this.state;
         const { searchQuery, selectedCategory, checkboxes } = this.state;
         return (
             <>
                 <Header />
 
                 {/* <!-- Page Banner Section --> */}
-                {/* <section class="internalpage-faq internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
-                    <div class="auto-container">
-                        <div class="content-box">
-                            <div class=" text-center textleft">
-                                <h2 className='textleft fontSize'>
-                                    <span className='headeingcolorblack'> Got a </span>
-                                    <span className='headeingcolorblue'> query? </span> <br></br>
-                                    <span className='headeingcolorblack'> We are here to help. </span>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </section> */}
                 <section class="team-section padding">
                     {/* About Section Two */}
                     <section class="container-fluid">
@@ -127,7 +112,7 @@ class FAQ extends Component {
                             </div>
                             <div>
                                 <div className="checkbox-row-faq">
-                                    {checkboxes.slice(0, 2).map((checkbox, index) => (
+                                    {checkboxes.slice(0, 5).map((checkbox, index) => (
                                         <label key={index}>
                                             <input
                                                 type="checkbox"
@@ -137,20 +122,7 @@ class FAQ extends Component {
                                             {checkbox.name}
                                         </label>
                                     ))}
-                                    {checkboxes.slice(2).map((checkbox, index) => (
-                                        <label key={index + 2}>
-                                            <input
-                                                type="checkbox"
-                                                checked={checkbox.checked}
-                                                onChange={() => this.handleCheckboxChange(index + 2)}
-                                            />
-                                            {checkbox.name}
-                                        </label>
-                                    ))}
                                 </div>
-                                {/* <div className="checkbox-row-faq ">
-                                  
-                                </div> */}
                             </div>
                         </div>
                     </div>

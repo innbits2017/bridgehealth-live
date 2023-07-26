@@ -131,7 +131,7 @@ const FaqQuestions = ({ selectedCategory }) => {
     let selectedData = [];
 
     switch (selectedCategory) {
-        
+
         case 'About Proactive Health':
             selectedData = accordionData;
             break;
@@ -141,13 +141,15 @@ const FaqQuestions = ({ selectedCategory }) => {
         case 'All Health Services':
             selectedData = accordionData3;
             break;
+        case 'Payments & Refunds':
+            selectedData = [];
+            break;
         case 'More Common Questions':
             selectedData = accordionData4;
             break;
         default:
             selectedData = accordionData;
     }
-
 
     return (
         <div className="container-fluid">
