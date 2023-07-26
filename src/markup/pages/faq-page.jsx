@@ -37,6 +37,8 @@ class FAQ extends Component {
     handleCheckboxChange = (index) => {
         const { checkboxes } = this.state;
         checkboxes[index].checked = !checkboxes[index].checked;
+
+        // Update the selected checkboxes in state
         this.setState({ checkboxes });
     };
 
@@ -46,6 +48,11 @@ class FAQ extends Component {
 
     render() {
         const { searchQuery, selectedCategory, checkboxes } = this.state;
+
+        const selectedCategories = checkboxes
+            .filter((checkbox) => checkbox.checked)
+            .map((checkbox) => checkbox.name);
+
         return (
             <>
                 <Header />
@@ -131,7 +138,7 @@ class FAQ extends Component {
 
                 <section>
                     <div>
-                        <FaqQuestions selectedCategory={selectedCategory} />
+                        <FaqQuestions selectedCategory={selectedCategory} selectedCategories={selectedCategories} />
                     </div>
                 </section>
 
