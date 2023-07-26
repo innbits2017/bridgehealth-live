@@ -2,38 +2,41 @@ import React from 'react';
 
 const HealthPlanTable = () => {
   return (
-    <table className="health-plan-table">
-      <thead>
-        <tr>
-          <th className="header-cell">Age Group (in years)</th>
-          <th className="header-cell">Annual Health Program</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td className="age-cell">Up to 25</td>
-          <td className="program-cell">BH Blue</td>
-        </tr>
-        <tr>
-          <td className="age-cell">26 – 33</td>
-          <td className="program-cell">BH Silver</td>
-        </tr>
-        <tr>
-          <td className="age-cell">34 – 40</td>
-          <td className="program-cell">BH Gold</td>
-        </tr>
-        <tr>
-          <td className="age-cell">41 – 55</td>
-          <td className="program-cell">Platinum</td>
-        </tr>
-        <tr>
-          <td className="age-cell">&gt; 55</td>
-          <td className="program-cell">Platinum Plus</td>
-        </tr>
-      </tbody>
-    </table>
+    <div className="table-container">
+      <table className="health-plan-table">
+        <thead>
+          <tr>
+            <th className="header-cell">Age Group (in years)</th>
+            <th className="header-cell">Annual Health Program</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="age-cell">Up to 25</td>
+            <td className="program-cell">BH Blue</td>
+          </tr>
+          <tr>
+            <td className="age-cell">26 – 33</td>
+            <td className="program-cell">BH Silver</td>
+          </tr>
+          <tr>
+            <td className="age-cell">34 – 40</td>
+            <td className="program-cell">BH Gold</td>
+          </tr>
+          <tr>
+            <td className="age-cell">41 – 55</td>
+            <td className="program-cell">Platinum</td>
+          </tr>
+          <tr>
+            <td className="age-cell">&gt; 55</td>
+            <td className="program-cell">Platinum Plus</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   );
 };
+
 
 const contentObject = {
   content: (
