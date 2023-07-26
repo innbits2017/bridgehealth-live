@@ -14162,7 +14162,7 @@ th {
 /* border: 1px solid; */
 padding: 10px;
 min-width: 200px;
-background: white;
+/* background: white; */
 border-right: 5px solid #fff;
 box-sizing: border-box;
 text-align: center;
@@ -15829,4 +15829,33 @@ background-repeat: no-repeat;
     align-items: center;
     margin-bottom: 50px;
   }
-    
+
+  .table-container .health-plan-table {
+    width: 45%;
+    border-collapse: collapse;
+  }
+  
+  .table-container .health-plan-table th,
+  .table-container .health-plan-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Define background colors for alternate rows */
+  .table-container .health-plan-table tbody tr:nth-child(even) {
+    background-color: #e6eeff !important; /* Light blue background for even rows */
+  }
+  
+  .table-container .health-plan-table tbody tr:nth-child(odd) {
+    background-color: #ccddff !important; /* Light blue background for odd rows */
+  }
+  
+  /* Add styles for header cells */
+  .table-container .health-plan-table th.header-cell {
+    color: #ffffff;
+    background-color: #7070db; /* Light gray background for header cells */
+    font-weight: bold;
+    font-size: 16px;
+  }
+   
