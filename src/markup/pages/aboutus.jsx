@@ -96,7 +96,9 @@ render() {
 
 const { username, email } = this.state;
 const isSubmitDisabled = username === '' || email === ''
-
+const title = "Bridge Health | About us";
+        const description = "Bridge Health | About us";
+          const metadata = "Bridge Health | About us"
 return (
 <>
 <Seo title={title} description={description} metadata={metadata} />
