@@ -156,42 +156,42 @@ class Career extends Component {
                                         </form>
                                     </div>
                                 </div>
-                                      {/* <!-- Search --> */}
-                                      <div class=" search-box mobilehide">
+                                {/* <!-- Search --> */}
+                                <div class=" search-box mobilehide">
 
-<form>
-    <div class="form-group1">
-        <input
-            // type="search"
-            name="search-field"
-            value={this.state.searchTerm}
-            onChange={e => this.handleChange(e)}
-            placeholder="Search Topic"
-            required="" />
-        <button type="submit" className='submitsearch'><span class="icon far fa-search searchblog"></span></button>
-    </div>
-</form>
-<div class="filtter">
-    <form action="#" class="language-switcher">
-        <select className='blog-bgcolor'>
-            <option value="">Filter</option>
-            <option value="1">Clinical Services</option>
-            <option value="2">Operations</option>
-            <option value="3">Corporate Operations</option>
-            <option value="4">Corporate Sales</option>
-            <option value="5">Marketing</option>
-            <option value="6">Technology</option>
-            <option value="7">Pharmacy</option>
-            <option value="8">Sales & Operations</option>
-            <option value="7">Finance</option>
-            <option value="7">HR</option>
-            <option value="7">Facility & Admin</option>
-            <option value="7">Strategic Initiatives</option>
-            <option value="7">Affiliates & Alliances</option>
-        </select>
-    </form>
-</div>
-</div>
+                                    <form>
+                                        <div class="form-group1">
+                                            <input
+                                                // type="search"
+                                                name="search-field"
+                                                value={this.state.searchTerm}
+                                                onChange={e => this.handleChange(e)}
+                                                placeholder="Search Topic"
+                                                required="" />
+                                            <button type="submit" className='submitsearch'><span class="icon far fa-search searchblog"></span></button>
+                                        </div>
+                                    </form>
+                                    <div class="filtter">
+                                        <form action="#" class="language-switcher">
+                                            <select className='blog-bgcolor'>
+                                                <option value="">Filter</option>
+                                                <option value="1">Clinical Services</option>
+                                                <option value="2">Operations</option>
+                                                <option value="3">Corporate Operations</option>
+                                                <option value="4">Corporate Sales</option>
+                                                <option value="5">Marketing</option>
+                                                <option value="6">Technology</option>
+                                                <option value="7">Pharmacy</option>
+                                                <option value="8">Sales & Operations</option>
+                                                <option value="7">Finance</option>
+                                                <option value="7">HR</option>
+                                                <option value="7">Facility & Admin</option>
+                                                <option value="7">Strategic Initiatives</option>
+                                                <option value="7">Affiliates & Alliances</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -248,7 +248,7 @@ class Career extends Component {
                                     {job.location}<span> <img src={require('../../assets/images/shape/dash.png')} alt="" className='dash' /></span></span>
                                     <span class="job-timing">
                                         <img src={require('../../assets/images/shape/icontime.png')} alt="" className='padeight' /> {job.timing}</span>
-                                    <span  class="job-department"> <a href="/career-form" class="view-position">Apply Now</a> </span>
+                                    <span class="job-department"> <a href="/career-form" class="view-position">Apply Now</a> </span>
                                 </div>
                                 <div class="job-card-footer">
                                     <a href="/job-description" class="view-position">View Position &#8594;</a>
