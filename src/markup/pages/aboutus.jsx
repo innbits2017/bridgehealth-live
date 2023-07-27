@@ -5,7 +5,7 @@ import FormValidation from './formvalidation';
 
 const aboutfair = require('./../../assets/images/shape/aboutback.png');
 const aback = require('./../../assets/images/shape/aback.png');
-const Seo = require('../layout/seo');
+// const Seo = require('../layout/seo');
 class aboutUs extends Component {
 componentDidMount() {
 document.title = 'About Us | Bridge Health';
@@ -102,7 +102,7 @@ const title = "Bridge Health | About us";
           const metadata = "Bridge Health | About us"
 return (
 <>
-<Seo title={title} description={description} metadata={metadata} />
+{/* <Seo title={title} description={description} metadata={metadata} /> */}
     <Header />
 
     <section class="internalpage style-two aboutback ">
