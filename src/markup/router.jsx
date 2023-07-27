@@ -17,7 +17,7 @@ import pharmacy from './pages/pharmacy';
 import psychological_Health from './pages/psychological-Health';
 import contact from './pages/contact-us';
 import ophthalmologist from './pages/ophthalmologists';
-import dermatology from './pages/dermatology'; 
+import dermatology from './pages/dermatology';
 import doctor_consults from './pages/doctor-consults';
 import dental from './pages/dental';
 import fitnessAssessment from './pages/fitness-assessment';
@@ -37,18 +37,15 @@ import deviceAndTechnology from './pages/device-and-technology';
 import mediaAndPR from './pages/media-and-pr';
 import termsOfUse from './pages/terms-of-use';
 import privacyPolicies from './pages/privacy-policies';
-import HealthiskAssessment from'./pages/health-risk-assessment';
+import HealthiskAssessment from './pages/health-risk-assessment';
 import FormComponent from './pages/career-form';
 import careerAdmin from './pages/career-admin';
 import JobDescription from './pages/JobDescription';
 import LoginForm from './pages/LoginForm';
 import JobListingForm from './pages/JobListingForm';
 import Sidenav from './pages/Sidenav';
-import TermPolicy from './pages/term-policy';
 import shingles from './pages/shingles';
-import HealthApp from './pages/healthTable';
-
-
+import vaccination from './pages/vaccination';
 
 class Router extends Component {
     render() {
@@ -61,45 +58,47 @@ class Router extends Component {
                         <Route path='/blog' component={blog} />
                         <Route path='/leadership' component={leadership} />
                         <Route path='/team' component={Team} />
-                        <Route path='/corporate-membership-program' component={corporate_membership_program}/>
-                        <Route path='/career-form' component={FormComponent}/>
-                        <Route path='/our-services' component={ourservice}/>
-                        <Route path='/personal-membership-program' component={b2cmembership}/>
-                        <Route path='/blog-design' component={blog_Designv2}/>
-                        <Route path='/diet-and-nutrition' component={diet_and_nutrition}/>
-                        <Route path='/yoga-assessment' component={yoga_Assessment}/>
-                        <Route path='/lab-tests' component={lab_tests}/>
-                        <Route path='/physio-therapy' component={physiotherapy}/>
-                        <Route path='/pharmacy' component={pharmacy}/>
-                        <Route path='/psychological-health' component={psychological_Health}/>
-                        <Route path='/ophthalmologist' component={ophthalmologist}/>
-                        <Route path='/dermatology' component={dermatology}/>
-                        <Route path='/doctor-consults' component={doctor_consults}/>
-                        <Route path='/dental-consults' component={dental}/>
-                        <Route path='/fitness-assessment' component={fitnessAssessment}/>
-                        <Route path='/nursing-at-home' component={nursingAtHome}/>
-                        <Route path='/comprehensive-health-checks' component={comprehensiveHealth}/>
-                        <Route path='/elderly-care' component={elderlyCare}/>
-                        <Route path='/diabetes' component={diabetes}/>
-                        <Route path='/manage-weight' component={manageWeight}/>
-                        <Route path='/hyper-tension' component={hypertension}/>
-                        <Route path='/about-us' component={aboutUs}/>
-                        <Route path='/career' component={Career}/>
-                        <Route path='/faq' component={FAQ}/>
-                        <Route path='/experience-centre' component={experienceCentre}/>
-                        <Route path='/affiliate-partners' component={affiliatePartners}/>
-                        <Route path='/hra-page' component={HRA}/>
-                        <Route path='/devices-and-technology' component={deviceAndTechnology}/>
-                        <Route path='/media-and-pr' component={mediaAndPR}/>
-                        <Route path='/terms-of-use' component={termsOfUse}/>
-                        <Route path='/privacy-policy' component={privacyPolicies}/>
-                        <Route path='/health-risk-assessment' component={HealthiskAssessment}/>
-                        <Route path='/career-admin' component={careerAdmin}/>
-                        <Route path='/job-description' component={JobDescription}/>
-                        <Route path='/LoginForm' component={LoginForm}/>
-                        <Route path='/sidenav' component={Sidenav}/>
-                        <Route path='/JobListingForm' component={JobListingForm}/>
-                        <Route path='/shingles' component={shingles}/>
+                        <Route path='/corporate-membership-program' component={corporate_membership_program} />
+                        <Route path='/career-form' component={FormComponent} />
+                        <Route path='/our-services' component={ourservice} />
+                        <Route path='/personal-membership-program' component={b2cmembership} />
+                        <Route path='/blog-design' component={blog_Designv2} />
+                        <Route path='/diet-and-nutrition' component={diet_and_nutrition} />
+                        <Route path='/yoga-assessment' component={yoga_Assessment} />
+                        <Route path='/lab-tests' component={lab_tests} />
+                        <Route path='/physio-therapy' component={physiotherapy} />
+                        <Route path='/pharmacy' component={pharmacy} />
+                        <Route path='/psychological-health' component={psychological_Health} />
+                        <Route path='/ophthalmologist' component={ophthalmologist} />
+                        <Route path='/dermatology' component={dermatology} />
+                        <Route path='/doctor-consults' component={doctor_consults} />
+                        <Route path='/dental-consults' component={dental} />
+                        <Route path='/fitness-assessment' component={fitnessAssessment} />
+                        <Route path='/nursing-at-home' component={nursingAtHome} />
+                        <Route path='/comprehensive-health-checks' component={comprehensiveHealth} />
+                        <Route path='/elderly-care' component={elderlyCare} />
+                        <Route path='/diabetes' component={diabetes} />
+                        <Route path='/manage-weight' component={manageWeight} />
+                        <Route path='/hyper-tension' component={hypertension} />
+                        <Route path='/about-us' component={aboutUs} />
+                        <Route path='/career' component={Career} />
+                        <Route path='/faq' component={FAQ} />
+                        <Route path='/experience-centre' component={experienceCentre} />
+                        <Route path='/affiliate-partners' component={affiliatePartners} />
+                        <Route path='/hra-page' component={HRA} />
+                        <Route path='/devices-and-technology' component={deviceAndTechnology} />
+                        <Route path='/media-and-pr' component={mediaAndPR} />
+                        <Route path='/terms-of-use' component={termsOfUse} />
+                        <Route path='/privacy-policy' component={privacyPolicies} />
+                        <Route path='/health-risk-assessment' component={HealthiskAssessment} />
+                        <Route path='/career-admin' component={careerAdmin} />
+                        <Route path='/job-description' component={JobDescription} />
+                        <Route path='/LoginForm' component={LoginForm} />
+                        <Route path='/sidenav' component={Sidenav} />
+                        <Route path='/JobListingForm' component={JobListingForm} />
+                        <Route path='/shingles' component={shingles} />
+                        <Route path='/vaccination' component={vaccination} />
+
                     </Switch>
                     <BackToTop />
                 </div>
