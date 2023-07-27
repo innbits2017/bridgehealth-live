@@ -11,7 +11,7 @@ class FAQ extends Component {
         super(props);
         this.state = {
             searchQuery: '',
-            category: 'Category',
+            selectedCategory: 'Category',
             checkboxes: [
                 { name: 'About Proactive Health', checked: false },
                 { name: 'Annual Health Plans', checked: false },
@@ -37,55 +37,53 @@ class FAQ extends Component {
     handleCheckboxChange = (index) => {
         const { checkboxes } = this.state;
         checkboxes[index].checked = !checkboxes[index].checked;
+
+        // Update the selected checkboxes in state
         this.setState({ checkboxes });
     };
 
+    handleCategoryChange = (event) => {
+        this.setState({ selectedCategory: event.target.value });
+    };
+
     render() {
-        const { searchQuery, category, checkboxes } = this.state;
+        const { searchQuery, selectedCategory, checkboxes } = this.state;
+
+        const selectedCategories = checkboxes
+            .filter((checkbox) => checkbox.checked)
+            .map((checkbox) => checkbox.name);
+
         return (
             <>
                 <Header />
 
                 {/* <!-- Page Banner Section --> */}
-                {/* <section class="internalpage-faq internalpageresponsive style-two" style={{ backgroundImage: "url(" + aboutbg + ")" }}>
-                    <div class="auto-container">
-                        <div class="content-box">
-                            <div class=" text-center textleft">
-                                <h2 className='textleft fontSize'>
-                                    <span className='headeingcolorblack'> Got a </span>
-                                    <span className='headeingcolorblue'> query? </span> <br></br>
-                                    <span className='headeingcolorblack'> We are here to help. </span>
-                                </h2>
+                <section class="team-section padding">
+                    {/* About Section Two */}
+                    <section class="container-fluid">
+                        <div class="row align-items-center auto-container reverseFlex blogPagebox">
+
+                            <div class="col-lg-5">
+                                <div class="content-box marginTop40header">
+
+                                    <div class="sec-title text-center textleft">
+                                        <h2 className='textleft fontSize'>
+                                            <span className='headeingcolorblack'> Got a </span>
+                                            <span className='headeingcolorblue'> query? </span> <br></br>
+                                            <span className='headeingcolorblack'> We are here to help. </span>
+                                        </h2>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class=" imgright">
+                                    <img src={require('./../../assets/images/shape/faqhead.png')} alt="" />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section> */}
- <section class="team-section padding">
-        {/* About Section Two */}
-        <section class="container-fluid">
-            <div class="row align-items-center auto-container reverseFlex blogPagebox">
-
-                <div class="col-lg-5">
-                    <div class="content-box marginTop40header">
-
-                        <div class="sec-title text-center textleft">
-                        <h2 className='textleft fontSize'>
-                                    <span className='headeingcolorblack'> Got a </span>
-                                    <span className='headeingcolorblue'> query? </span> <br></br>
-                                    <span className='headeingcolorblack'> We are here to help. </span>
-                                </h2>
-                        </div>
-                    
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class=" imgright">
-                        <img src={require('./../../assets/images/shape/faqhead.png')} alt=""/>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
+                    </section>
+                </section>
                 <section className='faqBack'>
                     <div className="container-fluid">
                         <div className="auto-container">
@@ -108,20 +106,20 @@ class FAQ extends Component {
                                         <h4>SUGGESTED TOPICS:</h4>
                                     </div>
                                     <div className="col ">
-                                        <select className="custom-dropdown-faq" value={category} onChange={this.handleCategoryChange}>
+                                        <select className="custom-dropdown-faq" value={selectedCategory} onChange={this.handleCategoryChange}>
                                             <option value="Category">CATEGORY</option>
-                                            <option value="1">About Proactive Health</option>
-                                            <option value="2">Annual Health Plans</option>
-                                            <option value="3">All Health Services</option>
-                                            <option value="4">Payments & Refunds</option>
-                                            <option value="5">More Common Questions</option>
+                                            <option value="About Proactive Health">About Proactive Health</option>
+                                            <option value="Annual Health Plans">Annual Health Plans</option>
+                                            <option value="All Health Services">All Health Services</option>
+                                            <option value="Payments & Refunds">Payments & Refunds</option>
+                                            <option value="More Common Questions">More Common Questions</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
                             <div>
                                 <div className="checkbox-row-faq">
-                                    {checkboxes.slice(0, 2).map((checkbox, index) => (
+                                    {checkboxes.slice(0, 5).map((checkbox, index) => (
                                         <label key={index}>
                                             <input
                                                 type="checkbox"
@@ -131,20 +129,7 @@ class FAQ extends Component {
                                             {checkbox.name}
                                         </label>
                                     ))}
-                                      {checkboxes.slice(2).map((checkbox, index) => (
-                                        <label key={index + 2}>
-                                            <input
-                                                type="checkbox"
-                                                checked={checkbox.checked}
-                                                onChange={() => this.handleCheckboxChange(index + 2)}
-                                            />
-                                            {checkbox.name}
-                                        </label>
-                                    ))}
                                 </div>
-                                {/* <div className="checkbox-row-faq ">
-                                  
-                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -153,7 +138,7 @@ class FAQ extends Component {
 
                 <section>
                     <div>
-                        <FaqQuestions />
+                        <FaqQuestions selectedCategory={selectedCategory} selectedCategories={selectedCategories} />
                     </div>
                 </section>
 
