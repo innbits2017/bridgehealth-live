@@ -9,6 +9,7 @@ const Seo = require('../layout/seo');
 class aboutUs extends Component {
 componentDidMount() {
 document.title = 'About Us | Bridge Health';
+
 }
 
 constructor(props) {
@@ -108,7 +109,7 @@ return (
         <div class="auto-container ">
             <div className='aboutcont '>
                 <div className='aboutbox '>
-                    <h3 className='underline'>OUR VISION</h3>
+                    <h3 className='underline'>OUR VISION testing</h3>
                     <p className='textaligncenter'> Spread Happiness <br></br> Through Good Health</p>
 
                 </div>
