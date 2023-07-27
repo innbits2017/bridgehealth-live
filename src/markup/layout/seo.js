@@ -1,24 +1,21 @@
-import React, { Component } from 'react';
-import { Helmet } from 'react-helmet';
+import React from 'react';
+import Head from 'next/head';
 
-class Seo extends Component {
-  render() {
-    const { title, description, metadata, canonical, robotsTag } = this.props;
-
-    return (
-      <Helmet>
+const Seo = ({ title, description, metadata, canonical, robotsTag }) => {
+  return (
+    <div>
+      <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="keywords" content={metadata}></meta> 
+        <meta name="keywords" content={metadata} />
         <link rel="canonical" href={canonical} />
 
         {/* <meta name="robotsTag" content={robotsTag}></meta> */}
         <meta name="robots" content={robotsTag} />
-
-        {/* Additional metadata tags can be added here */}
-      </Helmet>
-    );
-  }
-}
+      </Head>
+      {/* Your page content goes here */}
+    </div>
+  );
+};
 
 export default Seo;
