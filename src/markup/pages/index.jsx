@@ -241,7 +241,7 @@ class Index extends Component {
                             <h2 style={{ fontSize: 43 + 'px', lineHeight: 50 + 'px' }}> <span className=' headeingcolorblue'> Annual Preventive </span>
                                 <span className='headeingcolorblack'>Health Plans</span>
                             </h2>
-                            <h5 className='heading'>Membership-based integrated programs covering various aspects
+                            <h5 className='heading'>Membership based integrated programs covering various aspects
                             </h5>
                         </div>
 
